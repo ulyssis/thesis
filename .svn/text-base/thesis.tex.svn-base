@@ -1,0 +1,268 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% HEADER
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%hello!%
+\newcommand{\hyperrefpdfauthor}{}
+\newcommand{\hyperrefpdftitle}{}
+\newcommand{\hyperrefpdfsubject}{}
+\newcommand{\hyperrefpdfkeywords}{}
+\newcommand{\hyperrefpdfborder}{0}
+\documentclass{wissdoc-kw-eng}
+
+\usepackage{ifpdf}
+
+\usepackage[printonlyused]{acronym}
+\renewcommand{\bflabel}[1]{\normalfont{\normalsize{#1}}\hfill} % keine serifenlose schrift für acronym
+%\usepackage{acronym}
+\usepackage{subfigure}
+%\usepackage{caption}
+\usepackage[font=small,hang,center,nooneline,labelfont=bf]{caption}
+
+\usepackage{float}
+\floatstyle{ruled}
+\newfloat{listing}{htbp}{lop}[chapter]
+\floatname{listing}{Listing}
+
+\captionsetup[figure]{font=small}
+\captionsetup[table]{font=small}
+%\captionsetup[listing]{font=small}
+
+%% Normales LaTeX oder pdfLaTeX? %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ==> Das neue if-Kommando "\ifpdf" wird an einigen wenigen
+%% ==> Stellen benötigt, um die Kompatibilität zwischen
+%% ==> LaTeX und pdfLaTeX herzustellen.
+%\newif\ifpdf
+%\ifx\pdfoutput\undefined
+%    \pdffalse              %%normales LaTeX wird ausgeführt
+%\else
+%    \pdfoutput=1           
+%    \pdftrue               %%pdfLaTeX wird ausgeführt
+%\fi
+
+
+%% Fonts für pdfLaTeX %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ==> Nur notwendig, falls keine cm-super-Fonts installiert
+\ifpdf
+	\usepackage{ae}       %%Benutzen Sie nur eines dieser Pakete:
+	%\usepackage{zefonts}  %%je nachdem, welches Sie besitzen.
+\else
+	%%Normales LaTeX - keine speziellen Fontpackages notwendig
+\fi
+
+
+%% Deutsche Anpassungen %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\usepackage[T1]{fontenc}
+%\usepackage[utf8]{inputenc}
+
+%% zur Zitaten des Quelltextes%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "final" forces printing of all listings, even if the global "draft" is set
+\usepackage[final]{listings}
+\lstset{
+    basicstyle=\footnotesize\ttfamily,
+    tabsize=4,
+    numberstyle=\tiny\color{gray},
+    numbersep=5pt,
+    numbers=left,
+    captionpos=b,
+    abovecaptionskip=0pt,
+    belowcaptionskip=0pt,
+    aboveskip=10pt,
+    belowskip=0pt,
+    floatplacement=tbp,
+    frame=topline,
+    framerule=.1pt,
+    framesep = 3pt,
+    }
+\renewcommand\lstlistingname{\textbf{Listing}}
+% This is only kept for backwards compatibility. You should never have to use it. Use the listing-environment instead.
+\DeclareCaptionFormat*{lstruled}{{\bfseries#1\small\space\normalfont#3\hrule height.1pt depth0pt}\par}
+\captionsetup[lstlisting]{format=lstruled,singlelinecheck=false}
+
+
+%% Packages für Formeln %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amsmath}
+\usepackage{amsthm}
+%\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{booktabs}
+\newcommand{\ra}[1]{\renewcommand{\arraystretch}{#1}}
+
+%% Packages
+%\usepackage{tikz}
+%\usetikzlibrary{shapes,arrows}
+%\usetikzlibrary{positioning}
+\usepackage{graphicx}
+\usepackage{multirow}
+%\usepackage{multicol}
+%\usepackage{colortbl}
+\definecolor{kugray5}{RGB}{224,224,224}
+\definecolor{Gray}{gray}{0.9}
+
+%\usepackage{todonotes}	
+\newcounter{todocounter}
+\newcommand{\todonum}[2][]
+{\stepcounter{todocounter}\todo[inline,backgroundcolor=blue!10!white, #1]{\thetodocounter: #2}}
+
+%% Zeilenabstand %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{setspace}
+%\singlespacing        %% 1-zeilig (Standard)
+%\onehalfspacing       %% 1,5-zeilig
+%\doublespacing        %% 2-zeilig
+
+
+%% Andere Packages %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\usepackage{a4wide} %%Kleinere Seitenränder = mehr Text pro Zeile.
+\usepackage{fancyhdr} %%Fancy Kopf- und Fußzeilen
+%\usepackage{longtable} %%Für Tabellen, die eine Seite überschreiten
+\usepackage{lscape}
+\usepackage{rotating} 
+%\usepackage[htt]{hyphenat} %Trennung von Typewriter-Schriften
+%\usepackage{listings}
+%\usepackage{pstricks-add} --> This package generates problems with booktabs (toprule, etc.)
+
+
+% Tabellen mit Center und left
+\usepackage{tabularx,colortbl} % colored table background
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
+% Table spacings
+\newcommand\T{\rule{0pt}{2.5ex}\rule[-1.0ex]{0pt}{0pt}}
+\newcommand\B{\rule[-1.0ex]{0pt}{0pt}}
+
+\definecolor{slightgray}{gray}{.90} 
+
+
+%% Definitionen %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%% zur Benutzung bei ergänzenden Daten%%%%%%%%%%%%%%%%%%%%%%%%
+%\usepackage{endnotes}											
+%\renewcommand{\notesname}{Konfigurationsdaten der Messreihen}
+%\renewcommand{\theendnote}{\Alph{endnote}}
+%\renewcommand{\enotesize}{\normalsize}
+
+%\hyphenation{Sensor-netz-werk}
+\graphicspath{
+{./figures/03_distributedChannelAllocation/}
+{./figures/04_clutering/}
+{./figures/05_routing/}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PERSONAL PACKAGES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}
+\newtheorem{lemma}{Lemma}
+\newtheorem{mydef}{Definition}
+
+\newcommand{\eg}{e.$\,$g.,}
+\newcommand{\ie}{i.e., }
+\usepackage[linesnumbered,ruled,vlined]{algorithm2e}
+%\usepackage{algorithmic}
+\usepackage{times}
+%\usepackage{mathptmx}
+\usepackage{mathtools}
+\usepackage[draft,nomargin,marginclue,footnote,silent]{fixme}
+%\usepackage[titletoc,title]{appendix}
+\usepackage[titletoc]{appendix}
+\makeatletter
+\renewcommand\backmatter{
+    \def\chaptermark##1{\markboth{%
+        \ifnum  \c@secnumdepth > \m@ne  \@chapapp\ \thechapter:  \fi  ##1}{%
+        \ifnum  \c@secnumdepth > \m@ne  \@chapapp\ \thechapter:  \fi  ##1}}%
+    \def\sectionmark##1{\relax}}
+\makeatother
+\usepackage{comment}
+\newcommand{\Tau}{\mathrm{T}}
+\usepackage[colorinlistoftodos]{todonotes}
+\DeclareMathOperator*{\Max}{Max}
+
+\newcommand{\bigO}{\ensuremath{\mathcal{O}}}% big-O notation/symbol
+\RequirePackage{filecontents}        % loading package filecontents, math symbols in Bibtex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% DOKUMENT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+%% Dateiendungen für Grafiken %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ==> Sie können hiermit die Dateiendung einer Grafik weglassen.
+%% ==> Aus "\includegraphics{titel.eps}" wird "\includegraphics{titel}".
+%% ==> Wenn Sie nunmehr 2 inhaltsgleiche Grafiken "titel.eps" und
+%% ==> "titel.pdf" erstellen, wird jeweils nur die Grafik eingebunden,
+%% ==> die von ihrem Compiler verarbeitet werden kann.
+%% ==> pdfLaTeX benutzt "titel.pdf". LaTeX benutzt "titel.eps".
+%\ifpdf
+%    \DeclareGraphicsExtensions{.pdf,.jpg,.png}
+%\else
+%    \DeclareGraphicsExtensions{.eps}
+%\fi
+
+\pagestyle{empty} %%Keine Kopf-/Fusszeilen auf den ersten Seiten.
+
+\ifnotdraft{
+%% Deckblatt %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frontmatter
+\renewcommand{\familydefault}{\sfdefault}
+\include{backmatter/00_title}
+\cleardoublepage
+\include{backmatter/00_statement}
+\cleardoublepage
+\include{backmatter/00_abstract}
+\cleardoublepage
+\include{backmatter/00_acknowledgments}
+\cleardoublepage
+
+%% Inhaltsverzeichnis %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\tableofcontents %Inhaltsverzeichnis
+\cleardoublepage %Das erste Kapitel soll auf einer ungeraden Seite beginnen.
+} % end ifnotdraft
+
+\pagestyle{fancy} %%Ab hier die Kopf-/Fusszeilen: headings / fancy / ...
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% einzelne Kapitel
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\include{commands}
+
+\mainmatter
+\include{chapters/01_introduction}
+\include{chapters/02_background}
+\include{chapters/03_distributedChannelAllocation}
+\include{chapters/04_clutering}
+\include{chapters/05_routing}
+\include{chapters/06_conclusion}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% LITERATUR UND ANDERE VERZEICHNISSE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Ein kleiner Abstand zu den Kapiteln im Inhaltsverzeichnis (toc)
+\ifnotdraft{
+\addtocontents{toc}{\protect\vspace*{\baselineskip}}
+\cleardoublepage
+%% Literaturverzeichnis
+\phantomsection % phantomsection wird benötigt, damit z.B. hyperref die richtige Seite verlinkt.
+\addcontentsline{toc}{chapter}{Bibliography}
+%\nocite{*}								%Auch nicht-zitierte BibTeX-Einträge werden angezeigt.
+\bibliography{./backmatter/myrefs}				%Eine Datei 'literatur.bib' wird hierfür benötigt.
+\bibliographystyle{styles/acmurl}		 			%Art der Ausgabe: plain / apalike / amsalpha / ...
+}
+
+%% Abbildungsverzeichnis
+\clearpage
+\addcontentsline{toc}{chapter}{List of Figures}
+\listoffigures
+
+%% Tabellenverzeichnis
+\clearpage
+\addcontentsline{toc}{chapter}{List of Tables}
+\listoftables
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ANHÄNGE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\appendix
+%\input{chapters/99_appendix}
+
+\end{document}

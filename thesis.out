@@ -1,0 +1,107 @@
+\BOOKMARK [0][]{Doc-Start}{Abstract}{}% 1
+\BOOKMARK [0][]{Contents.0}{Contents}{}% 2
+\BOOKMARK [0][]{chapter.1}{1 Introduction}{}% 3
+\BOOKMARK [1][-]{section.1.1}{1.1 Cognitive Radio}{chapter.1}% 4
+\BOOKMARK [2][-]{subsection.1.1.1}{1.1.1 Spectrum Access Etiquette in Cognitive Radio Network}{section.1.1}% 5
+\BOOKMARK [2][-]{subsection.1.1.2}{1.1.2 Spectrum Decision}{section.1.1}% 6
+\BOOKMARK [1][-]{section.1.2}{1.2 Cognitive Radio Network}{chapter.1}% 7
+\BOOKMARK [2][-]{subsection.1.2.1}{1.2.1 Cognitive Radio Ad hoc Network}{section.1.2}% 8
+\BOOKMARK [2][-]{subsection.1.2.2}{1.2.2 IEEE 802.22 standards}{section.1.2}% 9
+\BOOKMARK [1][-]{section.1.3}{1.3 Channel Allocation in TV White Space}{chapter.1}% 10
+\BOOKMARK [2][-]{subsection.1.3.1}{1.3.1 Wireless Channel Allocation}{section.1.3}% 11
+\BOOKMARK [2][-]{subsection.1.3.2}{1.3.2 Utilize TV White Space}{section.1.3}% 12
+\BOOKMARK [1][-]{section.1.4}{1.4 Clustering in Cognitive Radio Network}{chapter.1}% 13
+\BOOKMARK [1][-]{section.1.5}{1.5 Geographic Routing in CRN}{chapter.1}% 14
+\BOOKMARK [0][]{chapter.2}{2 Background}{}% 15
+\BOOKMARK [1][-]{section.2.1}{2.1 Centralized and Distributed Algorithms in CRN}{chapter.2}% 16
+\BOOKMARK [1][-]{section.2.2}{2.2 Algorithmic Game Theory}{chapter.2}% 17
+\BOOKMARK [2][-]{subsection.2.2.1}{2.2.1 Basics of Game Theory}{section.2.2}% 18
+\BOOKMARK [3][-]{subsubsection.2.2.1.1}{2.2.1.1 Strategic Game}{subsection.2.2.1}% 19
+\BOOKMARK [3][-]{subsubsection.2.2.1.2}{2.2.1.2 Nash Equilibrium}{subsection.2.2.1}% 20
+\BOOKMARK [3][-]{subsubsection.2.2.1.3}{2.2.1.3 Potential Game}{subsection.2.2.1}% 21
+\BOOKMARK [2][-]{subsection.2.2.2}{2.2.2 Congestion Game}{section.2.2}% 22
+\BOOKMARK [0][]{chapter.3}{3 DISTRIBUTED CHANNEL AND POWER ALLOCATION IEEE 802.22 NETWORK}{}% 23
+\BOOKMARK [1][-]{section.3.1}{3.1 INTRODUCTION}{chapter.3}% 24
+\BOOKMARK [1][-]{section.3.2}{3.2 System Model and Problem Statement}{chapter.3}% 25
+\BOOKMARK [2][-]{subsection.3.2.1}{3.2.1 QuasiSINR: the considered SINR on terminals}{section.3.2}% 26
+\BOOKMARK [2][-]{subsection.3.2.2}{3.2.2 Problem Statement}{section.3.2}% 27
+\BOOKMARK [1][-]{section.3.3}{3.3 Related Work}{chapter.3}% 28
+\BOOKMARK [1][-]{section.3.4}{3.4 Problem Decomposition and Corresponding Related Works}{chapter.3}% 29
+\BOOKMARK [2][-]{subsection.3.4.1}{3.4.1 Maximal transmission power planning}{section.3.4}% 30
+\BOOKMARK [2][-]{subsection.3.4.2}{3.4.2 Channel allocation with fixed transmission power level}{section.3.4}% 31
+\BOOKMARK [2][-]{subsection.3.4.3}{3.4.3 Power allocation}{section.3.4}% 32
+\BOOKMARK [1][-]{section.3.5}{3.5 The Maximal Permitted Transmission Power}{chapter.3}% 33
+\BOOKMARK [1][-]{section.3.6}{3.6 Channel Allocation with Fixed Transmission Power}{chapter.3}% 34
+\BOOKMARK [2][-]{subsection.3.6.1}{3.6.1 Centralized optimization programming}{section.3.6}% 35
+\BOOKMARK [2][-]{subsection.3.6.2}{3.6.2 Distributed White space channel allocation technology \(WitheCat\): algorithm and protocol}{section.3.6}% 36
+\BOOKMARK [2][-]{subsection.3.6.3}{3.6.3 Analysis in game theoretical framework}{section.3.6}% 37
+\BOOKMARK [3][-]{subsubsection.3.6.3.1}{3.6.3.1 Bridging the game and practical scheme}{subsection.3.6.3}% 38
+\BOOKMARK [3][-]{subsubsection.3.6.3.2}{3.6.3.2 Difference between equilibrium and the aimed variable}{subsection.3.6.3}% 39
+\BOOKMARK [2][-]{subsection.3.6.4}{3.6.4 Variable transmission power after channel allocation}{section.3.6}% 40
+\BOOKMARK [2][-]{subsection.3.6.5}{3.6.5 Communication overhead of Dicaps in the phase of channel allocation}{section.3.6}% 41
+\BOOKMARK [1][-]{section.3.7}{3.7 Joint Channel and Power Allocation}{chapter.3}% 42
+\BOOKMARK [2][-]{subsection.3.7.1}{3.7.1 Centralized optimization}{section.3.7}% 43
+\BOOKMARK [2][-]{subsection.3.7.2}{3.7.2 Distributed scheme}{section.3.7}% 44
+\BOOKMARK [1][-]{section.3.8}{3.8 Performance Evaluation}{chapter.3}% 45
+\BOOKMARK [2][-]{subsection.3.8.1}{3.8.1 Performance of maximal permitted power decision and the channel allocation schemes}{section.3.8}% 46
+\BOOKMARK [3][-]{subsubsection.3.8.1.1}{3.8.1.1 Comparison of formulations to determine the maximal permitted power}{subsection.3.8.1}% 47
+\BOOKMARK [3][-]{subsubsection.3.8.1.2}{3.8.1.2 Comparison among channel allocation schemes }{subsection.3.8.1}% 48
+\BOOKMARK [3][-]{subsubsection.3.8.1.3}{3.8.1.3 Analysis on convergence process}{subsection.3.8.1}% 49
+\BOOKMARK [3][-]{subsubsection.3.8.1.4}{3.8.1.4 Stability of SINR in the process of channel allocation}{subsection.3.8.1}% 50
+\BOOKMARK [2][-]{subsection.3.8.2}{3.8.2 Performance of joint power and channel allocation: cascaded distributed schemes vs. joint distributed/centralized schemes}{section.3.8}% 51
+\BOOKMARK [1][-]{section.3.9}{3.9 Conclusion}{chapter.3}% 52
+\BOOKMARK [0][]{.1.A}{ A Proof of Theorem 3.6.1}{}% 53
+\BOOKMARK [0][]{.1.B}{ B Deviation of Problem 3.7}{}% 54
+\BOOKMARK [0][]{chapter.4}{4 Robust Clustering of Ad-hoc Cognitive Radio Networks}{}% 55
+\BOOKMARK [1][-]{section.4.1}{4.1 Introduction}{chapter.4}% 56
+\BOOKMARK [1][-]{section.4.2}{4.2 Related Work}{chapter.4}% 57
+\BOOKMARK [1][-]{section.4.3}{4.3 System Model}{chapter.4}% 58
+\BOOKMARK [1][-]{section.4.4}{4.4 Distributed Coordination Framework: Clustering Algorithm}{chapter.4}% 59
+\BOOKMARK [2][-]{subsection.4.4.1}{4.4.1 Phase I - Cluster Formation}{section.4.4}% 60
+\BOOKMARK [3][-]{subsubsection.4.4.1.1}{4.4.1.1 Determining Cluster Heads}{subsection.4.4.1}% 61
+\BOOKMARK [3][-]{subsubsection.4.4.1.2}{4.4.1.2 Initial Cluster Formation}{subsection.4.4.1}% 62
+\BOOKMARK [3][-]{subsubsection.4.4.1.3}{4.4.1.3 Cluster Size Control in Dense CRN}{subsection.4.4.1}% 63
+\BOOKMARK [2][-]{subsection.4.4.2}{4.4.2 Phase II - Membership Clarification}{section.4.4}% 64
+\BOOKMARK [3][-]{subsubsection.4.4.2.1}{4.4.2.1 Problem Description}{subsection.4.4.2}% 65
+\BOOKMARK [3][-]{subsubsection.4.4.2.2}{4.4.2.2 Distributed Greedy Algorithm \(DGA\)}{subsection.4.4.2}% 66
+\BOOKMARK [3][-]{subsubsection.4.4.2.3}{4.4.2.3 Convergence of DGA}{subsection.4.4.2}% 67
+\BOOKMARK [3][-]{subsubsection.4.4.2.4}{4.4.2.4 Distributed Fast Algorithm \(DFA\)}{subsection.4.4.2}% 68
+\BOOKMARK [1][-]{section.4.5}{4.5 Centralized Clustering Scheme}{chapter.4}% 69
+\BOOKMARK [2][-]{subsection.4.5.1}{4.5.1 The Optimization Problem}{section.4.5}% 70
+\BOOKMARK [1][-]{section.4.6}{4.6 Performance Evaluation}{chapter.4}% 71
+\BOOKMARK [2][-]{subsection.4.6.1}{4.6.1 Centralized Schemes vs. Decentralized Schemes}{section.4.6}% 72
+\BOOKMARK [3][-]{subsubsection.4.6.1.1}{4.6.1.1 Number of Common Channels}{subsection.4.6.1}% 73
+\BOOKMARK [3][-]{subsubsection.4.6.1.2}{4.6.1.2 Survival Rate of Clusters with Increasing PR Users}{subsection.4.6.1}% 74
+\BOOKMARK [3][-]{subsubsection.4.6.1.3}{4.6.1.3 Cluster Size Control}{subsection.4.6.1}% 75
+\BOOKMARK [3][-]{subsubsection.4.6.1.4}{4.6.1.4 Control Signalling Overhead}{subsection.4.6.1}% 76
+\BOOKMARK [2][-]{subsection.4.6.2}{4.6.2 Comparison between Distributed Schemes}{section.4.6}% 77
+\BOOKMARK [3][-]{subsubsection.4.6.2.1}{4.6.2.1 Number of CCC per Non-singleton Clusters}{subsection.4.6.2}% 78
+\BOOKMARK [3][-]{subsubsection.4.6.2.2}{4.6.2.2 Survival Rate of Clusters with Increasing PR Users}{subsection.4.6.2}% 79
+\BOOKMARK [3][-]{subsubsection.4.6.2.3}{4.6.2.3 Cluster Size Control}{subsection.4.6.2}% 80
+\BOOKMARK [1][-]{section.4.7}{4.7 Conclusions and Future Work}{chapter.4}% 81
+\BOOKMARK [0][]{chapter.5}{5 Spectrum Aware Virtual Coordinates Assignment and Routing in Multihop Cognitive Radio Network}{}% 82
+\BOOKMARK [1][-]{section.5.1}{5.1 Introduction}{chapter.5}% 83
+\BOOKMARK [1][-]{section.5.2}{5.2 RELATED WORK}{chapter.5}% 84
+\BOOKMARK [1][-]{section.5.3}{5.3 SYSTEM MODEL}{chapter.5}% 85
+\BOOKMARK [1][-]{section.5.4}{5.4 Spectrum Aware Virtual Coordinates}{chapter.5}% 86
+\BOOKMARK [2][-]{subsection.5.4.1}{5.4.1 Assign Spectrum Aware Virtual Coordinate}{section.5.4}% 87
+\BOOKMARK [2][-]{subsection.5.4.2}{5.4.2 Normalized Spectrum Availability on Secondary User}{section.5.4}% 88
+\BOOKMARK [3][-]{subsubsection.5.4.2.1}{5.4.2.1 Single licensed channel}{subsection.5.4.2}% 89
+\BOOKMARK [3][-]{subsubsection.5.4.2.2}{5.4.2.2 Multiple licensed channels}{subsection.5.4.2}% 90
+\BOOKMARK [2][-]{subsection.5.4.3}{5.4.3 Normalized Longest Blocking Time on Secondary Users}{section.5.4}% 91
+\BOOKMARK [3][-]{subsubsection.5.4.3.1}{5.4.3.1 Single licensed channel}{subsection.5.4.3}% 92
+\BOOKMARK [3][-]{subsubsection.5.4.3.2}{5.4.3.2 Multiple licensed channels}{subsection.5.4.3}% 93
+\BOOKMARK [1][-]{section.5.5}{5.5 Geographic Routing and Opportunistic Spectrum Access}{chapter.5}% 94
+\BOOKMARK [1][-]{section.5.6}{5.6 Performance Evaluation}{chapter.5}% 95
+\BOOKMARK [2][-]{subsection.5.6.1}{5.6.1 Simulation Setup}{section.5.6}% 96
+\BOOKMARK [3][-]{subsubsection.5.6.1.1}{5.6.1.1 Primary Users}{subsection.5.6.1}% 97
+\BOOKMARK [3][-]{subsubsection.5.6.1.2}{5.6.1.2 Parameter Setting}{subsection.5.6.1}% 98
+\BOOKMARK [2][-]{subsection.5.6.2}{5.6.2 Success Rate of Geographic Routing on Finding Path}{section.5.6}% 99
+\BOOKMARK [2][-]{subsection.5.6.3}{5.6.3 Routing Performance}{section.5.6}% 100
+\BOOKMARK [3][-]{subsubsection.5.6.3.1}{5.6.3.1 Spectrum Availability Based Virtual Coordinate}{subsection.5.6.3}% 101
+\BOOKMARK [3][-]{subsubsection.5.6.3.2}{5.6.3.2 Longest Blocking time Based Virtual Coordinate}{subsection.5.6.3}% 102
+\BOOKMARK [1][-]{section.5.7}{5.7 CONCLUSION}{chapter.5}% 103
+\BOOKMARK [0][]{chapter.6}{6 Conclusion}{}% 104
+\BOOKMARK [0][]{section*.9}{Bibliography}{}% 105
+\BOOKMARK [0][]{section*.9}{List of Figures}{}% 106
+\BOOKMARK [0][]{section*.9}{List of Tables}{}% 107

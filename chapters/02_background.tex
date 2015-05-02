@@ -1,0 +1,161 @@
+\chapter{Background}
+
+In this chapter, the mathematical tool which is used in thesis is introduced.
+
+\section{Centralized and Distributed Algorithms in CRN}
+\label{centralized_distributed}
+There is a considerable line of centralized approaches proposed for problems in wireless networks, which studies the fundamental computational problems and usually produce global optimal, but centralized solution is not suitable in many real world situations.
+Firstly of all, there exists no central authority or controller in many wireless networks to run algorithm for certain functionality.
+Even there exists such centralized decision maker in wireless network, it is costly to collect necessary information from the network and later tells each user what to do.
+As to cognitive radio network, centralized algorithm further requires the spectrum sensing results from CR users.
+When the licensed users change their operation state frequently, centralized decision maker obtaining the updated sensing results from CR users imposes a great burden on the network.
+In some scenarios, \eg the primary users are TV stations which work on certain channels for hours of time, centralized controller obtains spectrum availability in the network from licensed users directly.
+In these scenarios, it is possible that the centralized controller is only responsible to protect the licensed users from interference, and doesn't control secondary users which may belong to different business groups.
+Thus in wireless network and particularly cognitive radio network, each user ideally makes decision itself with local information, \ie the information within its one or two hop neighborhood.
+
+%Without infrastructure support, it is hard for CR user to get complete and up to date picture of the spectrum availability in the whole network.
+%Thus distributed solutions are preferred in such varying radio environment.
+%Distributed decision of one CR user should be carefully decided as one CR's behaviour affects neighbouring CR users which go on to prompt all the CR users in the network to act accordingly.
+
+Distributed decision of one CR user should be carefully decided as one CR's behaviour affects neighbouring CR users which go on to prompt all the CR users in the network to act accordingly.
+In this thesis, the interaction between CR users will be discussed under game theoretic framework.
+
+%because it is costly to retrieve necessary information from the network to the controller, which includes the spectrum information on each CR users and the network topology. Besides, when the solution is sent back to the CR users, the network state may have changed and be different from the time when the information is collected.
+
+%This is due to the operation of primary users, which is usually not known by secondary users.
+%The distinctive view on spectrum availability and varying radio environment make distributed solution a natural choice for CRN network.
+
+%
+
+
+%\todo[inline]{one table showing difference on network structure, complexity, performance}
+
+
+\section{Algorithmic Game Theory}
+
+Game theory is a mathematical tool for analysing the interaction of decision makers which have conflicting objectives.
+Game theory has been a tool to examine and analyse the actions of economic agents since long time ago.
+In recent years, game theory attracts people attention into apply it in communication systems.
+
+According to~\cite{game_for_communication_01}, there are several reasons to apply game theory in communication systems.
+\begin{itemize}
+\item Communication equipments are supposed to be manufactured and operate based on standards to fulfil certain functions, but selfish behaviour may appear on certain individual equipments to achieve advantages over their peers.
+
+For instance, Wi-Fi equipments are manufactured complying the IEEE 802.11 standards.
+But it is possible that certain manufacturers or the personal who uses the Wi-Fi system (we use station in the following) manipulate certain parameters to achieve performance advantage over other stations in the network.
+When all the stations in one network are supposed to run distributed coordination function (DCF), \ie the station must wait a random period of time (contention window) before accessing the media when it senses the media to be busy, a certain selfish station may not choose to wait and is keen on sensing media.
+The selfish behaviour causes more collisions for other stations, and possibly results in poor performance in the network.
+%In this case, the access point finds more packets coming from that selfish user, but is unaware of its selfishness and has no means to adjust or punish this selfish user.
+In this case, game theory facilitates the network operator to issue rules to make the selfish behaviour unprofitable, or it helps to analyse how much the impact caused by the selfish stations.
+% can tell the access point or network operator the impact caused by the selfish systems, and possibly 
+
+\item Algorithms can be retrieved from the analysis of a problem under the game theoretical framework.
+In the same example of media access in IEEE 802.11 DCF mentioned in previous item, if stations are allowed to modify the length of contention window, each station will adjust its contention window to obtain the best performance.
+\cite{contentiongame_07} shows as long as each station greedily updates its CW to maximize certain utility, after certain time it will stop to do so as the current CW is the best as to the performance.
+In the case, the best response becomes a algorithm for Wi-Fi systems.
+%They interact with each other and update their contention windows, when they reach Nash Equilibrium state, no system has motivation to change its contention window any more.
+
+
+%For example, every internet equipment embeds TCP/IP protocol based a series of Request for Comments (RFC) documents, but it is possible that some manufacturers or people who use them may modify or reconfigure the , so that their equipments work selfishly to seek performance advantage over other equipments.
+\item Game theory assumes the research objectives to be rational.
+In communication system, a device is programmed to maximize or minimize the expected utility, which is perfectly rational.
+
+\item Game theory is naturally suitable for designing distributed solutions.
+As discussed in section~\ref{centralized_distributed}, distributed solutions doesn't rely on centralized controller, and each user in the network adopts certain action as response to the other users or environment, this falls in the scope of game theory.
+\end{itemize}
+
+As an important tool in studying, modelling, and analysing the interactions, game theory also abstracts plenty of attentions in CRN~\cite{Neel06analysisand, Wang_gtc_crn_survey_2010}.
+In the following section, we give a brief introduction to game theory and particularly congestion game which is used in our thesis. 
+
+%\todo[inline]{expand: Introduction of game theory...}
+\subsection{Basics of Game Theory}
+
+We briefly list the important concepts of algorithm game theory here, many of which are referred from ~\cite{agt_book}.
+
+
+\subsubsection{Strategic Game}
+
+A strategic game can be represented as a tuple $\Gamma = (\mathcal{N}, (\sum_i)_{i \in \mathcal{N}}, (u_i)_{i\in \mathcal{N}})$, where $\mathcal{N}$ is a finite set of players, $\sum_i$ is player $i$' finite strategies.
+Player $i$ selects one strategy $s_i\in \sum_i$ at one time to play the game.
+$u_i:\sqcap_{i\in \mathcal{N}}\sum_i\rightarrow \mathbb{R} $ is the utility function of player $i$.
+
+Some relevant common used items are introduced.
+$\sum=\sqcap_{i\in \mathcal{N}}\sum_i$ is the set of states of the game, which denotes all the possible ways that players pick strategies.
+$\sum_{-i}=\sqcap_{i\in \mathcal{N}\setminus \{i\}}\sum_i$ is the set of states of all the other players except for player $i$.
+$\sigma=(s_i,\cdots,s_n)$ is called one profile, which is used to denote the vector of strategies selected by the players.
+Strategies of opponents of player $i$ is expressed as $s_{-i}$, and a profile can be shown as $\sigma=\{s_i, s_{-i}\}$.
+$u_i(\sigma) = u_i(s_i, s_{-i})$ is the player $i$' utility.
+
+\subsubsection{Nash Equilibrium}
+
+A strategy profile $s\in S$ is a Nash Equilibrium (NE) if for any player $i$ and each alternate strategy $s_i'$, there is
+ \[ u_i(s_i, s_{-i}) \geq u_i(s_i', s_{-i})\]
+which means no unilateral deviation in strategy by any single player is profitable for that player.
+
+
+There exists other equilibrium conceptions. \ie Pareto Equilibrium (PE). 
+Pareto Equilibrium is a subset of NE, PE is an action profile $\bar{s}$ such that there does not exist profile $s$ with $u_i(s)\leq u_i(\bar{s})$ for each $i\in N$, and meanwhile $u_i(s)< u_i(\bar{s})$ for at least one $i\in N$.
+PE is the necessary condition of the global optimality and accordingly is more favoured, but its application in communication system is much less than NE because it is not easy to obtain PE.
+
+Nash equilibrium is a conceptual tool and a prediction about the rational strategic behaviour by agents in situations of conflict, hence, it carries great importance to know how much computational effort needed to compute NE.
+Unlucky, the computation of NE is usually a combinatorial optimization problem (chapter 2)~\cite{}.
+ but in some special cases, 
+
+
+\subsubsection{Potential Game}
+
+A potential game is a tuple $\lambda=(\mathcal{N},(\sum_i)_{i \in \mathcal{N}},(u_i)_{i\in \mathcal{N}})$, which satisfies the following, if there exists a function $\phi: \sum\rightarrow \mathbb{R}$, such that for every $i\in \mathcal{N}$, for every $s_{-i}\in \sum_{-i}$, and every $s_i, s_i'\in \sum_i$:
+ \[ u_i(s_i, s_{-i})-u_i(s_i', s_{-i}) = \phi_i(s_i, s_{-i})-\phi_i(s_i', s_{-i})\]
+It is easy to see that the design of function $\phi$ is the key point to form a potential game.
+
+
+
+\subsection{Congestion Game}
+Congestion game is a special type of potential game, which has extra conditions, but also yield favourable characteristics.
+Congestion game is an attractive game model which describes one kind of problem where nodes compete for limited resources in a non-cooperative manner~\cite{Voecking06congestiongames}.
+%In congestion game, player pays for the resources it occupies.
+%Particularly, the payment for one resource is monotonically increasing with the \textit{number} of players occupying that resource, and each player tries to minimize its payment~\footnote{Another way to describe congestion game: player gets benefit by using a certain resource, the benefit is monotonically decreasing with the number of players on that resource, each player tries to maximize its welfare}. 
+This game formulates many problems in realistic world, \eg minimisation of commuting time on the road for commuters, minimization of energy consumption in mobile cloud computing system~\cite{game_cloudcomputing_energy12}.
+
+Before giving the definition, we introduce an exemplary congestion game called \textit{server matching}.
+Consider a couple of self-interested clients and servers.
+Each client should access one server.
+The latency of one server increases with the \textit{number of clients} attached to it.
+If these clients greedily choose a permissible server because of smaller predicted latency, then after finite number of switches, no client has motivation to switch any more.
+%
+More formally, a congestion game is composed of players (the self-interested clients) and resources (servers), where players are allowed to choose certain resources to use. There is cost (latency) generated on a resource for the player whenever the player uses that resource, and the cost is monotonic increasing with the number of players using it. 
+If every player greedily searches the allowed resources to decrease its cost, the dynamics will cease a stable state called \emph{Nash Equilibrium} (NE), where no player has motivation to adopt a new set of resources unilaterally. 
+An important aspect of this convergence is a value called \textit{potential} which monotonically decreases with the update of players in the convergence process.
+
+Now we give the formal definition of congestion game.
+
+
+A congestion game \cite{Rosenthal}\cite{Voecking06congestiongames} can be expressed by a tuple $\lambda=(\mathcal{N},\mathcal{R},(\sum_i)_{i \in \mathcal{N}},(g_r)_{r\in \mathcal{R}})$, where $\mathcal{N}=\left\{1,\ldots,N\right\}$ denotes the set of players (each each is labeled with a unique index number), $\mathcal{R}=\left\{1,\ldots,m\right\}$ the set of resources, $\Sigma_{i\in\mathcal{N}} \subseteq 2^{\mathcal{R}}$ is the strategy space of player $i$. 
+Under strategy profile $\sigma=(\sigma_1,\sigma_2,\cdots \sigma_N)$, player $i$ chooses strategy $\sigma_i\in \Sigma_i$, and the total number of users using resource $r$ is $n_r(\sigma)=|\{i\mid r\in \sigma_i\}|$. 
+The cost $g_r: \mathbb{N}\rightarrow \mathbb{Z}$ is a function of the number of users for resource $r$, $g_r^i=\sum_{r\in \sigma_i} g_r(n_r(\sigma))$. 
+In our paper, $g_r^i$ is referred as \textit{congestion} and is Monotonic.
+
+Rosenthal's potential function $\phi:\sigma_1\times\sigma_2\times\cdots\times\sigma_n\rightarrow Z$ is defined as:
+\begin{equation}
+\label{4}
+\begin{split}
+G(\sigma) 
+& =\sum\limits^{}_{r\in \mathcal{R}} \sum\limits^{n_r(\sigma)}_{i=1} g_r(i)\\
+& =\sum\limits_{i\in \mathcal{N}} \sum\limits^{}_{r\in \sigma_i} g_r(n_r^i(\sigma))\\
+\end{split}
+\end{equation}
+$n_r^i(\sigma)$ means the number of players using resource $r$ and \textit{their indices are smaller than or equal to $i$}. 
+Note that the potential is \textit{not} the sum of congestions experienced by every user. 
+The change of the potential caused by one player's unilateral move from $\sigma$ to $\sigma'$ is equivalent to the change of gain (or loss) of that player.
+\begin{equation}
+\label{5}
+\varDelta G(\sigma_i \rightarrow \sigma_i') = g^i(\sigma_i',\sigma_{-i}) - g^i(\sigma_i,\sigma_{-i})
+\end{equation}
+$\sigma_{-i}$ is the strategy profile for all players except for $i$.
+As every congestion game is a potential game, and the total potential is finite, thus the number of improvements is upper-bounded by $2\cdot\sum\limits^{}_{r\in \mathcal{R}} \sum\limits^{n_r(\sigma)}_{i=1} g_r(i)$ \cite{Voecking06congestiongames}.
+
+%\section{Application of congestion game in the design of decentralised algorithm}
+%\todo[inline]{expand: the application of potential game in CRN}
+
+
+

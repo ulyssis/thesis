@@ -1,0 +1,208 @@
+\relax 
+\citation{commag-Khalife08}
+\citation{SenseLess2011}
+\citation{Wellens200910}
+\citation{Abbagnale_Gymkhana10}
+\citation{caodv-10wd}
+\citation{segment-crowncom08}
+\citation{Routing-crn-INFOCOM11}
+\citation{routing-crn-icc11}
+\citation{routing-crn-jsac12}
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Spectrum Aware Virtual Coordinates Assignment and Routing in Multihop Cognitive Radio Network}{63}{chapter.5}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{loa}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {5.1}Introduction}{63}{section.5.1}}
+\newlabel{introduction}{{5.1}{63}{Introduction\relax }{section.5.1}{}}
+\citation{Alizai_11_probabilisticAddressing}
+\citation{gpsfree05infocom}
+\citation{Abbagnale_Gymkhana10}
+\citation{centralized_routing_07dyspan}
+\citation{caodv-10wd}
+\citation{segment-crowncom08}
+\citation{search_geo_routing_chowdhury}
+\@writefile{toc}{\contentsline {section}{\numberline {5.2}RELATED WORK}{64}{section.5.2}}
+\citation{routing-crn-icc11}
+\citation{routing-crn-jsac12}
+\citation{delay-cogwsn-2014}
+\citation{commag-Khalife08}
+\citation{spectrumDecision_2013mass}
+\@writefile{toc}{\contentsline {section}{\numberline {5.3}SYSTEM MODEL}{65}{section.5.3}}
+\citation{gpsfree05infocom}
+\citation{Nagpal_2003}
+\citation{gpsfree05infocom}
+\citation{Alizai_11_probabilisticAddressing}
+\citation{gpsfree05infocom}
+\citation{Alizai_11_probabilisticAddressing}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces Sensing duration $T_s$ and sensing period $T_p$\relax }}{66}{figure.5.1}}
+\newlabel{fig:sensing_period}{{5.1}{66}{Sensing duration $T_s$ and sensing period $T_p$\relax \relax }{figure.5.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces Left: nodes with physical locations, Right: nodes with doublet virtual coordinate, each virtual coordinate is the number of hops away from corresponding anchor. Connecting lines denote the communication is possible.\relax }}{66}{figure.5.2}}
+\newlabel{fig:vc_intro}{{5.2}{66}{Left: nodes with physical locations, Right: nodes with doublet virtual coordinate, each virtual coordinate is the number of hops away from corresponding anchor. Connecting lines denote the communication is possible.\relax \relax }{figure.5.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.4}Spectrum Aware Virtual Coordinates}{66}{section.5.4}}
+\citation{gpsfree05infocom}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.3}{\ignorespaces A network under primary users' influence assigned with SAViC, only anchor 1 is involved. Flooding of anchor messages is not shown.\relax }}{67}{figure.5.3}}
+\newlabel{fig:SA-VCapidea}{{5.3}{67}{A network under primary users' influence assigned with SAViC, only anchor 1 is involved. Flooding of anchor messages is not shown.\relax \relax }{figure.5.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4.1}Assign Spectrum Aware Virtual Coordinate}{67}{subsection.5.4.1}}
+\@writefile{loa}{\contentsline {algocf}{\numberline {5}{\ignorespaces Secondary user $i$ obtains $VC_i$ with respect to anchor, $\lambda _i$ is normalized spectrum availability on $i$\relax }}{68}{algocf.5}}
+\newlabel{algo:receiveAnchorMessage}{{5}{68}{Assign Spectrum Aware Virtual Coordinate\relax }{algocf.5}{}}
+\newlabel{InRes1}{{2}{68}{Assign Spectrum Aware Virtual Coordinate\relax }{AlgoLine.5.2}{}}
+\newlabel{InRes2}{{4}{68}{Assign Spectrum Aware Virtual Coordinate\relax }{AlgoLine.5.4}{}}
+\newlabel{InRes4}{{6}{68}{Assign Spectrum Aware Virtual Coordinate\relax }{AlgoLine.5.6}{}}
+\newlabel{InRes5}{{8}{68}{Assign Spectrum Aware Virtual Coordinate\relax }{AlgoLine.5.8}{}}
+\newlabel{InRes6}{{11}{68}{Assign Spectrum Aware Virtual Coordinate\relax }{AlgoLine.5.11}{}}
+\newlabel{InRes7}{{13}{68}{Assign Spectrum Aware Virtual Coordinate\relax }{AlgoLine.5.13}{}}
+\newlabel{InRes8}{{15}{68}{Assign Spectrum Aware Virtual Coordinate\relax }{AlgoLine.5.15}{}}
+\newlabel{InRes1}{{18}{68}{Assign Spectrum Aware Virtual Coordinate\relax }{AlgoLine.5.18}{}}
+\newlabel{InRes9}{{22}{68}{Assign Spectrum Aware Virtual Coordinate\relax }{AlgoLine.5.22}{}}
+\newlabel{InRes10}{{24}{68}{Assign Spectrum Aware Virtual Coordinate\relax }{AlgoLine.5.24}{}}
+\newlabel{InRes11}{{26}{68}{Assign Spectrum Aware Virtual Coordinate\relax }{AlgoLine.5.26}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4.2}Normalized Spectrum Availability on Secondary User}{69}{subsection.5.4.2}}
+\newlabel{CA-VC-likelihood}{{5.4.2}{69}{Normalized Spectrum Availability on Secondary User\relax }{subsection.5.4.2}{}}
+\newlabel{gamma}{{5.1}{69}{Normalized Spectrum Availability on Secondary User\relax }{equation.5.4.1}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.4.2.1}Single licensed channel}{69}{subsubsection.5.4.2.1}}
+\newlabel{singCH_onehop_dc_metric}{{5.2}{69}{Single licensed channel\relax }{equation.5.4.2}{}}
+\newlabel{distance}{{5.3}{69}{Single licensed channel\relax }{equation.5.4.3}{}}
+\newlabel{singCH_dc_metric_decreasing}{{5.4}{69}{Single licensed channel\relax }{equation.5.4.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.4}{\ignorespaces Normalized spectrum availability with respect to the likelihood of spectrum being available one a node\relax }}{70}{figure.5.4}}
+\newlabel{fig:gamma_lambda}{{5.4}{70}{Normalized spectrum availability with respect to the likelihood of spectrum being available one a node\relax \relax }{figure.5.4}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.4.2.2}Multiple licensed channels}{70}{subsubsection.5.4.2.2}}
+\newlabel{gamma_multichannel}{{5.5}{70}{Multiple licensed channels\relax }{equation.5.4.5}{}}
+\newlabel{mulCH_onehop_dc_metric}{{5.6}{70}{Multiple licensed channels\relax }{equation.5.4.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4.3}Normalized Longest Blocking Time on Secondary Users}{70}{subsection.5.4.3}}
+\newlabel{BT}{{5.4.3}{70}{Normalized Longest Blocking Time on Secondary Users\relax }{subsection.5.4.3}{}}
+\citation{routing-crn-jsac12}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.4.3.1}Single licensed channel}{71}{subsubsection.5.4.3.1}}
+\newlabel{eq:SingleChannel_blockingtime}{{5.7}{71}{Single licensed channel\relax }{equation.5.4.7}{}}
+\newlabel{distance2}{{5.8}{71}{Single licensed channel\relax }{equation.5.4.8}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.4.3.2}Multiple licensed channels}{71}{subsubsection.5.4.3.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.5}Geographic Routing and Opportunistic Spectrum Access}{71}{section.5.5}}
+\newlabel{osa}{{5.5}{71}{Geographic Routing and Opportunistic Spectrum Access\relax }{section.5.5}{}}
+\citation{gpsfree05infocom}
+\citation{spectrumDecision_2013mass}
+\citation{DySpAN12_Di}
+\citation{gpsfree05infocom}
+\@writefile{toc}{\contentsline {section}{\numberline {5.6}Performance Evaluation}{72}{section.5.6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.6.1}Simulation Setup}{72}{subsection.5.6.1}}
+\citation{ProbabilityAndComputing}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.6.1.1}Primary Users}{73}{subsubsection.5.6.1.1}}
+\newlabel{stationary_probability}{{5.11}{73}{Primary Users\relax }{equation.5.6.11}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.6.1.2}Parameter Setting}{73}{subsubsection.5.6.1.2}}
+\citation{gpsfree05infocom}
+\citation{gpsfree05infocom}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.6.2}Success Rate of Geographic Routing on Finding Path}{74}{subsection.5.6.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.5}{\ignorespaces Reachability of different virtual coordinates.\relax }}{74}{figure.5.5}}
+\newlabel{fig:reachability}{{5.5}{74}{Reachability of different virtual coordinates.\relax \relax }{figure.5.5}{}}
+\citation{gpsfree05infocom}
+\citation{gpsfree05infocom}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.6.3}Duplicated Virtual Coordinate}{75}{subsection.5.6.3}}
+\newlabel{Duplicated_Virtual_Coordinate}{{5.6.3}{75}{Duplicated Virtual Coordinate\relax }{subsection.5.6.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.6}{\ignorespaces Percentage of secondary nodes with duplicated virtual coordinates\relax }}{75}{figure.5.6}}
+\newlabel{fig:identical_vc}{{5.6}{75}{Percentage of secondary nodes with duplicated virtual coordinates\relax \relax }{figure.5.6}{}}
+\citation{search_geo_routing_chowdhury}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.7}{\ignorespaces Average of the mixmal distance between the nodes with the same VC\relax }}{76}{figure.5.7}}
+\newlabel{fig:identical_distance}{{5.7}{76}{Average of the mixmal distance between the nodes with the same VC\relax \relax }{figure.5.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.6.4}Routing Performance}{76}{subsection.5.6.4}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.6.4.1}Spectrum Availability Based Virtual Coordinate}{77}{subsubsection.5.6.4.1}}
+\newlabel{fig:singleChannelPioff_case_topo}{{5.8(a)}{77}{Subfigure 5 5.8(a)\relax }{subfigure.5.8.1}{}}
+\newlabel{sub@fig:singleChannelPioff_case_topo}{{(a)}{77}{Subfigure 5 5.8(a)\relax }{subfigure.5.8.1}{}}
+\newlabel{fig:SingleChannelPioff_case_pdr}{{5.8(b)}{77}{Subfigure 5 5.8(b)\relax }{subfigure.5.8.2}{}}
+\newlabel{sub@fig:SingleChannelPioff_case_pdr}{{(b)}{77}{Subfigure 5 5.8(b)\relax }{subfigure.5.8.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.8}{\ignorespaces Routing paths in one network and corresponding PDR\relax }}{77}{figure.5.8}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Routing paths}}}{77}{figure.5.8}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Packet delivery ratio}}}{77}{figure.5.8}}
+\newlabel{fig:pioff_case}{{5.8}{77}{Routing paths in one network and corresponding PDR\relax \relax }{figure.5.8}{}}
+\newlabel{fig:Averaged_single_DC}{{5.9(a)}{77}{Subfigure 5 5.9(a)\relax }{subfigure.5.9.1}{}}
+\newlabel{sub@fig:Averaged_single_DC}{{(a)}{77}{Subfigure 5 5.9(a)\relax }{subfigure.5.9.1}{}}
+\newlabel{fig:random_SU_PU}{{5.9(b)}{77}{Subfigure 5 5.9(b)\relax }{subfigure.5.9.2}{}}
+\newlabel{sub@fig:random_SU_PU}{{(b)}{77}{Subfigure 5 5.9(b)\relax }{subfigure.5.9.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.9}{\ignorespaces Packet delivery ratio with single secondary channel\relax }}{77}{figure.5.9}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {PDR over 50 randomly located CR nodes with the PU located as in Figure\nobreakspace {}\ref {fig:singleChannelPioff_case_topo}}}}{77}{figure.5.9}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {PDR over 50 randomly located CR nodes and PUs}}}{77}{figure.5.9}}
+\newlabel{fig:pioff_single}{{5.9}{77}{Packet delivery ratio with single secondary channel\relax \relax }{figure.5.9}{}}
+\newlabel{fig:multipleChannelPioff_case_pdr}{{5.10(a)}{78}{Subfigure 5 5.10(a)\relax }{subfigure.5.10.1}{}}
+\newlabel{sub@fig:multipleChannelPioff_case_pdr}{{(a)}{78}{Subfigure 5 5.10(a)\relax }{subfigure.5.10.1}{}}
+\newlabel{fig:MultiChannel_DC_pdr}{{5.10(b)}{78}{Subfigure 5 5.10(b)\relax }{subfigure.5.10.2}{}}
+\newlabel{sub@fig:MultiChannel_DC_pdr}{{(b)}{78}{Subfigure 5 5.10(b)\relax }{subfigure.5.10.2}{}}
+\newlabel{fig:multiple_pioffCase}{{\caption@xref {fig:multiple_pioffCase}{ on input line 764}}{78}{Spectrum Availability Based Virtual Coordinate\relax }{subfigure.5.10.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.10}{\ignorespaces Packet delivery ratio with multiple secondary channel scenario\relax }}{78}{figure.5.10}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {PDR over 50 randomly located CR nodes with the same PU location as Figure\nobreakspace {}\ref {fig:singleChannelPioff_case_topo}}}}{78}{figure.5.10}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {PDR over 50 CRNs where SUs and PUs are randomly located}}}{78}{figure.5.10}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.6.4.2}Longest Blocking time Based Virtual Coordinate}{79}{subsubsection.5.6.4.2}}
+\newlabel{subsection:blocking_time}{{5.6.4.2}{79}{Longest Blocking time Based Virtual Coordinate\relax }{subsubsection.5.6.4.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.11}{\ignorespaces Routing paths in one network, $T_1 =27s$. Circles denote the transmission range of primary uers.\relax }}{79}{figure.5.11}}
+\newlabel{fig:multipleChannelPioff_case_topo}{{5.11}{79}{Routing paths in one network, $T_1 =27s$. Circles denote the transmission range of primary uers.\relax \relax }{figure.5.11}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.12}{\ignorespaces PDR of spectrum availability based virtual coordinate when likelihood is homogeneous in CRN\relax }}{80}{figure.5.12}}
+\newlabel{fig:fail_SA}{{5.12}{80}{PDR of spectrum availability based virtual coordinate when likelihood is homogeneous in CRN\relax \relax }{figure.5.12}{}}
+\newlabel{fig:SingleChannelEWT_randomness_delay}{{5.13(a)}{80}{Subfigure 5 5.13(a)\relax }{subfigure.5.13.1}{}}
+\newlabel{sub@fig:SingleChannelEWT_randomness_delay}{{(a)}{80}{Subfigure 5 5.13(a)\relax }{subfigure.5.13.1}{}}
+\newlabel{fig:SingleChannelEWT_randomness_rate}{{5.13(b)}{80}{Subfigure 5 5.13(b)\relax }{subfigure.5.13.2}{}}
+\newlabel{sub@fig:SingleChannelEWT_randomness_rate}{{(b)}{80}{Subfigure 5 5.13(b)\relax }{subfigure.5.13.2}{}}
+\newlabel{fig:SingleChannelEWT}{{\caption@xref {fig:SingleChannelEWT}{ on input line 858}}{80}{Longest Blocking time Based Virtual Coordinate\relax }{subfigure.5.13.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.13}{\ignorespaces Geographic routing in single secondary channel scenario, $P_{\textsc  {\relax \fontsize  {6}{7}\selectfont  OFF}}=0.9$ for all primary users, $T_1=27s$.\relax }}{80}{figure.5.13}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Delay, confidence interval of spectrum availability based virtual coordinate is not shown as it is too large}}}{80}{figure.5.13}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Packet delivery ratio}}}{80}{figure.5.13}}
+\newlabel{fig:MultiChannelEWT_delay}{{5.14(a)}{81}{Subfigure 5 5.14(a)\relax }{subfigure.5.14.1}{}}
+\newlabel{sub@fig:MultiChannelEWT_delay}{{(a)}{81}{Subfigure 5 5.14(a)\relax }{subfigure.5.14.1}{}}
+\newlabel{fig:MultiChannelEWT_rate}{{5.14(b)}{81}{Subfigure 5 5.14(b)\relax }{subfigure.5.14.2}{}}
+\newlabel{sub@fig:MultiChannelEWT_rate}{{(b)}{81}{Subfigure 5 5.14(b)\relax }{subfigure.5.14.2}{}}
+\newlabel{fig:MultiChannelEWT_pdr}{{\caption@xref {fig:MultiChannelEWT_pdr}{ on input line 883}}{81}{Longest Blocking time Based Virtual Coordinate\relax }{subfigure.5.14.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.14}{\ignorespaces Geographic routing in two secondary channel scenario, $P_{\textsc  {\relax \fontsize  {6}{7}\selectfont  OFF}}=0.9$ for all primary users, $T_1=27s$.\relax }}{81}{figure.5.14}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Delay, confidence interval of spectrum availability based virtual coordinate is not shown as it is too large}}}{81}{figure.5.14}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Packet delivery ratio}}}{81}{figure.5.14}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.7}CONCLUSION}{81}{section.5.7}}
+\@setckpt{chapters/05_routing}{
+\setcounter{page}{82}
+\setcounter{equation}{11}
+\setcounter{enumi}{0}
+\setcounter{enumii}{0}
+\setcounter{enumiii}{0}
+\setcounter{enumiv}{0}
+\setcounter{footnote}{2}
+\setcounter{mpfootnote}{0}
+\setcounter{part}{0}
+\setcounter{chapter}{5}
+\setcounter{section}{7}
+\setcounter{subsection}{0}
+\setcounter{subsubsection}{2}
+\setcounter{paragraph}{0}
+\setcounter{subparagraph}{0}
+\setcounter{figure}{14}
+\setcounter{table}{0}
+\setcounter{LT@tables}{0}
+\setcounter{LT@chunks}{0}
+\setcounter{float@type}{16}
+\setcounter{Item}{0}
+\setcounter{Hfootnote}{5}
+\setcounter{bookmark@seq@number}{90}
+\setcounter{definition}{0}
+\setcounter{satz}{0}
+\setcounter{subfigure}{0}
+\setcounter{lofdepth}{1}
+\setcounter{subtable}{0}
+\setcounter{lotdepth}{1}
+\setcounter{ContinuedFloat}{0}
+\setcounter{listing}{0}
+\setcounter{lstnumber}{1}
+\setcounter{parentequation}{0}
+\setcounter{todocounter}{0}
+\setcounter{r@tfl@t}{0}
+\setcounter{theorem}{0}
+\setcounter{corollary}{0}
+\setcounter{lemma}{1}
+\setcounter{mydef}{0}
+\setcounter{AlgoLine}{28}
+\setcounter{algocfline}{5}
+\setcounter{algocfproc}{5}
+\setcounter{algocf}{5}
+\setcounter{fixmecount}{0}
+\setcounter{fxnotecount}{0}
+\setcounter{fxwarningcount}{0}
+\setcounter{fxerrorcount}{0}
+\setcounter{fxfatalcount}{0}
+\setcounter{@pps}{1}
+\setcounter{@ppsavesec}{3}
+\setcounter{@ppsaveapp}{2}
+\setcounter{@todonotes@numberoftodonotes}{1}
+\setcounter{section@level}{1}
+\setcounter{lstlisting}{0}
+}

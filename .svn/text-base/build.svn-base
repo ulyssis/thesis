@@ -1,0 +1,14 @@
+#!/bin/bash
+pdflatex thesis.tex
+bibtex thesis
+pdflatex thesis.tex
+pdflatex thesis.tex
+rm ./chapters/*.aux
+rm *.aux 
+rm *.log
+rm *.bbl 
+rm *.blg
+rm *.lof
+rm *.lot
+rm *.out
+rm *.toc

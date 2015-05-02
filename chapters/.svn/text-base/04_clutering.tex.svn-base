@@ -1,0 +1,1071 @@
+\chapter{Robust Clustering of Ad-hoc Cognitive Radio Networks}
+\section{Introduction}
+\label{intro}
+Cognitive radio (CR) is a promising technology to solve the spectrum scarcity problem~\cite{Mitola}. In CR systems, primary users access their allocated spectrum band whenever there is information to be transmitted. In contrast, CR users (forming cognitive radio networks, abbreviated as CRN) can only access primary channels after validating the channel is idle. This refers to the process of sensing a particular channel and verifying (with a previously specified probability of error) that it is not used by a primary user currently. This form of spectrum sharing is also referred to as opportunistic spectrum access.
+
+For cognitive radio networks it is well known that clustering leads to a more stable operation of the network, which is due to multiple reasons. 
+First of all, clustering approach is regarded as an effective method used in cooperative spectrum sensing[citation].
+Collaborative sensing relays on the consensus of CR users within certain area, and decreases considerably the false sensing reports caused by fading and shadowing of reporting channel.
+As a result, more accurate sensing result can be obtained~\cite{Sun07} by collaborative sensing.
+The improvement on spectrum sensing decreases the interference originating from CR users to primary users, which is highly desirable.
+%Also,  prevents CR users from using channels that are occupied by primary users. 
+Secondly, it is more efficient to let all CR users\footnote{User and node are used interchangeably in this paper} within the same cluster stop payload transmission on the operating channel and initiate the sensing process.
+Furthermore, with cluster structure, the potential for collisions (when vacating the channel due to primary node appearance) among neighbouring clusters is reduced~\cite{willkomm08}. 
+Finally, routing becomes simplified if clusters are formed in cognitive ad-hoc networks~\cite{Abbasi}. Hence, there has been great effort on the research on clustering of cognitive radio networks in recent years~\cite{Zhao07,Chen07,Lazos09}.
+
+However, as the activity of primary users is controlled by licensed operators and generally not known to CR users, the connectivity between CR nodes in a CRN is not guaranteed. 
+For a pair of communicating CR nodes, whenever a primary user is detected to be operating on the working channel, CR nodes have to retreat that working channel.
+The affected CR nodes switch to one other idle channel if there are available idle channels, if not, the communication is cut down.
+When coexisting with primary users, the ability for one pair of CR nodes to maintain communication with licensed channels is totally decided by primary users' activity.
+Thus robustness of connection with licensed channels demonstrates to be objective from the perspective of secondary users.
+To maintain one cluster operating with licensed channels, at least one common channel is available for all members in that cluster.
+Thus the number of available common channels in the cluster indicates robustness of it when facing uncontrolled influence from primary users.
+It is not difficult to see that forming clusters with different neighbours leads to different amount of common channels in the cluster.
+Thus how to form the clusters takes an important role on the robustness of clusters in CRN.
+
+%Furthermore, the clustering algorithm also determines the connectivity between several clusters which ultimately determines the robustness of the entire network on the respect of connectivity. 
+
+To solely pursue connectivity robustness, \ie more common channels within clusters, the best clustering strategy is ironically that each node constitutes one single node clusters.
+In that case, the common channels within cluster are the available channels available at that node's place.
+Apparently this contradicts our motivation to group multiple CR nodes together to facilitate cooperative sensing or , 
+
+Cluster size deserves some research.
+\cite{clustering_globecom11} looks into the relationship between cluster size and power consumption in CRN.
+One focus on minimize power consumption by controlling the cluster size XXXXXXXX tbd XXXX
+
+In this chapter, we propose ROSS, a distributed clustering algorithm which integrates most CR nodes into clusters and produces robust clusters against primary users' activity, besides, cluster size control is also given consideration.
+Compared to previous work, ROSS involves much less control messages, and the generated clusters are significantly more robust.
+In ROSS, cluster head is selected through coordination within its neighborhood, and then cluster membership is decided locally and its convergence is proved under game theoretic framework. 
+%building more homogeneous clusters with respect to their size and forcing nodes with a high connectivity degree to the border of a cluster (making the cluster therefore more robust regarding connectivity loss to its neighbor).
+%For our scheme we can prove convergence in cluster formation phase and resolve ambiguities with respect to cluster membership in a game-theoretic setting. 
+On the basis of ROSS, we propose ROSS-DFA which is a light weighted version of ROSS, which requires exchanging less overheads.
+%We leave the channel selection undiscussed.
+Throughout this chapter, we refer both ROSS-DGA and ROSS-DFA, along with these added size control feature, as \textit{variants of ROSS}. 
+
+The rest of paper is organized as follows. 
+After reviewing related work in section~\ref{related_work}, we present our system model in Section~\ref{sec:model}. 
+Then we introduce our clustering scheme ROSS and its variants in section~\ref{ross}.
+Centralized scheme is given discussion in section~\ref{centralized_scheme}.
+Performance evaluation is in section~\ref{performance}.
+Finally, we conclude our work and point out direction future research in section~\ref{conclusion}.
+
+
+\section{Related Work}
+\label{related_work}
+Many clustering algorithms have been proposed in the literature for ad-hoc network~\cite{Kawadia03,Lin97adaptiveclustering,Basagni99} and sensor networks~\cite{Abbasi}. In ad-hoc networks, the major focus of clustering is to preserve connectivity (under static channel conditions) or to improve routing. In the context of sensor networks, the emphasis of clustering has been on longevity and coverage. Hence, none of this work takes into account the channel availability and the issue of robustness in CRNs.
+	 
+There have been several clustering schemes tailored for CRNs. In~\cite{Zhao07}, the channel available to the largest set of one-hop neighbours is selected as common channel which yields a partition of the CRN into clusters. Their approach minimizes the set of distinct frequency bands (and hence, the set of clusters) used as common channels within the CRN. However, bigger cluster sizes generally lead to less options within one cluster to switch to if the common channel is reclaimed by a primary node. Hence, this scheme does not provide robustness. In~\cite{Lazos09} the authors consider the balance between the number of idle common channels within cluster and cluster size and propose an algorithm that increases the number of common channels within clusters. 
+However, this work neglects the issue of connectivity between clusters. 
+Furthermore, in order to improve the number of common channels within clusters, the scheme excludes certain CR nodes from the formed clusters, so that isolated nodes have to form clusters themselves. 
+This leads to a high variance on the size of clusters.
+Finally, Cogmesh~\cite{Chen07} provides a practical MAC protocol for clustering but leaves the set of common channels and sizes of clusters unconsidered.
+
+
+\section{System Model}
+\label{sec:model}
+Let us consider an area in which a certain licensed spectrum band is shared by primary and CR users.
+One control channel\footnote{for example, ISM band or other reserved channels which are exclusively used for transmitting control messages} is available for the CR nodes to exchange control messages in the process of cluster formation.
+The licensed spectrum is divided into $|P|$ non-overlapping spectrum bands (we call them channels).
+When licensed channels are available to use between two CR nodes in the same time, payload communication can be conducted on one or multiple licensed channels.
+There are $|J|$ primary users in the area and $|I|$ CR users. 
+While primary users are assumed to be fixed, CR users can be mobile.
+Spectrum sharing is implemented by the opportunistic access paradigm.
+Hence, primary users access their allocated channels whenever they need without any explicit notification to CR users. 
+We assume that primary users have a relatively low variation in activity (periods of activity and inactivity in the range of seconds or minutes).
+In contrast, CR users are only allowed to access channels after validating these to be unoccupied by primary users.
+Validation refers to the process of ensuring that no primary transmission is actually taking place on the respective channel.
+This is achieved by spectrum sensing by which the CR users validate channels with a certain probability of detection as well as with a certain periodicity, i.e., every $T_{\mathrm{sense}}$ time the currently used channels need to be validated again.
+Denote the spectrum sensing result of each CR user $i$ by $V_i=\lbrace v_1,v_2\ldots,v_{p_i}\rbrace$ with $p_i=\vert V_i \vert \leq P$ indicating the total number of available channels for CR user $i$. 
+If active, primary and CR users both have a certain transmission range.
+Any user outside this transmission range can not receive data from the transmitter (i.e., any CR user outside this range can not detect the primary user that transmits). 
+Therefore, different CR users have different views on the occupancy of the spectrum (apart from the fact that there might be false negatives in the sensing process), i.e., $V_i \neq V_j$, for $i \neq j$. 
+%Also, not all CR users can communicate directly with each other.
+In the following, we do not consider the primary users further and focus on the operation of cognitive radio network (CRN).
+All $|I|$ CR users form an Ad-hoc network in which data is to be transmitted potentially from any node to any other node.
+Communication on licensed channels is possible only when nodes $i, j$ is both located in each other's transmission range and both share a validated licensed channel.
+ 
+Due to the assumed $0/1$ nature of connectivity and primary user interference, the CRN working solely with licensed channels can be represented by a connectivity graph $\mathcal{G}(I,\mathcal{E})$, where $\mathcal{E}=\lbrace(i,j,v) \vert i, j \in I \wedge v\in V_i \wedge v\in V_j \rbrace$ is wireless link between any CR node $i$ and its neighbour $j$ with licensed channel $v$.
+Due to relatively low primary user dynamics, time index is omitted here.
+
+
+%In order to perform clustering, CR users first need to establish their neighborhood.
+For CR node $i$ in CRN, its neighborhood $Nb_i$ consists of all the CR nodes locating within its transmission range (links are assumed to be reciprocal) and have at least one common channel with node $i$ each, i.e. $ j\in Nb_i \Rightarrow V_i\cap V_j\neq \emptyset$.
+CR nodes exchange their spectrum sensing results $V_{i}$ over the control channel, and neighborhood establishment and maintenance are done with the control channel and according to a neighborhood discovery protocol which is out of scope of our work.
+%The clustering phase is initialized during which any control message is again conveyed by the control channel.
+In the rest of the paper, the word \textit{channel} only refers to the licensed spectrum.
+
+A cluster $C$ is composed with cluster head and cluster members, which satisfies the following conditions:
+
+\begin{itemize}
+\item Cluster head $H_C$ is able to communicate with any cluster member directly, \ie for any cluster member $i\in C$, there is $i\in Nb_{H_C}$
+\item There exist as least one common channel channel for the cluster, \ie $\cap_{i\in C} V_i \neq \emptyset$
+\end{itemize}
+%A cluster has four items: A cluster head, cluster members, common channels of the members with the head and the one channel currently used for payload data transmission.
+Cluster head coordinates the activities of cluster members, \ie notifies all the members to evade a channel when the channel is sensed by one cluster member to be occupied by primary users, or notify the members to use a different channel for payload communication. 
+Cluster is denoted as $C_i$ when its cluster head is $i$.
+%, for the sake of concision, $C_i$ is also named as cluster $i$ in the following part of this chapter.
+We refer to the common channels within a cluster $C$ by the term \textit{inner common channels} (ICC) and denote this set of channels by set $K_C$.
+$ K_C = \cap_{i\in C_i} V_i$, and $k_C = |K_C|$ is the number of common channels for cluster $C$.
+As the CR users are potentially mobile, clustering is performed with some periodicity, but obviously not more often than spectrum sensing.
+
+
+
+%We propose distributed scheme ROSS to form clusters to generate robust clusters, and in the same time clusters have preferred sizes, \ie fewer number of singleton clusters (the cluster which consist with only one CR node) compared with state of art.
+
+%Besides, cluster size is also considered in to clustering solution.
+%Size preference can be met after minor modifications on ROSS.
+
+
+%The metric is summation of the number of channels available to be used for each node when they reside in a certain cluster, together with a cost for not following the desired cluster size, \ie when the desired cluster size is $\delta$ and the other cluster sizes are denoted as $\delta'$, the metric is, 
+%\begin{equation*}
+%\label{metric}
+%\sum_{i=1}^{N}(ICC_i)
+%\end{equation*}
+%$N$ is the number of CR nodes in the network.
+
+
+%Also, we refer to the common channels between neighbouring clusters by the term \textit{outward common channels} (OCC). We define the set of OCCs of cluster $C$ to be the set of available common channels between any member of $C$ and any other CR user of a neighbouring cluster:
+%\begin{equation*}
+%\label{numocc}
+%R_{C}=\bigcup_{j\in C, k\in N_j, k\notin C}(V_{j}\cap V_{k})
+%\end{equation*}
+
+%In the process of clustering, when there is no restriction on cluster size, the metric will only be the summation of the number of channels for each node when they reside in a certain cluster.
+%When we try to maximize the summation of ICCs, an obvious correlation between cluster size and number of ICCs is encountered, \ie when each node constitutes one cluster, the aforementioned metric will be maximized.
+%The goal of the proposed clustering scheme is to let as more CR nodes as possible to form clusters, meanwhile the clusters have more common channels and preferred cluster size.
+
+\begin{table}[ht!]
+\caption{Notations}\label{tab1}
+\centering
+\begin{tabular}{llr}
+\toprule
+%\multicolumn{2}{c}{Item} \\
+%\cmidrule(r){1-2}
+Symbol & Description \\
+\midrule
+$N$, $J$ & set of CR and primary nodes in the scenario\\
+%$J$ & set of primary uesrs in the scenario\\
+$P$ & set of non-overlapping channels in the scenario\\
+$Nb_i$ & node $i$' neighborhood     \\
+$C$ & a cluster \\
+$V_i$   & set of available channels on CR node $i$  \\
+$V_C$   & set of available channels for cluster $C$  \\
+$\phi_i$ & the number of available channels for cluster $i$\\
+		& note it is different than $|V_i|$\\
+%$p_i$   & number of available channels on CR node $i$  \\
+$C_i$ & a cluster whose cluster head is $i$ \\
+$H_C$ & cluster head of a cluster $C$\\
+$\delta$ & desired cluster size\\
+%$C_i$ & a cluster with CR node $i$ as cluster head \\
+%$V_{C_i}$   & set of common channels within cluster $C_i$  \\
+%$V_{OC_i}$   & set of common channels among cluster $C_i$ and neighbor clusters  \\
+%$CH_i$ & cluster head of node $i$ \\
+%$CHS_i$ & set of cluster heads of node $i$ after phase I\\
+$S_i$ & set of claiming clusters, each of which includes \\
+& debatable node $i$ after phase I\\
+$K_{C_i}$ & set of common channels within cluster $C_i$\\
+$k_{C_i}$ & number of common channels of cluster $C_i$\\
+%$m_{ij}$ & number of common channels between CR node \\
+%& $i$ and $j$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+
+
+
+\section{Distributed Coordination Framework: Clustering Algorithm}
+\label{ross}
+Despite this fact, as some features brought by clustering structure are valued as said in introduction section, the clustering scheme which groups certain CR nodes together and meanwhile produces robust connectivity will be proposed.
+
+%Thus, the number of common channels should be the only metric for clustering schemes.
+
+
+In this section, we present the new clustering scheme named ROSS (RObust Spectrum Sharing). It is based on the local sensing results $V_{i}$ of all CR users $i$ and utilizes local similarity of the available channels to form clusters. ROSS consists of two phases: \textit{cluster formation} and \textit{membership clarification}. We will describe both phases individually.
+
+\subsection{Phase I - Cluster Formation}
+Via spectrum sensing and communication with neighbours, every CR node is aware of the channel availabilities on itself and all its neighbours.
+We use two metrics for each CR node to characterize the robustness of channel availability between it and its neighborhood.
+%\newtheorem{def1}{Definition}
+%\label{def1}
+%\begin{def1}
+%Connection vector $\left\{D_i,G_i\right\}$ of CR node $i$:
+%spectrum connectivity degree: 
+%\begin{equation}
+%\label{D_i}
+%D_i=\sum_{j\in N_i}\vert V_i\cap V_j\vert
+%\end{equation}
+%Social Connection degree:
+%\begin{equation}
+%\label{G_i}
+%G_i=|\bigcap_{j\in N_i}V_j|
+%\end{equation}
+%\end{def1}
+
+\textit{Individual Connection Degree} $D_i$: $D_i=\sum_{j\in Nb_i}\vert V_i\cap V_j\vert$, which denotes the sum of the pairwise common channels of node $i$, and is an indicator of node $i$'s adhesive property to the CRN. 
+
+\textit{Social Connection Degree} $G_i$: $G_i=|\bigcap_{j\in Nb_i}V_j|$, which is the number of common channels in $Nb_i$. $G_i$ represents the ability of a neighborhood to form a robust cluster. Figure~\ref{fig1} illustrates an example CRN where the corresponding \textit{Spectrum/Social Connection Degree} are specified for each node.
+\begin{figure}[ht!]
+  \centering
+\includegraphics[width=0.6\linewidth]{figure1.pdf}
+% \includegraphics{figure1.pdf}
+	\caption{Connectivity graph and the connectivity vector $\{D_i, G_i\}$ on each node. The available channels sensed by each CR node are: $V_A=\{1,2,3,4,5,6,10\}, V_B=\{1,2,3,5,7\}, V_C=\{1,3,4,10\}, V_D=\{1,2,3,5\}, V_E=\{2,3,5,7\}, V_F=\{2,4,5,6,7\}, V_G=\{1,2,3,4,8\}, V_H=\{1,2,5,8\}$. Dashed lines indicates two end nodes are within transmission range of each other. Each edge is labeled by the number of common channels between the two ends.}
+	\label{fig1}
+\end{figure}
+
+The algorithm of phase I can be sketched like this: cluster heads are determined first, then clusters are formed second.
+
+\subsubsection{Determining Cluster Heads}
+In this phase, each CR node decides whether it is cluster head by comparing relevant metrics with its neighbours.
+This judgement is conducted periodically, and phase I ends after every node is certain that it is cluster head or not.
+Briefly states, the CR node which has the smallest \textit{Individual Connection Degree} in its neighbourhood cluster head, \ie, CR node $i$ is cluster head, if $D_i<D_k, \forall k\in Nb_i\setminus CHs$ ($CHs$ donate the cluster heads existing in $Nb_i$).
+If there is another CR node $j$ in its neighborhood has the same \textit{Individual Connection Degree}, \ie $D_j = D_i$, furthermore $D_j < D_{k}, \forall k\in Nb_j\setminus \{CHs\cup i\}$, then the node with higher \textit{Social Connective Degree} becomes cluster head, and the other one becomes member of it. 
+If $G_i = G_j$ as well, node ID is used to break the tie, \ie the one with smaller node ID takes precedence and becomes cluster head.
+This algorithm is contradictory to intuition by choosing the node with smallest $D_i$ as cluster head.
+The reason is that, by deciding cluster head in this way, the CR node with bigger $D_i$ will locate at the edge of clusters, and as they have higher \textit{Individual Connection Degree}, they are more likely to be integrated into one certain cluster, thus less singleton clusters are formed.
+
+The pseudo code of cluster head determination algorithm in Phase I is in Algorithm \ref{alg0}.
+\begin{algorithm}              % enter the algorithm environment
+\caption{Cluster head determined and cluster formation}          % give the algorithm a caption
+\label{alg0} 
+\DontPrintSemicolon
+\SetAlgoLined
+\KwIn{Unclustered CR node $i$ which is aware of $D_j$ and $G_j$, $j\in Nb_i$, and the ID of CRs which have be decided to be cluster heads, $ID_{CH}$, $CH\in Nb_i$. Empty sets $\tau_1,\tau_2,\tau_3,\tau_4,\tau_5$}
+\KwResult{Whether or not $i$ is cluster head}
+\For{CR node $j\in Nb_i\setminus CHs$}{
+\eIf{$D_i==D_j$}{
+	$\tau_1\leftarrow j$
+	}
+	{\If{$D_j < D_i$}{
+		$\tau_2\leftarrow j$
+		}
+	}
+	}
+\uIf{$\tau_2 \neq \emptyset$}{
+	$i$ is not CH; break;
+	}
+\uElseIf{$\tau_1$ is $\emptyset$}{
+	$i$ is CH; break;
+	}
+\Else{ 	
+\tcc*[r]{$\tau_1 \neq \emptyset, \tau_1 == \emptyset$}\mbox{}
+	\For{$\forall k \in \tau_1$}{
+	\If{$\nexists m\in Nb_k\setminus CHs$, such that $D_m < D_k$ }{
+		$\tau_3 \leftarrow k$
+		}
+	}
+	\eIf{$\tau_3$ is $\emptyset$}{
+		$i$ is CH;break;
+		}{
+		\For{$\forall n\in \tau_3$}{
+			\eIf{$G_n > G_I$}{
+				$\tau_4 \leftarrow n$}{
+				\If{$G_n == G_i$}{
+				$\tau_5 \leftarrow n$
+				}
+			}
+			}
+		\uIf{$\tau_4 \neq \emptyset$}{
+			$i$ is not CH;break;
+			}
+		\uElseIf{$\tau_4$ is $\emptyset$ and $\tau_5 \neq \emptyset$}{
+		\If{$ID_i < ID_r, \forall r\in \tau_5$}{$i$ is CH;break;}	
+		}
+		\Else{$i$ is CH;break;\tcc*[r]{$\tau_4$ and $\tau_5$ are $\emptyset$}}
+	}
+}
+\If{$i$ is cluster head}{
+	$D_j, j\in Nb_i\setminus CHs$ is changed as a big positive value $M$;
+	}
+\end{algorithm}
+
+
+\subsubsection{Initial Cluster Formation}
+After deciding itself being cluster head, CR node broadcasts to notify its neighbours, meanwhile, $i$'s initial cluster is formed immediately, which is $i$'s neighborhood except for those nodes which have become cluster heads, \ie $C_i=(Nb_i\setminus CHs)\cup i$.
+It is possible that the formed cluster has no common channel for its members, this can be handled in the following way. 
+As smaller cluster size increases the number of common channels within the cluster, certain nodes are  eliminated until there is at least one common channel.
+The elimination of nodes is performed according to an ascending list of nodes sorted by their number of common channels with the cluster head.
+If there are nodes having the same number of common channels with cluster head, the node whose elimination brings in more common channels will be chosen and excluded.
+If this criterion meet a tie, then the tie will be broken by deleting the node with smaller ID.
+At the end of this procedure every formed cluster has at least one common channel.
+For the nodes eliminated in this procedure, they can possibly become cluster heads or get included by other clusters later on. 
+The pseudo code for cluster head to make sure at least one common channel is shown in Algorithm~\ref{alg_size_control_available_CCC}.
+
+Figure~\ref{fig1} depicts an example how CR nodes decide cluster heads. 
+Node $B$ and $H$ have same individual connection degree, $D_B=D_H$, but as $G_H=2>G_B=1$, node $H$ becomes cluster head.
+In Figure \ref{fig1}, the cluster $C_H$ is $\{H, B, A, G\}$.
+
+After receiving the notification from a cluster head, one CR node is aware that it is one member in a cluster, then the individual connection degree of that CR user is changed to a big positive value $M$ (can be regarded as a positive infinite value), which is bigger than all the possible individual connectivity degrees happened in the CR network.
+Then this CR user broadcasts this new individual connection degree to all its neighbours. 
+If a CR node $i$ is associated to multiple clusters, $D_i$ is still set to $M$. %Note here that connectivity degree on cluster head will still be the actual value.% The value will expire after some duration and is changed later on back to the original value. 
+The purpose of manipulation on individual connection degree is to make the CR nodes out side this cluster possible to become cluster heads, so that every CR node either becomes cluster head or a member of at least one cluster.
+This is stated in the following theorem.
+ 
+\begin{lemma}
+\label{lemma}
+Every node in CRN will be included into at least one cluster in phase I in finite steps.
+\end{lemma}
+
+\begin{proof}
+To see this, assume there are some nodes not assigned to any cluster and node $\alpha$ is one of them. As node $\alpha$ is not contained in any cluster, there must be at least one node $\beta\in Nb_\alpha$, with $D_{\beta} < D_{\alpha}$. Thus, node $\beta$ has at least one neighbouring node $\gamma$ with $D_{\gamma}<D_{\beta}$, and this series of nodes with monotonically decreasing $D_i$ might continue but finally ceases because the total number of nodes is limited. Now we find the last node $\omega$ in this series, because $\omega$ is the end node and does not have neighbouring nodes with smaller connectivity degree $D$, so $\omega$ will become a cluster head and embrace all its one-hop neighbours, including the node before it in the node series (here we assume that every new formed cluster has common channels). After that, the node recruited into cluster will set its connectivity degree $D$ to $M$, which enables the node further down in the list to become a cluster head. In this way, all the nodes in the series are included in at least one cluster in an inverse sequence. This clearly contradicts the initial assumption and proves the claim stated above. The proof implicitly shows that, within $\vert I \vert$ steps, all nodes will become a part of certain clusters and so phase I converges.
+\end{proof}
+
+
+
+
+
+\subsubsection{Cluster Size Control in Dense CRN}
+\label{cluster_pruning}
+Assume CR nodes are evenly distributed and cluster head locates in the middle of each cluster, the initial cluster formed is the neighborhood of cluster head, which is decided by the transmission range and network density.
+In extreme situation of dense network, when one cluster is formed, based on the rule for cluster head selection, the nearest another cluster head generated could at most locate just outside the neighborhood or equally speaking, just slightly away from the previous cluster head's transmission range.
+Then, the distance between two neighbouring cluster heads is just slightly greater than the transmission range, as Figure~\ref{clusters_denseNetwork} shows.
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width=0.4\linewidth]{clusters_denseNetwork.pdf}
+  \caption{Possible clusters in dense CRN}
+  \label{clusters_denseNetwork}
+\end{figure}
+Bigger black dots in the middle of clusters are clusters heads, and smaller dots are cluster members.
+Circles mean the transmission range of cluster head, within which CR nodes are absorbed in cluster.
+We now have a look at how does the network density affect the cluster size when the transmission range is constant.
+%This implicates when the cluster size is decided by the density of the network.
+%As to SOC, the membership of one cluster is decided after a complex process, and the cluster size is roughly the same with one neighborhood.xxxx
+
+%We can see from the example that although two neighbouring clusters can overlap greatly with each other, no cluster head will be covered by other clusters.
+Assume all the CRs are evenly put in a square plane, and $l$ is the length of side of simulation plan square, and $r$ is CR's transmission radius.
+Then the maximum number of clusters is $l^2/r^2$.
+
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width=0.67\linewidth]{number_clusters_scale.pdf}
+  \caption{Number of clusters formed}
+  \label{number_clusters_scale}
+\end{figure}
+Assume $r=10, l=50$, the theoretical upper bound is 25. 
+We scatter the CR nodes in network of size $l\times l$ randomly, and run simulations for 50 times with different network scale under certain influence from PRs, in order to obtain the number of formed initial clusters.
+As Figure~\ref{number_clusters_scale} shows, the number of clusters increases with network density, but is upper bounded by 25.
+The confidence rate is 95\% in the figure.
+
+In case of dense network, the cluster size is big, which brings heavy burden on cluster head.
+Thus in dense network which limited resources are available on cluster heads, or the inner communication doesn't support big clusters [xxxxx], certain measures are needed to reduce the network size.
+This task falls on cluster head.
+Cluster heads prune their cluster members if sizes are greater than the desired size $\delta$.
+Given desired size as $\delta$, cluster head excludes members sequentially, whose absence leads to the maximum increase on the number of common channels within the cluster.
+This process ends when the size of resultant cluster is at most $\delta+1$ and at least one CCC is available.
+This procedure is similar with that guarantees at least one CCC available in the cluster, and the algorithm is also given in Algorithm~\ref{alg_size_control_available_CCC}.
+
+
+\begin{algorithm}               % enter the algorithm environment
+\caption{available CCC guarantee, or cluster size control conducted by cluster head}          % give the algorithm a caption
+\label{alg_size_control_available_CCC}
+\DontPrintSemicolon
+\SetAlgoLined
+\KwIn{Initial cluster formed, empty sets $\mathcal{T}_1, \mathcal{T}_1$}
+\KwOut{cluster has at least CCC, and satisfies the requirement on cluster size}
+\tcc*[r]{When available CCC is to be guaranteed, execute line 1, when cluster size control is conducted, execute line 2}
+\textbf{while} $V_C =\emptyset$ \textbf{do}\\
+\While{$|C|>\delta+1$}{
+calculate $\lambda = \min_{i\in C, i\neq H_C}(|K_{H_C}\cap K_i|)$;\\
+	\For{each $i\in C\setminus H_C $}{
+	\If{$|V_{H_C}\cap V_i| ==\lambda$}{$\mathcal{T}_1\leftarrow i$}
+	}
+\eIf{$|\mathcal{T}_1|==1$}{delete node $i$ from $C$;\\break;}
+{
+calculate $\mu= \Max_{i\in \mathcal{T}_1}(|\cap_{j\in C\setminus i} V_j|-|\cap_{j\in C} V_j|)$;\\
+	\For{each $i\in \mathcal{T}_1$}{
+	\If{$|\cap_{j\in C\setminus i} V_j|-|\cap_{j\in C} V_j| ==\mu$}{$\mathcal{T}_2\leftarrow i$}
+	}
+\eIf{$|\mathcal{T}_2|==1$}{delete node $i$ from $C$;\\break;}
+	{
+	delete $i\in \mathcal{T}_2$, which has the highest ID;
+	}
+}
+}
+\end{algorithm}
+
+Figure~\ref{fig2} shows the clusters formed in the example in Figure~\ref{fig1} when the desired cluster size is 3. 
+
+%Especially, it forster the connectivity between the clusters. It can do so, as the nodes with larger connectivity degree are not cluster heads but members. 
+%As basin nodes have smaller $d_i$ compared with its cluster members, and many of the cluster members locate between the basin node and neighbor clusters,  %the bigger $d_i$ with bigger robustness of Social Connection, i.e, with bigger $d$ are located around cluster heads, 
+%After clusters are formed, with aid of \textit{control channel rotation scheme} proposed in \cite{Lazos09}, intra and inter cluster communication is conducted and for each debable node (XXX Debatable nodes are not defined yet), the membership and channel availablity of the clusters concluding it is known. 
+
+
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width=0.6\linewidth]{figure2.pdf}
+  \caption{Clusters formation after the first phase of ROSS. Some nodes remain debatable nodes after the first phase.}\label{fig2}
+\end{figure}
+
+
+\subsection{Phase II - Membership Clarification}
+\subsubsection{Problem Description}
+Notice in Figure~\ref{fig2}, there are several nodes, like $A, B, D$, are included by more than one cluster. 
+We refer to these nodes as \textit{debatable nodes} as their cluster affiliations are not clear, and the clusters which include debatable node $i$ are named as \textit{claiming clusters} and represented as $S_i$. 
+The set of available channels of one cluster are known by the debatable nodes which locate in that cluster. %this is finished 
+%In the second phase of ROSS, debatable nodes will chose only one cluster to reside.
+Debatable nodes need to be uniquely associated to one cluster and removed from the other claiming clusters, which is called as cluster membership clarification.
+%In particular, the un-affiliation of one debatable nodes from a cluster increasing the set $K_C$ of ICCs of cluster $C$ (at the cost of potentially decreasing $R_C$, the set of OCCs).
+
+%\newtheorem{observation}{Observation}
+%\label{observation}
+%\begin{observation}
+%If the number of nodes within a cluster decreases, the number of common channels will increase or keep constant.
+%\end{observation}
+%
+%\begin{proof}
+%Contradiction, To be continued
+%\end{proof}
+%From observation 1 we know that the procedure of membership clarification will increase the set of common channels for some clusters and accordingly strengthen the robustness of intra connectivity. 
+
+% % % % %	dependancy!
+%An debatable node belongs to multiple clusters, and in the same time, it is possible that several debatable CR nodes locate within one same cluster. %Each debatable node tries to increase the sum of ICC of the clusters which it belong to. More specifically, 
+%For a debatable node $i\in S_i$ after phase I, as to clarify its membership, it will choose one cluster $C\in S_i$ to stay and withdraw from the other clusters in $S_i$ with the consideration of increasing ICCs within $S_i$ by the largest margin. 
+
+\subsubsection{Distributed Greedy Algorithm (DGA)}
+%Debatable node $i$ is aware of all its claiming clusters in $S_i$. 
+Debatable node $i$ needs to decide which cluster $C\in S_i$ to stay.
+The principle is $i$' choice on which claiming cluster to stay results in the greatest increase of common channels in all its claiming clusters.
+$i$ firstly leaves all claiming clusters in $S_i$, then communicates with each claiming cluster head to obtain the number of increased common channels in that cluster due to its absence.
+If among claiming clusters in $S_i$ exists one cluster $C_i$ which gets the least increased common channels than any other claiming clusters, then $i$ chooses to stay in cluster $C_i$.
+When there are multiple claiming clusters experiencing the same less increased common channels, then $i$ chooses the claiming cluster whose cluster head shares more common channels with $i$.
+IDs of relevant cluster heads will be used to break tie if the previous rule doesn't work.
+
+Algorithm for debatable node $i$ to decide on which claiming cluster to stay in shown in Algorithm~\ref{alg4}:
+
+\begin{algorithm}               % enter the algorithm environment
+\caption{Debatable node $i$ decides its affiliation}          % give the algorithm a caption,  cluster to settle
+\label{alg4}
+\DontPrintSemicolon
+\SetAlgoLined
+\KwIn{all claiming clusters $C\in S_i$}
+\KwOut{one cluster $C$}
+calculate $\lambda = \Max_{C\in S_i}(|K_{C\setminus i}|-|K_C|)$;\\
+define set $\mathcal{C}_1$;\\	
+	\For{each $C\in S_i$}{ 
+	\If{$|K_{C\setminus i}|-|K_C| ==\lambda$}{$\mathcal{C}_1\leftarrow C$}\tcc*[r]{metric is the increase of CCCs due to $i$' departing}
+	}
+\eIf{$|\mathcal{C}_1|==1$}{choose cluster $C$;\\break;}
+{
+calculate $\mu= \Max_{C\in \mathcal{C}_1}(V_{H_C}\cap V_i)$;\\
+define set $\mathcal{C}_2$;\\	
+	\For{each $C\in \mathcal{C}_1$}{
+	\If{$V_{H_C}\cap V_i ==\mu$}{$\mathcal{C}_2\leftarrow C$}\tcc*[r]{metric is the number of common channels between $i$ and cluster head of demanding cluster}
+	}
+\eIf{$|\mathcal{C}_2|==1$}{choose cluster $C$;\\break;}
+	{
+	calculate $\nu=\min_{C\in \mathcal{C}_2}|C|$;\\
+	define set $\mathcal{C}_3$;\\	
+		\For{each $C\in \mathcal{C}_2$}{
+		\If {$|C|==\nu$}{$\mathcal{C}_3\leftarrow C$}	\tcc*[r]{metric is cluster size}
+		}
+	\eIf{$|\mathcal{C}_3|==1$}{choose cluster $C$;\\break;}
+		{choose the $C\in \mathcal{C}_3$, which has the highest ID;
+		}
+	}
+}
+Node $i$ notifies $H_C$ which is cluster head of $C$ of its affiliation decision, cluster $C$ then accepts it.
+
+\end{algorithm}
+
+Debatable node $i$ can either execute this algorithm periodically or triggered by the change of membership of $C\in S_i$. Notice that, as to debatable node $i\in C$ and cluster $C\in S_i$ could have more than one debatable node except $i$, the choices of those debatable nodes of cluster $C$ change $C$'s membership and potentially further trigger node $i$ to alter its previous decision. Thus, the question arises whether the process converges if all the debatable nodes implement ROSS-DGA, and if it converges, how good such a distributed scheme performs. Below we show that this problem can be converted into an equivalent congestion game, and a stable state is reached by the greedy procedure within a finite number of of updates.
+
+\subsubsection{Convergence of DGA}
+To formulate the problem of membership clarification for the debatable nodes in a game-theoretic framework, we use a different perspective to describe this process. In the new perspective, the debatable nodes are regarded as isolated and don't belong to any cluster. Thus, the clusters they used to belong to become their neighboring clusters. So for each debatable node, the original problem of deciding which clusters to leave becomes in turn the problem which cluster to join. In this new problem, debatable node $i$ (note now $i\notin S_i$) greedily updates its choice that channel availability of clusters in
+ which cluster $C\in S_i$ %(among the clusters set $CS$, but now, each cluster $C\in CS$ does not conclude $i$) 
+to join so that the decrement of ICC in $S_i$ is the smallest. The decrement of number of ICC in $S_i$ is $\sum_{C\in S_i}\Delta\vert K_C \vert=\sum_{C\in S_i}({\vert K_{C} \vert-\vert K_{C\cup i} \vert})$. %  $c'$ is the cluster after implementing the strategy, and $c$ is the original cluster.
+This new problem can be formulated as a \textit{player-specific singleton congestion game}, and can be represented by a tuple $\Gamma=(\mathcal{N},\mathcal{R},(\sum_i)_{i \in \mathcal{N}},\Delta\vert K^i_C \vert)$. Here,
+%To make the model of this game more clear, we make some change to our original problem. Previously, the nodes in overlapping areas belong to more than one cluster, and our scheme is to remove them out of some clusters to increase the set of common channels within the cluster form which the mode leave. In the new model, we assume all the nodes in overlapping nodes don't belong any cluster and the problem become into how do these nodes decide which cluster to join.
+
+%The components of the game are listed as follows,
+
+\begin{itemize}
+	\item $\mathcal{N}=\left\{1,\ldots,n\right\}$, the set of players (debatable nodes).
+	\item $\mathcal{R}=\left\{1,\ldots,m\right\}$, the set of resources which player can choose, which are all the clusters in our model.
+	\item $\sum_i \subseteq 2^{\left[S_i\right]}$, $i\in \mathcal{N}$, is the strategy space of player $i$. $S_i$ is the set of claiming clusters of node $i$. Note that 
+	only one resource is allocated for $i$ when it makes decision (thus the game is a singleton game).
+	%when $i$ makes decision, only one resource (one claiming cluster) from the allowed resources is allocated.
+	
+	%\item We denote by $\mathcal{S}=\left(\mathcal{S}_1,\ldots,\mathcal{S}_n\right)\in \sum_1\times \cdots\times\sum_n$ the state of game where player $i$ plays strategy $\mathcal{S}_i\in \Sigma_i$.
+	
+	\item %For the clusters which are possible destination of debatable nodes, the decrement of common channels caused by different debatable node' join can be different because of the heterogeneity of channel availability within itself and on the debatable nodes. %furthermore, the sequence of debatable node's join can also alter the decrement. 
+We use function $\Delta\vert K^i_C \vert$ to represent the decrement of ICCs in cluster $C$ caused by debatable node $i$' joining in it. For one cluster $C\in S_i$, the decrement of ICCs caused by enrollment of debatable nodes is $\sum_{i:C\in S_i} \Delta\vert K^i_C \vert$. Note that this function is non-decreasing.
+
+	\item The Rosenthal's potential function \cite{Rosenthal} of this congestion game is given by:
+	\begin{equation*}
+	\phi(S)=\sum_{C\in\mathcal{R}} \sum_{i:C\in S_i} \Delta\vert K^i_C \vert   	
+   	%\sum_{i=1}^N \Delta^{i}_{p}(S)=\sum_{i=1}^N \sum_{r\in S_i}\Delta^{i}_{r}(t)	
+  	% \Delta =\sum_{i=1}^N w_i (x_i - \bar{x})^2 .
+	\end{equation*}
+All the players in this game greedily update their strategy to minimize the potential function (congestion), this process is exactly the same with the network behavior under \textit{Distributed Greedy Algorithm}. 
+
+%	\item It is an asymmetric game because the sets of strategies shared by different players are different.
+%	\item The total cost is: 
+%\begin{equation*}
+%   \sum_{i=1}^N \Delta^{i}_{p}(S)=\sum_{i=1}^N \sum_{p\in s_i} \Delta^{i}_{p}(n_p(S))
+%  % \Delta =\sum_{i=1}^N w_i (x_i - \bar{x})^2 .
+%\end{equation*}
+
+%This is the global objective we want to minimize.
+\end{itemize}
+
+Singleton congestion game is a special type of matroid game~\cite{Milchtaich1996111,Ackermann06purenash}. It is known that player-specific matroid congestion game admit pure equilibrium, and the number of steps towards \textit{Nash Equilibrium} is upper-bounded\footnote{Here we present this with modifying the original conclusion in \cite{Ackermann06purenash} according to our model.} by $ n^2\cdot m $. In our context, $n$ is the number of debatable nodes, $m$ is number of clusters in CRN, %$rk(\Gamma)$ of the matroid  is the cardinality of the maximal independent sets, which is 1 in the case of singleton game, 
+so the total time complexity to achieve the \textit{Nash Equilibrium} using greedy approach is 	.
+%(XXX Just mention after this complexity result the relationship to the system mdeol XX)
+This is upper-bounded (in the worst case) by $O(\vert I\vert^3)$. Based on above model and analysis, phase II can converge if debatable nodes utilize the DGA. 
+%Although the game version of DGA can achieve \textit{Nash Equilibrium}, the whole scheme can possibly obtain sub-optimal result.    %, furthermore,this stable state is a local minimum of the global decrement function.
+
+\subsubsection{Distributed Fast Algorithm (DFA)}
+The complexity of DGA is quite large recalling that the formation of clusters takes at most $|I|$. Here we propose a faster algorithm DFA which is especially suitable for CRN where channel availability might change dynamically and re-clustering is possible. %Note that the algorithm is based on the problem description of phase II. 
+In DFA, each debatable node executes only one iteration of Algorithm~\ref{alg4} (by setting 'the current value' in Line 14 to zero). Every cluster includes all its debatable nodes, thus the membership is static and debatable nodes can make decisions simultaneously without considering the change of membership of its claiming clusters. For example, for node $A$ in Figure \ref{fig2}, the membership of cluster $C_C, C_H\in S_A$ are $\{A,B,C,D\}$ and $\{A,B,H,G\}$ respectively. 
+
+The two possible strategies of node $A$'s clarification is illustrated in Figure \ref{fig3}. In Figure \ref{AinC}, node $A$ staying in $C_C$ and leaving $C_H$ brings 2 more ICC in $S_A$, as it is more than that brought by another strategy showed in \ref{AinH}, $A$'s membership is clear. After the decisions made similarly by the other debatable nodes $B$ and $D$, the final clusters formed are shown in Figure~\ref{fig4}.
+
+%Using DFA in phase II, the time complexity is decreased drastically to 1. Thus, the total complexity of ROSS-DFA is $|I|$, while, ROSS-DGA's complexity is $|I|^3$ in the worst case.
+
+
+\begin{figure}[ht!]
+\centering
+\subfigure[Node A stays in cluster $C_C$, quits $C_H$, $\Delta\vert K_{C_C}\vert+\Delta\vert K_{C_H}\vert=2$]{
+\includegraphics[width=0.435\linewidth]{figure4AinC.pdf}
+\label{AinC}
+}
+\subfigure[Node A stays in cluster $C_H$, quits $C_C$, $\Delta\vert K_{C_C}\vert+\Delta\vert K_{C_H}\vert=1$]{
+\includegraphics[width=0.435\linewidth]{figure4AinH.pdf}
+\label{AinH}
+}
+\caption[]{Membership clarification: possible cluster formations decided by node A's different choices} %\subref{node A in $C_C$}, \subref{node A in $C_H$}}
+\label{fig3}
+\end{figure}
+
+\begin{comment}
+As an example, when node A comes to decide which cluster to stay, the memberships of relevant clusters, like $C_C$ and $C_H$, are $\{C,B,D,A\}$ and $\{H,B,G,A\}$ respectively. Before the other two debatable nodes B and D making their belonging clear, cluster $C_C$ and $C_H$ have them in the same time. So node A can decide which cluster to belong to without considering other debatable nodes' action. There are two strategies for node A, which is illustrated in Figure \ref{fig3}. Because staying in cluster $C_C$ brings in more common channels within relevant clusters, node A finally choose cluster $C_C$ to stay and caveat from cluster $C_H$. The membership of $C_H$ is updated in the same time. Node B and D undertake the same process and the clusters are formed finally as Figure \ref{fig4} shows.
+
+Because debatable nodes can conduct membership clarification abased on static membership information of relevant clusters, thus no iteration happens in this process. The time complexity of this algorithm is only decided by the number of debatable nodes, which is maximal $O(\vert I\vert)$. 
+
+As an example, when node A comes to decide which cluster to stay, the memberships of relevant clusters, like $C_C$ and $C_H$, are $\{C,B,D,A\}$ and $\{H,B,G,A\}$ respectively. Before the other two debatable nodes B and D making their belonging clear, cluster $C_C$ and $C_H$ have them in the same time. So node A can decide which cluster to belong to without considering other debatable nodes' action. Figure \ref{AinC}. Because staying in cluster $C_C$ brings in more common channels within relevant clusters, node A finally choose cluster $C_C$ to stay and retreat from cluster $C_H$. The membership of $C_H$ is updated in the same time. Node B and D undertake the same process and the clusters are formed finally as Figure \ref{fig4} shows.
+\end{comment}
+
+
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width=0.5\linewidth]{final_clustering_ross.pdf}
+  \caption{Final formation of clusters, common channels for each cluster is shown.}
+  \label{fig4}
+\end{figure}
+
+
+\newpage
+\section{Centralized Clustering Scheme}
+\label{centralized_scheme}
+
+%paper given by james is useful which provides a survey from the perspective of wsn!
+
+\subsection{The optimization problem}
+
+
+The centralized clustering scheme aims to form clusters which are of certain sizes, and meanwhile the total number of common channels of all clusters is maximized.
+
+\textit{Centralized clustering in CRN}: Given a cognitive radio network $\mathcal{N}$ where nodes are indexed from 1 to $N$ sequentially.
+Assume there is a collection of clusters of CR nodes $\mathcal{S}=\{C_1, C_2,\ldots,C_l\}$ (the subscripts are merely indexes, not IDs of cluster heads), where $\bigcup_{1\leq i \leq l} C_i = N$ and $V_{C_i}\neq \emptyset$ for any $i$.
+The size of $C_i$ is decided based on the purpose of network and the operation adopted, we set as $1\leq |C| \leqslant k$.
+The number of common channels is defined as $f=|V_{C}|$ if $|V_{C}|>1$, and $f=0$ if $|V_{C}|=1$.
+The problem of clustering in CRN is to find a subcollection $\mathcal{S}' \subseteq \mathcal{S}$, so that $\bigcup_{C_j\in \mathcal{S}'} C_j = N$, and $C_j'\cap C_j =\emptyset$ for $C_j', C_j\in \mathcal{S}'$, furthermore, $\sum_{C\in \mathcal{S}'} f$ is maximized.
+% when $|C|>1$, and $f(\cdot)=0$ when $|C|=1$.
+%As to $f(\cdot):z\rightarrow z$, under this problem setting, if only number of common channels are given consideration, only singleton clusters will be preferred, which contradicts to our goal of clustering CR nodes together, thus we choose $f(\cdot)= |V_{C}|\cdot |C|$, the product of number of common channels and cluster size.
+The decision version of clustering in CRN is to ask whether $\sum_{C\in \mathcal{S}'} f \geqslant \lambda$ where $\lambda$ is a real number in stead of to maximize $\sum_{C\in \mathcal{S}'} f$.
+
+%The decision version of \textit{weighted exact cover problem}: 
+%Given an universe $U$, and collection $S=\{s_1, s_2, \ldots, s_m\}$ where each subset $s_i\subseteq U$ and is given a weight $w_i$, whether there exists a collection of subsets $\mathcal{C}$ and constant number $\lambda$, so that the union of $\mathcal{C}$ equals to $U$, $s_j\cap s_{j'} = \emptyset$ for different $j$ and $j'\in \{1,2,\ldots, m\}$, and $\sum_{i\in J} w_i \geq \lambda$.
+\textit{Weighted k-set packing}: Given a base set $\mathcal{G}$ of positive integers, there is a collection of sets $\mathcal{Q}=\{s_1,s_2,\cdots,s_m\}$, each of which contains at most $k$ elements drawn from the base set and has an associated real weight, whether exists a collection $\mathcal{S}\subseteq \mathcal{Q}$, where $\mathcal{S}$ contains only disjoint sets and the total weight of sets in $\mathcal{S}$ is greater than $\lambda$.
+Weighted k-set packing is NP-hard when $k\geqslant 3$.~\cite{Computers_a_Intractability}
+
+
+\begin{theorem}
+\label{theorem1}
+CRN clustering problem is NP-hard, if the maximum size of clusters $k\geqslant 3$.
+%Assume a CRN can be represented by a connected graph, and there is at least one common channel between any pair of neighbours, then forming at least two CR nodes into one cluster is NP-complete.
+\end{theorem}
+
+\begin{proof}
+To see CRN clustering problem is NP-hard, we reduce the NP-hard problem \textit{weighted k-set packing} to CRN clustering problem.
+%, which means centralized clustering in CRN problem is as hard as weighted k-set packing to be solved.
+
+To complete the reduction, we need to conduct following two steps:
+\begin{itemize}
+\item Find one polynomial algorithm $\sigma$, by which any instance (\eg $\mathcal{S}$) of weighted k-set packing can be transformed to instance $\sigma(\mathcal{S})$ for CRN clustering problem.
+\item Show that $\mathcal{S}$ is a \textit{yes} instance of weighted k-set packing if and only if $\sigma(\mathcal{S})$ is an \textit{yes} instance for CRN clustering problem.
+\end{itemize}
+
+Given a ground set $\mathcal{G}$ of positive integer numbers which are indexed from 1 to $N$ sequentially.
+One instance $\mathcal{S}$ for weighted k-set packing is a collection of sets $\{s_1, s_2,\cdots\}$, each of which is composed by any number of elements in $\mathcal{G}$.
+$\omega$ gives the weight for each set $s$.
+There is $\omega:\mathcal{S}\rightarrow \mathbb{Z}^{+}$.
+
+The polynomial algorithm $\sigma$ consists of two transformations.
+In the first transformation, in each set $s_i$ of instance $\mathcal{S}$, the elements are duplicated, for instance, when $s_i=\{1, 4, 6\}$, the dummy set $s_i'=\{1,1,4,4,6,6\}$.
+By doing this, we obtain the dummy sets and constitute the dummy instance $\mathcal{S}'$ based on $\mathcal{S}$.
+The purpose of this transformation is to eliminate the single element set in $\mathcal{S}$.
+Note that the weight of set is unchanged, \ie $\omega(s_i)=\omega(s_i')$.
+This transformation requires $\sum_{s_i \in \mathcal{S}} |s_i|$ steps.
+
+In the immediate following second transformation, we transform the dummy instance $\mathcal{S}'$ to an instance for CRN clustering problem.
+Given one instance $\mathcal{S}'$, we retrieve all the elements which appear in it, and map each of those elements into one CR node, \ie each integer corresponds to one CR node, particularly, that integer equals to the CR node's ID.
+As to duplicated elements, we still do the mapping for both, as a result, there appears duplicated CR nodes.
+These CR nodes compose a collection of CR nodes, but note that they have not constituted one CRN yet, as there is no connections drawn among them.
+Connections in CRN under this context mean the corresponding CR nodes have common channels and close enough to communicate with each other.
+%We further assume that all CR nodes locate in a way that any two pair of nodes has potential to be connected if their IDs are in the same set in $\mathcal{S}$, the instance for weighted k-set packing.
+
+Now we build the connections within CRN based on the sets in $\mathcal{S}'$ sequentially.
+Based on set $s'\in \mathcal{S}'$, we add pairwise connections among CR nodes whose IDs are in $s'$, the number of common channels of the CR nodes equals to the weight of set $s'$. 
+There is also connection between the CR node and its dummy node.
+Afterwards, the CR node whose ID doesn't appear in any set in $\mathcal{S'}$ is regarded as single node clusters, according to the definition of clustering problem in CRN, the number of common channels is 0.
+This procedure requires $\sum_{s_i' \in \mathcal{S}'} |s_i|$ steps to map sets in $\mathcal{S}'$ into CRN and connections, and at most $N$ steps to complement the single node clusters in CRN.
+
+\textit{Special situation:}
+There is one situation deserving extra explanation in the second transformation, we adopt one example to discuss it.
+Assume two sets in $\mathcal{S}$ are $s_1=\{1,2\}$ and $s_2=\{1,2,3,4\}$, their weights are 3 and 5 respectively.
+Their dummy sets are $s_1'=\{1,1,2,2\}$ and $s_2'=\{1,1,2,2,3,3,4,4\}$ and their weights are unchanged.
+The connections mapped to CRN are contradictory to reality, as the number of common channels of CR node group $\{1,1,2,2\}$ can only be smaller than that of $\{1,1,2,2,3,3,4,4\}$.
+We let this contradiction in the process of mapping happen because it will be eliminated later: no matter one instance $\mathcal{S}$ for weighted k-set packing results in \textit{yes} or \textit{no}, at most only one set out of $s_1'$ and $s_2'$ is chosen, then we can safely delete the connections from the CRN based on the unchosen set, thus the contradiction is gone. 
+
+We have crossed the hurdle of finding one polynomial algorithm $\sigma$ to transform instance of weighted k-set packing to an instance for clustering in CRN.
+Now we look into the step 2 in reduction.
+
+When the instance $\mathcal{S}$ for weighted k-set packing contains one solution, \ie there is a group of sets in $\mathcal{S}$, whose sum weights is greater than $\lambda$, then in the CRN which is mapped from $\mathcal{S}'$, the sum number of common channels of the clusters which correspond to the selected sets in $\mathcal{S}$ and $\mathcal{S}'$, is greater than $\lambda$.
+
+When there is no solution as to ground set $\mathcal{G}$ for weighted k-set packing, let's assume the maximum sum of weights of all instances is $\sum_{s_i\in \mathcal{S}}\omega(s_i)=\delta < \lambda$. 
+The dummy set of each $s_i\in \mathcal{S}$ is mapped to clusters of CR nodes.
+When $|s_i|=1$, the mapped cluster has two nodes, one of them is the dummy CR node.
+The number of common channels is on longer 0 as is regulated by the definition of CRN clustering problem, but equals to the corresponding set $s_i$.
+Meanwhile, the number of common channels of all the other single node cluster is 0.
+Then the sum number of common channels of the clusters in CRN is $\delta < \lambda$, thus, there is no clustering solution for the mapped CRN.
+
+
+
+After proving weighted k-set packing can be reduced to centralized clustering in CRN, we can say the latter problem is NP-hard.
+\end{proof}
+
+\subsection{Centralized Scheme}
+
+%Exact cover problem can be solved with Knuth's Algorithm X~\cite{dancingLinks_Knuth} as it finds out all the instances of exact cover, then we can choose the one with the biggest sum of weights. 
+As there is no efficient algorithm to solve clustering problem in CRN, we adopt binary linear programming to solve the problem.
+Note that binary linear programming is in NP-complete.
+
+%This example indicates the chose of $\mathcal{C}$ plays an important role on the resultant clustering strategy.
+%Meanwhile, it provide a chance to constrain the cluster size by putting groups with desired sizes into $\mathcal{C}$.
+
+%the maximum size of $S$ is the \textit{Bell number} of $N$, and $S$ contains the conditions cluster .
+%In this case, the resultant $\mathcal{C}$ is composed with all the singleton clusters, \ie, the cluster which contains one node, and the objective is -38.
+
+%it is possible that there doesn't exist combination of clusters with the same cluster size.
+%We thus list all possible clusters whose sizes are from 2 to one certain number \footnote{this number of decided by the density of CR network, along with the occupation of PUs. We set this number as cluster size of the biggest cluster ever appears when conducting distributed schemes.}, and check each combination of clusters to find the best covering of network on the aspect of number of ICCs per cluster.
+%The complexity of computation is thus \bigO$(N^\delta)$, $\delta$ is the preferred cluster size.
+
+%The global optimal clustering scheme with respect to the number of common channels is investigated to show the gap with the distributed schemes.
+
+
+%We apply this centralized scheme on a network with network size $N$ and cluster size $\delta$.
+%There is $N\mod \delta=0$, and the expected number of clusters is $C = N/\delta$.
+%These tailored parameters don't harm the validity of the performance gap between the two schemes.
+
+Given a CRN $N$ and desired cluster size $\delta$, we get a collection of clusters $G$, where clusters satisfy the conditions of clusters in Section~\ref{sec:model}, and the sizes of clusters are $1,2,\ldots,\delta$.
+Note that the legitimate clusters include the singleton ones, which guarantees the partition of any network is feasible.
+With $n=|N|,g=|G|$, we construct a $g\times n$ matrix $Q_{g\text{x}n}$. 
+Each element $q_{ij}= |k_{C_i}|$ if $j\in C_i$, and $q_{ij}= 0$ if $j\notin C_i$.
+In other words, Each non-zero element $q_{ij}$ denotes the number of common channel of the cluster $i$ where node $j$ resides.
+
+\begin{figure}[ht!]
+\centering
+Q = \bordermatrix{~ 		& 1 	& 2 	& 3 	& \cdots 	& n-1 	& n	\cr
+                  C_1 	& k_{C_1} 	& k_{C_1} 	& 0 	& \cdots 	& 0 	& 0	\cr
+                  C_2 	& k_{C_2} 	& 0 	& k_{C_2} 	& \cdots 	& 0 	& 0	\cr
+				\vdots  	&\vdots & 	 	& 		&  \vdots		& 		& \vdots \cr
+				C_i 	& 0 	& k_{C_i} 	& 0 	& \cdots 	& k_{C_i} 	& 0	\cr
+				\vdots  	&\vdots & 	 	& 		&  \vdots		& 		& \vdots \cr
+				C_{i'} 	& k_{C_{i'}} 	& 0 	& 0 	& \cdots 	& k_{C_{i'}} 	& 0	\cr
+				\vdots  	&\vdots & 	 	& 		&  \vdots		& 		& \vdots \cr}	
+\caption{Matrix Q}
+\label{xx}
+\end{figure}
+
+We also have one $G\times N$ binary matrix $X$, the element of the matrix is binary variable $x_{ij},i=1, \ldots, G, j=1, \ldots, N$.
+$x_{ij}=1$ denotes cluster $i$ is one partition chosen by the clustering scheme, $x_{ij}=0$ means this partition is not adopted.
+
+\begin{align}
+   &  \text{minimize}
+   && \Sigma_{j=1}^g\Sigma_{i=1}^n (-x_{ij}q_{ij} + w_i*\texttt{cost($\delta$)}) \\
+   &  \text{subject to}
+   && \Sigma_{i=1}^g x_{ij} = 1,  j=1, \ldots, n \\
+   &
+   && \Sigma_{j=1}^n x_{ij} = \delta*(1-w_i), j=1, \ldots, g \\
+   &
+   && \text{$x_{ij}$ and $w_j$ are binary variables.}
+\notag
+\end{align}
+
+As the resultant clusters are with certain desired sizes, we try to maximize the sum of products of cluster size and number of common channels in the objective function.
+%The first item of the objective function is the sum of products of cluster size and number of common channels per cluster.
+%When only this item is applied in the objective function, it is obvious to see that single node cluster strategy is the solution, hence we add the second item to control the cluster size.
+The second item of objective function denotes the \textit{punishment} for choosing the cluster whose size is not $\delta$.
+We design $\texttt{cost($\delta$)}$ as follows,
+
+$$
+\texttt{cost($\delta$)} = \left\{ \begin{array}{rl}
+0 &\mbox{ if $|C_i|=\delta$} \\
+\alpha_1 &\mbox{if $|C_i|=\delta-1$} \\
+\alpha_2 &\mbox{if $|C_i|=\delta-2$} \\
+\dots
+\end{array} \right.
+$$
+where $\alpha_i>0$ and increases with $i$ getting larger.
+Choice of $\alpha_i$ affects the resultant clusters.
+%For instance, when the desired cluster size is $\delta$, if $x_ij=1$ and $|C_i|=\delta$, the 
+
+Constraint 3.2 restricts that node $j$ resides in exactly one cluster. %, or resides in a single node cluster ($\Sigma_{i=1}^G x_{ij} < 1$). 
+In constraint 3.3, $w_j$ is an auxiliary binary variable, $w_j=0$ denotes cluster $j$ is chosen in the solution.
+When $w_i=1$, $i$th cluster is not chosen according to constrain 3.3, then the objective function suffers certain \textit{loss}.
+%The constant $cost(\delta)$ is between 0 and $min(q_{ij}), i=1, \ldots, N, j=1, \ldots, G$.
+
+
+
+
+
+
+
+%\begin{figure}[ht!]
+%\centering
+%\includegraphics[width=0.45\linewidth]{example.JPG}
+%\caption{Example of Matrix Q in a 6-node network, cluster size is set as 2}
+%\label{xx}
+%\end{figure}
+
+%\begin{figure}[ht!]
+%  \centering
+%  \includegraphics[width=0.5\linewidth]{figure5final.pdf}
+%  \caption{Final cluster formation.}
+%  \label{fig4}
+%\end{figure}
+
+
+
+This is a linear binary optimization problem, which is solved by function $bintprog$ provided in MATLAB.
+
+
+Take CRN in Figure~\ref{fig1} for example.
+As $|N|=8$, we let the cluster size $\delta$ to be either 2 or 3 so that the partition of network is possible.
+A collection of clusters $G$ is built, where the clusters satisfy the conditions for cluster in Section~\ref{sec:model} and the sizes of clusters are 1, 2 and 3. 
+$G=\{\{A\}, \{B\},\dots,\{B,C\},\{B,A\},\{B,H\},\cdots,\{B,A,C\},\{B,H,C\}, \{A,D,C\}$\\$,\cdots\}$, and $G=38$.
+%Here we don't exhaustively list all the legitimate clusters with size 2 and 3.
+
+The clustering result of binary linear programming is $\{\{D,E,F\},\{A,C,G\},\{H,G\}\}$, the number of common channels is $\{2,3,3\}$.
+The solution from ROSS is $\newline \{\{B,H,G\},\{C,A\},\{D,E,F\}\}$, the number of common channels is $\{2,4,2\}$.
+By applying SOC, the clustering result is $\{A,B,C,D,G\},\{E,F\},\{H\}$.
+
+The final clusterings of the example CRN by SOC and linear programming are as follows,
+
+\begin{figure}[ht]
+\begin{center}
+%\subfigure[ROSS]{\label{fig:final_clustering_ross}\includegraphics[width=0.3\textwidth]{final_clustering_ross}}
+%
+\subfigure[SOC]{\label{fig:final_clustering_soc}\includegraphics[width=0.45\textwidth]{final_clustering_soc}}
+\subfigure[Linear programming]{\label{fig:final_clustering_LP}\includegraphics[width=0.45\textwidth]{final_clustering_LP}}
+\end{center}
+\caption{Final clustering of the example CRN}
+\label{fig:final_clustering}
+\end{figure}
+
+As to the average number of common channel, the results of ROSS, LP and SOC are 2.66, 2.66, and 3 respectively. 
+Note there is one singleton cluster $C_H$ generated.
+When the singleton cluster $\{E\}$ is excluded, the average number of common channels of SOC drops to 2.5. 
+
+
+
+
+\section{Performance Evaluation}
+\label{performance}
+In this section, we evaluate the performances of the two variants of ROSS, \ie ROSS-DGA and ROSS-DFA, besides, the cluster size control scheme is also evaluated when the desired cluster size is smaller than the average neighbourhood size.
+We choose SOC as comparison scheme.
+To the best of our knowledge, SOC~\cite{Lazos09} is the only work emphasizing on the robustness of clustering structure from all previous work on clustering in CRN. The authors of~\cite{Lazos09} compared SOC with other schemes based on the average number of common channels within each cluster, on which SOC outperforms other schemes by 50\%-100\%. This is because the schemes except for SOC are designed either for ad hoc network without consideration of channel availability~\cite{Basagni99}, or for CRN  but just considering basic connection among CR nodes~\cite{Zhao07}. Hence, we only compare the two versions of our scheme ROSS-DGA and ROSS-DFA with SOC to show the merits of ROSS, and also compare with the centralized scheme to see the gap with the global optima. 
+We will investigate the following metrics:
+\begin{itemize}
+\item Average number of common channels per un-singleton cluster. 
+\begin{itemize}
+\item SOC adopts the average number of common channel over all clusters, \ie including the singleton clusters. As we try to look into the robustness of clusters of CRs, we exclude those singleton clusters.
+\end{itemize}  
+
+\item Number of unclustered CRs with moderate and vigorous intensity of PRs'activities.
+\begin{itemize}
+\item This is the traight forward metric on robustness of clusters.
+We investigate how many clusters survives when we increase the intensity of PRs' activity.
+\end{itemize}
+
+\item Cluster sizes
+\begin{itemize}
+\item Homogeneous clusters size is pursued.
+\end{itemize}
+
+\item Amount of control messages involved.
+\end{itemize}
+
+The simulation is done by implementing random graph structures in C++. 
+There are two parts of simulation, in the first part, we investigate the gap between the distributed schemes with the centralized scheme.
+As there is no polynomial time solution available to solve the centralized problem, we adopt a small network to compare the performances of the ROSS, SOC and the centralized solution.
+In the second part, we increase the network scale and change network density to thoroughly compare the two distributed schemes.
+\subsection{Centralized Schemes vs. Decentralized Schemes}
+Coinciding with the system model in Section~\ref{sec:model}, 10 primary users and 20 CR users are dropped randomly (with uniform distribution) within some area of size $A^{2}$, where we set the transmission ranges of primary and CR users to $A/3$. There are $P=10$ available channels. 
+With this setting, the average number of neighbours of one CR user is around 5.
+Each primary user randomly occupies one channel, and CR users are assumed to be able to sense the existence of primary users and identify available channels.
+When clustering scheme is executed, around 7 channels are available on each CR node.
+All primary and CR users are assumed to be static during the process of clustering.
+Performance results are averaged over 50 randomly generated topologies with equal parameters.
+The desired cluster size is 3.
+The confidence interval shown in figure corresponds to 95\% confidence level.
+
+\subsubsection{Number of Common Channels}
+\label{ccc_20}
+We first have a look at the average number of common channels per cluster, which is used in~\cite{LIU_TMC11_2} as the sole criterion for clustering robustness.
+Figure~\ref{ccc_per_nonsingleton} shows the average number of common channel of non-singleton clusters, as the singleton clusters (in other words unclustered nodes) don't execute any functionalities of clusters, which are described in Section~\ref{intro}.
+As to schemes, centralized schemes outperform distributed schemes on number of common channels.
+SOC achieves the most number of CCC than variants of ROSS.
+SOC is liable to group the neighbouring CRs which share the most abundant spectrum together, no matter how many of them are, thus the number of CCC of the formed clusters is higher, but this method leaves considerable number of CRs which have less spectrum not in any clusters.
+As to variants of ROSS, the procedure of debatable nodes greedily looking for better affiliation improves the number of CCC, thus ROSS-DGA with and without size control outperform ROSS-DFA and its size control version respectively.
+We also notice that, the size control feature doesn't affect the number of CCC for both ROSS-DGA and ROSS-DFA.
+
+
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width=0.5\linewidth]{ccc_20.pdf}
+  \caption{Number of common channels for non-singleton clusters, the numbers in the names of schemes annotate the desired cluster size.}
+  \label{ccc_per_nonsingleton}
+\end{figure}
+
+\subsubsection{Survival Rate of Clusters with Increasing PR Users}
+We investigate the robustness of the formed clusters when they co-exist with varying intensity of PRs' activities.
+After the clusters are formed under the influence of the initial 10 PRs, extra 100 PRs are sequentially added into the network.
+The transmission range and channel occupancy of the new PR is the same with the previous ones, \ie transmission range is $A/3$, and one channel out of 10 is randomly chosen to operate.
+As to one cluster, if there is no common channels available for all members because of the new added PRs, the cluster destroyed, and the former cluster member CRs become unclustered CRs.
+
+Figure~\ref{singleton_clusters} shows the number of unclustered CRs with the increase of PRs, which indicates the vulnerability of clusters under varying surrounding of licensed spectrum.
+
+
+We obtain three conclusions corresponding to three comparisons shown in this figure,
+\begin{itemize}
+\item Centralized scheme with cluster size of 2 produces the most robust clusters, and SOC results in the most vulnerable clusters.
+Centralized scheme with cluster size of 3 achieves less unclustered CRs than variants of ROSS when the number of PRs is 10$\sim$30, when number of PUs is 30$\sim$60, same amount of unclustered CRs are generated with variants of ROSS.
+When there are 75 and more new PRs, centralized scheme with cluster size of 3 results in more unclustered CR nodes than variants of ROSS.
+Size control feature makes both ROSS-DGA and ROSS-DFA outperform themselves without size control when number of new PRs is greater than 50.
+
+The reason that centralized scheme with cluster size of 3 does not completely excel variants of ROSS is due to the favourable achievement of it: the uniformly sized clusters.
+As distributed schemes, variants of ROSS generate considerable amount of smaller clusters which are more likely to survive when PRs' activities become intense.
+The comparison on cluster sizes will be given in details in~\ref{cluster_size}.
+
+\item ROSS with size control is better than the other two distributed schemes.
+The size control decreases the clusters size and makes the clusters more robust when under PRs' activity.
+
+\item Greedy algorithm improves survival rate. 
+ROSS-DGA improves the survival rate of ROSS-DFA, so does ROSS-DGA with size control against ROSS-DFA with size control.
+This comply with the observation on number of CCC in section~\ref{ccc_20}.
+As the debatable CRs greedily update their affiliation with demanding clusters, and the metric for updating is the maximum increase of CCCs of the demanding clusters, the average number of common channels is improved (shown in Figure~\ref{ccc_per_nonsingleton}), then the robustness of clusters is enhanced. 
+Meanwhile, sizes of more clusters become smaller also contributes more robustness.
+
+\end{itemize}
+
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width=0.7\linewidth]{survival_rate_20.pdf}
+  \caption{Number of CRs which are not included in any clusters}
+  \label{singleton_clusters}
+\end{figure}
+
+%\begin{figure}[ht!]
+%  \centering
+%  \includegraphics[width=0.5\linewidth]{singleton_clusters.pdf}
+%  \caption{Comparison between Rocsi and centralized scheme on non-singleton clusters}
+%  \label{singleton_clusters2}
+%\end{figure}
+
+
+\subsubsection{Cluster Size Control}
+\label{cluster_size}
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width=0.7\linewidth]{size_control_20.pdf}
+  \caption{Distribution of CRs residing in Clusters with different sizes, as to ROSS with size control feature, the desired cluster size is 3.}
+  \label{size_control}
+\end{figure}
+Figure~\ref{size_control} shows the number of CRs residing in certain sized clusters.
+The centralized schemes are able to form clusters which strictly satisfy the requirement on cluster sizes.
+When the desired size is 2, each generated cluster has two members.
+When the desired size is 3, in average only 3 CRs are formed into 2 node clusters.
+When ROSS-3-DFA is applied, most number of CRs are in 3 node clusters, nevertheless, slightly less nodes are found in 2 node and 4 node clusters, there are also considerable number of singleton clusters.
+ROSS-3-DGA decreases the clusters sizes and results in more 2 node clusters, the second most CRs are found in 3 node clusters.
+ROSS-DGA and ROSS-DFA generate rather even distribution of nodes with different sizes, whereas SOC results in more CRs unclustered or clusters of large sizes. 
+Figure~\ref{size_control} shows distributed clustering schemes are not able to control cluster sizes perfectly, but ROSS-DGA and ROSS-DFA eliminate the clusters whose size diverges largely with the desired one, \ie single node clusters and clusters with size of 13 and 14.
+Particularly, size control enable both ROSS-DGA and ROSS-DFA to achieve clusters whose sizes demonstrate certain homogeneity, \ie cluster sizes vary from 1 to 4.
+But there are considerable number of single node clusters, which is due to the cluster pruning discussed in section~\ref{cluster_pruning}.
+
+\subsubsection{Control Signalling Overhead}
+%Different from the clustering schemes proposed in ~\cite{LIU_TMC11_2, clustering_globecom11}, 
+As to any variants of ROSS, there are two phases, in the first phase, clusters are formed, in the second phase, cluster membership is decided so that each node only resides in one cluster.
+Control message exchanges between CR nodes are involved in both phases.
+
+In this section we compare the amount of control messages involved for clustering in different schemes, \eg centralized scheme, ROC, ROSS-DGA, ROSS-DFA and those with size control feature.
+In order to highlight the amount of control signalling only for clustering, we omit the control messages used for neighbourhood discovery, which are regarded the same for all schemes, and only compare the number of control messages brought in by the features of the schemes. 
+The control message here refers both broadcast and unicast.
+
+As to variants of ROSS, in the first phase, after each node broadcasts their new knowledge on spectrum robustness, cluster is automatically formed by cluster head which is decided from consensus by comparing the spectrum robustness with neighbours, then the cluster head broadcasts message containing its ID and the available channels in its cluster.
+As to ROSS with size control feature, there are same amount of cluster heads with ROSS without enabling size control feature, and the cluster head broadcasts the available channels of the pruned cluster.
+Afterwards in the second phase, membership clarification of debatable nodes is conducted.
+Debatable node informs the cluster which it going to stay and the cluster head broadcasts message about its new cluster.
+As to SOC, each node needs to maintain one cluster, the final clusters are formed after three rounds of comparisons and cluster mergers, while as to ROSS, only debatable nodes need to communicate with cluster heads to clarify their membership.
+%1. update membership to form X1, 
+%2. broadcast new X1, form new X2
+%3. broadcast X3
+The quantitative analysis of amount of control overhead and the size of messages are illustrated in Table \ref{tab_overhead}, 
+
+\begin{table}[hc]
+\center
+\begin{tabular}{|p{3 cm}|p{3 cm}|p{7.5 cm}|}
+\hline
+ Scheme 		&   Number of broadcast  	& Content of message \\ \hline
+ ROSS-DGA, ROSS-x-DGA 		&   $h+2*m^2c$  (upper bound)				& $ID_{H_C}$ and $V_C$ for $h+m^2c$ times, notification to join in one cluster for $m^2c$ times					\\ \hline
+ ROSS-DFA, ROSS-x-DFA 		&   $h+ 2m$	 (upper bound)				& $ID_{H_C}$ and $V_C$ for $h+m$ times, notification to join in one cluster for $m$ times	 					\\ \hline
+ SOC 			&   $3*n$					& $\{V_i\}, i\in M\subseteq Nb_i$						\\ \hline
+ Centralized	&	$n$						& $\{C\}$         	\\ \hline
+\end{tabular}
+\caption{Singalling overhead. Notations: $n$-number of CR nodes in CRN, $h$-number of cluster heads, $m$-number of debatable nodes, $c$-number of demanding clusters, $\delta$-desired cluster size\\
+* T}
+\label{tab_overhead}
+\end{table}
+
+
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width=0.67\linewidth]{number_controlMsg.pdf}
+  \caption{Number of control messages}
+  \label{control_msg}
+\end{figure}
+
+
+\subsection{Comparison between Distributed Schemes}
+In this part we investigate the performances of distributed schemes in CRN with different network scales and densities.
+The transmission range for CR is $A/10$ whereas $A/5$ for PR.
+The number of PR is 30, we investigate the CRN where number of CR is 100, 200 and 300.
+
+
+\subsubsection{Number of CCC per Non-singleton Clusters}
+
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width=1\linewidth]{ccc_large_scale_color.pdf}
+  \caption{Number of common channels for non-singleton clusters. As to ROSS with size control feature, $x=2$ when $N=100$ and 200, $x=3$ when $N=300$.}
+  \label{ccc_large_scale}
+\end{figure}
+Figure~\ref{ccc_large_scale} shows the 
+Figure~\ref{ccc_large_scale} illustrates the average number of CCC of the non-singleton clusters.
+It shows when $N=100$, variants of ROSS have 30\% less CCC than SOC, but this gap is decreased when $N$ is 200 and 300.
+This means SOC performs better on average number of CCC per non-singleton clusters when network density is small, which is already observed in section \ref{ccc_20}.
+When the network becomes more dense, ROSS-DGA achieves even more CCC than SOC, and ROSS-DFA and ROSS-x-DGA visibly increase their performances on CCC.
+
+
+
+\subsubsection{Survival Rate of Clusters with Increasing PR Users}
+With the increase of PRs in the network, clusters become broken as no CCC available within the clusters.
+In this part of simulation, we add 290 more PRs randomly in CRN with interval of 10 to evaluate the robustness of clusters.
+Figure~\ref{singleton_clusters_100} shows the increasing tread of the number of singleton clusters with the increase of PRs.
+SOC generates around 10 more singleton clusters than the variants of ROSS, which accounts for 10\% of the whole network.
+The confidence intervals of the variants of ROSS are not shown in the figure as they overlap, and we only show the average values.
+It can be seen that greedy algorithms result in slightly less singleton clusters than their counterparts.
+
+Figure ~\ref{singleton_clusters_300} shows a more dense CRN where $N=300$.
+SOC noticeably causes more singleton clusters than ROSS variants, except for ROSS-3-DFA when PRs are few.
+The reason is ROSS-3-DFA only conduct cluster membership once, which leaves large number of singleton clusters, while, in ROSS-3-DGA increase the size of smaller clusters through debatable nodes' repeated updates.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.7\linewidth]{survival_rate_100.pdf}
+  \caption{Number of CRs which are not included in any clusters, $N=100$}
+  \label{singleton_clusters_100}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+   \includegraphics[width=0.7\linewidth]{survival_rate_300.pdf}
+  \caption{Number of CRs which are not included in any clusters, $N=300$}
+  \label{singleton_clusters_300}
+\end{figure}
+
+From the Figure~\ref{singleton_clusters_100} and \ref{singleton_clusters_300}, we can see greedy versions of ROSS is more robust than their counterpart variant of ROSS.
+When the network is more dense, the improvement on cluster sizes and robustness by the greedy search is more obvious.
+
+
+\subsubsection{Cluster Size Control}
+
+Cluster size analysis is made when the number of PRs is 30.
+
+\begin{figure}[ht]
+\begin{center}
+%\centering
+\subfigure[100 CRns, 30 PRns]{\label{result1:1}\includegraphics[width=0.45\linewidth]{size_distribution_100.pdf}}
+\subfigure[300 CRns, 30 PRns]{\label{result1:2}\includegraphics[width=0.45\linewidth]{size_distribution_300.pdf}}
+\end{center} 
+\caption[Cluster sizes]{Distribution of CRs in clusters with different sizes} %{\subref{a}, \subref{b}, \subref{c}, \subref{d}}
+\label{result1}
+\end{figure}
+
+We see in Figure~\ref{result1:1}, when variants of ROSS are applied, most CRs are included into clusters with size of 2, thereinto, ROSS-2-DGA achieves the some homogeneous result, \ie, there is no cluster whose size is greater than 3, and the number of CRs in 2 node cluster is greater than that resulted from ROSS-2-DFA.
+This is due to in the phase that debatable nodes clarify their membership, greedy search not only increases the number of CCC of relevant clusters, but also lets debatable nodes stay in smaller cluster, as shown in algorithm~\ref{alg4}.
+SOC doesn't have size control feature thus the cluster sizes diverge greatly.
+In a more dense network with 300 CRs, where desired size is 3, 94\% of CRs are integrated into 2 or 3 node clusters by ROSS-3-DGA, as to ROSS-3-DFA, 13\% CRs constitute singleton clusters, and 27\% CRs are within 4 node clusters.
+Cluster size spans over a large range for schemes which don't have cluster size control mechanism.
+As to ROSS-DGA, ROSS-DFA and SOC, 95\% of CRs stay in clusters whose sizes are smaller than 8, 9 and 14 respectively.
+
+
+
+\begin{comment}
+In the first case, there are 100 CR nodes while primary users are increased from 10 to 150. More primary users lead to fewer idle channels available in the whole network, and thus cause a challenge to the formation of clusters. In Figure~\ref{result1:1}, the average number of inner common channels achieved by the three approaches decreases with increasing the number of primary users. ROSS-DGA/DFA outperform SOC by at most $15\%$ in this case.
+In Figure~\ref{result1:2}, we present the average number of outward common channels. Here, ROSS-DFA outperforms SOC by $20\%$-$40\%$ due to putting CR nodes with bigger connectivity degree at the border of clusters to strengthen the connection among them. % while the advantage of ROSS increases the more primary users are active. 
+ROSS-DGA performs slightly better than ROSS-DFA on the whole range due to its larger number of iterations.
+
+For the second scenario, we vary the number of CR nodes from 100 to 500 while keeping the number of primary users fixed at 100. Hence, we investigate the behavior of the three schemes in sparse and dense situations. Figure~\ref{result2:1} shows the average number of ICCs. We observe that ROSS-DGA/DFA achieves more ICC in sparse networks while slightly less in dense networks. We attribute this to two reasons, firstly, SOC pursues the maximal product of cluster size and number of ICC, so the product value is assured in many cases by decreasing cluster size to get more ICCs. Actually, there is a large number of clusters with only one member. %Figure \ref{result3:2} shows that the number of such clusters delivered by SOC is 120\% more than that of ROSS. 
+Secondly, ROSS-DGA/DFA builds clusters on the basis of one-hop neighborhood, and dense network means there are more CR nodes within the neighborhood, thus agree on less ICCs. Figure~\ref{result2:2} demonstrates an increasing advantage of ROSS-DGA/DFA against SOC on number of outward common channels, because more nodes with bigger connectivity degree are put as border nodes. The distribution of cluster sizes are presented in Figure~\ref{result3:1} and \ref{result3:2} with variation of density. We observe that clusters formed by ROSS-DGA/DFA have similar size. Note in particular that the number of one-node clusters generated by SOC is much bigger than that produced by ROSS-DGA/DFA in both cases. This becomes especially a problem as the density increases. 
+
+Compared with ROSS-DGA, we can find from the simulation that ROSS-DFA has much less complexity by scarifying a little performance, and both ROSS-DGA and ROSS-DFA are less complex that SOC which has a complexity of the order of $\vert I\vert^4$. This was confirmed by the run times of the simulations, which were significantly longer when simulating SOC.
+
+\begin{figure}[t]
+\begin{center}
+
+%\centering
+\subfigure[100 PRns, varying CRns]{\label{result2:1}\includegraphics[width=0.45\linewidth]{CR_ICC_3curves.pdf}}
+\subfigure[100 PRns, varying CRns]{\label{result2:2}\includegraphics[width=0.45\linewidth]{CR_OCC_3curves.pdf}}
+ \end{center}
+\caption[]{Connectivity robustness of ICCs and OCCs with varying density of CR nodes.} %\subref{node A in $C_C$}, \subref{node A in $C_H$}}
+\label{result2}
+\end{figure}
+
+\begin{figure}[ht!]
+\begin{center}
+%\centering
+\subfigure[100 CRns, 100 PRns]{\label{result3:1}\includegraphics[width=0.45\linewidth]{distribution_1_matlab.pdf}}
+\subfigure[200 CRns, 100 PRns]{\label{result3:2}\includegraphics[width=0.45\linewidth]{distribution_2_matlab.pdf}}
+ \end{center}
+\caption[]{Distribution of cluster sizes for two fixed scenarios.} %\subref{node A in $C_C$}, \subref{node A in $C_H$}}
+\label{result3}
+\end{figure}	
+
+\end{comment}
+
+
+\section{Conclusions and Future Work}
+\label{conclusion}
+We investigate extensively the robust clustering problem in CRN, which is important to form clusters which maintains unbroken to the greatest extent possible under primary users' activity.
+We prove the NP hardness of the problem and one distributed and light weighted clustering scheme ROSS-DGA is proposed.
+The clusters resulted from ROSS-DGA and its faster version ROSS-DFA are less vulnerable compared with other distributed clustering schemes, and demonstrates similar survival rate with centralized scheme under primary users' influence.
+An light weighted cluster size control mechanism is contained in both ROSS-DGA and ROSS-DFA, which is advantageous for cooperative sensing and network operation with clusters.
+Furthermore, considerable less control messages are generated when compared with other clustering schemes.
+
+
+%Our work is in process, in which a light weighted clustering scheme is proposed. Intra connectivity is ensured by the border nodes, which has larger number of common channels with its neighbors within its vicinity, inter connectivity is guaranteed by deleting certain one-hop away nodes out of clusters to increase the set of common channels by a game theory approach. In this way, bigger value of  $\bar{N_{inter}}\times\bar{N_{intra}}$ could be achieved. 
+
+%There are several issues can be investigated on the basis of current work of spectrum sharing. Firstly, as our scheme adapts multi-radio communication, channel assignment within and between clusters can be implemented to decrease interferences caused by co-channel interferences, this topic is pretty new in the scenario of cognitive radio. Secondly, the second phase of our clustering scheme can be optimized by letting nodes locating in more than one cluster use coalitional strategies, although the complexity could be higher. Thirdly, the number of the neighboring nodes is not considered when deciding cluster heads, which need to be examined in the future.

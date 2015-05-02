@@ -1,0 +1,694 @@
+\begin{thebibliography}{100}
+
+\bibitem{802.22}
+Ieee 802.22 wireless regional area networks.
+\newblock \url{http://www.ieee802.org/22/Technology/}.
+
+\bibitem{osi}
+Information technology -- open systems interconnection -- basic reference model
+  -- conventions for the definition of osi services.
+\newblock
+  \url{http://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=18824}.
+
+\bibitem{FCC_03-322}
+Order document fcc 03-322: Facilitating opportunities for flexible, efficient,
+  and reliable spectrum use employing cognitive radio technologies.
+\newblock \url{https://apps.fcc.gov/edocs_public/attachmatch/FCC-03-322A1.pdf
+  }.
+\newblock Accessed: 2014-12-26.
+
+\bibitem{802.15.4m}
+Tv white space amendment to 802.15.4.
+\newblock \url{http://www.ieee802.org/15/pub/TG4m.html}.
+
+\bibitem{802.19}
+Wireless coexistence in the tv white space.
+\newblock \url{http://ieee802.org/19/pub/TG1.html}.
+
+\bibitem{FCCdatabasae}
+{FCC Frees Up Vacant TV Airwaves for ”Super Wi-Fi” Technologies and Other
+  Technologies}.
+\newblock \url{http://hraunfoss.fcc.gov}, Sep. 2010.
+\newblock Visited July 2012.
+\newblock
+  \url{http://hraunfoss.fcc.gov/edocs_public/attachmatch/DOC-301650A1.pdf}.
+
+\bibitem{FCC_2010_sedond_memorandumm}
+{In the Matter of Unlicensed Operation in the TV Broadcast Bands: Second
+  Memorandum Opinion and Order, Federal Communications Commission, FCC 10-174},
+  Jan. 2011.
+\newblock Visited July 2012.
+\newblock
+  \url{http://hraunfoss.fcc.gov/edocs_public/attachmatch/DA-11-131A1.pdf}.
+
+\bibitem{ecc159}
+{Technical and operational requirements for the possible operation of cognitive
+  radio systems in the 'white spaces' of the frequency band 470-790 MHz,
+  Cardiff}.
+\newblock \url{http://www.erodocdb.dk/docs/doc98/official/Pdf/ECCRep159.pdf},
+  Jan. 2011.
+\newblock Visited July 2012.
+\newblock \url{http://www.erodocdb.dk/docs/doc98/official/Pdf/ECCRep159.pdf}.
+
+\bibitem{lindo}
+{Lindoapi}.
+\newblock \url{http://alturl.com/2inxo}, Jun. 2012.
+\newblock Visited July 2012.
+
+\bibitem{Abbagnale_Gymkhana10}
+{\sc Abbagnale, A., and Cuomo, F.}
+\newblock Gymkhana: A connectivity-based routing scheme for cognitive radio ad
+  hoc networks.
+\newblock In {\em Proc. of IEEE INFOCOM on Computer Communications Workshops,
+  2010\/} (2010), pp.~1 --5.
+
+\bibitem{Abbasi_survey_07}
+{\sc Abbasi, A.~A., and Younis, M.}
+\newblock A survey on clustering algorithms for wireless sensor networks.
+\newblock {\em Comput. Commun. 30}, 14-15 (2007), 2826--2841.
+
+\bibitem{geoRouing-qos-2009}
+{\sc Abdrabou, A., and Zhuang, W.}
+\newblock Statistical qos routing for ieee 802.11 multihop ad hoc networks.
+\newblock {\em IEEE Transactions on Wireless Communications 8}, 3 (2009),
+  1542--1552.
+
+\bibitem{Ackermann06purenash}
+{\sc Ackermann, H., Röglin, H., and Vöcking, B.}
+\newblock Pure nash equilibria in player-specific and weighted congestion
+  games.
+\newblock {\em Theoretical Computer Science 410}, 17 (2009), 1552 -- 1563.
+\newblock Internet and Network Economics.
+\newblock
+  \url{http://www.sciencedirect.com/science/article/B6V1G-4V7MSV1-4/2/a19600af730757a68dadc3a55028d4fd}.
+
+\bibitem{infmitigate07mobicom}
+{\sc Ahmed, N., Shrivastava, V., Mishra, A., Banerjee, S., Keshav, S., and
+  Papagiannaki, K.}
+\newblock Interference mitigation in enterprise wlans through speculative
+  scheduling.
+\newblock In {\em Proc. of ACM MobiCom 2007\/} (Sep. 2007).
+
+\bibitem{08crn_survey}
+{\sc Akyildiz, I., Lee, W.-Y., Vuran, M.~C., and Mohanty, S.}
+\newblock A survey on spectrum management in cognitive radio networks.
+\newblock {\em Communications Magazine, IEEE 46}, 4 (April 2008), 40--48.
+
+\bibitem{Akyildiz06survey}
+{\sc Akyildiz, I.~F., Lee, W.-Y., Vuran, M.~C., and Mohanty, S.}
+\newblock Next generation/dynamic spectrum access/cognitive radio wireless
+  networks: A survey.
+\newblock {\em COMPUTER NETWORKS JOURNAL (ELSEVIER 50\/} (2006), 2127--2159.
+
+\bibitem{coorperativeSensing_Akyildiz11}
+{\sc Akyildiz, I.~F., Lo, B.~F., and Balakrishnan, R.}
+\newblock Cooperative spectrum sensing in cognitive radio networks: A survey.
+\newblock {\em Phys. Commun. 4}, 1 (Mar. 2011), 40--62.
+\newblock \url{http://dx.doi.org/10.1016/j.phycom.2010.12.003}.
+
+\bibitem{cluster_EW10}
+{\sc Asterjadhi, A., Baldo, N., and Zorzi, M.}
+\newblock A cluster formation protocol for cognitive radio ad hoc networks.
+\newblock In {\em Wireless Conference (EW), 2010 European\/} (April 2010),
+  pp.~955--961.
+
+\bibitem{channel_switch_delay11}
+{\sc Azarfar, A., Frigon, J.-F., and Sanso, B.}
+\newblock Improving the reliability of wireless networks using cognitive
+  radios.
+\newblock {\em Communications Surveys Tutorials, IEEE 14}, 2 (Second 2012),
+  338--354.
+
+\bibitem{Babadi08}
+{\sc Babadi, B., and Tarokh, V.}
+\newblock A distributed dynamic frequency allocation algorithm.
+\newblock \url{http://arxiv.org/abs/0711.3247}, Jun. 2008.
+\newblock Visited July 2010.
+
+\bibitem{Affinity_clustering_09icccn}
+{\sc Baddour, K., Ureten, O., and Willink, T.}
+\newblock Efficient clustering of cognitive radio networks using affinity
+  propagation.
+\newblock In {\em Computer Communications and Networks, 2009. ICCCN 2009.
+  Proceedings of 18th Internatonal Conference on\/} (Aug 2009), pp.~1--6.
+
+\bibitem{joint_power_channel_linkpair_08ICT}
+{\sc Bahramian, S., and Khalaj, B.}
+\newblock Joint dynamic frequency selection and power control for cognitive
+  radio networks.
+\newblock In {\em Telecommunications, 2008. ICT 2008. International Conference
+  on\/} (June 2008), pp.~1--6.
+
+\bibitem{Basagni99}
+{\sc Basagni, S.}
+\newblock Distributed clustering for ad hoc networks.
+\newblock {\em Proc. of I-SPAN '99\/} (1999), 310 --315.
+
+\bibitem{802.22co-existence09}
+{\sc Bian, K., and Park, J.-M.}
+\newblock A coexistence-aware spectrum sharing protocol for 802.22 wrans.
+\newblock In {\em Computer Communications and Networks, 2009. ICCCN 2009.
+  Proceedings of 18th Internatonal Conference on\/} (Aug 2009), pp.~1--6.
+
+\bibitem{caodv-10wd}
+{\sc Cacciapuoti, A., Calcagno, C., Caleffi, M., and Paura, L.}
+\newblock Caodv: Routing in mobile ad-hoc cognitive radio networks.
+\newblock In {\em Proc. of IFIP Wireless Days 2010}.
+
+\bibitem{gpsfree05infocom}
+{\sc Caruso, A., Chessa, S., De, S., and Urpi, A.}
+\newblock Gps free coordinate assignment and routing in wireless sensor
+  networks.
+\newblock In {\em Proc. IEEE INFOCOM '05}.
+
+\bibitem{Spectrum_Management07}
+{\sc Cave, M., Doyle, C., and Webb, W.}
+\newblock {\em Essentials of Modern Spectrum Management}.
+\newblock Cambridge University Press, 2007.
+
+\bibitem{contentiongame_07}
+{\sc Chen, L., Low, S., and Doyle, J.}
+\newblock Contention control: A game-theoretic approach.
+\newblock In {\em Decision and Control, 2007 46th IEEE Conference on\/} (Dec
+  2007), pp.~3428--3434.
+
+\bibitem{Chen07}
+{\sc Chen, T., Zhang, H., Maggio, G., and Chlamtac, I.}
+\newblock Cogmesh: A cluster-based cognitive radio network.
+\newblock {\em Proc. of DySPAN '07\/} (apr. 2007), 168 --178.
+
+\bibitem{game_CA_association_ICDCS12}
+{\sc Chen, X., and Huang, J.}
+\newblock Game theoretic analysis of distributed spectrum sharing with
+  database.
+\newblock In {\em Distributed Computing Systems (ICDCS), 2012 IEEE 32nd
+  International Conference on\/} (June 2012), pp.~255--264.
+
+\bibitem{search_geo_routing_chowdhury}
+{\sc Chowdhury, K., and Di~Felice, M.}
+\newblock Search: A routing protocol for mobile cognitive radio ad-hoc
+  networks.
+\newblock In {\em Proc. of IEEE Sarnoff Sym. '09}.
+
+\bibitem{tvws_vtc13}
+{\sc Di~Felice, M., Ghandhour, A., Artail, H., and Bononi, L.}
+\newblock Integrating spectrum database and cooperative sensing for cognitive
+  vehicular networks.
+\newblock In {\em Vehicular Technology Conference (VTC Fall), 2013 IEEE 78th\/}
+  (Sept 2013), pp.~1--7.
+
+\bibitem{increaseTVWS12}
+{\sc Ellingsaeter, B., Bezabih, H., Noll, J., and Maseng, T.}
+\newblock Using tv receiver information to increase cognitive white space
+  spectrum.
+\newblock In {\em Dynamic Spectrum Access Networks (DYSPAN), 2012 IEEE
+  International Symposium on\/} (Oct 2012), pp.~131--141.
+
+\bibitem{CA_Felegyhazi_07infocom}
+{\sc Felegyhazi, M., Cagalj, M., Bidokhti, S., and Hubaux, J.-P.}
+\newblock Non-cooperative multi-radio channel allocation in wireless networks.
+\newblock In {\em Proc. of IEEE INFOCOM 2007\/} (May 2007).
+
+\bibitem{multicell_geo_dyspan11}
+{\sc Feng, X., Zhang, J., and Zhang, Q.}
+\newblock Database-assisted multi-ap network on tv white spaces: Architecture,
+  spectrum allocation and ap discovery.
+\newblock In {\em New Frontiers in Dynamic Spectrum Access Networks (DySPAN),
+  2011 IEEE Symposium on\/} (may 2011), pp.~265 --276.
+
+\bibitem{802.11af}
+{\sc Flores, A., Guerra, R., Knightly, E., Ecclesine, P., and Pandey, S.}
+\newblock Ieee 802.11af: a standard for tv white space spectrum sharing.
+\newblock {\em Communications Magazine, IEEE 51}, 10 (October 2013), 92--100.
+
+\bibitem{aggregatedInf_Galindo_crowncom09}
+{\sc Galindo-Serrano, A., and Giupponi, L.}
+\newblock Aggregated interference control for cognitive radio networks based on
+  multi-agent learning.
+\newblock In {\em Proc. of CrownCom 2009\/} (Jun. 2009).
+
+\bibitem{self-coexistenceWRAN2010infocom}
+{\sc Gardellin, V., Das, S., and Lenzini, L.}
+\newblock A fully distributed game theoretic approach to guarantee
+  self-coexistence among wrans.
+\newblock In {\em INFOCOM IEEE Conference on Computer Communications Workshops
+  , 2010\/} (march 2010), pp.~1 --6.
+
+\bibitem{Computers_a_Intractability}
+{\sc Garey, M.~R., and Johnson, D.~S.}
+\newblock {\em Computers and Intractability: {A} Guide to the Theory of
+  NP-Completeness}.
+\newblock W. H. Freeman, 1979.
+
+\bibitem{game_cloudcomputing_energy12}
+{\sc Ge, Y., Zhang, Y., Qiu, Q., and Lu, Y.-H.}
+\newblock A game theoretic resource allocation for overall energy minimization
+  in mobile cloud computing system.
+\newblock In {\em Proceedings of the 2012 ACM/IEEE International Symposium on
+  Low Power Electronics and Design\/} (New York, NY, USA, 2012), ISLPED '12,
+  ACM, pp.~279--284.
+\newblock \url{http://doi.acm.org/10.1145/2333660.2333724}.
+
+\bibitem{cvx}
+{\sc Grant, M., and Boyd, S.}
+\newblock {CVX}: Matlab software for disciplined convex programming, version
+  1.21.
+\newblock \url{http://cvxr.com/cvx/cvx_usrguide.pdf}, Apr. 2011.
+
+\bibitem{hart00correlatedeq}
+{\sc Hart, S., and Colell, A.}
+\newblock {A Simple Adaptive Procedure Leading to Correlated Equilibrium}.
+\newblock {\em Econometrica 68}, 5 (2000), 1127--1150.
+\newblock \url{http://dx.doi.org/10.2307/2999445}.
+
+\bibitem{hmam2010quadratic}
+{\sc Hmam, H.}
+\newblock Quadratic optimisation with one quadratic equality constraint.
+\newblock Tech. rep., DTIC Document, 2010.
+
+\bibitem{HoangPowerChannel2010}
+{\sc Hoang, A., Liang, Y., and Islam, M.}
+\newblock Power control and channel allocation in cognitive radio networks with
+  primary users' cooperation.
+\newblock {\em IEEE Transactions on Mobile Computing 9}, 3 (Mar. 2010),
+  348--360.
+\newblock \url{http://dx.doi.org/10.1109/TMC.2009.136}.
+
+\bibitem{downlink-centralized-08-TWC}
+{\sc Hoang, A.~T., and Liang, Y.-C.}
+\newblock Downlink channel assignment and power control for cognitive radio
+  networks.
+\newblock {\em Wireless Communications, IEEE Transactions on 7}, 8 (August
+  2008), 3106--3117.
+
+\bibitem{Inter-Network_Spectrum_Sharing_80222_08}
+{\sc Hu, W., Gerla, M., Vlantis, G., and Pottie, G.}
+\newblock Efficient, flexible, and scalable inter-network spectrum sharing and
+  communications in cognitive ieee 802.22 networks.
+\newblock In {\em Cognitive Radio and Advanced Spectrum Management, 2008.
+  CogART 2008. First International Workshop on\/} (Feb 2008), pp.~1--5.
+
+\bibitem{cogCE_huang}
+{\sc Huang, J., and Krishnamurthy, V.}
+\newblock Cognitive base stations in lte/3gpp femtocells: A correlated
+  equilibrium game-theoretic approach.
+\newblock {\em IEEE Transactions on Communications 59}, 12 (Dec. 2011),
+  3485--3493.
+
+\bibitem{qlearning_huang}
+{\sc Huang, J., Zhu, Q., Krishnamurthy, V., and Basar, T.}
+\newblock Distributed correlated q-learning for dynamic transmission control of
+  sensor networks.
+\newblock In {\em IEEE ICASSP 2010\/} (Mar. 2010).
+
+\bibitem{clustering_globecom11}
+{\sc Huazi~Zhang, Zhaoyang~Zhang1, H. D. R.~Y., and Chen, X.}
+\newblock Distributed spectrum-aware clustering in cognitive radio sensor
+  networks.
+\newblock In {\em Proc. of GLOBECOM 2011}.
+
+\bibitem{Jaentti11}
+{\sc Jäntti, R., Kerttula, J., Koufos, K., and Ruttik, K.}
+\newblock Aggregate interference with fcc and ecc white space usage rules: case
+  study in finland.
+\newblock In {\em Proc. of IEEE DySPAN 2011\/} (May 2011).
+
+\bibitem{Kawadia03}
+{\sc Kawadia, V., and Kumar, P.~R.}
+\newblock Power control and clustering in ad hoc networks.
+\newblock In {\em Proc. of INFOCOM '03\/} (2003), pp.~459--469.
+
+\bibitem{commag-Khalife08}
+{\sc Khalife, H., Malouch, N., and Fdida, S.}
+\newblock Multihop cognitive radio networks: to route or not to route.
+\newblock {\em Network, IEEE 23}, 4 (2009), 20 --25.
+
+\bibitem{spectrum-discovery-tmc08}
+{\sc Kim, H., and Shin, K.}
+\newblock Efficient discovery of spectrum opportunities with mac-layer sensing
+  in cognitive radio networks.
+\newblock {\em IEEE Transactions on Mobile Computing 7}, 5 (May 2008),
+  533--545.
+
+\bibitem{Ko_DistributedCA}
+{\sc Ko, B., Misra, V., Padhye, J., and Rubenstein, D.}
+\newblock Distributed channel assignment in multi-radio 802.11 mesh networks.
+\newblock In {\em Proc. of IEEE WCNC 2007\/} (Mar. 2007).
+
+\bibitem{multipleIntf_pimrc11}
+{\sc Koufos, K., Ruttik, K., and Jantti, R.}
+\newblock Controlling the interference from multiple secondary systems at the
+  tv cell border.
+\newblock In {\em Proc. of IEEE PIMRC 2011\/} (Sep. 2011).
+
+\bibitem{Lazos09}
+{\sc Lazos, L., Liu, S., and Krunz, M.}
+\newblock Spectrum opportunity-based control channel assignment in cognitive
+  radio networks.
+\newblock {\em Proc. of SECON '09\/} (jun. 2009), 1 --9.
+
+\bibitem{spectrum_decision_TMC11}
+{\sc Lee, W.-Y., and Akyldiz, I.}
+\newblock A spectrum decision framework for cognitive radio networks.
+\newblock {\em Mobile Computing, IEEE Transactions on 10}, 2 (Feb 2011),
+  161--174.
+
+\bibitem{DySpAN12_Di}
+{\sc Li, D., and Gross, J.}
+\newblock Distributed tv spectrum allocation for cognitive cellular network
+  under game theoretical framework.
+\newblock In {\em Proc. of IEEE DySPAN 2012}.
+
+\bibitem{Lin97adaptiveclustering}
+{\sc Lin, C.~R., and Gerla, M.}
+\newblock Adaptive clustering for mobile wireless networks.
+\newblock {\em IEEE Journal on Selected Areas in Communications 15\/} (1997),
+  1265--1275.
+
+\bibitem{allerton08_liu}
+{\sc Liu, M., and Wu, Y.}
+\newblock Spectum sharing as congestion games.
+\newblock In {\em In Proc. of Allerton Conference 2008\/} (Sep. 2008).
+
+\bibitem{LIU_TMC11_2}
+{\sc Liu, S., Lazos, L., and Krunz, M.}
+\newblock Cluster-based control channel allocation in opportunistic cognitive
+  radio networks.
+\newblock {\em IEEE Trans. Mob. Comput. 11}, 10 (2012), 1436--1449.
+
+\bibitem{routing-crn-jsac12}
+{\sc Liu, Y., Cai, L., and Shen, X.}
+\newblock Spectrum-aware opportunistic routing in multi-hop cognitive radio
+  networks.
+\newblock {\em Selected Areas in Communications, IEEE Journal on 30}, 10
+  (2012), 1958--1968.
+
+\bibitem{routing-crn-icc11}
+{\sc Liu, Y., Cai, L., Shen, X., and Mark, J.~W.}
+\newblock Exploiting heterogeneity wireless channels for opportunistic routing
+  in dynamic spectrum access networks.
+\newblock In {\em Proc. of IEEE ICC 2011\/} (2011), pp.~1--5.
+
+\bibitem{Discrete-Time_Spectrum_Occupancy_Model_DySPAN_2011}
+{\sc Lopez-Benitez, M., and Casadevall, F.}
+\newblock Discrete-time spectrum occupancy model based on markov chain and duty
+  cycle models.
+\newblock In {\em Proc. of 2011 IEEE DySPAN}.
+
+\bibitem{game_for_communication_01}
+{\sc MacKenzie, A., and Wicker, S.}
+\newblock Game theory in communications: motivation, explanation, and
+  application to power control.
+\newblock In {\em Global Telecommunications Conference, 2001. GLOBECOM '01.
+  IEEE\/} (2001), vol.~2, pp.~821--826 vol.2.
+
+\bibitem{Mitola}
+{\sc Mitola, J., I., and Maguire, G.Q., J.}
+\newblock Cognitive radio: making software radios more personal.
+\newblock {\em Personal Communications, IEEE 6}, 4 (aug. 1999), 13 --18.
+
+\bibitem{2000mitola_cognitive_radio}
+{\sc Mitola, J.}
+\newblock {\em {Cognitive Radio --- An Integrated Agent Architecture for
+  Software Defined Radio}}.
+\newblock {DTech} thesis, Royal Institute of Technology (KTH), Kista, Sweden,
+  May 2000.
+\newblock
+  \url{http://web.it.kth.se/\~{}maguire/jmitola/Mitola\_Dissertation8\_Integrated.pdf}.
+
+\bibitem{ProbabilityAndComputing}
+{\sc Mitzenmacher, M., and Upfal, E.}
+\newblock {\em Probability and Computing: Randomized Algorithms and
+  Probabilistic Analysis}.
+\newblock Cambridge University Press, New York, NY, USA, 2005.
+
+\bibitem{SenseLess2011}
+{\sc Murty, R., Chandra, R., Moscibroda, T., and Bahl, V.}
+\newblock Senseless: A database-driven white spaces network.
+\newblock In {\em Proc. of IEEE DySpan 2011\/} (May 2011).
+
+\bibitem{Neel06analysisand}
+{\sc Neel, J.~O., Dasilva, L.~A., Gilles, R.~P., Mackenzie, A.~B., and Neel,
+  J.~O.}
+\newblock Analysis and design of cognitive radio networks and distributed radio
+  resource management algorithms.
+\newblock Tech. rep., 2006.
+
+\bibitem{CApotentialLearning_05dyspan}
+{\sc Nie, N., and Comaniciu, C.}
+\newblock Adaptive channel allocation spectrum etiquette for cognitive radio
+  networks.
+\newblock In {\em Proc. of IEEE DySpan 2005\/} (Nov. 2005).
+
+\bibitem{agt_book}
+{\sc Nisan, N., Roughgarden, T., Tardos, E., and Vazirani, V.~V.}
+\newblock {\em Algorithmic Game Theory}.
+\newblock Cambridge University Press, 2007.
+
+\bibitem{osa_Noam_1995}
+{\sc Noam, E.~M.}
+\newblock Taking the next step beyond spectrum auctions: Open spectrum access.
+\newblock {\em Comm. Mag. 33}, 12 (Dec. 1995), 66--73.
+\newblock \url{http://dx.doi.org/10.1109/35.476925}.
+
+\bibitem{pimrc_2012}
+{\sc Omidvar, N., and Khalaj, B.}
+\newblock A game-theoretic approach for joint channel and power allocation in
+  downlink of cellular cognitive radio networks.
+\newblock In {\em Personal Indoor and Mobile Radio Communications (PIMRC), 2012
+  IEEE 23rd International Symposium on\/} (Sept 2012), pp.~1198--1202.
+
+\bibitem{centralized_routing_07dyspan}
+{\sc Pal, R.}
+\newblock Efficient routing algorithms for multi-channel dynamic spectrum
+  access networks.
+\newblock In {\em New Frontiers in Dynamic Spectrum Access Networks, 2007.
+  DySPAN 2007. 2nd IEEE International Symposium on\/} (April 2007),
+  pp.~288--291.
+
+\bibitem{Routing-crn-INFOCOM11}
+{\sc Pan, M., Zhang, C., Li, P., and Fang, Y.}
+\newblock Joint routing and link scheduling for cognitive radio networks under
+  uncertain spectrum supply.
+\newblock In {\em Proc. of IEEE INFOCOM 2011}.
+
+\bibitem{whitefi09}
+{\sc Paramvir~Bahl, Ranveer~Chandra, T. M. R.~M., and Welsh, M.}
+\newblock White space networking with wi-fi like connectivity.
+\newblock In {\em Proc. of ACM SIGCOMM 2009\/} (Aug. 2009).
+
+\bibitem{centralized_80222_sharing_ifip2011}
+{\sc Passiatore, C., and Camarda, P.}
+\newblock A centralized inter-network resource sharing (cirs) scheme in ieee
+  802.22 cognitive networks.
+\newblock In {\em Ad Hoc Networking Workshop (Med-Hoc-Net), 2011 The 10th IFIP
+  Annual Mediterranean\/} (June 2011), pp.~17--24.
+
+\bibitem{centralizedSharing80222}
+{\sc Passiatore, C., and Camarda, P.}
+\newblock A centralized inter-network resource sharing (cirs) scheme in ieee
+  802.22 cognitive networks.
+\newblock In {\em Ad Hoc Networking Workshop (Med-Hoc-Net), 2011 The 10th IFIP
+  Annual Mediterranean\/} (june 2011), pp.~17 --24.
+
+\bibitem{tvwhite_lte2011}
+{\sc Rahman, M.~I., Behravan, A., Koorapaty, H., Sachs, J., and Balachandran,
+  K.}
+\newblock License-exempt lte systems for secondary spectrum usage: scenarios
+  and first assessment.
+\newblock In {\em Dyspan 2011, IEEE\/} (May 2011).
+\newblock give a nice intro to TVWS usage, EASIBILITY EVALUATIONS.
+
+\bibitem{Hyacinth}
+{\sc Raniwala, A., and Chiueh, T.}
+\newblock Architecture and algorithms for an ieee 802.11-based multi-channel
+  wireless mesh network.
+\newblock In {\em Proc. of IEEE INFOCOM 2005\/} (Mar. 2005).
+
+\bibitem{wireless_communicatioins2001}
+{\sc Rappaport, T.}
+\newblock {\em Wireless Communications: Principles and Practice}, 2nd~ed.
+\newblock Prentice Hall PTR, Upper Saddle River, NJ, USA, 2001.
+
+\bibitem{Rosenthal}
+{\sc Rosenthal, R.}
+\newblock A class of games possessing pure-strategy nash equilibria.
+\newblock {\em International Journal of Game Theory 2\/} (1973), 65--67.
+\newblock \url{http://dx.doi.org/10.1007/BF01737559}.
+
+\bibitem{spectrumDecision_2013mass}
+{\sc Saifan, R., Kamal, A., and Guan, Y.}
+\newblock Spectrum decision for efficient routing in cognitive radio network.
+\newblock In {\em Proc. of IEEE MASS 2012}.
+
+\bibitem{Quadratic_min_one_equality}
+{\sc Salahi, M.}
+\newblock Convex optimization approach to a single quadratically constrained
+  quadratic minimization problem.
+\newblock {\em Central European Journal of Operations Research 18}, 2 (2010),
+  181--187.
+\newblock \url{http://dx.doi.org/10.1007/s10100-009-0106-2}.
+
+\bibitem{segment-crowncom08}
+{\sc Sampath, A., Yang, L., Cao, L., Zheng, H., and Zhao, B.~Y.}
+\newblock High throughput spectrum-aware routing for cognitive radio networks.
+\newblock In {\em Proc. of IEEE CrownCom\/} (2008).
+
+\bibitem{802.22game_08globecom}
+{\sc Sengupta, S., Chandramouli, R., Brahma, S., and Chatterjee, M.}
+\newblock A game theoretic framework for distributed self-coexistence among
+  ieee 802.22 networks.
+\newblock In {\em Global Telecommunications Conference, 2008. IEEE GLOBECOM
+  2008. IEEE\/} (30 2008-dec. 4 2008), pp.~1 --6.
+
+\bibitem{cluster_routing_2013ICC}
+{\sc Shah, G., and Akan, O.}
+\newblock Spectrum-aware cluster-based routing for cognitive radio sensor
+  networks.
+\newblock In {\em Communications (ICC), 2013 IEEE International Conference
+  on\/} (June 2013), pp.~2885--2889.
+
+\bibitem{delay-cogwsn-2014}
+{\sc Shah, G., Alagoz, F., Fadel, E., and Akan, O.}
+\newblock A spectrum-aware clustering for efficient multimedia routing in
+  cognitive radio sensor networks.
+\newblock {\em IEEE Transactions on Vehicular Technology PP}, 99 (2014), 1--1.
+
+\bibitem{power_control_utility_98}
+{\sc Shah, V., Mandayam, N., and Goodman, D.}
+\newblock Power control for wireless data based on utility and pricing.
+\newblock In {\em Personal, Indoor and Mobile Radio Communications, 1998. The
+  Ninth IEEE International Symposium on\/} (Sep 1998), vol.~3, pp.~1427--1432
+  vol.3.
+
+\bibitem{Technical_Challenges_TVwhit}
+{\sc Shellhammer, S., Sadek, A., and Zhang, W.}
+\newblock Technical challenges for cognitive radio in the tv white space
+  spectrum.
+\newblock In {\em Information Theory and Applications Workshop, 2009\/} (Feb
+  2009), pp.~323--333.
+
+\bibitem{clusterRoutingOverhead02infocom}
+{\sc Sucec, J., and Marsic, I.}
+\newblock Clustering overhead for hierarchical routing in mobile ad hoc
+  networks.
+\newblock In {\em INFOCOM 2002. Twenty-First Annual Joint Conference of the
+  IEEE Computer and Communications Societies. Proceedings. IEEE\/} (2002),
+  vol.~3, pp.~1698 -- 1706 vol.3.
+
+\bibitem{Sun07_clustering_spectrum_secsing}
+{\sc Sun, C., Zhang, W., and Letaief, K.~B.}
+\newblock Cluster-based cooperative spectrum sensing in cognitive radio
+  systems.
+\newblock In {\em proc. of ICC\/} (2007), pp.~2511--2515.
+
+\bibitem{channelAllocation_throughput_12wcnc}
+{\sc Tan, L., and Le, L.~B.}
+\newblock Channel assignment for throughput maximization in cognitive radio
+  networks.
+\newblock In {\em Wireless Communications and Networking Conference (WCNC),
+  2012 IEEE\/} (April 2012), pp.~1427--1431.
+
+\bibitem{uplink_power_tvws13}
+{\sc Tao, X., Zhao, Z., and Zhang, H.}
+\newblock Location information based interference control for cognitive radio
+  network in tv white spaces.
+\newblock In {\em Wireless Communications and Networking Conference (WCNC),
+  2013 IEEE\/} (April 2013), pp.~3614--3619.
+
+\bibitem{Voecking06congestiongames}
+{\sc Vöcking, B.}
+\newblock Congestion games: Optimization in competition.
+\newblock In {\em Proc. of second ACiD Workshop\/} (Durham, UK, Sep. 2006).
+
+\bibitem{Wang_gtc_crn_survey_2010}
+{\sc Wang, B., Wu, Y., and Liu, K.~R.}
+\newblock Game theory for cognitive radio networks: An overview.
+\newblock {\em Comput. Netw. 54}, 14 (Oct. 2010), 2537--2561.
+\newblock \url{http://dx.doi.org/10.1016/j.comnet.2010.04.004}.
+
+\bibitem{Wellens200910}
+{\sc Wellens, M., Riihijärvi, J., and Mähönen, P.}
+\newblock Empirical time and frequency domain models of spectrum use.
+\newblock {\em Physical Communication 2}, 1–2 (2009), 10 -- 32.
+
+\bibitem{willkomm08}
+{\sc Willkomm, D., Bohge, M., Holl{\'o}s, D., Gross, J., and Wolisz, A.}
+\newblock Double hopping: A new approach for dynamic frequency hopping in
+  cognitive radio networks.
+\newblock In {\em Proc. of PIMRC '08\/} (Sept. 2008).
+
+\bibitem{TWC2012_cooperative_communication}
+{\sc Wu, D., Cai, Y., Zhou, L., and Wang, J.}
+\newblock A cooperative communication scheme based on coalition formation game
+  in clustered wireless sensor networks.
+\newblock {\em Wireless Communications, IEEE Transactions on 11}, 3 (march
+  2012), 1190 --1200.
+
+\bibitem{Wu_GOP_CA_08infocom}
+{\sc Wu, F., Zhong, S., and Qiao, C.}
+\newblock Globally optimal channel assignment for non-cooperative wireless
+  networks.
+\newblock In {\em Proc. of IEEE INFOCOM 2008\/} (Apr. 2008).
+
+\bibitem{clusterRoutingOverhead_wcnc04}
+{\sc Wu, H., and Abouzeid, A.}
+\newblock Cluster-based routing overhead in networks with unreliable nodes.
+\newblock In {\em Wireless Communications and Networking Conference, 2004.
+  WCNC. 2004 IEEE\/} (march 2004), vol.~4, pp.~2557 -- 2562 Vol.4.
+
+\bibitem{Consensus_based_clustering12}
+{\sc Wu, Q., Ding, G., Wang, J., Li, X., and Huang, Y.}
+\newblock Consensus-based decentralized clustering for cooperative spectrum
+  sensing in cognitive radio networks.
+\newblock {\em Chinese Science Bulletin 57}, 28-29 (2012), 3677--3683.
+\newblock \url{http://dx.doi.org/10.1007/s11434-012-5074-6}.
+
+\bibitem{wuinfocom09}
+{\sc Wu, Y., and Tsang, D.}
+\newblock Distributed power allocation algorithm for spectrum sharing cognitive
+  radio networks with qos guarantee.
+\newblock In {\em Proc. of IEEE INFOCOM 2009\/} (Apr. 2009).
+
+\bibitem{SA_CA_TVWS_2012crowncom}
+{\sc Ye, B., Nekovee, M., Pervez, A., and Ghavami, M.}
+\newblock Tv white space channel allocation with simulated annealing as meta
+  algorithm.
+\newblock In {\em Cognitive Radio Oriented Wireless Networks and Communications
+  (CROWNCOM), 2012 7th International ICST Conference on\/} (June 2012),
+  pp.~175--179.
+
+\bibitem{crnsensing_09}
+{\sc Yucek, T., and Arslan, H.}
+\newblock A survey of spectrum sensing algorithms for cognitive radio
+  applications.
+\newblock {\em Communications Surveys Tutorials, IEEE 11}, 1 (First 2009),
+  116--130.
+
+\bibitem{withinTVcoverage_PIMRC13}
+{\sc Zhang, L., Yuan, L., Feng, Z., and Feng, Z.}
+\newblock Mutual-interference-aware available spectrum resource distribution in
+  tv white space.
+\newblock In {\em Personal Indoor and Mobile Radio Communications (PIMRC), 2013
+  IEEE 24th International Symposium on\/} (Sept 2013), pp.~2743--2747.
+
+\bibitem{Selforganization_CRN_13}
+{\sc Zhang, Z., Long, K., and Wang, J.}
+\newblock Self-organization paradigms and optimization approaches for cognitive
+  radio technologies: a survey.
+\newblock {\em Wireless Communications, IEEE 20}, 2 (April 2013), 36--42.
+
+\bibitem{channelAllocation_relay_2010ICASSP}
+{\sc Zhao, G., Yang, C., Li, G., Li, D., and Soong, A.}
+\newblock Channel allocation for cooperative relays in cognitive radio
+  networks.
+\newblock In {\em Acoustics Speech and Signal Processing (ICASSP), 2010 IEEE
+  International Conference on\/} (March 2010), pp.~3258--3261.
+
+\bibitem{Zhao07}
+{\sc Zhao, J., Zheng, H., and Yang, G.-H.}
+\newblock Spectrum sharing through distributed coordination in dynamic spectrum
+  access networks.
+\newblock {\em Wirel. Commun. Mob. Comput. 7}, 9 (2007), 1061--1075.
+
+\end{thebibliography}

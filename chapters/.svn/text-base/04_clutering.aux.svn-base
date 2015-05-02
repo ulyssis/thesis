@@ -1,0 +1,184 @@
+\relax 
+\citation{Mitola}
+\citation{Sun07}
+\citation{willkomm08}
+\citation{Abbasi}
+\citation{Zhao07}
+\citation{Chen07}
+\citation{Lazos09}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Robust Clustering of Ad-hoc Cognitive Radio Networks}{37}{chapter.4}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{loa}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}Introduction}{37}{section.4.1}}
+\newlabel{intro}{{4.1}{37}{Introduction\relax }{section.4.1}{}}
+\citation{clustering_globecom11}
+\citation{Kawadia03}
+\citation{Lin97adaptiveclustering}
+\citation{Basagni99}
+\citation{Abbasi}
+\citation{Zhao07}
+\citation{Lazos09}
+\citation{Chen07}
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}Related Work}{38}{section.4.2}}
+\newlabel{related_work}{{4.2}{38}{Related Work\relax }{section.4.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.3}System Model}{39}{section.4.3}}
+\newlabel{sec:model}{{4.3}{39}{System Model\relax }{section.4.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.4}Distributed Coordination Framework: Clustering Algorithm}{40}{section.4.4}}
+\newlabel{ross}{{4.4}{40}{Distributed Coordination Framework: Clustering Algorithm\relax }{section.4.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.1}Phase I - Cluster Formation}{40}{subsection.4.4.1}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.1}{\ignorespaces Notations\relax }}{41}{table.4.1}}
+\newlabel{tab1}{{4.1}{41}{Notations\relax \relax }{table.4.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces Connectivity graph and the connectivity vector $\{D_i, G_i\}$ on each node. The available channels sensed by each CR node are: $V_A=\{1,2,3,4,5,6,10\}, V_B=\{1,2,3,5,7\}, V_C=\{1,3,4,10\}, V_D=\{1,2,3,5\}, V_E=\{2,3,5,7\}, V_F=\{2,4,5,6,7\}, V_G=\{1,2,3,4,8\}, V_H=\{1,2,5,8\}$. Dashed lines indicates two end nodes are within transmission range of each other. Each edge is labeled by the number of common channels between the two ends.\relax }}{41}{figure.4.1}}
+\newlabel{fig1}{{4.1}{41}{Connectivity graph and the connectivity vector $\{D_i, G_i\}$ on each node. The available channels sensed by each CR node are: $V_A=\{1,2,3,4,5,6,10\}, V_B=\{1,2,3,5,7\}, V_C=\{1,3,4,10\}, V_D=\{1,2,3,5\}, V_E=\{2,3,5,7\}, V_F=\{2,4,5,6,7\}, V_G=\{1,2,3,4,8\}, V_H=\{1,2,5,8\}$. Dashed lines indicates two end nodes are within transmission range of each other. Each edge is labeled by the number of common channels between the two ends.\relax \relax }{figure.4.1}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.1.1}Determining Cluster Heads}{42}{subsubsection.4.4.1.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.1.2}Initial Cluster Formation}{42}{subsubsection.4.4.1.2}}
+\@writefile{loa}{\contentsline {algocf}{\numberline {2}{\ignorespaces Cluster head determined and cluster formation\relax }}{43}{algocf.2}}
+\newlabel{alg0}{{2}{43}{Determining Cluster Heads\relax }{algocf.2}{}}
+\newlabel{lemma}{{1}{44}{\relax }{lemma.1}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.1.3}Cluster Size Control in Dense CRN}{44}{subsubsection.4.4.1.3}}
+\newlabel{cluster_pruning}{{4.4.1.3}{44}{Cluster Size Control in Dense CRN\relax }{subsubsection.4.4.1.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces Possible clusters in dense CRN\relax }}{44}{figure.4.2}}
+\newlabel{clusters_denseNetwork}{{4.2}{44}{Possible clusters in dense CRN\relax \relax }{figure.4.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces Number of clusters formed\relax }}{45}{figure.4.3}}
+\newlabel{number_clusters_scale}{{4.3}{45}{Number of clusters formed\relax \relax }{figure.4.3}{}}
+\@writefile{loa}{\contentsline {algocf}{\numberline {3}{\ignorespaces available CCC guarantee, or cluster size control conducted by cluster head\relax }}{46}{algocf.3}}
+\newlabel{alg_size_control_available_CCC}{{3}{46}{Cluster Size Control in Dense CRN\relax }{algocf.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces Clusters formation after the first phase of ROSS. Some nodes remain debatable nodes after the first phase.\relax }}{47}{figure.4.4}}
+\newlabel{fig2}{{4.4}{47}{Clusters formation after the first phase of ROSS. Some nodes remain debatable nodes after the first phase.\relax \relax }{figure.4.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.2}Phase II - Membership Clarification}{47}{subsection.4.4.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.2.1}Problem Description}{47}{subsubsection.4.4.2.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.2.2}Distributed Greedy Algorithm (DGA)}{47}{subsubsection.4.4.2.2}}
+\@writefile{loa}{\contentsline {algocf}{\numberline {4}{\ignorespaces Debatable node $i$ decides its affiliation\relax }}{48}{algocf.4}}
+\newlabel{alg4}{{4}{48}{Distributed Greedy Algorithm (DGA)\relax }{algocf.4}{}}
+\citation{Rosenthal}
+\citation{Milchtaich1996111}
+\citation{Ackermann06purenash}
+\citation{Ackermann06purenash}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.2.3}Convergence of DGA}{49}{subsubsection.4.4.2.3}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.2.4}Distributed Fast Algorithm (DFA)}{50}{subsubsection.4.4.2.4}}
+\newlabel{AinC}{{4.5(a)}{50}{Subfigure 4 4.5(a)\relax }{subfigure.4.5.1}{}}
+\newlabel{sub@AinC}{{(a)}{50}{Subfigure 4 4.5(a)\relax }{subfigure.4.5.1}{}}
+\newlabel{AinH}{{4.5(b)}{50}{Subfigure 4 4.5(b)\relax }{subfigure.4.5.2}{}}
+\newlabel{sub@AinH}{{(b)}{50}{Subfigure 4 4.5(b)\relax }{subfigure.4.5.2}{}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Node A stays in cluster $C_C$, quits $C_H$, $\Delta \delimiter "026A30C K_{C_C}\delimiter "026A30C +\Delta \delimiter "026A30C K_{C_H}\delimiter "026A30C =2$}}}{50}{figure.4.5}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Node A stays in cluster $C_H$, quits $C_C$, $\Delta \delimiter "026A30C K_{C_C}\delimiter "026A30C +\Delta \delimiter "026A30C K_{C_H}\delimiter "026A30C =1$}}}{50}{figure.4.5}}
+\newlabel{fig3}{{4.5}{50}{\relax }{figure.4.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.6}{\ignorespaces Final formation of clusters, common channels for each cluster is shown.\relax }}{50}{figure.4.6}}
+\newlabel{fig4}{{4.6}{50}{Final formation of clusters, common channels for each cluster is shown.\relax \relax }{figure.4.6}{}}
+\citation{Computers_a_Intractability}
+\@writefile{toc}{\contentsline {section}{\numberline {4.5}Centralized Clustering Scheme}{51}{section.4.5}}
+\newlabel{centralized_scheme}{{4.5}{51}{Centralized Clustering Scheme\relax }{section.4.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.1}The optimization problem}{51}{subsection.4.5.1}}
+\newlabel{theorem1}{{4.5.1}{51}{\relax }{theorem.4.5.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.2}Centralized Scheme}{53}{subsection.4.5.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.7}{\ignorespaces Matrix Q\relax }}{53}{figure.4.7}}
+\newlabel{xx}{{4.7}{53}{Matrix Q\relax \relax }{figure.4.7}{}}
+\citation{Lazos09}
+\citation{Lazos09}
+\citation{Basagni99}
+\citation{Zhao07}
+\newlabel{fig:final_clustering_soc}{{4.8(a)}{54}{Subfigure 4 4.8(a)\relax }{subfigure.4.8.1}{}}
+\newlabel{sub@fig:final_clustering_soc}{{(a)}{54}{Subfigure 4 4.8(a)\relax }{subfigure.4.8.1}{}}
+\newlabel{fig:final_clustering_LP}{{4.8(b)}{54}{Subfigure 4 4.8(b)\relax }{subfigure.4.8.2}{}}
+\newlabel{sub@fig:final_clustering_LP}{{(b)}{54}{Subfigure 4 4.8(b)\relax }{subfigure.4.8.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.8}{\ignorespaces Final clustering of the example CRN\relax }}{54}{figure.4.8}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {SOC}}}{54}{figure.4.8}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Linear programming}}}{54}{figure.4.8}}
+\newlabel{fig:final_clustering}{{4.8}{54}{Final clustering of the example CRN\relax \relax }{figure.4.8}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.6}Performance Evaluation}{54}{section.4.6}}
+\newlabel{performance}{{4.6}{54}{Performance Evaluation\relax }{section.4.6}{}}
+\citation{LIU_TMC11_2}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.6.1}Centralized Schemes vs. Decentralized Schemes}{55}{subsection.4.6.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.6.1.1}Number of Common Channels}{56}{subsubsection.4.6.1.1}}
+\newlabel{ccc_20}{{4.6.1.1}{56}{Number of Common Channels\relax }{subsubsection.4.6.1.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.9}{\ignorespaces Number of common channels for non-singleton clusters, the numbers in the names of schemes annotate the desired cluster size.\relax }}{56}{figure.4.9}}
+\newlabel{ccc_per_nonsingleton}{{4.9}{56}{Number of common channels for non-singleton clusters, the numbers in the names of schemes annotate the desired cluster size.\relax \relax }{figure.4.9}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.6.1.2}Survival Rate of Clusters with Increasing PR Users}{56}{subsubsection.4.6.1.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.10}{\ignorespaces Number of CRs which are not included in any clusters\relax }}{57}{figure.4.10}}
+\newlabel{singleton_clusters}{{4.10}{57}{Number of CRs which are not included in any clusters\relax \relax }{figure.4.10}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.6.1.3}Cluster Size Control}{57}{subsubsection.4.6.1.3}}
+\newlabel{cluster_size}{{4.6.1.3}{57}{Cluster Size Control\relax }{subsubsection.4.6.1.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.11}{\ignorespaces Distribution of CRs residing in Clusters with different sizes, as to ROSS with size control feature, the desired cluster size is 3.\relax }}{58}{figure.4.11}}
+\newlabel{size_control}{{4.11}{58}{Distribution of CRs residing in Clusters with different sizes, as to ROSS with size control feature, the desired cluster size is 3.\relax \relax }{figure.4.11}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.6.1.4}Control Signalling Overhead}{58}{subsubsection.4.6.1.4}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.2}{\ignorespaces Singalling overhead. Notations: $n$-number of CR nodes in CRN, $h$-number of cluster heads, $m$-number of debatable nodes, $c$-number of demanding clusters, $\delta $-desired cluster size  * T\relax }}{59}{table.4.2}}
+\newlabel{tab_overhead}{{4.2}{59}{Singalling overhead. Notations: $n$-number of CR nodes in CRN, $h$-number of cluster heads, $m$-number of debatable nodes, $c$-number of demanding clusters, $\delta $-desired cluster size\\ * T\relax \relax }{table.4.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.12}{\ignorespaces Number of control messages\relax }}{59}{figure.4.12}}
+\newlabel{control_msg}{{4.12}{59}{Number of control messages\relax \relax }{figure.4.12}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.6.2}Comparison between Distributed Schemes}{59}{subsection.4.6.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.6.2.1}Number of CCC per Non-singleton Clusters}{60}{subsubsection.4.6.2.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.13}{\ignorespaces Number of common channels for non-singleton clusters. As to ROSS with size control feature, $x=2$ when $N=100$ and 200, $x=3$ when $N=300$.\relax }}{60}{figure.4.13}}
+\newlabel{ccc_large_scale}{{4.13}{60}{Number of common channels for non-singleton clusters. As to ROSS with size control feature, $x=2$ when $N=100$ and 200, $x=3$ when $N=300$.\relax \relax }{figure.4.13}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.6.2.2}Survival Rate of Clusters with Increasing PR Users}{60}{subsubsection.4.6.2.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.14}{\ignorespaces Number of CRs which are not included in any clusters, $N=100$\relax }}{61}{figure.4.14}}
+\newlabel{singleton_clusters_100}{{4.14}{61}{Number of CRs which are not included in any clusters, $N=100$\relax \relax }{figure.4.14}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.15}{\ignorespaces Number of CRs which are not included in any clusters, $N=300$\relax }}{61}{figure.4.15}}
+\newlabel{singleton_clusters_300}{{4.15}{61}{Number of CRs which are not included in any clusters, $N=300$\relax \relax }{figure.4.15}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.6.2.3}Cluster Size Control}{61}{subsubsection.4.6.2.3}}
+\newlabel{result1:1}{{4.16(a)}{62}{Subfigure 4 4.16(a)\relax }{subfigure.4.16.1}{}}
+\newlabel{sub@result1:1}{{(a)}{62}{Subfigure 4 4.16(a)\relax }{subfigure.4.16.1}{}}
+\newlabel{result1:2}{{4.16(b)}{62}{Subfigure 4 4.16(b)\relax }{subfigure.4.16.2}{}}
+\newlabel{sub@result1:2}{{(b)}{62}{Subfigure 4 4.16(b)\relax }{subfigure.4.16.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.16}{\ignorespaces Cluster sizes}}{62}{figure.4.16}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {100 CRns, 30 PRns}}}{62}{figure.4.16}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {300 CRns, 30 PRns}}}{62}{figure.4.16}}
+\newlabel{result1}{{4.16}{62}{Cluster sizes\relax }{figure.4.16}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.7}Conclusions and Future Work}{62}{section.4.7}}
+\newlabel{conclusion}{{4.7}{62}{Conclusions and Future Work\relax }{section.4.7}{}}
+\@setckpt{chapters/04_clutering}{
+\setcounter{page}{63}
+\setcounter{equation}{3}
+\setcounter{enumi}{0}
+\setcounter{enumii}{0}
+\setcounter{enumiii}{0}
+\setcounter{enumiv}{0}
+\setcounter{footnote}{3}
+\setcounter{mpfootnote}{0}
+\setcounter{part}{0}
+\setcounter{chapter}{4}
+\setcounter{section}{7}
+\setcounter{subsection}{0}
+\setcounter{subsubsection}{3}
+\setcounter{paragraph}{0}
+\setcounter{subparagraph}{0}
+\setcounter{figure}{16}
+\setcounter{table}{2}
+\setcounter{LT@tables}{0}
+\setcounter{LT@chunks}{0}
+\setcounter{float@type}{16}
+\setcounter{Item}{0}
+\setcounter{Hfootnote}{3}
+\setcounter{bookmark@seq@number}{67}
+\setcounter{definition}{0}
+\setcounter{satz}{0}
+\setcounter{subfigure}{0}
+\setcounter{lofdepth}{1}
+\setcounter{subtable}{0}
+\setcounter{lotdepth}{1}
+\setcounter{ContinuedFloat}{0}
+\setcounter{listing}{0}
+\setcounter{lstnumber}{1}
+\setcounter{parentequation}{0}
+\setcounter{todocounter}{0}
+\setcounter{r@tfl@t}{0}
+\setcounter{theorem}{0}
+\setcounter{corollary}{0}
+\setcounter{lemma}{1}
+\setcounter{mydef}{0}
+\setcounter{AlgoLine}{38}
+\setcounter{algocfline}{4}
+\setcounter{algocfproc}{4}
+\setcounter{algocf}{4}
+\setcounter{fixmecount}{0}
+\setcounter{fxnotecount}{0}
+\setcounter{fxwarningcount}{0}
+\setcounter{fxerrorcount}{0}
+\setcounter{fxfatalcount}{0}
+\setcounter{@pps}{1}
+\setcounter{@ppsavesec}{3}
+\setcounter{@ppsaveapp}{2}
+\setcounter{@todonotes@numberoftodonotes}{1}
+\setcounter{section@level}{1}
+\setcounter{lstlisting}{0}
+}

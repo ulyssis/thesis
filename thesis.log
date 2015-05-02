@@ -1,0 +1,2532 @@
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.7.26)  27 APR 2015 15:45
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**thesis.tex
+(./thesis.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, lo
+aded.
+(./wissdoc-kw-eng.cls
+Document Class: wissdoc-kw-eng 2001/01/24 TeX-Vorlage fÃ¼r Doktorarbeit
+(/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/bk12.clo
+File: bk12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2008/03/30 v1.1d Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
+Now handling font encoding OML ...
+... no UTF-8 mapping file for font encoding OML
+Now handling font encoding T1 ...
+... processing UTF-8 mapping file for font encoding T1
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.dfu
+File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C0 (decimal 192)
+   defining Unicode char U+00C1 (decimal 193)
+   defining Unicode char U+00C2 (decimal 194)
+   defining Unicode char U+00C3 (decimal 195)
+   defining Unicode char U+00C4 (decimal 196)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00C7 (decimal 199)
+   defining Unicode char U+00C8 (decimal 200)
+   defining Unicode char U+00C9 (decimal 201)
+   defining Unicode char U+00CA (decimal 202)
+   defining Unicode char U+00CB (decimal 203)
+   defining Unicode char U+00CC (decimal 204)
+   defining Unicode char U+00CD (decimal 205)
+   defining Unicode char U+00CE (decimal 206)
+   defining Unicode char U+00CF (decimal 207)
+   defining Unicode char U+00D0 (decimal 208)
+   defining Unicode char U+00D1 (decimal 209)
+   defining Unicode char U+00D2 (decimal 210)
+   defining Unicode char U+00D3 (decimal 211)
+   defining Unicode char U+00D4 (decimal 212)
+   defining Unicode char U+00D5 (decimal 213)
+   defining Unicode char U+00D6 (decimal 214)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00D9 (decimal 217)
+   defining Unicode char U+00DA (decimal 218)
+   defining Unicode char U+00DB (decimal 219)
+   defining Unicode char U+00DC (decimal 220)
+   defining Unicode char U+00DD (decimal 221)
+   defining Unicode char U+00DE (decimal 222)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E0 (decimal 224)
+   defining Unicode char U+00E1 (decimal 225)
+   defining Unicode char U+00E2 (decimal 226)
+   defining Unicode char U+00E3 (decimal 227)
+   defining Unicode char U+00E4 (decimal 228)
+   defining Unicode char U+00E5 (decimal 229)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00E7 (decimal 231)
+   defining Unicode char U+00E8 (decimal 232)
+   defining Unicode char U+00E9 (decimal 233)
+   defining Unicode char U+00EA (decimal 234)
+   defining Unicode char U+00EB (decimal 235)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F0 (decimal 240)
+   defining Unicode char U+00F1 (decimal 241)
+   defining Unicode char U+00F2 (decimal 242)
+   defining Unicode char U+00F3 (decimal 243)
+   defining Unicode char U+00F4 (decimal 244)
+   defining Unicode char U+00F5 (decimal 245)
+   defining Unicode char U+00F6 (decimal 246)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+00F9 (decimal 249)
+   defining Unicode char U+00FA (decimal 250)
+   defining Unicode char U+00FB (decimal 251)
+   defining Unicode char U+00FC (decimal 252)
+   defining Unicode char U+00FD (decimal 253)
+   defining Unicode char U+00FE (decimal 254)
+   defining Unicode char U+00FF (decimal 255)
+   defining Unicode char U+0102 (decimal 258)
+   defining Unicode char U+0103 (decimal 259)
+   defining Unicode char U+0104 (decimal 260)
+   defining Unicode char U+0105 (decimal 261)
+   defining Unicode char U+0106 (decimal 262)
+   defining Unicode char U+0107 (decimal 263)
+   defining Unicode char U+010C (decimal 268)
+   defining Unicode char U+010D (decimal 269)
+   defining Unicode char U+010E (decimal 270)
+   defining Unicode char U+010F (decimal 271)
+   defining Unicode char U+0110 (decimal 272)
+   defining Unicode char U+0111 (decimal 273)
+   defining Unicode char U+0118 (decimal 280)
+   defining Unicode char U+0119 (decimal 281)
+   defining Unicode char U+011A (decimal 282)
+   defining Unicode char U+011B (decimal 283)
+   defining Unicode char U+011E (decimal 286)
+   defining Unicode char U+011F (decimal 287)
+   defining Unicode char U+0130 (decimal 304)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0132 (decimal 306)
+   defining Unicode char U+0133 (decimal 307)
+   defining Unicode char U+0139 (decimal 313)
+   defining Unicode char U+013A (decimal 314)
+   defining Unicode char U+013D (decimal 317)
+   defining Unicode char U+013E (decimal 318)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0143 (decimal 323)
+   defining Unicode char U+0144 (decimal 324)
+   defining Unicode char U+0147 (decimal 327)
+   defining Unicode char U+0148 (decimal 328)
+   defining Unicode char U+014A (decimal 330)
+   defining Unicode char U+014B (decimal 331)
+   defining Unicode char U+0150 (decimal 336)
+   defining Unicode char U+0151 (decimal 337)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0154 (decimal 340)
+   defining Unicode char U+0155 (decimal 341)
+   defining Unicode char U+0158 (decimal 344)
+   defining Unicode char U+0159 (decimal 345)
+   defining Unicode char U+015A (decimal 346)
+   defining Unicode char U+015B (decimal 347)
+   defining Unicode char U+015E (decimal 350)
+   defining Unicode char U+015F (decimal 351)
+   defining Unicode char U+0160 (decimal 352)
+   defining Unicode char U+0161 (decimal 353)
+   defining Unicode char U+0162 (decimal 354)
+   defining Unicode char U+0163 (decimal 355)
+   defining Unicode char U+0164 (decimal 356)
+   defining Unicode char U+0165 (decimal 357)
+   defining Unicode char U+016E (decimal 366)
+   defining Unicode char U+016F (decimal 367)
+   defining Unicode char U+0170 (decimal 368)
+   defining Unicode char U+0171 (decimal 369)
+   defining Unicode char U+0178 (decimal 376)
+   defining Unicode char U+0179 (decimal 377)
+   defining Unicode char U+017A (decimal 378)
+   defining Unicode char U+017B (decimal 379)
+   defining Unicode char U+017C (decimal 380)
+   defining Unicode char U+017D (decimal 381)
+   defining Unicode char U+017E (decimal 382)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201A (decimal 8218)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+201E (decimal 8222)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+2039 (decimal 8249)
+   defining Unicode char U+203A (decimal 8250)
+   defining Unicode char U+2423 (decimal 9251)
+)
+Now handling font encoding OT1 ...
+... processing UTF-8 mapping file for font encoding OT1
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ot1enc.dfu
+File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00B8 (decimal 184)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+)
+Now handling font encoding OMS ...
+... processing UTF-8 mapping file for font encoding OMS
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/omsenc.dfu
+File: omsenc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+)
+Now handling font encoding OMX ...
+... no UTF-8 mapping file for font encoding OMX
+Now handling font encoding U ...
+... no UTF-8 mapping file for font encoding U
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+02C6 (decimal 710)
+   defining Unicode char U+02DC (decimal 732)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2026 (decimal 8230)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2423 (decimal 9251)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/ae/ae.sty
+Package: ae 2001/02/12 1.3 Almost European Computer Modern
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
+)
+LaTeX Font Info:    Try loading font information for T1+aer on input line 100.
+
+(/usr/share/texlive/texmf-dist/tex/latex/ae/t1aer.fd
+File: t1aer.fd 1997/11/16 Font definitions for T1/aer.
+)))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count88
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/makeidx.sty
+Package: makeidx 2000/03/29 v1.0m Standard LaTeX package
+)
+(/usr/share/texlive/texmf-dist/tex/latex/vmargin/vmargin.sty
+Package: vmargin 2004/07/15 V2.5 set document margins (VK)
+
+Package: vmargin 2004/07/15 V2.5 set document margins (VK)
+\PaperWidth=\dimen105
+\PaperHeight=\dimen106
+) (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+\fancy@headwidth=\skip43
+\f@ncyO@elh=\skip44
+\f@ncyO@erh=\skip45
+\f@ncyO@olh=\skip46
+\f@ncyO@orh=\skip47
+\f@ncyO@elf=\skip48
+\f@ncyO@erf=\skip49
+\f@ncyO@olf=\skip50
+\f@ncyO@orf=\skip51
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen107
+\extrarowheight=\dimen108
+\NC@list=\toks17
+\extratabsurround=\skip52
+\backup@length=\skip53
+)
+(/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 130.
+)
+\everycr=\toks18
+\minrowclearance=\skip54
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip55
+\LTright=\skip56
+\LTpre=\skip57
+\LTpost=\skip58
+\LTchunksize=\count89
+\LTcapwidth=\dimen109
+\LT@head=\box26
+\LT@firsthead=\box27
+\LT@foot=\box28
+\LT@lastfoot=\box29
+\LT@cols=\count90
+\LT@rows=\count91
+\c@LT@tables=\count92
+\c@LT@chunks=\count93
+\LT@p@ftn=\toks19
+)
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count94
+\float@exts=\toks20
+\float@box=\box30
+\@float@everytoks=\toks21
+\@floatcapt=\box31
+)
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2012/05/13 v6.82q Hypertext links for LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
+
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
+)
+Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
+Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+Package: hopatch 2012/05/28 v1.2 Wrapper for package hooks (HO)
+Package: xcolor-patch 2011/01/30 xcolor patch
+Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
+Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+)
+\@linkdim=\dimen110
+\Hy@linkcounter=\count95
+\Hy@pagecounter=\count96
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2012/05/13 v6.82q Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+\Hy@SavedSpaceFactor=\count97
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Option `raiselinks' set `true' on input line 3941.
+Package hyperref Info: Option `bookmarks' set `true' on input line 3941.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 3941.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 3941
+.
+Package hyperref Info: Option `hyperindex' set `true' on input line 3941.
+Package hyperref Info: Option `plainpages' set `false' on input line 3941.
+Package hyperref Info: Option `pdfpagelabels' set `true' on input line 3941.
+Package hyperref Info: Hyper figures OFF on input line 4062.
+Package hyperref Info: Link nesting OFF on input line 4067.
+Package hyperref Info: Hyper index ON on input line 4070.
+Package hyperref Info: Plain pages OFF on input line 4077.
+Package hyperref Info: Backreferencing OFF on input line 4082.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4300.
+\c@Hy@tempcnt=\count98
+LaTeX Info: Redefining \url on input line 4653.
+\Fld@menulength=\count99
+\Field@Width=\dimen111
+\Fld@charsize=\dimen112
+Package hyperref Info: Hyper figures OFF on input line 5773.
+Package hyperref Info: Link nesting OFF on input line 5778.
+Package hyperref Info: Hyper index ON on input line 5781.
+Package hyperref Info: backreferencing OFF on input line 5788.
+Package hyperref Info: Link coloring OFF on input line 5793.
+Package hyperref Info: Link coloring with OCG OFF on input line 5798.
+Package hyperref Info: PDF/A mode OFF on input line 5803.
+LaTeX Info: Redefining \ref on input line 5843.
+LaTeX Info: Redefining \pageref on input line 5847.
+\Hy@abspage=\count100
+\c@Item=\count101
+\c@Hfootnote=\count102
+)
+
+Package hyperref Message: Driver: hpdftex.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2012/05/13 v6.82q Hyperref driver for pdfTeX
+\Fld@listcount=\count103
+\c@bookmark@seq@number=\count104
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip59
+)
+\float@capnamewd=\skip60
+\float@cparwidth=\skip61
+\float@capnamebox=\box32
+\@float@every@figure=\toks22
+\@float@every@table=\toks23
+\c@definition=\count105
+\c@satz=\count106
+)
+(/usr/share/texlive/texmf-dist/tex/latex/acronym/acronym.sty
+Package: acronym 2010/09/08 v1.36 Support for acronyms (Tobias Oetiker)
+
+(/usr/share/texlive/texmf-dist/tex/latex/bigfoot/suffix.sty
+Package: suffix 2006/07/15 1.5 Variant command support
+)
+\AC@clearlist=\toks24
+)
+(/usr/share/texlive/texmf-dist/tex/latex/subfigure/subfigure.sty
+Package: subfigure 2002/03/15 v2.1.5 subfigure package
+\subfigtopskip=\skip62
+\subfigcapskip=\skip63
+\subfigcaptopadj=\dimen113
+\subfigbottomskip=\skip64
+\subfigcapmargin=\dimen114
+\subfiglabelskip=\skip65
+\c@subfigure=\count107
+\c@lofdepth=\count108
+\c@subtable=\count109
+\c@lotdepth=\count110
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(/usr/share/texlive/texmf-dist/tex/latex/subfigure/subfigure.cfg)
+\subfig@top=\skip66
+\subfig@bottom=\skip67
+)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2012/02/19 v3.2f Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2012/01/12 v1.4b caption3 kernel (AR)
+\captionmargin=\dimen115
+\captionmargin@=\dimen116
+\captionwidth=\dimen117
+\caption@indent=\dimen118
+\caption@parindent=\dimen119
+\caption@hangindent=\dimen120
+)
+\c@ContinuedFloat=\count111
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: longtable package is loaded.
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2011/09/12 v1.3 longtable captions (AR)
+)
+Package caption Info: subfigure package is loaded.
+)
+\@float@every@listing=\toks25
+\c@listing=\count112
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count113
+\lst@gtempboxa=\box33
+\lst@token=\toks26
+\lst@length=\count114
+\lst@currlwidth=\dimen121
+\lst@column=\count115
+\lst@pos=\count116
+\lst@lostspace=\dimen122
+\lst@width=\dimen123
+\lst@newlines=\count117
+\lst@lineno=\count118
+\lst@maxwidth=\dimen124
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
+\c@lstnumber=\count119
+\lst@skipnumbers=\count120
+\lst@framebox=\box34
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2007/02/22 1.4 listings configuration
+))
+Package: listings 2007/02/22 1.4 (Carsten Heinz)
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip68
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks27
+\ex@=\dimen125
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen126
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count121
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count122
+\leftroot@=\count123
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count124
+\DOTSCASE@=\count125
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box35
+\strutbox@=\box36
+\big@size=\dimen127
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count126
+\c@MaxMatrixCols=\count127
+\dotsspace@=\muskip11
+\c@parentequation=\count128
+\dspbrk@lvl=\count129
+\tag@help=\toks28
+\row@=\count130
+\column@=\count131
+\maxfields@=\count132
+\andhelp@=\toks29
+\eqnshift@=\dimen128
+\alignsep@=\dimen129
+\tagshift@=\dimen130
+\tagwidth@=\dimen131
+\totwidth@=\dimen132
+\lineht@=\dimen133
+\@envbody=\toks30
+\multlinegap=\skip69
+\multlinetaggap=\skip70
+\mathdisplay@stack=\toks31
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2009/07/02 v2.20.1
+\thm@style=\toks32
+\thm@bodyfont=\toks33
+\thm@headfont=\toks34
+\thm@notefont=\toks35
+\thm@headpunct=\toks36
+\thm@preskip=\skip71
+\thm@postskip=\skip72
+\thm@headsep=\skip73
+\dth@everypar=\toks37
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2009/06/22 v3.00
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen134
+\lightrulewidth=\dimen135
+\cmidrulewidth=\dimen136
+\belowrulesep=\dimen137
+\belowbottomsep=\dimen138
+\aboverulesep=\dimen139
+\abovetopsep=\dimen140
+\cmidrulesep=\dimen141
+\cmidrulekern=\dimen142
+\defaultaddspace=\dimen143
+\@cmidla=\count133
+\@cmidlb=\count134
+\@aboverulesep=\dimen144
+\@belowrulesep=\dimen145
+\@thisruleclass=\count135
+\@lastruleclass=\count136
+\@thisrulewidth=\dimen146
+)
+(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+\bigstrutjot=\dimen147
+)
+\c@todocounter=\count137
+
+(/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/rotating/rotating.sty
+Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\c@r@tfl@t=\count138
+\rotFPtop=\skip74
+\rotFPbot=\skip75
+\rot@float@box=\box37
+\rot@mess@toks=\toks38
+)
+(/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.sty
+Package: csquotes 2011/10/22 v5.1d context-sensitive quotations
+
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2011/01/03 v2.1 e-TeX tools for LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/etex-pkg/etex.sty
+Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
+\et@xins=\count139
+)
+\etb@tempcnta=\count140
+)
+\csq@reset=\count141
+\csq@gtype=\count142
+\csq@glevel=\count143
+\csq@qlevel=\count144
+\csq@maxlvl=\count145
+\csq@tshold=\count146
+\csq@ltx@everypar=\toks39
+
+(/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.def
+File: csquotes.def 2011/10/22 v5.1d csquotes generic definitions
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+
+(/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.cfg
+File: csquotes.cfg 
+)
+Package csquotes Info: Enabling multilingual quotes.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 1999/01/07 v2.07 `tabularx' package (DPC)
+\TX@col@width=\dimen148
+\TX@old@table=\dimen149
+\TX@old@col=\dimen150
+\TX@target=\dimen151
+\TX@delta=\dimen152
+\TX@cols=\count147
+\TX@ftn=\toks40
+)
+\c@theorem=\count148
+\c@corollary=\count149
+\c@lemma=\count150
+\c@mydef=\count151
+ (./algorithm2e.sty
+Package: algorithm2e 2013/01/06 v5.00 algorithms environments
+\c@AlgoLine=\count152
+(/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2009/10/20 v1.13 Space after command names (DPC,MH)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/relsize/relsize.sty
+Package: relsize 2011/09/21 ver 4.0
+
+Examine \normalsize starts \@setfontsize size may be \@xiipt. 
+Examine \small starts \@setfontsize size may be \@xipt. 
+Examine \footnotesize starts \@setfontsize size may be \@xpt. 
+Examine \large starts \@setfontsize size may be \@xivpt. 
+Examine \Large starts \@setfontsize size may be \@xviipt. 
+Examine \LARGE starts \@setfontsize size may be \@xxpt. 
+Examine \scriptsize starts \@setfontsize size may be \@viiipt. 
+Examine \tiny starts \@setfontsize size may be \@vipt. 
+Examine \huge starts \@setfontsize size may be \@xxvpt. 
+Examine \Huge starts \@setfontsize size may be \@xxvpt. )
+********************************************************
+Package `algorithm2e' Release 5.0 -- january 06 2013 --
+- algorithm2e-announce@lirmm.fr mailing list for announcement about releases
+- algorithm2e-discussion@lirmm.fr mailing list for discussion about package
+subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
+- Author: Christophe Fiorio (cfiorio@um2.fr)
+********************************************************
+\skiptotal=\skip76
+\skiplinenumber=\skip77
+\skiprule=\skip78
+\skiphlne=\skip79
+\skiptext=\skip80
+\skiplength=\skip81
+\algomargin=\skip82
+\skipalgocfslide=\skip83
+\algowidth=\dimen153
+\inoutsize=\dimen154
+\inoutindent=\dimen155
+\interspacetitleruled=\dimen156
+\interspacealgoruled=\dimen157
+\interspacetitleboxruled=\dimen158
+\algocf@inoutbox=\box38
+\algocf@inputbox=\box39
+\AlCapSkip=\skip84
+\AlCapHSkip=\skip85
+\algoskipindent=\skip86
+\algocf@nlbox=\box40
+\algocf@hangingbox=\box41
+\algocf@untilbox=\box42
+\algocf@skipuntil=\skip87
+\algocf@capbox=\box43
+\algoheightruledefault=\skip88
+\algoheightrule=\skip89
+\algotitleheightruledefault=\skip90
+\algotitleheightrule=\skip91
+\c@algocfline=\count153
+\c@algocfproc=\count154
+\c@algocf=\count155
+\algocf@algoframe=\box44
+\algocf@algobox=\box45
+) (/usr/share/texlive/texmf-dist/tex/latex/psnfss/times.sty
+Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
+)
+(/usr/share/texlive/texmf-dist/tex/latex/mh/mathtools.sty
+Package: mathtools 2012/04/24 v1.12 mathematical typesetting tools
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count156
+\calc@Bcount=\count157
+\calc@Adimen=\dimen159
+\calc@Bdimen=\dimen160
+\calc@Askip=\skip92
+\calc@Bskip=\skip93
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
+\calc@Ccount=\count158
+\calc@Cskip=\skip94
+)
+(/usr/share/texlive/texmf-dist/tex/latex/mh/mhsetup.sty
+Package: mhsetup 2010/01/21 v1.2a programming setup (MH)
+)
+\g_MT_multlinerow_int=\count159
+\l_MT_multwidth_dim=\dimen161
+\origjot=\skip95
+\l_MT_shortvdotswithinadjustabove_dim=\dimen162
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen163
+\l_MT_above_intertext_dim=\dimen164
+\l_MT_below_intertext_dim=\dimen165
+\l_MT_above_shortintertext_dim=\dimen166
+\l_MT_below_shortintertext_dim=\dimen167
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fixme/fixme.sty
+Package: fixme 2009/09/30 v4.1 Insert fixme notes in your documents
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks41
+\verbatim@line=\toks42
+\verbatim@in@stream=\read1
+)
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2008/08/13 v2.6a package option processing (HA)
+
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+\XKV@toks=\toks43
+\XKV@tempa@toks=\toks44
+\XKV@depth=\count160
+File: xkeyval.tex 2008/08/13 v2.6a key=value parser (HA)
+))
+\c@fixmecount=\count161
+\c@fxnotecount=\count162
+\c@fxwarningcount=\count163
+\c@fxerrorcount=\count164
+\c@fxfatalcount=\count165
+)
+(/usr/share/texlive/texmf-dist/tex/latex/appendix/appendix.sty
+Package: appendix 2009/09/02 v1.2b extra appendix facilities
+\c@@pps=\count166
+\c@@ppsavesec=\count167
+\c@@ppsaveapp=\count168
+)
+(/usr/share/texlive/texmf-dist/tex/latex/comment/comment.sty
+\CommentStream=\write3
+
+Excluding comment 'comment') (./todonotes.sty
+Package: todonotes 2011/10/22 .dtx Todonotes source and documentation.
+Package: todonotes 2011/10/22
+
+(/usr/share/texmf/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+LaTeX Info: Redefining \color on input line 702.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+)
+(/usr/share/texmf/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/share/texmf/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/share/texmf/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/share/texmf/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks45
+)
+(/usr/share/texmf/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box46
+
+(/usr/share/texlive/texmf-dist/tex/latex/ms/everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+(/usr/share/texmf/tex/generic/pgf/utilities/pgfrcs.code.tex
+Package: pgfrcs 2010/10/25 v2.10 (rcs-revision 1.24)
+))
+Package: pgf 2008/01/15 v2.10 (rcs-revision 1.12)
+
+(/usr/share/texmf/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/share/texmf/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2010/06/30 v2.10 (rcs-revision 1.37)
+
+(/usr/share/texmf/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks46
+\pgfkeys@temptoks=\toks47
+
+(/usr/share/texmf/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
+\pgfkeys@tmptoks=\toks48
+))
+\pgf@x=\dimen168
+\pgf@y=\dimen169
+\pgf@xa=\dimen170
+\pgf@ya=\dimen171
+\pgf@xb=\dimen172
+\pgf@yb=\dimen173
+\pgf@xc=\dimen174
+\pgf@yc=\dimen175
+\w@pgf@writea=\write4
+\r@pgf@reada=\read2
+\c@pgf@counta=\count169
+\c@pgf@countb=\count170
+\c@pgf@countc=\count171
+\c@pgf@countd=\count172
+
+(/usr/share/texmf/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
+)
+Package pgfsys Info: Driver file for pgf: pgfsys-pdftex.def on input line 900.
+
+(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2009/05/22  (rcs-revision 1.26)
+
+(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2008/05/19  (rcs-revision 1.10)
+)))
+(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2008/07/18  (rcs-revision 1.7)
+\pgfsyssoftpath@smallbuffer@items=\count173
+\pgfsyssoftpath@bigbuffer@items=\count174
+)
+(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
+))
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2010/04/11 v2.10 (rcs-revision 1.7)
+
+(/usr/share/texmf/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen176
+\pgfmath@count=\count175
+\pgfmath@box=\box47
+\pgfmath@toks=\toks49
+\pgfmath@stack@operand=\toks50
+\pgfmath@stack@operation=\toks51
+)
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.code.tex
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex)
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex)
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.random.code.tex)
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex)
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.base.code.tex)
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.round.code.tex)
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex)))
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count176
+))
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2010/04/09  (rcs-revision 1.20)
+\pgf@picminx=\dimen177
+\pgf@picmaxx=\dimen178
+\pgf@picminy=\dimen179
+\pgf@picmaxy=\dimen180
+\pgf@pathminx=\dimen181
+\pgf@pathmaxx=\dimen182
+\pgf@pathminy=\dimen183
+\pgf@pathmaxy=\dimen184
+\pgf@xx=\dimen185
+\pgf@xy=\dimen186
+\pgf@yx=\dimen187
+\pgf@yy=\dimen188
+\pgf@zx=\dimen189
+\pgf@zy=\dimen190
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2010/08/03  (rcs-revision 1.24)
+\pgf@path@lastx=\dimen191
+\pgf@path@lasty=\dimen192
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2008/04/22  (rcs-revision 1.12)
+\pgf@shorten@end@additional=\dimen193
+\pgf@shorten@start@additional=\dimen194
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2010/09/08  (rcs-revision 1.34)
+\pgfpic=\box48
+\pgf@hbox=\box49
+\pgf@layerbox@main=\box50
+\pgf@picture@serial@count=\count177
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2008/04/22  (rcs-revision 1.9)
+\pgflinewidth=\dimen195
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2009/06/10  (rcs-revision 1.11)
+\pgf@pt@x=\dimen196
+\pgf@pt@y=\dimen197
+\pgf@pt@temp=\dimen198
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2008/10/09  (rcs-revision 1.8)
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2008/04/23  (rcs-revision 1.11)
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2008/11/23  (rcs-revision 1.13)
+\pgf@max=\dimen199
+\pgf@sys@shading@range@num=\count178
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2010/03/25  (rcs-revision 1.16)
+
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2010/09/01  (rcs-revision 1.17)
+\pgfexternal@startupbox=\box51
+))
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2010/08/27  (rcs-revision 1.2)
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2008/01/17  (rcs-revision 1.2)
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2009/07/02  (rcs-revision 1.3)
+)))
+(/usr/share/texmf/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2010/09/09  (rcs-revision 1.13)
+\pgfnodeparttextbox=\box52
+)
+(/usr/share/texmf/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2010/10/22  (rcs-revision 1.8)
+)
+(/usr/share/texmf/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2007/07/03 v2.10 (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen200
+\pgf@nodesepend=\dimen201
+)
+(/usr/share/texmf/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2007/07/23 v2.10 (rcs-revision 1.1)
+))
+(/usr/share/texmf/tex/latex/pgf/utilities/pgffor.sty
+(/usr/share/texmf/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/share/texmf/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(/usr/share/texmf/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2010/03/23 v2.10 (rcs-revision 1.18)
+\pgffor@iter=\dimen202
+\pgffor@skip=\dimen203
+\pgffor@stack=\toks52
+\pgffor@toks=\toks53
+))
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2010/10/13 v2.10 (rcs-revision 1.76)
+
+(/usr/share/texmf/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2010/05/31 v2.10 (rcs-revision 1.15)
+\pgf@plot@mark@count=\count179
+\pgfplotmarksize=\dimen204
+)
+\tikz@lastx=\dimen205
+\tikz@lasty=\dimen206
+\tikz@lastxsaved=\dimen207
+\tikz@lastysaved=\dimen208
+\tikzleveldistance=\dimen209
+\tikzsiblingdistance=\dimen210
+\tikz@figbox=\box53
+\tikz@tempbox=\box54
+\tikztreelevel=\count180
+\tikznumberofchildren=\count181
+\tikznumberofcurrentchild=\count182
+\tikz@fig@count=\count183
+
+(/usr/share/texmf/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2010/08/24  (rcs-revision 1.4)
+\pgfmatrixcurrentrow=\count184
+\pgfmatrixcurrentcolumn=\count185
+\pgf@matrix@numberofcolumns=\count186
+)
+\tikz@expandcount=\count187
+
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopat
+hs.code.tex
+File: tikzlibrarytopaths.code.tex 2008/06/17 v2.10 (rcs-revision 1.2)
+)))
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryposit
+ioning.code.tex
+File: tikzlibrarypositioning.code.tex 2008/10/06 v2.10 (rcs-revision 1.7)
+)
+\c@@todonotes@numberoftodonotes=\count188
+)
+(/usr/share/texlive/texmf-dist/tex/latex/filecontents/filecontents.sty
+Package: filecontents 2011/10/08 v1.3 Create an external file from within a LaT
+eX document
+)
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... none found.
+
+
+Package csquotes Warning: No multilingual support.
+(csquotes)                Cannot enable multilingual quotes on input line 194.
+
+(./thesis.aux (./backmatter/00_title.aux) (./backmatter/00_statement.aux)
+(./backmatter/00_abstract.aux) (./backmatter/00_acknowledgments.aux)
+(./chapters/01_introduction.aux) (./chapters/02_background.aux)
+(./chapters/03_distributedChannelAllocation.aux) (./chapters/04_clutering.aux)
+(./chapters/05_routing.aux) (./chapters/06_conclusion.aux))
+\openout1 = `thesis.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 194.
+LaTeX Font Info:    ... okay on input line 194.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 194.
+LaTeX Font Info:    ... okay on input line 194.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 194.
+LaTeX Font Info:    ... okay on input line 194.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 194.
+LaTeX Font Info:    ... okay on input line 194.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 194.
+LaTeX Font Info:    ... okay on input line 194.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 194.
+LaTeX Font Info:    ... okay on input line 194.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 194.
+LaTeX Font Info:    ... okay on input line 194.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 194.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
+File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
+)
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count189
+\scratchdimen=\dimen211
+\scratchbox=\box55
+\nofMPsegments=\count190
+\nofMParguments=\count191
+\everyMPshowfont=\toks54
+\MPscratchCnt=\count192
+\MPscratchDim=\dimen212
+\MPnumerator=\count193
+\makeMPintoPDFobject=\count194
+\everyMPtoPDFconversion=\toks55
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+\AtBeginShipoutBox=\box56
+Package hyperref Info: Link coloring OFF on input line 194.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count195
+)
+LaTeX Info: Redefining \ref on input line 194.
+LaTeX Info: Redefining \pageref on input line 194.
+LaTeX Info: Redefining \nameref on input line 194.
+
+(./thesis.out) (./thesis.out)
+\@outlinefile=\write5
+\openout5 = `thesis.out'.
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: listings package is loaded.
+Package caption Info: rotating package is loaded.
+Package caption Info: End \AtBeginDocument code.
+\c@lstlisting=\count196
+ ABD: EveryShipout initializing macros
+\openout2 = `backmatter/00_title.aux'.
+
+
+(./backmatter/00_title.tex)
+LaTeX Font Info:    Try loading font information for T1+phv on input line 227.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
+File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
+) [1
+
+
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
+
+
+]
+\openout2 = `backmatter/00_statement.aux'.
+
+ (./backmatter/00_statement.tex)
+\openout2 = `backmatter/00_abstract.aux'.
+
+
+(./backmatter/00_abstract.tex
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <24.88> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 1.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 17.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 17.
+) [3
+
+
+
+
+
+] [4]
+\openout2 = `backmatter/00_acknowledgments.aux'.
+
+
+(./backmatter/00_acknowledgments.tex) (./thesis.toc
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 1.
+LaTeX Font Info:    Try loading font information for U+msa on input line 3.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 3.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+)
+Overfull \hbox (8.52127pt too wide) in paragraph at lines 22--22
+ [] [][]\T1/ptm/b/n/12 DISTRIBUTED CHAN-NEL AND POWER AL-LO-CA-TION IEEE 802.22
+ NET- 
+ []
+
+[5
+
+
+
+
+
+
+] [6] [7])
+\tf@toc=\write6
+\openout6 = `thesis.toc'.
+
+ [8]
+\openout2 = `chapters/01_introduction.aux'.
+
+ (./chapters/01_introduction.tex
+ 1.
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <17.28> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 19.
+[1
+
+
+
+
+]
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 36.
+ [2] [3]
+Overfull \hbox (5.76402pt too wide) in paragraph at lines 132--134
+[]\T1/ptm/m/n/12 Channel al-lo-ca-tion fa-cil-i-tates CRN to im-prove through-p
+ut [[]], or co-op-er-a-tively re-lay [[]]
+ []
+
+[4] [5] [6] [7]) [8]
+\openout2 = `chapters/02_background.aux'.
+
+ (./chapters/02_background.tex
+ 2.
+[9
+
+
+
+] [10]
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 76.
+
+Overfull \hbox (47.08775pt too wide) in paragraph at lines 114--119
+\T1/ptm/m/n/12 cooperative man-ner [[]]. This game for-mu-lates many prob-lems 
+in re-al-is-tic world, e.$ $g.,minimisation
+ []
+
+[11]) [12]
+\openout2 = `chapters/03_distributedChannelAllocation.aux'.
+
+ (./chapters/03_distributedChannelAllocation.tex
+ 3.
+[13
+
+
+
+]
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 47.
+
+
+LaTeX Warning: Reference `sec_CA' on page 14 undefined on input line 47.
+
+
+Package Fancyhdr Warning: \headheight is too small (17.07164pt): 
+ Make it at least 27.67601pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[14]
+<./figures/03_distributedChannelAllocation/fig1.pdf, id=844, 318.18875pt x 271.
+0125pt>
+File: ./figures/03_distributedChannelAllocation/fig1.pdf Graphic file (type pdf
+)
+ <use ./figures/03_distributedChannelAllocation/fig1.pdf>
+Package pdftex.def Info: ./figures/03_distributedChannelAllocation/fig1.pdf use
+d on input line 61.
+(pdftex.def)             Requested size: 384.68576pt x 327.64905pt.
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 62.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (0.25853pt too wide) in paragraph at lines 72--76
+\T1/ptm/m/n/12 where $\OML/cmm/m/it/12 P[]$ \T1/ptm/m/n/12 de-notes the trans-m
+it power of WBS $[]$ and $\OML/cmm/m/it/12 z[]$ \T1/ptm/m/n/12 mod-els the zero
+-mean log-normally
+ []
+
+[15]
+<./figures/03_distributedChannelAllocation/quasiSINR.pdf, id=854, 124.465pt x 1
+23.46124pt>
+File: ./figures/03_distributedChannelAllocation/quasiSINR.pdf Graphic file (typ
+e pdf)
+ <use ./figures/03_distributedChannelAllocation/quasiSINR.pdf>
+Package pdftex.def Info: ./figures/03_distributedChannelAllocation/quasiSINR.pd
+f used on input line 100.
+(pdftex.def)             Requested size: 128.23076pt x 127.20792pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (17.07164pt): 
+ Make it at least 27.67601pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[16 <./figures/03_distributedChannelAllocation/fig1.pdf>]
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 113.
+
+
+Underfull \vbox (badness 7221) has occurred while \output is active []
+
+ [17 <./figures/03_distributedChannelAllocation/quasiSINR.pdf>]
+
+Package Fancyhdr Warning: \headheight is too small (17.07164pt): 
+ Make it at least 27.67601pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[18]
+Overfull \hbox (4.35754pt too wide) in paragraph at lines 185--185
+[]\T1/phv/b/n/17.28 Problem De-com-po-si-tion and Cor-re-spond-ing Re-
+ []
+
+[19]
+
+Package Fancyhdr Warning: \headheight is too small (17.07164pt): 
+ Make it at least 27.67601pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[20] [21]
+<./figures/03_distributedChannelAllocation/lpcvxcdf100runs.pdf, id=966, 449.68p
+t x 338.26375pt>
+File: ./figures/03_distributedChannelAllocation/lpcvxcdf100runs.pdf Graphic fil
+e (type pdf)
+
+<use ./figures/03_distributedChannelAllocation/lpcvxcdf100runs.pdf>
+Package pdftex.def Info: ./figures/03_distributedChannelAllocation/lpcvxcdf100r
+uns.pdf used on input line 290.
+(pdftex.def)             Requested size: 380.4138pt x 286.17322pt.
+
+Overfull \hbox (25.28305pt too wide) in paragraph at lines 300--300
+[]\T1/phv/b/n/17.28 Channel Al-lo-ca-tion with Fixed Trans-mis-sion Power 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (17.07164pt): 
+ Make it at least 27.67601pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[22 <./figures/03_distributedChannelAllocation/lpcvxcdf100runs.pdf>]
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 350.
+
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 350.
+
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 350.
+
+[23]
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <12> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 354.
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <8> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 375.
+
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 383.
+
+
+Package Fancyhdr Warning: \headheight is too small (17.07164pt): 
+ Make it at least 27.67601pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[24] [25]
+Overfull \hbox (2.19775pt too wide) in paragraph at lines 429--430
+[]\T1/ptm/m/n/12 Player $\OML/cmm/m/it/12 i$\T1/ptm/m/n/12 ' strat-egy space is
+ $\OT1/cmr/m/n/12 ^^F[] = \OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 i
+; j; c\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ; j \OMS/cmsy/m/n/12 2 N\OML/cmm/m/it/1
+2 ; j \OMS/cmsy/m/n/12 6\OT1/cmr/m/n/12 = \OML/cmm/m/it/12 i; c\OT1/cmr/m/n/12 
+(\OML/cmm/m/it/12 ^^[[]\OT1/cmr/m/n/12 ) = \OML/cmm/m/it/12 c; c \OT1/cmr/m/n/1
+2 = 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; []  ; N\OMS/cmsy/m/
+n/12 g$\T1/ptm/m/n/12 ,
+ []
+
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 438.
+
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 438.
+
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 473.
+
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 473.
+
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 473.
+
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 473.
+
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 473.
+
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 473.
+
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 473.
+
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 473.
+
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 473.
+
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 473.
+
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 473.
+
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 473.
+
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 473.
+
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 473.
+
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 473.
+
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 473.
+
+
+Package Fancyhdr Warning: \headheight is too small (17.07164pt): 
+ Make it at least 27.67601pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[26]
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 485.
+
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 485.
+
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 485.
+
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 485.
+
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 485.
+
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 485.
+
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 505.
+
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 505.
+
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 505.
+
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 505.
+
+[27]
+Overfull \hbox (4.34842pt too wide) in paragraph at lines 544--544
+[]\T1/phv/b/n/14.4 Communication over-head of Di-caps in the phase of chan-
+ []
+
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
+ine 553.
+
+Package Fancyhdr Warning: \headheight is too small (17.07164pt): 
+ Make it at least 27.67601pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[28] [29]
+<./figures/03_distributedChannelAllocation/layout.pdf, id=1094, 643.40375pt x 6
+44.4075pt>
+File: ./figures/03_distributedChannelAllocation/layout.pdf Graphic file (type p
+df)
+ <use ./figures/03_distributedChannelAllocation/layout.pdf>
+Package pdftex.def Info: ./figures/03_distributedChannelAllocation/layout.pdf u
+sed on input line 627.
+(pdftex.def)             Requested size: 213.71576pt x 214.05139pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<./figures/others/3.pdf, id=1096, 486.81876pt x 372.39125pt>
+File: ./figures/others/3.pdf Graphic file (type pdf)
+
+<use ./figures/others/3.pdf>
+Package pdftex.def Info: ./figures/others/3.pdf used on input line 663.
+(pdftex.def)             Requested size: 341.94652pt x 261.56989pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<./figures/others/4.pdf, id=1097, 479.7925pt x 372.39125pt>
+File: ./figures/others/4.pdf Graphic file (type pdf)
+
+<use ./figures/others/4.pdf>
+Package pdftex.def Info: ./figures/others/4.pdf used on input line 670.
+(pdftex.def)             Requested size: 341.94652pt x 265.40538pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<./figures/others/5.pdf, id=1098, 489.83pt x 399.4925pt>
+File: ./figures/others/5.pdf Graphic file (type pdf)
+
+<use ./figures/others/5.pdf>
+Package pdftex.def Info: ./figures/others/5.pdf used on input line 678.
+(pdftex.def)             Requested size: 341.94652pt x 278.88696pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package Fancyhdr Warning: \headheight is too small (17.07164pt): 
+ Make it at least 27.67601pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[30] [31 <./figures/03_distributedChannelAllocation/layout.pdf>]
+<./figures/others/1.pdf, id=1126, 489.83pt x 372.39125pt>
+File: ./figures/others/1.pdf Graphic file (type pdf)
+
+<use ./figures/others/1.pdf>
+Package pdftex.def Info: ./figures/others/1.pdf used on input line 702.
+(pdftex.def)             Requested size: 299.20076pt x 227.47084pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (17.07164pt): 
+ Make it at least 27.67601pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[32 <./figures/others/3.pdf> <./figures/others/4.pdf>] [33 <./figures/others/5.
+pdf> <./figures/others/1.pdf>]
+<./figures/others/30_31.pdf, id=1162, 490.83376pt x 384.43625pt>
+File: ./figures/others/30_31.pdf Graphic file (type pdf)
+
+<use ./figures/others/30_31.pdf>
+Package pdftex.def Info: ./figures/others/30_31.pdf used on input line 735.
+(pdftex.def)             Requested size: 341.94652pt x 267.83061pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (17.07164pt): 
+ Make it at least 27.67601pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[34 <./figures/others/30_31.pdf>]
+Underfull \vbox (badness 1515) has occurred while \output is active []
+
+ [35]
+<./figures/others/16.pdf, id=1270, 486.81876pt x 361.35pt>
+File: ./figures/others/16.pdf Graphic file (type pdf)
+
+<use ./figures/others/16.pdf>
+Package pdftex.def Info: ./figures/others/16.pdf used on input line 803.
+(pdftex.def)             Requested size: 256.46152pt x 190.36221pt.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 804.
+
+<./figures/others/14.pdf, id=1273, 486.81876pt x 365.365pt>
+File: ./figures/others/14.pdf Graphic file (type pdf)
+
+<use ./figures/others/14.pdf>
+Package pdftex.def Info: ./figures/others/14.pdf used on input line 822.
+(pdftex.def)             Requested size: 256.46152pt x 192.47734pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<./figures/others/15.pdf, id=1274, 486.81876pt x 361.35pt>
+File: ./figures/others/15.pdf Graphic file (type pdf)
+
+<use ./figures/others/15.pdf>
+Package pdftex.def Info: ./figures/others/15.pdf used on input line 837.
+(pdftex.def)             Requested size: 256.46152pt x 190.36221pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<./figures/others/24.pdf, id=1275, 498.86375pt x 399.4925pt>
+File: ./figures/others/24.pdf Graphic file (type pdf)
+
+<use ./figures/others/24.pdf>
+Package pdftex.def Info: ./figures/others/24.pdf used on input line 882.
+(pdftex.def)             Requested size: 384.68576pt x 308.06735pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package Fancyhdr Warning: \headheight is too small (17.07164pt): 
+ Make it at least 27.67601pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[36 <./figures/others/16.pdf>] [37 <./figures/others/14.pdf> <./figures/others/
+15.pdf>]
+
+Package Fancyhdr Warning: \headheight is too small (17.07164pt): 
+ Make it at least 27.67601pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[38 <./figures/others/24.pdf>]
+ A.
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 915.
+
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 915.
+
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 915.
+
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 915.
+
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 915.
+
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 915.
+
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 915.
+
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 915.
+
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 915.
+
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 915.
+
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 915.
+
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 915.
+
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 915.
+
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 915.
+
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 925.
+
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 925.
+
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 925.
+
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 925.
+
+
+Underfull \vbox (badness 1102) has occurred while \output is active []
+
+ [39
+
+]
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 937.
+
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 937.
+
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 937.
+
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 937.
+
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 937.
+
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 937.
+
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 937.
+
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 937.
+
+[40]
+ B.
+[41
+
+]) [42]
+\openout2 = `chapters/04_clutering.aux'.
+
+ (./chapters/04_clutering.tex
+ 4.
+[43
+
+
+
+]
+Underfull \vbox (badness 2073) has occurred while \output is active []
+
+ [44]
+[45] [46]
+<./figures/04_clutering/figure1.pdf, id=1415, 189.70876pt x 114.4275pt>
+File: ./figures/04_clutering/figure1.pdf Graphic file (type pdf)
+
+<use ./figures/04_clutering/figure1.pdf>
+Package pdftex.def Info: ./figures/04_clutering/figure1.pdf used on input line 
+243.
+(pdftex.def)             Requested size: 256.46152pt x 154.7079pt.
+ [47]
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 309.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+
+LaTeX Warning: Float too large for page by 50.2442pt on input line 313.
+
+[48 <./figures/04_clutering/figure1.pdf>] [49]
+<./figures/04_clutering/clusters_denseNetwork.pdf, id=1493, 169.51556pt x 158.0
+4404pt>
+File: ./figures/04_clutering/clusters_denseNetwork.pdf Graphic file (type pdf)
+ <use ./figures/04_clutering/clusters_denseNetwork.pdf>
+Package pdftex.def Info: ./figures/04_clutering/clusters_denseNetwork.pdf used 
+on input line 357.
+(pdftex.def)             Requested size: 170.97pt x 159.41339pt.
+ [50]
+<./figures/04_clutering/number_clusters_scale.pdf, id=1500, 386.44376pt x 311.1
+625pt>
+File: ./figures/04_clutering/number_clusters_scale.pdf Graphic file (type pdf)
+ <use ./figures/04_clutering/number_clusters_scale.pdf>
+Package pdftex.def Info: ./figures/04_clutering/number_clusters_scale.pdf used 
+on input line 373.
+(pdftex.def)             Requested size: 286.37834pt x 230.589pt.
+ [51 <./figures/04_clutering/clusters_denseNetwork.pdf> <./figures/04_clutering
+/number_clusters_scale.pdf>]
+<./figures/04_clutering/figure2.pdf, id=1525, 192.72pt x 127.47626pt>
+File: ./figures/04_clutering/figure2.pdf Graphic file (type pdf)
+
+<use ./figures/04_clutering/figure2.pdf>
+Package pdftex.def Info: ./figures/04_clutering/figure2.pdf used on input line 
+428.
+(pdftex.def)             Requested size: 256.46152pt x 169.63853pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [52]
+[53 <./figures/04_clutering/figure2.pdf>] [54]
+<./figures/04_clutering/singletongame.pdf, id=1619, 239.93639pt x 243.7908pt>
+File: ./figures/04_clutering/singletongame.pdf Graphic file (type pdf)
+
+<use ./figures/04_clutering/singletongame.pdf>
+Package pdftex.def Info: ./figures/04_clutering/singletongame.pdf used on input
+ line 518.
+(pdftex.def)             Requested size: 128.23076pt x 130.29472pt.
+ [55 <./figures/04_clutering/singletongame.pdf>]
+<./figures/04_clutering/figure4AinC.pdf, id=1638, 177.66376pt x 109.40875pt>
+File: ./figures/04_clutering/figure4AinC.pdf Graphic file (type pdf)
+
+<use ./figures/04_clutering/figure4AinC.pdf>
+Package pdftex.def Info: ./figures/04_clutering/figure4AinC.pdf used on input l
+ine 601.
+(pdftex.def)             Requested size: 185.93167pt x 114.50359pt.
+
+<./figures/04_clutering/figure4AinH.pdf, id=1639, 177.66376pt x 107.40125pt>
+File: ./figures/04_clutering/figure4AinH.pdf Graphic file (type pdf)
+
+<use ./figures/04_clutering/figure4AinH.pdf>
+Package pdftex.def Info: ./figures/04_clutering/figure4AinH.pdf used on input l
+ine 605.
+(pdftex.def)             Requested size: 185.93167pt x 112.4026pt.
+
+<./figures/04_clutering/final_clustering_ross.pdf, id=1640, 284.06125pt x 181.6
+7876pt>
+File: ./figures/04_clutering/final_clustering_ross.pdf Graphic file (type pdf)
+ <use ./figures/04_clutering/final_clustering_ross.pdf>
+Package pdftex.def Info: ./figures/04_clutering/final_clustering_ross.pdf used 
+on input line 621.
+(pdftex.def)             Requested size: 213.71576pt x 136.69395pt.
+ [56] [57 <./figures/04_clutering/figure4AinC.pdf> <./figures/04_clutering/figu
+re4AinH.pdf> <./figures/04_clutering/final_clustering_ross.pdf>]
+LaTeX Font Info:    Try loading font information for OMS+phv on input line 684.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsphv.fd
+File: omsphv.fd 
+)
+LaTeX Font Info:    Font shape `OMS/phv/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 684.
+ [58] [59] [60]
+Overfull \hbox (0.91386pt too wide) in paragraph at lines 860--865
+\T1/ptm/m/n/12 3. $\OML/cmm/m/it/12 G \OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12 ff\OML
+/cmm/m/it/12 A\OMS/cmsy/m/n/12 g\OML/cmm/m/it/12 ; \OMS/cmsy/m/n/12 f\OML/cmm/m
+/it/12 B\OMS/cmsy/m/n/12 g\OML/cmm/m/it/12 ; [] ; \OMS/cmsy/m/n/12 f\OML/cmm/m/
+it/12 B; C\OMS/cmsy/m/n/12 g\OML/cmm/m/it/12 ; \OMS/cmsy/m/n/12 f\OML/cmm/m/it/
+12 B; A\OMS/cmsy/m/n/12 g\OML/cmm/m/it/12 ; \OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 
+B; H\OMS/cmsy/m/n/12 g\OML/cmm/m/it/12 ; []  ; \OMS/cmsy/m/n/12 f\OML/cmm/m/it/
+12 B; A; C\OMS/cmsy/m/n/12 g\OML/cmm/m/it/12 ; \OMS/cmsy/m/n/12 f\OML/cmm/m/it/
+12 B; H; C\OMS/cmsy/m/n/12 g\OML/cmm/m/it/12 ; \OMS/cmsy/m/n/12 f\OML/cmm/m/it/
+12 A; D; C\OMS/cmsy/m/n/12 g$ 
+ []
+
+
+<./figures/04_clutering/final_clustering_soc.pdf, id=1711, 284.06125pt x 171.64
+125pt>
+File: ./figures/04_clutering/final_clustering_soc.pdf Graphic file (type pdf)
+ <use ./figures/04_clutering/final_clustering_soc.pdf>
+Package pdftex.def Info: ./figures/04_clutering/final_clustering_soc.pdf used o
+n input line 876.
+(pdftex.def)             Requested size: 192.34288pt x 116.22473pt.
+
+<./figures/04_clutering/final_clustering_LP.pdf, id=1712, 283.0575pt x 169.6337
+4pt>
+File: ./figures/04_clutering/final_clustering_LP.pdf Graphic file (type pdf)
+ <use ./figures/04_clutering/final_clustering_LP.pdf>
+Package pdftex.def Info: ./figures/04_clutering/final_clustering_LP.pdf used on
+ input line 877.
+(pdftex.def)             Requested size: 192.34288pt x 115.27176pt.
+ [61 <./figures/04_clutering/final_clustering_soc.pdf> <./figures/04_clutering/
+final_clustering_LP.pdf
+
+pdfTeX warning: pdflatex (file ./figures/04_clutering/final_clustering_LP.pdf):
+ PDF inclusion: multiple pdfs with page group included in a single page
+>] [62] <./figures/04_clutering/ccc_20.pdf, id=1752, 399.4925pt x 333.245pt>
+File: ./figures/04_clutering/ccc_20.pdf Graphic file (type pdf)
+
+<use ./figures/04_clutering/ccc_20.pdf>
+Package pdftex.def Info: ./figures/04_clutering/ccc_20.pdf used on input line 9
+43.
+(pdftex.def)             Requested size: 277.82788pt x 231.76477pt.
+ [63 <./figures/04_clutering/ccc_20.pdf>]
+<./figures/04_clutering/survival_rate_20.pdf, id=1768, 390.45876pt x 310.15875p
+t>
+File: ./figures/04_clutering/survival_rate_20.pdf Graphic file (type pdf)
+ <use ./figures/04_clutering/survival_rate_20.pdf>
+Package pdftex.def Info: ./figures/04_clutering/survival_rate_20.pdf used on in
+put line 981.
+(pdftex.def)             Requested size: 299.20076pt x 237.67767pt.
+
+<./figures/04_clutering/size_control_20.pdf, id=1769, 424.58624pt x 211.79124pt
+>
+File: ./figures/04_clutering/size_control_20.pdf Graphic file (type pdf)
+ <use ./figures/04_clutering/size_control_20.pdf>
+Package pdftex.def Info: ./figures/04_clutering/size_control_20.pdf used on inp
+ut line 998.
+(pdftex.def)             Requested size: 341.94652pt x 170.57722pt.
+ [64 <./figures/04_clutering/survival_rate_20.pdf>] [65 <./figures/04_clutering
+/size_control_20.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 1043--1043
+[]|\T1/phv/m/n/12 Number of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1044--1044
+[]|\T1/phv/m/n/12 ROSS-DGA,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1045--1045
+[]|\T1/phv/m/n/12 ROSS-DFA,
+ []
+
+
+<./figures/04_clutering/number_controlMsg.pdf, id=1801, 381.425pt x 307.1475pt>
+File: ./figures/04_clutering/number_controlMsg.pdf Graphic file (type pdf)
+<use ./figures/04_clutering/number_controlMsg.pdf>
+Package pdftex.def Info: ./figures/04_clutering/number_controlMsg.pdf used on i
+nput line 1056.
+(pdftex.def)             Requested size: 286.37834pt x 230.61781pt.
+ [66 <./figures/04_clutering/number_controlMsg.pdf>]
+<./figures/04_clutering/ccc_large_scale_color.pdf, id=1814, 449.68pt x 338.2637
+5pt>
+File: ./figures/04_clutering/ccc_large_scale_color.pdf Graphic file (type pdf)
+ <use ./figures/04_clutering/ccc_large_scale_color.pdf>
+Package pdftex.def Info: ./figures/04_clutering/ccc_large_scale_color.pdf used 
+on input line 1072.
+(pdftex.def)             Requested size: 427.43153pt x 321.5397pt.
+ [67 <./figures/04_clutering/ccc_large_scale_color.pdf>]
+<./figures/04_clutering/survival_rate_100.pdf, id=1830, 394.47375pt x 310.15875
+pt>
+File: ./figures/04_clutering/survival_rate_100.pdf Graphic file (type pdf)
+ <use ./figures/04_clutering/survival_rate_100.pdf>
+Package pdftex.def Info: ./figures/04_clutering/survival_rate_100.pdf used on i
+nput line 1098.
+(pdftex.def)             Requested size: 299.20076pt x 235.24983pt.
+
+<./figures/04_clutering/survival_rate_300.pdf, id=1831, 399.4925pt x 310.15875p
+t>
+File: ./figures/04_clutering/survival_rate_300.pdf Graphic file (type pdf)
+ <use ./figures/04_clutering/survival_rate_300.pdf>
+Package pdftex.def Info: ./figures/04_clutering/survival_rate_300.pdf used on i
+nput line 1105.
+(pdftex.def)             Requested size: 299.20076pt x 232.30614pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+<./figures/04_clutering/size_distribution_100.pdf, id=1834, 424.58624pt x 211.7
+9124pt>
+File: ./figures/04_clutering/size_distribution_100.pdf Graphic file (type pdf)
+ <use ./figures/04_clutering/size_distribution_100.pdf>
+Package pdftex.def Info: ./figures/04_clutering/size_distribution_100.pdf used 
+on input line 1121.
+(pdftex.def)             Requested size: 205.1653pt x 102.34052pt.
+
+<./figures/04_clutering/size_distribution_300.pdf, id=1835, 424.58624pt x 220.8
+25pt>
+File: ./figures/04_clutering/size_distribution_300.pdf Graphic file (type pdf)
+ <use ./figures/04_clutering/size_distribution_300.pdf>
+Package pdftex.def Info: ./figures/04_clutering/size_distribution_300.pdf used 
+on input line 1122.
+(pdftex.def)             Requested size: 205.1653pt x 106.70575pt.
+ [68 <./figures/04_clutering/survival_rate_100.pdf>]) [69 <./figures/04_cluteri
+ng/survival_rate_300.pdf> <./figures/04_clutering/size_distribution_100.pdf> <.
+/figures/04_clutering/size_distribution_300.pdf
+
+pdfTeX warning: pdflatex (file ./figures/04_clutering/size_distribution_300.pdf
+): PDF inclusion: multiple pdfs with page group included in a single page
+>] [70]
+\openout2 = `chapters/05_routing.aux'.
+
+ (./chapters/05_routing.tex
+ 5.
+
+LaTeX Warning: Citation `measurement_Palaios14' on page 71 undefined on input l
+ine 13.
+
+[71
+
+
+
+]
+
+LaTeX Warning: Citation `measurement_Palaios14' on page 72 undefined on input l
+ine 25.
+
+
+LaTeX Warning: Citation `Alizai_11_probabilisticAddressing' on page 72 undefine
+d on input line 36.
+
+
+Package Fancyhdr Warning: \headheight is too small (17.07164pt): 
+ Make it at least 27.67601pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[72]
+<./figures/05_routing/sensing_period.pdf, id=1919, 156.85744pt x 32.5608pt>
+File: ./figures/05_routing/sensing_period.pdf Graphic file (type pdf)
+
+<use ./figures/05_routing/sensing_period.pdf>
+Package pdftex.def Info: ./figures/05_routing/sensing_period.pdf used on input 
+line 96.
+(pdftex.def)             Requested size: 235.28555pt x 48.84106pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (17.07164pt): 
+ Make it at least 27.67601pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[73]
+
+LaTeX Warning: Citation `Alizai_11_probabilisticAddressing' on page 74 undefine
+d on input line 115.
+
+
+LaTeX Warning: Citation `Alizai_11_probabilisticAddressing' on page 74 undefine
+d on input line 121.
+
+
+LaTeX Warning: Citation `Alizai_11_probabilisticAddressing' on page 74 undefine
+d on input line 123.
+
+<./figures/05_routing/vc_intro.pdf, id=1932, 728.43854pt x 264.23973pt>
+File: ./figures/05_routing/vc_intro.pdf Graphic file (type pdf)
+
+<use ./figures/05_routing/vc_intro.pdf>
+Package pdftex.def Info: ./figures/05_routing/vc_intro.pdf used on input line 1
+30.
+(pdftex.def)             Requested size: 364.21837pt x 132.11954pt.
+
+<./figures/05_routing/CAVCap_idea_paper.pdf, id=1934, 352.11583pt x 251.49748pt
+>
+File: ./figures/05_routing/CAVCap_idea_paper.pdf Graphic file (type pdf)
+ <use ./figures/05_routing/CAVCap_idea_paper.pdf>
+Package pdftex.def Info: ./figures/05_routing/CAVCap_idea_paper.pdf used on inp
+ut line 157.
+(pdftex.def)             Requested size: 169.01367pt x 120.7174pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (17.07164pt): 
+ Make it at least 27.67601pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[74 <./figures/05_routing/sensing_period.pdf>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package Fancyhdr Warning: \headheight is too small (17.07164pt): 
+ Make it at least 27.67601pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[75 <./figures/05_routing/vc_intro.pdf> <./figures/05_routing/CAVCap_idea_paper
+.pdf
+
+pdfTeX warning: pdflatex (file ./figures/05_routing/CAVCap_idea_paper.pdf): PDF
+ inclusion: multiple pdfs with page group included in a single page
+>]
+
+Package Fancyhdr Warning: \headheight is too small (17.07164pt): 
+ Make it at least 27.67601pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[76]
+<./figures/05_routing/gamma_lambda.pdf, id=2054, 391.4625pt x 316.18124pt>
+File: ./figures/05_routing/gamma_lambda.pdf Graphic file (type pdf)
+
+<use ./figures/05_routing/gamma_lambda.pdf>
+Package pdftex.def Info: ./figures/05_routing/gamma_lambda.pdf used on input li
+ne 278.
+(pdftex.def)             Requested size: 234.8793pt x 189.7102pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (17.07164pt): 
+ Make it at least 27.67601pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[77 <./figures/05_routing/gamma_lambda.pdf>]
+
+Package Fancyhdr Warning: \headheight is too small (17.07164pt): 
+ Make it at least 27.67601pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[78]
+
+LaTeX Warning: Citation `measurement_Palaios14' on page 79 undefined on input l
+ine 392.
+
+
+LaTeX Warning: Citation `measurement_Palaios14' on page 79 undefined on input l
+ine 393.
+
+
+Overfull \hbox (9.39842pt too wide) in paragraph at lines 400--407
+[]$\T1/ptm/m/n/12 , when vir-tual co-or-di-nate can be de-noted as $\OMS/cmsy/m
+/n/12 f\OML/cmm/m/it/12 x; y; z\OMS/cmsy/m/n/12 g$\T1/ptm/m/n/12 .
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (17.07164pt): 
+ Make it at least 27.67601pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[79]
+
+Package Fancyhdr Warning: \headheight is too small (17.07164pt): 
+ Make it at least 27.67601pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[80]
+
+LaTeX Warning: Citation `omnetpp_paper08' on page 81 undefined on input line 48
+7.
+
+
+<./figures/05_routing/Reachability_DC_EWT.pdf, id=2101, 387.4475pt x 310.15875p
+t>
+File: ./figures/05_routing/Reachability_DC_EWT.pdf Graphic file (type pdf)
+ <use ./figures/05_routing/Reachability_DC_EWT.pdf>
+Package pdftex.def Info: ./figures/05_routing/Reachability_DC_EWT.pdf used on i
+nput line 527.
+(pdftex.def)             Requested size: 299.20076pt x 239.51866pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (17.07164pt): 
+ Make it at least 27.67601pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[81 <./figures/05_routing/Reachability_DC_EWT.pdf>]
+<./figures/05_routing/singleChannel_DC_caseStudy.pdf, id=2120, 298.11375pt x 28
+9.08pt>
+File: ./figures/05_routing/singleChannel_DC_caseStudy.pdf Graphic file (type pd
+f)
+ <use ./figures/05_routing/singleChannel_DC_caseStudy.pdf>
+Package pdftex.def Info: ./figures/05_routing/singleChannel_DC_caseStudy.pdf us
+ed on input line 625.
+(pdftex.def)             Requested size: 194.48212pt x 188.58788pt.
+
+<./figures/05_routing/singleCh_average_pdr_3.pdf, id=2121, 391.4625pt x 314.173
+75pt>
+File: ./figures/05_routing/singleCh_average_pdr_3.pdf Graphic file (type pdf)
+ <use ./figures/05_routing/singleCh_average_pdr_3.pdf>
+Package pdftex.def Info: ./figures/05_routing/singleCh_average_pdr_3.pdf used o
+n input line 629.
+(pdftex.def)             Requested size: 194.48212pt x 156.08455pt.
+
+<./figures/05_routing/random_SU_PU.pdf, id=2124, 391.4625pt x 314.17375pt>
+File: ./figures/05_routing/random_SU_PU.pdf Graphic file (type pdf)
+
+<use ./figures/05_routing/random_SU_PU.pdf>
+Package pdftex.def Info: ./figures/05_routing/random_SU_PU.pdf used on input li
+ne 638.
+(pdftex.def)             Requested size: 194.48212pt x 156.08455pt.
+
+<./figures/05_routing/plot/delay_dc_c1.pdf, id=2125, 394.47375pt x 310.15875pt>
+File: ./figures/05_routing/plot/delay_dc_c1.pdf Graphic file (type pdf)
+<use ./figures/05_routing/plot/delay_dc_c1.pdf>
+Package pdftex.def Info: ./figures/05_routing/plot/delay_dc_c1.pdf used on inpu
+t line 642.
+(pdftex.def)             Requested size: 194.48212pt x 152.91144pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (17.07164pt): 
+ Make it at least 27.67601pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[82]
+
+Package Fancyhdr Warning: \headheight is too small (17.07164pt): 
+ Make it at least 27.67601pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[83 <./figures/05_routing/singleChannel_DC_caseStudy.pdf> <./figures/05_routing
+/singleCh_average_pdr_3.pdf> <./figures/05_routing/random_SU_PU.pdf> <./figures
+/05_routing/plot/delay_dc_c1.pdf>]
+<./figures/05_routing/random_SU_PU_2channel.pdf, id=2169, 391.4625pt x 314.1737
+5pt>
+File: ./figures/05_routing/random_SU_PU_2channel.pdf Graphic file (type pdf)
+ <use ./figures/05_routing/random_SU_PU_2channel.pdf>
+Package pdftex.def Info: ./figures/05_routing/random_SU_PU_2channel.pdf used on
+ input line 733.
+(pdftex.def)             Requested size: 194.48212pt x 156.08455pt.
+
+<./figures/05_routing/plot/delay_dc_c2.pdf, id=2170, 394.47375pt x 310.15875pt>
+File: ./figures/05_routing/plot/delay_dc_c2.pdf Graphic file (type pdf)
+<use ./figures/05_routing/plot/delay_dc_c2.pdf>
+Package pdftex.def Info: ./figures/05_routing/plot/delay_dc_c2.pdf used on inpu
+t line 736.
+(pdftex.def)             Requested size: 194.48212pt x 152.91144pt.
+
+<./figures/05_routing/topo_single_blocking_time.pdf, id=2176, 298.11375pt x 289
+.08pt>
+File: ./figures/05_routing/topo_single_blocking_time.pdf Graphic file (type pdf
+)
+ <use ./figures/05_routing/topo_single_blocking_time.pdf>
+Package pdftex.def Info: ./figures/05_routing/topo_single_blocking_time.pdf use
+d on input line 794.
+(pdftex.def)             Requested size: 256.46152pt x 248.7054pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (17.07164pt): 
+ Make it at least 27.67601pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[84 <./figures/05_routing/random_SU_PU_2channel.pdf> <./figures/05_routing/plot
+/delay_dc_c2.pdf>]
+<./figures/05_routing/ewt_pdr_3_ci.pdf, id=2195, 386.44376pt x 313.17pt>
+File: ./figures/05_routing/ewt_pdr_3_ci.pdf Graphic file (type pdf)
+
+<use ./figures/05_routing/ewt_pdr_3_ci.pdf>
+Package pdftex.def Info: ./figures/05_routing/ewt_pdr_3_ci.pdf used on input li
+ne 832.
+(pdftex.def)             Requested size: 196.62137pt x 159.34184pt.
+
+<./figures/05_routing/plot/delay_ewt_c1.pdf, id=2196, 394.47375pt x 313.17pt>
+File: ./figures/05_routing/plot/delay_ewt_c1.pdf Graphic file (type pdf)
+
+<use ./figures/05_routing/plot/delay_ewt_c1.pdf>
+Package pdftex.def Info: ./figures/05_routing/plot/delay_ewt_c1.pdf used on inp
+ut line 834.
+(pdftex.def)             Requested size: 196.62137pt x 156.09718pt.
+
+<./figures/05_routing/multiCh_EWT_rate_3.pdf, id=2202, 386.44376pt x 313.17pt>
+File: ./figures/05_routing/multiCh_EWT_rate_3.pdf Graphic file (type pdf)
+
+<use ./figures/05_routing/multiCh_EWT_rate_3.pdf>
+Package pdftex.def Info: ./figures/05_routing/multiCh_EWT_rate_3.pdf used on in
+put line 869.
+(pdftex.def)             Requested size: 196.62137pt x 159.34184pt.
+
+<./figures/05_routing/plot/delay_ewt_c2.pdf, id=2203, 394.47375pt x 313.17pt>
+File: ./figures/05_routing/plot/delay_ewt_c2.pdf Graphic file (type pdf)
+
+<use ./figures/05_routing/plot/delay_ewt_c2.pdf>
+Package pdftex.def Info: ./figures/05_routing/plot/delay_ewt_c2.pdf used on inp
+ut line 872.
+(pdftex.def)             Requested size: 196.62137pt x 156.09718pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (17.07164pt): 
+ Make it at least 27.67601pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[85 <./figures/05_routing/topo_single_blocking_time.pdf>])
+
+Package Fancyhdr Warning: \headheight is too small (17.07164pt): 
+ Make it at least 27.67601pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[86 <./figures/05_routing/ewt_pdr_3_ci.pdf> <./figures/05_routing/plot/delay_ew
+t_c1.pdf> <./figures/05_routing/multiCh_EWT_rate_3.pdf> <./figures/05_routing/p
+lot/delay_ewt_c2.pdf>]
+
+Package Fancyhdr Warning: \headheight is too small (17.07164pt): 
+ Make it at least 27.67601pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[87]
+\openout2 = `chapters/06_conclusion.aux'.
+
+ (./chapters/06_conclusion.tex
+
+Package Fancyhdr Warning: \headheight is too small (17.07164pt): 
+ Make it at least 27.67601pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[88
+
+
+
+]
+ 6.
+) [89] [90
+
+
+] (./thesis.bbl
+Underfull \hbox (badness 7925) in paragraph at lines 8--12
+[]\T1/ptm/m/n/12 Information tech-nol-ogy -- open sys-tems in-ter-con-nec-tion 
+-- ba-sic ref-er-
+ []
+
+
+Underfull \hbox (badness 3612) in paragraph at lines 8--12
+\T1/ptm/m/n/12 ence model -- con-ven-tions for the def-i-ni-tion of osi ser-vic
+es.  []$\T1/pcr/m/n/12 http :
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--12
+\T1/pcr/m/n/12 / / www . iso . org / iso / home / store / catalogue _ tc / cata
+logue _
+ []
+
+
+Underfull \hbox (badness 2326) in paragraph at lines 14--19
+\T1/pcr/m/n/12 fcc . gov / edocs _ public / attachmatch / FCC-[]03-[]322A1 . pd
+f$[]\T1/ptm/m/n/12 .  Ac-
+ []
+
+
+Underfull \hbox (badness 1939) in paragraph at lines 45--52
+\T1/ptm/m/n/12 Cardiff.  []$\T1/pcr/m/n/12 http : / / www . erodocdb . dk / doc
+s / doc98 / official / Pdf /
+ []
+
+[91
+
+]
+Underfull \hbox (badness 1348) in paragraph at lines 77--84
+[]\T1/phv/m/sc/12 Ackermann, H., Röglin, H., and Vöck-ing, B.  \T1/ptm/m/n/12 P
+ure nash equi-
+ []
+
+
+Underfull \hbox (badness 4403) in paragraph at lines 77--84
+\T1/ptm/m/it/12 puter Sci-ence 410\T1/ptm/m/n/12 , 17 (2009), 1552 -- 1563.  In
+-ter-net and Net-work
+ []
+
+[92] [93] [94] [95] [96] [97] [98]) [99] [100
+
+
+] (./thesis.lof
+Overfull \hbox (49.08969pt too wide) in paragraph at lines 21--21
+ \T1/ptm/m/n/12 The avail-able chan-nels sensed by each CR node are: $\OML/cmm/
+m/it/12 V[] \OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 1\OML/cmm/m/it/
+12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 3\OML/cmm/m/it/12 ; \O
+T1/cmr/m/n/12 4\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 5\OML/cmm/m/it/12 ; \OT1/cmr/
+m/n/12 6\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 10\OMS/cmsy/m/n/12 g\OML/cmm/m/it/12
+ ; V[] \OT1/cmr/m/n/12 = 
+ []
+
+
+Overfull \hbox (8.36105pt too wide) in paragraph at lines 21--21
+ \OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cm
+m/m/it/12 ; \OT1/cmr/m/n/12 3\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 5\OML/cmm/m/it/
+12 ; \OT1/cmr/m/n/12 7\OMS/cmsy/m/n/12 g\OML/cmm/m/it/12 ; V[] \OT1/cmr/m/n/12 
+= \OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 3\OML/c
+mm/m/it/12 ; \OT1/cmr/m/n/12 4\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 10\OMS/cmsy/m/
+n/12 g\OML/cmm/m/it/12 ; V[] \OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12 f\OT1/cmr/m/n/1
+2 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 3\OML
+/cmm/m/it/12 ; \OT1/cmr/m/n/12 5\OMS/cmsy/m/n/12 g\OML/cmm/m/it/12 ; V[] \OT1/c
+mr/m/n/12 = \OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/
+12 3\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 5\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 7\OM
+S/cmsy/m/n/12 g\OML/cmm/m/it/12 ; V[] \OT1/cmr/m/n/12 = 
+ []
+
+[101])
+\tf@lof=\write7
+\openout7 = `thesis.lof'.
+
+ [102] (./thesis.lot
+Overfull \hbox (3.57094pt too wide) in paragraph at lines 13--13
+ [][] [][]\T1/ptm/m/n/12 Singalling over-head. No-ta-tions: $\OML/cmm/m/it/12 n
+$\T1/ptm/m/n/12 -number of CR nodes in CRN, $\OML/cmm/m/it/12 h$\T1/ptm/m/n/12 
+-number 
+ []
+
+)
+\tf@lot=\write8
+\openout8 = `thesis.lot'.
+
+
+
+Package caption Warning: Unused \captionsetup[lstlisting] on input line 79.
+See the caption package documentation for explanation.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 277.
+[103
+
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 277.
+ (./thesis.aux (./backmatter/00_title.aux) (./backmatter/00_statement.aux) (./b
+ackmatter/00_abstract.aux) (./backmatter/00_acknowledgments.aux)
+(./chapters/01_introduction.aux) (./chapters/02_background.aux)
+(./chapters/03_distributedChannelAllocation.aux) (./chapters/04_clutering.aux)
+(./chapters/05_routing.aux) (./chapters/06_conclusion.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 277.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 277.
+
+
+Package rerunfilecheck Warning: File `thesis.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `thesis.out':
+(rerunfilecheck)             Before: 9188230AE9237D17AB2C08C3FFFD8D6E;9607
+(rerunfilecheck)             After:  DCCD6F0CF0FA23610F2810A3B2F87A17;9607.
+
+LaTeX Warning: There were undefined references.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 277.
+ ) 
+Here is how much of TeX's memory you used:
+ 23594 strings out of 495059
+ 398193 string characters out of 3182030
+ 517705 words of memory out of 3000000
+ 25555 multiletter control sequences out of 15000+200000
+ 108520 words of font info for 106 fonts, out of 3000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 63i,26n,80p,1432b,778s stack positions out of 5000i,500n,10000p,200000b,50000s
+pdfTeX warning (dest): name{Hfootnote.6} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.5} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.4} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.3.1} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
+, replaced by a fixed one
+
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cminch.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/s
+ymbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/sy
+mbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
+/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.
+pfb>
+Output written on thesis.pdf (111 pages, 1303115 bytes).
+PDF statistics:
+ 2651 PDF objects out of 2984 (max. 8388607)
+ 2317 compressed objects within 24 object streams
+ 604 named destinations out of 1000 (max. 500000)
+ 1109 words of extra memory for PDF output out of 10000 (max. 10000000)
+

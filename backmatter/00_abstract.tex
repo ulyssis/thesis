@@ -1,0 +1,30 @@
+\chapter{Abstract}
+Cognitive radio (CR) technology is promising to provide high bandwidth via dynamic spectrum access techniques in various networks.
+Unlicensed users are allowed to utilized licensed spectrum when such usage doesn't cause harmful interferences to licensed users.
+This unique spectrum usage paradigm creates new problems and thus needs additional considerations.
+One instance is the spectrum allocation problem needs reformulation as the interference on the licensed users needs consideration.
+Another instance is that when clustering is needed to facilitate local cooperation, as the amount of available spectrum on unlicensed users is different, it is necessary to form nearby unlicensed users which have similar spectrum together.
+%thus choosing a suitable neighbour to communicate with wider spectrum band 
+Routing method also needs reflecting as heterogeneous of spectrum affects whether a routing is successful or the performance of routing path.
+
+Distributed solution is more suitable for wireless networks, because it doesn't require global information across the network, and individual unlicensed user is either agile to react to network dynamics, or only needs local information.
+This thesis solves a series of problem with distributed solutions.
+Game theory is used to analyse certain problems and help to derive solutions.
+
+In this dissertation, we solve a series of problems residing from layer 1 to layer 3 in the OSI model~\cite{osi} of CRN with distributed solutions.
+%Based on game models, we design distributed algorithms for CR users to self-organize and utilize the available resources, which doesn't lead to global instability or performance deterioration.
+\begin{itemize}
+\item We solve the power and spectrum allocation problem in IEEE 802.22 networks.
+This work mainly lies in layer 1, after deciding the maximal transmission power on each secondary cellular base station, we formulate the distributed spectrum allocation problem in TV white space scenario (a special CRN where primary user is TV station which operates according to a slow and pre-decided schedule) into a canonical congestion game, then propose distributed algorithm corresponding to the behaviour of player in the game.
+
+\item 
+When the availability of spectrum is considered to have the same probability due to licensed users' activity, and local operation is needed, \ie for cooperative sensing, unlicensed users need to form clusters and the clusters should be robust against the primary users' activity.
+A distributed clustering scheme for CRN is proposed. 
+The process of finalizing cluster membership is innovatively formulated into a congestion game, then as long as cluster head is decided, clusters which have clear membership are formed quickly by applying the  light-weighted distributed scheme derived from the game.
+This problem can be regarded to lie in layer 2.
+
+\item In layer 3, we propose a lighted weighted routing scheme for CRN. 
+Spectrum aware virtual coordinate is proposed, thus light weighted geographic routing can be used to decide the next hop.
+\end{itemize}
+
+Finally, using thorough simulations and numerical results, we investigate various aspects of the proposed algorithms and analyse their performance.
