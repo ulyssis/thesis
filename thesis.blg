@@ -252,6 +252,10 @@ Too many commas in name 1 of "Huazi Zhang, Zhaoyang Zhang1, Huaiyu Dai, Rui Yin 
 while executing---line 1437 of file styles/acmurl.bst
 Warning--to sort, need author or key in FCCdatabasae
 Warning--to sort, need author or key in lindo
+Name 1 in "Ali Jorio, Sanaa El Fkihi, Brahim Elbhiri, and Driss Aboutajdine" has a comma at the end for entry EnergyEfficientClusteringRouting_2015
+while executing---line 1437 of file styles/acmurl.bst
+Name 1 in "Ali Jorio, Sanaa El Fkihi, Brahim Elbhiri, and Driss Aboutajdine" has a comma at the end for entry EnergyEfficientClusteringRouting_2015
+while executing---line 1479 of file styles/acmurl.bst
 Warning--empty year in caodv-10wd
 Warning--empty year in gpsfree05infocom
 Warning--empty year in search_geo_routing_chowdhury
@@ -265,45 +269,45 @@ Warning--empty year in Routing-crn-INFOCOM11
 Too many commas in name 1 of "Paramvir Bahl, Ranveer Chandra, Thomas Moscibroda, Rohan Murty and Matt Welsh" for entry whitefi09
 while executing---line 1479 of file styles/acmurl.bst
 Warning--empty year in spectrumDecision_2013mass
-You've used 114 entries,
+You've used 115 entries,
             2950 wiz_defined-function locations,
-            1392 strings with 30341 characters,
-and the built_in function-call counts, 49237 in all, are:
-= -- 4934
-> -- 1729
+            1398 strings with 30670 characters,
+and the built_in function-call counts, 49546 in all, are:
+= -- 4964
+> -- 1741
 < -- 0
-+ -- 736
-- -- 604
-* -- 3061
-:= -- 6947
-add.period$ -- 354
-call.type$ -- 114
-change.case$ -- 642
++ -- 742
+- -- 608
+* -- 3081
+:= -- 6995
+add.period$ -- 357
+call.type$ -- 115
+change.case$ -- 647
 chr.to.int$ -- 0
-cite$ -- 132
-duplicate$ -- 1746
-empty$ -- 4747
-format.name$ -- 604
-if$ -- 12258
+cite$ -- 133
+duplicate$ -- 1755
+empty$ -- 4775
+format.name$ -- 608
+if$ -- 12333
 int.to.chr$ -- 0
-int.to.str$ -- 114
-missing$ -- 105
-newline$ -- 585
-num.names$ -- 210
-pop$ -- 1310
+int.to.str$ -- 115
+missing$ -- 106
+newline$ -- 590
+num.names$ -- 212
+pop$ -- 1317
 preamble$ -- 1
-purify$ -- 530
+purify$ -- 534
 quote$ -- 0
-skip$ -- 2853
+skip$ -- 2872
 stack$ -- 0
-substring$ -- 2381
-swap$ -- 485
+substring$ -- 2387
+swap$ -- 487
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 446
+type$ -- 450
 warning$ -- 18
-while$ -- 326
-width$ -- 117
-write$ -- 1148
-(There were 50 error messages)
+while$ -- 328
+width$ -- 118
+write$ -- 1157
+(There were 52 error messages)

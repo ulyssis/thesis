@@ -106,6 +106,13 @@ Wireless coexistence in the tv white space.
 \newblock {\em Phys. Commun. 4}, 1 (Mar. 2011), 40--62.
 \newblock \url{http://dx.doi.org/10.1016/j.phycom.2010.12.003}.
 
+\bibitem{EnergyEfficientClusteringRouting_2015}
+{\sc Ali~Jorio, Sanaa El~Fkihi, B.~E., and Aboutajdine, D.}
+\newblock An energy-efficient clustering routing algorithm based on geographic
+  position and residual energy for wireless sensor network.
+\newblock {\em Journal of Computer Networks and Communications 2015\/} (April
+  2015).
+
 \bibitem{Alizai_11_probabilisticAddressing}
 {\sc Alizai, M., Vaegs, T., Landsiedel, O., G{\"o}tz, S., Link, J., and Wehrle,
   K.}

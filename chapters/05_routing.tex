@@ -1,19 +1,28 @@
 \chapter{Spectrum Aware Virtual Coordinates Assignment and Routing in Multihop Cognitive Radio Network}
 \section{Introduction}
 \label{introduction}
+We propose Spectrum Aware Virtual Coordinate (SAViC) for multi hop cognitive radio network (CRN) to facilitate  geographic routing.
+The proposed virtual coordinates (VC) of any two secondary users reflect both geographic distance and opportunistic spectrum availability between them. As a result, geographic routing is able to detour the area affected by licensed users or cut through the area with more available spectrum.
+According to different spectrum occupation patterns of primary user, two versions of SAViC are designed based on the channel utility and primary user's sojourning time respectively.
+Simulation shows the proposed virtual coordinate facilitates geographic routing to achieve high success rate of path construction.
+When duty cycle on the licensed channel is heterogeneous in the network, channel utility based virtual coordinate supports geographic routing to outperform a state-of-the-art geographic routing protocol by 40\% on packet delivery ratio. 
+When the channel utility is identical on each secondary node, and the sojourning time of primary users for secondary users are different from each other, SAViC based on primary user's sojourning time achieves significantly shorter delay than other virtual coordinates.
+
 
 en route"  on or along the way when you are going to a place
 
+\section{Introduction}
+\label{introduction}
 Cognitive radio technology is promising to solve the significant shortage of spectrum, which is due to proliferation of wireless devices.
 According to the definition of FCC (Federal Communications Commission in U.S.), cognitive radio is a device which is able to sense, measure, or learn its environment and accordingly tune its radio operating parameters (like center frequency, bandwidth and transmit power) on the fly, i.e. during operation. 
 In this paper cognitive radio equipment is also called secondary user.
-Together with these features secondary user is allowed to reuse licensed spectrum of so called licensed user.\footnote{Terms licensed and primary, user and node, as well as spectrum band and channel are used indistinguishably in the following paper.}
-The cognitive radio devices are capable of vacating a spectrum band if the primary user reappears in order not to cause harmful interference to licensed users.
+Together with these features secondary users are allowed to reuse licensed spectrum which is authorized to so called licensed users.\footnote{Terms licensed and primary, user and node, as well as spectrum band and channel are used indistinguishably in the following paper.}
+The cognitive radio devices are capable of vacating a spectrum band if the licensed users reappears in order not to cause harmful interference to them.
 
-Since primary user' activity demonstrates different patterns~\cite{commag-Khalife08}, the availability of licensed spectrum exhibits different dynamics accordingly.
+Since primary users' activity demonstrates different patterns~\cite{commag-Khalife08}, the availability of licensed spectrum exhibits different dynamics accordingly.
 In certain scenarios the licensed spectrum occupancy stays available for fairly long time, \eg TV white space~\cite{SenseLess2011}.
 In that case the licensed spectrum occupancy can be seen as static during a long period of time.
-In other scenarios primary user's state changes frequently, but measurements~\cite{Wellens200910, measurement_Palaios14} show that the percentage of time that licensed spectrum is occupied at a specific location or during a certain period of time doesn’t change, i.e. in city down town during the work time, the duty circle of spectrum occupancy by cellular network is stable.
+In other scenarios primary users' states change frequently, but measurements~\cite{Wellens200910, measurement_Palaios14} show that the percentage of time that licensed spectrum is occupied at a specific location or during a certain period of time doesn’t change, i.e. in city down town during the work time, the duty cycle of spectrum occupancy by cellular network is stable.
 
 To fully exploit the potential of the secondary spectrum, it is crucial to investigate routing in dynamic spectrum environment.
 The dynamic availability of spectrum causes frequent break down of links between secondary users, and leads to prevalent topology changes, which makes spectrum aware routing difficult but essential.
@@ -26,20 +35,20 @@ The dynamic availability of spectrum causes frequent break down of links between
 %Forwarding decision is made for each single packet, which requires complex computations, large amount of control overhead, and customized media access control mechanisms.
 
 Recent measurement in~\cite{measurement_Palaios14} shows the spectrum occupancy doesn't have significant spatial correlations between different locations.
-It follows that licensed spectrum is used by primary users heavily in some areas, whereas in the rest area licensed spectrum is available over longer time spans for secondary to use.
-It is obvious to see that a routing path is better to go through the areas where primary users occupation is lower, as this alleviates or avoids the burden to cope with changing or totally occupied spectrum when forwarding packets potentially with latency requirements.
+It follows that licensed spectrum is used by primary users heavily in some areas, whereas in the other areas licensed spectrum is available over longer timespan for secondary users to use.
+It is obvious to see that a routing path is better to go through the areas where primary users occupation is lower, as this alleviates or avoids the burden to cope with the changing or totally occupied spectrum when forwarding packets potentially with latency requirements.
 Geographic routing is a natural choice to realize this geography sensitive routing path.
 Geographic routing is light weight regarding the determination of next hop, and achieves high scalability in various wireless networks~\cite{geoRouing-qos-2009}. %
 Merely knowing the geographic locations of its neighbours and the destination, a node is able to locally choose the next hop which has the smallest distance to the destination.
 %As a result, control messages for route discovery are not necessary, and since the routing state maintained per node is independent on the network size, geographic routing scales perfectly.
-However, in CRN dynamic link state renders geographic routing unsuccessful since packets are forwarded to the destination through the shortest path rather than avoiding areas heavily influenced by primary users.
+However, in CRN dynamic link state renders geographic routing unsuccessful since packets are forwarded to the destination along the shortest path rather than avoiding areas heavily influenced by primary users.
 %Coordinates indicate not only the physical distance among SUs, but also the transmission opportunities in between could leverage the strengths of geographic routing even in CRNs.
 
 To enable geographic routing in CRN, in this paper we propose SAViC, spectrum aware virtual coordinates for secondary users in multi-channel multi-hop CRN.
-The virtual coordinate is independent of real geographic position, and has been proposed to represent for example properties of the media instead like, link quality~\cite{Alizai_11_probabilisticAddressing} or hop numbers~\cite{gpsfree05infocom}.
-Following this line of thought, our proposed virtual coordinates in this paper represent the spectrum occupancy of primary users. 
-On top of this, we propose that the geographic routing scheme then decides the next hop with Euclidean distance metric, and detours the area affected by primary users, or cuts through the area with lower spectrum occupancy.
-With SAViC, geographic routing imposes little computation on deciding the next hop, and requires less communication cost transmitting packet to the next hop.
+The virtual coordinate is independent of real geographic position, and has been proposed to represent the properties of the media like, link quality~\cite{Alizai_11_probabilisticAddressing} or hop numbers~\cite{gpsfree05infocom}.
+Following this line of thought, our proposed virtual coordinate represents the spectrum occupancy of primary users. 
+On top of this, we propose the geographic routing scheme which decides the next hop with Euclidean distance metric, and detours the areas affected by primary users, or cuts through the area with lower spectrum occupancy.
+With SAViC, geographic routing imposes little computation on deciding the next hop, and requires less communication cost transmitting packet to next hop.
 %it doesn't need real geographic location.
 %The contribution of this paper is a novel spectrum aware virtual coordinate system for CRN.
 %Secondary user firstly gets simple statistics of primary user's operation in its vicinity by spectrum sensing, then receives its virtual coordinate based on its neighbour's virtual coordinate and the channel availability at its location after light weighted arithmetic computation.
@@ -48,7 +57,7 @@ With SAViC, geographic routing imposes little computation on deciding the next h
 As to our knowledge, this is the first work integrating the spectrum usage by primary users into network coordinates in order to support geographic routing in CRN, which carries meanings especially for those resource restricted devices which want to work with licensed frequency band.
 The remainder of the paper is organized as follows, after reviewing related work in Section II, system model is introduced in Section III.
 Assignment of SAViC is explained in Section IV, followed by opportunistic access during transmission in Section V.
-Section VI gives performance evaluation, concluding remarks are given in the last Section.
+Section VI gives performance evaluation, concluding remarks are given in the last section.
 
 
 \section{RELATED WORK}
@@ -56,10 +65,10 @@ When secondary users are static and primary users' operation activity is known, 
 %Cellular network working with TV white space falls into this category.
 %A centralized scheme is designed to build end to end path which has the optimal spectrum access opportunity in~\cite{Abbagnale_Gymkhana10}, where the availability of spectrum is regarded as static and with clear 0/1 state.
 %\cite{centralized_routing_07dyspan} treats routing in CRN as a combinatorial optimization problem with consideration of link disruption probabilities.
-But as centralized scheme requires sensing result from each secondary user in the network, thus suffers from any changes of channel state of secondary users~\cite{Abbagnale_Gymkhana10}, besides, one centralized controller is needed to calculate the routing path on the basis of collected information from the network~\cite{centralized_routing_07dyspan, Routing-crn-INFOCOM11}.
+But as centralized scheme requires sensing result from each secondary user in the network, thus suffers from any change of channel state of secondary users~\cite{Abbagnale_Gymkhana10}, besides, one centralized controller is needed to calculate the routing path on the basis of collected information from the network~\cite{centralized_routing_07dyspan, Routing-crn-INFOCOM11}.
 Considerable amount of distributed schemes are proposed to cope with routing in CRN where spectrum state is usually considered to be rapid changing.
-\cite{caodv-10wd} proposes CAODV (Cognitive Ad-hoc On-demand Distance Vector) and let each CR node explore all channels and stores route for each available channel.
-CAODV requires frequent messages exchange between secondary users to maintain the up to date connections on each channel due to PU's activities, which is a burden for secondary user when primary users' activity is intense. 
+\cite{caodv-10wd} proposes CAODV (Cognitive Ad-hoc On-demand Distance Vector) and let each CR node explore all channels and store route for each available channel.
+CAODV requires frequent message exchange between secondary users to maintain the up to date connections on each channel due to PU's activities, which is a burden for secondary user when primary users' activity is intense. 
 \cite{segment-crowncom08} improving the DSR scheme (Dynamic Source Routing) by letting RREQ messages record spectrum availability, link quality and congestion possibility along routing paths, but it also suffers from frequently changing channel state.
 %originated from DSR and AODV are proposed in~\cite{segment-crowncom08} and~\cite{caodv-10wd} respectively.
 %Authors of~\cite{Routing-crn-INFOCOM11} see routing problem from the perspective of network operator. They model the vacancy of licensed spectrum with random numbers, and formulate a optimization problem to minimize the amount of needed licensed spectrum, meanwhile relevant constraints are followed for frequency selection and routing.
@@ -69,18 +78,18 @@ To cope with the rapid change of channel state, some routing schemes abandon rou
 When there is packet to send, secondary user evaluates channel availability based on the statistics of sensing history~\cite{routing-crn-icc11}, or the prediction on channel availability in the forthcoming time slot~\cite{routing-crn-jsac12}, then secondary user chooses the favoured channel and next hop node to send out the packet.
 Distance to the destination is also a consideration for choosing next hop.
 Such per-packet forwarding paradigm reacts swiftly on the fast changing channel state, but it requires more powerful computation power on secondary users.
-Firstly, that scheme produces high computation complexity on determining the channel and next hop node, secondly, specifically designed MAC mechanism and large amount of control messages are needed to coordinate the communication between the sender and the potential next hop nodes, these aspects make it uneconomic for many networks, e.g, wireless sensor network operating with licensed spectrum~\cite{delay-cogwsn-2014}.
+Firstly, that scheme produces high computation complexity on determining the channel and next hop node, secondly, specifically designed MAC mechanism and large amount of control messages are needed to coordinate the communication between the sender and the potential next hop nodes, these aspects make it uneconomic for many networks, e.g, wireless sensor networks operating with licensed spectrum~\cite{delay-cogwsn-2014}.
 Furthermore, as this kind of routing paradigm emphasizes on finding the maximal transmission opportunity of secondary spectrum, the selection on preferred channel decreases the scope of next hop neighbours, thus it may yield route which does not reach the destination~\cite{commag-Khalife08, spectrumDecision_2013mass}.
 
 %Geographic routing based routing schemes are also proposed to suit the dynamic spectrum in CRN network. 
 
 Chowdhury et al.~\cite{search_geo_routing_chowdhury} proposes \textit{SEARCH} which is a valuable attempt to avoid the primary users' influences on routing path on the basis of geographic routing. 
 %which exploits secondary channels in multiple channel CRN.
-In SEARCH, the source node launches geographic routing on each channel, and every routing path bypasses the nodes where corresponding channel is unavailable.
-Paths on different channels will merge on the nodes where path circumvent happens, in case such change of path and switch of channel lead to shorter time needed to send packets to destination.
+In \textit{SEARCH}, the source node launches geographic routing on each channel, and every routing path bypasses the nodes where corresponding channel is unavailable.
+Paths on different channels will merge on the nodes where path circumvent happens, if such change of path and switch of channel lead to shorter time needed to send packets to destination.
 After receiving the routing message on each channel, the destination decides the shortest path and sends back notifications along the chosen path.
 The routing path is blocked when one primary user locating along it changes its state from OFF to ON, thus source node needs to periodically launch route request to update the routing path which may have been invalid.
-\textit{SEARCH} adopts routing table and doesn't involve frequent overhead exchanges and risk of failing to reach the destination.
+\textit{SEARCH} adopts routing table and doesn't involve frequent overhead exchanges.
 
 
 \section{SYSTEM MODEL}
@@ -96,7 +105,7 @@ Primary users are static, and they occupancy spectrum in a constant manner, \eg 
 Proactive spectrum sensing is conducted locally and periodically as Figure~\ref{fig:sensing_period} shows. % in collaborative manner periodically~\cite{spectrum-discovery-tmc08}.
 \begin{figure}[ht]
 \centering
-\includegraphics[scale=1.5]{sensing_period.pdf}
+\includegraphics[scale=1]{sensing_period.pdf}
 \caption{Sensing duration $T_s$ and sensing period $T_p$}
 \label{fig:sensing_period}
 \end{figure}
@@ -105,7 +114,7 @@ Proactive spectrum sensing is conducted locally and periodically as Figure~\ref{
 
 The sensing duration $T_s$ includes both detection time in physical layer and the decision synchronisation time.
 Sensing period $T_p$ is the time between two successive sensing durations.
-If the channel is sensed as busy\footnote{Concrete sensing techniques is not discussed in this paper.} in sensing duration, which means at least one primary user in the vicinity is in ON state, we say the state of primary user is labelled as ON in the following sensing period $T_p$.
+If the channel is sensed as busy\footnote{Concrete sensing techniques are not discussed in this paper.} in sensing duration, which means at least one primary user in the vicinity is in ON state, we say the state of primary user is labelled as ON in the following sensing period $T_p$.
 If not a single primary user is sensed, primary users in vicinity in the following sensing period is said to be in state OFF.
 Secondary user senses each licensed channel for time $T_{access}$ with round robin scheduling, and records statistics of ON/OFF states of that channel at its place.
 %In the process of transmission, as sensing is still conducted every $T_s+T_p$ time, the sensing record is updated by the sensing result in the previous $T_{access}$ time. 
@@ -115,50 +124,44 @@ Secondary user senses each licensed channel for time $T_{access}$ with round rob
 
 \section{Spectrum Aware Virtual Coordinates}
 
-Virtual coordinate has been proposed in sensor or ad hoc network~\cite{gpsfree05infocom,Alizai_11_probabilisticAddressing}.
+Virtual coordinate has been proposed in sensor and ad hoc networks~\cite{gpsfree05infocom,Alizai_11_probabilisticAddressing}.
 %Virtual coordinate is able to replace actual physical position for geographic routing in many different scenarios.
 In the left part of Figure \ref{fig:vc_intro}, nodes are labelled with physical positions.
-The right hand side part shows the same network assigned with triplet virtual coordinate for each node according to VCap~\cite{gpsfree05infocom}, where each coordinate denotes the minimal number of hops away from corresponding anchor.
-This kind of virtual ordinate is obtained based on anchors which locate at the edge of network, which belongs to tree based virtual coordinates.
-Anchor messages are broadcasted from anchor, which contain one counter recording the number of hops travelled, the minimum counter of the arriving anchor messages becomes the virtual coordinate of the arrival node.
-Except for the hope numbers away from certain anchor node, virtual coordinate can also be composed with link quality~\cite{Alizai_11_probabilisticAddressing} in wireless sensor network.
+The right hand side part shows the same network assigned triplet virtual coordinate for each node according to VCap~\cite{gpsfree05infocom}, where each element of the coordinate denotes the minimal number of hops away from corresponding anchor.
+This kind of virtual ordinate belongs to tree based virtual coordinates, and is obtained based on anchors which locate at the edge of network.
+Anchor messages are broadcast from anchors, each of them contains a counter recording the number of hops travelled.
+The minimum counter of the arriving anchor messages constitutes the corresponding element of the virtual coordinate on the arrival node.
+Except for the hope numbers away from certain anchor node, virtual coordinate can also be composed with link quality~\cite{Alizai_11_probabilisticAddressing} in wireless sensor networks.
 The hop based virtual coordinate is independent on actual physical position, but %reflects distance and closeness of nodes on certain aspects, and can 
-as the supports greedy geographic routing successfully \cite{gpsfree05infocom, Alizai_11_probabilisticAddressing}.
+supports greedy geographic routing successfully \cite{gpsfree05infocom, Alizai_11_probabilisticAddressing}.
 %xxxxx The euclidean distance calculated with virtual coordinate is adopted in geographic routing.
-For example, when the source-destination is B and D, the greedy geographic routing based on euclidean distance calculated with virtual coordinate in both networks obtains the same routing path: $B\rightarrow C\rightarrow D$ which is one the the shortest paths.
+For example, when the source-destination is B and D, and Euclidean distance calculated with virtual coordinate is adopted in the routing decision, then the greedy geographic routing achieves the same routing path in both networks: $B\rightarrow C\rightarrow D$. This path is one with the shortest traversal distance.
 
 
 \begin{figure}
 \centering
-\includegraphics[scale=0.5]{vc_intro.pdf}
-\caption{Left: nodes with physical locations, Right: nodes with doublet virtual coordinate, each virtual coordinate is the number of hops away from corresponding anchor. Connecting lines denote the communication is possible.}
+\includegraphics[scale=0.3]{vc_intro.pdf}
+\caption{Left: nodes with physical locations, Right: nodes with doublet virtual coordinate, each element in the virtual coordinate is the number of hops away from corresponding anchor. Connecting lines denote the communication is possible.}
 \label{fig:vc_intro}
 \end{figure}
 
 
 In this paper, we propose licensed spectrum aware virtual coordinate in CRN, which enables geographic routing to find the path with better available spectrum.
-%First of all we briefly introduce the virtual coordinates assignment protocol (VCap)~\cite{gpsfree05infocom} which is designed for wireless sensor network working with unlicensed spectrum band.
-Figure~\ref{fig:SA-VCapidea} shows one CRN where secondary users are assigned one virtual coordinate according to anchor 1.
-%In the left network, hop based virtual coordinate is given according to VCap~\cite{gpsfree05infocom}.
-%One anchor message is broadcasted from the anchor node and traverse the network, the counter contained in the anchor message is 0 on anchor node and increase 1 when it travels through one hop.
-%The virtual coordinate on the arrival node equals to the counter value in the arriving message, and also equals to the number of hops away from anchor node.
-%~\footnote{Actually in both VCap and proposed SAViC, each node's virtual coordinate has 3 elements corresponding to 3 anchors}.
-%The right hand side network illustrates the virtual coordinate which considers channel availability.
-When nodes locating within primary users' transmission range, \eg node A and C, % 
-%which occupies the spectrum heavily (the size of primary user represents the intensity of accessing spectrum), 
-their transmission opportunity is decreased due to sporadic spectrum, which increases the cost for packet transmission, \eg transmission delay and energy consumption.
-We integrate this obstacle on transmission caused by spectrum scarcity into virtual coordinate.
+%First of all we briefly introduce the virtual coordinates assignment protocol (VCap)~\cite{gpsfree05infocom} which is designed for wireless sensor networks working with unlicensed spectrum band.
+Figure~\ref{fig:SA-VCapidea} shows one CRN where secondary users are assigned virtual coordinate according to anchor 1.
+The transmission opportunity of the nodes locating within primary users' transmission range, \eg node A and C, is decreased due to sporadic spectrum, as a result, the cost for packet transmission, \eg transmission delay and energy consumption, is increased.
+We integrate this obstacle caused by spectrum scarcity to transmission into virtual coordinate.
 %When the anchor message arrives at node D, the counter add itself with a quantified value representing the spectrum availability, and the new value of the counter becomes the virtual coordinate of the arrival node.
 %For example, as node A and C are influenced by primary users, the quantified spectrum availability on them is 3 and 4, on the other hand, quantified spectrum on node B, E, D is 1. 
 %When we apply the anchor spreading as defined by VCap, and replace hop with quantified spectrum availability, we obtain the virtual coordinate for each node as Figure~\ref{fig:SA-VCapidea} shows.
-%The definition of quantified spectrum is introduced in section~\ref{CA-VC-likelihood} and \ref{BT}.
+%The definition of quantified spectrum is introduced in section~\ref{CA_VC_likelihood} and \ref{BT}.
 
 
 %Obviously, how to characterize the channel availability (or equivalently, PU's influences) with link length is critical for the design of spectrum aware VC.
 \begin{figure}
 \centering
-\includegraphics[scale=0.48]{CAVCap_idea_paper.pdf}
-\caption{A network under primary users' influence assigned with SAViC, only anchor 1 is involved. Flooding of anchor messages is not shown.}
+\includegraphics[scale=0.3]{CAVCap_idea_paper.pdf}
+\caption{A network under primary users' influence assigned with SAViC, only anchor 1 is adopted. Flooding of anchor messages is not shown.}
 \label{fig:SA-VCapidea}
 \end{figure}
 
@@ -166,37 +169,36 @@ We integrate this obstacle on transmission caused by spectrum scarcity into virt
 \subsection{Assign Spectrum Aware Virtual Coordinate}
 
 %Similar with VCap~\cite{gpsfree05infocom}, SAViC consists of four rounds of anchor message flooding initiated from four anchors $A$, $X$, $Y$, $Z$ respectively.
-As to SAViC, each anchor initiates anchor messages which flood over the network, and results in the corresponding virtual coordinate.
+As to SAViC, anchors broadcast anchor messages which flood over the network and result in virtual coordinate for each secondary user.
 Several anchors are needed to assign unique virtual coordinate for each secondary user.
 How to select anchors is out of the scope of this paper.
 %Each round of anchor message flooding results in one value on each node, and the last three values $x$, $y$, $z$ compose the triplet of virtual coordinate $\{x,y,z\}$.
 %Besides, each node also has one auxiliary quadruplet virtual coordinate $\{a',x',y',z'\}$ which is used to decide on anchors.
-In the following, we introduce how is one virtual coordinate is decided on each node with respect to one anchor.
+In the following, we introduce how is virtual coordinate decided on each node with respect to anchors.
 %Each coordinate is composed with four elements which correspond to four anchors $A$, $X$, $Y$, $Z$ respectively.
 
-.
 
-Initially, the virtual coordinate on each node is set as a big positive value.
-An anchor message is generated on the anchor, which contains a counters $counter$ and set as 0.
-The anchor message is broadcasted on control channel.
-The influence of primary users on a secondary user is quantified as spectrum availability $\lambda$ on that secondary user.
+Each secondary user maintains its virtual coordinate which is one $r$-tuple where each element contained corresponds to one anchor, and the tuple length is $r$.
+The elements of virtual coordinate on each node is set as big positive value.
+An anchor message is generated on the anchor, which contains a $counter$ whose value is set as 0.
+The anchor message is broadcast on control channel.
+The influence of primary users on a secondary user is quantified as spectrum utility $\lambda$ on that secondary user.
 The bigger value indicates heavier spectrum occupation by primary users.
-$\lambda$ will be discussed in section~\ref{CA-VC-likelihood} and \ref{BT}.
+$\lambda$ will be discussed in Section~\ref{CA_VC_likelihood} and \ref{BT}.
 
-When a node $i$ receives one anchor message, $i$ compares its current virtual coordinate with the sum of the $\lambda$ and $counter1$ in the arriving anchor message.
+When a node $i$ receives an anchor message from the $t$th anchor, $i$ compares the $t$th element in its current virtual coordinate with the sum of the $\lambda$ and $counter1$ which is contained in the arriving anchor message.
 %When a secondary user receives anchor message originating from anchor $A$, it adds the normalized channel availability $\Psi$ (introduced in next subsection) on itself and VC\_counter which is contained in the message, and compares the summation with its own $VC_i$.
-If the sum is greater than its current virtual coordinate, which 
-%which means the \textit{virtual distance} in the sense of channel availability that the anchor message has travelled is longer than the current distance between this SU and anchor $A$, 
-indicates that the path traversed by anchor message exposes to more tense activity of primary users, node $i$ drops the anchor message.
-If the sum is smaller than its current virtual coordinate, the node set its virtual coordinate as the sum and updates $counter1$ contained in the anchor message before forwarding.
+If the sum is greater than the $t$th element in its current virtual coordinate, which indicates that the path traversed by this anchor message exposes to more active primary users, node $i$ drops the anchor message.
+If the sum is smaller than the $t$th element in its current virtual coordinate, the node set the $t$th element as the sum and updates $counter1$ contained in the anchor message before forwarding it.
 %The acquisition of auxiliary coordinate \textit{a'} is very similar with that for virtual coordinate.
 This process is presented as Algorithm~\ref{algo:receiveAnchorMessage}.
 % which also applies to obtain virtual coordinate and auxiliary coordinate in other rounds.
-This phase ends after a period of time to make sure each node obtains its virtual coordinate.
-Secondary user obtains virtual coordinate after each anchor nodes sequentially flood the anchor messages.
+This phase ends after a period of time to make sure each node obtains $t$th element in its virtual coordinate.
+
+All the anchors sequentially broadcast the anchor messages which are flooded over the network, so that a secondary user obtains its virtual coordinate which respects all anchor nodes.
 %The algorithm for secondary user $i$ to receive one element $vc_i$ is given in Algorithm~\ref{algo:receiveAnchorMessage}.
 \begin{algorithm}[!h]
-\caption{Secondary user $i$ obtains $vc_i$ with respect to an anchor}%, $\lambda_i$ is normalized spectrum availability on $i$}          % give the algorithm a caption
+\caption{Secondary user $i$ obtains one element $vc_i$ in its VC with respect to an anchor}%, $\lambda_i$ is normalized spectrum availability on $i$}          % give the algorithm a caption
 \label{algo:receiveAnchorMessage} 
 \DontPrintSemicolon
 \SetAlgoLined
@@ -222,14 +224,16 @@ Secondary user obtains virtual coordinate after each anchor nodes sequentially f
 
 
 % which previously was stable at a low level during a long period of time. 
-In the following, we introduce the normalized spectrum availabilities $\lambda$ on secondary user, and the two resultant virtual coordinates, duty circle based virtual coordinate and blocking time based virtual coordinate.
+In the following two subsections, we introduce two normalized spectrum utilities on secondary user respectively, one of them is called \textit{normalized spectrum availability} which is on the basis of duty cycle of primary users' absence, the other is called \textit{normalized longest blocking time} which as the name tells, is based on the lengths of time durations that primary users are detected.
+
+
+%and the two resultant virtual coordinates, duty cycle based virtual coordinate and blocking time based virtual coordinate.
 %They are used to construct virtual coordinates which are tailored for different applications, i.e. file transmission which requires higher PDR, or instant communication which demands small end to end delay.
 %virtual coordinate Dissemination
 
 
-\subsection{Normalized Spectrum Availability on Secondary User}
-\label{CA-VC-likelihood}
-Based on the statistics of primary user's ON/OFF states in time duration $T_{assement}$ which contains multiple $T_s$, secondary user $i$ characterizes the likelihood that one licensed channel, say $k$, is available at its own position with \textit{duty circle}, which is
+\subsection{Normalized Spectrum Availability on Secondary User}\label{CA_VC_likelihood}
+Based on the statistics of primary user's ON/OFF states in time duration $T_{assement}$ which contains multiple $T_s$, secondary user $i$ characterizes the likelihood that one licensed channel, say $k$, is available at its own position with \textit{duty cycle}, which is
 \begin{equation}
 \label{gamma}
 \gamma_i^k = \frac{\Delta_{\textsc{\tiny OFF}}}{\Delta_{\textsc{\tiny OFF}}+\Delta_{\textsc{\tiny ON}}},
@@ -254,21 +258,23 @@ When there is only one licensed channel in CRN (the superscript of channel $\lam
 
 %As $\gamma_i$ denotes the possibility that one CR can deal with on packet at one time, for the path composed with series of CR nodes, the possibility that the packet travels through the path without going to buffer due to primary users occupying channel is the product of $\gamma_i$ on all nodes along the path.
 %The virtual coordinate obtained by Algorithm~\ref{algo:receiveAnchorMessage} and equation~\ref{singCH_onehop_dc_metric} and 
-The reason to choose this form is as follows.
-When one anchor message which originates from anchor $X$ is forwarded from node $a$ to $b$ without being dropped, with function \ref{singCH_onehop_dc_metric}, the distance based on virtual coordinate reflects both the spectrum availability and geographic distance in terms of hops between the two nodes.
-Based on Algorithm~\ref{algo:receiveAnchorMessage} and Formula~\ref{singCH_onehop_dc_metric}, the distance on dimension X is,
+With Formula \ref{singCH_onehop_dc_metric}, when one anchor message which originates from anchor $X$ is forwarded from node $a$ to $b$ without being dropped, the distance based on virtual coordinate reflects both the spectrum availability and geographic distance in terms of hops between the two nodes.
+Based on Algorithm~\ref{algo:receiveAnchorMessage} and Formula~\ref{singCH_onehop_dc_metric}, the distance in dimension X is, 
 \begin{equation}\label{distance}
 \begin{split}
 |x_b-x_a| & =  \sum_{i\in P_{(a,b]}} (-\ln\gamma_i + c\cdot \gamma_i) \\
 		  & = -\ln(\prod_{i\in P_{(a,b]}} \gamma_i) + c\cdot \sum_{i\in P_{(a,b]}} \gamma_i
 \end{split}
 \end{equation}
-where $P_{(a,b]}=(\cdots, b)$ denotes the list of nodes after $a$ and till $b$, which forward the same anchor message.
-The first item is logarithmic product of the likelihood of spectrum availability on nodes in $P_{(a,b]}$.
-The product is the likelihood that one message travels from node $a$ to $b$ without hampered by primary users.
+here $x_a$ and $x_b$ are virtual coordinates of node $a$ and $b$ in dimension X respectively.
+$P_{(a,b]}=(\cdots, b)$ denotes the list of nodes after $a$ and till $b$, which forward the same anchor message.
+
+The reason to choose the form of Formula~\ref{singCH_onehop_dc_metric} is as follows.
+As Formula~\ref{distance} shows, the first item is logarithm of the product of consecutive spectrum availability likelihood of the nodes in $P_{(a,b]}$.
+The product is the likelihood that one message travels from node $a$ to $b$ without hampered by primary users, which is an important property we want to integrated into our virtual coordinate system.
 The second item denotes number of hops, which can be seen clearly when $\gamma_i=0$ for node $i\in P_{(a,b]}$.
 
-$\lambda_i$ needs to be monotonically decreasing with respect to $\gamma_i$, so that the less spectrum availability results in bigger cost for communication, thus there should be
+As $\lambda_i$ needs to be monotonically decreasing with respect to $\gamma_i$, so that the less spectrum availability results in bigger cost for communication, thus there should be
 \begin{equation}
 \frac{\partial\lambda_i}{\partial\gamma_i} = c -\frac{1}{\gamma_i} <0
 \label{singCH_dc_metric_decreasing}
@@ -278,7 +284,7 @@ In the simulation part, we choose $c=0.2$ so that $\lambda$ visibly reflects the
 
 \begin{figure}
 \centering
-\includegraphics[scale=0.6]{gamma_lambda.pdf}
+\includegraphics[scale=0.4]{gamma_lambda.pdf}
 \caption{Normalized spectrum availability with respect to the likelihood of spectrum being available one a node}
 \label{fig:gamma_lambda}
 \end{figure}
@@ -294,12 +300,12 @@ In the simulation part, we choose $c=0.2$ so that $\lambda$ visibly reflects the
 
 
 \subsubsection{Multiple licensed channels}
-When multiple licensed channels is allowed to use without interfering primary users, one node can switch to an another channel which is at present available to send or forward packet, then the normalized channel availability is,
+When multiple licensed channels are allowed to use without interfering primary users, one node can switch to an another channel which is at present available to send or forward packet, then the normalized channel availability is,
 \begin{equation}
 \gamma_i = 1-\prod_{k=1}^{|C|} (1-\gamma_i^k)
 \label{gamma_multichannel}
 \end{equation} 
-Similar with Formula~\ref{singCH_onehop_dc_metric}, the normalized spectrum availability on node $i$ when multiple secondary channels are available is,
+Based on Formula~\ref{singCH_onehop_dc_metric}, the normalized spectrum availability on node $i$ when multiple secondary channels are available is,
 \begin{equation}
 \label{mulCH_onehop_dc_metric}
 \begin{aligned}
@@ -338,10 +344,11 @@ In single licensed channel scenario, the normalized maximum blocking time on nod
 %\end{equation}
 
 %We multiply $\tau$ with likelihood $\gamma$ in the first item to let $\lambda$ describe channel availability more completely.
-The first item is the product of blocking time and likelihood of spectrum availability, not that the latter is identical for any PU affected secondary user and thus can be regarded as constant.
-The second item denotes hop, when PU affected secondary users are out of any primary user's transmission range.
+The first item is the product of blocking time and the duty cycle of available spectrum, note that we assume the duty cycle is identical for any PU affected secondary user and thus can be regarded as constant.
+As to the secondary users which locate out of any primary user's transmission range, there is $\tau_i=0$, then $\lambda_i=b$, $\lambda_i$ denotes hop count in this case.
+This is the reason that the second item is needed.
 
-Same with the analysis in section~\ref{CA-VC-likelihood}, when one anchor message travels through path $P_{(a,b]}$, the distance on the corresponding coordinate dimension is the sum of the normalized longest blocking time, which is the function of the sum of maximum blocking time on the cascaded nodes on the trajectory of anchor message,
+Same with the analysis in section~\ref{CA_VC_likelihood}, when one anchor message travels through path $P_{(a,b]}$, the distance on the corresponding coordinate dimension is the sum of the normalized longest blocking time, which is the function of the sum of maximum blocking time on the cascaded nodes on the trajectory of anchor message,
 
 \begin{equation}
 \label{distance2}
@@ -394,7 +401,7 @@ In following part of this paper, the virtual coordinate based on normalized spec
 When $\lambda$ on secondary nodes is identical, the resultant SAViC appears to be similar with hop based virtual coordinate.
 In reality, as the measurement shows in \cite{measurement_Palaios14}, heterogeneity of spectrum usage by primary users is very normal, besides, the two kinds of virtual coordinates make it easier to find out such heterogeneity.
 \cite{measurement_Palaios14} also shows within certain frequency band, primary users' activity is stable for hours, \eg cellular network.
-When primary user's operation pattern changes, \eg occupy spectrum with increased duty circle, then SAViC needs to be reimplemented.
+When primary user's operation pattern changes, \eg occupy spectrum with increased duty cycle, then SAViC needs to be reimplemented.
 
 \section{Geographic Routing and Opportunistic Spectrum Access}
 \label{osa}
@@ -403,7 +410,7 @@ When primary user's operation pattern changes, \eg occupy spectrum with increase
 Although spectrum aware virtual coordinate is the main concern of this paper, we also introduce the geographic routing to be used as it affects the routing result directly.
 With geographic routing, packet sender/forwarder chooses the neighbour which has smaller Euclidean distance to the destination.
 The distance between node $i$ and destination $d$ is $\sqrt{(x_d-x_i)^2+(y_d-y_i)^2+(z_d-z_i)^2}$, when virtual coordinate can be denoted as $\{x, y, z\}$.
-An trivial improvement on greedy geographic routing is implemented in network layer to mitigate the dead end problem.
+A trivial improvement on greedy geographic routing is implemented in network layer to mitigate the dead end problem.
 When routing protocol reaches dead end node $u$ which is closest to destination, $u$ adds its ID to the packet as taboo before forwarding the packet to $v$ which is closest to the destination in its neighborhood.
 The packet will not be sent to the nodes whose IDs appear to be taboos.
 %As to deciding working channel in multiple channel scenario, packet sender only needs to exchange message with next hop for once (will be explained in Section~\ref{osa}).
@@ -423,7 +430,7 @@ The packet will not be sent to the nodes whose IDs appear to be taboos.
 % Face routing~\cite{routingMetric_greedyRouting09infocom} overcomes dead end problem completely, but it is not considered here because of its complexity.
 
 Buffer is implemented on each node, where packets stay temporally when no unoccupied licensed spectrum is available.
-Secondary user resend buffered packet every period of time, and drop it if there is still no available channel after trying for 10 times.
+Secondary user resends buffered packet every period of time, and drops it if there is still no available channel after trying for 10 times.
 %$T_{buffer}$ equals to the smallest average time duration that channel is occupied by primary users, which is introduced in subsection \ref{BT}.
 
 
@@ -446,9 +453,9 @@ If the channel is sensed to be busy before or among the transmission, or it rece
 
 \section{Performance Evaluation}
 %We show performance of SAViC on two aspects via simulation.
-In this section, we will present the performance of geographic routing together with SAViC.
-Both metrics of spectrum availability and blocking time.
-Prior to that, we introduce the set-up of simulation.
+In this section, we present the performance of geographic routing together with SAViC.
+Both virtual coordinates based on metrics of spectrum availability and blocking time respectively are evaluated.
+Prior to that, the set-up of simulation is introduced.
 
 
 \subsection{Simulation Setup}
@@ -462,7 +469,7 @@ In simulation, primary user alternates state between ON and OFF as a two-state d
 %Primary user changes its state between ON and OFF according to transition probability, i.e. probability that it changes from current state to the other, or stays in the same state.
 The probability that it changes from one state to the other, or stays in the same state is called transition probability.
 Transition probability further decides the stationary probability of 2DTMC, which represents the percentage of time that primary user is in state ON or OFF in a long run.
-The relationship between stationary probability $\Pi=\{\pi_{\textsc{\tiny ON}}, \pi_{\textsc{\tiny OFF}}\}$ and duty circle $\gamma$ is, 
+The relationship between stationary probability $\Pi=\{\pi_{\textsc{\tiny ON}}, \pi_{\textsc{\tiny OFF}}\}$ and duty cycle $\gamma$ is, 
 \begin{equation}
 \label{stationary_probability}
 \lim\limits_{T_{assement} \to \infty }{\gamma} = \pi_{\textsc{\tiny OFF}}
@@ -479,7 +486,7 @@ As spectrum availability based and longest blocking time based virtual coordinat
 As a result, we design two categories of primary user settings to evaluate the routing performance assisted by the two categories of virtual coordinate respectively.
 \begin{itemize}
 \item As to spectrum availability based virtual coordinate, two primary users are located in the CRN which can not affect all the nodes in CRN, as shown in Figure~\ref{fig:singleChannelPioff_case_topo}.
-\item For blocking time based virtual coordinate, network is evenly covered by primary users which have the same duty circle, but some primary users have different blocking time with the others, as Figure~\ref{fig:multipleChannelPioff_case_topo} shows.
+\item For blocking time based virtual coordinate, network is evenly covered by primary users which have the same duty cycle, but some primary users have different blocking time with the others, as Figure~\ref{fig:multipleChannelPioff_case_topo} shows.
 %In  all primary users have the same spectrum availability, but some of them have shorter sojourning time in state ON than the others.
 \end{itemize}
 When multiple channel scenario is to be investigated, existing primary users simply start to work with current and additional channels, and there is no new primary users appear.
@@ -499,16 +506,16 @@ Secondary users are randomly distributed in a square area and 6 nodes which loca
 
 \subsection{Success Rate of Geographic Routing on Finding Path}
 
-We evaluate SAViC's reachability, i.e. given the virtual coordinate of destination, geographic routing forwards packet from source to the the node with the desired virtual coordinate.
+We evaluate SAViC's reachability, i.e. given the virtual coordinate of destination, geographic routing forwards packet from source to the node with the desired virtual coordinate.
 %We see the routing path is set up as long as any node with the same virtual coordinate is reached, and this comparison don't involve any influence from primary users when the routing is conducted.
 %, and hop based virtual coordinate gains benefit because there could exist several nodes assigned identical virtual coordinate with the destination node.
 %For network assigned with CA-VCs, the PUs in the network are set to state OFF when conducting geographic routing.
 The comparisons are real geographic location, and hop based virtual coordinate according to VCap~\cite{gpsfree05infocom}. 
-We deploy 6 anchors and the there is no duplicated virtual coordinate among the resultant virtual coordinates.
+We deploy 6 anchors and then there is no duplicated virtual coordinate among the resultant virtual coordinate system.
 %We configure different spectrum availability in the network to investigate the reachability of SAViC, as shown in the following table.
 % so adopting different configurations of primary user in the simulation doesn't arise question of cherry picking.
 %As to testing channel utility based SAViC, two primary users locate in the middle of the network as shown in Figure~\ref{fig:singleChannelPioff_case_topo}, which operates with the same $P_{\textsc{\tiny OFF}}$.
-%As to delay based SAViC, primary users locate as shown in Figure~\ref{fig:multipleChannelPioff_case_topo} where each circle center locates one primary user,.
+%As to delay based SAViC, primary users locate as shown in Figure~\ref{fig:multipleChannelPioff_case_topo} where each cycle center locates one primary user,.
 %Two scenarios present distinctive activity patterns of primary user.
 %In scenario 1, $P_{\textsc{\tiny OFF}}=0.9$ for all primary users, $T_{\textsc{\tiny ON}}$ is 27s in region 2 (the lower-left area as shown in Figure~\ref{fig:multipleChannelPioff_case_topo}), and $T_{\textsc{\tiny ON}}$ of primary user is 0.33s in region 1 (the reset area except for region 2).
 %In scenario 2, $T_{\textsc{\tiny ON}}$ of primary user is 3s in region 1, other parameters of primary user is the same with scenario 1.
@@ -534,10 +541,10 @@ We deploy 6 anchors and the there is no duplicated virtual coordinate among the 
 
 %There are two configurations of primary users,
 %\begin{itemize}
-%\item The first is as shown by the dashed circles in Figure~\ref{fig:singleChannelPioff_case_topo}, two primary users locate in the middle of the network, which operates with the same $P_{\textsc{\tiny OFF}}$.
+%\item The first is as shown by the dashed cycles in Figure~\ref{fig:singleChannelPioff_case_topo}, two primary users locate in the middle of the network, which operates with the same $P_{\textsc{\tiny OFF}}$.
 %This configuration is used to test Channel availability based SAViC later.
-%\item The second is as shown by the circles in Figure~\ref{fig:multipleChannelPioff_case_topo}, which is to construct one CRN where secondary users sense the same likelihood of spectrum availability, but the blocking time in some areas are different from the rest areas.
-%$P_{\textsc{\tiny OFF}}=0.9$ for all primary users, $T_{\textsc{\tiny ON}}$ is 27s for primary users in solid circles.
+%\item The second is as shown by the cycles in Figure~\ref{fig:multipleChannelPioff_case_topo}, which is to construct one CRN where secondary users sense the same likelihood of spectrum availability, but the blocking time in some areas are different from the rest areas.
+%$P_{\textsc{\tiny OFF}}=0.9$ for all primary users, $T_{\textsc{\tiny ON}}$ is 27s for primary users in solid cycles.
 %This configuration is used to test Blocking time based SAViC.
 %\end{itemize}
 %%\vspace*{-\baselineskip}
@@ -545,12 +552,12 @@ We deploy 6 anchors and the there is no duplicated virtual coordinate among the 
 %    \begin{tabular}{| p{1.85 cm} | p{6.7 cm} |}
 %    \hline
 %    Coordinate & Configuration of primary users  \\ \hline
-%    Channel availability based SAViC & As shown by the dashed circles in Figure~\ref{fig:singleChannelPioff_case_topo}, two primary users locate in the middle of the network, which operates with the same $P_{\textsc{\tiny OFF}}$.  \\ \hline
-%    Blocking time based SAViC & As shown by the circles in Figure~\ref{fig:multipleChannelPioff_case_topo}, $P_{\textsc{\tiny OFF}}=0.9$ for all primary users, $T_{\textsc{\tiny ON}}$ is 27s for primary users in solid circles
+%    Channel availability based SAViC & As shown by the dashed cycles in Figure~\ref{fig:singleChannelPioff_case_topo}, two primary users locate in the middle of the network, which operates with the same $P_{\textsc{\tiny OFF}}$.  \\ \hline
+%    Blocking time based SAViC & As shown by the cycles in Figure~\ref{fig:multipleChannelPioff_case_topo}, $P_{\textsc{\tiny OFF}}=0.9$ for all primary users, $T_{\textsc{\tiny ON}}$ is 27s for primary users in solid cycles
 %    \vspace*{-.4em}
 %\begin{itemize}%[noitemsep,nolistsep]
-%  \item scenario 1: $T_{\textsc{\tiny ON}}$ is 0.33s in dashed circles
-%  \item scenario 2: $T_{\textsc{\tiny ON}}$ is 3s in dashed circles
+%  \item scenario 1: $T_{\textsc{\tiny ON}}$ is 0.33s in dashed cycles
+%  \item scenario 2: $T_{\textsc{\tiny ON}}$ is 3s in dashed cycles
 %\end{itemize}
 %\vspace*{-1.2 em}
 %      \\ \hline
@@ -560,12 +567,12 @@ We deploy 6 anchors and the there is no duplicated virtual coordinate among the 
 %\end{center}
 
 In order to evaluate the effectiveness of coordinates to support geographic routing, we design different configurations of primary users.
-As to duty circle based VC, two primary users are randomly deployed in the network.
+As to duty cycle based VC, two primary users are randomly deployed in the network.
 As to delay based VC, we configure 9 primary users to evenly cover the network, among of them, 4 primary users have different maximal blocking time with the rest.
 Under one configuration of primary users, 1000 random CRN is generated and in each CRN one far departed pair of source and destination is chosen to test.
 
 %For each setting of primary user, simulation is done over 100 random secondary user networks, and in each network one pair of nodes locating at opposite ends of network (which have the largest distance) is chosen as source and destination.
-%We configure two scenarios to test blocking time based virtual coordinate, scenario I: $T_{\textsc{\tiny ON}}=27s$ for the primary users in solid circle in Figure~\ref{fig:multipleChannelPioff_case_topo}, 3s for the rest, scenario II: $T_{\textsc{\tiny ON}}=27s$ in region 2, 0.33s for the rest.
+%We configure two scenarios to test blocking time based virtual coordinate, scenario I: $T_{\textsc{\tiny ON}}=27s$ for the primary users in solid cycle in Figure~\ref{fig:multipleChannelPioff_case_topo}, 3s for the rest, scenario II: $T_{\textsc{\tiny ON}}=27s$ in region 2, 0.33s for the rest.
 
 %Figure \ref{fig:reachability} depicts the average success rate of path construction of the network with the same scale.
 Figure \ref{fig:reachability} shows, spectrum availability based virtual coordinate supports geographic routing to achieve similar reachability with hop based virtual coordinate\footnote{The numerical result of hop based virtual coordinate coincides with the simulation result presented in \cite{gpsfree05infocom} under the same network density}, which is better than that with real geographic location.
@@ -646,7 +653,7 @@ We start by looking into the performance of SAViC in single channel scenario.
 \caption{Packet delivery ratio with single secondary channel, over 50 randomly located CR nodes and PUs}
 \label{fig:pioff_single}
 \end{figure}
-We start with a case study, two primary users locate at the centers of dashed circles as shown in Figure~\ref{fig:singleChannelPioff_case_topo}.
+We start with a case study, two primary users locate at the centers of dashed cycles as shown in Figure~\ref{fig:singleChannelPioff_case_topo}.
 VC based on spectrum availability and VCap (hop is its metric) are assigned to secondary users separately.
 The red dashed path in Figure~\ref{fig:singleChannelPioff_case_topo} is formed by geographic routing with VCap, which cuts across the primary users' affecting area and thus suffers great packet loss.
 %The routing paths supported by spectrum availability based virtual coordinate is affected by the intensity of primary users, 
@@ -741,7 +748,7 @@ Now we introduce the routing performance in multiple channel scenario, where two
 \caption{Packet delivery ratio with multiple secondary channel scenario}
 \end{figure}
 In this part of simulation, we follow the setting of single channel scenario, except that secondary users have at most two licensed channels.
-%Network with two licensed channels is shown in Figure~\ref{fig:multipleChannelPioff_case_topo}, where primary user locates at the center of each circle.
+%Network with two licensed channels is shown in Figure~\ref{fig:multipleChannelPioff_case_topo}, where primary user locates at the center of each cycle.
 %Each primary user works on two licensed channels which are independent with each other.
 %Figure~\ref{fig:multipleChannelPioff_case_topo} shows routing paths with different virtual coordinates and primary user's intensities, where in region 2 primary user's $P_{\textsc{\tiny OFF}}$ is 0.5.
 %When $P_{\textsc{\tiny OFF}}$ is also 0.5 for primary users in region 1 and all primary users have equal workload, the path generated (blue solid path) converges to the path with hop based virtual coordinate (red dashed path).
@@ -778,14 +785,14 @@ SAViC still outperform the other schemes especially in the aspect of PDR.
 
 %\vspace{.1cm}
 %\textbf{Single secondary channel scenario}
-As discussed in section~\ref{BT}, spectrum availability based virtual coordinate doesn't reflect the sparsity or abundance of spectrum well when the the likelihood of spectrum availability is homogeneous in CRN.
+As discussed in section~\ref{BT}, spectrum availability based virtual coordinate doesn't reflect the sparsity or abundance of spectrum well when the likelihood of spectrum availability is homogeneous in CRN.
 A CRN working with single licensed channel in Figure~\ref{fig:multipleChannelPioff_case_topo} is used to show the fail of spectrum availability based virtual coordinate.
 Two items are used in the following to make the analysis tidy.
 \begin{center}
 \begin{tabular}{cl}
 \toprule
  $T_1$        & Maximal blocking time of primary users  \\
-				&  					whose transmission ranges are solid circles in Figure~\ref{fig:multipleChannelPioff_case_topo}\\
+				&  					whose transmission ranges are solid cycles in Figure~\ref{fig:multipleChannelPioff_case_topo}\\
 \midrule  
     $T_2$       &  Maximal blocking time of the other primary users \\
 \bottomrule
@@ -795,10 +802,10 @@ Two items are used in the following to make the analysis tidy.
 \begin{figure}[ht]
 	\centering
     \includegraphics[width=0.6\linewidth]{topo_single_blocking_time.pdf}
-    \caption{Routing paths in one network, $T_1 = 3s$. Circles denote the transmission range of primary uers.} 			\label{fig:multipleChannelPioff_case_topo}
+    \caption{Routing paths in one network, $T_1 = 3s$. cycles denote the transmission range of primary uers.} 			\label{fig:multipleChannelPioff_case_topo}
 \end{figure}
 In the network, 9 primary users evenly distributed, $P_{\textsc{\tiny OFF}}=0.5$ for each of them.
-For the primary users denoted by the solid circles, maximal blocking time $T_1 = 3s$, and $T_2 = 1s$ and $3s$ for the other primary users.
+For the primary users denoted by the solid cycles, maximal blocking time $T_1 = 3s$, and $T_2 = 1s$ and $3s$ for the other primary users.
 When $T_2 < T_1$, the resultant routing path is in black and dashed, which goes through area where primary users have shorter maximal blocking time.
 When $T_2 = T_1$, the resultant routing path largely converges with the path with VCap.
 
@@ -849,7 +856,7 @@ Whereas, the delay of spectrum availability based virtual coordinate is random a
 
 %Delay based virtual coordinate manipulates nodes sharing smaller blocked time to get closer, whereas $P_{\textsc{\tiny OFF}}$ based virtual coordinate doesn't adjust the network topology meaningfully.
 
-The packet delivery ratio shown in Figure \ref{fig:SingleChannelEWT_randomness_rate} are constant with both blocking time based virtual coordinate and VCap, because all the primary users have the same $P_{\textsc{\tiny OFF}}$ which is 0.9.
+The packet delivery ratio shown in Figure \ref{fig:SingleChannelEWT_randomness_rate} is constant with both blocking time based virtual coordinate and VCap, because all the primary users have the same $P_{\textsc{\tiny OFF}}$ which is 0.9.
 Particularly, blocking time based virtual coordinate achieves higher packet delivery ratio than the other two virtual ordinates, the reason is when the former is applied, less packets are dropped from buffer as the time of being blocked is shorter for the secondary users on the path.
 
 %\vspace{.1cm}
@@ -881,11 +888,12 @@ Blocking time based virtual coordinate achieves up to 10\% better performance th
 
 
 \section{CONCLUSION}
-The proposed virtual coordinate SAViC reshapes the topology of cognitive radio network based on sensing results on spectrum availability.
+The proposed virtual coordinate SAViC reshapes the topology of cognitive radio network based on sensing results of spectrum availability.
 As SAViC adjusts the distance between nodes based on the communication obstruction caused by primary users, the virtual coordinate comprises a part of the routing decision, so that geographic routing is able to detour the areas seriously affected by primary user.
 Geographic routing with SAViC greatly simplifies the computation and communication burden on each secondary user involved in routing in CRN.
 Together with SAViC, geographic routing achieves better performances than other geographic routing designed for CRN through extensive simulation.
 This paradigm of routing is especially suitable for CRN network where the resource limited CR nodes can only support geographic routing.
+This work emphasises on avoiding primary users' influence with geographic routing, and doesn't consider the interference issue among the secondary users, which should be addressed in the future work.
 %SAViC supports high reachability.
 %As SAViC comprises routing decision, light weighted geographic routing circumvents the area seriously affected by primary user, or cut through the less affected area.
 %Specially, geographic routing together with available channel likelihood based virtual coordinate achieve higher PDR than one representative CRN routing scheme when PUs' activities are geographically heterogeneous in the network.

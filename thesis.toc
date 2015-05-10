@@ -76,32 +76,33 @@
 \contentsline {subsection}{\numberline {4.6.2}Comparison between Distributed Schemes}{66}{subsection.4.6.2}
 \contentsline {subsubsection}{\numberline {4.6.2.1}Number of CCC per Non-singleton Clusters}{67}{subsubsection.4.6.2.1}
 \contentsline {subsubsection}{\numberline {4.6.2.2}Survival Rate of Clusters with Increasing PR Users}{68}{subsubsection.4.6.2.2}
-\contentsline {subsubsection}{\numberline {4.6.2.3}Cluster Size Control}{68}{subsubsection.4.6.2.3}
-\contentsline {section}{\numberline {4.7}Conclusions and Future Work}{69}{section.4.7}
-\contentsline {chapter}{\numberline {5}Spectrum Aware Virtual Coordinates Assignment and Routing in Multihop Cognitive Radio Network}{71}{chapter.5}
-\contentsline {section}{\numberline {5.1}Introduction}{71}{section.5.1}
-\contentsline {section}{\numberline {5.2}RELATED WORK}{72}{section.5.2}
-\contentsline {section}{\numberline {5.3}SYSTEM MODEL}{73}{section.5.3}
-\contentsline {section}{\numberline {5.4}Spectrum Aware Virtual Coordinates}{74}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}Assign Spectrum Aware Virtual Coordinate}{75}{subsection.5.4.1}
-\contentsline {subsection}{\numberline {5.4.2}Normalized Spectrum Availability on Secondary User}{76}{subsection.5.4.2}
-\contentsline {subsubsection}{\numberline {5.4.2.1}Single licensed channel}{76}{subsubsection.5.4.2.1}
-\contentsline {subsubsection}{\numberline {5.4.2.2}Multiple licensed channels}{77}{subsubsection.5.4.2.2}
-\contentsline {subsection}{\numberline {5.4.3}Normalized Longest Blocking Time on Secondary Users}{78}{subsection.5.4.3}
-\contentsline {subsubsection}{\numberline {5.4.3.1}Single licensed channel}{78}{subsubsection.5.4.3.1}
-\contentsline {subsubsection}{\numberline {5.4.3.2}Multiple licensed channels}{79}{subsubsection.5.4.3.2}
-\contentsline {section}{\numberline {5.5}Geographic Routing and Opportunistic Spectrum Access}{79}{section.5.5}
-\contentsline {section}{\numberline {5.6}Performance Evaluation}{80}{section.5.6}
-\contentsline {subsection}{\numberline {5.6.1}Simulation Setup}{80}{subsection.5.6.1}
-\contentsline {subsubsection}{\numberline {5.6.1.1}Primary Users}{80}{subsubsection.5.6.1.1}
-\contentsline {subsubsection}{\numberline {5.6.1.2}Parameter Setting}{81}{subsubsection.5.6.1.2}
-\contentsline {subsection}{\numberline {5.6.2}Success Rate of Geographic Routing on Finding Path}{81}{subsection.5.6.2}
-\contentsline {subsection}{\numberline {5.6.3}Routing Performance}{82}{subsection.5.6.3}
-\contentsline {subsubsection}{\numberline {5.6.3.1}Spectrum Availability Based Virtual Coordinate}{82}{subsubsection.5.6.3.1}
-\contentsline {subsubsection}{\numberline {5.6.3.2}Longest Blocking time Based Virtual Coordinate}{84}{subsubsection.5.6.3.2}
-\contentsline {section}{\numberline {5.7}CONCLUSION}{87}{section.5.7}
-\contentsline {chapter}{\numberline {6}Conclusion}{89}{chapter.6}
+\contentsline {subsubsection}{\numberline {4.6.2.3}Cluster Size Control}{69}{subsubsection.4.6.2.3}
+\contentsline {section}{\numberline {4.7}Conclusions and Future Work}{71}{section.4.7}
+\contentsline {chapter}{\numberline {5}Spectrum Aware Virtual Coordinates Assignment and Routing in Multihop Cognitive Radio Network}{73}{chapter.5}
+\contentsline {section}{\numberline {5.1}Introduction}{73}{section.5.1}
+\contentsline {section}{\numberline {5.2}Introduction}{74}{section.5.2}
+\contentsline {section}{\numberline {5.3}RELATED WORK}{75}{section.5.3}
+\contentsline {section}{\numberline {5.4}SYSTEM MODEL}{76}{section.5.4}
+\contentsline {section}{\numberline {5.5}Spectrum Aware Virtual Coordinates}{76}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Assign Spectrum Aware Virtual Coordinate}{77}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.2}Normalized Spectrum Availability on Secondary User}{79}{subsection.5.5.2}
+\contentsline {subsubsection}{\numberline {5.5.2.1}Single licensed channel}{79}{subsubsection.5.5.2.1}
+\contentsline {subsubsection}{\numberline {5.5.2.2}Multiple licensed channels}{80}{subsubsection.5.5.2.2}
+\contentsline {subsection}{\numberline {5.5.3}Normalized Longest Blocking Time on Secondary Users}{80}{subsection.5.5.3}
+\contentsline {subsubsection}{\numberline {5.5.3.1}Single licensed channel}{81}{subsubsection.5.5.3.1}
+\contentsline {subsubsection}{\numberline {5.5.3.2}Multiple licensed channels}{81}{subsubsection.5.5.3.2}
+\contentsline {section}{\numberline {5.6}Geographic Routing and Opportunistic Spectrum Access}{82}{section.5.6}
+\contentsline {section}{\numberline {5.7}Performance Evaluation}{82}{section.5.7}
+\contentsline {subsection}{\numberline {5.7.1}Simulation Setup}{82}{subsection.5.7.1}
+\contentsline {subsubsection}{\numberline {5.7.1.1}Primary Users}{83}{subsubsection.5.7.1.1}
+\contentsline {subsubsection}{\numberline {5.7.1.2}Parameter Setting}{83}{subsubsection.5.7.1.2}
+\contentsline {subsection}{\numberline {5.7.2}Success Rate of Geographic Routing on Finding Path}{83}{subsection.5.7.2}
+\contentsline {subsection}{\numberline {5.7.3}Routing Performance}{84}{subsection.5.7.3}
+\contentsline {subsubsection}{\numberline {5.7.3.1}Spectrum Availability Based Virtual Coordinate}{85}{subsubsection.5.7.3.1}
+\contentsline {subsubsection}{\numberline {5.7.3.2}Longest Blocking time Based Virtual Coordinate}{87}{subsubsection.5.7.3.2}
+\contentsline {section}{\numberline {5.8}CONCLUSION}{89}{section.5.8}
+\contentsline {chapter}{\numberline {6}Conclusion}{91}{chapter.6}
 \vspace *{\baselineskip }
-\contentsline {chapter}{Bibliography}{91}{section*.11}
-\contentsline {chapter}{List of Figures}{100}{section*.11}
-\contentsline {chapter}{List of Tables}{103}{section*.11}
+\contentsline {chapter}{Bibliography}{93}{section*.11}
+\contentsline {chapter}{List of Figures}{102}{section*.11}
+\contentsline {chapter}{List of Tables}{106}{section*.11}
