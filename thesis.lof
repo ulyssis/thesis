@@ -9,8 +9,8 @@
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Power consumed by different distributed spectrum allocation schemes under different ways deciding the maximal transmission power map\relax }}{32}{figure.3.5}
 \contentsline {figure}{\numberline {3.6}{\ignorespaces QuasiSINR achieved by different distributed spectrum allocation schemes under different ways deciding the maximal transmission power map\relax }}{32}{figure.3.6}
 \contentsline {figure}{\numberline {3.7}{\ignorespaces CDF of SINR on end users obtained by different CA schemes under different methods to decide the maximal transmission power map\relax }}{33}{figure.3.7}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces The average SINR of the 20\% worst end terminals\relax }}{33}{figure.3.8}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Convergence with three different schemes in one simulation instance\relax }}{34}{figure.3.9}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces The average SINR of the 20\% worst end terminals\relax }}{34}{figure.3.8}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Convergence with three different schemes in one simulation instance\relax }}{35}{figure.3.9}
 \contentsline {figure}{\numberline {3.10}{\ignorespaces Summed utility of all WBSes, which is the objective in problem\nobreakspace {}\ref {problem}. dpa in legend represents \textit {distributed power allocation}\relax }}{36}{figure.3.10}
 \contentsline {figure}{\numberline {3.11}{\ignorespaces Average transmission power of one WBSes\relax }}{37}{figure.3.11}
 \contentsline {figure}{\numberline {3.12}{\ignorespaces Average quasiSINR of a WBS\relax }}{37}{figure.3.12}
@@ -32,20 +32,20 @@
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Linear programming}}}{61}{figure.4.9}
 \contentsline {figure}{\numberline {4.10}{\ignorespaces Number of common channels for non-singleton clusters, the numbers in the names of schemes annotate the desired cluster size.\relax }}{63}{figure.4.10}
 \contentsline {figure}{\numberline {4.11}{\ignorespaces Number of CRs which are not included in any clusters\relax }}{64}{figure.4.11}
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Distribution of CRs residing in Clusters with different sizes, as to ROSS with size control feature, the desired cluster size is 3.\relax }}{65}{figure.4.12}
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Number of control messages\relax }}{66}{figure.4.13}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Distribution of CRs residing in clusters with different sizes, as to ROSS with size control feature, the desired cluster size is 3.\relax }}{65}{figure.4.12}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Number of control messages\relax }}{67}{figure.4.13}
 \contentsline {figure}{\numberline {4.14}{\ignorespaces Number of common channels for non-singleton clusters. As to ROSS with size control feature, $x=2$ when $N=100$ and 200, $x=3$ when $N=300$.\relax }}{67}{figure.4.14}
 \contentsline {figure}{\numberline {4.15}{\ignorespaces Number of CRs which are not included in any clusters, $N=100$\relax }}{68}{figure.4.15}
 \contentsline {figure}{\numberline {4.16}{\ignorespaces Number of CRs which are not included in any clusters, $N=300$\relax }}{69}{figure.4.16}
-\contentsline {figure}{\numberline {4.17}{\ignorespaces Cluster sizes}}{69}{figure.4.17}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {100 CRns, 30 PRns}}}{69}{figure.4.17}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {300 CRns, 30 PRns}}}{69}{figure.4.17}
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Cluster sizes}}{70}{figure.4.17}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {100 CRns, 30 PRns}}}{70}{figure.4.17}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {300 CRns, 30 PRns}}}{70}{figure.4.17}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Sensing duration $T_s$ and sensing period $T_p$\relax }}{74}{figure.5.1}
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Left: nodes with physical locations, Right: nodes with doublet virtual coordinate, each virtual coordinate is the number of hops away from corresponding anchor. Connecting lines denote the communication is possible.\relax }}{75}{figure.5.2}
 \contentsline {figure}{\numberline {5.3}{\ignorespaces A network under primary users' influence assigned with SAViC, only anchor 1 is involved. Flooding of anchor messages is not shown.\relax }}{75}{figure.5.3}
 \contentsline {figure}{\numberline {5.4}{\ignorespaces Normalized spectrum availability with respect to the likelihood of spectrum being available one a node\relax }}{77}{figure.5.4}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Reachability of different virtual coordinates, the average number of neighbors is 6, 12, and 14\relax }}{81}{figure.5.5}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Reachability of different virtual coordinates, the average number of neighbors is 6, 12, and 14\relax }}{82}{figure.5.5}
 \contentsline {figure}{\numberline {5.6}{\ignorespaces Routing paths and corresponding PDR\relax }}{83}{figure.5.6}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Routing paths}}}{83}{figure.5.6}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {PDR over 50 random CRN network, PU's location is fixed as shown in Figure\nobreakspace {}\ref {fig:singleChannelPioff_case_topo}}}}{83}{figure.5.6}

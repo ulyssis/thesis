@@ -30,7 +30,7 @@ Clustering algorithm has also proposed to support routing in cognitive ad-hoc ne
 %Hence, there has been great effort on the research on clustering of cognitive radio networks in recent years~\cite{Chen07,Lazos09}.
 
 %[robustness issue for clustering]
-Except for the advantages brought in by clustering, there is a issue on clustering structure itself in cognitive radio network.
+Except for the advantages brought in by clustering, there is an issue on clustering structure itself in cognitive radio network.
 As the activity of primary users is controlled by licensed operators and generally not known to CR users, the connectivity between CR nodes in a CRN is not guaranteed. 
 For a pair of communicating CR nodes, whenever a primary user is detected to be operating on the working channel, CR nodes have to retreat that working channel.
 The affected CR nodes switch to one other idle channel if there are available idle channels, if not, the communication is cut down.
@@ -379,6 +379,7 @@ We scatter the CR nodes in network of size $l\times l$ randomly, and run simulat
 As Figure~\ref{number_clusters_scale} shows, the number of clusters increases with network density, but is upper bounded by 25.
 The confidence rate is 95\% in the figure.
 
+\todo[inline]{check, the language is terrible}
 In case of dense network, the cluster size is big, which brings heavy burden on cluster head.
 Thus in dense network which limited resources are available on cluster heads, or the inner communication doesn't support big clusters [xxxxx], certain measures are needed to reduce the network size.
 This task falls on cluster head.
@@ -631,7 +632,7 @@ As an example, when node A comes to decide which cluster to stay, the membership
 %paper given by james is useful which provides a survey from the perspective of wsn!
 
 
-
+\todo[inline]{check}
 The centralized clustering scheme aims to form clusters with certain sizes, meanwhile the total number of common channels of all clusters is maximized.
 In the following, we refer this problem as \textit{centralized clustering} for short, and the problem definition is as follows, 
 
@@ -782,33 +783,30 @@ In other words, Each non-zero element $q_{ij}$ denotes the number of common chan
 
 \begin{figure}[ht!]
 \centering
-Q = \bordermatrix{~ 		& 1 	& 2 	& 3 	& \cdots 	& n-1 	& n	\cr
-                  C_1 	& k_{C_1} 	& k_{C_1} 	& 0 	& \cdots 	& 0 	& 0	\cr
-                  C_2 	& k_{C_2} 	& 0 	& k_{C_2} 	& \cdots 	& 0 	& 0	\cr
+Q = \bordermatrix{~ 		& 1 	& 2 	& 3 	& \cdots & j & \cdots	& n-1 	& n	\cr
+                  C_1 	& k_{C_1} 	& k_{C_1} 	& 0 	& \cdots & \cdots &\cdots	& 0 	& 0	\cr
+                  C_2 	& k_{C_2} 	& 0 	& k_{C_2} 	& \cdots & \cdots & \cdots 	& 0 	& 0	\cr
 				\vdots  	&\vdots & 	 	& 		&  \vdots		& 		& \vdots \cr
-				C_i 	& 0 	& k_{C_i} 	& 0 	& \cdots 	& k_{C_i} 	& 0	\cr
-				\vdots  	&\vdots & 	 	& 		&  \vdots		& 		& \vdots \cr
-				C_{i'} 	& k_{C_{i'}} 	& 0 	& 0 	& \cdots 	& k_{C_{i'}} 	& 0	\cr
-				\vdots  	&\vdots & 	 	& 		&  \vdots		& 		& \vdots \cr}	
+				C_i 	& 0 	& k_{C_i} 	& 0 	& \cdots  & \cdots & \cdots 	& k_{C_i} 	& 0	\cr
+				\vdots  	&\vdots & 	 	& 		&  \vdots & \cdots & \cdots 		& 		& \vdots \cr
+				\vdots 	& \vdots  	& 0 	& 0 	& \cdots & \cdots & \cdots 	& k_{C_{i'}} 	& 0	\cr
+				C_{g}  	& k_{C_{g}} & 	 	& 		&  \vdots	& \cdots & \cdots& 	& 		& \vdots \cr}	
 \caption{Matrix Q}
 \label{xx}
 \end{figure}
 
 We also have one $G\times N$ binary matrix $X$, the element of the matrix is binary variable $x_{ij},i=1, \ldots, G, j=1, \ldots, N$.
 $x_{ij}=1$ denotes cluster $i$ is one partition chosen by the clustering scheme, $x_{ij}=0$ means this partition is not adopted.
-
-\begin{align}
-   &  \text{minimize}
-   && \Sigma_{j=1}^g\Sigma_{i=1}^n (-x_{ij}q_{ij} + w_i*\texttt{cost($\delta$)}) \\
-   &  \text{subject to}
-   && \Sigma_{i=1}^g x_{ij} = 1,  j=1, \ldots, n \\
-   &
-   && \Sigma_{j=1}^n x_{ij} = \delta*(1-w_i), j=1, \ldots, g \\
-   &
-   && \text{$x_{ij}$ and $w_j$ are binary variables.}
+\begin{equation}
+\begin{aligned}
+     &\min\limits_{x_{ij}} && \Sigma_{j=1}^g\Sigma_{i=1}^n (-x_{ij}q_{ij} + w_i*\texttt{cost($\delta$)}) \\
+     &\text{subject to}   && \Sigma_{i=1}^g x_{ij} = 1,  j=1, \ldots, n \\
+   &&& \Sigma_{j=1}^n x_{ij} = \delta*(1-w_i), j=1, \ldots, g \\
+   &&& \text{$x_{ij}$ and $w_j$ are binary variables.}\\
+   &&& i\in \{1,2, \cdots g\}, \hspace{0.3cm} j\in \{1,2,\cdots n\}
 \notag
-\end{align}
-
+\end{aligned}
+\end{equation}
 As the resultant clusters are with certain desired sizes, we try to maximize the sum of products of cluster size and number of common channels in the objective function.
 %The first item of the objective function is the sum of products of cluster size and number of common channels per cluster.
 %When only this item is applied in the objective function, it is obvious to see that single node cluster strategy is the solution, hence we add the second item to control the cluster size.
@@ -995,8 +993,8 @@ Meanwhile, sizes of more clusters become smaller also contributes more robustnes
 \label{cluster_size}
 \begin{figure}[ht!]
   \centering
-  \includegraphics[width=0.8\linewidth]{size_control_20.pdf}
-  \caption{Distribution of CRs residing in Clusters with different sizes, as to ROSS with size control feature, the desired cluster size is 3.}
+  \includegraphics[width=0.8\linewidth]{cdf_clusterSize_20.pdf}
+  \caption{Distribution of CRs residing in clusters with different sizes, as to ROSS with size control feature, the desired cluster size is 3.}
   \label{size_control}
 \end{figure}
 Figure~\ref{size_control} shows the number of CRs residing in certain sized clusters.
@@ -1118,8 +1116,8 @@ Cluster size analysis is made when the number of PRs is 30.
 \begin{figure}[ht]
 \begin{center}
 %\centering
-\subfigure[100 CRns, 30 PRns]{\label{result1:1}\includegraphics[width=0.48\linewidth]{size_distribution_100.pdf}}
-\subfigure[300 CRns, 30 PRns]{\label{result1:2}\includegraphics[width=0.48\linewidth]{size_distribution_300.pdf}}
+\subfigure[100 CRns, 30 PRns]{\label{result1:1}\includegraphics[width=0.48\linewidth]{cdf_clusterSize_100.pdf}}
+\subfigure[300 CRns, 30 PRns]{\label{result1:2}\includegraphics[width=0.48\linewidth]{cdf_clusterSize_300.pdf}}
 \end{center} 
 \caption[Cluster sizes]{Distribution of CRs in clusters with different sizes} %{\subref{a}, \subref{b}, \subref{c}, \subref{d}}
 \label{result1}

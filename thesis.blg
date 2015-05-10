@@ -238,9 +238,6 @@ I was expecting a `,' or a `}'---line 3426 of file ./backmatter/myrefs.bib
 I'm skipping whatever remains of this entry
 A bad cross reference---entry "Sun07_clustering_spectrum_secsing"
 refers to entry "DBLP:conf/icc/2007", which doesn't exist
-Warning--I didn't find a database entry for "measurement_Palaios14"
-Warning--I didn't find a database entry for "Alizai_11_probabilisticAddressing"
-Warning--I didn't find a database entry for "omnetpp_paper08"
 Warning--I didn't find a database entry for "DBLP:conf/icc/2007"
 Warning--to sort, need author or key in osi
 Warning--to sort, need author or key in FCC_03-322
@@ -268,45 +265,45 @@ Warning--empty year in Routing-crn-INFOCOM11
 Too many commas in name 1 of "Paramvir Bahl, Ranveer Chandra, Thomas Moscibroda, Rohan Murty and Matt Welsh" for entry whitefi09
 while executing---line 1479 of file styles/acmurl.bst
 Warning--empty year in spectrumDecision_2013mass
-You've used 110 entries,
+You've used 114 entries,
             2950 wiz_defined-function locations,
-            1370 strings with 29321 characters,
-and the built_in function-call counts, 47206 in all, are:
-= -- 4733
-> -- 1646
+            1392 strings with 30341 characters,
+and the built_in function-call counts, 49237 in all, are:
+= -- 4934
+> -- 1729
 < -- 0
-+ -- 700
-- -- 574
-* -- 2924
-:= -- 6660
-add.period$ -- 342
-call.type$ -- 110
-change.case$ -- 615
++ -- 736
+- -- 604
+* -- 3061
+:= -- 6947
+add.period$ -- 354
+call.type$ -- 114
+change.case$ -- 642
 chr.to.int$ -- 0
-cite$ -- 128
-duplicate$ -- 1673
-empty$ -- 4564
-format.name$ -- 574
-if$ -- 11759
+cite$ -- 132
+duplicate$ -- 1746
+empty$ -- 4747
+format.name$ -- 604
+if$ -- 12258
 int.to.chr$ -- 0
-int.to.str$ -- 110
-missing$ -- 101
-newline$ -- 565
-num.names$ -- 202
-pop$ -- 1260
+int.to.str$ -- 114
+missing$ -- 105
+newline$ -- 585
+num.names$ -- 210
+pop$ -- 1310
 preamble$ -- 1
-purify$ -- 507
+purify$ -- 530
 quote$ -- 0
-skip$ -- 2740
+skip$ -- 2853
 stack$ -- 0
-substring$ -- 2279
-swap$ -- 461
+substring$ -- 2381
+swap$ -- 485
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 430
+type$ -- 446
 warning$ -- 18
-while$ -- 310
-width$ -- 113
-write$ -- 1107
+while$ -- 326
+width$ -- 117
+write$ -- 1148
 (There were 50 error messages)

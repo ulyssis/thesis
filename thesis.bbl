@@ -106,6 +106,13 @@ Wireless coexistence in the tv white space.
 \newblock {\em Phys. Commun. 4}, 1 (Mar. 2011), 40--62.
 \newblock \url{http://dx.doi.org/10.1016/j.phycom.2010.12.003}.
 
+\bibitem{Alizai_11_probabilisticAddressing}
+{\sc Alizai, M., Vaegs, T., Landsiedel, O., G{\"o}tz, S., Link, J., and Wehrle,
+  K.}
+\newblock Probabilistic addressing: Stable addresses in unstable wireless
+  networks.
+\newblock In {\em Proc. of IPSN 2011\/} (April 2011), pp.~61--72.
+
 \bibitem{cluster_EW10}
 {\sc Asterjadhi, A., Baldo, N., and Zorzi, M.}
 \newblock A cluster formation protocol for cognitive radio ad hoc networks.
@@ -341,6 +348,13 @@ Wireless coexistence in the tv white space.
   tv cell border.
 \newblock In {\em Proc. of IEEE PIMRC 2011\/} (Sep. 2011).
 
+\bibitem{powerChannelAllocation_2015_shapley}
+{\sc Langar, R., Secci, S., Boutaba, R., and Pujolle, G.}
+\newblock An operations research game approach for resource and power
+  allocation in cooperative femtocell networks.
+\newblock {\em Mobile Computing, IEEE Transactions on 14}, 4 (April 2015),
+  675--687.
+
 \bibitem{Lazos09}
 {\sc Lazos, L., Liu, S., and Krunz, M.}
 \newblock Spectrum opportunity-based control channel assignment in cognitive
@@ -465,6 +479,12 @@ Wireless coexistence in the tv white space.
 \newblock In {\em New Frontiers in Dynamic Spectrum Access Networks, 2007.
   DySPAN 2007. 2nd IEEE International Symposium on\/} (April 2007),
   pp.~288--291.
+
+\bibitem{measurement_Palaios14}
+{\sc Palaios, A., Riihijarvi, J., and Mahonen, P.}
+\newblock From paris to london: Comparative analysis of licensed spectrum use
+  in two european metropolises.
+\newblock In {\em Proc. of IEEE DySPAN 2014\/} (April 2014), pp.~48--59.
 
 \bibitem{Routing-crn-INFOCOM11}
 {\sc Pan, M., Zhang, C., Li, P., and Fang, Y.}
@@ -595,6 +615,15 @@ Wireless coexistence in the tv white space.
   network in tv white spaces.
 \newblock In {\em Wireless Communications and Networking Conference (WCNC),
   2013 IEEE\/} (April 2013), pp.~3614--3619.
+
+\bibitem{omnetpp_paper08}
+{\sc Varga, A., and Hornig, R.}
+\newblock An overview of the omnet++ simulation environment.
+\newblock In {\em Simutools '08: Proceedings of the 1st international
+  conference on Simulation tools and techniques for communications, networks
+  and systems \& workshops\/} (ICST, Brussels, Belgium, Belgium, 2008), ICST
+  (Institute for Computer Sciences, Social-Informatics and Telecommunications
+  Engineering), pp.~1--10.
 
 \bibitem{Voecking06congestiongames}
 {\sc Vöcking, B.}
