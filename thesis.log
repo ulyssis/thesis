@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.7.26)  10 MAY 2015 21:33
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.7.26)  12 MAY 2015 21:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2114,21 +2114,24 @@ Package Fancyhdr Warning: \headheight is too small (17.07164pt):
  This may cause the page layout to be inconsistent, however.
 
 [76 <./figures/05_routing/sensing_period.pdf>]
-<./figures/05_routing/vc_intro.pdf, id=1977, 728.43854pt x 264.23973pt>
+<./figures/05_routing/vc_intro.pdf, id=1976, 728.43854pt x 264.23973pt>
 File: ./figures/05_routing/vc_intro.pdf Graphic file (type pdf)
 
 <use ./figures/05_routing/vc_intro.pdf>
 Package pdftex.def Info: ./figures/05_routing/vc_intro.pdf used on input line 1
-43.
+45.
 (pdftex.def)             Requested size: 218.53323pt x 79.27252pt.
 
-<./figures/05_routing/CAVCap_idea_paper.pdf, id=1979, 352.11583pt x 251.49748pt
+<./figures/05_routing/CAVCap_idea_paper.pdf, id=1978, 352.11583pt x 251.49748pt
 >
 File: ./figures/05_routing/CAVCap_idea_paper.pdf Graphic file (type pdf)
  <use ./figures/05_routing/CAVCap_idea_paper.pdf>
 Package pdftex.def Info: ./figures/05_routing/CAVCap_idea_paper.pdf used on inp
-ut line 163.
+ut line 165.
 (pdftex.def)             Requested size: 105.63556pt x 75.44981pt.
+
+Underfull \vbox (badness 3849) has occurred while \output is active []
+
 
 
 Package Fancyhdr Warning: \headheight is too small (17.07164pt): 
@@ -2142,9 +2145,6 @@ Package Fancyhdr Warning: \headheight is too small (17.07164pt):
 pdfTeX warning: pdflatex (file ./figures/05_routing/CAVCap_idea_paper.pdf): PDF
  inclusion: multiple pdfs with page group included in a single page
 >]
-Underfull \vbox (badness 1442) has occurred while \output is active []
-
-
 
 Package Fancyhdr Warning: \headheight is too small (17.07164pt): 
  Make it at least 27.67601pt.
@@ -2152,12 +2152,19 @@ Package Fancyhdr Warning: \headheight is too small (17.07164pt):
  This may cause the page layout to be inconsistent, however.
 
 [78]
-<./figures/05_routing/gamma_lambda.pdf, id=2084, 391.4625pt x 316.18124pt>
+
+Package Fancyhdr Warning: \headheight is too small (17.07164pt): 
+ Make it at least 27.67601pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[79]
+<./figures/05_routing/gamma_lambda.pdf, id=2099, 391.4625pt x 316.18124pt>
 File: ./figures/05_routing/gamma_lambda.pdf Graphic file (type pdf)
 
 <use ./figures/05_routing/gamma_lambda.pdf>
 Package pdftex.def Info: ./figures/05_routing/gamma_lambda.pdf used on input li
-ne 287.
+ne 320.
 (pdftex.def)             Requested size: 156.58221pt x 126.47025pt.
 
 
@@ -2166,15 +2173,15 @@ Package Fancyhdr Warning: \headheight is too small (17.07164pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[79]
+[80 <./figures/05_routing/gamma_lambda.pdf>]
 
 Package Fancyhdr Warning: \headheight is too small (17.07164pt): 
  Make it at least 27.67601pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[80 <./figures/05_routing/gamma_lambda.pdf>]
-Overfull \hbox (9.39842pt too wide) in paragraph at lines 410--417
+[81]
+Overfull \hbox (9.39842pt too wide) in paragraph at lines 443--450
 []$\T1/ptm/m/n/12 , when vir-tual co-or-di-nate can be de-noted as $\OMS/cmsy/m
 /n/12 f\OML/cmm/m/it/12 x; y; z\OMS/cmsy/m/n/12 g$\T1/ptm/m/n/12 .
  []
@@ -2185,20 +2192,20 @@ Package Fancyhdr Warning: \headheight is too small (17.07164pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[81]
+[82]
 
 Package Fancyhdr Warning: \headheight is too small (17.07164pt): 
  Make it at least 27.67601pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[82]
-<./figures/05_routing/Reachability_DC_EWT.pdf, id=2134, 387.4475pt x 310.15875p
+[83]
+<./figures/05_routing/Reachability_DC_EWT.pdf, id=2151, 387.4475pt x 310.15875p
 t>
 File: ./figures/05_routing/Reachability_DC_EWT.pdf Graphic file (type pdf)
  <use ./figures/05_routing/Reachability_DC_EWT.pdf>
 Package pdftex.def Info: ./figures/05_routing/Reachability_DC_EWT.pdf used on i
-nput line 537.
+nput line 570.
 (pdftex.def)             Requested size: 299.20076pt x 239.51866pt.
 
 
@@ -2207,44 +2214,37 @@ Package Fancyhdr Warning: \headheight is too small (17.07164pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[83]
-
-Package Fancyhdr Warning: \headheight is too small (17.07164pt): 
- Make it at least 27.67601pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[84 <./figures/05_routing/Reachability_DC_EWT.pdf>]
-<./figures/05_routing/singleChannel_DC_caseStudy.pdf, id=2163, 298.11375pt x 28
+[84]
+<./figures/05_routing/singleChannel_DC_caseStudy.pdf, id=2165, 298.11375pt x 28
 9.08pt>
 File: ./figures/05_routing/singleChannel_DC_caseStudy.pdf Graphic file (type pd
 f)
  <use ./figures/05_routing/singleChannel_DC_caseStudy.pdf>
 Package pdftex.def Info: ./figures/05_routing/singleChannel_DC_caseStudy.pdf us
-ed on input line 635.
+ed on input line 668.
 (pdftex.def)             Requested size: 194.48212pt x 188.58788pt.
 
-<./figures/05_routing/singleCh_average_pdr_3.pdf, id=2164, 391.4625pt x 314.173
+<./figures/05_routing/singleCh_average_pdr_3.pdf, id=2166, 391.4625pt x 314.173
 75pt>
 File: ./figures/05_routing/singleCh_average_pdr_3.pdf Graphic file (type pdf)
  <use ./figures/05_routing/singleCh_average_pdr_3.pdf>
 Package pdftex.def Info: ./figures/05_routing/singleCh_average_pdr_3.pdf used o
-n input line 639.
+n input line 672.
 (pdftex.def)             Requested size: 194.48212pt x 156.08455pt.
 
-<./figures/05_routing/random_SU_PU.pdf, id=2167, 391.4625pt x 314.17375pt>
+<./figures/05_routing/random_SU_PU.pdf, id=2169, 391.4625pt x 314.17375pt>
 File: ./figures/05_routing/random_SU_PU.pdf Graphic file (type pdf)
 
 <use ./figures/05_routing/random_SU_PU.pdf>
 Package pdftex.def Info: ./figures/05_routing/random_SU_PU.pdf used on input li
-ne 648.
+ne 681.
 (pdftex.def)             Requested size: 194.48212pt x 156.08455pt.
 
-<./figures/05_routing/plot/delay_dc_c1.pdf, id=2168, 394.47375pt x 310.15875pt>
+<./figures/05_routing/plot/delay_dc_c1.pdf, id=2170, 394.47375pt x 310.15875pt>
 File: ./figures/05_routing/plot/delay_dc_c1.pdf Graphic file (type pdf)
 <use ./figures/05_routing/plot/delay_dc_c1.pdf>
 Package pdftex.def Info: ./figures/05_routing/plot/delay_dc_c1.pdf used on inpu
-t line 652.
+t line 685.
 (pdftex.def)             Requested size: 194.48212pt x 152.91144pt.
 
 
@@ -2253,22 +2253,32 @@ Package Fancyhdr Warning: \headheight is too small (17.07164pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[85 <./figures/05_routing/singleChannel_DC_caseStudy.pdf> <./figures/05_routing
+[85 <./figures/05_routing/Reachability_DC_EWT.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (17.07164pt): 
+ Make it at least 27.67601pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[86 <./figures/05_routing/singleChannel_DC_caseStudy.pdf> <./figures/05_routing
 /singleCh_average_pdr_3.pdf> <./figures/05_routing/random_SU_PU.pdf> <./figures
 /05_routing/plot/delay_dc_c1.pdf>]
-<./figures/05_routing/random_SU_PU_2channel.pdf, id=2205, 391.4625pt x 314.1737
+<./figures/05_routing/random_SU_PU_2channel.pdf, id=2218, 391.4625pt x 314.1737
 5pt>
 File: ./figures/05_routing/random_SU_PU_2channel.pdf Graphic file (type pdf)
  <use ./figures/05_routing/random_SU_PU_2channel.pdf>
 Package pdftex.def Info: ./figures/05_routing/random_SU_PU_2channel.pdf used on
- input line 743.
+ input line 776.
 (pdftex.def)             Requested size: 194.48212pt x 156.08455pt.
 
-<./figures/05_routing/plot/delay_dc_c2.pdf, id=2206, 394.47375pt x 310.15875pt>
+<./figures/05_routing/plot/delay_dc_c2.pdf, id=2219, 394.47375pt x 310.15875pt>
 File: ./figures/05_routing/plot/delay_dc_c2.pdf Graphic file (type pdf)
 <use ./figures/05_routing/plot/delay_dc_c2.pdf>
 Package pdftex.def Info: ./figures/05_routing/plot/delay_dc_c2.pdf used on inpu
-t line 746.
+t line 779.
 (pdftex.def)             Requested size: 194.48212pt x 152.91144pt.
 
 
@@ -2277,31 +2287,31 @@ Package Fancyhdr Warning: \headheight is too small (17.07164pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[86 <./figures/05_routing/random_SU_PU_2channel.pdf> <./figures/05_routing/plot
+[87 <./figures/05_routing/random_SU_PU_2channel.pdf> <./figures/05_routing/plot
 /delay_dc_c2.pdf>]
-<./figures/05_routing/topo_single_blocking_time.pdf, id=2229, 297.01967pt x 287
+<./figures/05_routing/topo_single_blocking_time.pdf, id=2242, 297.01967pt x 287
 .95581pt>
 File: ./figures/05_routing/topo_single_blocking_time.pdf Graphic file (type pdf
 )
  <use ./figures/05_routing/topo_single_blocking_time.pdf>
 Package pdftex.def Info: ./figures/05_routing/topo_single_blocking_time.pdf use
-d on input line 804.
+d on input line 837.
 (pdftex.def)             Requested size: 256.46152pt x 248.64774pt.
 
-<./figures/05_routing/ewt_pdr_3_ci.pdf, id=2231, 386.44376pt x 313.17pt>
+<./figures/05_routing/ewt_pdr_3_ci.pdf, id=2244, 386.44376pt x 313.17pt>
 File: ./figures/05_routing/ewt_pdr_3_ci.pdf Graphic file (type pdf)
 
 <use ./figures/05_routing/ewt_pdr_3_ci.pdf>
 Package pdftex.def Info: ./figures/05_routing/ewt_pdr_3_ci.pdf used on input li
-ne 842.
+ne 875.
 (pdftex.def)             Requested size: 196.62137pt x 159.34184pt.
 
-<./figures/05_routing/plot/delay_ewt_c1.pdf, id=2232, 394.47375pt x 313.17pt>
+<./figures/05_routing/plot/delay_ewt_c1.pdf, id=2245, 394.47375pt x 313.17pt>
 File: ./figures/05_routing/plot/delay_ewt_c1.pdf Graphic file (type pdf)
 
 <use ./figures/05_routing/plot/delay_ewt_c1.pdf>
 Package pdftex.def Info: ./figures/05_routing/plot/delay_ewt_c1.pdf used on inp
-ut line 844.
+ut line 877.
 (pdftex.def)             Requested size: 196.62137pt x 156.09718pt.
 
 
@@ -2310,21 +2320,21 @@ Package Fancyhdr Warning: \headheight is too small (17.07164pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[87 <./figures/05_routing/topo_single_blocking_time.pdf>]
-<./figures/05_routing/multiCh_EWT_rate_3.pdf, id=2294, 386.44376pt x 313.17pt>
+[88 <./figures/05_routing/topo_single_blocking_time.pdf>]
+<./figures/05_routing/multiCh_EWT_rate_3.pdf, id=2308, 386.44376pt x 313.17pt>
 File: ./figures/05_routing/multiCh_EWT_rate_3.pdf Graphic file (type pdf)
 
 <use ./figures/05_routing/multiCh_EWT_rate_3.pdf>
 Package pdftex.def Info: ./figures/05_routing/multiCh_EWT_rate_3.pdf used on in
-put line 879.
+put line 912.
 (pdftex.def)             Requested size: 196.62137pt x 159.34184pt.
 
-<./figures/05_routing/plot/delay_ewt_c2.pdf, id=2295, 394.47375pt x 313.17pt>
+<./figures/05_routing/plot/delay_ewt_c2.pdf, id=2309, 394.47375pt x 313.17pt>
 File: ./figures/05_routing/plot/delay_ewt_c2.pdf Graphic file (type pdf)
 
 <use ./figures/05_routing/plot/delay_ewt_c2.pdf>
 Package pdftex.def Info: ./figures/05_routing/plot/delay_ewt_c2.pdf used on inp
-ut line 882.
+ut line 915.
 (pdftex.def)             Requested size: 196.62137pt x 156.09718pt.
 )
 
@@ -2333,32 +2343,25 @@ Package Fancyhdr Warning: \headheight is too small (17.07164pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[88 <./figures/05_routing/ewt_pdr_3_ci.pdf> <./figures/05_routing/plot/delay_ew
-t_c1.pdf>]
+[89 <./figures/05_routing/ewt_pdr_3_ci.pdf> <./figures/05_routing/plot/delay_ew
+t_c1.pdf> <./figures/05_routing/multiCh_EWT_rate_3.pdf> <./figures/05_routing/p
+lot/delay_ewt_c2.pdf>]
 
 Package Fancyhdr Warning: \headheight is too small (17.07164pt): 
  Make it at least 27.67601pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[89 <./figures/05_routing/multiCh_EWT_rate_3.pdf> <./figures/05_routing/plot/de
-lay_ewt_c2.pdf>]
+[90]
 \openout2 = `chapters/06_conclusion.aux'.
 
  (./chapters/06_conclusion.tex
-
-Package Fancyhdr Warning: \headheight is too small (17.07164pt): 
- Make it at least 27.67601pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[90
-
-
-
-]
  6.
-) [91] [92
+) [91
+
+
+
+] [92
 
 
 ] (./thesis.bbl
@@ -2478,10 +2481,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 277.
  ) 
 Here is how much of TeX's memory you used:
- 23624 strings out of 495059
- 399217 string characters out of 3182030
- 518083 words of memory out of 3000000
- 25572 multiletter control sequences out of 15000+200000
+ 23636 strings out of 495059
+ 399385 string characters out of 3182030
+ 518185 words of memory out of 3000000
+ 25580 multiletter control sequences out of 15000+200000
  108520 words of font info for 106 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  63i,26n,80p,1432b,778s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2532,10 +2535,10 @@ texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
 /times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.
 pfb>
-Output written on thesis.pdf (115 pages, 1362051 bytes).
+Output written on thesis.pdf (115 pages, 1363799 bytes).
 PDF statistics:
- 2749 PDF objects out of 2984 (max. 8388607)
- 2397 compressed objects within 24 object streams
- 615 named destinations out of 1000 (max. 500000)
+ 2760 PDF objects out of 2984 (max. 8388607)
+ 2407 compressed objects within 25 object streams
+ 619 named destinations out of 1000 (max. 500000)
  1127 words of extra memory for PDF output out of 10000 (max. 10000000)
 

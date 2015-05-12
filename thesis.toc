@@ -84,23 +84,23 @@
 \contentsline {section}{\numberline {5.3}RELATED WORK}{75}{section.5.3}
 \contentsline {section}{\numberline {5.4}SYSTEM MODEL}{76}{section.5.4}
 \contentsline {section}{\numberline {5.5}Spectrum Aware Virtual Coordinates}{76}{section.5.5}
-\contentsline {subsection}{\numberline {5.5.1}Assign Spectrum Aware Virtual Coordinate}{77}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.1}Assign Spectrum Aware Virtual Coordinate}{78}{subsection.5.5.1}
 \contentsline {subsection}{\numberline {5.5.2}Normalized Spectrum Availability on Secondary User}{79}{subsection.5.5.2}
 \contentsline {subsubsection}{\numberline {5.5.2.1}Single licensed channel}{79}{subsubsection.5.5.2.1}
 \contentsline {subsubsection}{\numberline {5.5.2.2}Multiple licensed channels}{80}{subsubsection.5.5.2.2}
-\contentsline {subsection}{\numberline {5.5.3}Normalized Longest Blocking Time on Secondary Users}{80}{subsection.5.5.3}
+\contentsline {subsection}{\numberline {5.5.3}Normalized Longest Blocking Time on Secondary Users}{81}{subsection.5.5.3}
 \contentsline {subsubsection}{\numberline {5.5.3.1}Single licensed channel}{81}{subsubsection.5.5.3.1}
-\contentsline {subsubsection}{\numberline {5.5.3.2}Multiple licensed channels}{81}{subsubsection.5.5.3.2}
+\contentsline {subsubsection}{\numberline {5.5.3.2}Multiple licensed channels}{82}{subsubsection.5.5.3.2}
 \contentsline {section}{\numberline {5.6}Geographic Routing and Opportunistic Spectrum Access}{82}{section.5.6}
-\contentsline {section}{\numberline {5.7}Performance Evaluation}{82}{section.5.7}
-\contentsline {subsection}{\numberline {5.7.1}Simulation Setup}{82}{subsection.5.7.1}
+\contentsline {section}{\numberline {5.7}Performance Evaluation}{83}{section.5.7}
+\contentsline {subsection}{\numberline {5.7.1}Simulation Setup}{83}{subsection.5.7.1}
 \contentsline {subsubsection}{\numberline {5.7.1.1}Primary Users}{83}{subsubsection.5.7.1.1}
-\contentsline {subsubsection}{\numberline {5.7.1.2}Parameter Setting}{83}{subsubsection.5.7.1.2}
-\contentsline {subsection}{\numberline {5.7.2}Success Rate of Geographic Routing on Finding Path}{83}{subsection.5.7.2}
-\contentsline {subsection}{\numberline {5.7.3}Routing Performance}{84}{subsection.5.7.3}
+\contentsline {subsubsection}{\numberline {5.7.1.2}Parameter Setting}{84}{subsubsection.5.7.1.2}
+\contentsline {subsection}{\numberline {5.7.2}Success Rate of Geographic Routing on Finding Path}{84}{subsection.5.7.2}
+\contentsline {subsection}{\numberline {5.7.3}Routing Performance}{85}{subsection.5.7.3}
 \contentsline {subsubsection}{\numberline {5.7.3.1}Spectrum Availability Based Virtual Coordinate}{85}{subsubsection.5.7.3.1}
 \contentsline {subsubsection}{\numberline {5.7.3.2}Longest Blocking time Based Virtual Coordinate}{87}{subsubsection.5.7.3.2}
-\contentsline {section}{\numberline {5.8}CONCLUSION}{89}{section.5.8}
+\contentsline {section}{\numberline {5.8}CONCLUSION}{90}{section.5.8}
 \contentsline {chapter}{\numberline {6}Conclusion}{91}{chapter.6}
 \vspace *{\baselineskip }
 \contentsline {chapter}{Bibliography}{93}{section*.11}

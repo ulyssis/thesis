@@ -46,20 +46,20 @@
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Left: nodes with physical locations, Right: nodes with doublet virtual coordinate, each element in the virtual coordinate is the number of hops away from corresponding anchor. Connecting lines denote the communication is possible.\relax }}{77}{figure.5.2}
 \contentsline {figure}{\numberline {5.3}{\ignorespaces A network under primary users' influence assigned with SAViC, only anchor 1 is adopted. Flooding of anchor messages is not shown.\relax }}{77}{figure.5.3}
 \contentsline {figure}{\numberline {5.4}{\ignorespaces Normalized spectrum availability with respect to the likelihood of spectrum being available one a node\relax }}{80}{figure.5.4}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Reachability of different virtual coordinates, the average number of neighbors is 6, 12, and 14\relax }}{84}{figure.5.5}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Routing paths and corresponding PDR\relax }}{85}{figure.5.6}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Routing paths}}}{85}{figure.5.6}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {PDR over 50 random CRN network, PU's location is fixed as shown in Figure\nobreakspace {}\ref {fig:singleChannelPioff_case_topo}}}}{85}{figure.5.6}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Packet delivery ratio with single secondary channel, over 50 randomly located CR nodes and PUs\relax }}{85}{figure.5.7}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {PDR}}}{85}{figure.5.7}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Delay}}}{85}{figure.5.7}
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Packet delivery ratio with multiple secondary channel scenario\relax }}{86}{figure.5.8}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {PDR over 50 CRNs where SUs and PUs are randomly located}}}{86}{figure.5.8}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {PDR over 50 CRNs where SUs and PUs are randomly located}}}{86}{figure.5.8}
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Routing paths in one network, $T_1 = 3s$. cycles denote the transmission range of primary uers.\relax }}{87}{figure.5.9}
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Geographic routing in single secondary channel scenario, $P_{\textsc {\relax \fontsize {6}{7}\selectfont OFF}}=0.9$ for all primary users, $T_1=3s$, $T_2$ varies.\relax }}{88}{figure.5.10}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Packet delivery ratio}}}{88}{figure.5.10}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Delay}}}{88}{figure.5.10}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Reachability of different virtual coordinates, the average number of neighbors is 6, 12, and 14\relax }}{85}{figure.5.5}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Routing paths and corresponding PDR\relax }}{86}{figure.5.6}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Routing paths}}}{86}{figure.5.6}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {PDR over 50 random CRN network, PU's location is fixed as shown in Figure\nobreakspace {}\ref {fig:singleChannelPioff_case_topo}}}}{86}{figure.5.6}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Packet delivery ratio with single secondary channel, over 50 randomly located CR nodes and PUs\relax }}{86}{figure.5.7}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {PDR}}}{86}{figure.5.7}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Delay}}}{86}{figure.5.7}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Packet delivery ratio with multiple secondary channel scenario\relax }}{87}{figure.5.8}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {PDR over 50 CRNs where SUs and PUs are randomly located}}}{87}{figure.5.8}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {PDR over 50 CRNs where SUs and PUs are randomly located}}}{87}{figure.5.8}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Routing paths in one network, $T_1 = 3s$. cycles denote the transmission range of primary uers.\relax }}{88}{figure.5.9}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Geographic routing in single secondary channel scenario, $P_{\textsc {\relax \fontsize {6}{7}\selectfont OFF}}=0.9$ for all primary users, $T_1=3s$, $T_2$ varies.\relax }}{89}{figure.5.10}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Packet delivery ratio}}}{89}{figure.5.10}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Delay}}}{89}{figure.5.10}
 \contentsline {figure}{\numberline {5.11}{\ignorespaces Geographic routing in two secondary channel scenario, $P_{\textsc {\relax \fontsize {6}{7}\selectfont OFF}}=0.9$ for all primary users, $T_1=3s$, $T_2$ varies.\relax }}{89}{figure.5.11}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Packet delivery ratio}}}{89}{figure.5.11}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Delay}}}{89}{figure.5.11}

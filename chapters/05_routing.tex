@@ -123,6 +123,8 @@ Secondary user senses each licensed channel for time $T_{access}$ with round rob
 
 
 \section{Spectrum Aware Virtual Coordinates}
+In this section, we firstly introduce how spectrum aware virtual coordinate is assigned, then we introduce two normalized spectrum utilities on secondary user adopted in the virtual coordinate assignment process.
+One of them is called \textit{normalized spectrum availability} which is on the basis of duty cycle of primary users' absence, the other is called \textit{normalized longest blocking time} which as the name tells, is based on the lengths of time durations that primary users are detected.
 
 Virtual coordinate has been proposed in sensor and ad hoc networks~\cite{gpsfree05infocom,Alizai_11_probabilisticAddressing}.
 %Virtual coordinate is able to replace actual physical position for geographic routing in many different scenarios.
@@ -193,9 +195,40 @@ If the sum is smaller than the $t$th element in its current virtual coordinate, 
 %The acquisition of auxiliary coordinate \textit{a'} is very similar with that for virtual coordinate.
 This process is presented as Algorithm~\ref{algo:receiveAnchorMessage}.
 % which also applies to obtain virtual coordinate and auxiliary coordinate in other rounds.
-This phase ends after a period of time to make sure each node obtains $t$th element in its virtual coordinate.
+The process ceases within a period of time.
+\begin{lemma}
+\label{savic:lemma1}
+As to one anchor, the number of times for each node to forward anchor message is bounded by $g$, where $g$ is the number of one hop neighbours of anchor.
+\end{lemma}
 
-All the anchors sequentially broadcast the anchor messages which are flooded over the network, so that a secondary user obtains its virtual coordinate which respects all anchor nodes.
+\begin{lemma}
+\label{savic:lemma2}
+The counter value of one anchor message is increased when it is forwarded.
+\end{lemma}
+\begin{proof}
+This is proved by the lines 18-20 in Algorithm~\ref{algo:receiveAnchorMessage}.
+\end{proof}
+
+\begin{lemma}
+\label{savic:lemma3}
+One anchor message affiliated with one anchor accesses the one secondary user at most twice.
+\end{lemma}
+\begin{proof}
+Assume one node is accessed by the same anchor message for two times.
+When the anchor message arrives at the secondary user, let's say $i$, for the first time, there is $\text{vc} > counter+\lambda$, and both of the vc and counter in the anchor message are updated to be $counter+\lambda$.
+After being forwarded, the anchor message travels at least one other secondary user before arriving $i$, and the counter is greater than the counter value when it is forwarded from $i$ according to Lemma \ref{savic:lemma2}, which means, current counter value is greater than $\lambda_i$, and the anchor message is dropped.
+Thus, this anchor message accesses secondary user $i$ for at most two times.
+\end{proof}
+
+\begin{theorem}
+\label{savic:theorem_anchorMsg}
+The number of anchor message corresponding to one anchor is bound by $2*g*n$, where $n$ is the number of secondary users.
+\end{theorem}
+\begin{proof}
+This is proved by Lemma~\ref{savic:lemma1} and \ref{savic:lemma3}.
+\end{proof}
+
+According to Theorem~\ref{savic:theorem_anchorMsg}, every secondary users obtains virtual coordinate which respects to all anchors after a finite time duration.
 %The algorithm for secondary user $i$ to receive one element $vc_i$ is given in Algorithm~\ref{algo:receiveAnchorMessage}.
 \begin{algorithm}[!h]
 \caption{Secondary user $i$ obtains one element $vc_i$ in its VC with respect to an anchor}%, $\lambda_i$ is normalized spectrum availability on $i$}          % give the algorithm a caption
@@ -224,7 +257,7 @@ All the anchors sequentially broadcast the anchor messages which are flooded ove
 
 
 % which previously was stable at a low level during a long period of time. 
-In the following two subsections, we introduce two normalized spectrum utilities on secondary user respectively, one of them is called \textit{normalized spectrum availability} which is on the basis of duty cycle of primary users' absence, the other is called \textit{normalized longest blocking time} which as the name tells, is based on the lengths of time durations that primary users are detected.
+
 
 
 %and the two resultant virtual coordinates, duty cycle based virtual coordinate and blocking time based virtual coordinate.
