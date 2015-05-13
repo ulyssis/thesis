@@ -371,7 +371,7 @@ Then the maximum number of clusters is $l^2/r^2$.
 
 \begin{figure}[ht!]
   \centering
-  \includegraphics[width=0.67\linewidth]{number_clusters_scale.pdf}
+  \includegraphics[width=0.67\linewidth]{number_clusters_upperBound.pdf}
   \caption{Number of clusters formed}
   \label{number_clusters_scale}
 \end{figure}
@@ -436,6 +436,14 @@ Figure~\ref{fig2} shows the clusters formed in the example in Figure~\ref{fig1} 
 \subsubsection{Problem Description}
 Notice in Figure~\ref{fig2}, there are several nodes, like $A, B, D$, are included by more than one cluster. 
 We refer to these nodes as \textit{debatable nodes} as their cluster affiliations are not clear, and the clusters which include debatable node $i$ are named as \textit{claiming clusters} and represented as $S_i$. 
+
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width=0.6\linewidth]{percentage_overlapping_node.pdf}
+  \caption{Clusters formation after the first phase of ROSS. Some nodes remain debatable nodes after the first phase.}\label{fig2}
+\end{figure}
+
+
 The set of available channels of one cluster are known by the debatable nodes which locate in that cluster. %this is finished 
 %In the second phase of ROSS, debatable nodes will chose only one cluster to reside.
 Debatable nodes need to be uniquely associated to one cluster and removed from the other claiming clusters, which is called as cluster membership clarification.
@@ -1001,7 +1009,7 @@ Meanwhile, sizes of more clusters become smaller also contributes more robustnes
 \begin{figure}[ht!]
   \centering
   \includegraphics[width=0.8\linewidth]{cdf_clusterSize_20.pdf}
-  \caption{Distribution of CRs residing in clusters with different sizes, as to ROSS with size control feature, the desired cluster size is 3.}
+  \caption{Distribution of CRs residing in clusters with different sizes, as to ROSS with size control feature, the desired cluster size is 3. The average number of neighbours is 4.838.}
   \label{size_control}
 \end{figure}
 Figure~\ref{size_control} shows the number of CRs residing in certain sized clusters.
@@ -1135,14 +1143,14 @@ Cluster size analysis is made when the number of PRs is 30.
 \begin{figure}[h!]
   \centering
    \includegraphics[width=0.7\linewidth]{cdf_clusterSize_100.pdf}
-  \caption{100 CRs, 30 PRs}
+  \caption{100 CRs, 30 PRs, the average number of neighbours is 9.5.}
   \label{cdf_clusterSize_100}
 \end{figure}
 
 \begin{figure}[h!]
   \centering
    \includegraphics[width=0.7\linewidth]{cdf_clusterSize_200.pdf}
-  \caption{200 CRs, 30 PRs}
+  \caption{200 CRs, 30 PRs, the average number of neighbours is 20}
   \label{cdf_clusterSize_200}
 \end{figure}
 
@@ -1150,7 +1158,7 @@ Cluster size analysis is made when the number of PRs is 30.
 \begin{figure}[h!]
   \centering
    \includegraphics[width=0.7\linewidth]{cdf_clusterSize_300.pdf}
-  \caption{300 CRs, 30 PRs}
+  \caption{300 CRs, 30 PRs, the average number of neighbours is 30}
   \label{cdf_clusterSize_300}
 \end{figure}
 
@@ -1215,6 +1223,8 @@ The clusters resulted from ROSS-DGA and its faster version ROSS-DFA are less vul
 An light weighted cluster size control mechanism is contained in both ROSS-DGA and ROSS-DFA, which is advantageous for cooperative sensing and network operation with clusters.
 Furthermore, considerable less control messages are generated when compared with other clustering schemes.
 
+The drawback of this scheme is it does not form big clusters, which is attributed to that ROSS forms cluster based on cluster head's neighbourhood, and does not absorb CR nodes outside of the neighbourhood.
+Big clusters could be demanded when the network density is low.
 
 %Our work is in process, in which a light weighted clustering scheme is proposed. Intra connectivity is ensured by the border nodes, which has larger number of common channels with its neighbors within its vicinity, inter connectivity is guaranteed by deleting certain one-hop away nodes out of clusters to increase the set of common channels by a game theory approach. In this way, bigger value of  $\bar{N_{inter}}\times\bar{N_{intra}}$ could be achieved. 
 
