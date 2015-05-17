@@ -5,6 +5,7 @@ A level-1 auxiliary file: backmatter/00_title.aux
 A level-1 auxiliary file: backmatter/00_statement.aux
 A level-1 auxiliary file: backmatter/00_abstract.aux
 A level-1 auxiliary file: backmatter/00_acknowledgments.aux
+A level-1 auxiliary file: backmatter/00_publications.aux
 A level-1 auxiliary file: chapters/01_introduction.aux
 A level-1 auxiliary file: chapters/02_background.aux
 A level-1 auxiliary file: chapters/03_distributedChannelAllocation.aux
@@ -271,7 +272,7 @@ while executing---line 1479 of file styles/acmurl.bst
 Warning--empty year in spectrumDecision_2013mass
 You've used 115 entries,
             2950 wiz_defined-function locations,
-            1398 strings with 30670 characters,
+            1399 strings with 30700 characters,
 and the built_in function-call counts, 49546 in all, are:
 = -- 4964
 > -- 1741

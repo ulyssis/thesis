@@ -1,6 +1,6 @@
 \BOOKMARK [0][]{Doc-Start}{Abstract}{}% 1
 \BOOKMARK [0][]{Contents.0}{Contents}{}% 2
-\BOOKMARK [0][]{chapter.1}{1 Introduction}{}% 3
+\BOOKMARK [0][]{chapter.1}{1 INTRODUCTION}{}% 3
 \BOOKMARK [1][-]{section.1.1}{1.1 Cognitive Radio}{chapter.1}% 4
 \BOOKMARK [2][-]{subsection.1.1.1}{1.1.1 Spectrum Access Etiquette in Cognitive Radio Network}{section.1.1}% 5
 \BOOKMARK [2][-]{subsection.1.1.2}{1.1.2 Spectrum Decision}{section.1.1}% 6
@@ -52,7 +52,7 @@
 \BOOKMARK [1][-]{section.3.9}{3.9 Conclusion}{chapter.3}% 52
 \BOOKMARK [0][]{.1.A}{ A Proof of Theorem 3.6.1}{}% 53
 \BOOKMARK [0][]{.1.B}{ B Deviation of Problem 3.7}{}% 54
-\BOOKMARK [0][]{chapter.4}{4 Robust Clustering of Ad-hoc Cognitive Radio Networks}{}% 55
+\BOOKMARK [0][]{chapter.4}{4 ROBUST CLUSTERING OF AD-HOC COGNITIVE RADIO NETWORK}{}% 55
 \BOOKMARK [1][-]{section.4.1}{4.1 Introduction}{chapter.4}% 56
 \BOOKMARK [1][-]{section.4.2}{4.2 Related Work}{chapter.4}% 57
 \BOOKMARK [1][-]{section.4.3}{4.3 System Model}{chapter.4}% 58
@@ -103,6 +103,6 @@
 \BOOKMARK [3][-]{subsubsection.5.7.3.2}{5.7.3.2 Longest Blocking time Based Virtual Coordinate}{subsection.5.7.3}% 103
 \BOOKMARK [1][-]{section.5.8}{5.8 CONCLUSION}{chapter.5}% 104
 \BOOKMARK [0][]{chapter.6}{6 Conclusion}{}% 105
-\BOOKMARK [0][]{section*.11}{Bibliography}{}% 106
-\BOOKMARK [0][]{section*.11}{List of Figures}{}% 107
-\BOOKMARK [0][]{section*.11}{List of Tables}{}% 108
+\BOOKMARK [0][]{section*.12}{Bibliography}{}% 106
+\BOOKMARK [0][]{section*.12}{List of Figures}{}% 107
+\BOOKMARK [0][]{section*.12}{List of Tables}{}% 108
