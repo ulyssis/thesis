@@ -192,11 +192,13 @@ $P$ & set of non-overlapping channels in the scenario\\
 $Nb_i$ & node $i$' neighborhood     \\
 $C$ & a cluster \\
 $V_i$   & set of available channels on CR node $i$  \\
-$V_C$   & set of available channels for cluster $C$  \\
-$\phi_i$ & the number of available channels for cluster $i$\\
-		& note it is different than $|V_i|$\\
+$V_C$   & set of available common channels of cluster $C$  \\
+$V_{C_i}$   & set of available common channels of cluster $C$ whose cluster head is $i$\\
+%$\phi_i$ & the number of available channels for cluster $i$\\ 
+%		& note it is different than $|V_i|$\\
 %$p_i$   & number of available channels on CR node $i$  \\
 $C_i$ & a cluster whose cluster head is $i$ \\
+& there is an exception: in Section~\ref{centralized_scheme}, $C_i$ is $i$th cluster among the legitimate clusters.\\
 $H_C$ & cluster head of a cluster $C$\\
 $\delta$ & desired cluster size\\
 %$C_i$ & a cluster with CR node $i$ as cluster head \\
@@ -661,9 +663,9 @@ In the following, we refer this problem as \textit{centralized clustering} for s
 \textit{Centralized clustering in CRN.}
 
 Given a cognitive radio network $\mathcal{N}$ where nodes are indexed from 1 to $N$ sequentially.
-Based on certain correlation, some CR nodes constitute one cluster $C$.
-$1\leq |C| \leqslant k$ where $k$ is positive integer.
-We name the collection of such clusters as $\mathcal{S}=\{C_1, C_2,\ldots,C_l\}$ (the subscript $i$ is the unique index of cluster in $\mathcal{S}$, not the ID of cluster head of relevant cluster), $\mathcal{S}$ has following properties: $\bigcup_{1\leq i \leq l} C_i = N$ and $V_{C_i}\neq \emptyset$ for any $i$ which satisfies $1\leq i \leq l$.
+Based on certain correlation, certain secondary users constitute one cluster $C$.
+$1\leq |C| \leqslant k$ where $|C|$ is size of cluster $C$ and $k$ is positive integer.
+We name the collection of such clusters as $\mathcal{S}=\{C_1, C_2,\ldots,C_{|\mathcal{S}|}\}$ (the subscript $i$ is the unique index of cluster in $\mathcal{S}$, not the ID of cluster head of relevant cluster), $\mathcal{S}$ has following properties: $\bigcup_{1\leq i \leq l} C_i = N$ and $V_{C_i}\neq \emptyset$ for any $i$ which satisfies $1\leq i \leq l$.
 
 Following condition distinguish the centralized clustering problem discussed in this thesis.
 The number of common channels is denoted as $f$ which is $|V_{C}|$ if $|V_{C}|>1$, and $f=0$ if $|V_{C}|=1$.
@@ -803,14 +805,14 @@ In other words, Each non-zero element $q_{ij}$ denotes the number of common chan
 \begin{figure}[ht!]
 \centering
 Q = \bordermatrix{~ 		& 1 	& 2 	& 3 	& \cdots & j & \cdots	& n-1 	& n	\cr
-                  C_1 	& k_{C_1} 	& k_{C_1} 	& 0 	& \cdots & \cdots &\cdots	& 0 	& 0	\cr
-                  C_2 	& k_{C_2} 	& 0 	& k_{C_2} 	& \cdots & \cdots & \cdots 	& 0 	& 0	\cr
+                  1 	& k_{1} 	& k_{1} 	& 0 	& \cdots & \cdots &\cdots	& 0 	& 0	\cr
+                  2 	& k_{2} 	& 0 	& k_{2} 	& \cdots & \cdots & \cdots 	& 0 	& 0	\cr
 				\vdots  	&\vdots & 	 	& 		&  \vdots		& 		& \vdots \cr
-				C_i 	& 0 	& k_{C_i} 	& 0 	& \cdots  & \cdots & \cdots 	& k_{C_i} 	& 0	\cr
+				i 	& 0 	& k_{i} 	& 0 	& \cdots  & \cdots & \cdots 	& k_{i} 	& 0	\cr
 				\vdots  	&\vdots & 	 	& 		&  \vdots & \cdots & \cdots 		& 		& \vdots \cr
-				\vdots 	& \vdots  	& 0 	& 0 	& \cdots & \cdots & \cdots 	& k_{C_{i'}} 	& 0	\cr
-				C_{g}  	& k_{C_{g}} & 	 	& 		&  \vdots	& \cdots & \cdots& 	& 		& \vdots \cr}	
-\caption{Matrix Q}
+				\vdots 	& \vdots  	& 0 	& 0 	& \cdots & \cdots & \cdots 	& k_{i'} 	& 0	\cr
+				g  	& k_{g} & 	 	& 		&  \vdots	& \cdots & \cdots& 	& 		& \vdots \cr}	
+\caption{Matrix Q, }
 \label{xx}
 \end{figure}
 
