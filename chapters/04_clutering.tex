@@ -1,7 +1,7 @@
 \chapter{ROBUST CLUSTERING OF AD-HOC COGNITIVE RADIO NETWORK}
 \section{Introduction}
 \label{intro}
-%[CRN] 
+%[CRN]
 Cognitive radio (CR) is a promising technology to solve the spectrum scarcity problem~\cite{Mitola}. 
 In CR systems, primary users access their allocated spectrum band whenever there is information to be transmitted. 
 In contrast, CR users (forming cognitive radio networks, abbreviated as CRN) can only access primary channels after validating the channel is idle. 
@@ -19,7 +19,7 @@ As a result, CR nodes which locate closely with each other are possibly affected
 The similarity of available spectrum on a group of neighbouring CR nodes, along with the benefit of collaborative decision among multiple nodes, leads to clustering as a effective approach for many applications.
 
 %[clustering in crn] 
-For instance, clustering is regarded as an effective method used in cooperative spectrum sensing~\cite{Sun07_clustering_spectrum_secsing, Zhao07}.
+Clustering is regarded as an effective method used in cooperative spectrum sensing~\cite{Sun07_clustering_spectrum_secsing, Zhao07}.
 Collaborative sensing relays on the consensus of CR users within certain area, and decreases considerably the false sensing reports caused by fading and shadowing of reporting channel.
 %As a result, more accurate sensing result can be obtained by collaborative sensing, and the improvement on spectrum sensing decreases the interference originating from CR users to primary users, which is highly desirable.
 %Also,  prevents CR users from using channels that are occupied by primary users. 
@@ -43,14 +43,16 @@ As a result, how to form the clusters takes an important role on the robustness 
 
 %Furthermore, the clustering algorithm also determines the connectivity between several clusters which ultimately determines the robustness of the entire network on the respect of connectivity. 
 
-To solely pursue connectivity robustness against the primary users' activity, \ie to maintain more common channels within clusters, the best clustering strategy is ironically that each node constitutes one single node clusters.
+To solely pursue connectivity robustness against the primary users' activity, \ie to achieve more common channels within clusters, which is adopted by [xxxxxSOCxxxxxx], the ultimately best clustering strategy is ironically that each node constitutes one single node clusters.
 %In that case, the common channels within cluster are the available channels available at that node's place.
 Apparently this contradicts our motivation of proposing cluster in cognitive radio network.
-Besides, cluster size is one decisive factor in power preservation~\cite{clustering_globecom11, EnergyEfficientClusteringRouting_2015}.
-Hence, expected cluster size should be required for the formed clusters.
-In this thesis, our goal is to propose a clustering approach which produces clusters with more common channels, and meanwhile they satisfy the requirement on cluster size.
+This contradiction indicates that, the robustness discussed in terms of number of common channels carries little meaning when the sizes of formed clusters are not given consideration.
+Besides, cluster size plays import roles in certain aspects.
+For instance, cluster size is one decisive factor in power preservation~\cite{clustering_globecom11, EnergyEfficientClusteringRouting_2015}, and it is also influence the accuracy of cooperative spectrum sensing [xxxxxx].
+Hence, cluster size should be given consideration when discussing cluster robustness against primary users.
 
-In this chapter, we propose ROSS, a distributed clustering algorithm which integrates most CR nodes into clusters and produces robust clusters against primary users' activity, besides, cluster size control is also given consideration.
+In this chapter, a decentralized clustering approach ROSS is proposed.
+ROSS is able to form clusters whose sizes are not far away from the desired size, and the generated clusters are more robust than other robust clustering scheme, \ie more secondary users residing in clusters against increasing affection from primary users.
 Compared to previous work, ROSS involves much less control messages, and the generated clusters are significantly more robust.
 In ROSS, cluster head is selected through coordination within its neighborhood, and then cluster membership is decided locally and its convergence is proved under game theoretic framework. 
 %building more homogeneous clusters with respect to their size and forcing nodes with a high connectivity degree to the border of a cluster (making the cluster therefore more robust regarding connectivity loss to its neighbor).
@@ -257,7 +259,7 @@ We use two metrics for each CR node to characterize the robustness of channel av
 
 The algorithm of phase I can be sketched like this: cluster heads are determined first, then clusters are formed second.
 
-\subsubsection{Determining Cluster Heads}
+\subsubsection*{Determining Cluster Heads}
 In this phase, each CR node decides whether it is cluster head by comparing relevant metrics with its neighbours.
 This judgement is conducted periodically, and phase I ends after every node is certain that it is cluster head or not.
 Briefly states, the CR node which has the smallest \textit{Individual Connection Degree} in its neighbourhood cluster head, \ie, CR node $i$ is cluster head, if $D_i<D_k, \forall k\in Nb_i\setminus CHs$ ($CHs$ donate the cluster heads existing in $Nb_i$).
@@ -322,7 +324,7 @@ The pseudo code of cluster head determination algorithm in Phase I is in Algorit
 \end{algorithm}
 
 
-\subsubsection{Initial Cluster Formation}
+\subsubsection*{Initial Cluster Formation}
 After deciding itself being cluster head, CR node broadcasts to notify its neighbours, meanwhile, $i$'s initial cluster is formed immediately, which is $i$'s neighborhood except for those nodes which have become cluster heads, \ie $C_i=(Nb_i\setminus CHs)\cup i$.
 It is possible that the formed cluster has no common channel for its members, this can be handled in the following way. 
 As smaller cluster size increases the number of common channels within the cluster, certain nodes are  eliminated until there is at least one common channel.
@@ -356,7 +358,7 @@ To see this, assume there are some nodes not assigned to any cluster and node $\
 
 
 
-\subsubsection{Cluster Size Control in Dense CRN}
+\subsubsection*{Cluster Size Control in Dense CRN}
 \label{cluster_pruning}
 Assume CR nodes are evenly distributed and cluster head locates in the middle of each cluster, the initial cluster formed is the neighborhood of cluster head, which is decided by the transmission range and network density.
 In extreme situation of dense network, when one cluster is formed, based on the rule for cluster head selection, the nearest another cluster head generated could at most locate just outside the neighborhood or equally speaking, just slightly away from the previous cluster head's transmission range.
@@ -441,7 +443,7 @@ Figure~\ref{fig2} shows the clusters formed in the example in Figure~\ref{fig1} 
 
 
 \subsection{Phase II - Membership Clarification}
-\subsubsection{Problem Description}
+\subsubsection*{Problem Description}
 Notice in Figure~\ref{fig2}, there are several nodes, like $A, B, D$, are included by more than one cluster. 
 We refer to these nodes as \textit{debatable nodes} as their cluster affiliations are not clear, and the clusters which include debatable node $i$ are named as \textit{claiming clusters} and represented as $S_i$. 
 
@@ -472,7 +474,7 @@ Debatable nodes need to be uniquely associated to one cluster and removed from t
 %An debatable node belongs to multiple clusters, and in the same time, it is possible that several debatable CR nodes locate within one same cluster. %Each debatable node tries to increase the sum of ICC of the clusters which it belong to. More specifically, 
 %For a debatable node $i\in S_i$ after phase I, as to clarify its membership, it will choose one cluster $C\in S_i$ to stay and withdraw from the other clusters in $S_i$ with the consideration of increasing ICCs within $S_i$ by the largest margin. 
 
-\subsubsection{Distributed Greedy Algorithm (DGA)}
+\subsubsection*{Distributed Greedy Algorithm (DGA)}
 %Debatable node $i$ is aware of all its claiming clusters in $S_i$. 
 After Phase I, each debatable node is member of at least one cluster, thus a debatable node $i$ needs to decide which cluster $C\in S_i$ to stay, and leaves the others.
 The principle for debatable node $i$' to choose one claiming cluster to stay is to result in the greatest increase of common channels in all its claiming clusters.
@@ -524,7 +526,7 @@ Thus, a question arises that whether the process converges if ROSS-DGA is implem
 %, and if it converges, how good such a distributed scheme performs. 
 In the following we show that the process of membership clarification can be converted to a congestion game, where a stable state is reached by the greedy procedure after a finite number of updates.
 
-\subsubsection{Convergence of DGA}
+\subsubsection*{Convergence of DGA}
 To formulate the problem of membership clarification for the debatable nodes in the context of a game, we look at the problem from a different perspective. 
 In the new perspective, the debatable nodes are regarded as isolated and don't belong to any cluster, which means the clusters they used to belong to become their neighbouring clusters. 
 Then as to each debatable node, the previous problem to decide which clusters to leave becomes a new problem that which cluster to join.
@@ -602,7 +604,7 @@ Based on above model and analysis, phase II converges is Algorithm~\ref{alg4} is
 %Although the game version of DGA can achieve \textit{Nash Equilibrium}, the whole scheme can possibly obtain sub-optimal result.    %, furthermore,this stable state is a local minimum of the global decrement function.
 \todo[inline]{The number of steps, or the upper bound of steps in convergence needs a formal proof}
 
-\subsubsection{Distributed Fast Algorithm (DFA)}
+\subsubsection*{Distributed Fast Algorithm (DFA)}
 The complexity of DGA is quite large recalling that the formation of clusters takes at most $|I|$. Here we propose a faster algorithm DFA which is especially suitable for CRN where channel availability might change dynamically and re-clustering is possible. %Note that the algorithm is based on the problem description of phase II. 
 In DFA, each debatable node executes only one iteration of Algorithm~\ref{alg4} (by setting 'the current value' in Line 14 to zero). Every cluster includes all its debatable nodes, thus the membership is static and debatable nodes can make decisions simultaneously without considering the change of membership of its claiming clusters. For example, for node $A$ in Figure \ref{fig2}, the membership of cluster $C_C, C_H\in S_A$ are $\{A,B,C,D\}$ and $\{A,B,H,G\}$ respectively. 
 
@@ -955,7 +957,7 @@ Performance results are averaged over 50 randomly generated topologies with equa
 The desired cluster size is 3.
 The confidence interval shown in figure corresponds to 95\% confidence level.
 
-\subsubsection{Number of Common Channels}
+\subsubsection*{Number of Common Channels}
 \label{ccc_20}
 We first have a look at the average number of common channels per cluster, which is used in~\cite{LIU_TMC11_2} as the sole criterion for clustering robustness.
 Figure~\ref{ccc_per_nonsingleton} shows the average number of common channel of non-singleton clusters, as the singleton clusters (in other words unclustered nodes) don't execute any functionalities of clusters, which are described in Section~\ref{intro}.
@@ -973,7 +975,7 @@ We also notice that, the size control feature doesn't affect the number of CCC f
   \label{ccc_per_nonsingleton}
 \end{figure}
 
-\subsubsection{Survival Rate of Clusters with Increasing PR Users}
+\subsubsection*{Survival Rate of Clusters with Increasing PR Users}
 We investigate the robustness of the formed clusters when they co-exist with varying intensity of PRs' activities.
 After the clusters are formed under the influence of the initial 10 PRs, extra 100 PRs are sequentially added into the network.
 The transmission range and channel occupancy of the new PR is the same with the previous ones, \ie transmission range is $A/3$, and one channel out of 10 is randomly chosen to operate.
@@ -1019,7 +1021,7 @@ Meanwhile, sizes of more clusters become smaller also contributes more robustnes
 %\end{figure}
 
 
-\subsubsection{Cluster Size Control}
+\subsubsection*{Cluster Size Control}
 \label{cluster_size}
 \begin{figure}[ht!]
   \centering
@@ -1038,7 +1040,7 @@ Figure~\ref{size_control} shows distributed clustering schemes are not able to c
 Particularly, size control enable both ROSS-DGA and ROSS-DFA to achieve clusters whose sizes demonstrate certain homogeneity, \ie cluster sizes vary from 1 to 4.
 But there are considerable number of single node clusters, which is due to the cluster pruning discussed in section~\ref{cluster_pruning}.
 
-\subsubsection{Control Signalling Overhead}
+\subsubsection*{Control Signalling Overhead}
 %Different from the clustering schemes proposed in ~\cite{LIU_TMC11_2, clustering_globecom11}, 
 As to any variants of ROSS, there are two phases, in the first phase, clusters are formed, in the second phase, cluster membership is decided so that each node only resides in one cluster.
 Control message exchanges between CR nodes are involved in both phases.
@@ -1093,7 +1095,7 @@ The transmission range for CR is $A/10$ whereas $A/5$ for PR.
 The number of PR is 30, we investigate the CRN where number of CR is 100, 200 and 300, and the average number of neighbours of each CR is 9.5, 20, and 31.
 
 
-\subsubsection{Number of CCC per Non-singleton Clusters}
+\subsubsection*{Number of CCC per Non-singleton Clusters}
 
 \begin{figure}[ht!]
   \centering
@@ -1109,7 +1111,7 @@ When the network becomes more dense, ROSS-DGA achieves even more CCC than SOC, a
 
 
 
-\subsubsection{Survival Rate of Clusters with Increasing PR Users}
+\subsubsection*{Survival Rate of Clusters with Increasing PR Users}
 With the increase of PRs in the network, clusters become broken as no CCC available within the clusters.
 In this part of simulation, we add 290 more PRs randomly in CRN with interval of 10 to evaluate the robustness of clusters.
 Figure~\ref{singleton_clusters_100} shows the increasing tread of the number of singleton clusters with the increase of PRs.
@@ -1139,7 +1141,7 @@ From the Figure~\ref{singleton_clusters_100} and \ref{singleton_clusters_300}, w
 When the network is more dense, the improvement on cluster sizes and robustness by the greedy search is more obvious.
 
 
-\subsubsection{Cluster Size Control}
+\subsubsection*{Cluster Size Control}
 
 The number of formed clusters is shown as Fig.~\ref{nClusters_largeNetwork}.
 
