@@ -27,7 +27,7 @@
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Node A stays in cluster $C_C$, quits $C_H$, $\Delta \delimiter "026A30C K_{C_C}\delimiter "026A30C +\Delta \delimiter "026A30C K_{C_H}\delimiter "026A30C =2$}}}{58}{figure.4.7}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Node A stays in cluster $C_H$, quits $C_C$, $\Delta \delimiter "026A30C K_{C_C}\delimiter "026A30C +\Delta \delimiter "026A30C K_{C_H}\delimiter "026A30C =1$}}}{58}{figure.4.7}
 \contentsline {figure}{\numberline {4.8}{\ignorespaces Final formation of clusters, common channels for each cluster is shown.\relax }}{58}{figure.4.8}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Matrix Q\relax }}{61}{figure.4.9}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Matrix Q, \relax }}{61}{figure.4.9}
 \contentsline {figure}{\numberline {4.10}{\ignorespaces Final clustering of the example CRN\relax }}{62}{figure.4.10}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {SOC}}}{62}{figure.4.10}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Linear programming}}}{62}{figure.4.10}
