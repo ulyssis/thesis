@@ -106,42 +106,52 @@ Besides, this scheme leads to a high variance on the size of clusters, which is 
 
 \section{System Model}
 \label{sec:model}
-Let us consider an area in which a certain licensed spectrum band is shared by primary and CR users.
+Let us consider a two dimensional area where primary and secondary users coexist together.
+\subsection*{Spectrum sensing and etiquette}
+
+The set of primary users and secondary users are presented with $\mathcal{P}$ and $\mathcal{N}$ separately, and there are $|\mathcal{P}| = P$ and $|\mathcal{N}| = N$.
+The collection of non-overlapping licensed frequency bands is denoted as $\mathcal{F}$, $|\mathcal{F}| =F$.
 One control channel\footnote{for example, ISM band or other reserved channels which are exclusively used for transmitting control messages} is available for the CR nodes to exchange control messages in the process of cluster formation.
-The licensed spectrum is divided into $|P|$ non-overlapping spectrum bands (we call them channels).
-When licensed channels are available to use between two CR nodes in the same time, payload communication can be conducted on one or multiple licensed channels.
-There are $|J|$ primary users in the area and $|I|$ CR users. 
-While primary users are assumed to be fixed, CR users can be mobile.
-Spectrum sharing is implemented by the opportunistic access paradigm.
-Hence, primary users access their allocated channels whenever they need without any explicit notification to CR users. 
 We assume that primary users have a relatively low variation in activity (periods of activity and inactivity in the range of seconds or minutes).
-In contrast, CR users are only allowed to access channels after validating these to be unoccupied by primary users.
-Validation refers to the process of ensuring that no primary transmission is actually taking place on the respective channel.
-This is achieved by spectrum sensing by which the CR users validate channels with a certain probability of detection as well as with a certain periodicity, i.e., every $T_{\mathrm{sense}}$ time the currently used channels need to be validated again.
-Denote the spectrum sensing result of each CR user $i$ by $V_i=\lbrace v_1,v_2\ldots,v_{p_i}\rbrace$ with $p_i=\vert V_i \vert \leq P$ indicating the total number of available channels for CR user $i$. 
-If active, primary and CR users both have a certain transmission range.
-Any user outside this transmission range can not receive data from the transmitter (i.e., any CR user outside this range can not detect the primary user that transmits). 
-Therefore, different CR users have different views on the occupancy of the spectrum (apart from the fact that there might be false negatives in the sensing process), i.e., $V_i \neq V_j$, for $i \neq j$. 
-%Also, not all CR users can communicate directly with each other.
-In the following, we do not consider the primary users further and focus on the operation of cognitive radio network (CRN).
-All $|I|$ CR users form an Ad-hoc network in which data is to be transmitted potentially from any node to any other node.
-Communication on licensed channels is possible only when nodes $i, j$ is both located in each other's transmission range and both share a validated licensed channel.
- 
-Due to the assumed $0/1$ nature of connectivity and primary user interference, the CRN working solely with licensed channels can be represented by a connectivity graph $\mathcal{G}(I,\mathcal{E})$, where $\mathcal{E}=\lbrace(i,j,v) \vert i, j \in I \wedge v\in V_i \wedge v\in V_j \rbrace$ is wireless link between any CR node $i$ and its neighbour $j$ with licensed channel $v$.
+Independent on specific channel, the primary and secondary users have fixed transmission ranges respectively\footnote{This assumption is made to simplify the discussion, and doesn't affect the effectiveness of the proposed scheme}.
+As to two secondary users, if the distance in between them is smaller than secondary users' transmission range, we assume the pair is able to communicate on both control channel and licensed channel, and the both are considered to be neighbours of each other.
+%If one secondary user locate within a certain primary user's transmission, we regard this secondary user to be able to 
+
+Primary users access the allocated channels in $\mathcal{F}$ according to its need without sending any explicit notification to secondary users.
+Secondary users conduct spectrum sensing independently, by which the secondary users validate the channels to be available with a certain probability of detection as well as with a certain periodicity, i.e., every $T_{\mathrm{sense}}$ time the currently used channels need to be validated again.
+The available channels sensed on secondary user $i$ is denoted by $V_i$ and $\vert V_i \vert \leq F$. % indicating the total number of available channels for CR user $i$.
+%Each secondary user notifies its neighbours of the sensing result about the available channels.
+
+Any user outside the transmission range of the transmitter can not receive data from it (i.e., any CR user outside primary users' transmission ranges can not ). 
+As the transmission range of primary users is limited and secondary users are at different locations, secondary users have different views on the occupancy of the spectrum (apart from the fact that there might be false negatives in the sensing process), i.e., $V_i \neq V_j$, for $i \neq j$.
+Over the control channel, secondary users exchange their spectrum sensing results $V_{i}$ with one hop neighbours. 
+
+\subsection*{Cognitive radio network}
+
+%Neighbourhood establishment and maintenance with control channel and according to a neighborhood discovery protocol which is out of scope of our work.
+When licensed channels are available on two neighbouring secondary nodes in the same time, payload communication can be conducted on one or multiple licensed channels.
+%While primary users are assumed to be fixed, secondary users can be mobile.
+%Validation refers to the process of ensuring that no primary transmission is actually taking place on the respective channel.
+In the following, we focus on the operation of cognitive radio network (CRN) which is constituted by all the secondary users in $\mathcal{N}$.
+%All $N$ secondary users constitute an ad-hoc network in which data can be transmitted from one certain node to any other node should available c.hannels are available on the source node, destination node and other intermediate nodes.
+%Communication on licensed channels is possible only when nodes $i, j$ are both located in each other's transmission range and both share a validated licensed channel.
+
+Due to the assumed $0/1$ nature of connectivity, the CRN working solely with licensed channels can be represented by a connectivity graph $\mathcal{G}(I,\mathcal{E})$, where $\mathcal{E}=\lbrace(i,j,v) \vert i, j \in \mathcal{N} \wedge v\in V_i \wedge v\in V_j \rbrace$ is wireless link between any secondary node $i$ and its neighbour $j$ with licensed channel $v$.
 Due to relatively low primary user dynamics, time index is omitted here.
 
 
 %In order to perform clustering, CR users first need to establish their neighborhood.
-For CR node $i$ in CRN, its neighborhood $Nb_i$ consists of all the CR nodes locating within its transmission range (links are assumed to be reciprocal) and have at least one common channel with node $i$ each, i.e. $ j\in Nb_i \Rightarrow V_i\cap V_j\neq \emptyset$.
-CR nodes exchange their spectrum sensing results $V_{i}$ over the control channel, and neighborhood establishment and maintenance are done with the control channel and according to a neighborhood discovery protocol which is out of scope of our work.
+For secondary node $i$ in CRN, its neighborhood $Nb_i$ consists of all the secondary users locating within its transmission range (links are assumed to be reciprocal). 
+% and have at least one common channel with node $i$ each, i.e. $ j\in Nb_i \Rightarrow V_i\cap V_j\neq \emptyset$.
 %The clustering phase is initialized during which any control message is again conveyed by the control channel.
-In the rest of the paper, the word \textit{channel} only refers to the licensed spectrum.
+In the rest of this chapter, \textit{channel} only refers to the licensed spectrum except when control channel is particularly mentioned.
 
+\subsection*{Clustering}
 A cluster $C$ is composed with cluster head and cluster members, which satisfies the following conditions:
 
 \begin{itemize}
-\item Cluster head $H_C$ is able to communicate with any cluster member directly, \ie for any cluster member $i\in C$, there is $i\in Nb_{H_C}$
-\item There exist as least one common channel channel for the cluster, \ie $\cap_{i\in C} V_i \neq \emptyset$
+\item Cluster head $H_C$ is able to communicate with any cluster member directly, \ie for any cluster member $i\in C$, there is $i\in Nb_{H_C}$.
+\item There exist as least one common channel channel for the cluster, \ie $\cap_{i\in C} V_i \neq \emptyset$.
 \end{itemize}
 %A cluster has four items: A cluster head, cluster members, common channels of the members with the head and the one channel currently used for payload data transmission.
 Cluster head coordinates the activities of cluster members, \ie notifies all the members to evade a channel when the channel is sensed by one cluster member to be occupied by primary users, or notify the members to use a different channel for payload communication. 
@@ -186,9 +196,9 @@ As the CR users are potentially mobile, clustering is performed with some period
 %\cmidrule(r){1-2}
 Symbol & Description \\
 \midrule
-$N$, $J$ & set of CR and primary nodes in the scenario\\
+$\mathcal{P}$, $\mathcal{N}$  & complete collection of primary and secondary users\\
 %$J$ & set of primary uesrs in the scenario\\
-$P$ & set of non-overlapping channels in the scenario\\
+$\mathcal{F}$ & set of non-overlapping channels in the scenario\\
 $Nb_i$ & node $i$' neighborhood     \\
 $C$ & a cluster \\
 $V_i$   & set of available channels on CR node $i$  \\
@@ -766,8 +776,6 @@ As to $|s_i|=1$, the mapped cluster has two nodes, with one of them is the dummy
 Then number of common channels is on longer 0 but equals to the weight of corresponding set $s_i$.
 %Meanwhile, the number of common channels of all the other single node cluster is 0.
 Then the sum number of common channels of the clusters in CRN is $\delta < \lambda$, thus, there is no clustering solution for the mapped CRN.
-
-
 
 After proving weighted k-set packing can be reduced to centralized clustering in CRN, we can say the latter problem is NP-hard.
 \end{proof}
