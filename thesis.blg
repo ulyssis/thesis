@@ -270,45 +270,45 @@ Warning--empty year in Routing-crn-INFOCOM11
 Too many commas in name 1 of "Paramvir Bahl, Ranveer Chandra, Thomas Moscibroda, Rohan Murty and Matt Welsh" for entry whitefi09
 while executing---line 1479 of file styles/acmurl.bst
 Warning--empty year in spectrumDecision_2013mass
-You've used 115 entries,
+You've used 118 entries,
             2950 wiz_defined-function locations,
-            1399 strings with 30700 characters,
-and the built_in function-call counts, 49546 in all, are:
-= -- 4964
-> -- 1741
+            1417 strings with 31442 characters,
+and the built_in function-call counts, 50985 in all, are:
+= -- 5111
+> -- 1812
 < -- 0
-+ -- 742
-- -- 608
-* -- 3081
-:= -- 6995
-add.period$ -- 357
-call.type$ -- 115
-change.case$ -- 647
++ -- 771
+- -- 634
+* -- 3195
+:= -- 7213
+add.period$ -- 368
+call.type$ -- 118
+change.case$ -- 669
 chr.to.int$ -- 0
-cite$ -- 133
-duplicate$ -- 1755
-empty$ -- 4775
-format.name$ -- 608
-if$ -- 12333
+cite$ -- 136
+duplicate$ -- 1793
+empty$ -- 4897
+format.name$ -- 634
+if$ -- 12673
 int.to.chr$ -- 0
-int.to.str$ -- 115
-missing$ -- 106
-newline$ -- 590
-num.names$ -- 212
-pop$ -- 1317
+int.to.str$ -- 118
+missing$ -- 109
+newline$ -- 607
+num.names$ -- 218
+pop$ -- 1346
 preamble$ -- 1
-purify$ -- 534
+purify$ -- 553
 quote$ -- 0
-skip$ -- 2872
+skip$ -- 2944
 stack$ -- 0
-substring$ -- 2387
-swap$ -- 487
+substring$ -- 2442
+swap$ -- 493
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 450
+type$ -- 462
 warning$ -- 18
-while$ -- 328
-width$ -- 118
-write$ -- 1157
+while$ -- 337
+width$ -- 121
+write$ -- 1192
 (There were 52 error messages)

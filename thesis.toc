@@ -51,13 +51,13 @@
 \contentsline {section}{\numberline {3.9}Conclusion}{37}{section.3.9}
 \contentsline {chapter}{ \numberline {A}Proof of Theorem \ref {noconvergence}}{39}{.1.A}
 \contentsline {chapter}{ \numberline {B}Deviation of Problem \ref {QLP}}{41}{.1.B}
-\contentsline {chapter}{\numberline {4}ROBUST CLUSTERING OF AD-HOC COGNITIVE RADIO NETWORK}{43}{chapter.4}
+\contentsline {chapter}{\numberline {4}ROBUST CLUSTERING of AD HOC COGNITIVE RADIO NETWORK}{43}{chapter.4}
 \contentsline {section}{\numberline {4.1}Introduction}{43}{section.4.1}
 \contentsline {section}{\numberline {4.2}Related Work}{45}{section.4.2}
 \contentsline {section}{\numberline {4.3}System Model}{46}{section.4.3}
-\contentsline {section}{\numberline {4.4}Distributed Coordination Framework: Clustering Algorithm}{48}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Phase I - Cluster Formation}{48}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Phase II - Membership Clarification}{54}{subsection.4.4.2}
+\contentsline {section}{\numberline {4.4}Distributed Coordination Framework: Clustering Algorithm}{47}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Phase I - Cluster Formation}{47}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Phase II - Membership Clarification}{53}{subsection.4.4.2}
 \contentsline {section}{\numberline {4.5}Centralized Clustering Scheme}{59}{section.4.5}
 \contentsline {subsection}{\numberline {4.5.1}The Optimization Problem}{61}{subsection.4.5.1}
 \contentsline {section}{\numberline {4.6}Performance Evaluation}{63}{section.4.6}
@@ -89,6 +89,6 @@
 \contentsline {section}{\numberline {5.8}CONCLUSION}{92}{section.5.8}
 \contentsline {chapter}{\numberline {6}Conclusion}{93}{chapter.6}
 \vspace *{\baselineskip }
-\contentsline {chapter}{Bibliography}{95}{section*.29}
-\contentsline {chapter}{List of Figures}{104}{section*.29}
-\contentsline {chapter}{List of Tables}{108}{section*.29}
+\contentsline {chapter}{Bibliography}{95}{section*.28}
+\contentsline {chapter}{List of Figures}{105}{section*.28}
+\contentsline {chapter}{List of Tables}{108}{section*.28}

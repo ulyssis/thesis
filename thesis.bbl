@@ -106,6 +106,12 @@ Wireless coexistence in the tv white space.
 \newblock {\em Phys. Commun. 4}, 1 (Mar. 2011), 40--62.
 \newblock \url{http://dx.doi.org/10.1016/j.phycom.2010.12.003}.
 
+\bibitem{Akyildiz_2011_CooperativeSpectrumSensing}
+{\sc Akyildiz, I.~F., Lo, B.~F., and Balakrishnan, R.}
+\newblock Cooperative spectrum sensing in cognitive radio networks: A survey.
+\newblock {\em Phys. Commun. 4}, 1 (Mar. 2011), 40--62.
+\newblock \url{http://dx.doi.org/10.1016/j.phycom.2010.12.003}.
+
 \bibitem{EnergyEfficientClusteringRouting_2015}
 {\sc Ali~Jorio, Sanaa El~Fkihi, B.~E., and Aboutajdine, D.}
 \newblock An energy-efficient clustering routing algorithm based on geographic
@@ -543,6 +549,14 @@ Wireless coexistence in the tv white space.
 \newblock {\em International Journal of Game Theory 2\/} (1973), 65--67.
 \newblock \url{http://dx.doi.org/10.1007/BF01737559}.
 
+\bibitem{Sahai_FundamentalDesignTradeoffs2006}
+{\sc Sahai, A., Tandra, R., Mishra, S.~M., and Hoven, N.}
+\newblock Fundamental design tradeoffs in cognitive radio systems.
+\newblock In {\em Proceedings of the First International Workshop on Technology
+  and Policy for Accessing Spectrum\/} (New York, NY, USA, 2006), TAPAS '06,
+  ACM.
+\newblock \url{http://doi.acm.org/10.1145/1234388.1234390}.
+
 \bibitem{spectrumDecision_2013mass}
 {\sc Saifan, R., Kamal, A., and Guan, Y.}
 \newblock Spectrum decision for efficient routing in cognitive radio network.
@@ -707,6 +721,13 @@ Wireless coexistence in the tv white space.
   tv white space.
 \newblock In {\em Personal Indoor and Mobile Radio Communications (PIMRC), 2013
   IEEE 24th International Symposium on\/} (Sept 2013), pp.~2743--2747.
+
+\bibitem{channelHopping_Rendezvous_2014}
+{\sc Zhang, Y., Yu, G., Li, Q., Wang, H., Zhu, X., and Wang, B.}
+\newblock Channel-hopping-based communication rendezvous in cognitive radio
+  networks.
+\newblock {\em Networking, IEEE/ACM Transactions on 22}, 3 (June 2014),
+  889--902.
 
 \bibitem{Selforganization_CRN_13}
 {\sc Zhang, Z., Long, K., and Wang, J.}

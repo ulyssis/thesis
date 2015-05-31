@@ -18,8 +18,8 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Connectivity graph and the connectivity vector $\{D_i, G_i\}$ on each node. The available channels sensed by each CR node are: $V_A=\{1,2,3,4,5,6,10\}, V_B=\{1,2,3,5,7\}, V_C=\{1,3,4,10\}, V_D=\{1,2,3,5\}, V_E=\{2,3,5,7\}, V_F=\{2,4,5,6,7\}, V_G=\{1,2,3,4,8\}, V_H=\{1,2,5,8\}$. Dashed lines indicates two end nodes are within transmission range of each other. Each edge is labeled by the number of common channels between the two ends.\relax }}{48}{figure.4.1}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Possible clusters in dense CRN\relax }}{51}{figure.4.2}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Connectivity graph and the connectivity vector $\{D_i, G_i\}$ on each node. The available channels sensed by each CR node are: $V_A=\{1,2,3,4,5,6,10\}, V_B=\{1,2,3,5,7\}, V_C=\{1,3,4,10\}, V_D=\{1,2,3,5\}, V_E=\{2,3,5,7\}, V_F=\{2,4,5,6,7\}, V_G=\{1,2,3,4,8\}, V_H=\{1,2,5,8\}$. Dashed lines indicates two end nodes are within transmission range of each other. Each edge is labelled by the number of common channels between the two ends.\relax }}{48}{figure.4.1}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Clusters formation in extremely dense CRN. Black dots are cluster heads, cluster members are not drawn.\relax }}{52}{figure.4.2}
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Number of clusters formed\relax }}{52}{figure.4.3}
 \contentsline {figure}{\numberline {4.4}{\ignorespaces Clusters formation after the first phase of ROSS. Some nodes remain debatable nodes after the first phase.\relax }}{54}{figure.4.4}
 \contentsline {figure}{\numberline {4.5}{\ignorespaces Clusters formation after the first phase of ROSS. Some nodes remain debatable nodes after the first phase.\relax }}{54}{figure.4.5}
