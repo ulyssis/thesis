@@ -386,21 +386,25 @@ The pseudo code for cluster head to obtain at least one common channel is shown 
 \label{cluster_pruning}
 In the introduction section, we have stated that cluster size should be given consideration to justify the pursuing of robust clusters, here we illustrate the pressing necessity to control cluster size when CRN becomes dense via theoretical analysis and simulation, and provide solution to it.
 
-Assume CR nodes are evenly distributed and cluster head locates in the middle of each cluster, the initial cluster formed is the neighborhood of cluster head, which is influenced by the transmission range and network density.
-In extremely dense CRN, when one cluster is formed by CR node $i$, based on the rule for cluster head selection Algorithm~\ref{alg0}, the nearest cluster head generated could locate just outside the neighborhood or transmission range of $i$, which is as Figure~\ref{clusters_denseNetwork} shows.
-Bigger black dots in the middle of clusters are clusters heads.
-Note that no cluster head resides on the edge, which is due to Algorithm~\ref{alg0}: the node with biggest Individual connection degree becomes cluster head, then nodes on edge are unlikely to become cluster heads as their neighbourhoods are only half the nodes locating away from edge.
-Circles represent the transmission range of cluster head, within which CR nodes are absorbed in cluster.
+Assume CR nodes and primary users are evenly distributed and primary users occupy the licensed channels randomly, \ie both CR nodes density and channel availability in the CRN is homogeneous.
+Based on Algorithm~\ref{alg0}, cluster heads are the CR nodes which poses the biggest individual connection degree in their neighborhood, and they are surrounded by CR nodes.
+In contrast, CR nodes residing on edge are unlikely to become cluster heads as their neighbourhoods are only half the nodes locating away from edge.
+The clusters formed are the neighborhood of cluster heads, which is decided by the transmission range and network density.
+When this CRN becomes extremely dense, assume one cluster is formed by CR node $i$, based on the rule for cluster head selection Algorithm~\ref{alg0}, the nearest cluster head generated could locate just outside the neighborhood or transmission range of $i$, which is as Figure~\ref{clusters_denseNetwork} shows.
+%
+In the figure, black dots represent cluster heads, the circles denotes the transmission ranges of those cluster heads.
+Cluster members are not shown in the figure.
+%Circles represent the transmission range of cluster head, within which CR nodes are absorbed in cluster.
 \begin{figure}[h!]
   \centering
   \includegraphics[width=0.5\linewidth]{clusters_denseNetwork_2.pdf}
   \caption{Clusters formation in extremely dense CRN. Black dots are cluster heads, cluster members are not drawn.}
   \label{clusters_denseNetwork}
 \end{figure}
-Assume all the CRs are evenly distributed in the square plane, $l$ is the length of side of simulation plan square, and $r$ is CR's transmission radius.
+Let $l$ be the length of side of simulation plan square, and $r$ be CR's transmission radius.
 Based on the aforementioned analysis and geometry illustration as Figure~\ref{clusters_denseNetwork}, we give an estimate on the maximum number of generated clusters as $l^2/r^2$.
 
-Now we verify the estimation by simulation.
+Now we show the estimation is valid with simulation.
 We distribute CR users and primary users randomly on a square plan, and set $r=10, l=50$.
 Network density is increased by adding more CR users.
 For each network scale, simulation is run for 50 times.
@@ -419,13 +423,14 @@ The confidence rate is 95\% in the figure.
   \label{number_clusters_scale}
 \end{figure}
 
-In case of dense network, the cluster size is big, which brings heavy burden on cluster head.
-Thus in dense network which limited resources are available on cluster heads, or the inner communication doesn't support big clusters [xxxxx], certain measures are needed to reduce the network size.
+Both the analysis and simulation show that with the increase of network density, the cluster size also increases.
+In case of dense network where cluster size is big, there will be heavy burden on cluster heads to manage their clusters, which is a challenge for resource limited cluster heads, besides [xxxxx].
+As a result, certain measures are needed to prevent the network size to increase with the increasing network density.
 This task falls on cluster head.
-Cluster heads prune their cluster members if sizes are greater than the desired size $\delta$.
-Given desired size as $\delta$, cluster head excludes members sequentially, whose absence leads to the maximum increase on the number of common channels within the cluster.
-This process ends when the size of resultant cluster is at most $\delta+1$ and at least one CCC is available.
-This procedure is similar with that guarantees at least one CCC available in the cluster, and the algorithm is also given in Algorithm~\ref{alg_size_control_available_CCC}.
+To control cluster size, cluster heads prune their cluster members if sizes are greater than the desired size $\delta$.
+Given desired size as $\delta$, cluster head excludes members sequentially, whose absence leads to the maximum increase of common channels within the cluster.
+This process ends when the size of resultant cluster is at most $\delta$ and at least one CCC is available.
+This procedure is similar with guaranteeing CCC available to be available in cluster, thus the algorithm is also given in Algorithm~\ref{alg_size_control_available_CCC}.
 
 
 \begin{algorithm}               % enter the algorithm environment
@@ -456,7 +461,7 @@ calculate $\mu= \Max_{i\in \mathcal{T}_1}(|\cap_{j\in C\setminus i} V_j|-|\cap_{
 }
 \end{algorithm}
 
-Figure~\ref{fig2} shows the clusters formed in the example in Figure~\ref{fig1} when the desired cluster size is 3. 
+%Figure~\ref{fig2} shows the clusters formed in the example in Figure~\ref{fig1} when the desired cluster size is 3. 
 
 %Especially, it forster the connectivity between the clusters. It can do so, as the nodes with larger connectivity degree are not cluster heads but members. 
 %As basin nodes have smaller $d_i$ compared with its cluster members, and many of the cluster members locate between the basin node and neighbor clusters,  %the bigger $d_i$ with bigger robustness of Social Connection, i.e, with bigger $d$ are located around cluster heads, 
@@ -471,20 +476,26 @@ Figure~\ref{fig2} shows the clusters formed in the example in Figure~\ref{fig1} 
 
 
 \subsection{Phase II - Membership Clarification}
-\subsubsection*{Problem Description}
-Notice in Figure~\ref{fig2}, there are several nodes, like $A, B, D$, are included by more than one cluster. 
-We refer to these nodes as \textit{debatable nodes} as their cluster affiliations are not clear, and the clusters which include debatable node $i$ are named as \textit{claiming clusters} and represented as $S_i$. 
+%\subsubsection*{Problem Description}
+After applying ROSS phase I on the example in Figure~\ref{fig1}, we get the clusters shown in Figure~\ref{fig2}.
+We notice there are several nodes, \ie $A, B, D$, are included into more than one cluster. 
+We refer these nodes as \textit{debatable nodes} as their cluster affiliations are not clear, and the clusters which include debatable node $i$ are called \textit{claiming clusters} of node $i$, and are represented as $S_i$.  
+Actually, debatable nodes extensively exist in CRN with larger scale.
+Figure~\ref{percentage_overlapping_node} shows the percentage of debatable nodes increases with the scaling of CRN network.
+
+Debatable nodes should be exclusively associated with one cluster and removed from the other claiming clusters, this procedure is called cluster membership clarification.
+We will introduce the solution for cluster membership clarification in the following.
 
 \begin{figure}[ht!]
   \centering
   \includegraphics[width=0.6\linewidth]{percentage_overlapping_node.pdf}
-  \caption{Clusters formation after the first phase of ROSS. Some nodes remain debatable nodes after the first phase.}\label{fig2}
+  \caption{Clusters formation after the first phase of ROSS. Some nodes remain debatable nodes after the first phase.}\label{percentage_overlapping_node}
 \end{figure}
 
 
-The set of available channels of one cluster are known by the debatable nodes which locate in that cluster. %this is finished 
+
 %In the second phase of ROSS, debatable nodes will chose only one cluster to reside.
-Debatable nodes need to be uniquely associated to one cluster and removed from the other claiming clusters, which is called as cluster membership clarification.
+
 %In particular, the un-affiliation of one debatable nodes from a cluster increasing the set $K_C$ of ICCs of cluster $C$ (at the cost of potentially decreasing $R_C$, the set of OCCs).
 
 %\newtheorem{observation}{Observation}
@@ -504,23 +515,26 @@ Debatable nodes need to be uniquely associated to one cluster and removed from t
 
 \subsubsection*{Distributed Greedy Algorithm (DGA)}
 %Debatable node $i$ is aware of all its claiming clusters in $S_i$. 
-After Phase I, each debatable node is member of at least one cluster, thus a debatable node $i$ needs to decide which cluster $C\in S_i$ to stay, and leaves the others.
-The principle for debatable node $i$' to choose one claiming cluster to stay is to result in the greatest increase of common channels in all its claiming clusters.
-Node $i$ communicates with each claiming cluster head in $S_i$ to obtain the vector of available channels, then calculate the number of increased common channels in that cluster if it leaves that cluster.
-If among these claiming clusters exists one cluster $C$ which gets the least increased common channels than any other claiming clusters, then $i$ chooses to stay in cluster $C$.
-When there are multiple claiming clusters experiencing the same less increased common channels, then $i$ chooses the claiming cluster whose cluster head shares more common channels with $i$.
-IDs of relevant cluster heads will be used to break tie if the previous rule doesn't work.
+After Phase I, debatable nodes, \eg $i$ needs to decide which cluster $C\in S_i$ to stay, and leaves the others.
+The principle for debatable node $i$ to choose one claiming cluster is to result in the greatest increase of common channels in all its claiming clusters.
+%The set of available channels of one cluster are known by the debatable nodes which locate in that cluster. %this is finished 
+Node $i$ communicates with all the cluster heads whose clusters are in $S_i$, and is aware of the vector of common channels of the claiming clusters, then $i$ is able to calculate how many more common channels in one certain claiming cluster if $i$ leaves that cluster.
+Based on this calculation, $i$ decides in which claiming cluster to stay and leaves the other claiming clusters.
+If there exists one cluster $C\in S_i$, by leaving from which the clusters in $S_i$ obtain the minimum increased common channels than leaving any other claiming clusters, then $i$ chooses to stay in cluster $C$.
+When there comes a tie in terms of the increase of common channels among multiple claiming clusters, $i$ chooses to stay in the cluster whose cluster head shares more common channels with $i$.
+In case there are multiple claiming clusters demonstrating the same on the aforementioned metrics, node $i$ chooses to stay in the smallest claiming cluster.
+IDs of cluster heads will be used to break tie if the previous rule doesn't decide on the unique cluster to stay.
 
-Algorithm for debatable node $i$ to decide on which claiming cluster to stay in shown in Algorithm~\ref{alg4}:
+Algorithm for debatable node $i$ to decide which claiming cluster to stay is described as Algorithm~\ref{alg4}.
 
 \begin{algorithm}               % enter the algorithm environment
-\caption{Debatable node $i$ decides its affiliation}          % give the algorithm a caption,  cluster to settle
+\caption{Debatable node $i$ decides its affiliation, chooses one claiming cluster to stay and leaves all the other claiming clusters}          % give the algorithm a caption,  cluster to settle
 \label{alg4}
 \DontPrintSemicolon
 \SetAlgoLined
 \KwIn{all claiming clusters $C\in S_i$}
 \KwOut{one cluster $C$}
-calculate $\lambda = \Max_{C\in S_i}(|K_{C\setminus i}|-|K_C|)$;\\
+calculate $\lambda = \Min_{C\in S_i}(|K_{C\setminus i}|-|K_C|)$;\\
 define set $\mathcal{C}_1$;\\	
 	\For{each $C\in S_i$}{ 
 	\If{$|K_{C\setminus i}|-|K_C| ==\lambda$}{$\mathcal{C}_1\leftarrow C$}\tcc*[r]{metric is the increase of CCCs due to $i$' departing}
@@ -548,11 +562,16 @@ Node $i$ notifies $H_C$ which is cluster head of $C$ of its affiliation decision
 
 \end{algorithm}
 
-Debatable node $i$ can either execute this algorithm periodically or triggered by the change of membership of $C\in S_i$. 
-Notice that, as to debatable node $i\in C$ and cluster $C\in S_i$ could have more than one debatable node except $i$, the choices of those debatable nodes of cluster $C$ change $C$'s membership and potentially further trigger node $i$ to alter its previous decision. 
+To conduct Algorithm~\ref{alg4}, debatable node $i$ needs to know the necessary information about its claiming clusters, \ie $V_C$, $V_{H_C}$, $|C|$,$C\in S_i$, which are respectively the set of available channels in $C$, the set of available channels on $C$' cluster head $H_C$, and $C$' cluster size.
+Node $i$ decides which cluster to stay based on Algorithm~\ref{alg4}, then notifies all its claiming clusters, and retrieves the updated information of the necessary information $V_C$, $V_{H_C}$, $|C|$, where $C\in S_i$.
+
+This procedure raises the concern on infinite chain effect.
+The cluster $C\in S_i$ could have other debatable nodes except for $i$, \ie node $j$, then the choice of $j$ on cluster $C$ to stay possibly changes $C$'s membership, which potentially further triggers node $i$ to alter its previous decision. 
 Thus, a question arises that whether the process converges if ROSS-DGA is implemented.
 %, and if it converges, how good such a distributed scheme performs. 
 In the following we show that the process of membership clarification can be converted to a congestion game, where a stable state is reached by the greedy procedure after a finite number of updates.
+
+it  execute this algorithm periodically or triggered by the change of 
 
 \subsubsection*{Convergence of DGA}
 To formulate the problem of membership clarification for the debatable nodes in the context of a game, we look at the problem from a different perspective. 

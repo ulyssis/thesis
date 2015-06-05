@@ -89,6 +89,6 @@
 \contentsline {section}{\numberline {5.8}CONCLUSION}{92}{section.5.8}
 \contentsline {chapter}{\numberline {6}Conclusion}{93}{chapter.6}
 \vspace *{\baselineskip }
-\contentsline {chapter}{Bibliography}{95}{section*.28}
-\contentsline {chapter}{List of Figures}{105}{section*.28}
-\contentsline {chapter}{List of Tables}{108}{section*.28}
+\contentsline {chapter}{Bibliography}{95}{section*.27}
+\contentsline {chapter}{List of Figures}{105}{section*.27}
+\contentsline {chapter}{List of Tables}{108}{section*.27}
