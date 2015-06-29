@@ -526,6 +526,8 @@ In case there are multiple claiming clusters demonstrating the same on the afore
 IDs of cluster heads will be used to break tie if the previous rule doesn't decide on the unique cluster to stay.
 
 Algorithm for debatable node $i$ to decide which claiming cluster to stay is described as Algorithm~\ref{alg4}.
+To conduct Algorithm~\ref{alg4}, debatable node $i$ needs to know the necessary information about its claiming clusters, \ie $V_C$, $V_{H_C}$, $|C|$,$C\in S_i$, which are respectively the set of available channels in $C$, the set of available channels on $C$' cluster head $H_C$, and $C$' cluster size.
+Node $i$ decides which cluster to stay based on Algorithm~\ref{alg4}, then notifies all its claiming clusters, and retrieves the updated information of the necessary information $V_C$, $V_{H_C}$, $|C|$, where $C\in S_i$.
 
 \begin{algorithm}               % enter the algorithm environment
 \caption{Debatable node $i$ decides its affiliation, chooses one claiming cluster to stay and leaves all the other claiming clusters}          % give the algorithm a caption,  cluster to settle
@@ -562,18 +564,23 @@ Node $i$ notifies $H_C$ which is cluster head of $C$ of its affiliation decision
 
 \end{algorithm}
 
-To conduct Algorithm~\ref{alg4}, debatable node $i$ needs to know the necessary information about its claiming clusters, \ie $V_C$, $V_{H_C}$, $|C|$,$C\in S_i$, which are respectively the set of available channels in $C$, the set of available channels on $C$' cluster head $H_C$, and $C$' cluster size.
-Node $i$ decides which cluster to stay based on Algorithm~\ref{alg4}, then notifies all its claiming clusters, and retrieves the updated information of the necessary information $V_C$, $V_{H_C}$, $|C|$, where $C\in S_i$.
 
-This procedure raises the concern on infinite chain effect.
-The cluster $C\in S_i$ could have other debatable nodes except for $i$, \ie node $j$, then the choice of $j$ on cluster $C$ to stay possibly changes $C$'s membership, which potentially further triggers node $i$ to alter its previous decision. 
-Thus, a question arises that whether the process converges if ROSS-DGA is implemented.
+
+This procedure raises the concern on infinite chain effect that debatable nodes update their choices based on other debatable nodes' choices, and never cease.
+Assume debatable node $i$ locates in one cluster $C\in S_i$, and $C$ could have more than one debatable node except for $i$.
+Let $i$ our of $C$'s debatable nodes to make decision on the cluster to stay first.
+Then the choices of those debatable nodes except for $i$ change $C$'s membership, which possibly further triggers node $i$ to alter its previous decision.
+%To maximize the increase of common channel in clusters in $S_j$, $j$ either stays in $C$, or leaves cluster $C$ and stay another cluster in $S_j$.
+%$j$'s decision changes $C$'s membership, which will affect $i$'s decision.
+%Assume $i$ makes decision before $j$ and chooses to stay in $C$, as which brings the most common channels in $i$' claiming clusters, and then it is $j$' turn to choose cluster.
+%If $j$ leaves $C$, the smaller cluster $C$ will possibly make $i$ to leave it and join another cluster.
+%and the choice of $j$ to stay in $C$ or not possibly changes $C$'s membership and  which potentially further triggers node $i$ to alter its previous decision. 
+Thus, we must answer this question raised when implementing ROSS-DGA.
 %, and if it converges, how good such a distributed scheme performs. 
-In the following we show that the process of membership clarification can be converted to a congestion game, where a stable state is reached by the greedy procedure after a finite number of updates.
+In the following we show that the process of membership clarification can be converted to a congestion game, and a equilibrium state is reached after a finite number of best response updates.
 
-it  execute this algorithm periodically or triggered by the change of 
-
-\subsubsection*{Convergence of DGA}
+\subsubsection*{Bridging ROSS-DGA with Congestion Game}
+In this part, we illustrate that when debatable nodes decide on the exclusive clusters to stay, in particular, the 
 To formulate the problem of membership clarification for the debatable nodes in the context of a game, we look at the problem from a different perspective. 
 In the new perspective, the debatable nodes are regarded as isolated and don't belong to any cluster, which means the clusters they used to belong to become their neighbouring clusters. 
 Then as to each debatable node, the previous problem to decide which clusters to leave becomes a new problem that which cluster to join.
