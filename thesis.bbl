@@ -25,6 +25,11 @@ Tv white space amendment to 802.15.4.
 Wireless coexistence in the tv white space.
 \newblock \url{http://ieee802.org/19/pub/TG1.html}.
 
+\bibitem{FCC_spectrumEfficiency_2002}
+Report of the spectrum efficiency working group.
+\newblock \url{http://www.fcc.gov/sptf/reports.html}, 2002.
+\newblock FCC Spectrum Policy Task Force.
+
 \bibitem{FCCdatabasae}
 {FCC Frees Up Vacant TV Airwaves for ”Super Wi-Fi” Technologies and Other
   Technologies}.
@@ -170,6 +175,11 @@ Wireless coexistence in the tv white space.
 \newblock In {\em Computer Communications and Networks, 2009. ICCCN 2009.
   Proceedings of 18th Internatonal Conference on\/} (Aug 2009), pp.~1--6.
 
+\bibitem{5directions5G_2014}
+{\sc Boccardi, F., Heath, R., Lozano, A., Marzetta, T., and Popovski, P.}
+\newblock Five disruptive technology directions for 5g.
+\newblock {\em Communications Magazine, IEEE 52}, 2 (February 2014), 74--80.
+
 \bibitem{caodv-10wd}
 {\sc Cacciapuoti, A., Calcagno, C., Caleffi, M., and Paura, L.}
 \newblock Caodv: Routing in mobile ad-hoc cognitive radio networks.
@@ -269,6 +279,13 @@ Wireless coexistence in the tv white space.
   ACM, pp.~279--284.
 \newblock \url{http://doi.acm.org/10.1145/2333660.2333724}.
 
+\bibitem{dsa_model_markov_2006}
+{\sc Geirhofer, S., Tong, L., and Sadler, B.}
+\newblock A measurement-based model for dynamic spectrum access in wlan
+  channels.
+\newblock In {\em Military Communications Conference, 2006. MILCOM 2006.
+  IEEE\/} (Oct 2006), pp.~1--7.
+
 \bibitem{cvx}
 {\sc Grant, M., and Boyd, S.}
 \newblock {CVX}: Matlab software for disciplined convex programming, version
@@ -326,6 +343,11 @@ Wireless coexistence in the tv white space.
 \newblock Distributed spectrum-aware clustering in cognitive radio sensor
   networks.
 \newblock In {\em Proc. of GLOBECOM 2011}.
+
+\bibitem{5G_2014}
+{\sc I, C.-L., Rowell, C., Han, S., Xu, Z., Li, G., and Pan, Z.}
+\newblock Toward green and soft: a 5g perspective.
+\newblock {\em Communications Magazine, IEEE 52}, 2 (February 2014), 66--73.
 
 \bibitem{Jaentti11}
 {\sc Jäntti, R., Kerttula, J., Koufos, K., and Ruttik, K.}
@@ -700,6 +722,13 @@ Wireless coexistence in the tv white space.
   radio networks with qos guarantee.
 \newblock In {\em Proc. of IEEE INFOCOM 2009\/} (Apr. 2009).
 
+\bibitem{dsa_traffic_2000}
+{\sc Xu, L., T\"{o}njes, R., Paila, T., Hansmann, W., Frank, M., and Albrecht,
+  M.}
+\newblock Drive-ing to the internet: Dynamic radio for ip services in vehicular
+  environments.
+\newblock 281--289.
+
 \bibitem{SA_CA_TVWS_2012crowncom}
 {\sc Ye, B., Nekovee, M., Pervez, A., and Ghavami, M.}
 \newblock Tv white space channel allocation with simulated annealing as meta
@@ -747,5 +776,10 @@ Wireless coexistence in the tv white space.
 \newblock Spectrum sharing through distributed coordination in dynamic spectrum
   access networks.
 \newblock {\em Wirel. Commun. Mob. Comput. 7}, 9 (2007), 1061--1075.
+
+\bibitem{zhao_survey_DSA_2007}
+{\sc Zhao, Q., and Sadler, B.}
+\newblock A survey of dynamic spectrum access.
+\newblock {\em Signal Processing Magazine, IEEE 24}, 3 (May 2007), 79--89.
 
 \end{thebibliography}
