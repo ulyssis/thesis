@@ -242,12 +242,12 @@ refers to entry "DBLP:conf/icc/2007", which doesn't exist
 Warning--I didn't find a database entry for "DBLP:conf/icc/2007"
 Warning--to sort, need author or key in osi
 Warning--to sort, need author or key in FCC_spectrumEfficiency_2002
-Warning--to sort, need author or key in FCC_03-322
-Too many commas in name 1 of "Paramvir Bahl, Ranveer Chandra, Thomas Moscibroda, Rohan Murty and Matt Welsh" for entry whitefi09
-while executing---line 1437 of file styles/acmurl.bst
 Warning--to sort, need author or key in FCC_2010_sedond_memorandumm
 Warning--to sort, need author or key in ecc159
+Warning--to sort, need author or key in FCC_03-322
 Warning--to sort, need author or key in 802.22
+Too many commas in name 1 of "Paramvir Bahl, Ranveer Chandra, Thomas Moscibroda, Rohan Murty and Matt Welsh" for entry whitefi09
+while executing---line 1437 of file styles/acmurl.bst
 Warning--to sort, need author or key in 802.15.4m
 Warning--to sort, need author or key in 802.19
 Too many commas in name 1 of "Huazi Zhang, Zhaoyang Zhang1, Huaiyu Dai, Rui Yin and Xiaoming Chen" for entry clustering_globecom11
@@ -274,43 +274,43 @@ Warning--empty year in spectrumDecision_2013mass
 Warning--empty journal in dsa_traffic_2000
 You've used 124 entries,
             2950 wiz_defined-function locations,
-            1455 strings with 32665 characters,
-and the built_in function-call counts, 53525 in all, are:
-= -- 5361
-> -- 1933
+            1456 strings with 32678 characters,
+and the built_in function-call counts, 53518 in all, are:
+= -- 5364
+> -- 1928
 < -- 0
-+ -- 823
-- -- 678
-* -- 3376
-:= -- 7595
++ -- 820
+- -- 676
+* -- 3373
+:= -- 7592
 add.period$ -- 386
 call.type$ -- 124
-change.case$ -- 709
+change.case$ -- 708
 chr.to.int$ -- 0
 cite$ -- 144
 duplicate$ -- 1855
-empty$ -- 5111
-format.name$ -- 678
-if$ -- 13282
+empty$ -- 5113
+format.name$ -- 676
+if$ -- 13281
 int.to.chr$ -- 0
 int.to.str$ -- 124
 missing$ -- 114
 newline$ -- 637
 num.names$ -- 228
-pop$ -- 1407
+pop$ -- 1406
 preamble$ -- 1
-purify$ -- 587
+purify$ -- 586
 quote$ -- 0
 skip$ -- 3076
 stack$ -- 0
-substring$ -- 2552
+substring$ -- 2561
 swap$ -- 507
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 486
 warning$ -- 20
-while$ -- 353
+while$ -- 354
 width$ -- 127
 write$ -- 1251
 (There were 52 error messages)

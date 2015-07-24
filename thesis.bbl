@@ -94,10 +94,10 @@ Report of the spectrum efficiency working group.
   scheduling.
 \newblock In {\em Proc. of ACM MobiCom 2007\/} (Sep. 2007).
 
-\bibitem{08crn_survey}
-{\sc Akyildiz, I., Lee, W.-Y., Vuran, M.~C., and Mohanty, S.}
-\newblock A survey on spectrum management in cognitive radio networks.
-\newblock {\em Communications Magazine, IEEE 46}, 4 (April 2008), 40--48.
+\bibitem{Akyildiz09}
+{\sc Akyildiz, I.~F., Lee, W.-Y., and Chowdhury, K.~R.}
+\newblock Crahns: Cognitive radio ad hoc networks.
+\newblock {\em Ad Hoc Netw. 7}, 5 (2009), 810--836.
 
 \bibitem{Akyildiz06survey}
 {\sc Akyildiz, I.~F., Lee, W.-Y., Vuran, M.~C., and Mohanty, S.}
