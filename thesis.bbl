@@ -164,6 +164,12 @@ Report of the spectrum efficiency working group.
 \newblock In {\em Telecommunications, 2008. ICT 2008. International Conference
   on\/} (June 2008), pp.~1--6.
 
+\bibitem{fuzzy_decision_09}
+{\sc Baldo, N., and Zorzi, M.}
+\newblock Cognitive network access using fuzzy decision making.
+\newblock {\em Wireless Communications, IEEE Transactions on 8}, 7 (July 2009),
+  3523--3535.
+
 \bibitem{Basagni99}
 {\sc Basagni, S.}
 \newblock Distributed clustering for ad hoc networks.
@@ -196,6 +202,13 @@ Report of the spectrum efficiency working group.
 \newblock {\em Essentials of Modern Spectrum Management}.
 \newblock Cambridge University Press, 2007.
 
+\bibitem{routing_CRN_challenges_solutions_2011}
+{\sc Cesana, M., Cuomo, F., and Ekici, E.}
+\newblock Routing in cognitive radio networks: Challenges and solutions.
+\newblock {\em Ad Hoc Networks 9}, 3 (2011), 228 -- 248.
+\newblock
+  \url{http://www.sciencedirect.com/science/article/pii/S157087051000079X}.
+
 \bibitem{contentiongame_07}
 {\sc Chen, L., Low, S., and Doyle, J.}
 \newblock Contention control: A game-theoretic approach.
@@ -226,6 +239,13 @@ Report of the spectrum efficiency working group.
   vehicular networks.
 \newblock In {\em Vehicular Technology Conference (VTC Fall), 2013 IEEE 78th\/}
   (Sept 2013), pp.~1--7.
+
+\bibitem{tvws_paper_networking2015}
+{\sc Elias, J., and Krunz, M.}
+\newblock Distributed spectrum management in tv white space cognitive radio
+  networks.
+\newblock In {\em IFIP Networking Conference (IFIP Networking), 2015\/} (May
+  2015), pp.~1--8.
 
 \bibitem{increaseTVWS12}
 {\sc Ellingsaeter, B., Bezabih, H., Noll, J., and Maseng, T.}
@@ -286,11 +306,11 @@ Report of the spectrum efficiency working group.
 \newblock In {\em Military Communications Conference, 2006. MILCOM 2006.
   IEEE\/} (Oct 2006), pp.~1--7.
 
-\bibitem{cvx}
-{\sc Grant, M., and Boyd, S.}
-\newblock {CVX}: Matlab software for disciplined convex programming, version
-  1.21.
-\newblock \url{http://cvxr.com/cvx/cvx_usrguide.pdf}, Apr. 2011.
+\bibitem{Han:2008:RAW:1457343}
+{\sc Han, Z., and Liu, K. J.~R.}
+\newblock {\em Resource Allocation for Wireless Networks: Basics, Techniques,
+  and Applications}.
+\newblock Cambridge University Press, New York, NY, USA, 2008.
 
 \bibitem{hart00correlatedeq}
 {\sc Hart, S., and Colell, A.}
@@ -722,6 +742,13 @@ Report of the spectrum efficiency working group.
   radio networks with qos guarantee.
 \newblock In {\em Proc. of IEEE INFOCOM 2009\/} (Apr. 2009).
 
+\bibitem{resourceAllocation_imperfectSensing_2012}
+{\sc Xie, R., Yu, F., and Ji, H.}
+\newblock Dynamic resource allocation for heterogeneous services in cognitive
+  radio networks with imperfect channel sensing.
+\newblock {\em Vehicular Technology, IEEE Transactions on 61}, 2 (Feb 2012),
+  770--780.
+
 \bibitem{dsa_traffic_2000}
 {\sc Xu, L., T\"{o}njes, R., Paila, T., Hansmann, W., Frank, M., and Albrecht,
   M.}
@@ -743,6 +770,13 @@ Report of the spectrum efficiency working group.
   applications.
 \newblock {\em Communications Surveys Tutorials, IEEE 11}, 1 (First 2009),
   116--130.
+
+\bibitem{cacao_ca_2011}
+{\sc Yue, X., Wong, C.-F., and Chan, S.-H.}
+\newblock Cacao: Distributed client-assisted channel assignment optimization
+  for uncoordinated wlans.
+\newblock {\em Parallel and Distributed Systems, IEEE Transactions on 22}, 9
+  (Sept 2011), 1433--1440.
 
 \bibitem{withinTVcoverage_PIMRC13}
 {\sc Zhang, L., Yuan, L., Feng, Z., and Feng, Z.}

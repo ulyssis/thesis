@@ -1,4 +1,5 @@
 \chapter{INTRODUCTION}
+\label{INTRODUCTION}
 Wireless networks utilize radio waves instead of wires to carry information, hence seamless coverage and mobility are achievable in wireless connections.
 Wireless networks have experienced unprecedented growth in the past few decades and will evolve in the future.
 Due to the propagation characteristics of radio waves, only a small part of electromagnetic spectrum which spans from 3 kHz to 300 GHz is suitable for commercial application.
@@ -162,14 +163,39 @@ Based on the requirements of interested communication, CR users need to identify
 Spectrum sharing is one of the major issues discussed in this thesis.
 Except for the classification introduced in Section~\ref{hierarchical}, spectrum sharing can also be classified by network architecture and spectrum allocation behaviour~\cite{Akyildiz09} respectively.
 Here we also introduce these classifications to see spectrum sharing from different prospectives.
-
+\subsubsection*{Classification Based on Architecture}
 Based on architecture, spectrum sharing can be classified as centralized and distributed spectrum sharing.
 As the name indicates, the centralized spectrum sharing relies on a centralized entity where the strategy to use the spectrum is decided. 
-The centralized entity needs to collect spectrum availability on all the secondary users in the network, then compute the spectrum usage strategy and distributes it.
+
 This pattern involves transmission overhead in collecting sensing result and distributing spectrum usage strategy.
+There is considerable number of centralized approaches proposed for spectrum sharing in cognitive radio network, global optimality is reported as to different objectives, but centralized solution is not suitable in many real world situations.
+Firstly of all, central authority or controller is not available in many CRNs.
+Even the centralized decision maker exists, The centralized entity needs to collect spectrum availability sensed on all the secondary users in the network, then compute the spectrum usage strategy and distributes it.
+A huge number of control messages are generated in this process, and it becomes worse when the update of channel availability is frequent due to primary users changing their state quickly.
+%As to cognitive radio network, implementation of centralized algorithm faces more challenges.
+%The central controller needs to know the network connectivity which is decided by the availability of licensed spectrum, or even the information of the later.
+%Either the controller enquiring each secondary user for spectrum availability information, or the secondary users pushing to the controller introduces huge amount of overheads, especially when the primary users change their operation state frequently
+%When the licensed users change their operation state frequently, centralized decision maker obtaining the updated sensing results from CR users imposes a great burden on the network.
+In some scenarios centralized scheme is suitable, \eg when the primary users are TV stations and receivers which work on certain channels for hours of time, spectrum can be seen as constant. 
+When the secondary users access the spectrum in underlay paradigm, they need to take care not to cause more interference than threshold on primary users.
+In this case the channel usage, \ie working channel and transmission power, can be decided on the centralized controller.
+%In this case, it is also possible that the centralized controller is only responsible to regulating the maximal transmission power to protect the licensed users from interference, but doesn't control secondary users' transmission strategy as they may belong to different business groups.
+
+%Without infrastructure support, it is hard for CR user to get complete and up to date picture of the spectrum availability in the whole network.
+%Thus distributed solutions are preferred in such varying radio environment.
+%Distributed decision of one CR user should be carefully decided as one CR's behaviour affects neighbouring CR users which go on to prompt all the CR users in the network to act accordingly.
+
 The distributed spectrum sharing needs each secondary user to autonomously decide its spectrum usage strategy, whereas it may allow secondary users to interact with other network entities in certain way, \ie other secondary users.
 Distributed scheme requires message exchanges between secondary users during interaction.
+Distributed decision of one CR user should be carefully decided as one CR's behaviour affects neighbouring CR users which go on to prompt all the CR users in the network to act accordingly.
+In this thesis, the interaction between CR users will be discussed under game theoretic framework.
 
+%because it is costly to retrieve necessary information from the network to the controller, which includes the spectrum information on each CR users and the network topology. Besides, when the solution is sent back to the CR users, the network state may have changed and be different from the time when the information is collected.
+
+%This is due to the operation of primary users, which is usually not known by secondary users.
+%The distinctive view on spectrum availability and varying radio environment make distributed solution a natural choice for CRN network.
+% tendius text
+\subsubsection*{Classification Based on Whether or Not to Cooperate}
 Spectrum sharing can also be categorized into cooperative and non-cooperative spectrum sharing.
 As to cooperative spectrum sharing, secondary users take into consideration of the caused interference on other secondary users when deciding their spectrum usage.
 This pattern usually requires cluster structure to facilitate the negotiation of users in a neighbourhood~\cite{Chen07}.
@@ -178,23 +204,20 @@ Whereas with non-cooperative spectrum sharing, secondary users only consider the
 Aforementioned classifications correlate with each other in certain aspects.
 For instance, non-cooperative spectrum sharing is usually conducted in distributed manner, whereas cooperative spectrum sharing can be implemented in both distributed and centralized manner, and the later needs the assistance from the centralized entity.
 
-Spectrum sharing scheme need to be designed according to actual requirement and available facilities.
+%Spectrum sharing scheme need to be designed according to actual requirement and available facilities.
 
 
 
-\section{Cognitive Radio Networks}
+\section{Representative Cognitive Radio Networks}
 In this section, we introduce two types of cognitive radio networks, and the problems we tackle in this thesis reside in these networks.
 
 \subsection{Cognitive Radio Ad Hoc Network}
-An ad hoc network is a decentralized paradigm of wireless network, which consists of a collection of autonomous mobile users which communicate over wireless links.
-As there is mainly point to point communication in cognitive radio ad hoc network, underlay spectrum sharing with the primary users is usually adopted.
+%An ad hoc network is a decentralized paradigm of wireless network, which consists of a collection of autonomous mobile users which communicate over wireless links.
 
-Efficient distributed algorithms are needed to determine network organization, link scheduling, and routing.
+%Efficient distributed algorithms are needed to determine network organization, link scheduling, and routing.
 
-
-
-Cognitive radio ad hoc network is an ad hoc network composed with cognitive radio users.
-Similar with ad hoc network, cognitive ad hoc radio network can also be represented as an undirected graph $G$.
+Cognitive radio ad hoc network (CRAHN) is composed with autonomous mobile cognitive radio users which with overlay spectrum sharing paradigm.
+CRAHN is usually represented as an undirected graph $G$.
 Cognitive radio users constitute the vertices, the edge between two vertices is decided not only by the distance, propagation and attenuation properties between the two vertices, but also the spectrum availability on both vertices, \ie, when they can decode the received signal from each other correctly, and there is common channel available between them on which communication is conducted, then an unidirectional edge is available on graph $G$.
 As to ad hoc network, the graph is constant when users are static.
 As to cognitive radio ad hoc network, due to primary users' activity, an edge between two vertices is decided by the fact that whether the two vertices can simultaneously access the same licensed channel.
@@ -224,43 +247,30 @@ The forthcoming vehicular to vehicular communication requires
 
 %Whenever primary users are detected, the secondary users have to either jump to other spectrum, or turn down its transmission power to avoid interfering the primary users.
 
+\section{Necessity of Distributed Schemes}
+In wireless networks, signalling is performed to conduct resource allocation in an optimal way, which causes considerable overhead in communication.
+It is reported that overhead takes up more than 50\% of messages~\cite{Han:2008:RAW:1457343}.
+If we can reduce the overhead, spectrum utilization and the number of users can be increased, and network performance can be improved.
+If the resource optimization can be conducted only with local information, overhead can be reduced.
 
-\section{Centralized and Distributed Algorithms in CRN}
-\label{centralized_distributed}
-There is a line of considerable number of centralized approaches proposed for problems in wireless networks, which studies the fundamental computational problems and usually produce global optimal, but centralized solution is not suitable in many real world situations.
-Firstly of all, many wireless networks seize no central authority or controller to run certain functionality.
-Even there exists such centralized decision maker in wireless network, it is costly to collect necessary information from the network and then spread the decision to all users.
+Signalling overhead is even more considerable as the channel state is variable due to primary user activity.
+Thus distributed scheme is more suitable than cognitive radio networks than other wireless networks.
 
-As to cognitive radio network, implementation of centralized algorithm faces more challenges.
-The central controller needs to know the network connectivity which is decided by the availability of licensed spectrum, or even the information of the later.
-Either the controller enquiring each secondary user for spectrum availability information, or the secondary users pushing to the controller introduces huge amount of overheads, especially when the primary users change their operation state frequently
-%When the licensed users change their operation state frequently, centralized decision maker obtaining the updated sensing results from CR users imposes a great burden on the network.
-In some scenarios, \eg the primary users are TV stations which work on certain channels for hours of time, centralized controller obtains spectrum availability in the network from licensed users directly.
-In these scenarios, it is possible that the centralized controller is only responsible to protect the licensed users from interference, and doesn't control secondary users which may belong to different business groups.
-Thus in wireless network and particularly cognitive radio network, each user ideally makes decision itself with local information, \ie the information within its one or two hop neighborhood.
 
-%Without infrastructure support, it is hard for CR user to get complete and up to date picture of the spectrum availability in the whole network.
-%Thus distributed solutions are preferred in such varying radio environment.
-%Distributed decision of one CR user should be carefully decided as one CR's behaviour affects neighbouring CR users which go on to prompt all the CR users in the network to act accordingly.
-
-Distributed decision of one CR user should be carefully decided as one CR's behaviour affects neighbouring CR users which go on to prompt all the CR users in the network to act accordingly.
-In this thesis, the interaction between CR users will be discussed under game theoretic framework.
-
-%because it is costly to retrieve necessary information from the network to the controller, which includes the spectrum information on each CR users and the network topology. Besides, when the solution is sent back to the CR users, the network state may have changed and be different from the time when the information is collected.
-
-%This is due to the operation of primary users, which is usually not known by secondary users.
-%The distinctive view on spectrum availability and varying radio environment make distributed solution a natural choice for CRN network.
-
-%
 
 \section{Scope of This Thesis}
 
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=\linewidth]{problemLocation.pdf}
+  \caption{Spectrum management and the problems addressed in this thesis}
+\label{problemLocation}
+\end{figure}
 
-%\todo[inline]{one table showing difference on network structure, complexity, performance}
+In this thesis, some technical challenges in cognitive radio networks as shown in Figure~\ref{problemLocation}, which reside from physical layer to network work layer~\cite{osi} are addressed. 
+Because of the characteristics of the problems, distributed schemes are adopted, and in order to coordinate the interaction between secondary users, game theory is used to formulate the problem and derive algorithms.
 
-\section{Channel Allocation in TV White Space}
-\subsection{Wireless Channel Allocation}
-xxxx what is channel allocation? xxxx
+\subsection{Channel and Power Allocation in IEEE 802.22 Network}
 
 Channel allocation facilitates CRN to improve throughput~\cite{channelAllocation_throughput_12wcnc}, or cooperatively relay~\cite{channelAllocation_relay_2010ICASSP} and so on.
 This thesis emphasises on co-channel interference mitigation with distributed channel allocation . 
@@ -277,7 +287,7 @@ We innovatively formulate this problem in to a canonical congestion game by util
 %and apply it on different cognitive radio networks.
 %rethink channel allocation problem from the perspective of game theory, particularly,
 
-\subsection{Utilize TV White Space}
+\subsubsection*{Utilize TV White Space}
 Unused TV spectrum is termed as TV White space by the Federal Communications Commission (FCC)~\cite{FCC_2010_sedond_memorandumm}, which is licensed to incumbent users such like digital TV, analog TV, and wireless microphone.
 As to unlicensed users, detecting incumbent users is challenging because the FCC requires the unlicensed users should be able to detect the presence of signals from TV stations or wireless microphone at a received power level of -114 dBm~\cite{Technical_Challenges_TVwhit}. 
 Thus FCC doesn't require the sensing ability on unlicensed users, but regulates the secondary usage of TV white space in a prudent manner, including the spectrum bands permitted to use based on their location, the transmission power, the distance away from TV service area and so on.
@@ -318,7 +328,7 @@ We formulate this problem into a canonical congestion game, and derive the distr
 
 
 
-\section{Clustering in Cognitive Radio Network}
+\subsection{Robust Clustering in Ad Hoc Cognitive Radio Network}
 Clustering is an important paving stone for the practical utilization of the unused portions of the licensed spectrum.
 Clustering secondary users based on geographical proximity and other relevant properties together produces following benefits.
 Firstly, it is more efficient to solve common control channel (CCC) problem with cluster structure.
@@ -355,7 +365,7 @@ These requirements will be fulfilled by the scheme proposed in this thesis.
 
 
 %\section{Spectrum Aware Virtual Coordinates in CRN}
-\section{Geographic Routing in CRN}
+\subsection{Geographic Routing in CRN with Spectrum Aware Virtual Coordinate}
 We propose a routing paradigm in CRN.
 Geographic routing is applied in the CRN network which is assigned with spectrum aware virtual coordinates.
 The dynamic availability of spectrum leads to prevalent topology changes, which makes spectrum aware routing difficult but essential.

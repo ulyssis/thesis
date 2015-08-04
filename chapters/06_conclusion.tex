@@ -1,3 +1,21 @@
 \chapter{Conclusion}
-Cooperation is also one paradigm which is claimed to able to improve the network performance.
-It requires extra control overheads because of organization.
+In this dissertation, we solve a series of problems residing from layer 1 to layer 3 in the OSI model~\cite{osi} of CRN with distributed solutions.
+%Based on game models, we design distributed algorithms for CR users to self-organize and utilize the available resources, which doesn't lead to global instability or performance deterioration.
+\begin{itemize}
+\item We solve the power and spectrum allocation problem in IEEE 802.22 networks.
+This work mainly lies in layer 1, after deciding the maximal transmission power on each secondary cellular base station, we formulate the distributed spectrum allocation problem in TV white space scenario (a special CRN where primary user is TV station which operates according to a slow and pre-decided schedule) into a canonical congestion game, then propose distributed algorithm corresponding to the behaviour of player in the game.
+
+\item 
+When the availability of spectrum is considered to have the same probability due to licensed users' activity, and local operation is needed, \ie for cooperative sensing, unlicensed users need to form clusters and the clusters should be robust against the primary users' activity.
+A distributed clustering scheme for CRN is proposed. 
+The process of finalizing cluster membership is innovatively formulated into a congestion game, then as long as cluster head is decided, clusters which have clear membership are formed quickly by applying the  light-weighted distributed scheme derived from the game.
+This problem can be regarded to lie in layer 2.
+
+\item In layer 3, we propose a lighted weighted routing scheme for CRN. 
+Spectrum aware virtual coordinate is proposed, thus light weighted geographic routing can be used to decide the next hop.
+\end{itemize}
+
+Many further efforts can be done on the basis of the work in this thesis.
+As to channel and power allocation in IEEE 802.22 network, cooperation can be brought to improve performance. 
+As a light weight clustering scheme which can cope with mobility of both spectrum and users, ROSS can be used to support routing and resource allocation.
+

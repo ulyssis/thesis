@@ -1,15 +1,22 @@
 \chapter{BACKGROUND}
 
-In this chapter, the mathematical tool which is used in thesis is introduced.
+%Some mathematical techniques which are used to solve the problems in thesis are introduced in this chapter.
+
+In the past few years, game theory was extensively applied to problems in communication and networking~\cite{Neel06analysisand, Wang_gtc_crn_survey_2010}.
+Game theory is a mathematical tool for studying, modelling and analysing the interaction of rational decision makers which have conflicting objectives.
+When the network entities are seen as rational, game theory can be used to predict and guide the behaviour of them, and predict the outcome of the system with respect to certain metrics.
+In contrary to game theory which takes care of the behaviour of all decision makers, optimization problem is only conducted on a single decision maker, which attempts to achieve the best welfare for that decision maker.
+In the following, we introduce some basics of game theory and optimization.
+
+
 
 
 
 \section{Algorithmic Game Theory}
 
-Game theory is a mathematical tool for analysing the interaction of decision makers which have conflicting objectives.
-Game theory has been a tool to examine and analyse the actions of economic agents since long time ago.
-In recent years, game theory attracts people attention into apply it in communication systems.
 
+In cognitive radio networks, game theoretic models are used to better understand resource allocation, topology control, routing, security and many other issues in wireless communication systems.
+%In recent years, game theory attracts people attention into apply it in communication systems.
 According to~\cite{game_for_communication_01}, there are several reasons to apply game theory in communication systems.
 \begin{itemize}
 \item Communication equipments are supposed to be manufactured and operate based on standards to fulfil certain functions, but selfish behaviour may appear on certain individual equipments to achieve advantages over their peers.
@@ -33,21 +40,36 @@ In the case, the best response becomes a algorithm for Wi-Fi systems.
 \item Game theory assumes the research objectives to be rational.
 In communication system, a device is programmed to maximize or minimize the expected utility, which is perfectly rational.
 
-\item Game theory is naturally suitable for designing distributed solutions.
-As discussed in section~\ref{centralized_distributed}, distributed solutions doesn't rely on centralized controller, and each user in the network adopts certain action as response to the other users or environment, this falls in the scope of game theory.
+\item Outcome is robust\cite{Han:2008:RAW:1457343}.
+As to optimization, when the information is not accurate or adequate enough, or the optimization itself is difficult to solve, the optimized results can be far from global optimality.
+Game theory based on the local information, which is easy to obtain, usually leads to Nash equilibrium, which is usually sub optimal.
+
+
+\item 
+Only local information is needed, thus game theory is naturally suitable for designing distributed solutions for cognitive radio networks.
+Distributed solutions doesn't rely on centralized controller, and each user in the network adopts certain action as response to the other users or environment, this falls in the scope of game theory.
+
+\item Combinatorial nature.\cite{Han:2008:RAW:1457343}
+Many problems in wireless communication involve integer variables, \ie channel assignment, selection of modulation levels or channel coding.
+It is always challenging to solve combinatorial optimization problems, whereas game theory is natural to describe it in a discrete form.
+
+
+
+
 \end{itemize}
 
-As an important tool in studying, modelling, and analysing the interactions, game theory also abstracts plenty of attentions in CRN~\cite{Neel06analysisand, Wang_gtc_crn_survey_2010}.
-In the following section, we give a brief introduction to game theory and particularly congestion game which is used in our thesis. 
+
+
+ 
 
 %\todo[inline]{expand: Introduction of game theory...}
-\subsection{Basics of Game Theory}
-Game theory is established by Nash in xxxx, and is applied in network communication since xxx
-
+\subsection{Basics of Game}
+%Game theory is established by Nash in xxxx, and is applied in network communication since xxx
+In this section, we give a brief introduction of game theory along with particularly congestion game which is used in our thesis.
 We briefly list the important concepts of algorithm game theory here, many of which are referred from ~\cite{agt_book}.
 
 
-\subsubsection{Strategic Game}
+\subsubsection*{Strategic Game}
 
 A strategic game can be represented as a tuple $\Gamma = (\mathcal{N}, (\sum_i)_{i \in \mathcal{N}}, (u_i)_{i\in \mathcal{N}})$, where $\mathcal{N}$ is a finite set of players, $\sum_i$ is player $i$' finite strategies.
 Player $i$ selects one strategy $s_i\in \sum_i$ at one time to play the game.
@@ -60,7 +82,26 @@ $\sigma=(s_i,\cdots,s_n)$ is called one profile, which is used to denote the vec
 Strategies of opponents of player $i$ is expressed as $s_{-i}$, and a profile can be shown as $\sigma=\{s_i, s_{-i}\}$.
 $u_i(\sigma) = u_i(s_i, s_{-i})$ is the player $i$' utility.
 
-\subsubsection{Nash Equilibrium}
+When formulating a problem of CRN into a game, the components of two are listed in Table~\ref{game_crn_component}.
+
+\begin{table}
+\centering
+\begin{tabular}{|c|c|}
+\hline 
+Elements of a game & Elements of one CRN \\ 
+\hline 
+Player $\mathcal{N}$ & secondary users \\ 
+\hline 
+Strategies for player $i$, $\sum_i$  & working channels, transmission power, modulation, etc. \\ 
+\hline 
+Utility of player $i$, $u_i$ & Performance in respect of SINR, Throughput, etc. \\ 
+\hline 
+\end{tabular} 
+\caption{CRN and corresponding game}
+\label{game_crn_component}
+\end{table}
+
+\subsubsection*{Nash Equilibrium}
 
 A strategy profile $s\in S$ is a Nash Equilibrium (NE) if for any player $i$ and each alternate strategy $s_i'$, there is
  \[ u_i(s_i, s_{-i}) \geq u_i(s_i', s_{-i})\]
@@ -72,11 +113,14 @@ Pareto Equilibrium is a subset of NE, PE is an action profile $\bar{s}$ such tha
 PE is the necessary condition of the global optimality and accordingly is more favoured, but its application in communication system is much less than NE because it is not easy to obtain PE.
 
 Nash equilibrium is a conceptual tool and a prediction about the rational strategic behaviour by agents in situations of conflict, hence, it carries great importance to know how much computational effort needed to compute NE.
-Unlucky, the computation of NE is usually a combinatorial optimization problem (chapter 2)~\cite{}.
- but in some special cases, 
+%Unlucky, the computation of NE is usually a combinatorial optimization problem (chapter 2)~\cite{}.
+% but in some special cases, 
+
+%\subsubsection*{Different Games in Nutshell}
 
 
-\subsubsection{Potential Game}
+
+\subsubsection*{Potential Game}
 
 A potential game is a tuple $\lambda=(\mathcal{N},(\sum_i)_{i \in \mathcal{N}},(u_i)_{i\in \mathcal{N}})$, which satisfies the following, if there exists a function $\phi: \sum\rightarrow \mathbb{R}$, such that for every $i\in \mathcal{N}$, for every $s_{-i}\in \sum_{-i}$, and every $s_i, s_i'\in \sum_i$:
  \[ u_i(s_i, s_{-i})-u_i(s_i', s_{-i}) = \phi_i(s_i, s_{-i})-\phi_i(s_i', s_{-i})\]
@@ -89,7 +133,7 @@ Congestion game is a special type of potential game, which has extra conditions,
 Congestion game is an attractive game model which describes one kind of problem where nodes compete for limited resources in a non-cooperative manner~\cite{Voecking06congestiongames}.
 %In congestion game, player pays for the resources it occupies.
 %Particularly, the payment for one resource is monotonically increasing with the \textit{number} of players occupying that resource, and each player tries to minimize its payment~\footnote{Another way to describe congestion game: player gets benefit by using a certain resource, the benefit is monotonically decreasing with the number of players on that resource, each player tries to maximize its welfare}. 
-This game formulates many problems in realistic world, \eg minimisation of commuting time on the road for commuters, minimization of energy consumption in mobile cloud computing system~\cite{game_cloudcomputing_energy12}.
+This game can be used to formulate many problems in realistic world, \eg minimisation of commuting time on the road for commuters, minimization of energy consumption in mobile cloud computing system~\cite{game_cloudcomputing_energy12}.
 
 Before giving the definition, we introduce an exemplary congestion game called \textit{server matching}.
 Consider a couple of self-interested clients and servers.
@@ -133,3 +177,36 @@ As every congestion game is a potential game, and the total potential is finite,
 
 
 
+\section{Optimization}
+As discussed in Chapter~\ref{INTRODUCTION}, the available radio resources such as spectrum are very limited, at the meantime, new services raise great requirements for these resources.
+Resource allocation and its optimization are the methods to accommodate the needs.
+Various optimization problems are formulated to improve radio resource usage in CRN~\cite{cacao_ca_2011, fuzzy_decision_09, resourceAllocation_imperfectSensing_2012}.
+Optimization can be conducted from either global view or individual perspective.
+
+Many wireless resource allocation problems are formulated as constrained optimization problems.
+Table~\ref{opt_table} shows the commonly used parameters, objectives and constraints in optimization problems of wireless communication.
+Part of the contents in Table~\ref{opt_table} refers \cite{Han:2008:RAW:1457343}.
+
+\begin{table}
+\begin{tabular}{|C{2.5cm}|C{3.5cm} | C{3.5cm} | C{3.5cm}|}
+\hline 
+ & Parametres & Optimization goals & Constraints \\ 
+\hline 
+Application layer & source-coding rate, buffer priority, packet arrival rate & minimal delay & base layer transmission, strict delay requirement \\ 
+\hline 
+Network layer & routing path & end to end delay/throughput & maximal hops, security concerns \\ 
+\hline 
+MAC layer & transmission frequency, transmission priorities & maximal overall throughput, minimal buffer overflow probability & contentions, time/frequency slot \\ 
+\hline
+Physical layer & transmission power, modulation, channel coding rate & minimal over power consumption, maximal throughput, minimal BER & maximal transmission power, caused interference on licensed users, available channel coding rate \\ 
+\hline
+\end{tabular} 
+\caption{Optimization problem of cognitive radio networks}
+\label{opt_table} 
+\end{table}
+
+The solution to an optimization problems is decided by its property, \ie convex, linear, integer, or non-convex non-linear, etc.
+
+
+%Optimization outputs the results with the global information.
+%Optimization is implemented on one entity, thus it is naturally suitable in centralized scheme.
