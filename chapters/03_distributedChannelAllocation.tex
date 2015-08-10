@@ -762,9 +762,7 @@ The location of WBSs and TV contours are illustrated in Fig.~\ref{sim:layout}.
 The other parameters are listed in Table~\ref{6}ef{simulationparameter}. 
 
 \begin{table}[!h]
-\caption{}\label{simulationparameter}
 \centering
-
 \begin{tabular}{|r|c|}
   \hline
   Number of channels 						& 5 \\
@@ -778,10 +776,10 @@ The other parameters are listed in Table~\ref{6}ef{simulationparameter}.
   Minimal WBS transmission power 			& 4W \\
   Maximal WBS transmission power 			& 40W \\
   Number of end terminals in network 		& 800 \\
-  
   \hline
 \end{tabular}
 \caption{Simulation parameters}
+\label{simulationparameter}
 \end{table}
 
 \subsection{Maximal Permitted Power Decision and the Distributed Channel Allocation Schemes}
@@ -874,7 +872,6 @@ Figure \ref{convergeComp} depicts one instance of simulation, where WhiteCat con
 We also compare the convergence speed between WhteCat with no-regret scheme. We fix 16 WBSs' location working with 4 channels, whereas the location of TV contours and end terminals are randomly decided. We account each WBS accessing the base station (refer to \ref{whitecat}) as \textit{one step}. We record the number steps before convergence. Table \ref{convergencespeed} illustrated the average number of steps needed for convergence in 100 runs of simulations. As there is no guarantee for WhiteCase to converge, we stop the channel allocation process after 16000 steps (1000 rounds). We can see WhiteCat is 20 times faster than no-regret, and the relatively small confidence interval shows that WhiteCat's convergence is not affected obviously by different network conditions, which is reasonable as more knowledge of the network is known by users executing Whitecat. As to average running time for each convergence with Matlab, Whitecat is much smaller than the other two schemes, as the nonlinear solver LINDO to be discussed in next subsection, the running time is about 40 minutes. Figure \ref{convergeComp} reflects one instance of the convergence of three schemes in one run of simulation. Notice that there is a slight rise when the value on the X-axis is 35, which comes from the difference between \ref{compare} and \ref{allPotential}.
 
 \begin{table}[!h]
-\caption{Convergence speed of the distributed channel allocation schemes}\label{convergencespeed}
 \centering
 \begin{tabular}{|r|c|c|c|}
   \hline
@@ -886,6 +883,8 @@ We also compare the convergence speed between WhteCat with no-regret scheme. We 
   potential game 							& 120							& 10										&4s\\
   \hline
 \end{tabular}
+\caption{Convergence speed of the distributed channel allocation schemes}
+\label{convergencespeed}
 \end{table}
 
 
@@ -898,7 +897,6 @@ A certain SINR corresponds to certain transmission configurations like modulatio
 			\end{equation}
 $\gamma_i(0)$ is the SINR for $i$ before starting channel allocation. The variance of SINR in channel allocation process is shown in table \ref{costable} from which we can see WhiteCat achieves only 6\% of oscillation on SINR compared with No-regret approach.
 \begin{table}[!h]
-\caption{}\label{costable}
 \centering
 \begin{tabular}{|r|c|c|}
   \hline
@@ -909,6 +907,8 @@ $\gamma_i(0)$ is the SINR for $i$ before starting channel allocation. The varian
   No-regret									& 145460				& 1541\\
   \hline
 \end{tabular}
+\caption{Variance of SINR during the converging phase}
+\label{costable}
 \end{table}
 %\todo{Switching to a different channel also brings cost on time and perfomance, tbc}
 

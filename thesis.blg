@@ -12,6 +12,7 @@ A level-1 auxiliary file: chapters/03_distributedChannelAllocation.aux
 A level-1 auxiliary file: chapters/04_clutering.aux
 A level-1 auxiliary file: chapters/05_routing.aux
 A level-1 auxiliary file: chapters/06_conclusion.aux
+A level-1 auxiliary file: backmatter/07_glossary.aux
 The style file: styles/acmurl.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
@@ -240,12 +241,12 @@ I'm skipping whatever remains of this entry
 A bad cross reference---entry "Sun07_clustering_spectrum_secsing"
 refers to entry "DBLP:conf/icc/2007", which doesn't exist
 Warning--I didn't find a database entry for "DBLP:conf/icc/2007"
-Warning--to sort, need author or key in osi
 Warning--to sort, need author or key in FCC_spectrumEfficiency_2002
 Warning--to sort, need author or key in FCC_2010_sedond_memorandumm
 Warning--to sort, need author or key in ecc159
 Warning--to sort, need author or key in FCC_03-322
 Warning--to sort, need author or key in 802.22
+Warning--to sort, need author or key in osi
 Too many commas in name 1 of "Paramvir Bahl, Ranveer Chandra, Thomas Moscibroda, Rohan Murty and Matt Welsh" for entry whitefi09
 while executing---line 1437 of file styles/acmurl.bst
 Warning--to sort, need author or key in 802.15.4m
@@ -272,45 +273,45 @@ Too many commas in name 1 of "Paramvir Bahl, Ranveer Chandra, Thomas Moscibroda,
 while executing---line 1479 of file styles/acmurl.bst
 Warning--empty year in spectrumDecision_2013mass
 Warning--empty journal in dsa_traffic_2000
-You've used 129 entries,
+You've used 132 entries,
             2950 wiz_defined-function locations,
-            1489 strings with 33888 characters,
-and the built_in function-call counts, 55726 in all, are:
-= -- 5592
-> -- 2003
+            1511 strings with 34511 characters,
+and the built_in function-call counts, 56993 in all, are:
+= -- 5725
+> -- 2044
 < -- 0
-+ -- 851
-- -- 702
-* -- 3537
-:= -- 7916
-add.period$ -- 402
-call.type$ -- 129
-change.case$ -- 735
++ -- 869
+- -- 716
+* -- 3610
+:= -- 8098
+add.period$ -- 412
+call.type$ -- 132
+change.case$ -- 751
 chr.to.int$ -- 0
-cite$ -- 149
-duplicate$ -- 1918
-empty$ -- 5319
-format.name$ -- 702
-if$ -- 13822
+cite$ -- 152
+duplicate$ -- 1964
+empty$ -- 5442
+format.name$ -- 716
+if$ -- 14144
 int.to.chr$ -- 0
-int.to.str$ -- 129
-missing$ -- 121
-newline$ -- 663
-num.names$ -- 238
-pop$ -- 1444
+int.to.str$ -- 132
+missing$ -- 125
+newline$ -- 679
+num.names$ -- 244
+pop$ -- 1476
 preamble$ -- 1
-purify$ -- 609
+purify$ -- 622
 quote$ -- 0
-skip$ -- 3193
+skip$ -- 3272
 stack$ -- 0
-substring$ -- 2700
-swap$ -- 521
+substring$ -- 2748
+swap$ -- 533
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 504
+type$ -- 514
 warning$ -- 20
-while$ -- 370
-width$ -- 132
-write$ -- 1304
+while$ -- 379
+width$ -- 135
+write$ -- 1338
 (There were 52 error messages)

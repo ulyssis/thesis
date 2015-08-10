@@ -9,11 +9,11 @@
 \documentclass{wissdoc-kw-eng}
 
 \usepackage{ifpdf}
-%\usepackage[T1]{fontenc}
+%\usepackage[T1]{fontfenc}
 %\usepackage[utf8x]{inputenc}
-\usepackage[printonlyused]{acronym}
+%	\usepackage[printonlyused]{acronym}
+\usepackage{acronym}
 \renewcommand{\bflabel}[1]{\normalfont{\normalsize{#1}}\hfill} % keine serifenlose schrift für acronym
-%\usepackage{acronym}
 \usepackage{subfigure}
 %\usepackage{caption}
 \usepackage[font=small,hang,center,nooneline,labelfont=bf]{caption}
@@ -94,7 +94,7 @@
 %\usetikzlibrary{positioning}
 \usepackage{graphicx}
 \usepackage{multirow}
-%\usepackage{multicol}
+\usepackage{multicol}
 %\usepackage{colortbl}
 \definecolor{kugray5}{RGB}{224,224,224}
 \definecolor{Gray}{gray}{0.9}
@@ -145,7 +145,7 @@
 %\hyphenation{Sensor-netz-werk}
 \graphicspath{
 {./figures/01_introduction/}
-{./figures/02_background}
+{./figures/02_background/}
 {./figures/03_distributedChannelAllocation/}
 %{./figures/03_distributedChannelAllocation/figures_from_report/}
 {./figures/04_clutering/}
@@ -191,6 +191,17 @@
 \newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 \newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 \newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+% Load the package
+%\usepackage[toc, nomain]{glossaries}%[]
+ \usepackage[style=long,nonumberlist,toc,xindy,acronym]{glossaries}
+% Generate the glossary
+\makeglossaries
+
+%% put the glossaries in thesis.tex
+
+\newglossaryentry{crn}{name=CRN, description={Cognitive Radio Network}}
+\newglossaryentry{mac}{name=MAC, description={Media Access Control}}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -249,6 +260,23 @@
 \include{chapters/06_conclusion}
 
 
+%%: ----------------------- glossary ------------------------
+%
+%% Tie in external source file for definitions: /backmatter/07_glossary.tex
+%% Glossary entries can also be defined in the main text. See 07_glossary.tex
+%\include{backmatter/07_glossary}
+
+%\begin{multicols}{2} % \begin{multicols}{#columns}[header text][space]
+%\begin{footnotesize} % scriptsize(7) < footnotesize(8) < small (9) < normal (10)
+%\printnomenclature[1.5cm] % [] = distance between entry and description
+%\label{nom} % target name for links to glossary
+%\end{footnotesize}
+%\end{multicols}
+
+
+
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% LITERATUR UND ANDERE VERZEICHNISSE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -273,6 +301,10 @@
 \clearpage
 \addcontentsline{toc}{chapter}{List of Tables}
 \listoftables
+
+%Print the glossary
+\printglossaries
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
