@@ -12,7 +12,6 @@ A level-1 auxiliary file: chapters/03_distributedChannelAllocation.aux
 A level-1 auxiliary file: chapters/04_clutering.aux
 A level-1 auxiliary file: chapters/05_routing.aux
 A level-1 auxiliary file: chapters/06_conclusion.aux
-A level-1 auxiliary file: backmatter/07_glossary.aux
 The style file: styles/acmurl.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
@@ -273,45 +272,45 @@ Too many commas in name 1 of "Paramvir Bahl, Ranveer Chandra, Thomas Moscibroda,
 while executing---line 1479 of file styles/acmurl.bst
 Warning--empty year in spectrumDecision_2013mass
 Warning--empty journal in dsa_traffic_2000
-You've used 132 entries,
+You've used 133 entries,
             2950 wiz_defined-function locations,
-            1511 strings with 34511 characters,
-and the built_in function-call counts, 56993 in all, are:
-= -- 5725
-> -- 2044
+            1517 strings with 34780 characters,
+and the built_in function-call counts, 57429 in all, are:
+= -- 5768
+> -- 2066
 < -- 0
-+ -- 869
-- -- 716
-* -- 3610
-:= -- 8098
-add.period$ -- 412
-call.type$ -- 132
-change.case$ -- 751
++ -- 878
+- -- 724
+* -- 3646
+:= -- 8166
+add.period$ -- 415
+call.type$ -- 133
+change.case$ -- 758
 chr.to.int$ -- 0
-cite$ -- 152
-duplicate$ -- 1964
-empty$ -- 5442
-format.name$ -- 716
-if$ -- 14144
+cite$ -- 153
+duplicate$ -- 1973
+empty$ -- 5477
+format.name$ -- 724
+if$ -- 14246
 int.to.chr$ -- 0
-int.to.str$ -- 132
-missing$ -- 125
-newline$ -- 679
-num.names$ -- 244
-pop$ -- 1476
+int.to.str$ -- 133
+missing$ -- 126
+newline$ -- 684
+num.names$ -- 246
+pop$ -- 1484
 preamble$ -- 1
-purify$ -- 622
+purify$ -- 628
 quote$ -- 0
-skip$ -- 3272
+skip$ -- 3293
 stack$ -- 0
-substring$ -- 2748
-swap$ -- 533
+substring$ -- 2768
+swap$ -- 535
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 514
+type$ -- 518
 warning$ -- 20
-while$ -- 379
-width$ -- 135
-write$ -- 1338
+while$ -- 382
+width$ -- 136
+write$ -- 1348
 (There were 52 error messages)

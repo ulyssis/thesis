@@ -1,15 +1,17 @@
 \contentsline {chapter}{Abstract}{iii}{Doc-Start}
 \contentsline {chapter}{\numberline {1}INTRODUCTION}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Hierarchical Spectrum Access Model}{2}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Spectrum Underlay}{2}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.2}Spectrum Overlay}{2}{subsection.1.1.2}
 \contentsline {section}{\numberline {1.2}Cognitive Radio}{3}{section.1.2}
-\contentsline {subsection}{\numberline {1.2.1}Spectrum Management}{3}{subsection.1.2.1}
-\contentsline {subsection}{\numberline {1.2.2}Spectrum Sharing}{4}{subsection.1.2.2}
-\contentsline {section}{\numberline {1.3}Representative Cognitive Radio Networks}{5}{section.1.3}
+\contentsline {subsection}{\numberline {1.2.1}Spectrum Management}{4}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}Spectrum Sharing}{5}{subsection.1.2.2}
+\contentsline {section}{\numberline {1.3}Representative Cognitive Radio Networks}{6}{section.1.3}
 \contentsline {subsection}{\numberline {1.3.1}Cognitive Radio Ad Hoc Network}{6}{subsection.1.3.1}
 \contentsline {subsection}{\numberline {1.3.2}IEEE 802.22 Standards}{6}{subsection.1.3.2}
-\contentsline {section}{\numberline {1.4}Necessity of Distributed Schemes}{6}{section.1.4}
+\contentsline {section}{\numberline {1.4}Necessity of Distributed Schemes}{7}{section.1.4}
 \contentsline {section}{\numberline {1.5}Scope of This Thesis}{7}{section.1.5}
-\contentsline {subsection}{\numberline {1.5.1}Channel and Power Allocation in IEEE 802.22 Network}{7}{subsection.1.5.1}
+\contentsline {subsection}{\numberline {1.5.1}Channel and Power Allocation in IEEE 802.22 Network}{8}{subsection.1.5.1}
 \contentsline {subsection}{\numberline {1.5.2}Robust Clustering in Ad Hoc Cognitive Radio Network}{9}{subsection.1.5.2}
 \contentsline {subsection}{\numberline {1.5.3}Geographic Routing in CRN with Spectrum Aware Virtual Coordinate}{10}{subsection.1.5.3}
 \contentsline {chapter}{\numberline {2}BACKGROUND}{13}{chapter.2}

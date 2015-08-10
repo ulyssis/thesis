@@ -175,6 +175,12 @@ Report of the spectrum efficiency working group.
 \newblock Distributed clustering for ad hoc networks.
 \newblock {\em Proc. of I-SPAN '99\/} (1999), 310 --315.
 
+\bibitem{Ellingsaeter2012_Increasing_Available}
+{\sc Bezabih, H., Ellingsaeter, B., Noll, J., and Maseng, T.}
+\newblock Digital broadcasting: Increasing the available white space spectrum
+  using tv receiver information.
+\newblock {\em Vehicular Technology Magazine, IEEE 7}, 1 (March 2012), 24--30.
+
 \bibitem{802.22co-existence09}
 {\sc Bian, K., and Park, J.-M.}
 \newblock A coexistence-aware spectrum sharing protocol for 802.22 wrans.
