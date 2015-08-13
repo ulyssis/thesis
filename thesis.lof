@@ -1,23 +1,23 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces The concept of overlay in a TV service scenario. The hull shows the range of a TV service area.\relax }}{3}{figure.1.1}
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Spectrum management and the problems addressed in this thesis\relax }}{7}{figure.1.2}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces The concept of overlay spectrum usage in a TV service scenario. The hull shows the range of a TV service area, inside and out of which secondary users work on the licensed channels.\relax }}{6}{figure.1.1}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Spectrum management and the problems addressed in this thesis\relax }}{8}{figure.1.2}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces An example server matching, one server is possible strategy of the client at the other end of the connecting line\relax }}{18}{figure.2.1}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces System model: WBS cells and DTV systems\relax }}{24}{figure.3.1}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces QuasiSINR is the ratio between the power of signal of interest on the green point with the co-channel interferences on the red points\relax }}{25}{figure.3.2}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Distribution of maximal transmission power levels obtained from convex and linear programming respectively\relax }}{31}{figure.3.3}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Layout of WBSs and TV contours\relax }}{39}{figure.3.4}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Power consumed by different distributed spectrum allocation schemes under different ways deciding the maximal transmission power map\relax }}{40}{figure.3.5}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces QuasiSINR achieved by different distributed spectrum allocation schemes under different ways deciding the maximal transmission power map\relax }}{41}{figure.3.6}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces CDF of SINR on end users obtained by different CA schemes under different methods to decide the maximal transmission power map\relax }}{41}{figure.3.7}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces The average SINR of the 20\% worst end terminals\relax }}{42}{figure.3.8}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Convergence with three different schemes in one simulation instance\relax }}{43}{figure.3.9}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Summed utility of all WBSes, which is the objective in problem\nobreakspace {}\ref {problem}. dpa in legend represents \textit {distributed power allocation}\relax }}{45}{figure.3.10}
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Average transmission power of one WBSes\relax }}{46}{figure.3.11}
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Average quasiSINR of a WBS\relax }}{46}{figure.3.12}
-\contentsline {figure}{\numberline {3.13}{\ignorespaces SINR on end users after channel and power allocation\relax }}{47}{figure.3.13}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Distribution of maximal transmission power levels obtained from convex and linear programming respectively\relax }}{32}{figure.3.3}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Layout of WBSs and TV contours\relax }}{40}{figure.3.4}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Power consumed by different distributed spectrum allocation schemes under different ways deciding the maximal transmission power map\relax }}{41}{figure.3.5}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces QuasiSINR achieved by different distributed spectrum allocation schemes under different ways deciding the maximal transmission power map\relax }}{42}{figure.3.6}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces CDF of SINR on end users obtained by different CA schemes under different methods to decide the maximal transmission power map\relax }}{42}{figure.3.7}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces The average SINR of the 20\% worst end terminals\relax }}{43}{figure.3.8}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Convergence with three different schemes in one simulation instance\relax }}{44}{figure.3.9}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Summed utility of all WBSes, which is the objective in problem\nobreakspace {}\ref {problem}. dpa in legend represents \textit {distributed power allocation}\relax }}{46}{figure.3.10}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Average transmission power of one WBSes\relax }}{47}{figure.3.11}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Average quasiSINR of a WBS\relax }}{47}{figure.3.12}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces SINR on end users after channel and power allocation\relax }}{48}{figure.3.13}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
@@ -48,12 +48,12 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Sensing duration $T_s$ and sensing period $T_p$\relax }}{88}{figure.5.1}
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Left: nodes with physical locations, Right: nodes with doublet virtual coordinate, each element in the virtual coordinate is the number of hops away from corresponding anchor. Connecting lines denote the communication is possible.\relax }}{89}{figure.5.2}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces A network under primary users' influence assigned with SAViC, only anchor 1 is adopted. Flooding of anchor messages is not shown.\relax }}{89}{figure.5.3}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Normalized spectrum availability with respect to the likelihood of spectrum being available one a node\relax }}{92}{figure.5.4}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Reachability of different virtual coordinates, the average number of neighbors is 6, 12, and 14\relax }}{96}{figure.5.5}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Routing paths and corresponding PDR\relax }}{97}{figure.5.6}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Routing paths}}}{97}{figure.5.6}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {PDR over 50 random CRN network, PU's location is fixed as shown in Figure\nobreakspace {}\ref {fig:singleChannelPioff_case_topo}}}}{97}{figure.5.6}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces A network under primary users' influence assigned with SAViC, only anchor 1 is adopted. Flooding of anchor messages is not shown.\relax }}{90}{figure.5.3}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Normalized spectrum availability with respect to the likelihood of spectrum being available one a node\relax }}{93}{figure.5.4}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Reachability of different virtual coordinates, the average number of neighbors is 6, 12, and 14\relax }}{97}{figure.5.5}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Routing paths and corresponding PDR\relax }}{98}{figure.5.6}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Routing paths}}}{98}{figure.5.6}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {PDR over 50 random CRN network, PU's location is fixed as shown in Figure\nobreakspace {}\ref {fig:singleChannelPioff_case_topo}}}}{98}{figure.5.6}
 \contentsline {figure}{\numberline {5.7}{\ignorespaces Packet delivery ratio with single secondary channel, over 50 randomly located CR nodes and PUs\relax }}{98}{figure.5.7}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {PDR}}}{98}{figure.5.7}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Delay}}}{98}{figure.5.7}
@@ -61,11 +61,11 @@
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {PDR over 50 CRNs where SUs and PUs are randomly located}}}{99}{figure.5.8}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {PDR over 50 CRNs where SUs and PUs are randomly located}}}{99}{figure.5.8}
 \contentsline {figure}{\numberline {5.9}{\ignorespaces Routing paths in one network, $T_1 = 3s$. cycles denote the transmission range of primary uers.\relax }}{100}{figure.5.9}
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Geographic routing in single secondary channel scenario, $P_{\textsc {\relax \fontsize {6}{7}\selectfont OFF}}=0.9$ for all primary users, $T_1=3s$, $T_2$ varies.\relax }}{100}{figure.5.10}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Packet delivery ratio}}}{100}{figure.5.10}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Delay}}}{100}{figure.5.10}
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Geographic routing in two secondary channel scenario, $P_{\textsc {\relax \fontsize {6}{7}\selectfont OFF}}=0.9$ for all primary users, $T_1=3s$, $T_2$ varies.\relax }}{101}{figure.5.11}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Packet delivery ratio}}}{101}{figure.5.11}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Delay}}}{101}{figure.5.11}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Geographic routing in single secondary channel scenario, $P_{\textsc {\relax \fontsize {6}{7}\selectfont OFF}}=0.9$ for all primary users, $T_1=3s$, $T_2$ varies.\relax }}{101}{figure.5.10}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Packet delivery ratio}}}{101}{figure.5.10}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Delay}}}{101}{figure.5.10}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Geographic routing in two secondary channel scenario, $P_{\textsc {\relax \fontsize {6}{7}\selectfont OFF}}=0.9$ for all primary users, $T_1=3s$, $T_2$ varies.\relax }}{102}{figure.5.11}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Packet delivery ratio}}}{102}{figure.5.11}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Delay}}}{102}{figure.5.11}
 \contentsline {figure}{\numberline {5.12}{\ignorespaces In the setting of Figure\nobreakspace {}\ref {fig:singleChannelPioff_case_topo}, perofrmance of DC based virtual coordinate is not affected greatly by the erroneous estimation\relax }}{102}{figure.5.12}
 \addvspace {10\p@ }

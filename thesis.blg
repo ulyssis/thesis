@@ -241,17 +241,17 @@ A bad cross reference---entry "Sun07_clustering_spectrum_secsing"
 refers to entry "DBLP:conf/icc/2007", which doesn't exist
 Warning--I didn't find a database entry for "DBLP:conf/icc/2007"
 Warning--to sort, need author or key in FCC_spectrumEfficiency_2002
-Warning--to sort, need author or key in FCC_2010_sedond_memorandumm
-Warning--to sort, need author or key in ecc159
 Warning--to sort, need author or key in FCC_03-322
 Warning--to sort, need author or key in 802.22
-Warning--to sort, need author or key in osi
+Warning--to sort, need author or key in FCC_2010_sedond_memorandumm
+Warning--to sort, need author or key in ecc159
 Too many commas in name 1 of "Paramvir Bahl, Ranveer Chandra, Thomas Moscibroda, Rohan Murty and Matt Welsh" for entry whitefi09
 while executing---line 1437 of file styles/acmurl.bst
 Warning--to sort, need author or key in 802.15.4m
 Warning--to sort, need author or key in 802.19
 Too many commas in name 1 of "Huazi Zhang, Zhaoyang Zhang1, Huaiyu Dai, Rui Yin and Xiaoming Chen" for entry clustering_globecom11
 while executing---line 1437 of file styles/acmurl.bst
+Warning--to sort, need author or key in osi
 Warning--to sort, need author or key in FCCdatabasae
 Warning--to sort, need author or key in lindo
 Name 1 in "Ali Jorio, Sanaa El Fkihi, Brahim Elbhiri, and Driss Aboutajdine" has a comma at the end for entry EnergyEfficientClusteringRouting_2015

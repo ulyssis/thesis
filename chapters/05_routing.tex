@@ -18,8 +18,9 @@
 \label{introduction}
 Cognitive radio technology is promising to solve the significant shortage of spectrum, which is due to proliferation of wireless devices.
 According to the definition of FCC (Federal Communications Commission in U.S.), cognitive radio is a device which is able to sense, measure, or learn its environment and accordingly tune its radio operating parameters (like center frequency, bandwidth and transmit power) on the fly, i.e. during operation. 
-In this paper cognitive radio equipment is also called secondary user.
-Together with these features secondary users are allowed to reuse licensed spectrum which is authorized to so called licensed users.\footnote{Terms licensed and primary, user and node, as well as spectrum band and channel are used indistinguishably in the following paper.}
+In this chapter cognitive radio equipment is also called secondary user.
+Together with these features secondary users are allowed to reuse licensed spectrum which is authorized to so called licensed users.
+%\footnote{Terms licensed and primary, user and node, as well as spectrum band and channel are used indistinguishably in the following paper.}
 The cognitive radio devices are capable of vacating a spectrum band if the licensed users reappears in order not to cause harmful interference to them.
 
 Since primary users' activity demonstrates different patterns~\cite{commag-Khalife08}, the availability of licensed spectrum exhibits different dynamics accordingly.
@@ -47,7 +48,7 @@ Merely knowing the geographic locations of its neighbours and the destination, a
 However, in CRN dynamic link state renders geographic routing unsuccessful since packets are forwarded to the destination along the shortest path rather than avoiding areas heavily influenced by primary users.
 %Coordinates indicate not only the physical distance among SUs, but also the transmission opportunities in between could leverage the strengths of geographic routing even in CRNs.
 
-To enable geographic routing in CRN, in this paper we propose SAViC, spectrum aware virtual coordinates for secondary users in multi-channel multi-hop CRN.
+To enable geographic routing in CRN, in this chapter we propose SAViC, spectrum aware virtual coordinates for secondary users in multi-channel multi-hop CRN.
 The virtual coordinate is independent of real geographic position, and has been proposed to represent the properties of the media like, link quality~\cite{Alizai_11_probabilisticAddressing} or hop numbers~\cite{gpsfree05infocom}.
 Following this line of thought, our proposed virtual coordinate represents the spectrum occupancy of primary users. 
 On top of this, we propose the geographic routing scheme which decides the next hop with Euclidean distance metric, and detours the areas affected by primary users, or cuts through the area with lower spectrum occupancy.
@@ -58,7 +59,7 @@ With SAViC, geographic routing imposes little computation on deciding the next h
 %Routing in multi-hop CRN is split up into two relatively simpler problems. 
 %Firstly geographic routing decides on the next hop with virtual coordinate, then opportunistic spectrum access is conducted on the link to the chosen node.
 As to our knowledge, this is the first work integrating the spectrum usage by primary users into network coordinates in order to support geographic routing in CRN, which carries meanings especially for those resource restricted devices which want to work with licensed frequency band.
-The remainder of the paper is organized as follows, after reviewing related work in Section II, system model is introduced in Section III.
+The remainder of the chapter is organized as follows, after reviewing related work in Section II, system model is introduced in Section III.
 Assignment of SAViC is explained in Section IV, followed by opportunistic access during transmission in Section V.
 Section VI gives performance evaluation, concluding remarks are given in the last section.
 
@@ -94,6 +95,26 @@ After receiving the routing message on each channel, the destination decides the
 The routing path is blocked when one primary user locating along it changes its state from OFF to ON, thus source node needs to periodically launch route request to update the routing path which may have been invalid.
 \textit{SEARCH} adopts routing table and doesn't involve frequent overhead exchanges.
 
+xxxxx
+
+
+We propose a routing paradigm in CRN.
+Geographic routing is applied in the CRN network which is assigned with spectrum aware virtual coordinates.
+The dynamic availability of spectrum leads to prevalent topology changes, which makes spectrum aware routing difficult but essential.
+Routing schemes are proposed in~\cite{Abbagnale_Gymkhana10, caodv-10wd, segment-crowncom08} for CRN where primary users change their operating parameters infrequently.
+Highly dynamic primary users impose great challenge on routing, as is discussed in~\cite{Routing-crn-INFOCOM11}, where the statistics of primary users' activity is utilized in routing decision.
+A class of packet forwarding strategies for dynamic spectrum CRN is proposed in~\cite{routing-crn-icc11, routing-crn-jsac12}.
+Whenever a secondary user needs to forward a packet, it chooses channel and hop jointly based on channel's statistical characteristics observed beforehand.
+Forwarding decision is made for each single packet, which requires complex computations, large amount of control overhead, and customized media access control mechanisms.
+The solution provided by Chowdhury et al.\cite{search_geo_routing_chowdhury} improves geographic routing in multiple channel CRN by introducing circumventing mechanism, \ie when the next hop chosen based on geographic routing metric (\eg Euclidean distance) is affected by primary user, the routing packet chooses a neighbour of that node free from primary user's affection so as to avoid the primary user affected area.
+Such routing is conducted on all channels, afterwards a path merge process is undertaken and one path with alternating channel is finally formed with consideration of end to end delay.
+
+As the decision of the next hop is largely decided by the channel availability on the time point of decision, the node chosen as next hop may not be able to work after a short while due to primary user's reappearance.
+Thus, this scheme works well when the primary user's activity is infrequent, but when it goes tense, the frequent invalidity of nodes due to lack of available spectrum seriously deteriorates routing performance.
+
+
+xxxxxxx
+
 
 \section{SYSTEM MODEL}
 
@@ -117,7 +138,7 @@ Proactive spectrum sensing is conducted locally and periodically as Figure~\ref{
 
 The sensing duration $T_s$ includes both detection time in physical layer and the decision synchronisation time.
 Sensing period $T_p$ is the time between two successive sensing durations.
-If the channel is sensed as busy\footnote{Concrete sensing techniques are not discussed in this paper.} in sensing duration, which means at least one primary user in the vicinity is in ON state, we say the state of primary user is labelled as ON in the following sensing period $T_p$.
+If the channel is sensed as busy\footnote{Concrete sensing techniques are not discussed in this chapter.} in sensing duration, which means at least one primary user in the vicinity is in ON state, we say the state of primary user is labelled as ON in the following sensing period $T_p$.
 If not a single primary user is sensed, primary users in vicinity in the following sensing period is said to be in state OFF.
 Secondary user senses each licensed channel for time $T_{access}$ with round robin scheduling, and records statistics of ON/OFF states of that channel at its place.
 %In the process of transmission, as sensing is still conducted every $T_s+T_p$ time, the sensing record is updated by the sensing result in the previous $T_{access}$ time. 
@@ -151,7 +172,7 @@ For example, when the source-destination is B and D, and Euclidean distance calc
 \end{figure}
 
 
-In this paper, we propose licensed spectrum aware virtual coordinate in CRN, which enables geographic routing to find the path with better available spectrum.
+In this chapter, we propose licensed spectrum aware virtual coordinate in CRN, which enables geographic routing to find the path with better available spectrum.
 %First of all we briefly introduce the virtual coordinates assignment protocol (VCap)~\cite{gpsfree05infocom} which is designed for wireless sensor networks working with unlicensed spectrum band.
 Figure~\ref{fig:SA-VCapidea} shows one CRN where secondary users are assigned virtual coordinate according to anchor 1.
 The transmission opportunity of the nodes locating within primary users' transmission range, \eg node A and C, is decreased due to sporadic spectrum, as a result, the cost for packet transmission, \eg transmission delay and energy consumption, is increased.
@@ -176,7 +197,7 @@ We integrate this obstacle caused by spectrum scarcity to transmission into virt
 %Similar with VCap~\cite{gpsfree05infocom}, SAViC consists of four rounds of anchor message flooding initiated from four anchors $A$, $X$, $Y$, $Z$ respectively.
 As to SAViC, anchors broadcast anchor messages which flood over the network and result in virtual coordinate for each secondary user.
 Several anchors are needed to assign unique virtual coordinate for each secondary user.
-How to select anchors is out of the scope of this paper.
+How to select anchors is out of the scope of this chapter.
 %Each round of anchor message flooding results in one value on each node, and the last three values $x$, $y$, $z$ compose the triplet of virtual coordinate $\{x,y,z\}$.
 %Besides, each node also has one auxiliary quadruplet virtual coordinate $\{a',x',y',z'\}$ which is used to decide on anchors.
 In the following, we introduce how is virtual coordinate decided on each node with respect to anchors.
@@ -425,7 +446,7 @@ The normalized maximum blocking time on node $i$ is as Formula~\ref{eq:SingleCha
 %In a word, $\Lambda_i$ is decided by the smallest $\tau_i$ over all secondary channels.
 
 
-In following part of this paper, the virtual coordinate based on normalized spectrum utility is referred as \textit{spectrum availability based VC}, and The virtual coordinate based on normalized maximum blocking time is denoted as \textit{blocking time based VC} out of convenience.
+In remainder of this chapter, the virtual coordinate based on normalized spectrum utility is referred as \textit{spectrum availability based VC}, and The virtual coordinate based on normalized maximum blocking time is denoted as \textit{blocking time based VC} out of convenience.
 
 %\subsubsection*{Distinct virtual coordinate} 
 %Except for the \textit{spectrum availability} and \textit{blocking time} based virtual coordinate introduced in this section, other metrics of spectrum opportunities in CRN~\cite{spectrumDecision_2013mass} are also possible to be integrated into virtual coordinate, while, the validity of the idea of spectrum availability based virtual coordinates is not harmed.
@@ -445,7 +466,7 @@ When primary user's operation pattern changes, \eg occupy spectrum with increase
 \label{osa}
 %\subsection*{Improved Geographic Greedy Routing Used in Testing}
 %After SAViC is applied in CRN, geographic routing is used and the routing metric is the remaining Euclidean distance to the destination. 
-Although spectrum aware virtual coordinate is the main concern of this paper, we also introduce the geographic routing to be used as it affects the routing result directly.
+Although spectrum aware virtual coordinate is the main concern of this chapter, we also introduce the geographic routing to be used as it affects the routing result directly.
 With geographic routing, packet sender/forwarder chooses the neighbour which has smaller Euclidean distance to the destination.
 The distance between node $i$ and destination $d$ is $\sqrt{(x_d-x_i)^2+(y_d-y_i)^2+(z_d-z_i)^2}$, when virtual coordinate can be denoted as $\{x, y, z\}$.
 A trivial improvement on greedy geographic routing is implemented in network layer to mitigate the dead end problem.
@@ -479,7 +500,7 @@ Secondary user resends buffered packet every period of time, and drops it if the
 In multiple channel CRN, after one node deciding on the next hop via geographic routing, which channel to use needs to be answered.
 This problem involves considerations from many aspects, such as minimizing channel switch cost~\cite{spectrumDecision_2013mass}, mitigating co-channel interferences~\cite{DySpAN12_Di} etc..
 %Channel selection is an active research topic which involves interference mitigation~\cite{DySpAN12_Di}, power control~\cite{HoangPowerChannel2010}, scheduling~\cite{MOBICOM10_retransmission}, topology control~\cite{Li11_ROSS}, etc.
-We adopt a lightweight heuristic method in this paper. 
+We adopt a lightweight heuristic method in this chapter. 
 When there is packet to send and the next hop is decided, packet sender chooses the channel in descending sequence with channel's metric, i.e., likelihood of channel availability, or blocking time.
 The sender chooses the channel with the best metric, then conducts spectrum sensing in the immediately following sensing duration to determine the channel's usability.
 If the channel is sensed as free to use, sender transmits \textit{request\_channel\_x} to the next hop on the control channel, when it receives the answering message \textit{channel\_x\_available} from that node, it starts communication on channel $x$ in the following sensing period.
@@ -498,7 +519,7 @@ Prior to that, the set-up of simulation is introduced.
 
 \subsection{Simulation Setup}
 In this section, we introduce the deployment of the primary users to generate various spectrum availability in the network, then introduce the important parameters in simulation.
-Different from \cite{gpsfree05infocom} where simulation is conducted without considering any activities in MAC and physical layer, simulation in this paper deploys a wireless environment which is close to reality, \eg interferences and channel shadowing are involved.
+Different from \cite{gpsfree05infocom} where simulation is conducted without considering any activities in MAC and physical layer, simulation in this chapter deploys a wireless environment which is close to reality, \eg interferences and channel shadowing are involved.
 
 
 \subsubsection*{Primary Users}
