@@ -147,96 +147,6 @@ Based on the requirements of interested communication, CR users need to identify
 
 
 
-\subsection{Representative Cognitive Radio Networks}
-In this section, we introduce two types of cognitive radio networks, and the problems we tackle in this thesis reside in these networks.
-
-\subsubsection*{Cognitive Radio Ad Hoc Network}
-%An ad hoc network is a decentralized paradigm of wireless network, which consists of a collection of autonomous mobile users which communicate over wireless links.
-
-%Efficient distributed algorithms are needed to determine network organization, link scheduling, and routing.
-
-Cognitive radio ad hoc network (\gls{CRAHN}) is composed with autonomous mobile cognitive radio users which work with overlay spectrum sharing paradigm.
-CRAHN is usually represented as an undirected graph $G$.
-Cognitive radio users constitute the vertices, the edge between two vertices is decided not only by the distance, propagation and attenuation properties between the two vertices, but also the spectrum availability on both vertices, \ie when they can decode the received signal from each other correctly, and there is common channel available between them on which communication is conducted, then an bidirectional edge is available on graph $G$.
-As to ad hoc network, the graph is constant when users are static.
-As to cognitive radio ad hoc network, due to primary users' activity, an edge between two vertices is decided by the fact that whether the two vertices can simultaneously access the same licensed channel.
-Hence, the corresponding graph is dynamic under primary users' operation, which imposes extra difficulties on network organization, routing and many other network functionalities.
-
-\subsubsection*{IEEE 802.22 Standards}
-\label{ieee80222}%XXXXXXXXXXXXXX clearly statement, regulations of FCC, ECC, 802.22 XXXXXXXXXXXXXXXXXXXX
-%%XXXXXXXXXXXXXXXXXXXXXXXXXXXX   paper: IEEE 802.22: The First Cognitive Radio Wireless Regional Area Networks (WRANs) Standard
-IEEE 802.22~\cite{802.22} is the standard for Wireless Regional Area Networks (\glspl{WRAN}), which defines a cellular network paradigm for secondary equipments working on unused TV channels in overlay manner.
-Unused TV spectrum is termed as TV White space by the Federal Communications Commission (FCC)~\cite{FCC_2010_sedond_memorandumm}, which is licensed to incumbent users such like digital TV, analog TV, and wireless microphone.
-As the TV service is transferred from traditional analog to digital, the
-The TV channels to be used are of UHF/VHF TV bands and are between 54 and 862 MHz.
-The bandwidth of one TV channel is 6 MHz.%XXXXXXXXXXXXX add some description in details XXXXXXXXXXXXXXXXXXXXXX
-
-
-Unlicensed users consists of White Base Stations (\glspl{WBS}) and customer premises equipments (or terminals for short), where each terminal is served by one base station. 
-As to unlicensed users, detecting incumbent users is challenging because the FCC requires the unlicensed users should be able to detect the presence of signals from TV stations or wireless microphone at a received power level of -114 dBm~\cite{Technical_Challenges_TVwhit}. 
-Thus FCC doesn't require the sensing ability on unlicensed users, but regulates the secondary usage of TV white space in a prudent manner, including the spectrum bands permitted to use based on their location, the transmission power, the distance away from TV service area and so on.
-IEEE 802.22 largely complies FCC regulations on the utilization of TVWS.
-
-There exists a centralized database, and every unlicensed user should register its type and geographic location to one TV database.
-The centralized database notifies the secondary users the available spectrum at their places, and is possible to decide transmission parameters for them, \ie spectrum to be used, or transmission power.
-Note this database takes the functionality of spectrum sensing in addition to spectrum decision and sharing, thus IEEE 802.22 adopts centralized spectrum decision for unlicensed users.
-The feasibility of this centralised paradigm is largely due to the characteristics of TV channel, as TV channel usage follows a slow and scheduled pattern. 
-When two or more base stations operate on the same channel, TDMA like mechanism for WBSes is adopted.
-%Centralized spectrum decision is adopted in IEEE 802.22.
-
-
-
-
-
-Recent standard published in Nov. 2010 suggests both sensing ability as well as database look-up to avoid affecting primary systems.
-%As to utilization of available TVWS, IEEE 802.22 proposes centralized channel allocation in database.
-
-
-
-\subsubsection*{TV White Space}
-%Opportunistic utilization for unlicensed secondary users (also named as white space devices, abbreviated as WSD) working with TV broadcast spectrum (TV white space) is promising to cope with the scarcity of spectrum resources\cite{fcc}. 
-%UHF TV spectrum (TV white space, TVWS) has low utilization in both spatial and temporal dimensions. \fmjg{xxx relevant data and citation needed here XX also mention where this is the case, i.e. US ? XXX} 
-
-Locating in the VHF and UHF bands, TV White Spaces (TV white space, TVWS) are highly desirable for wireless communications, because they have good properties on propagation, buildings penetration, and broadband payload capacity. In the US, the requirements for secondary spectrum usage in the TV broadcast bands are given by FCC. 
-%
-On November 4, 2008, FCC made far reaching changes by opening the unused portion of the UHF TV space to unlicensed secondary users. \textit{Unused portion} here denotes the TV spectrum which is not currently being used by TV stations, or that secondary users can use while the ongoing TV broadcasting on the same spectrum is not interfered.
-%
-As mentioned, autonomous spectrum sensing is one approach for secondary users to decide the available TV spectrum. With sensing ability, every secondary user scans certain parts of the TV spectrum band and is able to detect TV transmission even from a very distant place such that those channels\footnote{In the following, we use the words \textit{spectrum} and \textit{channel} interchangeably.} can be ruled out for usage. However, to real prevent any interference with ongoing TV broadcasts, the sensing algorithm becomes quite complex. Moreover, it is required to be conservative when deciding the available TV channels leading to an underestimation of available TV channels and causing inefficiencies~\cite{geoTVprotection08dyspan}. Considering the slow change of TV spectrum usage, along with the fact that the spectrum usage by TV stations is scheduled, the geolocation approach together with central database becomes more appealing in TVWS (TW White Space) utilization scenario. FCC adopts this solution as the main way, and regulates the secondary usage of TV white space in a prudent manner, including the spectrum bands permitted to use based on their location, the transmission power, the distance away from TV service area and so on. FCC regulates portable secondary users to operate from channel 21 (512 MHz) to 51 (698 MHz), with the exception of channel 37. As to fixed secondary usage, the allowed spectrum band is from TV channel 2 (54 MHz) to TV channel 51, with TV channels 3, 4 and 37 being prohibited. Thus, the available TV spectrum is about 600 MHz wide. Compared to conventional unlicensed ISM bands in the 2.4 GHz and 5 GHz band, all together TVWS has more to offer.
-
-While the TV spectrum is free to use under the above mentioned conditions, it might also be 'polluted' by primary TV stations due to the coexistence with them. \cite{DySpAN10MeasuringWhitespaceCapacity} analyzes the capacity possibly provided by exploiting free TV channels. Complying with the rigid regulation of FCC, TV white space brings hundreds of kilobits/sec per square kilometer for secondary users when the communicating secondary pair is about 1 km apart. The research shows that interference from TV stations and other co-channel secondary users heavily restricts the capacity. \cite{tvgreyspace12} further investigates the possible TVWS usage \textit{within} TV service area (referred to as 'gray space'), where the secondary usage does not violate TV receivers. The authors propose another significant amount of TV spectrum, but the interference from TV broadcasters is stronger due to the secondary receivers being closer to TV broadcasters. 
-
-The potential applications supported by TVWS are the major driving force for TVWS communications technology. It is envisioned that TVWS can support high-data-rate backbone for fixed stations in Large Area Connectivity, short-range indoor connectivity, seamless connectivity for mobile stations and emergency related equipment. In the following, we give a brief introduction to the governing regulations and industrial standards issued for TVWS usage.
-%
-
-
-
-%Firstly, more unused TV white frequencies become vacant than ever with the ongoing transition from analog to digital broadcasts. Secondly, the lower frequencies of TV band enable broadband access over much longer ranges compared to other bands with higher center frequencies. TV white space contributes an alternative to industrial, scientific, and medical (ISM) band which is already heavily congested. Besides, TV white space provides abundant spectrum resources for cellular network, so that the frequency reuse factor is decreased and sophisticated interference mitigation mechanisms can be alleviated. TVWS is free but with restrictions, TV receivers should be protected from the harmful interferences form WBDs, in other word, the aggregated interferences caused by all working WSDs should not exceed a threshold on TV receivers.
-
-
-
-\subsubsection*{Co-Existence in TV White Space}
-%In compliance with the methodology of cognitive radio, 
-
-%this is a intro to a general cr work.
-%Temperature regulation~\cite{Temperature_regulation03} opens another way to utilize TVWS. \cite{wuinfocom09} deals with the joint channel-power selection for multiple transmission links (pairs) in a general cognitive radio scenario. The distributed scheme is derived from decomposition of Lagrangian dual, which converges pure Nash equilibrium. To facilitate this scheme, monitors from TV stations are required to watch interference from WSDs, furthermore, monitors have to be equipped with computational ability and interact with secondary users in the whole process of convergence. This methodology works in try-error-try mode, which asks for modification on the current operation of TV services.
-Regulatory bodies in different countries have issued requirements on the occupancy of TVWS bands, respectively. The permissible channels regulated by FCC have been briefly introduced above. Besides, FCC divides the devices operating in the TVWS (TV band devices, or TVBDs) into three categories: Fixed device, Mode I personal/portable device, and Mode II personal/portable device. Every category obeys different rules on transmission power, mandatory database access and so on. Fixed and Mode II devices are connected to the database directly (or indirectly by another fixed or Mode II TVBD), Fixed device accesses DB at least once per day, Mode II device has to access DB every 60 seconds, or when it changes location by more than 100 meters. The transmission power for Fixed TVBD is 4 W, and 100 mW for Mode II TVBD. Mode I TVBD operates only under the control of a fixed or Mode II TVBD, and accesses them for available channels every 60 seconds. There is also regulations on the antenna heights and other aspects. OFCOM (being the regulatory authority in UK) opens less TVWS for TVBD and categorizes White Space Devices (WSDs) into Master WSD and Slave WSD which are roughly equivalent to fixed/Mode II TVBD and Mode I TVBD, respectively. ECC (being the regulatory authority in Europe) also adopts Master and Slave structure while utilizing the geolocation and database solution to assign channels and corresponding operating parameters to TVBD. In both FCC and ECC regulations, the available channels are calculated based on the distance between primary and secondary systems together with some propagation model. Hence, the principle behind the notion of channel availability is the presumed received signal strength at potential TV receivers, which should be obviously below a certain level. FCC adopts a fixed transmit power level for secondary systems and assumes that the distance used (resulting from the propagation model) is sufficient to protect the TV receivers. ECC's restriction is more flexible on the transmission power which can be adjusted based on the distance between the secondary user and the TV receivers. For both regulations, TV receivers may become vulnerable when there are multiple secondary equipments transmitting simultaneously. \cite{Jaentti11} shows that even the regulations integrate an interference margin for multiple secondary users' transmitting, the TV receivers are still vulnerable.
-
-%
-%Some regulations, as that from FCC and ECC, are sufficient guidance for actual implementation, while some other rules are providing test for interference assessment. 
-%
-Standardization on secondary usage of TVWS is very active. IEEE 802.19 is a family of IEEE 802 standards in Wireless Coexistence Working Group, among which, IEEE 802.19.1 is for wireless coexistence in TVWS. IEEE 802.11af is standards for WLAN operation in TVWS, IEEE 802.15.4m is for low rate (LR) WPAN operating in TVWS. IEEE 802.22 is for Wireless Regional Area Network (WRAN) using TVWS. As TV band is only 6 or 7 MHz while WLAN channel bandwidth is 40 MHz for state-of-the-art IEEE 802.11n amendment, IEEE 802.11af proposes channel aggregation mechanism for WLAN working with TVWS. Maximum transmit power and spectrum mask of Mode I should be approved by Mode II devices beforehand.  
-
-
-%Geolocation is extensively used in cognitive radio network. \cite{nashbargaining_2012jsac} proposes a centralized light weighted scheme to solve channel and power allocation among secondary users with TDMA manner, where geolocation of primary users are used by secondary users to calculate the caused interferences by them on the primary users. Considering the slow change of TV spectrum usage, along with the fact that the TV spectrum usage is scheduled, geolocation approach becomes more appealing in TVWS utilization scenario. Assume there is a database which is connected with all WSDs, and it is aware of the location of TV receivers (optionally with terrain information) and WSDs and proper propagation model in between, the database calculates the RSSI (Received Signal Strength indication) on each WSDs in the whole network. The database decides the channel availability based on whether the RSSI exceeds a threshold value or not, then notices WSDs their available channels in either proactive or reactive manner. This geolocation approach is used for building a WiFi like network working with TVWS ~\cite{SenseLess} which demonstrates the feasibility of predicting the available TV spectrum accurately using suitable propagation models (Longley-Rice and terrain wherein). This approach is also integrated into regulation from Federal Communications Commission (FCC) of U.S. FCC regulates every WSD should access the database to retrieve the available TV channels on its location, and fixes the transmission power for fixed WSD as 4 W which is a conservative value. Aforementioned is calculation RSSI of PU on the location of WSDs to see whether the PUs \textit{appears}, there is another way to work with geolocation. Instead of deciding the available TV channels for WSDs, database calculates the interferences from WSBs on TV receivers, then directly assigns channel and power levels to each WSD and in the same time preventing the TV receivers from harmful interferences (the interferences under a certain threshold). Electronic Communications Committee (ECC) in Europe adopts this approach so that the transmission power for WSD is more flexible depending on WSD's location.
-
-
-IEEE 802.22 has been the first IEEE standard for wireless regional area network (WRAN) working on TV white space. According to this standard, the system consists of a base station and customer premises equipment (or terminals for short), where terminals are associated with base stations, and are served by them. Recent standard published in Nov. 2010 mentions both, i.e. sensing ability as well as TVWS geolocation and database look-up as schemes for detecting primary systems. Self-coexistence mechanism is also proposed, which provides a TDMA like mechanism for WBSes to share TVWS. \cite{HoangPowerChannel2010} proposes a distributed solution for power control and channel assignment in both down-link and up-link communication in a WRAN, but the investigated secondary network is composed with only one base station and multiple terminals. % Although the transmission power is decided in a distributed manner, primary transmitters are required to adjust their transmission power in order to guarantee the SINR on primary receivers in a learning process, while, the operation of WSDs working on TVWS should be transparent as to TV services.\fmjg{This summary of the 2010 paper does not make sense to me - why are you talking of primary systems here ??} 
-
-Each base station working with TVWS needs a certain transmission power and a certain spectrum. The decision should maximize performance in this cell under interferences from TV broadcasters and other secondary base stations, meanwhile, the TV receivers should be protected. Up to our knowledge, there is no work coping with co-existence between secondary base station with both primary TV broadcasters and other base stations. %Considering that secondary base stations are likely to be from different administrative domains, a distributed solution would be required. And that makes us turn to game theory and the separation of the problem into two different ones. 
-In the following, we propose a workaround for the joint power and channel allocation problem for WRAN composed with multiple base stations.
-
-
-
 
 
 \section{Spectrum Sharing Paradigms}
@@ -382,6 +292,125 @@ For instance, non-cooperative spectrum sharing is usually conducted in distribut
 
 
 
+\section{Representative Cognitive Radio Networks}
+In this section, we introduce two types of cognitive radio networks, and the problems we tackle in this thesis reside in these networks.
+
+\subsection{Cognitive Radio Ad Hoc Network}
+%An ad hoc network is a decentralized paradigm of wireless network, which consists of a collection of autonomous mobile users which communicate over wireless links.
+
+%Efficient distributed algorithms are needed to determine network organization, link scheduling, and routing.
+
+Cognitive radio ad hoc network (\gls{CRAHN}) is composed with autonomous mobile cognitive radio users which work with overlay spectrum sharing paradigm.
+CRAHN is usually represented as an undirected graph $G$.
+Cognitive radio users constitute the vertices, the edge between two vertices is decided not only by the distance, propagation and attenuation properties between the two vertices, but also the spectrum availability on both vertices, \ie when they can decode the received signal from each other correctly, and there is common channel available between them on which communication is conducted, then an bidirectional edge is available on graph $G$.
+As to ad hoc network, the graph is constant when users are static.
+As to cognitive radio ad hoc network, due to primary users' activity, an edge between two vertices is decided by the fact that whether the two vertices can simultaneously access the same licensed channel.
+Hence, the corresponding graph is dynamic under primary users' operation, which imposes extra difficulties on network organization, routing and many other network functionalities.
+
+%\subsection{IEEE 802.22 Standards}
+%\label{ieee80222}%XXXXXXXXXXXXXX clearly statement, regulations of FCC, ECC, 802.22 XXXXXXXXXXXXXXXXXXXX
+%%%XXXXXXXXXXXXXXXXXXXXXXXXXXXX   paper: IEEE 802.22: The First Cognitive Radio Wireless Regional Area Networks (WRANs) Standard
+%IEEE 802.22~\cite{802.22} is the standard for Wireless Regional Area Networks (\glspl{WRAN}), which defines a cellular network paradigm for secondary equipments working on unused TV channels in overlay manner.
+%Unused TV spectrum is termed as TV White space by the Federal Communications Commission (FCC)~\cite{FCC_2010_sedond_memorandumm}, which is licensed to incumbent users such like digital TV, analog TV, and wireless microphone.
+%As the TV service is transferred from traditional analog to digital, the
+%The TV channels to be used are of UHF/VHF TV bands and are between 54 and 862 MHz.
+%The bandwidth of one TV channel is 6 MHz.%XXXXXXXXXXXXX add some description in details XXXXXXXXXXXXXXXXXXXXXX
+%
+%
+%Unlicensed users consists of White Base Stations (\glspl{WBS}) and customer premises equipments (or terminals for short), where each terminal is served by one base station. 
+%As to unlicensed users, detecting incumbent users is challenging because the FCC requires the unlicensed users should be able to detect the presence of signals from TV stations or wireless microphone at a received power level of -114 dBm~\cite{Technical_Challenges_TVwhit}. 
+%Thus FCC doesn't require the sensing ability on unlicensed users, but regulates the secondary usage of TV white space in a prudent manner, including the spectrum bands permitted to use based on their location, the transmission power, the distance away from TV service area and so on.
+%IEEE 802.22 largely complies FCC regulations on the utilization of TVWS.
+%
+%There exists a centralized database, and every unlicensed user should register its type and geographic location to one TV database.
+%The centralized database notifies the secondary users the available spectrum at their places, and is possible to decide transmission parameters for them, \ie spectrum to be used, or transmission power.
+%Note this database takes the functionality of spectrum sensing in addition to spectrum decision and sharing, thus IEEE 802.22 adopts centralized spectrum decision for unlicensed users.
+%The feasibility of this centralised paradigm is largely due to the characteristics of TV channel, as TV channel usage follows a slow and scheduled pattern. 
+%When two or more base stations operate on the same channel, TDMA like mechanism for WBSes is adopted.
+%%Centralized spectrum decision is adopted in IEEE 802.22.
+%
+%
+%Recent standard published in Nov. 2010 suggests both sensing ability as well as database look-up to avoid affecting primary systems.
+
+
+
+\subsection{TV White Space}
+\label{TVWS}
+%Opportunistic utilization for unlicensed secondary users (also named as white space devices, abbreviated as WSD) working with TV broadcast spectrum (TV white space) is promising to cope with the scarcity of spectrum resources\cite{fcc}. 
+%UHF TV spectrum (TV white space, TVWS) has low utilization in both spatial and temporal dimensions. \fmjg{xxx relevant data and citation needed here XX also mention where this is the case, i.e. US ? XXX} 
+
+On November 4, 2008, FCC made far reaching changes on spectrum usage by opening the unused portion of the UHF TV space to unlicensed secondary users. 
+\textit{Unused portion} here denotes the TV spectrum which is not currently being used by TV stations, or that secondary users can use while the ongoing TV broadcasting on the same spectrum is not interfered.
+These Unused portion of TV spectrum is called TV White Space (\gls{TVWS}).
+%
+Locating within the VHF and UHF range, TVWS is highly desirable for wireless communications, because it has good properties on propagation, buildings penetration, and broadband payload capacity.
+%
+
+In the US, the requirements for secondary spectrum usage in the TV broadcast bands are given by FCC. 
+%
+Autonomous spectrum sensing is one approach for secondary users to decide the available TV spectrum. With sensing ability, every secondary user scans certain parts of the TV spectrum band and is able to detect TV transmission even from a very distant place such that those channels can be ruled out for usage.
+However, to real prevent any interference with ongoing TV broadcasts, the sensing algorithm becomes quite complex. 
+Moreover, it is required to be conservative when deciding the available TV channels leading to an underestimation of available TV channels and causing inefficiencies~\cite{geoTVprotection08dyspan}. Considering the slow change of TV spectrum usage, along with the fact that the spectrum usage by TV stations is scheduled, the geolocation approach together with central database becomes more appealing in TVWS utilization scenario.
+FCC adopts this solution as the main way, and regulates the secondary usage of TV white space in a prudent manner, including the spectrum bands permitted to use based on their location, the transmission power, the distance away from TV service area and so on.
+FCC regulates portable secondary users to operate from channel 21 (512 MHz) to 51 (698 MHz), with the exception of channel 37.
+As to fixed secondary usage, the allowed spectrum band is from TV channel 2 (54 MHz) to TV channel 51, with TV channels 3, 4 and 37 being prohibited.
+Thus, the available TV spectrum is about 600 MHz wide. 
+Compared to conventional unlicensed ISM bands in the 2.4 GHz and 5 GHz band, all together TVWS has more to offer.
+
+While the TV spectrum is free to use under the above mentioned conditions, it might also be 'polluted' by primary TV stations due to the coexistence with them. \cite{DySpAN10MeasuringWhitespaceCapacity} analyzes the capacity possibly provided by exploiting free TV channels. 
+Complying with the rigid regulation of FCC, TV white space brings hundreds of kilobits/sec per square kilometre for secondary users when the communicating secondary pair is about 1 km apart.
+The research shows that interference from TV stations and other co-channel secondary users heavily restricts the capacity.
+\cite{tvgreyspace12} further investigates the possible TVWS usage \textit{within} TV service area (referred to as 'gray space'), where the secondary usage does not violate TV receivers.
+The authors propose another significant amount of TV spectrum, but the interference from TV broadcasters is stronger due to the secondary receivers being closer to TV broadcasters. 
+
+The potential applications supported by TVWS are the major driving force for TVWS communications technology. It is envisioned that TVWS can support high-data-rate backbone for fixed stations in Large Area Connectivity, short-range indoor connectivity, seamless connectivity for mobile stations and emergency related equipment. In the following, we give a brief introduction to the governing regulations and industrial standards issued for TVWS usage.
+%
+
+
+
+%Firstly, more unused TV white frequencies become vacant than ever with the ongoing transition from analog to digital broadcasts. Secondly, the lower frequencies of TV band enable broadband access over much longer ranges compared to other bands with higher center frequencies. TV white space contributes an alternative to industrial, scientific, and medical (ISM) band which is already heavily congested. Besides, TV white space provides abundant spectrum resources for cellular network, so that the frequency reuse factor is decreased and sophisticated interference mitigation mechanisms can be alleviated. TVWS is free but with restrictions, TV receivers should be protected from the harmful interferences form WBDs, in other word, the aggregated interferences caused by all working WSDs should not exceed a threshold on TV receivers.
+
+
+
+\subsubsection*{Co-Existence in TV White Space}
+%In compliance with the methodology of cognitive radio, 
+
+%this is a intro to a general cr work.
+%Temperature regulation~\cite{Temperature_regulation03} opens another way to utilize TVWS. \cite{wuinfocom09} deals with the joint channel-power selection for multiple transmission links (pairs) in a general cognitive radio scenario. The distributed scheme is derived from decomposition of Lagrangian dual, which converges pure Nash equilibrium. To facilitate this scheme, monitors from TV stations are required to watch interference from WSDs, furthermore, monitors have to be equipped with computational ability and interact with secondary users in the whole process of convergence. This methodology works in try-error-try mode, which asks for modification on the current operation of TV services.
+Regulatory bodies in different countries have issued requirements on the occupancy of TVWS bands by secondary users respectively. 
+The permissible channels regulated by FCC have been briefly introduced above.
+Besides, FCC divides the devices operating in the TVWS (TV band devices, or \glspl{TVBD}) into three categories: Fixed device, Mode I personal/portable device, and Mode II personal/portable device. Every category obeys distinct rules on transmission power, mandatory database access and so on.
+Fixed and Mode II devices are connected to the database directly (or indirectly by another fixed or Mode II TVBD), Fixed device accesses DB at least once per day, Mode II device has to access DB every 60 seconds, or when it changes location by more than 100 meters.
+The transmission power for Fixed TVBD is 4 W, and 100 mW for Mode II TVBD. 
+Mode I TVBD operates only under the control of a fixed or Mode II TVBD, and accesses them for available channels every 60 seconds.
+There is also regulations on the antenna heights and other aspects.
+OFCOM (being the regulatory authority in UK) opens less TVWS for TVBD and categorizes White Space Devices (WSDs) into Master WSD and Slave WSD which are roughly equivalent to fixed/Mode II TVBD and Mode I TVBD, respectively.
+ECC (being the regulatory authority in Europe) also adopts Master and Slave structure while utilizing the geolocation and database solution to assign channels and corresponding operating parameters to TVBD.
+In both FCC and ECC regulations, the available channels are calculated based on the distance between primary and secondary systems together with some propagation model.
+Hence, the principle behind the notion of channel availability is the presumed received signal strength at potential TV receivers, which should be obviously below a certain level.
+FCC adopts a fixed transmit power level for secondary systems and assumes that the distance used (resulting from the propagation model) is sufficient to protect the TV receivers.
+ECC's restriction is more flexible on the transmission power which can be adjusted based on the distance between the secondary user and the TV receivers. 
+For both regulations, TV receivers may become vulnerable when there are multiple secondary equipments transmitting simultaneously.
+\cite{Jaentti11} shows that even the regulations integrate an interference margin for multiple secondary users' transmitting, the TV receivers are still vulnerable.
+
+%
+%Some regulations, as that from FCC and ECC, are sufficient guidance for actual implementation, while some other rules are providing test for interference assessment. 
+%
+Standardization on secondary usage of TVWS is very active. IEEE 802.19 is a family of IEEE 802 standards in Wireless Coexistence Working Group, among which, IEEE 802.19.1 is for wireless coexistence in TVWS. IEEE 802.11af is standards for WLAN operation in TVWS, IEEE 802.15.4m is for low rate (LR) WPAN operating in TVWS. IEEE 802.22 is for Wireless Regional Area Network (WRAN) using TVWS. As TV band is only 6 or 7 MHz while WLAN channel bandwidth is 40 MHz for state-of-the-art IEEE 802.11n amendment, IEEE 802.11af proposes channel aggregation mechanism for WLAN working with TVWS. Maximum transmit power and spectrum mask of Mode I should be approved by Mode II devices beforehand.  
+
+
+%Geolocation is extensively used in cognitive radio network. \cite{nashbargaining_2012jsac} proposes a centralized light weighted scheme to solve channel and power allocation among secondary users with TDMA manner, where geolocation of primary users are used by secondary users to calculate the caused interferences by them on the primary users. Considering the slow change of TV spectrum usage, along with the fact that the TV spectrum usage is scheduled, geolocation approach becomes more appealing in TVWS utilization scenario. Assume there is a database which is connected with all WSDs, and it is aware of the location of TV receivers (optionally with terrain information) and WSDs and proper propagation model in between, the database calculates the RSSI (Received Signal Strength indication) on each WSDs in the whole network. The database decides the channel availability based on whether the RSSI exceeds a threshold value or not, then notices WSDs their available channels in either proactive or reactive manner. This geolocation approach is used for building a WiFi like network working with TVWS ~\cite{SenseLess} which demonstrates the feasibility of predicting the available TV spectrum accurately using suitable propagation models (Longley-Rice and terrain wherein). This approach is also integrated into regulation from Federal Communications Commission (FCC) of U.S. FCC regulates every WSD should access the database to retrieve the available TV channels on its location, and fixes the transmission power for fixed WSD as 4 W which is a conservative value. Aforementioned is calculation RSSI of PU on the location of WSDs to see whether the PUs \textit{appears}, there is another way to work with geolocation. Instead of deciding the available TV channels for WSDs, database calculates the interferences from WSBs on TV receivers, then directly assigns channel and power levels to each WSD and in the same time preventing the TV receivers from harmful interferences (the interferences under a certain threshold). Electronic Communications Committee (ECC) in Europe adopts this approach so that the transmission power for WSD is more flexible depending on WSD's location.
+
+
+IEEE 802.22 has been the first IEEE standard for wireless regional area network (WRAN) working on TV white space. According to this standard, the system consists of a base station and customer premises equipment (or terminals for short), where terminals are associated with base stations, and are served by them. Recent standard published in Nov. 2010 mentions both, i.e. sensing ability as well as TVWS geolocation and database look-up as schemes for detecting primary systems. Self-coexistence mechanism is also proposed, which provides a TDMA like mechanism for WBSes to share TVWS. \cite{HoangPowerChannel2010} proposes a distributed solution for power control and channel assignment in both down-link and up-link communication in a WRAN, but the investigated secondary network is composed with only one base station and multiple terminals. % Although the transmission power is decided in a distributed manner, primary transmitters are required to adjust their transmission power in order to guarantee the SINR on primary receivers in a learning process, while, the operation of WSDs working on TVWS should be transparent as to TV services.\fmjg{This summary of the 2010 paper does not make sense to me - why are you talking of primary systems here ??} 
+
+
+
+
+
+
+
+
 
 
 \section{Problem Statement}
@@ -411,15 +440,27 @@ In the following, we give full problem statements for the mentioned challenges.
 \subsection{Channel and Power Allocation in IEEE 802.22 Network}
 %\subsubsection*{Utilize TV White Space}
 
-As introduced in Section~\ref{ieee80222}, the TV white spectrum has appealing characteristics for secondary users, for instance, the TV spectrum spans wide frequency range, it is not used by TV services frequently and the spectrum availability lasts relatively longer.
-There have been regulations, standards proposed to utilize TV spectrum, all of which rely on the centralized database to manage the spectrum usage, \ie channel and transmission power.
-
-The conservative measures on the transmission power greatly restrict the full utilization of TV spectrum, and the channel allocation is not given consideration.
-As to the former problem, based on the information of geographic locations and attenuation parameters, the upper bound of transmission could be relaxed, and the centralised database is a suitable place to conduct this work.
-The later problem, at the first glance, has many similarities with the channel assignment problem which has been discussed extensively in the past decades, but the problem is unique as the transmission power on each user is different.
-As a result, the interference caused between co-channel transmitters is not symmetric, which disables the solutions proposed for the channel assignment problems in conventional networks, \eg ad hoc networks, or mesh networks.
+ %Considering that secondary base stations are likely to be from different administrative domains, a distributed solution would be required. And that makes us turn to game theory and the separation of the problem into two different ones. 
 
 
+%As introduced in Section~\ref{ieee80222}, the TV white spectrum has appealing characteristics for secondary users, for instance, the TV spectrum spans wide frequency range, it is not used by TV services frequently and the spectrum availability lasts relatively longer.
+There are several problems with the current regulations and standards proposing on the utilization of TVWS.
+Firstly, most of these proposals rely on the centralized database to manage the spectrum usage in a centralized manner.
+This paradigm is not suitable when the TVBD belong to different business bodies, \ie operators.
+Thus, a centralized resource allocation is infeasible.
+Secondly, the current usage of TVWS is prudent, \ie on working channel and transmission power as introduced in Section~\ref{TVWS}.
+These conservative measures on the transmission power restrict the full utilization of TV spectrum.
+Thirdly, as the transmission power of TVBD is restricted, the interference between TVBDs is not given consideration.
+In fact, as the interference caused between co-channel transmitters may not be symmetric, the solutions proposed for the channel assignment problems in conventional networks, \eg ad hoc networks, or mesh networks can not be applied any more.
+%As to the former problem, based on the information of geographic locations and attenuation parameters, the upper bound of transmission could be relaxed, and the centralised database is a suitable place to conduct this work.
+%The later problem, at the first glance, has many similarities with the channel assignment problem which has been discussed extensively in the past decades, but the problem is unique as the transmission power on each user is different.
+Up to our knowledge, there is no work coping with co-existence between secondary base station with both primary TV broadcasters and other base stations.
+
+%Each base station working with TVWS needs a certain transmission power and a certain spectrum.
+%The decision should maximize performance of terminals in this cell under interferences from TV broadcasters and other secondary base stations, meanwhile, the TV receivers should be protected.
+
+
+In this thesis, we propose a solution for the joint power and channel allocation problem for the base stations in a WRAN network.
 
 
 %This is very applicable as TV spectrum usage changes slowly, and the spectrum usage by TV stations is scheduled.

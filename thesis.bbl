@@ -172,6 +172,12 @@ Report of the spectrum efficiency working group.
   using {TV} receiver information.
 \newblock {\em Vehicular Technology Magazine, IEEE 7}, 1 (March 2012), 24--30.
 
+\bibitem{tvgreyspace12}
+{\sc Bezabih, H., Ellingsaeter, B., Noll, J., and Maseng, T.}
+\newblock Digital broadcasting: Increasing the available white space spectrum
+  using {TV} receiver information.
+\newblock {\em IEEE Vehicular Technology Magazine 7}, 1 (march 2012), 24 --30.
+
 \bibitem{802.22co-existence09}
 {\sc Bian, K., and Park, J.-M.}
 \newblock A coexistence-aware spectrum sharing protocol for 802.22 {WRANs}.
@@ -304,11 +310,22 @@ Report of the spectrum efficiency working group.
 \newblock In {\em Proceedings of IEEE Military Communications Conference
   2006\/} (Oct 2006), pp.~1--7.
 
+\bibitem{geoTVprotection08dyspan}
+{\sc Gurney, D., Buchwald, G., Ecklund, L., Kuffner, S., and Grosspietsch, J.}
+\newblock Geo-location database techniques for incumbent protection in the {TV}
+  white space.
+\newblock In {\em Proc. of IEEE DySPAN 2008\/} (Oct. 2008).
+
 \bibitem{Han:2008:RAW:1457343}
 {\sc Han, Z., and Liu, K. J.~R.}
 \newblock {\em Resource Allocation for Wireless Networks: Basics, Techniques,
   and Applications}.
 \newblock Cambridge University Press, New York, NY, USA, 2008.
+
+\bibitem{DySpAN10MeasuringWhitespaceCapacity}
+{\sc Harrison, K., Mishra, S., and Sahai, A.}
+\newblock How much white-space capacity is there?
+\newblock In {\em Proc. of DySPAN 2010\/} (Apr. 2010), pp.~1 --10.
 
 \bibitem{hart00correlatedeq}
 {\sc Hart, S., and Colell, A.}

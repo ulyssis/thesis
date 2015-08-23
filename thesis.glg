@@ -1,11 +1,13 @@
 ;; This logfile was generated automatically by `xindy'
-;; at 22.08.2015  01:07:14
-;; Indexstyle: "/tmp/wHNZjXDzKV", Rawindex: "/tmp/Hbub1lhmmz", Output: "thesis.gls"
+;; at 23.08.2015  18:18:49
+;; Indexstyle: "/tmp/Jx0Oj_KPOB", Rawindex: "/tmp/8PXcSMR0f0", Output: "thesis.gls"
 
 
 Building indexentry-tree:
 Hierdepth of index is :TREE
 
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
@@ -50,10 +52,10 @@ Letter-group: "Èà" -> "P"
 Letter-group: "†Ë" -> "C"
 Letter-group: "È€" -> "P"
 Letter-group: "†Ë¼" -> "C"
-Letter-group: "†Ë€¤¼" -> "C"
-Letter-group: "æË€¼" -> "W"
-Letter-group: "æ„Ð" -> "W"
 Letter-group: "—††" -> "E"
+Letter-group: "†Ë€¤¼" -> "C"
+Letter-group: "ÚåæÐ" -> "T"
+Letter-group: "Úå„" -> "T"
 Letter-group: "†††" -> "C"
 Letter-group: "†œ" -> "D"
 Letter-group: "†æ" -> "C"
@@ -62,9 +64,11 @@ Letter-group: "ÈÃ€" -> "P"
 Letter-group: "È—" -> "P"
 Letter-group: "œ††" -> "F"
 Letter-group: "ËÐÐ¨" -> "R"
+Letter-group: "à¤œ" -> "U"
 Letter-group: "Úå" -> "D"
 Letter-group: "ÊÃÐ" -> "Q"
 Letter-group: "Ð¨¼Ë" -> "S"
+Letter-group: "æË€¼" -> "W"
 Letter-group: "»€¼" -> "M"
 Letter-group: "´È" -> "L"
 Letter-group: "†ÃÐ" -> "C"
@@ -107,6 +111,8 @@ Letter-group: "Ð¨¼Ë" -> "S"
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 Letter-group: "Ú†" -> "T"
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+Letter-group: "à¤œ" -> "U"
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 Letter-group: "å†€È" -> "V"
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
-Letter-group: "æ„Ð" -> "W"
+Letter-group: "æ¨Ú¤—†€Ú" -> "W"
