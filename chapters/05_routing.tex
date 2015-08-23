@@ -16,14 +16,14 @@
 
 \section{Introduction}
 \label{introduction}
-Cognitive radio technology is promising to solve the significant shortage of spectrum, which is due to proliferation of wireless devices.
-According to the definition of FCC (Federal Communications Commission in U.S.), cognitive radio is a device which is able to sense, measure, or learn its environment and accordingly tune its radio operating parameters (like center frequency, bandwidth and transmit power) on the fly, i.e. during operation. 
-In this chapter cognitive radio equipment is also called secondary user.
-Together with these features secondary users are allowed to reuse licensed spectrum which is authorized to so called licensed users.
-%\footnote{Terms licensed and primary, user and node, as well as spectrum band and channel are used indistinguishably in the following paper.}
-The cognitive radio devices are capable of vacating a spectrum band if the licensed users reappears in order not to cause harmful interference to them.
+%Cognitive radio technology is promising to solve the significant shortage of spectrum, which is due to proliferation of wireless devices.
+%According to the definition of FCC (Federal Communications Commission in U.S.), cognitive radio is a device which is able to sense, measure, or learn its environment and accordingly tune its radio operating parameters (like center frequency, bandwidth and transmit power) on the fly, i.e. during operation. 
+%In this chapter cognitive radio equipment is also called secondary user.
+%Together with these features secondary users are allowed to reuse licensed spectrum which is authorized to so called licensed users.
+%%\footnote{Terms licensed and primary, user and node, as well as spectrum band and channel are used indistinguishably in the following paper.}
+%The cognitive radio devices are capable of vacating a spectrum band if the licensed users reappears in order not to cause harmful interference to them.
 
-Since primary users' activity demonstrates different patterns~\cite{commag-Khalife08}, the availability of licensed spectrum exhibits different dynamics accordingly.
+Primary users' activity demonstrates different patterns~\cite{commag-Khalife08}, consequently the availability of licensed spectrum exhibits different dynamics accordingly.
 In certain scenarios the licensed spectrum occupancy stays available for fairly long time, \eg TV white space~\cite{SenseLess2011}.
 In that case the licensed spectrum occupancy can be seen as static during a long period of time.
 In other scenarios primary users' states change frequently, but measurements~\cite{Wellens200910, measurement_Palaios14} show that the percentage of time that licensed spectrum is occupied at a specific location or during a certain period of time doesn’t change, i.e. in city down town during the work time, the duty cycle of spectrum occupancy by cellular network is stable.
@@ -70,10 +70,11 @@ When secondary users are static and primary users' operation activity is known, 
 %A centralized scheme is designed to build end to end path which has the optimal spectrum access opportunity in~\cite{Abbagnale_Gymkhana10}, where the availability of spectrum is regarded as static and with clear 0/1 state.
 %\cite{centralized_routing_07dyspan} treats routing in CRN as a combinatorial optimization problem with consideration of link disruption probabilities.
 But as centralized scheme requires sensing result from each secondary user in the network, thus suffers from any change of channel state of secondary users~\cite{Abbagnale_Gymkhana10}, besides, one centralized controller is needed to calculate the routing path on the basis of collected information from the network~\cite{centralized_routing_07dyspan, Routing-crn-INFOCOM11}.
+
 Considerable amount of distributed schemes are proposed to cope with routing in CRN where spectrum state is usually considered to be rapid changing.
 \cite{caodv-10wd} proposes CAODV (Cognitive Ad-hoc On-demand Distance Vector) and let each CR node explore all channels and store route for each available channel.
 CAODV requires frequent message exchange between secondary users to maintain the up to date connections on each channel due to PU's activities, which is a burden for secondary user when primary users' activity is intense. 
-\cite{segment-crowncom08} improving the DSR scheme (Dynamic Source Routing) by letting RREQ messages record spectrum availability, link quality and congestion possibility along routing paths, but it also suffers from frequently changing channel state.
+\cite{segment-crowncom08} improving the \gls{DSR} scheme (Dynamic Source Routing) by letting RREQ messages record spectrum availability, link quality and congestion possibility along routing paths, but it also suffers from frequently changing channel state.
 %originated from DSR and AODV are proposed in~\cite{segment-crowncom08} and~\cite{caodv-10wd} respectively.
 %Authors of~\cite{Routing-crn-INFOCOM11} see routing problem from the perspective of network operator. They model the vacancy of licensed spectrum with random numbers, and formulate a optimization problem to minimize the amount of needed licensed spectrum, meanwhile relevant constraints are followed for frequency selection and routing.
 
@@ -87,33 +88,22 @@ Furthermore, as this kind of routing paradigm emphasizes on finding the maximal 
 
 %Geographic routing based routing schemes are also proposed to suit the dynamic spectrum in CRN network. 
 
-Chowdhury et al.~\cite{search_geo_routing_chowdhury} proposes \textit{SEARCH} which is a valuable attempt to avoid the primary users' influences on routing path on the basis of geographic routing. 
-%which exploits secondary channels in multiple channel CRN.
-In \textit{SEARCH}, the source node launches geographic routing on each channel, and every routing path bypasses the nodes where corresponding channel is unavailable.
-Paths on different channels will merge on the nodes where path circumvent happens, if such change of path and switch of channel lead to shorter time needed to send packets to destination.
-After receiving the routing message on each channel, the destination decides the shortest path and sends back notifications along the chosen path.
-The routing path is blocked when one primary user locating along it changes its state from OFF to ON, thus source node needs to periodically launch route request to update the routing path which may have been invalid.
-\textit{SEARCH} adopts routing table and doesn't involve frequent overhead exchanges.
+%Chowdhury et al.~\cite{search_geo_routing_chowdhury} proposes \textit{SEARCH} which is a valuable attempt to avoid the primary users' influences on routing path on the basis of geographic routing. 
+%%which exploits secondary channels in multiple channel CRN.
+%In \textit{SEARCH}, 
+%Paths on different channels will merge on the nodes where path circumvent happens, if such change of path and switch of channel lead to shorter time needed to send packets to destination.
+%After receiving the routing message on each channel, the destination decides the shortest path and sends back notifications along the chosen path.
+%The routing path is blocked when one primary user locating along it changes its state from OFF to ON, 
 
-xxxxx
-
-
-We propose a routing paradigm in CRN.
-Geographic routing is applied in the CRN network which is assigned with spectrum aware virtual coordinates.
-The dynamic availability of spectrum leads to prevalent topology changes, which makes spectrum aware routing difficult but essential.
-Routing schemes are proposed in~\cite{Abbagnale_Gymkhana10, caodv-10wd, segment-crowncom08} for CRN where primary users change their operating parameters infrequently.
-Highly dynamic primary users impose great challenge on routing, as is discussed in~\cite{Routing-crn-INFOCOM11}, where the statistics of primary users' activity is utilized in routing decision.
-A class of packet forwarding strategies for dynamic spectrum CRN is proposed in~\cite{routing-crn-icc11, routing-crn-jsac12}.
-Whenever a secondary user needs to forward a packet, it chooses channel and hop jointly based on channel's statistical characteristics observed beforehand.
-Forwarding decision is made for each single packet, which requires complex computations, large amount of control overhead, and customized media access control mechanisms.
-The solution provided by Chowdhury et al.\cite{search_geo_routing_chowdhury} improves geographic routing in multiple channel CRN by introducing circumventing mechanism, \ie when the next hop chosen based on geographic routing metric (\eg Euclidean distance) is affected by primary user, the routing packet chooses a neighbour of that node free from primary user's affection so as to avoid the primary user affected area.
+The solution provided by Chowdhury et al.~\cite{search_geo_routing_chowdhury} improves geographic routing in multiple channel CRN by introducing circumventing mechanism, \ie 
+the source node launches geographic routing on each channel, and every routing path bypasses the next hop, which is chosen based on geographic routing metric (\eg Euclidean distance), if it is affected by primary user, the routing packet chooses a neighbour of that node free from primary user's affection so as to avoid the primary user affected area.
 Such routing is conducted on all channels, afterwards a path merge process is undertaken and one path with alternating channel is finally formed with consideration of end to end delay.
-
+\textit{SEARCH} adopts routing table and doesn't involve frequent overhead exchanges.
+%
 As the decision of the next hop is largely decided by the channel availability on the time point of decision, the node chosen as next hop may not be able to work after a short while due to primary user's reappearance.
-Thus, this scheme works well when the primary user's activity is infrequent, but when it goes tense, the frequent invalidity of nodes due to lack of available spectrum seriously deteriorates routing performance.
+Thus source node needs to periodically launch route request to update the routing path which may have been invalid.
+As a result, this scheme works well when the primary user's activity is infrequent, but when it goes tense, the frequent invalidity of nodes due to lack of available spectrum seriously deteriorates routing performance.
 
-
-xxxxxxx
 
 
 \section{SYSTEM MODEL}
@@ -153,7 +143,7 @@ One of them is called \textit{normalized spectrum availability} which is on the 
 Virtual coordinate has been proposed in sensor and ad hoc networks~\cite{gpsfree05infocom,Alizai_11_probabilisticAddressing}.
 %Virtual coordinate is able to replace actual physical position for geographic routing in many different scenarios.
 In the left part of Figure \ref{fig:vc_intro}, nodes are labelled with physical positions.
-The right hand side part shows the same network assigned triplet virtual coordinate for each node according to VCap~\cite{gpsfree05infocom}, where each element of the coordinate denotes the minimal number of hops away from corresponding anchor.
+The right hand side part shows the same network assigned triplet virtual coordinate for each node according to virtual coordinate assignment protocol (\gls{VCap})~\cite{gpsfree05infocom}, where each element of the coordinate denotes the minimal number of hops away from corresponding anchor.
 This kind of virtual ordinate belongs to tree based virtual coordinates, and is obtained based on anchors which locate at the edge of network.
 Anchor messages are broadcast from anchors, each of them contains a counter recording the number of hops travelled.
 The minimum counter of the arriving anchor messages constitutes the corresponding element of the virtual coordinate on the arrival node.
@@ -524,7 +514,7 @@ Different from \cite{gpsfree05infocom} where simulation is conducted without con
 
 \subsubsection*{Primary Users}
 Measurements~\cite{ProbabilityAndComputing, dsa_model_markov_2006} show that the sufficiently accurate statistic model of spectrum occupancy can be given by a Markovian process.
-In simulation, primary user alternates state between ON and OFF as a two-state discrete time Markov chain (2TDMC).
+In simulation, primary user alternates state between ON and OFF as a two-state discrete time Markov chain (\gls{2TDMC}).
 % the process of alternating states of primary user.
 %Primary user changes its state between ON and OFF according to transition probability, i.e. probability that it changes from current state to the other, or stays in the same state.
 The probability that it changes from one state to the other, or stays in the same state is called transition probability.

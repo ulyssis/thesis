@@ -1,82 +1,87 @@
-\contentsline {chapter}{Abstract}{iii}{Doc-Start}
+\contentsline {chapter}{Abstract}{i}{Doc-Start}
 \contentsline {chapter}{\numberline {1}INTRODUCTION}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Hierarchical Spectrum Access}{2}{section.1.1}
 \contentsline {section}{\numberline {1.2}Cognitive Radio}{2}{section.1.2}
 \contentsline {subsection}{\numberline {1.2.1}Spectrum Management}{3}{subsection.1.2.1}
 \contentsline {subsection}{\numberline {1.2.2}Representative Cognitive Radio Networks}{4}{subsection.1.2.2}
-\contentsline {section}{\numberline {1.3}Spectrum Sharing Paradigms}{5}{section.1.3}
-\contentsline {subsection}{\numberline {1.3.1}Classification in Respect of the Relation between Primary and Secondary Users}{5}{subsection.1.3.1}
-\contentsline {subsection}{\numberline {1.3.2}Classification Based on Architecture}{7}{subsection.1.3.2}
-\contentsline {subsection}{\numberline {1.3.3}Classification Based on Cooperate or Not}{8}{subsection.1.3.3}
-\contentsline {section}{\numberline {1.4}Problem Statement}{8}{section.1.4}
-\contentsline {subsection}{\numberline {1.4.1}Channel and Power Allocation in IEEE 802.22 Network}{9}{subsection.1.4.1}
-\contentsline {subsection}{\numberline {1.4.2}Robust Clustering in Ad Hoc Cognitive Radio Network}{9}{subsection.1.4.2}
-\contentsline {subsection}{\numberline {1.4.3}Geographic Routing in CRN with Spectrum Aware Virtual Coordinate}{10}{subsection.1.4.3}
-\contentsline {subsection}{\numberline {1.4.4}Research Questions}{10}{subsection.1.4.4}
-\contentsline {section}{\numberline {1.5}Contributions}{11}{section.1.5}
-\contentsline {section}{\numberline {1.6}Outline}{12}{section.1.6}
-\contentsline {chapter}{\numberline {2}BACKGROUND}{13}{chapter.2}
-\contentsline {section}{\numberline {2.1}Algorithmic Game Theory}{13}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Basics of Game}{14}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}Basic Solution Concepts}{15}{subsection.2.1.2}
-\contentsline {subsection}{\numberline {2.1.3}Congestion Game}{17}{subsection.2.1.3}
-\contentsline {section}{\numberline {2.2}Optimization}{19}{section.2.2}
-\contentsline {chapter}{\numberline {3}DISTRIBUTED CHANNEL AND POWER ALLOCATION IEEE 802.22 NETWORKS}{21}{chapter.3}
-\contentsline {section}{\numberline {3.1}INTRODUCTION}{21}{section.3.1}
-\contentsline {section}{\numberline {3.2}System Model and Problem Statement}{23}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}SINR on terminals}{23}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Problem Statement}{24}{subsection.3.2.2}
-\contentsline {section}{\numberline {3.3}Related Work}{26}{section.3.3}
-\contentsline {section}{\numberline {3.4}Problem Decomposition and Corresponding Related Works}{29}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Maximal transmission power planning}{29}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Channel allocation with fixed transmission power level}{30}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}Power allocation}{30}{subsection.3.4.3}
-\contentsline {section}{\numberline {3.5}The Maximal Permitted Transmission Power}{30}{section.3.5}
-\contentsline {section}{\numberline {3.6}Channel Allocation with Fixed Transmission Power}{32}{section.3.6}
-\contentsline {subsection}{\numberline {3.6.1}Centralized optimization programming}{32}{subsection.3.6.1}
-\contentsline {subsection}{\numberline {3.6.2}Distributed White space channel allocation technology (WitheCat): algorithm and protocol}{33}{subsection.3.6.2}
-\contentsline {subsection}{\numberline {3.6.3}Analysis in game theoretical framework}{35}{subsection.3.6.3}
-\contentsline {subsection}{\numberline {3.6.4}Communication overhead of Dicaps in the phase of channel allocation}{37}{subsection.3.6.4}
-\contentsline {section}{\numberline {3.7}Variable transmission power after channel allocation}{38}{section.3.7}
-\contentsline {section}{\numberline {3.8}Joint Channel and Power Allocation}{38}{section.3.8}
-\contentsline {subsection}{\numberline {3.8.1}Centralized optimization}{38}{subsection.3.8.1}
-\contentsline {subsection}{\numberline {3.8.2}Distributed scheme}{39}{subsection.3.8.2}
-\contentsline {section}{\numberline {3.9}Performance Evaluation}{40}{section.3.9}
-\contentsline {subsection}{\numberline {3.9.1}Maximal Permitted Power Decision and the Distributed Channel Allocation Schemes}{40}{subsection.3.9.1}
-\contentsline {subsection}{\numberline {3.9.2}Performance of joint power and channel allocation: cascaded distributed schemes vs. joint distributed/centralized schemes}{45}{subsection.3.9.2}
-\contentsline {section}{\numberline {3.10}Conclusion}{46}{section.3.10}
-\contentsline {chapter}{ \numberline {A}Proof of Theorem \ref {noconvergence}}{49}{.1.A}
-\contentsline {chapter}{ \numberline {B}Deviation of Problem \ref {QLP}}{51}{.1.B}
-\contentsline {chapter}{\numberline {4}ROBUST CLUSTERING of AD HOC COGNITIVE RADIO NETWORK}{53}{chapter.4}
-\contentsline {section}{\numberline {4.1}Introduction}{53}{section.4.1}
-\contentsline {section}{\numberline {4.2}Related Work}{55}{section.4.2}
-\contentsline {section}{\numberline {4.3}System Model}{56}{section.4.3}
-\contentsline {section}{\numberline {4.4}Distributed Coordination Framework: Clustering Algorithm}{57}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Phase I - Cluster Formation}{57}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Phase II - Membership Clarification}{63}{subsection.4.4.2}
-\contentsline {section}{\numberline {4.5}Centralized Clustering Scheme}{69}{section.4.5}
-\contentsline {subsection}{\numberline {4.5.1}The Optimization Problem}{71}{subsection.4.5.1}
-\contentsline {section}{\numberline {4.6}Performance Evaluation}{73}{section.4.6}
-\contentsline {subsection}{\numberline {4.6.1}Centralized Schemes vs. Decentralized Schemes}{74}{subsection.4.6.1}
-\contentsline {subsection}{\numberline {4.6.2}Comparison between Distributed Schemes}{78}{subsection.4.6.2}
-\contentsline {section}{\numberline {4.7}Conclusions and Future Work}{82}{section.4.7}
-\contentsline {chapter}{\numberline {5}SPECTRUM AWARE VIRTUAL COORDINATE ASSIGNMENT AND ROUTING IN MULTIHOP COGNITIVE RADIO NETWORK}{85}{chapter.5}
-\contentsline {section}{\numberline {5.1}Introduction}{85}{section.5.1}
-\contentsline {section}{\numberline {5.2}RELATED WORK}{86}{section.5.2}
-\contentsline {section}{\numberline {5.3}SYSTEM MODEL}{88}{section.5.3}
-\contentsline {section}{\numberline {5.4}Spectrum Aware Virtual Coordinates}{88}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}Assign Spectrum Aware Virtual Coordinate}{89}{subsection.5.4.1}
-\contentsline {subsection}{\numberline {5.4.2}Normalized Spectrum Availability on Secondary User}{91}{subsection.5.4.2}
-\contentsline {subsection}{\numberline {5.4.3}Normalized Longest Blocking Time on Secondary Users}{93}{subsection.5.4.3}
-\contentsline {section}{\numberline {5.5}Geographic Routing and Opportunistic Spectrum Access}{95}{section.5.5}
-\contentsline {section}{\numberline {5.6}Performance Evaluation}{95}{section.5.6}
-\contentsline {subsection}{\numberline {5.6.1}Simulation Setup}{95}{subsection.5.6.1}
-\contentsline {subsection}{\numberline {5.6.2}Success Rate of Geographic Routing on Finding Path}{96}{subsection.5.6.2}
-\contentsline {subsection}{\numberline {5.6.3}Routing Performance}{97}{subsection.5.6.3}
-\contentsline {subsection}{\numberline {5.6.4}Sensitivity of SAViC to Estimation Errors}{102}{subsection.5.6.4}
-\contentsline {section}{\numberline {5.7}CONCLUSION}{103}{section.5.7}
-\contentsline {chapter}{\numberline {6}Conclusion}{105}{chapter.6}
+\contentsline {section}{\numberline {1.3}Spectrum Sharing Paradigms}{7}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Classification in Respect of the Relation between Primary and Secondary Users}{8}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}Classification Based on Architecture}{9}{subsection.1.3.2}
+\contentsline {subsection}{\numberline {1.3.3}Classification Based on Cooperate or Not}{10}{subsection.1.3.3}
+\contentsline {section}{\numberline {1.4}Problem Statement}{10}{section.1.4}
+\contentsline {subsection}{\numberline {1.4.1}Channel and Power Allocation in IEEE 802.22 Network}{11}{subsection.1.4.1}
+\contentsline {subsection}{\numberline {1.4.2}Robust Clustering in Ad Hoc Cognitive Radio Network}{11}{subsection.1.4.2}
+\contentsline {subsection}{\numberline {1.4.3}Geographic Routing in CRN with Spectrum Aware Virtual Coordinate}{12}{subsection.1.4.3}
+\contentsline {subsection}{\numberline {1.4.4}Research Questions}{12}{subsection.1.4.4}
+\contentsline {section}{\numberline {1.5}Contributions}{13}{section.1.5}
+\contentsline {section}{\numberline {1.6}Outline}{14}{section.1.6}
+\contentsline {chapter}{\numberline {2}BACKGROUND}{17}{chapter.2}
+\contentsline {section}{\numberline {2.1}Algorithmic Game Theory}{17}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Basics of Game}{18}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Basic Solution Concepts}{19}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}Congestion Game}{21}{subsection.2.1.3}
+\contentsline {section}{\numberline {2.2}Optimization}{23}{section.2.2}
+\contentsline {chapter}{\numberline {3}DISTRIBUTED CHANNEL AND POWER ALLOCATION IEEE 802.22 NETWORKS}{25}{chapter.3}
+\contentsline {section}{\numberline {3.1}Motivation}{25}{section.3.1}
+\contentsline {section}{\numberline {3.2}System Model and Problem Statement}{27}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}SINR on terminals}{27}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Problem Statement}{28}{subsection.3.2.2}
+\contentsline {section}{\numberline {3.3}Related Work}{31}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Utilization of TV white space}{31}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Resource Allocation in CRN}{31}{subsection.3.3.2}
+\contentsline {section}{\numberline {3.4}Problem Decomposition and Corresponding Related Works}{33}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Maximal transmission power planning}{34}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Channel allocation with fixed transmission power level}{34}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}Power allocation}{35}{subsection.3.4.3}
+\contentsline {section}{\numberline {3.5}The Maximal Permitted Transmission Power}{35}{section.3.5}
+\contentsline {section}{\numberline {3.6}Channel Allocation with Fixed Transmission Power}{36}{section.3.6}
+\contentsline {subsection}{\numberline {3.6.1}Centralized optimization programming}{37}{subsection.3.6.1}
+\contentsline {subsection}{\numberline {3.6.2}Distributed White space channel allocation technology (\gls {WitheCat}): algorithm and protocol}{37}{subsection.3.6.2}
+\contentsline {subsection}{\numberline {3.6.3}Analysis in game theoretical framework}{39}{subsection.3.6.3}
+\contentsline {subsection}{\numberline {3.6.4}Communication overhead of Dicaps in the phase of channel allocation}{42}{subsection.3.6.4}
+\contentsline {section}{\numberline {3.7}Variable transmission power after channel allocation}{42}{section.3.7}
+\contentsline {section}{\numberline {3.8}Joint Channel and Power Allocation}{42}{section.3.8}
+\contentsline {subsection}{\numberline {3.8.1}Centralized optimization}{43}{subsection.3.8.1}
+\contentsline {subsection}{\numberline {3.8.2}Distributed scheme}{44}{subsection.3.8.2}
+\contentsline {section}{\numberline {3.9}Performance Evaluation}{44}{section.3.9}
+\contentsline {subsection}{\numberline {3.9.1}Maximal Permitted Power Decision and the Distributed Channel Allocation Schemes}{44}{subsection.3.9.1}
+\contentsline {subsection}{\numberline {3.9.2}Performance of joint power and channel allocation: cascaded distributed schemes vs. joint distributed/centralized schemes}{50}{subsection.3.9.2}
+\contentsline {section}{\numberline {3.10}Conclusion}{50}{section.3.10}
+\contentsline {chapter}{ \numberline {A}Proof of Theorem \ref {noconvergence}}{53}{.1.A}
+\contentsline {chapter}{ \numberline {B}Deviation of Problem \ref {QLP}}{55}{.1.B}
+\contentsline {chapter}{\numberline {4}ROBUST CLUSTERING of AD HOC COGNITIVE RADIO NETWORK}{57}{chapter.4}
+\contentsline {section}{\numberline {4.1}Introduction}{57}{section.4.1}
+\contentsline {section}{\numberline {4.2}Related Work}{59}{section.4.2}
+\contentsline {section}{\numberline {4.3}System Model}{60}{section.4.3}
+\contentsline {section}{\numberline {4.4}Distributed Coordination Framework: Clustering Algorithm}{61}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Phase I - Cluster Formation}{61}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Phase II - Membership Clarification}{67}{subsection.4.4.2}
+\contentsline {section}{\numberline {4.5}Centralized Clustering Scheme}{73}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}The Optimization Problem}{75}{subsection.4.5.1}
+\contentsline {section}{\numberline {4.6}Performance Evaluation}{77}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}Centralized Schemes vs. Decentralized Schemes}{78}{subsection.4.6.1}
+\contentsline {subsection}{\numberline {4.6.2}Comparison between Distributed Schemes}{82}{subsection.4.6.2}
+\contentsline {section}{\numberline {4.7}Conclusions and Future Work}{85}{section.4.7}
+\contentsline {chapter}{\numberline {5}SPECTRUM AWARE VIRTUAL COORDINATE ASSIGNMENT AND ROUTING IN MULTIHOP COGNITIVE RADIO NETWORK}{89}{chapter.5}
+\contentsline {section}{\numberline {5.1}Introduction}{89}{section.5.1}
+\contentsline {section}{\numberline {5.2}RELATED WORK}{90}{section.5.2}
+\contentsline {section}{\numberline {5.3}SYSTEM MODEL}{91}{section.5.3}
+\contentsline {section}{\numberline {5.4}Spectrum Aware Virtual Coordinates}{92}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Assign Spectrum Aware Virtual Coordinate}{94}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}Normalized Spectrum Availability on Secondary User}{95}{subsection.5.4.2}
+\contentsline {subsection}{\numberline {5.4.3}Normalized Longest Blocking Time on Secondary Users}{97}{subsection.5.4.3}
+\contentsline {section}{\numberline {5.5}Geographic Routing and Opportunistic Spectrum Access}{98}{section.5.5}
+\contentsline {section}{\numberline {5.6}Performance Evaluation}{99}{section.5.6}
+\contentsline {subsection}{\numberline {5.6.1}Simulation Setup}{99}{subsection.5.6.1}
+\contentsline {subsection}{\numberline {5.6.2}Success Rate of Geographic Routing on Finding Path}{100}{subsection.5.6.2}
+\contentsline {subsection}{\numberline {5.6.3}Routing Performance}{101}{subsection.5.6.3}
+\contentsline {subsection}{\numberline {5.6.4}Sensitivity of SAViC to Estimation Errors}{105}{subsection.5.6.4}
+\contentsline {section}{\numberline {5.7}CONCLUSION}{106}{section.5.7}
+\contentsline {chapter}{\numberline {6}Conclusion and Future work}{109}{chapter.6}
+\contentsline {section}{\numberline {6.1}Contribution}{109}{section.6.1}
+\contentsline {section}{\numberline {6.2}Future Work}{110}{section.6.2}
 \vspace *{\baselineskip }
-\contentsline {chapter}{Bibliography}{107}{section*.58}
-\contentsline {chapter}{List of Figures}{118}{section*.58}
-\contentsline {chapter}{List of Tables}{122}{section*.58}
+\contentsline {chapter}{Bibliography}{113}{section*.65}
+\contentsline {chapter}{List of Figures}{123}{section*.65}
+\contentsline {chapter}{List of Tables}{126}{section*.65}
+\contentsline {chapter}{Glossary}{128}{section*.65}

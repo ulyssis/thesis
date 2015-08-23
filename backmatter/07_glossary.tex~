@@ -31,18 +31,7 @@
     description={cognitive radio}
 }
  
- \newglossaryentry{PR}
-{
-    name=PR,
-    description={primary radio}
-} 
  
- \newglossaryentry{PU}
-{
-    name=PU,
-    description={primary user}
-}
-
  
 \newglossaryentry{CRN}
 {
@@ -126,13 +115,6 @@
     description={Nash equilibrium}
 }
 
-\newglossaryentry{PE}
-{
-    name=PE,
-    description={Pareto equilibrium}
-}
-
-
 \newglossaryentry{PoA}
 {
     name=PoA,
@@ -161,7 +143,7 @@
 
 \newglossaryentry{MAN}
 {
-    name=MAN,
+    name=PE,
     description={Metropolitan Area Networks}
 }
 
@@ -195,18 +177,17 @@
     description={Robust Spectrum Sharing}
 }
 
-\newglossaryentry{ROSS-DGA}
+\newglossaryentry{DGA}
 {
-    name=ROSS-DGA,
-    description={Robust Spectrum Sharing-distributed greedy algorithm}
+    name=DGA,
+    description={Distributed Greedy Algorithm}
 }
 
-\newglossaryentry{ROSS-DFA}
+\newglossaryentry{DFA}
 {
-    name=ROSS-DFA,
-    description={Robust Spectrum Sharing-distributed fast algorithm}
+    name=DFA,
+    description={Distributed Fast Algorithm}
 }
-
 
 \newglossaryentry{TC}
 {
@@ -232,20 +213,10 @@
     description={virtual coordinate assignment protocol}
 }
 
-
-\newglossaryentry{CH}
-{
-    name=CH,
-    description={cluster head}
-}
 %\newglossaryentry{xxxxxxxx}
 %{
 %    name=xxxxxxxx,
 %    description={}
 %}
-\newglossaryentry{UHF}
-{
-    name=UHF,
-    description={Ultra high frequency}
-}
+
 

@@ -1,5 +1,5 @@
 \chapter{BACKGROUND}
-
+\label{background}
 %Some mathematical techniques which are used to solve the problems in thesis are introduced in this chapter.
 
 In the past few years, game theory has been extensively applied to problems in communication and networking~\cite{Neel06analysisand, Wang_gtc_crn_survey_2010}.
@@ -25,7 +25,7 @@ Although current communication equipments involve only a little artificial intel
 In communication system, a device is programmed to maximize or minimize the expected utility, which is perfectly rational.
 For instance, Wi-Fi equipments are manufactured complying the IEEE 802.11 standards.
 But it is possible that certain manufacturers or the personal who uses the Wi-Fi system (we use station in the following) manipulate certain parameters to achieve performance advantage over other stations in the network.
-When all the stations in one network are supposed to run distributed coordination function (DCF), \ie the station must wait a random period of time, which is called contention window (CW), before accessing the media when it senses the media to be busy, a certain selfish station may not choose to wait and is keen on sensing media.
+When all the stations in one network are supposed to run distributed coordination function (\gls{DCF}), \ie the station must wait a random period of time, which is called contention window (\gls{CW}), before accessing the media when it senses the media to be busy, a certain selfish station may not choose to wait and is keen on sensing media.
 The selfish behaviour causes more collisions for other stations, and possibly results in poor performance in the network.
 %In this case, the access point finds more packets coming from that selfish user, but is unaware of its selfishness and has no means to adjust or punish this selfish user.
 In this case, game theory facilitates the network operator to issue rules to make the selfish behaviour unprofitable, or it helps to analyse how much the impact caused by the selfish stations.
@@ -40,7 +40,7 @@ In the case, the best response becomes a algorithm for Wi-Fi systems.
 %
 Besides, outcome from game theory is robust~\cite{Han:2008:RAW:1457343}.
 As to optimization, when the information is not accurate or adequate enough, or the optimization itself is difficult to solve, the optimized results can be far from global optimality.
-Game theory based on the local information, which is easy to obtain, usually leads to Nash equilibrium (NE), which is usually sub optimal.
+Game theory based on the local information, which is easy to obtain, usually leads to Nash equilibrium (\gls{NE}), which is usually sub optimal.
 
 
 \item Game theory is suitable to apply in cognitive radio network because of the properties of CRN.
@@ -150,7 +150,7 @@ Games with finite number of players and strategy set are guaranteed to have NE, 
 Being not unique and possibly sub-optimal, NE is still applied in extremely diverse applications due to the reasons in the beginning of this section.
 Thus, when pursue NE as solution, people should answer the following questions,
 The first question is, what is the gap between NE and global optimal?
-This can be partially answered by \textit{price of anarchy (PoA)}, the ratio between the worst-case Nash equilibrium to the optimality is used to denote the quality of the solution.
+This can be partially answered by \textit{price of anarchy (\gls{PoA})}, the ratio between the worst-case Nash equilibrium to the optimality is used to denote the quality of the solution.
 
 Nash equilibrium is an appealing conception, but it doesn't tell how to reach this state.
 Hence, it is important to find an efficient algorithm to reach the equilibrium.
@@ -168,7 +168,7 @@ Nevertheless, in some games, because of the special strategy space structure, or
 
 \subsubsection*{Pareto Equilibrium}
 %There exists other equilibrium conceptions. \ie Pareto Equilibrium . 
-\textit{Pareto equilibrium} (PE) is a subset of NE, PE is an action profile $\bar{s}$ such that there does not exist profile $s$ with $u_i(s)\leq u_i(\bar{s})$ for each $i\in N$, and meanwhile $u_i(s)< u_i(\bar{s})$ for at least one $i\in N$.
+\textit{Pareto equilibrium} (\gls{PE}) is a subset of NE, PE is an action profile $\bar{s}$ such that there does not exist profile $s$ with $u_i(s)\leq u_i(\bar{s})$ for each $i\in N$, and meanwhile $u_i(s)< u_i(\bar{s})$ for at least one $i\in N$.
 PE is the necessary condition of the global optimality and accordingly is more favoured, but its application in communication system is much less than NE because it is not easy to obtain PE.
 
 
@@ -292,8 +292,8 @@ Most importantly, as the potential of a congestion game is bounded by some finit
 
 
 \section{Optimization}
-As discussed in Chapter~\ref{INTRODUCTION}, the available radio resources such as spectrum are very limited, in the meantime, new services raise great requirements for these resources.
-Resource allocation and its optimization are the methods to accommodate the needs.
+As discussed in Chapter~\ref{INTRODUCTION}, the available radio resources such as spectrum and transmission power are very limited, meanwhile, new services raise great requirements for these resources.
+Resource allocation and its optimization are able to accommodate the needs.
 Various optimization problems are formulated to improve radio resource usage in CRN~\cite{cacao_ca_2011, fuzzy_decision_09, resourceAllocation_imperfectSensing_2012}.
 Optimization can be conducted from either global view or individual perspective.
 
@@ -319,7 +319,8 @@ Physical layer & transmission power, modulation, channel coding rate & minimal o
 \label{opt_table} 
 \end{table}
 
-The solution to an optimization problems is decided by its property, \ie convex, linear, integer, or non-convex non-linear, etc.
+The solutions to optimization problems can be categorized with their properties, \ie convex, linear, integer, or non-convex non-linear, etc.
+In this thesis, we make use of solvers, \ie Lindo, Gurobi, to solve the formulated optimization problems.
 
 
 %Optimization outputs the results with the global information.

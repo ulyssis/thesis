@@ -1,0 +1,1263 @@
+This is BibTeX, Version 0.99d (TeX Live 2012/Debian)
+The top-level auxiliary file: thesis.aux
+A level-1 auxiliary file: titlepage.tex.aux
+A level-1 auxiliary file: backmatter/00_statement.aux
+A level-1 auxiliary file: backmatter/00_abstract.aux
+A level-1 auxiliary file: backmatter/00_acknowledgments.aux
+A level-1 auxiliary file: backmatter/00_publications.aux
+A level-1 auxiliary file: chapters/01_introduction.aux
+A level-1 auxiliary file: chapters/02_background.aux
+A level-1 auxiliary file: chapters/03_distributedChannelAllocation.aux
+A level-1 auxiliary file: chapters/04_clutering.aux
+A level-1 auxiliary file: chapters/05_routing.aux
+A level-1 auxiliary file: chapters/06_conclusion.aux
+The style file: styles/acmurl.bst
+Database file #1: ./backmatter/myrefs.bib
+You're missing a field name---line 68 of file ./backmatter/myrefs.bib
+ : 
+ : #  year      = {2007},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 144 of file ./backmatter/myrefs.bib
+ : 
+ : #note = "Internet and Network Economics",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 227 of file ./backmatter/myrefs.bib
+ : 
+ : comments_DI ="a survey of routing in CRN."
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--string name "march" is undefined
+--line 251 of file ./backmatter/myrefs.bib
+I was expecting a `,' or a `}'---line 263 of file ./backmatter/myrefs.bib
+ : month=30 
+ :          2008-dec. 4,
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 323 of file ./backmatter/myrefs.bib
+ : 
+ : keywords={Nash equilibrium;base stations-access points;congestion game theory;designing protocols;frequency reuse;frequency-space blocks;model pair-wise interference;multiuser frequency adaptation;signaling assumptions;spectrum sharing;wireless channels;wireless networking;game theory;protocols;radio networks;wireless channels;},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 381 of file ./backmatter/myrefs.bib
+ : //    
+ :       pages = {9-20},\n
+I'm skipping whatever remains of this entry
+Warning--string name "july-august" is undefined
+--line 434 of file ./backmatter/myrefs.bib
+I was expecting a `,' or a `}'---line 482 of file ./backmatter/myrefs.bib
+ : month=30 
+ :          2008-dec. 4,
+I'm skipping whatever remains of this entry
+You're missing a field name---line 495 of file ./backmatter/myrefs.bib
+ : 
+ : #  year  = {2008},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 506 of file ./backmatter/myrefs.bib
+ :  
+ :  # year  = {2011},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 526 of file ./backmatter/myrefs.bib
+ : 
+ : number={},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 597 of file ./backmatter/myrefs.bib
+ : 
+ : keywords={asynchronous algorithm;cognitive radio network;duality theory;end-to-end rate control algorithm;interference temperature limits;optimal resource allocation;power control;cognitive radio;power control;telecommunication control;telecommunication network management;},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 610 of file ./backmatter/myrefs.bib
+ : 
+ : keywords={bi-directional nature;cognitive user access;distributed power control algorithms;higher spectrum usage;listen-before-talk strategy;primary link control feedback;primary user communications;secondary users communications;cognitive radio;distributed control;feedback;power control;radio links;telecommunication control;},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 623 of file ./backmatter/myrefs.bib
+ : 
+ : keywords={Lagrangian dual decomposition;Nash equilibrium;cochannel interference;cognitive radio;distributed power allocation;non-cooperative game;quality of service;spectrum sharing;cochannel interference;cognitive radio;game theory;quality of service;resource allocation;},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 656 of file ./backmatter/myrefs.bib
+ : 
+ : #note={give a nice intro to TVWS usage,  EASIBILITY EVALUATIONS}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 738 of file ./backmatter/myrefs.bib
+ : 
+ : keywords={Euclidean distance;connectivity properties;multihop network;transmission range;wireless ad hoc networks;wireless multihop networks;wireless sensor networks;ad hoc networks;wireless sensor networks;},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 752 of file ./backmatter/myrefs.bib
+ : 
+ : keywords={},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 773 of file ./backmatter/myrefs.bib
+ : 
+ : keywords={IEEE 802.22 standard;aggregated interference control;cognitive radio networks;decentralized Q-learning;multiagent reinforcement learning;wireless regional area networks;cognitive radio;interference suppression;learning (artificial intelligence);multi-agent systems;radio networks;},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 824 of file ./backmatter/myrefs.bib
+ : 
+ : doi={10.1109/Med-Hoc-Net.2011.5970487},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 856 of file ./backmatter/myrefs.bib
+ : 
+ : keywords={FDMA channel assignment;Nash Equilibrium;globally optimal channel assignment;noncooperative wireless networks;strategic game;strongly dominant strategy equilibrium;channel allocation;frequency division multiple access;game theory;radio networks;},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 882 of file ./backmatter/myrefs.bib
+ : }
+ :  ;
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 899 of file ./backmatter/myrefs.bib
+ : }
+ :  ;
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 936 of file ./backmatter/myrefs.bib
+ : 
+ : keywords={Nash equilibrium point;cognitive radio network;distributed adaptive channel allocation;information exchange;network performance;noncooperative learning;spectrum etiquette;spectrum sharing game;channel allocation;cooperative systems;game theory;learning (artificial intelligence);radio networks;radio spectrum management;},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 970 of file ./backmatter/myrefs.bib
+ : 
+ : abstract={This paper considers a Markovian dynamical game theoretic setting for distributed transmission control in a wireless sensor network. The available spectrum bandwidth is modeled as a Markov chain. A distributed algorithm named correlated Q-learning algorithm is proposed to obtain the correlated equilibrium policies of the system. This algorithm has the decentralized feature and is easily implementable in a real system. Numerical example is also provided to verify the performances of the proposed algorithms.},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 1091 of file ./backmatter/myrefs.bib
+ : // 
+ :    pages = {342--345},\n
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1189 of file ./backmatter/myrefs.bib
+ :  
+ :  #booktitle = {Proceedings of the 11th annual international conference on Mobile computing and networking},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 1245 of file ./backmatter/myrefs.bib
+ : 
+ : ISSN={0743-166X},}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 1265 of file ./backmatter/myrefs.bib
+ : 
+ : ISSN={1536-1276},}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 1284 of file ./backmatter/myrefs.bib
+ : 
+ : ISSN={1536-1276},}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 1300 of file ./backmatter/myrefs.bib
+ : }
+ :  ;
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 1351 of file ./backmatter/myrefs.bib
+ : 
+ : keywords={},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 1397 of file ./backmatter/myrefs.bib
+ : 
+ : abstract={Network formation games capture two conflicting objectives of self-interested nodes in a network. On one hand, such a node wishes to be able to reach all other nodes in the network; on the other hand, it wishes to minimize its cost of participation. We focus on myopic dynamics in a class of such games inspired by transportation and communication models. A key property of the dynamics we study is that they are local: nodes can only deviate to form links with others in a restricted neighborhood. Despite this locality, we find that our dynamics converge to efficient or nearly efficient outcomes in a range of settings of interest.},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Your field is more than 20000 characters---line 1666 of file ./backmatter/myrefs.bib
+ : abstract={Recent advances in cognitive radio (CR) technology have brought about a number of wireless standards that support opportunistic access to available white-space spectrum. Addressing the self-coexistence of CR networks in such an environment is very challenging, especially when coexisting networks operate in the same swath of spectrum with little or no direct coordination. In this paper, we study the problem of co-channel self-coexistence of uncoordinated CR networks that employ orthogonal frequency division multiple access (OFDMA) in the uplink. We frame the self-coexistence problem as a non-cooperative game, and propose an uplink soft frequency reuse (USFR) technique to enable globally power-efficient and locally fair sharing of white-space spectrum. In each network
+ :                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   , uplink resource allocation is decoupled into two subproblems: subchannel allocation (SCA) and transmit power control (TPC). We provide a unique optimal solution to the TPC subproblem, and present a low-complexity heuristic for the SCA subproblem. Furthermore, we frame the TPC and SCA games, and integrate them as a heuristic algorithm that achieves the Nash equilibrium in a fully distributed manner. Our simulation results show that the proposed USFR technique significantly improves self-coexistence in several aspects, including spectrum utilization, power consumption, and intra-cell fairness.},
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1797 of file ./backmatter/myrefs.bib
+ : 
+ : %pages={1 -9},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 1888 of file ./backmatter/myrefs.bib
+ : 
+ : year={2010},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1916 of file ./backmatter/myrefs.bib
+ : 
+ : #year={2012},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1929 of file ./backmatter/myrefs.bib
+ : 
+ : #year={2005},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1984 of file ./backmatter/myrefs.bib
+ : 
+ : #booktitle={Proc. of 2011 IEEE Symposium on New Frontiers in Dynamic Spectrum Access Networks (DySPAN)},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 2050 of file ./backmatter/myrefs.bib
+ : 
+ : @TechReport{Adaptive MAC-layer sensing of spectrum_06,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 2050 of file ./backmatter/myrefs.bib
+ : @techreport{Adaptive 
+ :                      MAC-layer sensing of spectrum_06,
+I'm skipping whatever remains of this entry
+You're missing a field name---line 2164 of file ./backmatter/myrefs.bib
+ :  
+ :  #booktitle = {Proceedings of the 6th annual international conference on Mobile computing and networking},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 2217 of file ./backmatter/myrefs.bib
+ :     
+ :     notse = {bigger transmission power decreases the number of hops, but causes interference when transmission power exceeds a certain level. This can be used to argue that transmission can not be done with high power.
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 2228 of file ./backmatter/myrefs.bib
+ : 
+ : #year={2009},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 2477 of file ./backmatter/myrefs.bib
+ : 
+ : #year={2009},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 2492 of file ./backmatter/myrefs.bib
+ : 
+ : keywords={cognitive radio;mobile ad hoc networks;protocols;radio networks;telecommunication network routing;CAODV protocol;ad-hoc on-demand distance vector;channel selection;cognitive mobile ad hoc networks;mobile ad hoc cognitive radio networks;packet discovery;route cost;route formation;Ad hoc networks;Cognitive radio;Copper;Mobile communication;Routing;Routing protocols;ad hoc;cognitive;manet;routing},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 2852 of file ./backmatter/myrefs.bib
+ : 
+ : #author = {Doe, Ringo},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+"}" immediately follows an entry type---line 2853 of file ./backmatter/myrefs.bib
+ : #title = {This is a test entry of type {@ONLINE
+ :                                                }},
+I'm skipping whatever remains of this entry
+You're missing a field name---line 2924 of file ./backmatter/myrefs.bib
+ : 
+ : #year={2013},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 3034 of file ./backmatter/myrefs.bib
+ : 
+ : #year={2010},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 3051 of file ./backmatter/myrefs.bib
+ : 
+ : #url={http://dx.doi.org/10.1007/s11434-012-5074-6},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 3090 of file ./backmatter/myrefs.bib
+ : 
+ : #month={Aug},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 3178 of file ./backmatter/myrefs.bib
+ : 
+ : #year={2012},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 3211 of file ./backmatter/myrefs.bib
+ :  
+ :  #url = {http://doi.acm.org/10.1145/2333660.2333724},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 3247 of file ./backmatter/myrefs.bib
+ : 
+ : #    url = {http://web.it.kth.se/\~{}maguire/jmitola/Mitola\_Dissertation8\_Integrated.pdf},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 3289 of file ./backmatter/myrefs.bib
+ :  
+ :  #url = {http://dx.doi.org/10.1016/j.phycom.2010.12.003},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 3454 of file ./backmatter/myrefs.bib
+ :   
+ :   archivePrefix = "arXiv",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 3597 of file ./backmatter/myrefs.bib
+ : 
+ : %author={Shah, V. and Mandayam, N.B. and Goodman, D.},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 3645 of file ./backmatter/myrefs.bib
+ : 
+ : %    author = {James O’daniell Neel and Luiz A. Dasilva and Robert P. Gilles and Allen B. Mackenzie and James O’daniell Neel},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Repeated entry---line 3652 of file ./backmatter/myrefs.bib
+ : @phdthesis{Neel06analysisand
+ :                             ,
+I'm skipping whatever remains of this entry
+You're missing a field name---line 3674 of file ./backmatter/myrefs.bib
+ :  
+ :  #url = {http://dx.doi.org/10.1016/j.comnet.2010.04.004},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 3751 of file ./backmatter/myrefs.bib
+ : 
+ : #booktitle={Personal, Indoor and Mobile Radio Communications, 1998. The Ninth IEEE International Symposium on},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 3815 of file ./backmatter/myrefs.bib
+ : 
+ : #url={http://dx.doi.org/10.1007/s10100-009-0106-2},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 3905 of file ./backmatter/myrefs.bib
+ :  
+ :  #publisher = {ICST (Institute for Computer Sciences, Social-Informatics and Telecommunications Engineering)},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 3945 of file ./backmatter/myrefs.bib
+ :  
+ :  #url = {http://doi.acm.org/10.1145/1234388.1234390},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 4079 of file ./backmatter/myrefs.bib
+ : 
+ : #doi = "http://dx.doi.org/10.1016/j.adhoc.2010.06.009",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 4157 of file ./backmatter/myrefs.bib
+ : 
+ : #url = {http://EconPapers.repec.org/RePEc:aea:aecrev:v:63:y:1973:i:2:p:1-30}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "lindo"
+Warning--I didn't find a database entry for "Babadi08"
+Warning--I didn't find a database entry for "clusterRoutingOverhead02infocom"
+Warning--I didn't find a database entry for "clusterRoutingOverhead_wcnc04"
+Warning--to sort, need author or key in FCC_spectrumEfficiency_2002
+Warning--to sort, need author or key in FCC_03-322
+Warning--to sort, need author or key in 802.22
+Warning--to sort, need author or key in FCC_2010_sedond_memorandumm
+Warning--to sort, need author or key in ecc159
+Warning--to sort, need author or key in osi
+Warning--to sort, need author or key in Consensus_based_clustering12
+Too many commas in name 1 of "Huazi Zhang, Zhaoyang Zhang1, Huaiyu Dai, Rui Yin and Xiaoming Chen" for entry clustering_globecom11
+while executing---line 1437 of file styles/acmurl.bst
+Warning--to sort, need author or key in Neel06analysisand
+Warning--to sort, need author or key in FCCdatabasae
+Too many commas in name 1 of "Paramvir Bahl, Ranveer Chandra, Thomas Moscibroda, Rohan Murty and Matt Welsh" for entry whitefi09
+while executing---line 1437 of file styles/acmurl.bst
+Warning--to sort, need author or key in 802.15.4m
+Warning--to sort, need author or key in 802.19
+Warning--to sort, need author or key in Quadratic_min_one_equality
+Name 1 in "Ali Jorio, Sanaa El Fkihi, Brahim Elbhiri, and Driss Aboutajdine" has a comma at the end for entry EnergyEfficientClusteringRouting_2015
+while executing---line 1437 of file styles/acmurl.bst
+Warning--to sort, need author or key in Ackermann06purenash
+Warning--to sort, need author or key in routing_CRN_challenges_solutions_2011
+Warning--to sort, need author or key in omnetpp_paper08
+Warning--empty author in Neel06analysisand
+Warning--empty title in Neel06analysisand
+Warning--empty institution in Neel06analysisand
+Warning--empty year in Neel06analysisand
+Warning--empty author in omnetpp_paper08
+Warning--empty title in omnetpp_paper08
+Warning--empty booktitle in omnetpp_paper08
+Warning--empty author in Ackermann06purenash
+Warning--empty author in Quadratic_min_one_equality
+Warning--empty author in routing_CRN_challenges_solutions_2011
+Warning--empty author in Consensus_based_clustering12
+Name 1 in "Ali Jorio, Sanaa El Fkihi, Brahim Elbhiri, and Driss Aboutajdine" has a comma at the end for entry EnergyEfficientClusteringRouting_2015
+while executing---line 1479 of file styles/acmurl.bst
+Warning--empty year in cluster_EW10
+Warning--empty year in caodv-10wd
+Warning--empty year in gpsfree05infocom
+Warning--empty year in search_geo_routing_chowdhury
+Too many commas in name 1 of "Huazi Zhang, Zhaoyang Zhang1, Huaiyu Dai, Rui Yin and Xiaoming Chen" for entry clustering_globecom11
+while executing---line 1479 of file styles/acmurl.bst
+Warning--empty year in clustering_globecom11
+Warning--empty year in DySpAN12_Di
+Warning--empty year in Discrete-Time_Spectrum_Occupancy_Model_DySPAN_2011
+Warning--there's a month but no year in 2000mitola_cognitive_radio
+Warning--empty year in Routing-crn-INFOCOM11
+Too many commas in name 1 of "Paramvir Bahl, Ranveer Chandra, Thomas Moscibroda, Rohan Murty and Matt Welsh" for entry whitefi09
+while executing---line 1479 of file styles/acmurl.bst
+Warning--empty year in spectrumDecision_2013mass
+Warning--empty title in power_control_utility_98
+Warning--empty booktitle in power_control_utility_98
+Warning--empty year in Sun07_clustering_spectrum_secsing
+Warning--empty year in channelAllocation_throughput_12wcnc
+Warning--empty year in uplink_power_tvws13
+Warning--empty year in willkomm08
+Warning--empty journal in dsa_traffic_2000
+(There were 71 error messages)
+This is BibTeX, Version 0.99d (TeX Live 2012/Debian)
+The top-level auxiliary file: thesis.aux
+A level-1 auxiliary file: titlepage.tex.aux
+A level-1 auxiliary file: backmatter/00_statement.aux
+A level-1 auxiliary file: backmatter/00_abstract.aux
+A level-1 auxiliary file: backmatter/00_acknowledgments.aux
+A level-1 auxiliary file: backmatter/00_publications.aux
+A level-1 auxiliary file: chapters/01_introduction.aux
+A level-1 auxiliary file: chapters/02_background.aux
+A level-1 auxiliary file: chapters/03_distributedChannelAllocation.aux
+A level-1 auxiliary file: chapters/04_clutering.aux
+A level-1 auxiliary file: chapters/05_routing.aux
+A level-1 auxiliary file: chapters/06_conclusion.aux
+The style file: styles/acmurl.bst
+Database file #1: ./backmatter/myrefs.bib
+I was expecting a `,' or a `}'---line 227 of file ./backmatter/myrefs.bib
+ : 
+ : comments_DI ="a survey of routing in CRN."
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 323 of file ./backmatter/myrefs.bib
+ : 
+ : keywords={Nash equilibrium;base stations-access points;congestion game theory;designing protocols;frequency reuse;frequency-space blocks;model pair-wise interference;multiuser frequency adaptation;signaling assumptions;spectrum sharing;wireless channels;wireless networking;game theory;protocols;radio networks;wireless channels;},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 381 of file ./backmatter/myrefs.bib
+ : //    
+ :       pages = {9-20},\n
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 482 of file ./backmatter/myrefs.bib
+ : month=30 
+ :          2008-dec. 4,
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 506 of file ./backmatter/myrefs.bib
+ :  // 
+ :     year  = {2011},
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 597 of file ./backmatter/myrefs.bib
+ : 
+ : keywords={asynchronous algorithm;cognitive radio network;duality theory;end-to-end rate control algorithm;interference temperature limits;optimal resource allocation;power control;cognitive radio;power control;telecommunication control;telecommunication network management;},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 610 of file ./backmatter/myrefs.bib
+ : 
+ : keywords={bi-directional nature;cognitive user access;distributed power control algorithms;higher spectrum usage;listen-before-talk strategy;primary link control feedback;primary user communications;secondary users communications;cognitive radio;distributed control;feedback;power control;radio links;telecommunication control;},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 623 of file ./backmatter/myrefs.bib
+ : 
+ : keywords={Lagrangian dual decomposition;Nash equilibrium;cochannel interference;cognitive radio;distributed power allocation;non-cooperative game;quality of service;spectrum sharing;cochannel interference;cognitive radio;game theory;quality of service;resource allocation;},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 738 of file ./backmatter/myrefs.bib
+ : 
+ : keywords={Euclidean distance;connectivity properties;multihop network;transmission range;wireless ad hoc networks;wireless multihop networks;wireless sensor networks;ad hoc networks;wireless sensor networks;},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 759 of file ./backmatter/myrefs.bib
+ : }
+ :  ;
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 935 of file ./backmatter/myrefs.bib
+ : 
+ : keywords={Nash equilibrium point;cognitive radio network;distributed adaptive channel allocation;information exchange;network performance;noncooperative learning;spectrum etiquette;spectrum sharing game;channel allocation;cooperative systems;game theory;learning (artificial intelligence);radio networks;radio spectrum management;},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 969 of file ./backmatter/myrefs.bib
+ : 
+ : abstract={This paper considers a Markovian dynamical game theoretic setting for distributed transmission control in a wireless sensor network. The available spectrum bandwidth is modeled as a Markov chain. A distributed algorithm named correlated Q-learning algorithm is proposed to obtain the correlated equilibrium policies of the system. This algorithm has the decentralized feature and is easily implementable in a real system. Numerical example is also provided to verify the performances of the proposed algorithms.},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 1095 of file ./backmatter/myrefs.bib
+ : // 
+ :    publisher = {ACM},\n
+I'm skipping whatever remains of this entry
+Your field is more than 20000 characters---line 1665 of file ./backmatter/myrefs.bib
+ : abstract={Recent advances in cognitive radio (CR) technology have brought about a number of wireless standards that support opportunistic access to available white-space spectrum. Addressing the self-coexistence of CR networks in such an environment is very challenging, especially when coexisting networks operate in the same swath of spectrum with little or no direct coordination. In this paper, we study the problem of co-channel self-coexistence of uncoordinated CR networks that employ orthogonal frequency division multiple access (OFDMA) in the uplink. We frame the self-coexistence problem as a non-cooperative game, and propose an uplink soft frequency reuse (USFR) technique to enable globally power-efficient and locally fair sharing of white-space spectrum. In each 
+ :                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            network, uplink resource allocation is decoupled into two subproblems: subchannel allocation (SCA) and transmit power control (TPC). We provide a unique optimal solution to the TPC subproblem, and present a low-complexity heuristic for the SCA subproblem. Furthermore, we frame the TPC and SCA games, and integrate them as a heuristic algorithm that achieves the Nash equilibrium in a fully distributed manner. Our simulation results show that the proposed USFR technique significantly improves self-coexistence in several aspects, including spectrum utilization, power consumption, and intra-cell fairness.},
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1916 of file ./backmatter/myrefs.bib
+ : 
+ : %year={2012},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 2050 of file ./backmatter/myrefs.bib
+ : 
+ : @TechReport{Adaptive_MAClayer_sensing_06,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 2217 of file ./backmatter/myrefs.bib
+ :     
+ :     notse = {bigger transmission power decreases the number of hops, but causes interference when transmission power exceeds a certain level. This can be used to argue that transmission can not be done with high power.
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 2236 of file ./backmatter/myrefs.bib
+ : 
+ : ISSN={0743-166X},}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 2492 of file ./backmatter/myrefs.bib
+ : 
+ : keywords={cognitive radio;mobile ad hoc networks;protocols;radio networks;telecommunication network routing;CAODV protocol;ad-hoc on-demand distance vector;channel selection;cognitive mobile ad hoc networks;mobile ad hoc cognitive radio networks;packet discovery;route cost;route formation;Ad hoc networks;Cognitive radio;Copper;Mobile communication;Routing;Routing protocols;ad hoc;cognitive;manet;routing},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 3247 of file ./backmatter/myrefs.bib
+ : //    
+ :       url = {http://web.it.kth.se/\~{}maguire/jmitola/Mitola\_Dissertation8\_Integrated.pdf},
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 3454 of file ./backmatter/myrefs.bib
+ :   
+ :   archivePrefix = "arXiv",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 3597 of file ./backmatter/myrefs.bib
+ : 
+ : %author={Shah, V. and Mandayam, N.B. and Goodman, D.},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 3645 of file ./backmatter/myrefs.bib
+ : 
+ : %    author = {James O’daniell Neel and Luiz A. Dasilva and Robert P. Gilles and Allen B. Mackenzie and James O’daniell Neel},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Repeated entry---line 3652 of file ./backmatter/myrefs.bib
+ : @phdthesis{Neel06analysisand
+ :                             ,
+I'm skipping whatever remains of this entry
+A bad cross reference---entry "Sun07_clustering_spectrum_secsing"
+refers to entry "DBLP:conf/icc/2007", which doesn't exist
+Warning--I didn't find a database entry for "lindo"
+Warning--I didn't find a database entry for "Babadi08"
+Warning--I didn't find a database entry for "clusterRoutingOverhead02infocom"
+Warning--I didn't find a database entry for "clusterRoutingOverhead_wcnc04"
+Warning--I didn't find a database entry for "DBLP:conf/icc/2007"
+Warning--to sort, need author or key in FCC_spectrumEfficiency_2002
+Warning--to sort, need author or key in FCC_03-322
+Warning--to sort, need author or key in 802.22
+Warning--to sort, need author or key in FCC_2010_sedond_memorandumm
+Warning--to sort, need author or key in ecc159
+Warning--to sort, need author or key in osi
+Too many commas in name 1 of "Huazi Zhang, Zhaoyang Zhang1, Huaiyu Dai, Rui Yin and Xiaoming Chen" for entry clustering_globecom11
+while executing---line 1437 of file styles/acmurl.bst
+Warning--to sort, need author or key in Neel06analysisand
+Warning--to sort, need author or key in FCCdatabasae
+Too many commas in name 1 of "Paramvir Bahl, Ranveer Chandra, Thomas Moscibroda, Rohan Murty and Matt Welsh" for entry whitefi09
+while executing---line 1437 of file styles/acmurl.bst
+Warning--to sort, need author or key in 802.15.4m
+Warning--to sort, need author or key in 802.19
+Name 1 in "Ali Jorio, Sanaa El Fkihi, Brahim Elbhiri, and Driss Aboutajdine" has a comma at the end for entry EnergyEfficientClusteringRouting_2015
+while executing---line 1437 of file styles/acmurl.bst
+Warning--empty author in Neel06analysisand
+Warning--empty title in Neel06analysisand
+Warning--empty institution in Neel06analysisand
+Warning--empty year in Neel06analysisand
+Name 1 in "Ali Jorio, Sanaa El Fkihi, Brahim Elbhiri, and Driss Aboutajdine" has a comma at the end for entry EnergyEfficientClusteringRouting_2015
+while executing---line 1479 of file styles/acmurl.bst
+Warning--empty year in cluster_EW10
+Warning--empty year in caodv-10wd
+Warning--empty year in gpsfree05infocom
+Warning--empty year in search_geo_routing_chowdhury
+Too many commas in name 1 of "Huazi Zhang, Zhaoyang Zhang1, Huaiyu Dai, Rui Yin and Xiaoming Chen" for entry clustering_globecom11
+while executing---line 1479 of file styles/acmurl.bst
+Warning--empty year in clustering_globecom11
+Warning--empty year in DySpAN12_Di
+Warning--empty year in Discrete-Time_Spectrum_Occupancy_Model_DySPAN_2011
+Warning--there's a month but no year in 2000mitola_cognitive_radio
+Warning--empty year in Routing-crn-INFOCOM11
+Too many commas in name 1 of "Paramvir Bahl, Ranveer Chandra, Thomas Moscibroda, Rohan Murty and Matt Welsh" for entry whitefi09
+while executing---line 1479 of file styles/acmurl.bst
+Warning--empty year in spectrumDecision_2013mass
+Warning--empty year in channelAllocation_throughput_12wcnc
+Warning--empty year in uplink_power_tvws13
+Warning--empty year in willkomm08
+Warning--empty journal in dsa_traffic_2000
+(There were 31 error messages)
+This is BibTeX, Version 0.99d (TeX Live 2012/Debian)
+The top-level auxiliary file: thesis.aux
+A level-1 auxiliary file: titlepage.tex.aux
+A level-1 auxiliary file: backmatter/00_statement.aux
+A level-1 auxiliary file: backmatter/00_abstract.aux
+A level-1 auxiliary file: backmatter/00_acknowledgments.aux
+A level-1 auxiliary file: backmatter/00_publications.aux
+A level-1 auxiliary file: chapters/01_introduction.aux
+A level-1 auxiliary file: chapters/02_background.aux
+A level-1 auxiliary file: chapters/03_distributedChannelAllocation.aux
+A level-1 auxiliary file: chapters/04_clutering.aux
+A level-1 auxiliary file: chapters/05_routing.aux
+A level-1 auxiliary file: chapters/06_conclusion.aux
+The style file: styles/acmurl.bst
+Database file #1: ./backmatter/myrefs.bib
+I was expecting a `,' or a `}'---line 227 of file ./backmatter/myrefs.bib
+ : 
+ : comments_DI ="a survey of routing in CRN."
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 323 of file ./backmatter/myrefs.bib
+ : 
+ : keywords={Nash equilibrium;base stations-access points;congestion game theory;designing protocols;frequency reuse;frequency-space blocks;model pair-wise interference;multiuser frequency adaptation;signaling assumptions;spectrum sharing;wireless channels;wireless networking;game theory;protocols;radio networks;wireless channels;},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 381 of file ./backmatter/myrefs.bib
+ : //    
+ :       pages = {9-20},\n
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 482 of file ./backmatter/myrefs.bib
+ : month=30 
+ :          2008-dec. 4,
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 506 of file ./backmatter/myrefs.bib
+ :  // 
+ :     year  = {2011},
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 597 of file ./backmatter/myrefs.bib
+ : 
+ : keywords={asynchronous algorithm;cognitive radio network;duality theory;end-to-end rate control algorithm;interference temperature limits;optimal resource allocation;power control;cognitive radio;power control;telecommunication control;telecommunication network management;},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 610 of file ./backmatter/myrefs.bib
+ : 
+ : keywords={bi-directional nature;cognitive user access;distributed power control algorithms;higher spectrum usage;listen-before-talk strategy;primary link control feedback;primary user communications;secondary users communications;cognitive radio;distributed control;feedback;power control;radio links;telecommunication control;},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 623 of file ./backmatter/myrefs.bib
+ : 
+ : keywords={Lagrangian dual decomposition;Nash equilibrium;cochannel interference;cognitive radio;distributed power allocation;non-cooperative game;quality of service;spectrum sharing;cochannel interference;cognitive radio;game theory;quality of service;resource allocation;},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 738 of file ./backmatter/myrefs.bib
+ : 
+ : keywords={Euclidean distance;connectivity properties;multihop network;transmission range;wireless ad hoc networks;wireless multihop networks;wireless sensor networks;ad hoc networks;wireless sensor networks;},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 759 of file ./backmatter/myrefs.bib
+ : }
+ :  ;
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 935 of file ./backmatter/myrefs.bib
+ : 
+ : keywords={Nash equilibrium point;cognitive radio network;distributed adaptive channel allocation;information exchange;network performance;noncooperative learning;spectrum etiquette;spectrum sharing game;channel allocation;cooperative systems;game theory;learning (artificial intelligence);radio networks;radio spectrum management;},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 969 of file ./backmatter/myrefs.bib
+ : 
+ : abstract={This paper considers a Markovian dynamical game theoretic setting for distributed transmission control in a wireless sensor network. The available spectrum bandwidth is modeled as a Markov chain. A distributed algorithm named correlated Q-learning algorithm is proposed to obtain the correlated equilibrium policies of the system. This algorithm has the decentralized feature and is easily implementable in a real system. Numerical example is also provided to verify the performances of the proposed algorithms.},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 1095 of file ./backmatter/myrefs.bib
+ : // 
+ :    publisher = {ACM},\n
+I'm skipping whatever remains of this entry
+Your field is more than 20000 characters---line 1665 of file ./backmatter/myrefs.bib
+ : abstract={Recent advances in cognitive radio (CR) technology have brought about a number of wireless standards that support opportunistic access to available white-space spectrum. Addressing the self-coexistence of CR networks in such an environment is very challenging, especially when coexisting networks operate in the same swath of spectrum with little or no direct coordination. In this paper, we study the problem of co-channel self-coexistence of uncoordinated CR networks that employ orthogonal frequency division multiple access (OFDMA) in the uplink. We frame the self-coexistence problem as a non-cooperative game, and propose an uplink soft frequency reuse (USFR) technique to enable globally power-efficient and locally fair sharing of white-space spectrum. In each 
+ :                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            network, uplink resource allocation is decoupled into two subproblems: subchannel allocation (SCA) and transmit power control (TPC). We provide a unique optimal solution to the TPC subproblem, and present a low-complexity heuristic for the SCA subproblem. Furthermore, we frame the TPC and SCA games, and integrate them as a heuristic algorithm that achieves the Nash equilibrium in a fully distributed manner. Our simulation results show that the proposed USFR technique significantly improves self-coexistence in several aspects, including spectrum utilization, power consumption, and intra-cell fairness.},
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1916 of file ./backmatter/myrefs.bib
+ : 
+ : %year={2012},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 2050 of file ./backmatter/myrefs.bib
+ : 
+ : @TechReport{Adaptive_MAClayer_sensing_06,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 2217 of file ./backmatter/myrefs.bib
+ :     
+ :     notse = {bigger transmission power decreases the number of hops, but causes interference when transmission power exceeds a certain level. This can be used to argue that transmission can not be done with high power.
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 2236 of file ./backmatter/myrefs.bib
+ : 
+ : ISSN={0743-166X},}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 2492 of file ./backmatter/myrefs.bib
+ : 
+ : keywords={cognitive radio;mobile ad hoc networks;protocols;radio networks;telecommunication network routing;CAODV protocol;ad-hoc on-demand distance vector;channel selection;cognitive mobile ad hoc networks;mobile ad hoc cognitive radio networks;packet discovery;route cost;route formation;Ad hoc networks;Cognitive radio;Copper;Mobile communication;Routing;Routing protocols;ad hoc;cognitive;manet;routing},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 3247 of file ./backmatter/myrefs.bib
+ : //    
+ :       url = {http://web.it.kth.se/\~{}maguire/jmitola/Mitola\_Dissertation8\_Integrated.pdf},
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 3454 of file ./backmatter/myrefs.bib
+ :   
+ :   archivePrefix = "arXiv",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 3597 of file ./backmatter/myrefs.bib
+ : 
+ : %author={Shah, V. and Mandayam, N.B. and Goodman, D.},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 3645 of file ./backmatter/myrefs.bib
+ : 
+ : %    author = {James O’daniell Neel and Luiz A. Dasilva and Robert P. Gilles and Allen B. Mackenzie and James O’daniell Neel},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Repeated entry---line 3652 of file ./backmatter/myrefs.bib
+ : @phdthesis{Neel06analysisand
+ :                             ,
+I'm skipping whatever remains of this entry
+A bad cross reference---entry "Sun07_clustering_spectrum_secsing"
+refers to entry "DBLP:conf/icc/2007", which doesn't exist
+Warning--I didn't find a database entry for "lindo"
+Warning--I didn't find a database entry for "Babadi08"
+Warning--I didn't find a database entry for "clusterRoutingOverhead02infocom"
+Warning--I didn't find a database entry for "clusterRoutingOverhead_wcnc04"
+Warning--I didn't find a database entry for "DBLP:conf/icc/2007"
+Warning--to sort, need author or key in FCC_spectrumEfficiency_2002
+Warning--to sort, need author or key in FCC_03-322
+Warning--to sort, need author or key in 802.22
+Warning--to sort, need author or key in FCC_2010_sedond_memorandumm
+Warning--to sort, need author or key in ecc159
+Warning--to sort, need author or key in osi
+Too many commas in name 1 of "Huazi Zhang, Zhaoyang Zhang1, Huaiyu Dai, Rui Yin and Xiaoming Chen" for entry clustering_globecom11
+while executing---line 1437 of file styles/acmurl.bst
+Warning--to sort, need author or key in Neel06analysisand
+Warning--to sort, need author or key in FCCdatabasae
+Too many commas in name 1 of "Paramvir Bahl, Ranveer Chandra, Thomas Moscibroda, Rohan Murty and Matt Welsh" for entry whitefi09
+while executing---line 1437 of file styles/acmurl.bst
+Warning--to sort, need author or key in 802.15.4m
+Warning--to sort, need author or key in 802.19
+Name 1 in "Ali Jorio, Sanaa El Fkihi, Brahim Elbhiri, and Driss Aboutajdine" has a comma at the end for entry EnergyEfficientClusteringRouting_2015
+while executing---line 1437 of file styles/acmurl.bst
+Warning--empty author in Neel06analysisand
+Warning--empty title in Neel06analysisand
+Warning--empty institution in Neel06analysisand
+Warning--empty year in Neel06analysisand
+Name 1 in "Ali Jorio, Sanaa El Fkihi, Brahim Elbhiri, and Driss Aboutajdine" has a comma at the end for entry EnergyEfficientClusteringRouting_2015
+while executing---line 1479 of file styles/acmurl.bst
+Warning--empty year in cluster_EW10
+Warning--empty year in caodv-10wd
+Warning--empty year in gpsfree05infocom
+Warning--empty year in search_geo_routing_chowdhury
+Too many commas in name 1 of "Huazi Zhang, Zhaoyang Zhang1, Huaiyu Dai, Rui Yin and Xiaoming Chen" for entry clustering_globecom11
+while executing---line 1479 of file styles/acmurl.bst
+Warning--empty year in clustering_globecom11
+Warning--empty year in DySpAN12_Di
+Warning--empty year in Discrete-Time_Spectrum_Occupancy_Model_DySPAN_2011
+Warning--there's a month but no year in 2000mitola_cognitive_radio
+Warning--empty year in Routing-crn-INFOCOM11
+Too many commas in name 1 of "Paramvir Bahl, Ranveer Chandra, Thomas Moscibroda, Rohan Murty and Matt Welsh" for entry whitefi09
+while executing---line 1479 of file styles/acmurl.bst
+Warning--empty year in spectrumDecision_2013mass
+Warning--empty year in channelAllocation_throughput_12wcnc
+Warning--empty year in uplink_power_tvws13
+Warning--empty year in willkomm08
+Warning--empty journal in dsa_traffic_2000
+(There were 31 error messages)
+This is BibTeX, Version 0.99d (TeX Live 2012/Debian)
+The top-level auxiliary file: thesis.aux
+A level-1 auxiliary file: titlepage.tex.aux
+A level-1 auxiliary file: backmatter/00_statement.aux
+A level-1 auxiliary file: backmatter/00_abstract.aux
+A level-1 auxiliary file: backmatter/00_acknowledgments.aux
+A level-1 auxiliary file: backmatter/00_publications.aux
+A level-1 auxiliary file: chapters/01_introduction.aux
+A level-1 auxiliary file: chapters/02_background.aux
+A level-1 auxiliary file: chapters/03_distributedChannelAllocation.aux
+A level-1 auxiliary file: chapters/04_clutering.aux
+A level-1 auxiliary file: chapters/05_routing.aux
+A level-1 auxiliary file: chapters/06_conclusion.aux
+The style file: styles/acmurl.bst
+Database file #1: ./backmatter/myrefs.bib
+I was expecting a `,' or a `}'---line 226 of file ./backmatter/myrefs.bib
+ : 
+ : comments_DI ="a survey of routing in CRN."
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 322 of file ./backmatter/myrefs.bib
+ : 
+ : keywords={Nash equilibrium;base stations-access points;congestion game theory;designing protocols;frequency reuse;frequency-space blocks;model pair-wise interference;multiuser frequency adaptation;signaling assumptions;spectrum sharing;wireless channels;wireless networking;game theory;protocols;radio networks;wireless channels;},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 380 of file ./backmatter/myrefs.bib
+ : //    
+ :       pages = {9-20},\n
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 481 of file ./backmatter/myrefs.bib
+ : month=30 
+ :          2008-dec. 4,
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 505 of file ./backmatter/myrefs.bib
+ :  // 
+ :     year  = {2011},
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 596 of file ./backmatter/myrefs.bib
+ : 
+ : keywords={asynchronous algorithm;cognitive radio network;duality theory;end-to-end rate control algorithm;interference temperature limits;optimal resource allocation;power control;cognitive radio;power control;telecommunication control;telecommunication network management;},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 609 of file ./backmatter/myrefs.bib
+ : 
+ : keywords={bi-directional nature;cognitive user access;distributed power control algorithms;higher spectrum usage;listen-before-talk strategy;primary link control feedback;primary user communications;secondary users communications;cognitive radio;distributed control;feedback;power control;radio links;telecommunication control;},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 622 of file ./backmatter/myrefs.bib
+ : 
+ : keywords={Lagrangian dual decomposition;Nash equilibrium;cochannel interference;cognitive radio;distributed power allocation;non-cooperative game;quality of service;spectrum sharing;cochannel interference;cognitive radio;game theory;quality of service;resource allocation;},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 737 of file ./backmatter/myrefs.bib
+ : 
+ : keywords={Euclidean distance;connectivity properties;multihop network;transmission range;wireless ad hoc networks;wireless multihop networks;wireless sensor networks;ad hoc networks;wireless sensor networks;},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 758 of file ./backmatter/myrefs.bib
+ : }
+ :  ;
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 934 of file ./backmatter/myrefs.bib
+ : 
+ : keywords={Nash equilibrium point;cognitive radio network;distributed adaptive channel allocation;information exchange;network performance;noncooperative learning;spectrum etiquette;spectrum sharing game;channel allocation;cooperative systems;game theory;learning (artificial intelligence);radio networks;radio spectrum management;},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 968 of file ./backmatter/myrefs.bib
+ : 
+ : abstract={This paper considers a Markovian dynamical game theoretic setting for distributed transmission control in a wireless sensor network. The available spectrum bandwidth is modeled as a Markov chain. A distributed algorithm named correlated Q-learning algorithm is proposed to obtain the correlated equilibrium policies of the system. This algorithm has the decentralized feature and is easily implementable in a real system. Numerical example is also provided to verify the performances of the proposed algorithms.},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 1094 of file ./backmatter/myrefs.bib
+ : // 
+ :    publisher = {ACM},\n
+I'm skipping whatever remains of this entry
+Your field is more than 20000 characters---line 1664 of file ./backmatter/myrefs.bib
+ : abstract={Recent advances in cognitive radio (CR) technology have brought about a number of wireless standards that support opportunistic access to available white-space spectrum. Addressing the self-coexistence of CR networks in such an environment is very challenging, especially when coexisting networks operate in the same swath of spectrum with little or no direct coordination. In this paper, we study the problem of co-channel self-coexistence of uncoordinated CR networks that employ orthogonal frequency division multiple access (OFDMA) in the uplink. We frame the self-coexistence problem as a non-cooperative game, and propose an uplink soft frequency reuse (USFR) technique to enable globally power-efficient and locally fair sharing of white-space spectrum. In each network, uplink resource allocation is decoupled into two subproblems: subchannel allocation (SCA) and transmit p
+ :                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ower control (TPC). We provide a unique optimal solution to the TPC subproblem, and present a low-complexity heuristic for the SCA subproblem. Furthermore, we frame the TPC and SCA games, and integrate them as a heuristic algorithm that achieves the Nash equilibrium in a fully distributed manner. Our simulation results show that the proposed USFR technique significantly improves self-coexistence in several aspects, including spectrum utilization, power consumption, and intra-cell fairness.},
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1915 of file ./backmatter/myrefs.bib
+ : 
+ : %year={2012},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 2049 of file ./backmatter/myrefs.bib
+ : 
+ : @TechReport{Adaptive_MAClayer_sensing_06,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 2216 of file ./backmatter/myrefs.bib
+ :     
+ :     notse = {bigger transmission power decreases the number of hops, but causes interference when transmission power exceeds a certain level. This can be used to argue that transmission can not be done with high power.
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 2235 of file ./backmatter/myrefs.bib
+ : 
+ : ISSN={0743-166X},}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 2491 of file ./backmatter/myrefs.bib
+ : 
+ : keywords={cognitive radio;mobile ad hoc networks;protocols;radio networks;telecommunication network routing;CAODV protocol;ad-hoc on-demand distance vector;channel selection;cognitive mobile ad hoc networks;mobile ad hoc cognitive radio networks;packet discovery;route cost;route formation;Ad hoc networks;Cognitive radio;Copper;Mobile communication;Routing;Routing protocols;ad hoc;cognitive;manet;routing},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 3246 of file ./backmatter/myrefs.bib
+ : //    
+ :       url = {http://web.it.kth.se/\~{}maguire/jmitola/Mitola\_Dissertation8\_Integrated.pdf},
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 3453 of file ./backmatter/myrefs.bib
+ :   
+ :   archivePrefix = "arXiv",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 3596 of file ./backmatter/myrefs.bib
+ : 
+ : %author={Shah, V. and Mandayam, N.B. and Goodman, D.},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 3644 of file ./backmatter/myrefs.bib
+ : 
+ : %    author = {James O’daniell Neel and Luiz A. Dasilva and Robert P. Gilles and Allen B. Mackenzie and James O’daniell Neel},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Repeated entry---line 3651 of file ./backmatter/myrefs.bib
+ : @phdthesis{Neel06analysisand
+ :                             ,
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "lindo"
+Warning--I didn't find a database entry for "Babadi08"
+Warning--I didn't find a database entry for "clusterRoutingOverhead02infocom"
+Warning--I didn't find a database entry for "clusterRoutingOverhead_wcnc04"
+Warning--to sort, need author or key in FCC_spectrumEfficiency_2002
+Warning--to sort, need author or key in FCC_03-322
+Warning--to sort, need author or key in 802.22
+Warning--to sort, need author or key in FCC_2010_sedond_memorandumm
+Warning--to sort, need author or key in ecc159
+Warning--to sort, need author or key in osi
+Too many commas in name 1 of "Huazi Zhang, Zhaoyang Zhang1, Huaiyu Dai, Rui Yin and Xiaoming Chen" for entry clustering_globecom11
+while executing---line 1437 of file styles/acmurl.bst
+Warning--to sort, need author or key in Neel06analysisand
+Warning--to sort, need author or key in FCCdatabasae
+Too many commas in name 1 of "Paramvir Bahl, Ranveer Chandra, Thomas Moscibroda, Rohan Murty and Matt Welsh" for entry whitefi09
+while executing---line 1437 of file styles/acmurl.bst
+Warning--to sort, need author or key in 802.15.4m
+Warning--to sort, need author or key in 802.19
+Name 1 in "Ali Jorio, Sanaa El Fkihi, Brahim Elbhiri, and Driss Aboutajdine" has a comma at the end for entry EnergyEfficientClusteringRouting_2015
+while executing---line 1437 of file styles/acmurl.bst
+Warning--empty author in Neel06analysisand
+Warning--empty title in Neel06analysisand
+Warning--empty institution in Neel06analysisand
+Warning--empty year in Neel06analysisand
+Name 1 in "Ali Jorio, Sanaa El Fkihi, Brahim Elbhiri, and Driss Aboutajdine" has a comma at the end for entry EnergyEfficientClusteringRouting_2015
+while executing---line 1479 of file styles/acmurl.bst
+Warning--empty year in cluster_EW10
+Warning--empty year in caodv-10wd
+Warning--empty year in gpsfree05infocom
+Warning--empty year in search_geo_routing_chowdhury
+Too many commas in name 1 of "Huazi Zhang, Zhaoyang Zhang1, Huaiyu Dai, Rui Yin and Xiaoming Chen" for entry clustering_globecom11
+while executing---line 1479 of file styles/acmurl.bst
+Warning--empty year in clustering_globecom11
+Warning--empty year in DySpAN12_Di
+Warning--empty year in Discrete-Time_Spectrum_Occupancy_Model_DySPAN_2011
+Warning--there's a month but no year in 2000mitola_cognitive_radio
+Warning--empty year in Routing-crn-INFOCOM11
+Too many commas in name 1 of "Paramvir Bahl, Ranveer Chandra, Thomas Moscibroda, Rohan Murty and Matt Welsh" for entry whitefi09
+while executing---line 1479 of file styles/acmurl.bst
+Warning--empty year in spectrumDecision_2013mass
+Warning--empty year in channelAllocation_throughput_12wcnc
+Warning--empty year in uplink_power_tvws13
+Warning--empty year in willkomm08
+Warning--empty journal in dsa_traffic_2000
+(There were 30 error messages)
+This is BibTeX, Version 0.99d (TeX Live 2012/Debian)
+The top-level auxiliary file: thesis.aux
+A level-1 auxiliary file: titlepage.tex.aux
+A level-1 auxiliary file: backmatter/00_statement.aux
+A level-1 auxiliary file: backmatter/00_abstract.aux
+A level-1 auxiliary file: backmatter/00_acknowledgments.aux
+A level-1 auxiliary file: backmatter/00_publications.aux
+A level-1 auxiliary file: chapters/01_introduction.aux
+A level-1 auxiliary file: chapters/02_background.aux
+A level-1 auxiliary file: chapters/03_distributedChannelAllocation.aux
+A level-1 auxiliary file: chapters/04_clutering.aux
+A level-1 auxiliary file: chapters/05_routing.aux
+A level-1 auxiliary file: chapters/06_conclusion.aux
+The style file: styles/acmurl.bst
+Database file #1: ./backmatter/myrefs.bib
+I was expecting a `,' or a `}'---line 226 of file ./backmatter/myrefs.bib
+ : 
+ : comments_DI ="a survey of routing in CRN."
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 322 of file ./backmatter/myrefs.bib
+ : 
+ : keywords={Nash equilibrium;base stations-access points;congestion game theory;designing protocols;frequency reuse;frequency-space blocks;model pair-wise interference;multiuser frequency adaptation;signaling assumptions;spectrum sharing;wireless channels;wireless networking;game theory;protocols;radio networks;wireless channels;},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 380 of file ./backmatter/myrefs.bib
+ : //    
+ :       pages = {9-20},\n
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 481 of file ./backmatter/myrefs.bib
+ : month=30 
+ :          2008-dec. 4,
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 505 of file ./backmatter/myrefs.bib
+ :  // 
+ :     year  = {2011},
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 596 of file ./backmatter/myrefs.bib
+ : 
+ : keywords={asynchronous algorithm;cognitive radio network;duality theory;end-to-end rate control algorithm;interference temperature limits;optimal resource allocation;power control;cognitive radio;power control;telecommunication control;telecommunication network management;},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 609 of file ./backmatter/myrefs.bib
+ : 
+ : keywords={bi-directional nature;cognitive user access;distributed power control algorithms;higher spectrum usage;listen-before-talk strategy;primary link control feedback;primary user communications;secondary users communications;cognitive radio;distributed control;feedback;power control;radio links;telecommunication control;},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 622 of file ./backmatter/myrefs.bib
+ : 
+ : keywords={Lagrangian dual decomposition;Nash equilibrium;cochannel interference;cognitive radio;distributed power allocation;non-cooperative game;quality of service;spectrum sharing;cochannel interference;cognitive radio;game theory;quality of service;resource allocation;},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 737 of file ./backmatter/myrefs.bib
+ : 
+ : keywords={Euclidean distance;connectivity properties;multihop network;transmission range;wireless ad hoc networks;wireless multihop networks;wireless sensor networks;ad hoc networks;wireless sensor networks;},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 758 of file ./backmatter/myrefs.bib
+ : }
+ :  ;
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 934 of file ./backmatter/myrefs.bib
+ : 
+ : keywords={Nash equilibrium point;cognitive radio network;distributed adaptive channel allocation;information exchange;network performance;noncooperative learning;spectrum etiquette;spectrum sharing game;channel allocation;cooperative systems;game theory;learning (artificial intelligence);radio networks;radio spectrum management;},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 968 of file ./backmatter/myrefs.bib
+ : 
+ : abstract={This paper considers a Markovian dynamical game theoretic setting for distributed transmission control in a wireless sensor network. The available spectrum bandwidth is modeled as a Markov chain. A distributed algorithm named correlated Q-learning algorithm is proposed to obtain the correlated equilibrium policies of the system. This algorithm has the decentralized feature and is easily implementable in a real system. Numerical example is also provided to verify the performances of the proposed algorithms.},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 1094 of file ./backmatter/myrefs.bib
+ : // 
+ :    publisher = {ACM},\n
+I'm skipping whatever remains of this entry
+Your field is more than 20000 characters---line 1664 of file ./backmatter/myrefs.bib
+ : abstract={Recent advances in cognitive radio (CR) technology have brought about a number of wireless standards that support opportunistic access to available white-space spectrum. Addressing the self-coexistence of CR networks in such an environment is very challenging, especially when coexisting networks operate in the same swath of spectrum with little or no direct coordination. In this paper, we study the problem of co-channel self-coexistence of uncoordinated CR networks that employ orthogonal frequency division multiple access (OFDMA) in the uplink. We frame the self-coexistence problem as a non-cooperative game, and propose an uplink soft frequency reuse (USFR) technique to enable globally power-efficient and locally fair sharing of white-space spectrum. In each network, uplink resource allocation is decoupled into two subproblems: subchannel allocation (SCA) and transmit p
+ :                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ower control (TPC). We provide a unique optimal solution to the TPC subproblem, and present a low-complexity heuristic for the SCA subproblem. Furthermore, we frame the TPC and SCA games, and integrate them as a heuristic algorithm that achieves the Nash equilibrium in a fully distributed manner. Our simulation results show that the proposed USFR technique significantly improves self-coexistence in several aspects, including spectrum utilization, power consumption, and intra-cell fairness.},
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1915 of file ./backmatter/myrefs.bib
+ : 
+ : %year={2012},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 2049 of file ./backmatter/myrefs.bib
+ : 
+ : @TechReport{Adaptive_MAClayer_sensing_06,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 2216 of file ./backmatter/myrefs.bib
+ :     
+ :     notse = {bigger transmission power decreases the number of hops, but causes interference when transmission power exceeds a certain level. This can be used to argue that transmission can not be done with high power.
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 2235 of file ./backmatter/myrefs.bib
+ : 
+ : ISSN={0743-166X},}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 2491 of file ./backmatter/myrefs.bib
+ : 
+ : keywords={cognitive radio;mobile ad hoc networks;protocols;radio networks;telecommunication network routing;CAODV protocol;ad-hoc on-demand distance vector;channel selection;cognitive mobile ad hoc networks;mobile ad hoc cognitive radio networks;packet discovery;route cost;route formation;Ad hoc networks;Cognitive radio;Copper;Mobile communication;Routing;Routing protocols;ad hoc;cognitive;manet;routing},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 3246 of file ./backmatter/myrefs.bib
+ : //    
+ :       url = {http://web.it.kth.se/\~{}maguire/jmitola/Mitola\_Dissertation8\_Integrated.pdf},
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 3453 of file ./backmatter/myrefs.bib
+ :   
+ :   archivePrefix = "arXiv",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 3596 of file ./backmatter/myrefs.bib
+ : 
+ : %author={Shah, V. and Mandayam, N.B. and Goodman, D.},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 3644 of file ./backmatter/myrefs.bib
+ : 
+ : %    author = {James O’daniell Neel and Luiz A. Dasilva and Robert P. Gilles and Allen B. Mackenzie and James O’daniell Neel},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Repeated entry---line 3651 of file ./backmatter/myrefs.bib
+ : @phdthesis{Neel06analysisand
+ :                             ,
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "lindo"
+Warning--I didn't find a database entry for "Babadi08"
+Warning--I didn't find a database entry for "clusterRoutingOverhead02infocom"
+Warning--I didn't find a database entry for "clusterRoutingOverhead_wcnc04"
+Warning--to sort, need author or key in FCC_spectrumEfficiency_2002
+Warning--to sort, need author or key in FCC_03-322
+Warning--to sort, need author or key in 802.22
+Warning--to sort, need author or key in FCC_2010_sedond_memorandumm
+Warning--to sort, need author or key in ecc159
+Warning--to sort, need author or key in osi
+Too many commas in name 1 of "Huazi Zhang, Zhaoyang Zhang1, Huaiyu Dai, Rui Yin and Xiaoming Chen" for entry clustering_globecom11
+while executing---line 1437 of file styles/acmurl.bst
+Warning--to sort, need author or key in Neel06analysisand
+Warning--to sort, need author or key in FCCdatabasae
+Too many commas in name 1 of "Paramvir Bahl, Ranveer Chandra, Thomas Moscibroda, Rohan Murty and Matt Welsh" for entry whitefi09
+while executing---line 1437 of file styles/acmurl.bst
+Warning--to sort, need author or key in 802.15.4m
+Warning--to sort, need author or key in 802.19
+Name 1 in "Ali Jorio, Sanaa El Fkihi, Brahim Elbhiri, and Driss Aboutajdine" has a comma at the end for entry EnergyEfficientClusteringRouting_2015
+while executing---line 1437 of file styles/acmurl.bst
+Warning--empty author in Neel06analysisand
+Warning--empty title in Neel06analysisand
+Warning--empty institution in Neel06analysisand
+Warning--empty year in Neel06analysisand
+Name 1 in "Ali Jorio, Sanaa El Fkihi, Brahim Elbhiri, and Driss Aboutajdine" has a comma at the end for entry EnergyEfficientClusteringRouting_2015
+while executing---line 1479 of file styles/acmurl.bst
+Warning--empty year in cluster_EW10
+Warning--empty year in caodv-10wd
+Warning--empty year in gpsfree05infocom
+Warning--empty year in search_geo_routing_chowdhury
+Too many commas in name 1 of "Huazi Zhang, Zhaoyang Zhang1, Huaiyu Dai, Rui Yin and Xiaoming Chen" for entry clustering_globecom11
+while executing---line 1479 of file styles/acmurl.bst
+Warning--empty year in clustering_globecom11
+Warning--empty year in DySpAN12_Di
+Warning--empty year in Discrete-Time_Spectrum_Occupancy_Model_DySPAN_2011
+Warning--there's a month but no year in 2000mitola_cognitive_radio
+Warning--empty year in Routing-crn-INFOCOM11
+Too many commas in name 1 of "Paramvir Bahl, Ranveer Chandra, Thomas Moscibroda, Rohan Murty and Matt Welsh" for entry whitefi09
+while executing---line 1479 of file styles/acmurl.bst
+Warning--empty year in spectrumDecision_2013mass
+Warning--empty year in channelAllocation_throughput_12wcnc
+Warning--empty year in uplink_power_tvws13
+Warning--empty year in willkomm08
+Warning--empty journal in dsa_traffic_2000
+(There were 30 error messages)
+This is BibTeX, Version 0.99d (TeX Live 2012/Debian)
+The top-level auxiliary file: thesis.aux
+A level-1 auxiliary file: titlepage.tex.aux
+A level-1 auxiliary file: backmatter/00_statement.aux
+A level-1 auxiliary file: backmatter/00_abstract.aux
+A level-1 auxiliary file: backmatter/00_acknowledgments.aux
+A level-1 auxiliary file: backmatter/00_publications.aux
+A level-1 auxiliary file: chapters/01_introduction.aux
+A level-1 auxiliary file: chapters/02_background.aux
+A level-1 auxiliary file: chapters/03_distributedChannelAllocation.aux
+A level-1 auxiliary file: chapters/04_clutering.aux
+A level-1 auxiliary file: chapters/05_routing.aux
+A level-1 auxiliary file: chapters/06_conclusion.aux
+Illegal, another \bibdata command---line 166 of file thesis.aux
+ : \bibdata
+ :         {./backmatter/myrefs2}
+I'm skipping whatever remains of this command
+The style file: styles/acmurl.bst
+Database file #1: ./backmatter/myrefs.bib
+I was expecting a `,' or a `}'---line 226 of file ./backmatter/myrefs.bib
+ : 
+ : comments_DI ="a survey of routing in CRN."
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 322 of file ./backmatter/myrefs.bib
+ : 
+ : keywords={Nash equilibrium;base stations-access points;congestion game theory;designing protocols;frequency reuse;frequency-space blocks;model pair-wise interference;multiuser frequency adaptation;signaling assumptions;spectrum sharing;wireless channels;wireless networking;game theory;protocols;radio networks;wireless channels;},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 380 of file ./backmatter/myrefs.bib
+ : //    
+ :       pages = {9-20},\n
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 481 of file ./backmatter/myrefs.bib
+ : month=30 
+ :          2008-dec. 4,
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 505 of file ./backmatter/myrefs.bib
+ :  // 
+ :     year  = {2011},
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 596 of file ./backmatter/myrefs.bib
+ : 
+ : keywords={asynchronous algorithm;cognitive radio network;duality theory;end-to-end rate control algorithm;interference temperature limits;optimal resource allocation;power control;cognitive radio;power control;telecommunication control;telecommunication network management;},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 609 of file ./backmatter/myrefs.bib
+ : 
+ : keywords={bi-directional nature;cognitive user access;distributed power control algorithms;higher spectrum usage;listen-before-talk strategy;primary link control feedback;primary user communications;secondary users communications;cognitive radio;distributed control;feedback;power control;radio links;telecommunication control;},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 622 of file ./backmatter/myrefs.bib
+ : 
+ : keywords={Lagrangian dual decomposition;Nash equilibrium;cochannel interference;cognitive radio;distributed power allocation;non-cooperative game;quality of service;spectrum sharing;cochannel interference;cognitive radio;game theory;quality of service;resource allocation;},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 737 of file ./backmatter/myrefs.bib
+ : 
+ : keywords={Euclidean distance;connectivity properties;multihop network;transmission range;wireless ad hoc networks;wireless multihop networks;wireless sensor networks;ad hoc networks;wireless sensor networks;},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 758 of file ./backmatter/myrefs.bib
+ : }
+ :  ;
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 934 of file ./backmatter/myrefs.bib
+ : 
+ : keywords={Nash equilibrium point;cognitive radio network;distributed adaptive channel allocation;information exchange;network performance;noncooperative learning;spectrum etiquette;spectrum sharing game;channel allocation;cooperative systems;game theory;learning (artificial intelligence);radio networks;radio spectrum management;},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 968 of file ./backmatter/myrefs.bib
+ : 
+ : abstract={This paper considers a Markovian dynamical game theoretic setting for distributed transmission control in a wireless sensor network. The available spectrum bandwidth is modeled as a Markov chain. A distributed algorithm named correlated Q-learning algorithm is proposed to obtain the correlated equilibrium policies of the system. This algorithm has the decentralized feature and is easily implementable in a real system. Numerical example is also provided to verify the performances of the proposed algorithms.},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 1094 of file ./backmatter/myrefs.bib
+ : // 
+ :    publisher = {ACM},\n
+I'm skipping whatever remains of this entry
+Your field is more than 20000 characters---line 1655 of file ./backmatter/myrefs.bib
+ : abstract={The Cognitive Radio (CR) technology enables the unlicensed users to share the spectrum with the licensed users on a non-interfering basis. Spectrum sensing is an important function for the unlicensed users to determine availability of a channel in the licensed user's spectrum. However, spectrum sensing consumes considerable energy which can be reduced by employing predictive methods for discovering spectrum holes. Using a reliable prediction scheme, the unlicensed users will sense only those channels which are predicted to be idle. By achieving a low probability of error in predicting the idle channels, the spectrum utilization can also be improved. Since the traffic characteristics of most licensed user systems encountered in real life are not known a priori, we design the spectrum predictor using the neural network 
+ :                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        model, multilayer perceptron (MLP), which does not require a prior knowledge of the traffic characteristics of the licensed user systems. The performance of the spectrum predictor is analyzed through extensive simulations.},
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1870 of file ./backmatter/myrefs.bib
+ : 
+ : %year={2012},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 2004 of file ./backmatter/myrefs.bib
+ : 
+ : @TechReport{Adaptive_MAClayer_sensing_06,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 2171 of file ./backmatter/myrefs.bib
+ :     
+ :     notse = {bigger transmission power decreases the number of hops, but causes interference when transmission power exceeds a certain level. This can be used to argue that transmission can not be done with high power.
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 2190 of file ./backmatter/myrefs.bib
+ : 
+ : ISSN={0743-166X},}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 2446 of file ./backmatter/myrefs.bib
+ : 
+ : keywords={cognitive radio;mobile ad hoc networks;protocols;radio networks;telecommunication network routing;CAODV protocol;ad-hoc on-demand distance vector;channel selection;cognitive mobile ad hoc networks;mobile ad hoc cognitive radio networks;packet discovery;route cost;route formation;Ad hoc networks;Cognitive radio;Copper;Mobile communication;Routing;Routing protocols;ad hoc;cognitive;manet;routing},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 3201 of file ./backmatter/myrefs.bib
+ : //    
+ :       url = {http://web.it.kth.se/\~{}maguire/jmitola/Mitola\_Dissertation8\_Integrated.pdf},
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 3408 of file ./backmatter/myrefs.bib
+ :   
+ :   archivePrefix = "arXiv",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 3551 of file ./backmatter/myrefs.bib
+ : 
+ : %author={Shah, V. and Mandayam, N.B. and Goodman, D.},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 3599 of file ./backmatter/myrefs.bib
+ : 
+ : %    author = {James O’daniell Neel and Luiz A. Dasilva and Robert P. Gilles and Allen B. Mackenzie and James O’daniell Neel},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Repeated entry---line 3606 of file ./backmatter/myrefs.bib
+ : @phdthesis{Neel06analysisand
+ :                             ,
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "lindo"
+Warning--I didn't find a database entry for "babadi_08"
+Warning--I didn't find a database entry for "clusterRoutingOverhead02infocom"
+Warning--I didn't find a database entry for "clusterRoutingOverhead_wcnc04"
+Warning--to sort, need author or key in FCC_spectrumEfficiency_2002
+Warning--to sort, need author or key in FCC_03-322
+Warning--to sort, need author or key in 802.22
+Warning--to sort, need author or key in FCC_2010_sedond_memorandumm
+Warning--to sort, need author or key in ecc159
+Warning--to sort, need author or key in osi
+Too many commas in name 1 of "Huazi Zhang, Zhaoyang Zhang1, Huaiyu Dai, Rui Yin and Xiaoming Chen" for entry clustering_globecom11
+while executing---line 1437 of file styles/acmurl.bst
+Warning--to sort, need author or key in Neel06analysisand
+Warning--to sort, need author or key in FCCdatabasae
+Too many commas in name 1 of "Paramvir Bahl, Ranveer Chandra, Thomas Moscibroda, Rohan Murty and Matt Welsh" for entry whitefi09
+while executing---line 1437 of file styles/acmurl.bst
+Warning--to sort, need author or key in 802.15.4m
+Warning--to sort, need author or key in 802.19
+Name 1 in "Ali Jorio, Sanaa El Fkihi, Brahim Elbhiri, and Driss Aboutajdine" has a comma at the end for entry EnergyEfficientClusteringRouting_2015
+while executing---line 1437 of file styles/acmurl.bst
+Warning--empty author in Neel06analysisand
+Warning--empty title in Neel06analysisand
+Warning--empty institution in Neel06analysisand
+Warning--empty year in Neel06analysisand
+Name 1 in "Ali Jorio, Sanaa El Fkihi, Brahim Elbhiri, and Driss Aboutajdine" has a comma at the end for entry EnergyEfficientClusteringRouting_2015
+while executing---line 1479 of file styles/acmurl.bst
+Warning--empty year in cluster_EW10
+Warning--empty year in caodv-10wd
+Warning--empty year in gpsfree05infocom
+Warning--empty year in search_geo_routing_chowdhury
+Too many commas in name 1 of "Huazi Zhang, Zhaoyang Zhang1, Huaiyu Dai, Rui Yin and Xiaoming Chen" for entry clustering_globecom11
+while executing---line 1479 of file styles/acmurl.bst
+Warning--empty year in clustering_globecom11
+Warning--empty year in DySpAN12_Di
+Warning--empty year in Discrete-Time_Spectrum_Occupancy_Model_DySPAN_2011
+Warning--there's a month but no year in 2000mitola_cognitive_radio
+Warning--empty year in Routing-crn-INFOCOM11
+Too many commas in name 1 of "Paramvir Bahl, Ranveer Chandra, Thomas Moscibroda, Rohan Murty and Matt Welsh" for entry whitefi09
+while executing---line 1479 of file styles/acmurl.bst
+Warning--empty year in spectrumDecision_2013mass
+Warning--empty year in channelAllocation_throughput_12wcnc
+Warning--empty year in uplink_power_tvws13
+Warning--empty year in willkomm08
+Warning--empty journal in dsa_traffic_2000
+(There were 31 error messages)

@@ -1,4 +1,112 @@
-Warning: File 'thesis.glo' is empty.
-Have you used any entries defined in glossary 'main'?
-Remember to use package option 'nomain' if you
-don't want to use the main glossary.
+;; This logfile was generated automatically by `xindy'
+;; at 22.08.2015  01:07:14
+;; Indexstyle: "/tmp/wHNZjXDzKV", Rawindex: "/tmp/Hbub1lhmmz", Output: "thesis.gls"
+
+
+Building indexentry-tree:
+Hierdepth of index is :TREE
+
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+
+Forming letter-groups:
+Letter-group: "æ¨Ú¤—†€Ú" -> "W"
+Letter-group: "Ð»" -> "G"
+Letter-group: "¨Ð» „€¼" -> "I"
+Letter-group: "5" -> "glsnumbers"
+Letter-group: "Èà" -> "P"
+Letter-group: "†Ë" -> "C"
+Letter-group: "È€" -> "P"
+Letter-group: "†Ë¼" -> "C"
+Letter-group: "†Ë€¤¼" -> "C"
+Letter-group: "æË€¼" -> "W"
+Letter-group: "æ„Ð" -> "W"
+Letter-group: "—††" -> "E"
+Letter-group: "†††" -> "C"
+Letter-group: "†œ" -> "D"
+Letter-group: "†æ" -> "C"
+Letter-group: "¼—" -> "N"
+Letter-group: "ÈÃ€" -> "P"
+Letter-group: "È—" -> "P"
+Letter-group: "œ††" -> "F"
+Letter-group: "ËÐÐ¨" -> "R"
+Letter-group: "Úå" -> "D"
+Letter-group: "ÊÃÐ" -> "Q"
+Letter-group: "Ð¨¼Ë" -> "S"
+Letter-group: "»€¼" -> "M"
+Letter-group: "´È" -> "L"
+Letter-group: "†ÃÐ" -> "C"
+Letter-group: "†¤" -> "C"
+Letter-group: "ËÃÐÐœ€" -> "R"
+Letter-group: "ËÃÐÐ€" -> "R"
+Letter-group: "ËÃÐÐ" -> "R"
+Letter-group: "Ú†" -> "T"
+Letter-group: "ÐË" -> "D"
+Letter-group: "å†€È" -> "V"
+Letter-group: "2Ú»†" -> "glsnumbers"
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+Letter-group: "2Ú»†" -> "glsnumbers"
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+Letter-group: "†††" -> "C"
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+Letter-group: "†œ" -> "D"
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+Letter-group: "—††" -> "E"
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+Letter-group: "œ††" -> "F"
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+Letter-group: "Ð»" -> "G"
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+Letter-group: "¨Ð» „€¼" -> "I"
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+Letter-group: "´È" -> "L"
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+Letter-group: "»€¼" -> "M"
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+Letter-group: "¼—" -> "N"
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+Letter-group: "È€" -> "P"
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+Letter-group: "ÊÃÐ" -> "Q"
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+Letter-group: "ËÃÐÐ" -> "R"
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+Letter-group: "Ð¨¼Ë" -> "S"
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+Letter-group: "Ú†" -> "T"
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+Letter-group: "å†€È" -> "V"
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+Letter-group: "æ„Ð" -> "W"

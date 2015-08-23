@@ -9,6 +9,8 @@
 \documentclass{wissdoc-kw-eng}
 
 \usepackage{ifpdf}
+\usepackage{cite}
+\usepackage{url}
 %\usepackage[T1]{fontfenc}
 %\usepackage[utf8x]{inputenc}
 %	\usepackage[printonlyused]{acronym}
@@ -151,6 +153,7 @@
 {./figures/04_clutering/}
 {./figures/05_routing/}
 {./figures/05_routing/plot/}
+{./figures/06_conclusion/}
 {./figures/others/}
 }
 
@@ -193,15 +196,16 @@
 \newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 
 % Load the package
-%\usepackage[toc, nomain]{glossaries}%[]
- \usepackage[style=long,nonumberlist,toc,xindy,acronym]{glossaries}
+\usepackage[acronym,xindy]{glossaries} % nomain, if you define glossaries in a file, and you use 
+%\usepackage{glossaries}
+\usepackage{glossary-mcols}
+
 % Generate the glossary
 \makeglossaries
+\loadglsentries[main]{backmatter/07_glossary}
 
-%% put the glossaries in thesis.tex
 
-\newglossaryentry{crn}{name=CRN, description={Cognitive Radio Network}}
-\newglossaryentry{mac}{name=MAC, description={Media Access Control}}
+ 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -222,13 +226,24 @@
 %    \DeclareGraphicsExtensions{.eps}
 %\fi
 
+%\ifpdf\pdfbookmark[1]{Title}{label:title}\fi              \input{titlepage.tex}
+
+%\newpage                                                     \input{spruch.tex}
+
+%{\doublespacing
+%\newpage\ifpdf\pdfbookmark[1]{Acknowledgement}{label:ack}\fi\input{acknowledge.tex}
+%%\newpage\ifpdf\pdfbookmark[1]{Abstract}{label:abst}\fi     \input{abstract.tex}
+%}
+
+
 \pagestyle{empty} %%Keine Kopf-/Fusszeilen auf den ersten Seiten.
 
 \ifnotdraft{
 %% Deckblatt %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \frontmatter
 \renewcommand{\familydefault}{\sfdefault}
-\include{backmatter/00_title}
+%\include{backmatter/00_title}
+\include{titlepage.tex}
 \cleardoublepage
 \include{backmatter/00_statement}
 \cleardoublepage
@@ -288,7 +303,7 @@
 \phantomsection % phantomsection wird benötigt, damit z.B. hyperref die richtige Seite verlinkt.
 \addcontentsline{toc}{chapter}{Bibliography}
 %\nocite{*}								%Auch nicht-zitierte BibTeX-Einträge werden angezeigt.
-\bibliography{./backmatter/myrefs}				%Eine Datei 'literatur.bib' wird hierfür benötigt.
+\bibliography{./backmatter/myrefs}
 \bibliographystyle{styles/acmurl}		 			%Art der Ausgabe: plain / apalike / amsalpha / ...
 }
 
@@ -303,9 +318,9 @@
 \listoftables
 
 %Print the glossary
-\printglossaries
-
-
+\clearpage
+\addcontentsline{toc}{chapter}{Glossary}                 % add Glossary to TOC
+\printglossary[style=mcolindex]
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% ANHÄNGE
