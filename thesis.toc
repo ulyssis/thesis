@@ -38,9 +38,9 @@
 \contentsline {section}{\numberline {3.5}The Maximal Permitted Transmission Power}{33}{section.3.5}
 \contentsline {section}{\numberline {3.6}Channel Allocation with Fixed Transmission Power}{34}{section.3.6}
 \contentsline {subsection}{\numberline {3.6.1}Centralized optimization programming}{35}{subsection.3.6.1}
-\contentsline {subsection}{\numberline {3.6.2}Distributed White space channel allocation technology (\gls {WitheCat}): algorithm and protocol}{35}{subsection.3.6.2}
+\contentsline {subsection}{\numberline {3.6.2}Distributed White Space Channel Allocation (WitheCat): Algorithm and Protocol}{35}{subsection.3.6.2}
 \contentsline {subsection}{\numberline {3.6.3}Analysis in game theoretical framework}{37}{subsection.3.6.3}
-\contentsline {subsection}{\numberline {3.6.4}Communication overhead of Dicaps in the phase of channel allocation}{40}{subsection.3.6.4}
+\contentsline {subsection}{\numberline {3.6.4}Communication overhead of DiCAPS in the phase of channel allocation}{40}{subsection.3.6.4}
 \contentsline {section}{\numberline {3.7}Variable transmission power after channel allocation}{40}{section.3.7}
 \contentsline {section}{\numberline {3.8}Joint Channel and Power Allocation}{40}{section.3.8}
 \contentsline {subsection}{\numberline {3.8.1}Centralized optimization}{41}{subsection.3.8.1}
@@ -83,7 +83,7 @@
 \contentsline {section}{\numberline {6.1}Contribution}{107}{section.6.1}
 \contentsline {section}{\numberline {6.2}Future Work}{108}{section.6.2}
 \vspace *{\baselineskip }
-\contentsline {chapter}{Bibliography}{111}{section*.62}
-\contentsline {chapter}{List of Figures}{122}{section*.62}
-\contentsline {chapter}{List of Tables}{126}{section*.62}
-\contentsline {chapter}{Glossary}{128}{section*.62}
+\contentsline {chapter}{Bibliography}{111}{section*.61}
+\contentsline {chapter}{List of Figures}{121}{section*.61}
+\contentsline {chapter}{List of Tables}{124}{section*.61}
+\contentsline {chapter}{Glossary}{126}{section*.61}

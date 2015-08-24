@@ -39,9 +39,9 @@
 \BOOKMARK [1][-]{section.3.5}{3.5 The Maximal Permitted Transmission Power}{chapter.3}% 39
 \BOOKMARK [1][-]{section.3.6}{3.6 Channel Allocation with Fixed Transmission Power}{chapter.3}% 40
 \BOOKMARK [2][-]{subsection.3.6.1}{3.6.1 Centralized optimization programming}{section.3.6}% 41
-\BOOKMARK [2][-]{subsection.3.6.2}{3.6.2 Distributed White space channel allocation technology \(WitheCat\): algorithm and protocol}{section.3.6}% 42
+\BOOKMARK [2][-]{subsection.3.6.2}{3.6.2 Distributed White Space Channel Allocation \(WitheCat\): Algorithm and Protocol}{section.3.6}% 42
 \BOOKMARK [2][-]{subsection.3.6.3}{3.6.3 Analysis in game theoretical framework}{section.3.6}% 43
-\BOOKMARK [2][-]{subsection.3.6.4}{3.6.4 Communication overhead of Dicaps in the phase of channel allocation}{section.3.6}% 44
+\BOOKMARK [2][-]{subsection.3.6.4}{3.6.4 Communication overhead of DiCAPS in the phase of channel allocation}{section.3.6}% 44
 \BOOKMARK [1][-]{section.3.7}{3.7 Variable transmission power after channel allocation}{chapter.3}% 45
 \BOOKMARK [1][-]{section.3.8}{3.8 Joint Channel and Power Allocation}{chapter.3}% 46
 \BOOKMARK [2][-]{subsection.3.8.1}{3.8.1 Centralized optimization}{section.3.8}% 47
@@ -83,7 +83,7 @@
 \BOOKMARK [0][]{chapter.6}{6 Conclusion and Future work}{}% 83
 \BOOKMARK [1][-]{section.6.1}{6.1 Contribution}{chapter.6}% 84
 \BOOKMARK [1][-]{section.6.2}{6.2 Future Work}{chapter.6}% 85
-\BOOKMARK [0][]{section*.62}{Bibliography}{}% 86
-\BOOKMARK [0][]{section*.62}{List of Figures}{}% 87
-\BOOKMARK [0][]{section*.62}{List of Tables}{}% 88
-\BOOKMARK [0][]{section*.62}{Glossary}{}% 89
+\BOOKMARK [0][]{section*.61}{Bibliography}{}% 86
+\BOOKMARK [0][]{section*.61}{List of Figures}{}% 87
+\BOOKMARK [0][]{section*.61}{List of Tables}{}% 88
+\BOOKMARK [0][]{section*.61}{Glossary}{}% 89

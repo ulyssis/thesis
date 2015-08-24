@@ -1,8 +1,5 @@
 \begin{thebibliography}{100}
 
-\bibitem{Neel06analysisand}
-Tech. rep.
-
 \bibitem{FCCdatabasae}
 \url{http://hraunfoss.fcc.gov}.
 \newblock
@@ -525,6 +522,13 @@ Report of the spectrum efficiency working group.
 \newblock Senseless: A database-driven white spaces network.
 \newblock In {\em Proc. of IEEE DySpan 2011\/} (May 2011).
 
+\bibitem{Neel06analysisand}
+{\sc Neel, J.~O.}
+\newblock {\em Analysis and Design of Cognitive Radio Networks and Distributed
+  Radio Resource Management Algorithms}.
+\newblock PhD thesis, Blacksburg, VA, USA, 2006.
+\newblock AAI3249450.
+
 \bibitem{CApotentialLearning_05dyspan}
 {\sc Nie, N., and Comaniciu, C.}
 \newblock Adaptive channel allocation spectrum etiquette for cognitive radio
@@ -664,13 +668,6 @@ Report of the spectrum efficiency working group.
 \newblock Power control for wireless data based on utility and pricing.
 \newblock In {\em Proc. of IEEE PIMRC 1998\/} (Sep 1998), vol.~3,
   pp.~1427--1432 vol.3.
-
-\bibitem{Technical_Challenges_TVwhit}
-{\sc Shellhammer, S., Sadek, A., and Zhang, W.}
-\newblock Technical challenges for cognitive radio in the {TV} white space
-  spectrum.
-\newblock In {\em Proc. of Information Theory and Applications Workshop,
-  2009\/} (Feb 2009), pp.~323--333.
 
 \bibitem{clusterRoutingOverhead02infocom}
 {\sc Sucec, J., and Marsic, I.}
