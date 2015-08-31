@@ -1,36 +1,30 @@
 \chapter{DISTRIBUTED CHANNEL AND POWER ALLOCATION IEEE 802.22 NETWORKS}
 
 \section{Motivation}
-%\todo[inline]{interference-Cartography-2008-dyspan.pdf}
 
-%XXXRepeated Congestion Gamexxxxx
-%cite paper [A game theoretical study of access point association in wireless mesh networks].
-%%Firstly, we formulate channel allocation problem into canonical congestion game, and accordingly derive distributed algorithm which is a best response scheme with respect to a certain utility.
-%%This algorithm renders the system to converge at Nash equilibrium, even the transmission power for different transmitter is different.
-%Enlightened by repeated congestion game~\cite{repeated_congestinon_rationality12}, we integrate the historic information into transmitter's decision, so that the stable state of system moves out of the previous Nash Equilibrium and achieve better performance.
-%We compare this scheme with the channel allocation scheme in the previous subsection.
+Secondary users working with TV white space is promising to cope with the scarcity of spectrum resources~\cite{FCC_2010_sedond_memorandumm}. 
+Firstly, more unused TV white frequencies become vacant than ever with the ongoing transition from analog to digital broadcasts. Secondly, the frequencies of TV bands enable broadband access over larger geographic ranges compared to higher frequency bands. Nevertheless, services on TV receivers need to be protected with so called interference margin~\footnotetext[2]{interference margin is the maximal interference caused by secondary users, which doesn't violate TV service.}~\cite{multipleIntf_pimrc11} which should not be exceeded by the accumulated interference caused by all secondary users working on the the channel.
 
-Opportunistic utilization for secondary users working with TV broadcast spectrum (TV white space) is promising to cope with the scarcity of spectrum resources~\cite{FCC_2010_sedond_memorandumm}. 
-Firstly, more unused TV white frequencies become vacant than ever with the ongoing transition from analo to digital broadcasts. Secondly, the frequencies of TV bands enable broadband access over larger geographic ranges compared to higher frequency bands. Nevertheless, services on TV receivers need to be protected with so called interference margin~\footnotetext[2]{interference margin is the maximal interference caused by secondary users, which doesn't violate TV service.}~\cite{multipleIntf_pimrc11} which should not be exceeded by the accumulated interference caused by all secondary users working on the the channel \footnotetext[3]{In this chapter, channel and spectrum are used indiscriminately}.
-
-\gls{FCC} and \gls{ECC} have announced rules on the transmission power of white space for secondary users in US and Europe respectively~\cite{FCC_2010_sedond_memorandumm, ecc159}. 
-FCC requires a minimum distance between secondary user and TV service area, besides, the transmission power for fixed secondary users is set at $4$ \textup{W}, which is a conservative setting. %If the interference margin of the TV receivers can be fully utilized, the requirement on secondary users' transmission power can be relaxed to some extent. 
-By adopting these two measures, FCC believes the interference margin can not be exceeded by interference from secondary users.
-But it may not be the case when there are multiple secondary equipments transmitting in the the same as is pointed in~\cite{Jaentti11}.
+\gls{FCC} and \gls{ECC} have announced rules on the transmission power of secondary users working in TV white space in US and Europe respectively~\cite{FCC_2010_sedond_memorandumm, ecc159}. 
+FCC requires a minimum distance between secondary user and TV service area, besides, the transmission power for fixed secondary users is set as $4$ \textup{W}, which is a conservative setting. %If the interference margin of the TV receivers can be fully utilized, the requirement on secondary users' transmission power can be relaxed to some extent. 
+FCC believes with these prudent measures, the interference margin can not be exceeded by interference from secondary users.
+But it may not be the case when there are multiple secondary equipments transmitting at the same time, which is pointed in~\cite{Jaentti11}.
 ECC requires the secondary users to adapt their maximum transmission power according to the distance away from the TV receivers.
 %In this manner, secondary systems have to determine their maximum transmission power.
 
-FCC issued a memorandum~\cite{FCC_2010_sedond_memorandumm,FCCdatabasae} in 2010, which removes the mandatory rigid sensing requirements, and prompts the usage of geographic locations of secondary users.
-FCC regulates a centralized database, which register all the secondary users within one area, and the secondary user can access the database, and can only use the channel assigned in the database.
+FCC issued a memorandum~\cite{FCC_2010_sedond_memorandumm,FCCdatabasae} in 2010, which removes the mandatory rigid sensing requirements, and prompts the usage of geolocations\footnote{Geolocation means both geographic location and terrain.} of secondary users.
+FCC regulates a centralized database, which registers all the secondary users within one certain area.
+Secondary users can access the database, and can only use the channels assigned by the database.
 % thus greatly facilitates the use of the spectrum with geolocation based channel allocation.
-Work~\cite{SenseLess2011} follows this rule to obviate spectrum sensing and only rely on the database of TV incumbents to determine the white space availability on secondary users. 
-The authors of~\cite{SenseLess2011} demonstrate the feasibility of predicting the available TV spectrum accurately using sophisticated propagation models (Longley-Rice and terrain wherein). 
-A central controller contains the locations of all TV stations and secondary users, then the central controller calculates the Received Signal Strength Index (\gls{RSSI}) level of TV \gls{UHF} signals on all secondary users and accordingly determines the available TV spectrum for them. 
+Work~\cite{SenseLess2011} follows this rule to obviate spectrum sensing and only relies on the database of TV incumbents to determine the white space availability for secondary users. 
+The authors of~\cite{SenseLess2011} demonstrate the feasibility of predicting the available TV spectrum accurately using sophisticated propagation models (Longley-Rice) and geolocations of secondary users. 
+A central database contains the geolocations of all TV stations, then the database calculates the received signal strength index (\gls{RSSI}) levels of TV \gls{UHF} signals on all secondary users and accordingly determines the available TV spectrum for them. 
+If RSSI of a channel is below a certain threshold, TV service is regarded not to exist, and the channel is seen available there.
 The calculated results on channel availability is very close to the measurement results.
-The work gives big impetus to the usage of database mode.
-% by developing sophisticated signal propagation modelling and efficient content dissemination scheme. 
-Through this work, it can be seen that the RSSI level caused by secondary users on TV receivers can be calculated accurately in a centralized entity if secondary users' transmission power, geographic location and appropriate propagation model are provided. 
-Inversely, given geographic location and appropriate propagation model, secondary users' maximum transmission power can be determined by the central entity according to the interference margin (maximum RSSI level from secondary users) at TV receivers. 
+The work of~\cite{SenseLess2011} gives big impetus to the usage of database mode.
+%
+%Through this work, it can be seen that the RSSI level caused by secondary users on TV receivers can be calculated accurately in a centralized entity if secondary users' transmission power, geographic location and appropriate propagation model are provided. 
+As in TV white space, the accurate RSSI can be obtained with geolocations and suitable propagation model, given geolocation and appropriate propagation model, secondary users' maximum transmission power can be determined by the central entity according to the interference margin (maximum RSSI level from secondary users) on the TV receivers. 
 %Obviously, transmission power control of secondary users has a significant impact on the performance of these systems. 
 
 %To guarantee the protection on TV systems from harmful interference, FCC and IEEE propose a central database to regulate the access of TV spectrum by the secondary users.
@@ -38,20 +32,19 @@ Inversely, given geographic location and appropriate propagation model, secondar
 
 %, and meanwhile the aggregated interference generated by them should be kept below a certain threshold on the TV system.
 
-In this chapter, we investigate the usage of TV spectrum in IEEE 802.22 network.
+In this chapter, we investigate the usage of TV spectrum in a WRAN which complies with IEEE 802.22 network.
 The secondary users are assumed to be cellular systems consisting of base stations and associated terminals, all of which work on TV white spectrum. 
 %The corresponding secondary base stations are referred as white base stations (WBS). 
-Some cellular networks, such as GSM or LTE network, work on licensed spectrum, and they emphasis on providing satisfactory services to their end terminals by choosing proper transmission channel and power. 
-As to cellular network working on TV white spectrum, they have to keep one eye on the primary users to make sure that TV service is not violated, which makes the problem of channel and power selection even harder.
+Some cellular networks, \ie GSM or LTE network, work on licensed spectrum and emphasis on providing satisfactory services to their end terminals by choosing proper transmission channel and power. 
+As to cellular network working on TV white spectrum, they have to keep one eye on the primary users to make sure that TV service is not violated, which makes the problem of channel and power selection difficult.
 With the existence of central database, it is natural to utilize it as a central controller to assign channel and power usage for secondary users, but the secondary users may belong to different commercial groups and they may not content with the assigned resource.
 %Besides, as the TV channels have different quality, \ie interference level, and permitted transmission power, it is difficult for the database to assign them to the 
 Hence, the spectrum sharing of the secondary users in IEEE 802.22 network should be decided in distributed manner and each secondary user takes care of its own interest, \ie to maximize its preferred utility.
 
 Given all the other WBSs' channel/power selection in secondary network, one WBS is interested in choosing the channel experiencing the minimum interference, and utilizing the biggest possible transmit power in order to obtain better SINR on its terminals and meanwhile maximize their coverage \cite{wuinfocom09, HoangPowerChannel2010}. 
-Nevertheless, high transmission power causes significant co-channel interference to other secondary cells operating on the same channel. 
-Hence, secondary cells have to achieve balance between its own transmission power and the caused interference on other cells, meanwhile to choose working channel to decrease the experienced interference on its terminals. 
-Our goal is to find a strategy for WBSs to choose channel and power level in order to acquire good SINR on end terminals, in the same time protecting the primary users from harmful interferences.
-This joint power and channel allocation problem in cognitive radio scenario has drawn many attentions.
+Nevertheless, high transmission power causes significant co-channel interference to other secondary users operating on the same channel. 
+Hence, a secondary cell has to balance its transmission power and the caused interference on other cells, meanwhile to choose working channel to decrease the experienced interference on its terminals. 
+The goal of this chapter is to protect the primary users from harmful interferences, meanwhile to find a strategy for WBSs to choose channel and power level in order to acquire good SINR on end terminals.
 
 The rest of the chapter is organized as follows. we elucidate the system model in Section II, afterwards related work and problem formulation is presented in Section III. In Section IV, we discuss how to utilize the white space sufficiently by setting the transmit powers based on a convex problem formulation. We analyze the spectrum allocation problem under game theoretical framework and propose an algorithm in Section V, thereafter performance evaluation is presented in Section VI. Finally, we conclude our work and point out directions of future research in Section VII.
 
@@ -63,24 +56,27 @@ TV stations provide service to passive TV receivers which should not be interfer
 The secondary systems are IEEE 802.22 Wireless Regional Area Network base stations utilizing the TV spectrum with senseless mode~\cite{SenseLess2011}. 
 WBSs locate within one area whereas TV areas locate around them. 
 WBSs serve a set of end users/terminals.
-Denote the set of DTV stations by $\mathcal{K}$ and the collection of WBSs by $\mathcal{N}$ with $| \mathcal{N}|=N$. 
-Furthermore, there are $\mathcal{C}$ channels considered in total with $|\mathcal{C}| = C$. 
 These secondary systems are distributed over a certain area $A$ and is surrounded by multiple DTV service areas, as Fig.~\ref{sysmodel} shows. 
-When there are two WBSs work on the same channel, co-channel interference will be caused to each other by them, while, neighbouring channel interference is not considered. Each DTV station as well as each WBS utilizes exactly one channel\footnotetext[4]{The assumption that one WBS only utilizes one channel is for convenience of analysis. 
+Denote the set of DTV stations by $\mathcal{K}$ and the collection of WBSs by $\mathcal{N}$ with $| \mathcal{N}|=N$. 
+The set of TV white spectrum contains multiple channels which are denoted as $\mathcal{C}$, they are identical in terms of attenuation and fading.
+Let $c(i)$ denote the channel used by a WBS $i\in \mathcal{N}$. 
+
+When there are two WBSs work on the same channel, co-channel interference is caused on each, while, neighbouring channel interference is not considered. 
+To simplify the analysis, we assume that each DTV station as well as each WBS utilizes exactly one channel.\footnote{The assumption that one WBS only utilizes one channel is for convenience of analysis. 
 In reality multiple channel usage (channel bonding) is requisite as one single TV channel's bandwidth is 6 MHz which is not adequate for a WBS to fulfil system requirement. 
 %We will relax this single channel usage assumption without hammering our scheme in the end of section \ref{sec_CA}.
-} 
-We represent the usage of channel for WBS $i$ with a binary vector $X_i^{|\mathcal{C}|\times 1}=\{\cdots, x_{ik}, \cdots\}\in \{0,1\}^{|\mathcal{C}|}$, where $k\in \mathcal{C}$ and binary variable $x_{ik}$ denotes whether channel $k$ is used by user $i$. As each node can only use one channel, for $X_i$, there is $\sum_{k=1}^{|\mathcal{C}|}x_{ik}=1$. 
+}
+We represent the usage of channel for WBS $i$ with a binary vector $X_i^{|\mathcal{C}|\times 1}=\{\cdots, x_{ik}, \cdots\}\in \{0,1\}^{|\mathcal{C}|}$, where $k\in \mathcal{C}$ and binary variable $x_{ik}$ denotes whether channel $k$ is used by user $i$. 
+As each node can only uses one channel, for $X_i$, there is $\sum_{k=1}^{|\mathcal{C}|}x_{ik}=1$. 
 The transmission power of WBS $i$ on channel $c$ is $P_i^c$. 
 
-Let $c(i)$ denote the channel used by a WBS $i\in \mathcal{N}$. 
-The TV channels are considered to be identical. 
+
 In the rest of the chapter, we use WBS and secondary base station interchangeably. 
-There are interference measurement equipment deployed on the TV service contours (as bold rectangles in Fig.~\ref{sysmodel}), which represents the worst located TV receivers. 
-For these interference alarming devices, an interference threshold should not be violated by the generated by the secondary users and noise, so that the TV services is guaranteed.
+There are interference measurement equipments deployed on the contours of TV service areas (as bold rectangles in Fig.~\ref{sysmodel}), which represent the worst located TV receivers in the TV service areas. 
+For these interference measurement devices, an interference threshold should not be violated by the noise generated by the secondary users.
 The deploy of contours is decided by the TV operators, which varies according to the concrete location, geographic terrain and possible deployment of secondary networks. 
 %For simplicity, we assume there is only one contour deployed for one TV area. % \todo{is contour 'clear' now?}.
-WBss are deemed to be static.
+WBSs are deemed to be static.
 We assume the secondary base stations are not under the same operators, thus there is no scheduling mechanism available among WBSs.
 
 
@@ -93,16 +89,17 @@ We assume the secondary base stations are not under the same operators, thus the
 \end{figure}
 
 \subsection{SINR on terminals}
-WBSs are interested in payload data communication with their associated terminals with good \gls{QoS}. 
-As to performance metric for this QoS provisioning, we choose the signal-to-noise-and-interference ratio (\gls{SINR}) at the terminals, which is the ratio between the received power of signal of interest and the summed interference experienced by the terminal. 
-We only focus on the down-link SINR. 
+WBSs are interested in payload data communication with their associated terminals. 
+As to performance metric for the \gls{QoS} provisioning, we choose the signal to noise and interference ratio (\gls{SINR}) on the terminals.
+SINR is the ratio between the received power of signal of interest and the summed interference experienced by the terminal. 
+We only focus on the down-link SINR, as the interference caused by uplink communication is neglectable.
 
-Given a WBS $i$, another WBS which works on the same channel with $i$ is denoted as $\bar{i}$.
-As to a certain terminal $m$ associated to WBS $i$, the path loss between $m$ and the serving WBS $i$ and interfering WBS $\bar{i}$ are denoted as $h_{im}$ and $h_{\bar{i}j}$ respectively.
-The path loss is dependent on the distance between the corresponding equipments, e.g. $h_{im}=K \cdot d_{im}^{-\alpha}$, where $\alpha$ is the path loss exponent and $K$ is a constant that models the reference loss over a single unit of distance.  
+Given a WBS $i$, another WBS which works on the same channel is denoted as $\bar{i}$.
+As to a certain terminal $m$ associated to WBS $i$, the path losses between $m$ and the serving WBS $i$ and interfering WBS $\bar{i}$ are denoted as $h_{im}$ and $h_{\bar{i}m}$ respectively.
+The path loss is dependent on the distance between the corresponding equipments, e.g. $h_{im}=K \cdot d_{im}^{-\alpha}$, where $\alpha$ is the path loss exponent, $d_{im}$ is the distance between $i$ and $m$, $K$ is a constant which models the reference loss over a single unit of distance.  
 $N_0$ denotes the noise power.
 Shadowing without fading is considered in our model.
-The sum of all disturbing RF effects (including interference) at terminal $m$ (we assume the working channel is $c$) is as following,
+The sum of all disturbing RF effects (including interference) on terminal $m$ (we assume the working channel is $c$) is as following,
 \begin{equation}
 \label{interference}
 \begin{aligned}
@@ -428,40 +425,48 @@ We name the our solution of channel and power allocation as \gls{DiCAPS} (Distri
 
 
 
-\section{The Maximal Permitted Transmission Power}
+\section{The Maximum Permitted Transmission Power}
 \label{powermap}
-The WBSs work in underlay manner with primary TV stations, thus on each licensed channel, the generated interference should not excess the threshold associated with any TV service contours.
-We adopt the interference model and the optimization methodology from the work of \cite{multipleIntf_pimrc11} to plan the maximal transmission power for WBSs.
+The WBSs work in underlay manner with primary TV stations, the aggregate generated interference on each channel should not excess the threshold of the interference measuring devices.
+We adopt the interference model and the optimization methodology from the work of \cite{multipleIntf_pimrc11} to plan the maximum transmission power on each channel for WBSs.
 %XXX Why is exactly this approach adopted ?XXX.
 %\todo{describe\\ the\\ interference\\ model\\ of [14]} 
-Have a global view of the propagation parameters, geographic locations of WBSs and interference threshold of TV service contour, linear programming can be implied in the database.
+Having a global view of the propagation parameters, geolocations of WBSs and interference threshold at interference measuring devices, linear programming is implied in the database to calculate the maximum permitted power.
 
-For WBS $i\in \mathcal{N}$, the maximal transmission power allowed to be used on channel $c$ is denoted as $P_i^c$. 
-%$P_i^c$ varies with respect to $i$ and $c$. 
-As to each channel $c\in \mathcal{C}$, the generated interference on each interference measurement device should be below than a predefined threshold.
-$I^c_{pt} $ is deemed to be the smallest threshold.
-Then the maximal permitted transmission power on channel $c$ for each WBS can be obtained by solving the following optimization problem,
+For WBS $i\in \mathcal{N}$, the maximum transmission power allowed on channel $c$ is denoted as $P_i^c$. 
+As to each channel $c\in \mathcal{C}$, the generated interference on each interference measuring device should be within a predefined interference margin $I^c_{pt}$.
+The interference margin in a slow fading environment is decided according to~\cite{aggregate_interference_shadow_fading_2010}.
+
+Then the maximum permitted transmission power on channel $c$ for each WBS can be obtained by solving the following optimization problem,
 	\begin{equation}
 \label{lp}
 		\begin{aligned}
 		& {\text{Maximize}}
 		& & \sum_{i\in \mathcal{N}} P^c_i \\
 		& \text{subject to}
-		& & \sum_{i\in \mathcal{N}} (P^c_i \cdot h_{i,pt}\cdot z) < I^c_{pt}, 
+		& & \sum_{i\in \mathcal{N}} (P^c_i \cdot h_{i,pt}\cdot z) < I^c_{pt},\\
+		& & & P_{min}^c \leq P_i^c \leq P_{max}^c		
 		\end{aligned}
 	\end{equation}
+	
 %	XXX I am wondering here: You already define the solution in this section rather than defining the problem as indicated in the section title - why do we need to introduce here the solution ?XXX
 
-%where $I^c_{pt}$ is the interference margin for the DTV contour $pt$ and the DTV is working on channel $c$. 
-$z$ is shadow fading with the same behaviour with that in \ref{SINR}.
-Here we only consider the interference caused by WBSs, Since their transmission power is higher and their altitude is higher\cite{multipleIntf_pimrc11}, thus the downlink transmission contributes the main secondary interference\cite{infmitigate07mobicom}, and the interference caused by white space end users is trivial and omitted. 
+$P_{min}^c$ is the prudent transmission power by FCC, we set is as 4 W. 
+$P_{max}^c$ is the maximum transmission power.
+$z$ is shadow fading as introduced in \ref{SINR}.
+Here we only consider the interference caused by WBSs, and omit the interferences from end terminals. 
+Since WBSs' transmission power is higher and their altitude is higher\cite{multipleIntf_pimrc11}, thus the downlink transmission contributes the major part of interference\cite{infmitigate07mobicom}.
+%, in contrary the interference caused by end terminals is trivial and omitted. 
+The first constraint indicates that the interference margin will not be exceeded even when all the WBSs work on the same channel.
 
-Formula~\ref{lp} will be solved for each channel $c\in \mathcal{C}$, 
+
+Formula~\ref{lp} will be solved for each channel $c\in \mathcal{C}$.
 %There will be multiple constraints for \ref{cvx} if there are multiple DTV contours working on channel $c$. 
-after solving the $|\mathcal{C}|$ problems, the maximal transmission power over all channels (maximal power map) for every WBS is obtained.
+After solving the $|\mathcal{C}|$ problems, the maximum permitted transmission power vector $\bm{P^c} =\{P_1,\cdots,P_{|\mathcal{N}|}\}, \forall c\in \mathcal{C}$ is obtained.
 %We solve this convex optimization problem with \cite{cvx} in the centralized base station.
 
-If implying linear programming to decide the maximal transmission power, the WBSs locating far from TV contours contribute more to the sum of power with the biggest permitted power, as a result the maximal transmission power on each channel obtained with LP is seriously unbalanced.
+If implying linear programming to decide the maximal transmission power, the WBSs locating far from TV coverage cell border
+contribute more to the aggregate of power with the biggest permitted power, as a result the maximal transmission power on each channel obtained with LP is seriously unbalanced.
 To address this fairness issue, we maximize the summation of the logarithmic value of every WBS's value, then for each channel $c\in \mathcal{C}$, we formulate the problem into a convex optimization problem.
 
 	\begin{equation}

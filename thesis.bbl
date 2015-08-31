@@ -422,7 +422,7 @@ Report of the spectrum efficiency working group.
 \bibitem{multipleIntf_pimrc11}
 {\sc Koufos, K., Ruttik, K., and Jantti, R.}
 \newblock Controlling the interference from multiple secondary systems at the
-  tv cell border.
+  {TV} cell border.
 \newblock In {\em Proc. of IEEE PIMRC 2011\/} (Sep. 2011).
 
 \bibitem{powerChannelAllocation_2015_shapley}
@@ -612,6 +612,13 @@ Report of the spectrum efficiency working group.
 \newblock A class of games possessing pure-strategy {N}ash equilibria.
 \newblock {\em International Journal of Game Theory 2\/} (1973), 65--67.
 \newblock \url{http://dx.doi.org/10.1007/BF01737559}.
+
+\bibitem{aggregate_interference_shadow_fading_2010}
+{\sc Ruttik, K., Koufos, K., and Jantti, R.}
+\newblock Model for computing aggregate interference from secondary cellular
+  network in presence of correlated shadow fading.
+\newblock In {\em In Proceedings of IEEE PIMRC 2011\/} (Sept 2011),
+  pp.~433--437.
 
 \bibitem{Sahai_FundamentalDesignTradeoffs2006}
 {\sc Sahai, A., Tandra, R., Mishra, S.~M., and Hoven, N.}

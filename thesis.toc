@@ -13,7 +13,7 @@
 \contentsline {section}{\numberline {1.5}Problem Statement}{10}{section.1.5}
 \contentsline {subsection}{\numberline {1.5.1}Channel and Power Allocation in IEEE 802.22 Network}{10}{subsection.1.5.1}
 \contentsline {subsection}{\numberline {1.5.2}Robust Clustering in Ad Hoc Cognitive Radio Network}{11}{subsection.1.5.2}
-\contentsline {subsection}{\numberline {1.5.3}Geographic Routing in CRN with Spectrum Aware Virtual Coordinate}{11}{subsection.1.5.3}
+\contentsline {subsection}{\numberline {1.5.3}Geographic Routing in CRN with Spectrum Aware Virtual Coordinate}{12}{subsection.1.5.3}
 \contentsline {subsection}{\numberline {1.5.4}Research Questions}{12}{subsection.1.5.4}
 \contentsline {section}{\numberline {1.6}Contributions}{12}{section.1.6}
 \contentsline {section}{\numberline {1.7}Outline}{14}{section.1.7}
@@ -35,8 +35,8 @@
 \contentsline {subsection}{\numberline {3.4.1}Maximal transmission power planning}{32}{subsection.3.4.1}
 \contentsline {subsection}{\numberline {3.4.2}Channel allocation with fixed transmission power level}{32}{subsection.3.4.2}
 \contentsline {subsection}{\numberline {3.4.3}Power allocation}{33}{subsection.3.4.3}
-\contentsline {section}{\numberline {3.5}The Maximal Permitted Transmission Power}{33}{section.3.5}
-\contentsline {section}{\numberline {3.6}Channel Allocation with Fixed Transmission Power}{34}{section.3.6}
+\contentsline {section}{\numberline {3.5}The Maximum Permitted Transmission Power}{33}{section.3.5}
+\contentsline {section}{\numberline {3.6}Channel Allocation with Fixed Transmission Power}{35}{section.3.6}
 \contentsline {subsection}{\numberline {3.6.1}Centralized optimization programming}{35}{subsection.3.6.1}
 \contentsline {subsection}{\numberline {3.6.2}Distributed White Space Channel Allocation (WitheCat): Algorithm and Protocol}{35}{subsection.3.6.2}
 \contentsline {subsection}{\numberline {3.6.3}Analysis in game theoretical framework}{37}{subsection.3.6.3}
@@ -84,6 +84,6 @@
 \contentsline {section}{\numberline {6.2}Future Work}{108}{section.6.2}
 \vspace *{\baselineskip }
 \contentsline {chapter}{Bibliography}{111}{section*.61}
-\contentsline {chapter}{List of Figures}{121}{section*.61}
-\contentsline {chapter}{List of Tables}{124}{section*.61}
-\contentsline {chapter}{Glossary}{126}{section*.61}
+\contentsline {chapter}{List of Figures}{122}{section*.61}
+\contentsline {chapter}{List of Tables}{126}{section*.61}
+\contentsline {chapter}{Glossary}{128}{section*.61}
