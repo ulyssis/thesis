@@ -32,11 +32,11 @@
 \contentsline {subsection}{\numberline {3.3.1}Utilization of TV white space}{29}{subsection.3.3.1}
 \contentsline {subsection}{\numberline {3.3.2}Resource Allocation in CRN}{29}{subsection.3.3.2}
 \contentsline {section}{\numberline {3.4}Problem Decomposition and Corresponding Related Works}{31}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Maximal transmission power planning}{32}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.1}Maximal transmission power planning}{31}{subsection.3.4.1}
 \contentsline {subsection}{\numberline {3.4.2}Channel allocation with fixed transmission power level}{32}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}Power allocation}{33}{subsection.3.4.3}
+\contentsline {subsection}{\numberline {3.4.3}Power allocation}{32}{subsection.3.4.3}
 \contentsline {section}{\numberline {3.5}The Maximum Permitted Transmission Power}{33}{section.3.5}
-\contentsline {section}{\numberline {3.6}Channel Allocation with Fixed Transmission Power}{35}{section.3.6}
+\contentsline {section}{\numberline {3.6}Channel Allocation with Fixed Transmission Power}{34}{section.3.6}
 \contentsline {subsection}{\numberline {3.6.1}Centralized optimization programming}{35}{subsection.3.6.1}
 \contentsline {subsection}{\numberline {3.6.2}Distributed White Space Channel Allocation (WitheCat): Algorithm and Protocol}{35}{subsection.3.6.2}
 \contentsline {subsection}{\numberline {3.6.3}Analysis in game theoretical framework}{37}{subsection.3.6.3}
@@ -83,7 +83,7 @@
 \contentsline {section}{\numberline {6.1}Contribution}{107}{section.6.1}
 \contentsline {section}{\numberline {6.2}Future Work}{108}{section.6.2}
 \vspace *{\baselineskip }
-\contentsline {chapter}{Bibliography}{111}{section*.61}
-\contentsline {chapter}{List of Figures}{122}{section*.61}
-\contentsline {chapter}{List of Tables}{126}{section*.61}
-\contentsline {chapter}{Glossary}{128}{section*.61}
+\contentsline {chapter}{Bibliography}{111}{section*.60}
+\contentsline {chapter}{List of Figures}{122}{section*.60}
+\contentsline {chapter}{List of Tables}{126}{section*.60}
+\contentsline {chapter}{Glossary}{128}{section*.60}

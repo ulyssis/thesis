@@ -224,6 +224,13 @@ Report of the spectrum efficiency working group.
 \newblock Cogmesh: A cluster-based cognitive radio network.
 \newblock {\em Proc. of DySPAN '07\/} (apr. 2007), 168 --178.
 
+\bibitem{spectrum_sharing_tvspace_2012}
+{\sc Chen, X., and Huang, J.}
+\newblock Game theoretic analysis of distributed spectrum sharing with
+  database.
+\newblock In {\em Distributed Computing Systems (ICDCS), 2012 IEEE 32nd
+  International Conference on\/} (June 2012), pp.~255--264.
+
 \bibitem{game_CA_association_ICDCS12}
 {\sc Chen, X., and Huang, J.}
 \newblock Game theoretic analysis of distributed spectrum sharing with
@@ -267,6 +274,12 @@ Report of the spectrum efficiency working group.
 \newblock Database-assisted multi-{AP} network on {TV} white spaces:
   Architecture, spectrum allocation and ap discovery.
 \newblock In {\em Proc. of IEEE DySPAN 2011\/} (may 2011), pp.~265 --276.
+
+\bibitem{hybridPricing_tvspace_2014}
+{\sc Feng, X., Zhang, Q., and Zhang, J.}
+\newblock A hybrid pricing framework for tv white space database.
+\newblock {\em IEEE Transactions on Wireless Communications 13}, 5 (May 2014),
+  2626--2635.
 
 \bibitem{802.11af}
 {\sc Flores, A., Guerra, R., Knightly, E., Ecclesine, P., and Pandey, S.}
@@ -689,12 +702,6 @@ Report of the spectrum efficiency working group.
   systems.
 \newblock In {\em proc. of IEEE ICC\/} (2007), pp.~2511--2515.
 
-\bibitem{channelAllocation_throughput_12wcnc}
-{\sc Tan, L., and Le, L.~B.}
-\newblock Channel assignment for throughput maximization in cognitive radio
-  networks.
-\newblock In {\em Proc. of IEEE WCNC 2012}, pp.~1427--1431.
-
 \bibitem{uplink_power_tvws13}
 {\sc Tao, X., Zhao, Z., and Zhang, H.}
 \newblock Location information based interference control for cognitive radio
@@ -814,14 +821,6 @@ Report of the spectrum efficiency working group.
 \newblock Self-organization paradigms and optimization approaches for cognitive
   radio technologies: a survey.
 \newblock {\em Wireless Communications, IEEE 20}, 2 (April 2013), 36--42.
-
-\bibitem{channelAllocation_relay_2010ICASSP}
-{\sc Zhao, G., Yang, C., Li, G., Li, D., and Soong, A.}
-\newblock Channel allocation for cooperative relays in cognitive radio
-  networks.
-\newblock In {\em Proceedings of 2010 IEEE International Conference on
-  Acoustics Speech and Signal Processing (ICASSP)\/} (March 2010),
-  pp.~3258--3261.
 
 \bibitem{Zhao07}
 {\sc Zhao, J., Zheng, H., and Yang, G.-H.}

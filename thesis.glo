@@ -25,7 +25,7 @@
 (indexentry :tkey (("SINR" "\\glossaryentryfield{SINR}{\\glsnamefont{SINR}}{signal-to-noise-and-interference ratio}{\\relax }") ) :locref "{}{26}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("WRAN" "\\glossaryentryfield{WRAN}{\\glsnamefont{WRAN}}{Wireless Regional Area Network}{\\relax }") ) :locref "{}{29}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("MAN" "\\glossaryentryfield{MAN}{\\glsnamefont{MAN}}{Metropolitan Area Networks}{\\relax }") ) :locref "{}{29}" :attr "pageglsnumberformat" ) 
-(indexentry :tkey (("LP" "\\glossaryentryfield{LP}{\\glsnamefont{LP}}{linear programming program}{\\relax }") ) :locref "{}{32}" :attr "pageglsnumberformat" ) 
+(indexentry :tkey (("LP" "\\glossaryentryfield{LP}{\\glsnamefont{LP}}{linear programming program}{\\relax }") ) :locref "{}{31}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("DiCAPS" "\\glossaryentryfield{DiCAPS}{\\glsnamefont{DiCAPS}}{Distributed Channel Allocation and Power Selection}{\\relax }") ) :locref "{}{33}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("WhiteCat" "\\glossaryentryfield{WhiteCat}{\\glsnamefont{WhiteCat}}{White space Channel allocation}{\\relax }") ) :locref "{}{33}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("RSSI" "\\glossaryentryfield{RSSI}{\\glsnamefont{RSSI}}{Received Signal Strength Index}{\\relax }") ) :locref "{}{42}" :attr "pageglsnumberformat" ) 

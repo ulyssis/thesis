@@ -97,18 +97,18 @@ We only focus on the down-link SINR, as the interference caused by uplink commun
 Given a WBS $i$, another WBS which works on the same channel is denoted as $\bar{i}$.
 As to a certain terminal $m$ associated to WBS $i$, the path losses between $m$ and the serving WBS $i$ and interfering WBS $\bar{i}$ are denoted as $h_{im}$ and $h_{\bar{i}m}$ respectively.
 The path loss is dependent on the distance between the corresponding equipments, e.g. $h_{im}=K \cdot d_{im}^{-\alpha}$, where $\alpha$ is the path loss exponent, $d_{im}$ is the distance between $i$ and $m$, $K$ is a constant which models the reference loss over a single unit of distance.  
-$N_0$ denotes the noise power.
+$N_0$ denotes the thermal noise power.
 Shadowing without fading is considered in our model.
-The sum of all disturbing RF effects (including interference) on terminal $m$ (we assume the working channel is $c$) is as following,
+The sum of all disturbing radio frequency effects (including interference) on terminal $m$ (we assume the working channel is $c$) is as following,
 \begin{equation}
 \label{interference}
 \begin{aligned}
 f_m^c=\sum_{\bar{i}} (P_{\bar{i}}^c \cdot h_{\bar{i}j} \cdot z_{\bar{i}m}) +  N_0
 \end{aligned}
 \end{equation}
-where $P_{\bar{i}}^c$ denotes the transmit power of WBS $\bar{i}$ and $z_{\bar{i}m}$ models the zero-mean log-normally distributed shadow fading with standard deviation $\sigma_{\text{SH}}$ between $\bar{i}$ and $m$.
+where $P_{\bar{i}}^c$ denotes the transmit power of interfering WBS $\bar{i}$, $z_{\bar{i}m}$ models the zero-mean log-normally distributed shadow fading between $\bar{i}$ and $m$, and the standard deviation is $\sigma_{\text{SH}}$.
 %Note that $z$ is dependent on the individual transmitter/receiver pair, but we omit the subscripts for simplicity. 
-Then we get the \gls{SINR} on end terminal $m$,:
+Then we get the \gls{SINR} on end terminal $m$,
 \begin{equation}
 \label{SINR}
 \begin{aligned}
@@ -119,11 +119,11 @@ Then we get the \gls{SINR} on end terminal $m$,:
 
 
 \subsection{Problem Statement}
-Our goal is to design distributed scheme for WBSs to choose channel and transmission power, so as to improve the SINR on their end terminals, so each WBS's utility is a function of certain form of the SINR on all its end terminals, \ie, the utility of each WBS can be the average SINR on all its terminals.
-As the distribution of mobile terminals is varying and influenced by many factors, \ie the type of services provided to the terminals, the performance of one WBS changes even the surrounding environment stays the same.
-Thus, due to the mobility of terminals, it is non realistic to adopt a function of SINR on all terminals.
-%
-On the other hand, it is not appropriate to choose one or more fixed terminals, and use their SINR to represent the SINR for all the other terminals in that cell, because their location could diverge greatly with the real locations of the terminals.
+Our goal is to design distributed solution for WBSs to choose channel and transmission power, so as to improve the SINR on their end terminals.
+Each WBS's utility is a function of certain form of the SINR on all its end terminals, \ie the utility can be the average SINR at all its terminals.
+When adopting a function of SINR on all terminals as utility, as the terminals are mobile, and they are influenced by many factors, \ie the type of service provided to the terminals, the utility may diverge from the real performance of the terminals.
+%Thus, due to the mobility of terminals, it is non realistic to adopt a function of SINR on all terminals.
+On the other hand, it is not appropriate to choose one~\cite{spectrum_sharing_tvspace_2012} or more fixed terminals, and use their SINRs to represent the SINR for all the other terminals in that cell, because their location could diverge greatly with the locations of the other terminals.
 As a result, we propose a metric \textit{QuasiSINR} to represent WBS's performance, which is independent on the actual locations terminals.
 
 %We are interested in improving the SINR on the terminals of each cell by rendering WBSes to decide their channel and transmission power.
@@ -136,10 +136,10 @@ As a result, we propose a metric \textit{QuasiSINR} to represent WBS's performan
 
 \subsubsection*{QuasiSINR of WBS}
 
-QuasiSINR is a conservative expression of SINR with respect to a circle centering at the corresponding WBS.
-Given an auxiliary circle centering at WBS, quasiSINR is the ratio between the weakest signal of interest and the summation of the strongest interference caused on the circle.
-In the following, we illustrate how is quasiSINR calculated with Figure~\ref{quasiSINRfigure}.
-
+QuasiSINR is an indication of SINR that a WBS can provide to its terminals.
+Given an auxiliary circle centering at WBS, quasiSINR of a WBS is the ratio between the weakest signal of interest and the summation of the strongest interference caused on the circle.
+Figure~\ref{quasiSINRfigure} illustrates how is quasiSINR calculated.
+%
 The discussed WBS is denoted as $i$, and the rest WBSs are denoted as $j$, $j'$ and $j''$ respectively.
 We assume all the WBSs work on the channel $k$, this co-channel interference is caused on each WBS.
 An auxiliary dashed circle centering at WBS $i$ is shown, whose radius is $\delta$. 
@@ -161,7 +161,7 @@ The power of the signal of interest on auxiliary circle is,
 \end{aligned}
 \end{equation}	
 where $h$ and $z$ are the attenuation and fading from $i$ to any point on the auxiliary circle.
-In Figure~\ref{quasiSINRfigure}, $\tilde{P_i}$ equals to the power of the signal of interest received on the green dot 
+In Figure~\ref{quasiSINRfigure}, $\tilde{P_i}$ is the power of the signal of interest received on the green dot 
 
 The interference on auxiliary circle from co-channel WBS $j$ is,
 \begin{equation}
@@ -171,16 +171,16 @@ The interference on auxiliary circle from co-channel WBS $j$ is,
 \end{aligned}
 \end{equation}
 where $h'$ and $z'$ are the attenuation and fading from $j$ to the nearest point on the auxiliary circle.
-In Figure~\ref{quasiSINRfigure}, $\tilde{f_{ji}}$ equals to received interfering power from WBS $j$ on the red dot on the connecting straight line between WBS $i$ and $j$.
+In Figure~\ref{quasiSINRfigure}, $\tilde{f_{ji}}$ equals to received interfering power from WBS $j$ on the red dot, which is the crossing of the connecting line between WBS $i$ and $j$ and the auxiliary circle.
 The sum of interference on the intersections of auxiliary circle and connecting lines is, 
 \begin{equation}
 \label{quasiSINR_infs}
 \begin{aligned}
-\tilde{f_{i}} = \sum_{j\in\mathcal{N}, (j)=k} \tilde{f_{ji}}
+\tilde{f_{i}} = \sum_{j\in\mathcal{N}, c(j)=k} \tilde{f_{ji}}
 \end{aligned}
 \end{equation}	
-
-Then the quasiSINR is, 
+In the following chapter, $\tilde{P}$ and $\tilde{f}$ represent the received power of interest and the strongest interference on the auxiliary circle.
+The quasiSINR of WBS $i$ is, 
 \begin{equation}
 \label{quasiSINR}
 \begin{aligned}
@@ -191,7 +191,7 @@ Then the quasiSINR is,
 \end{equation}
 
 %and we can see QuasiSINR is the ratio between the weakest signal of interest and the summation of the strongest interference.
-We can adjust the radius of the auxiliary circle $\delta$ to let WBS foster better service to terminals in certain area.
+We can adjust the radius of the auxiliary circle $\delta$ to let WBS foster better service to the terminals in certain area.
 For instance, to take care of the SINR on the border area of the cell, the radius $\delta$ can be set as the distance between WBS $i$ and the furthest associated terminal.
 When the terminals are close to the WBS, $\delta$ can be set smaller to better fit to the terminals' distribution.
 %but it can also be set by operator according to the base station's situation, such as the distribution of end terminals, and the geography of the coverage of the base station. 
@@ -201,38 +201,30 @@ When the terminals are close to the WBS, $\delta$ can be set smaller to better f
 %According to this construction, the weakest strength of the signal of interest is $P_i^c\cdot h_{iQ}\cdot z_{iQ} = P_i^c\cdot \delta^{-\alpha}\cdot z_{iQ}$ while the biggest possible interfering power from co-channel WBS $j$ is $P_j^c\cdot h_{jQ}\cdot z_{jQ} = P_j^c\cdot (d_{ji}-\delta)^{-\alpha}\cdot z_{jQ}$. We denote in this context by $Q$ the virtual worst-case terminal.
 %%given at a position $Q$ (virtual measurement point) which is $\delta$ distance units away from the serving WBS, and $d_{ij}-e$ distance units away from any WBS $j$ \textit{at the same time}. The received power from WBS $i$ at this virtual measurement point is $P_i\cdot h_{iQ}\cdot z = P_i\cdot e^{-\alpha}\cdot z$, while the received interference power at $Q$ from any co-channel WBS $j$ is $P_j\cdot h_{jQ}\cdot z = P_j\cdot (d_{ji}-e)^{-\alpha}\cdot z$. 
 %Hence, as we form the SINR such a virtual 'worst-case' terminal, the co-channel interference impact is overestimated as the total received interference power is given by the sum $\sum_{\forall j}P_j^c\cdot h_{jQ}\cdot z_{jQ}$ where index $j$ spans all co-channel WBSs with $i$. Formally, the QuasiSINR of WBS $i$ is given by:
-%\begin{equation}
-%\label{quasiSINR}
-%\begin{aligned}
-%& \tilde{\gamma_{i}} = \frac{P_{i}^c \cdot h_{iQ} \cdot z_{jQ}} {\sum_{\tiny\substack{j\neq i, j\in \mathcal{N}\\c(j)=c(i)}} (P_j^c \cdot h_{jQ} \cdot z_{jQ}) + N_0}\\
-%& = \frac{P_{i}^c \cdot \delta^{-\alpha}\cdot z_{jQ}} {\sum_{j\neq i, j\in \mathcal{N}} (P_j^c \cdot (d_{ji}-\delta)^{-\alpha} \cdot z_{jQ}) + N_0} = \frac{\tilde{P_i}^c}{\tilde{f_i}^c}
-%\end{aligned}
-%\end{equation}
-%$\tilde{P_i}^c$ represents the power of received interested signal from WBS $i$, which happened on any point on the $\delta$-circle of WBS $i$ (green dot in Figure \ref{quasiSINRfigure}), and $\tilde{f_i}^c$ denotes the sum of received co-channel interferences plus noise, where the co-channel interference happens on the intersection point (red dot in Figure \ref{quasiSINRfigure}) of the $\delta$-circle and line connecting WBS $i$ and the interfering WBSes. 
 
 
 %any change of the transmit powers of co-channel interference source (i.e. other WBS working on channel $k$) will have always fixed impact to the quasiSINR of the WBS concerned, 
 Because of the auxiliary circle, the interaction between co-channel WBSs are independent on the individual end terminals. 
-With quasiSINR, the channel and power allocation problem exclude terminals and simplify the problem. 
-QuasiSINR will be validated in Section \ref{simulation}. 
+With quasiSINR, the channel and power allocation problem exclude the terminals and simplify the problem. 
+%QuasiSINR will be validated in Section \ref{simulation}. 
 
 %Notice regrading the QuasiSINR, that any modification of the transmit powers of co-channel interference source (i.e. other WBS working on channel $c$) will have always the same scaled impact. I.e. we have symmetry among the co-channel interferes regarding their impact on the QuasiSINR. This is the main reason for introducing the QuasiSINR.\todo{?}
 
 
 
 \subsubsection*{Calculation Instead of Measurement}
-In our system, every WBS is able to access the central database which stores all WBSs' geographic information, their operation parameters, \ie working channel and transmission power, and the characteristics of radio frequency environment, \ie parameters of attenuation and shadowing.
-To obtain quasiSINR, we don't need to measure the signal strength on the intersections shown in Figure~\ref{quasiSINRfigure}, but instead to calculate them using propagation model~\cite{Jaentti11} and based on Formula~\ref{quasiSINR} and the information stored in central database.
+According to our system model, every WBS is able to access the central database which stores all WBSs' geolocations \ie working channel, transmission power, the characteristics of radio frequency environment such as parameters of attenuation and shadowing.
+To obtain quasiSINR, we don't need to measure the signal strength, but only need to calculate them based on Formula~\ref{quasiSINR} using propagation model~\cite{Jaentti11} and the information stored in central database.
 %Besides, the channel usage of each WBS is also recorded in the data center.
 %$h_{ij}$ and $z_{\bar{i}j}$, and also the transmission power of the interfering WBSs. 
 %Thus when WBSes work in senseless mode, which can calculate the RSSI from one transmitter to an receiver with proper propagation model (e.g. Formula\ref{interference}\ref{SINR} can be calculated within database) with the geo-location and channel usage information. 
-furthermore, a WBS also knows the interference it causes on the auxiliary circles of other co-channel WBSs.
+A WBS also knows the interference it causes on the auxiliary circles of other co-channel WBSs via accessing the database.
 
 
 
 \subsubsection*{Optimization}
 Our goal can be illustrated in the form of an optimization problem.
-To ensure fairness, instead of maximizing the sum of quasiSINR of all WBSs, we try to minimize the sum of inverted quasiSINR. 
+To ensure fairness, instead of maximizing the sum of quasiSINR of all WBSs, we minimize the sum of inverted quasiSINR. 
 	\begin{equation}
 \label{problem}
 			\begin{aligned}
@@ -240,13 +232,13 @@ To ensure fairness, instead of maximizing the sum of quasiSINR of all WBSs, we t
 			& & \sum_{i\in \mathcal{N}}\frac{1}{\tilde{\gamma_{i}}} \\
 			& \text{subject to}
 			& & \sum_{k=1}^{|\mathcal{C}|}x_{ik}=1 \\
-			& & & p_{min} \leq p \leq p_{max}
+			& & & P_{min}^c \leq P^c \leq P_{max}^c
 			\end{aligned}
 		\end{equation}
 %XXX Please formalize the constraints, do not simply write 'one node, one channel'\todo{i'll do it!}
 %where $\tilde{\gamma_{i}}$ is the QuasiSINR as defined in Equation~\ref{quasiSINR} XXX Always when you reference to a section, a figure, an equation or a table, mention the corresponding word in front of the reference - otherwise the reader does not know, should he reference to a section, an equation etc. - here I put in an 'Equation' for you but check this for the rest of the paper XXX. 
-For every WBS, each channel in $\mathcal{C}$ experiences different levels of interference from other WBSs working on it.
-In order to provide better service to its end users and doesn't consider the services provided in other cells, WBS is liable to choose either the channel permitting higher transmission power or the one with less interference, or the channel compromising the two factors according to Formula \ref{SINR}.
+For a WBS, each channel in $\mathcal{C}$ receives different levels of interference from other WBSs working on it.
+In order to provide better service to its end users, WBS is liable to choose either the channel permitting higher transmission power or the channel which experiences less interference, or the channel compromising the two factors according to Formula \ref{SINR}.
  Achieving optimal white spectrum allocation in a distributed style is the goal of this work, furthermore, this distributed solution should converge fast and lead to an efficient and stable solution.
 
 
@@ -260,9 +252,9 @@ In order to provide better service to its end users and doesn't consider the ser
 %coordinates the transmissions of a group of links sharing a
 %common spectrum.xxxxxx
 
-Firstly we introduce the relevant works on the utilization of TV white space, which includes relevant regulations, proposed standards and recent research advances.
-Secondly we introduce the power and channel allocation schemes proposed for cognitive radio network, and tell the reasons that they are not suitable for our problem.
-Thirdly, we introduce other channel allocation schemes, as our solution employs a channel allocation scheme in one procedure.
+Firstly we introduce the solutions proposed on the utilization of TV white space, which includes regulations, proposed standards and recent research advances.
+Secondly we introduce the power and channel allocation schemes proposed for cognitive radio network, and explain the reasons why they are not suitable to solve our problem.
+%Thirdly, we introduce other channel allocation schemes, as our solution employs a channel allocation scheme in one procedure.
 
 \subsection{Utilization of TV white space}
 Some prototype applications which only rely on the TV database are proposed in cellular network~\cite{tvwhite_lte2011, multicell_geo_dyspan11} and WiFi-like network~\cite{whitefi09} based on the FCC regulation.
@@ -272,12 +264,14 @@ Standardization activities are in progress on TVWS utilization, including IEEE 8
 %\cite{HoangPowerChannel2010} proposes a distributed solution for power control and channel assignment in both down-link and up-link communication in a WRAN, but the investigated secondary network is composed with only one base station and multiple terminals.
 
 %% related work!!!
-Scientific research on utilization of TVWS goes on in parallel with the regulatory agency.
-Spectrum sharing in TVWS is formulated as optimization problem, where the guarantee that TV receivers should not be affected by the cumulative interferences form TVBD is one constraint, and the signal interference (noise) ratio becomes the other.
+Scientific research on utilization of TVWS goes on in parallel with the regulatory agencies.
+Feng et al. ~\cite{hybridPricing_tvspace_2014} investigate the business model of TV spectrum utilization in database involved network structure, emphasis on the price policy of the channels approved by FCC.
+Spectrum sharing in TVWS is formulated as a series of optimization problems. 
+The guarantee that TV receivers should not be affected by the aggregate interferences form TVBDs is one constraint.
 The objective can be maximizing TVBD's downlink transmission power~\cite{multipleIntf_pimrc11}, uplink transmission power~\cite{uplink_power_tvws13}, or best geographic distribution of TVBDs~\cite{withinTVcoverage_PIMRC13}.
 \cite{game_CA_association_ICDCS12,SA_CA_TVWS_2012crowncom, 802.22co-existence09, 802.22game_08globecom,self-coexistenceWRAN2010infocom} emphasise on interference mitigation among TVBDs via spectrum allocation.
 Vehicular networks operating with TVWS assisted by TV database and cooperative sensing is discussed in~\cite{tvws_vtc13}.
-Work~\cite{increaseTVWS12} steps further from the database paradigm and makes efforts to utilize the 'grey space', where TVDB is allowed to operate even within the TV service area.
+Work~\cite{increaseTVWS12} steps further from the database paradigm and makes efforts to utilize the \textit{grey space}, where TVDB is allowed to operate even within the TV service area.
 
 
 
@@ -285,79 +279,74 @@ Work~\cite{increaseTVWS12} steps further from the database paradigm and makes ef
 
 The proposed solutions can be divided into two categories, centralized and distributed, which will be introduced sequentially.
 
-As to centralized solutions, an optimization problem is always to formulated to solve the problem.
-In \cite{downlink-centralized-08-TWC}, the objective is to increase the number of supported terminals whose SINR is above a threshold, and the constrains are to refrain the interferences on the primary users under a certain threshold.
-\cite{joint_power_channel_linkpair_08ICT} minimizes the transmission power and meanwhile makes sure the SINR of terminal is above one threshold.
-This work fails to consider the protection of primary users.
-Other schemes expect for optimization is also used to tackle this problem.
-\cite{centralized_80222_sharing_ifip2011} proposes a heuristic algorithm considering the channel availability and transmission demand of each WBS.
-Spectrum allocation is solved after being formulated into a colouring problem.
+To implement centralized solutions, optimization problems are often formulated.
+In \cite{downlink-centralized-08-TWC}, the objective is to increase the number of supported terminals whose SINRs are above a threshold, and the constrains are to refrain the interference at the primary users within a certain margin.
+\cite{joint_power_channel_linkpair_08ICT} minimizes the transmission power and meanwhile makes sure the SINR of terminal is above a threshold, but this work fails to consider the protection of primary users.
+A heuristic algorithm is proposed in \cite{centralized_80222_sharing_ifip2011}, which considers the channel availability and transmission demand of each WBS.
+%Spectrum allocation is solved after being formulated into a colouring problem.
 The aforementioned two schemes don't consider varying the transmission power.
 % xxxx important paper
 %A centralized scheme is proposed in \cite{nashbargaining_2012jsac} for joint channel and power allocation among end terminals in OFDM cognitive radio network. 
 
-As to decentralized schemes, in order to avoid or to alleviate co-channel interference between neighbouring cells, and allow arbitrary number of cells to work in IEEE 802.22 network, \cite{Inter-Network_Spectrum_Sharing_80222_08} proposes distributed inter-network spectrum sharing scheme, where contention decisions are made in a distributed way and winner cells can use the shared channel.
+As to decentralized schemes, in order to avoid or to alleviate co-channel interference between cells, and to allow arbitrary number of cells to work in IEEE 802.22 network, \cite{Inter-Network_Spectrum_Sharing_80222_08} proposes distributed inter-network spectrum sharing scheme, where contention decisions are made in a distributed way and the winner cells can use the shared channels.
 This work doesn't consider the role of transmission power in the co-channel interference.
-
-\cite{HoangPowerChannel2010} discusses power control and channel assignment in both down-link and up-link communication in cellular network. 
-Although the solution is distributed, Primary users are required to cooperate with secondary base station in a learning process to decide the transmission power, in addition, there is only one secondary base station considered whereas in our problem we need to cope with the multiple cells.
-
+%
 An distributed power allocation (single channel) scheme based on learning for secondary networks is given in \cite{aggregatedInf_Galindo_crowncom09}, where penalty function involving the interference threshold on primary systems is used.
 
-\cite{wuinfocom09} deals with the join channel-power selection for multiple transmission links (pairs). 
+\cite{HoangPowerChannel2010} discusses power control and channel assignment in both down-link and up-link communication in cellular network. 
+Although the solution is distributed, primary users are required to cooperate with secondary base station in a learning process to decide the transmission power, in addition, there is only one secondary base station considered whereas we need to cope with the multiple cells in our problem.
+%
+Joint channel-power selection for multiple transmission links (pairs) is investigated in \cite{wuinfocom09}. 
 The authors decompose the Lagrangian dual of the problem, then propose a distributed scheme based on the dual parameters. 
-The scheme converges to pure Nash equilibrium, but in order to facilitate this scheme, monitors are required to watch interference from secondary users, moreover, monitors have to be equipped computational ability and interact with secondary users in the whole process of convergence.
-
-A distributed joint power and channel allocation is proposed in~\cite{pimrc_2012}, each base station chooses optimal power level and channel to optimize its utility, which results in induced received interference along with the caused interference on primary users. 
+The scheme converges into pure Nash equilibrium, but in order to facilitate this scheme, monitors are required to watch interference from secondary users, moreover, monitors have to be equipped computational ability and interact with secondary users in the whole process of convergence.
+%
+A distributed joint power and channel allocation is proposed in~\cite{pimrc_2012}, each base station chooses optimal power level and channel to optimize its utility, which results in induced received interference and caused interference on primary users. 
 The execution of this scheme is formulated into an exact potential game. 
 For each base station, after several rounds of best responses in terms of channel and power level, Nash equilibrium is achieved.
 There are some flaws hindering the application of this scheme.
-First of all, the paper doesn't provide means for base stations to obtain the needed information which is needed to calculate the utility function.
-Secondly, as how does the base station know the interference received on the primary users, it is not clear how to calculate the punishment in the utility function, which indicates whether and how much the interference threshold on primary users is violated.
-Thirdly, the convergence speed of the scheme is not given, in fact, as the problem is formulated into an potential game, converge speed or the number of updates before convergence is a theoretic problem which is still unsolved.
-Last but not least, as the utility function and the potential in the game are designed as the sum of received and introduced interference, the desired signal power and the punishment, the minimization of this 'sum' does indicates meaning  performance metric, \ie SINR on terminals, or the total transmission power consumption.
-Potential game is also adopted in work~\cite{tvws_paper_networking2015}.
+Firstly, the paper doesn't provide means for base stations to obtain the needed information which is needed to calculate the utility function.
+Secondly, it is not clear how to calculate the punishment in the utility function, which indicates whether and how much the interference threshold on primary users is violated.
+Thirdly, the convergence speed of the scheme is not given, in fact, as the problem is formulated into a potential game, converge speed or the number of updates before convergence is a theoretic problem which is still unsolved.
+Last but not least, as the utility function and the potential in the game are designed as the sum of received and introduced interference, the desired signal power and the punishment, the minimization of this \textit{sum} does indicate meaningful  performance metrics, \ie SINR on terminals, or the total transmission power consumption.
+In~\cite{spectrum_sharing_tvspace_2012}, Chen et al. investigate the channel allocation problem in the scenario of TV white space.
+The channel allocation problem is formulated into a potential game, individual WBS's utility is to maximize the capacity of one single static terminal.
+
+Potential game is also adopted in work~\cite{tvws_paper_networking2015} to design algorithms, which mitigates the adjacent interference.
+
+
+
 
 \cite{powerChannelAllocation_2015_shapley} adopts cooperation game to research the coexistence of femtocells.
-Each femtocell negotiates with neighbouring fremcells and forms temporary coalition, but the purpose is to allocate resource block in terms of time and transmission power.
+Each femtocell negotiates with neighbouring fremcells, and they form temporary coalition, but the goal of this solution is to allocate resource block in terms of time and transmission power.
 
+%
 Distributed algorithm based on Learning is proposed in \cite{cogCE_huang} for LTE to allocate the the resource block in down link, which leads to correlated equilibrium, but slow converge hinters its application.
-
+%
 \cite{joint_power_channel_linkpair_08ICT} proposes both centralized and decentralized solutions.
 Two distributed schemes are proposed, joint channel and power allocation is formulated into a weighted potential game, as an alternative workaround, the problem is solved in two sequential phases.
 
 
-\subsubsection*{Channel Allocation}
 
-Channel allocation facilitates CRN to improve throughput~\cite{channelAllocation_throughput_12wcnc}, or cooperatively relay~\cite{channelAllocation_relay_2010ICASSP} and so on.
-This thesis emphasises on co-channel interference mitigation with distributed channel allocation . 
-
-Mitigating co-channel interference via channel allocation has been attracting plenty of research efforts in the past decade, from multiple channel mesh network~\cite{Hyacinth}, Ad hoc network~\cite{Ko_DistributedCA} up to cognitive radio network~\cite{SA_CA_TVWS_2012crowncom,qlearning_huang}. 
-Channel allocation problem is converted into colouring problem thus is NP hard~\cite{Hyacinth}, thus centralized optimization fails to produce.
-Authors of~\cite{Ko_DistributedCA} propose heuristic algorithms utilizing best response based on the welfare on itself to assign channels among users.
-Simulated annealing is applied to mitigate co-channel interferences in~\cite{SA_CA_TVWS_2012crowncom}.
-For the same purpose, no-regret learning~\cite{qlearning_huang, hart00correlatedeq} is exploit to optimize the choice on channel.
 
 
 
 \section{Problem Decomposition and Corresponding Related Works}
-In the aforementioned works, the protection on primary users is taken care during deciding the channel and power selection, but in the current 802.22 standard, there exists no communication media between the secondary network and the primary users, besides, assuming such communication media is available, the communication overhead between primary users and second users is considerable.
-Based on this analysis, we decide the maximal transmission power for each WBS on each channel before dealing with channel and power allocation later on.
-This work is conducted on the centralized database, as the database has global info of the network, thus, it can guarantee the primary users is not interfered when all the WBSs work on the same channel.
-
-By doing this, the protection on the primary users from harmful interferences is excluded from the latter consideration on channel and power allocation.
+In the related works, the protection on primary users is taken care during the process where channel and power selection are conducted, but according to the current regulations and standards, there exists no communication means between the secondary users and the primary users.
+Besides, assuming such communication media is available, the communication overhead between primary users and second users is considerable.
+We decide the maximal transmission power for each WBS on each channel before dealing with channel and power allocation, and this work is conducted at the centralized database.
+As the database has global info of the network, it guarantees the primary users are not interfered when all the WBSs work on the same channel.
+By decompose the problem into two subproblems, the protection on the primary users from harmful interferences is excluded out of the latter consideration on channel and power allocation.
 
 
 %We propose a distributed workaround for the join power channel allocation problem, so that 
-In this chapter we solve the channel and power allocation in downlink 802.22 network by solving three sequential sub problems:
+In summery, we solve the channel and power allocation in downlink communication in IEEE 802.22 network by solving three sequential sub problems:
 \begin{itemize}
-\item  Firstly, given a set of secondary WBS and their geo-location, the maximum permitted transmit power on all channel for each WBS can be determined, so that the interference margin is impossible to be broken no matter how do WBSs utility the channel and power resources. 
-In other words, the dynamics in the secondary network is transparent to primary system. 
-This requires to consider the joint interference that the WBS have on the TV receivers of the considered service area. 
-\item Secondarily, once the maximal transmit power has been determined, each WBS needs to choose its operating channel. 
+\item  Firstly, given a set of secondary WBSs and their geo-locations, the maximum permitted transmit power on each channel for each WBS is determined, so that the interference margin can not be exceeded no matter how do WBSs utilize the spectrum and power resources. 
+In other words, the dynamics in the secondary network is transparent to the primary system. 
+\item Secondly, once the maximal transmit power is determined, each WBS chooses its operating channel, this subproblem is a channel allocation problem with different transmission power. 
 \item Thirdly, transmission power is adjusted on the channel which is decided in the previous step.
 \end{itemize}
-While for the first problem a centralized approach is of interest, the following two problems will be solved by distributed schemes.
+The first subproblem is a centralized approach, the following two problems are solved with distributed schemes.
 In the following, we introduce the related works with the corresponding sub problems.
 
 %We discuss the detailed problems in the following two subsections in combination with related work in the respective area.
@@ -375,22 +364,22 @@ In the following, we introduce the related works with the corresponding sub prob
 %Solving the joint problem of power and channel allocation in a distributed manner is challenging.
  
  
-To protect the TV contours from harmful interference, the aggregate interference caused by WBSs on TV contours should be lower than interference margin~\cite{multipleIntf_pimrc11}.
+To protect the TV contours from harmful interference, the aggregate interference caused by WBSs at the contours of TV receivers should be within interference margin~\cite{multipleIntf_pimrc11}.
 The sufficient condition in the context of TV white space is formulated into a centralized linear programming program (\gls{LP}).
 Adopting centralized scheme is due to the special network structure according to IEEE 802.22 standard. 
 The standard requires a centralized database to store the available channels for each secondary base station, thus centralized scheme can be conducted there after trivial modification.
-The objective function is to maximize the summation of all secondary base stations' transmission power, and the constraints are built to satisfy the sufficient condition for every TV contour. %, However, this approach doesn't take the channel assignment problem into account.
+The objective function is to maximize the summation of all secondary base stations' transmission power, and the constraints are formed to satisfy the sufficient condition for every interference measuring device for the TV receivers. %, However, this approach doesn't take the channel assignment problem into account.
 %XXX This discussion of the related work is a bit confusing. The problem is that it is no clear per discussed paper what the shortcoming of the approach is. I.e. you describe the approaches but you do not help the reader why this approach is not contributing to the goal defined in the first sentence. Try to reformulate this section more precisely expressing what is the problem with the corresponding approach XXX.
 
 
 
 \subsection{Channel allocation with fixed transmission power level}
 \label{CA}
-After knowing the power limit on each channel, WBSs need to decide which channel to use so as to mitigate interference among WBSs and provide better SINR to its end users. 
+After knowing the maximum transmission power on each channel, WBSs need to decide which channel to use so as to mitigate interference among WBSs and provide the best SINR for their end users. 
 Here we assume WBSs' transmission power is the maximum permitted and fixed.
 
 This problem lies in the category of \textit{channel assignment problem}, which has been well investigated in many scenarios.
-Channel assignment problem mainly cope with mitigating co-channel interference among users, which can be converted into colouring problem thus is NP hard~\cite{Hyacinth}. 
+Channel assignment problem tries to mitigate co-channel interference among users, which can be converted into colouring problem thus is NP hard~\cite{Hyacinth}. 
 Authors of~\cite{Ko_DistributedCA} propose heuristic algorithms utilizing best response to improve its welfare, but the transmission power is assumed identical and path loss is deemed as symmetric, which renders this method problematic for our problem where transmission is non-identical and the path loss is asymmetric.
 \cite{CApotentialLearning_05dyspan} formulates channel assignment problem in ad-hoc cognitive radio network into potential game which leads to pure NE, a learning scheme achieving slightly better performance is provided for comparison, but they assume the transmission power is identical and there is no noise in the secondary network, and the proposed random access mechanism demands a huge amount of information to be exchanged, which is a burden for network in ad-hoc structure.
 \cite{CA_Felegyhazi_07infocom, Wu_GOP_CA_08infocom} investigate the channel allocation problem under game framework in same collision domain, the authors propose algorithms to converge to pure Nash equilibrium (NE) and strongly dominate strategy equilibrium respectively. 
@@ -398,6 +387,18 @@ Authors of~\cite{Ko_DistributedCA} propose heuristic algorithms utilizing best r
 As to our knowledge, there is no work dealing with channel allocation with such asymmetric interactions. 
 %XXX So here we have the same problem as above: Only for the first two papers you say explicitly what problems come up with them - for the rest you simply mention them and their approach. Here we really need a much more clearer formulation of the shortcomings - why are they failing to be a solution to our problem ? Furthermore, there seem to be quite a lot of work in game theory and power control in secondary networks - how do they relate to our work? XXX
 
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+%Channel allocation facilitates CRN to improve throughput~\cite{channelAllocation_throughput_12wcnc}, or cooperatively relay~\cite{channelAllocation_relay_2010ICASSP} and so on.
+%This thesis emphasises on co-channel interference mitigation with distributed channel allocation. 
+
+Mitigating co-channel interference via channel allocation has been attracting plenty of research efforts in the past decade, from multiple channel mesh network~\cite{Hyacinth}, Ad hoc network~\cite{Ko_DistributedCA} up to cognitive radio network~\cite{SA_CA_TVWS_2012crowncom,qlearning_huang}. 
+Channel allocation problem is converted into colouring problem thus is NP hard~\cite{Hyacinth}, thus centralized optimization fails to produce.
+Authors of~\cite{Ko_DistributedCA} propose heuristic algorithms utilizing best response based on the welfare on itself to assign channels among users.
+Simulated annealing is applied to mitigate co-channel interferences in~\cite{SA_CA_TVWS_2012crowncom}.
+For the same purpose, no-regret learning~\cite{qlearning_huang, hart00correlatedeq} is exploit to optimize the choice on channel.
+All the available channel allocation schemes are designed under the same assumption, that the transmission power levels are identical, and the attenuation between any pair is reciprocal.
 \subsection{Power allocation}
 \label{PA}
 Working with the maximal permitted transmission power may not be the optimal in terms of power consumption and the SINR on terminals.
