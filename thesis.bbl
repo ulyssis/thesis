@@ -228,8 +228,8 @@ Report of the spectrum efficiency working group.
 {\sc Chen, X., and Huang, J.}
 \newblock Game theoretic analysis of distributed spectrum sharing with
   database.
-\newblock In {\em Distributed Computing Systems (ICDCS), 2012 IEEE 32nd
-  International Conference on\/} (June 2012), pp.~255--264.
+\newblock In {\em In Proceedings of 2012 IEEE 32nd International Conference on
+  Distributed Computing Systems (ICDCS)\/} (June 2012), pp.~255--264.
 
 \bibitem{game_CA_association_ICDCS12}
 {\sc Chen, X., and Huang, J.}
@@ -404,6 +404,13 @@ Report of the spectrum efficiency working group.
 \newblock Aggregate interference with fcc and ecc white space usage rules: case
   study in finland.
 \newblock In {\em Proc. of IEEE DySPAN 2011\/} (May 2011).
+
+\bibitem{maximum_power_TVWS_dyspan_2011}
+{\sc Karimi, H.}
+\newblock Geolocation databases for white space devices in the uhf tv bands:
+  Specification of maximum permitted emission levels.
+\newblock In {\em New Frontiers in Dynamic Spectrum Access Networks (DySPAN),
+  2011 IEEE Symposium on\/} (May 2011), pp.~443--454.
 
 \bibitem{Kawadia03}
 {\sc Kawadia, V., and Kumar, P.~R.}

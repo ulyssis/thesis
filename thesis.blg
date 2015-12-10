@@ -161,45 +161,45 @@ Warning--empty year in spectrumDecision_2013mass
 Warning--empty year in uplink_power_tvws13
 Warning--empty year in willkomm08
 Warning--empty journal in dsa_traffic_2000
-You've used 137 entries,
+You've used 138 entries,
             2950 wiz_defined-function locations,
-            1545 strings with 34429 characters,
-and the built_in function-call counts, 59017 in all, are:
-= -- 5899
-> -- 2130
+            1552 strings with 34751 characters,
+and the built_in function-call counts, 59497 in all, are:
+= -- 5949
+> -- 2137
 < -- 0
-+ -- 906
-- -- 746
-* -- 3773
-:= -- 8413
-add.period$ -- 415
-call.type$ -- 137
-change.case$ -- 778
++ -- 909
+- -- 748
+* -- 3797
+:= -- 8472
+add.period$ -- 418
+call.type$ -- 138
+change.case$ -- 782
 chr.to.int$ -- 0
-cite$ -- 160
-duplicate$ -- 2018
-empty$ -- 5610
-format.name$ -- 746
-if$ -- 14602
+cite$ -- 161
+duplicate$ -- 2042
+empty$ -- 5662
+format.name$ -- 748
+if$ -- 14730
 int.to.chr$ -- 0
-int.to.str$ -- 137
-missing$ -- 132
-newline$ -- 692
-num.names$ -- 256
-pop$ -- 1504
+int.to.str$ -- 138
+missing$ -- 133
+newline$ -- 697
+num.names$ -- 258
+pop$ -- 1515
 preamble$ -- 1
-purify$ -- 647
+purify$ -- 650
 quote$ -- 0
-skip$ -- 3368
+skip$ -- 3403
 stack$ -- 0
-substring$ -- 2932
-swap$ -- 553
+substring$ -- 2965
+swap$ -- 563
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 534
+type$ -- 538
 warning$ -- 23
-while$ -- 401
-width$ -- 140
-write$ -- 1364
+while$ -- 405
+width$ -- 141
+write$ -- 1374
 (There were 29 error messages)

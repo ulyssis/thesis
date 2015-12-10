@@ -301,7 +301,10 @@ In this section, we introduce two types of cognitive radio networks, and the pro
 %Efficient distributed algorithms are needed to determine network organization, link scheduling, and routing.
 
 Cognitive radio ad hoc network (\gls{CRAHN}) is composed with autonomous mobile cognitive radio users which work with overlay spectrum sharing paradigm.
-CRAHN is usually represented as an undirected graph $G$.
+CRAHN is one mobile ad hoc network, whereas each mobile user has cognitive ability for spectrum access.
+Mobile users in CRAHN need to determine which channels are available to use with spectrum sensing, either cooperatively with neighbour users or individually.
+Mobile users have different knowledge of spectrum availability, which poses new challenges in addition to the ones for the management of mobile ad hoc network.
+CRAHN can be usually represented by an undirected graph $G$.
 Cognitive radio users constitute the vertices, the edge between two vertices is decided not only by the distance, propagation and attenuation properties between the two vertices, but also the spectrum availability on both vertices, \ie when they can decode the received signal from each other correctly, and there is common channel available between them on which communication is conducted, then an bidirectional edge is available on graph $G$.
 As to ad hoc network, the graph is constant when users are static.
 As to cognitive radio ad hoc network, due to primary users' activity, an edge between two vertices is decided by the fact that whether the two vertices can simultaneously access the same licensed channel.
@@ -332,39 +335,49 @@ Hence, the corresponding graph is dynamic under primary users' operation, which 
 %
 %Recent standard published in Nov. 2010 suggests both sensing ability as well as database look-up to avoid affecting primary systems.
 
+\subsection{Cognitive Radio Cellular Network}
 
 
-\subsection{TV White Space}
+\subsection{CRN Working with TV White Space}
 \label{TVWS}
 %Opportunistic utilization for unlicensed secondary users (also named as white space devices, abbreviated as WSD) working with TV broadcast spectrum (TV white space) is promising to cope with the scarcity of spectrum resources\cite{fcc}. 
-%UHF TV spectrum (TV white space, TVWS) has low utilization in both spatial and temporal dimensions. \fmjg{xxx relevant data and citation needed here XX also mention where this is the case, i.e. US ? XXX} 
+%UHF TV spectrum (TV white space, TVWS) has low utilization in both spatial and temporal dimensions. \fmjg{xxx relevant data and citation needed here XX also mention where this is the case, i.e. US ? XXX}
 
-On November 4, 2008, FCC made far reaching changes on spectrum usage by opening the unused portion of the UHF TV space to unlicensed secondary users. 
-\textit{Unused portion} here denotes the TV spectrum which is not currently being used by TV stations, or that secondary users can use while the ongoing TV broadcasting on the same spectrum is not interfered.
-These Unused portion of TV spectrum is called TV White Space (\gls{TVWS}).
-%
-Locating within the VHF and UHF range, TVWS is highly desirable for wireless communications, because it has good properties on propagation, buildings penetration, and broadband payload capacity.
-%
 
-In the US, the requirements for secondary spectrum usage in the TV broadcast bands are given by FCC. 
-%
-Autonomous spectrum sensing is one approach for secondary users to decide the available TV spectrum. With sensing ability, every secondary user scans certain parts of the TV spectrum band and is able to detect TV transmission even from a very distant place such that those channels can be ruled out for usage.
-However, to real prevent any interference with ongoing TV broadcasts, the sensing algorithm becomes quite complex. 
-Moreover, it is required to be conservative when deciding the available TV channels leading to an underestimation of available TV channels and causing inefficiencies~\cite{geoTVprotection08dyspan}. Considering the slow change of TV spectrum usage, along with the fact that the spectrum usage by TV stations is scheduled, the geolocation approach together with central database becomes more appealing in TVWS utilization scenario.
+TV white space (\gls{TVWS}) refers to the unused broadcast television spectrum.
+One part of the unused TV spectrum is resulted from the switchover of analog television to digital television, which frees up a large range of TV spectrum.
+The other parts are unassigned spectrum and the spectrum which is not being used at a given time in a given geographical area.
+TV white space is located in the VHF (54-216 MHz) and UHF (470-698 MHz) bands, thus the frequency bands within this spectrum are highly desirable for wireless communications, because they have good properties on propagation, \ie they have broadband payload capacity, and are able to penetrate obstacles such as trees, buildings, and rugged terrain in non-line-of-sight scenarios.
+As comparison, a Wi-Fi router's transmission range, which uses 2.4 GHz radio frequency and complies with IEEE 802.11, is around 100 meters under perfect conditions, and the signals can be blocked by barriers, whereas, TVWS band can cover an area of about 10 kilometres in diameter.
+In 2010, FCC allowed~\cite{FCC_2010_sedond_memorandumm} unlicensed devices to operate in the TV white space to provide broadband communication for consumers and business.
+%On November 4, 2008, FCC made far reaching changes on spectrum usage by opening the unused portion of the UHF TV space to unlicensed secondary users. 
+%\textit{Unused portion} here denotes the TV spectrum which is not currently being used by TV stations, or that secondary users can use while the ongoing TV broadcasting on the same spectrum is not interfered.
+%These unused portion of TV spectrum is called TV White Space (\gls{TVWS}).
+
+Autonomous spectrum sensing is one approach for secondary users to decide the available TV spectrum. 
+Secondary user scans certain parts of the TV spectrum band to detect the presence of existing TV equipments with advanced spectrum sensing techniques and algorithms.
+This scheme involves complex sensing techniques, and it doesn't work well in worst case sensing scenario, \ie the TV receivers are hidden nodes~\cite{maximum_power_TVWS_dyspan_2011}.
+%However, to prevent any interference with ongoing TV broadcasts, the sensing algorithm becomes quite complex. 
+Moreover, it is required to be conservative when deciding the available TV channels leading to an underestimation of available TV channels and causing inefficiencies~\cite{geoTVprotection08dyspan}.
+Considering the slow change of TV spectrum usage, along with the fact that the spectrum usage by TV stations is scheduled, the geolocation approach together with central database becomes more appealing in TVWS utilization scenario.
 FCC adopts this solution as the main way, and regulates the secondary usage of TV white space in a prudent manner, including the spectrum bands permitted to use based on their location, the transmission power, the distance away from TV service area and so on.
+
+
 FCC regulates portable secondary users to operate from channel 21 (512 MHz) to 51 (698 MHz), with the exception of channel 37.
-As to fixed secondary usage, the allowed spectrum band is from TV channel 2 (54 MHz) to TV channel 51, with TV channels 3, 4 and 37 being prohibited.
+As to the fixed secondary users, the allowed spectrum band is from TV channel 2 (54 MHz) to TV channel 51, with TV channels 3, 4 and 37 being prohibited.
 Thus, the available TV spectrum is about 600 MHz wide. 
 Compared to conventional unlicensed ISM bands in the 2.4 GHz and 5 GHz band, all together TVWS has more to offer.
-
-While the TV spectrum is free to use under the above mentioned conditions, it might also be 'polluted' by primary TV stations due to the coexistence with them. \cite{DySpAN10MeasuringWhitespaceCapacity} analyzes the capacity possibly provided by exploiting free TV channels. 
+%xxx While the TV spectrum is free to use under the above mentioned conditions, it might also be 'polluted' by primary TV stations due to the coexistence with them. xxx
+\cite{DySpAN10MeasuringWhitespaceCapacity} analyses the capacity possibly provided by exploiting free TV channels. 
 Complying with the rigid regulation of FCC, TV white space brings hundreds of kilobits/sec per square kilometre for secondary users when the communicating secondary pair is about 1 km apart.
 The research shows that interference from TV stations and other co-channel secondary users heavily restricts the capacity.
-\cite{tvgreyspace12} further investigates the possible TVWS usage \textit{within} TV service area (referred to as 'gray space'), where the secondary usage does not violate TV receivers.
+\cite{tvgreyspace12} further investigates the possible TVWS usage \textit{within} TV service area (referred to as \textit{gray space}), where the secondary usage does not violate TV receivers.
 The authors propose another significant amount of TV spectrum, but the interference from TV broadcasters is stronger due to the secondary receivers being closer to TV broadcasters. 
 
-The potential applications supported by TVWS are the major driving force for TVWS communications technology. It is envisioned that TVWS can support high-data-rate backbone for fixed stations in Large Area Connectivity, short-range indoor connectivity, seamless connectivity for mobile stations and emergency related equipment. In the following, we give a brief introduction to the governing regulations and industrial standards issued for TVWS usage.
-%
+The potential applications supported by TVWS are the major driving force for TVWS communications technology.
+It is envisioned that TVWS can support high-data-rate backbone for fixed stations in large area connectivity, short-range indoor connectivity, seamless connectivity for mobile stations and emergency related equipment. 
+In the following, we give a brief introduction to the governing regulations and industrial standards issued for TVWS usage.
+
 
 
 
@@ -378,7 +391,7 @@ The potential applications supported by TVWS are the major driving force for TVW
 %this is a intro to a general cr work.
 %Temperature regulation~\cite{Temperature_regulation03} opens another way to utilize TVWS. \cite{wuinfocom09} deals with the joint channel-power selection for multiple transmission links (pairs) in a general cognitive radio scenario. The distributed scheme is derived from decomposition of Lagrangian dual, which converges pure Nash equilibrium. To facilitate this scheme, monitors from TV stations are required to watch interference from WSDs, furthermore, monitors have to be equipped with computational ability and interact with secondary users in the whole process of convergence. This methodology works in try-error-try mode, which asks for modification on the current operation of TV services.
 Regulatory bodies in different countries have issued requirements on the occupancy of TVWS bands by secondary users respectively. 
-The permissible channels regulated by FCC have been briefly introduced above.
+The permitted channels regulated by FCC have been briefly introduced above.
 Besides, FCC divides the devices operating in the TVWS (TV band devices, or \glspl{TVBD}) into three categories: Fixed device, Mode I personal/portable device, and Mode II personal/portable device. Every category obeys distinct rules on transmission power, mandatory database access and so on.
 Fixed and Mode II devices are connected to the database directly (or indirectly by another fixed or Mode II TVBD), Fixed device accesses DB at least once per day, Mode II device has to access DB every 60 seconds, or when it changes location by more than 100 meters.
 The transmission power for Fixed TVBD is 4 W, and 100 mW for Mode II TVBD. 
@@ -414,7 +427,7 @@ IEEE 802.22 has been the first IEEE standard for wireless regional area network 
 
 
 \section{Problem Statement}
-The 
+The xxx
 
 Adopting centralized or decentralized solutions is largely dependant on the network types and desired services to convey.
 %Working with the TV white space is regarded as one application of cognitive radio network, which is most likely to succeed in near future.
