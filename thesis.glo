@@ -7,7 +7,7 @@
 (indexentry :tkey (("CRN" "\\glossaryentryfield{CRN}{\\glsnamefont{CRN}}{cognitive radio network}{\\relax }") ) :locref "{}{3}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("ECC" "\\glossaryentryfield{ECC}{\\glsnamefont{ECC}}{Electronic Communications Committee in Europe}{\\relax }") ) :locref "{}{5}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("CRAHN" "\\glossaryentryfield{CRAHN}{\\glsnamefont{CRAHN}}{Cognitive radio ad hoc network}{\\relax }") ) :locref "{}{7}" :attr "pageglsnumberformat" ) 
-(indexentry :tkey (("TVWS" "\\glossaryentryfield{TVWS}{\\glsnamefont{TVWS}}{TV white space}{\\relax }") ) :locref "{}{8}" :attr "pageglsnumberformat" ) 
+(indexentry :tkey (("TVWS" "\\glossaryentryfield{TVWS}{\\glsnamefont{TVWS}}{TV white space}{\\relax }") ) :locref "{}{7}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("TVBD" "\\glossaryentryfield{TVBD}{\\glsnamefont{TVBD}}{TV band devices}{\\relax }") ) :locref "{}{9}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("CCC" "\\glossaryentryfield{CCC}{\\glsnamefont{CCC}}{common control channel}{\\relax }") ) :locref "{}{11}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("DCF" "\\glossaryentryfield{DCF}{\\glsnamefont{DCF}}{distributed coordination function}{\\relax }") ) :locref "{}{15}" :attr "pageglsnumberformat" ) 

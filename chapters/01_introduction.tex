@@ -153,7 +153,7 @@ Based on the requirements of interested communication, CR users need to identify
 How is the available licensed spectrum shared among secondary users is a fundamental problem in CRN, because it decides secondary users' performance, and it also poses threat to interferer primary users.
 In this section, we introduce spectrum sharing from three different perspectives.
 
-\subsection{Classification in Respect of the Relation between Primary and Secondary Users}
+\subsection{The Relation between Primary and Secondary Users}
  sharing can also be classified by network architecture and spectrum allocation behaviour~\cite{Akyildiz09} respectively.
 In this section, we introduce these classifications to vision spectrum sharing from different prospectives.
 
@@ -192,32 +192,28 @@ Spectrum administration bodies FCC of U.S.~\cite{FCC_2010_sedond_memorandumm} an
 
 
 
-\subsection{Classification Based on Architecture}
+\subsection{Management Architecture}
 Based on architecture, spectrum sharing can be classified as centralized and distributed spectrum sharing.
 
 %Centralized spectrum decision doesn't work well outside the TV channel scenario.
 
 \subsubsection*{Centralized Scheme}
 Centralized spectrum sharing relies on a centralized entity where the strategy of spectrum usage is decided. 
-There is considerable number of centralized approaches proposed for spectrum sharing in cognitive radio network, global optimality is reported as to different objectives, but centralized solution is not suitable in many real world situations.
-
-First, central authority or controller is not available in many CRNs, \eg CRAHN.
-Second, when the centralized decision maker exists, the centralized entity needs to collect spectrum availability sensed on all the secondary users, computes the spectrum usage strategy and distributes it.
-A large number of control messages are generated during these processes.
-When primary users intensely access the spectrum, resulting in frequent change of available spectrum, the control overhead becomes higher, and it is different for the centralized entity to obtain a full and up to date picture of the spectrum availability in the whole network .
-
+There is a considerable number of centralized approaches proposed for spectrum sharing in cognitive radio network, and the global optimality is reported as to different objectives.
 Centralized scheme is suitable in certain scenarios, \eg when the primary users are TV stations and receivers which work on certain channels for hours of time, spectrum can be seen as constant. 
 When the secondary users access the spectrum in underlay paradigm, they need to take care not to cause more interference than threshold on primary users.
 In this case the channel usage, \ie working channel and transmission power, can be decided on the centralized controller.
 
+
+Nevertheless, centralized solution is not suitable in many other scenarios.
+First, central authority or controller is not available in many CRNs, \eg CRAHN.
+Second, when the centralized decision maker exists, the centralized entity needs to collect spectrum availability sensed on all the secondary users, computes the spectrum usage strategy and distributes it.
+A large number of control messages are generated during these processes.
+When primary users intensely access the spectrum and result in frequent change of available spectrum, the control overhead becomes higher, and it is different for the centralized entity to obtain a full and up to date picture of the spectrum availability in the whole network.
+
+
+
 %In wireless networks, signalling is performed to conduct resource allocation in an optimal way, which causes considerable overhead in communication.
-
-
-
-
-
-
-
 
 
 %As to cognitive radio network, implementation of centralized algorithm faces more challenges.
@@ -230,24 +226,19 @@ In this case the channel usage, \ie working channel and transmission power, can 
 %Thus distributed solutions are preferred in such varying radio environment.
 %Distributed decision of one CR user should be carefully decided as one CR's behaviour affects neighbouring CR users which go on to prompt all the CR users in the network to act accordingly.
 
-\subsubsection*{Decentralized Scheme}
-Working with distributed spectrum sharing paradigm, secondary users autonomously decide their spectrum usage strategies.
-Distributed scheme requires secondary users to exchange information \ie user ID, channel availability, etc. 
-with its neighbourhood.
+\subsubsection*{Distributed Scheme}
+When working with distributed spectrum sharing paradigm, secondary users decide their spectrum usage strategies autonomously based on the information on themselves or from their neighbourhoods.
+Consequently, distributed scheme usually requires secondary users to exchange information \ie user ID, channel availability, etc. 
+with its neighbours.
 It is reported that control overhead takes more than 50\% of messages~\cite{Han:2008:RAW:1457343}.
-If we can reduce the overhead, spectrum utilization and the number of users can be increased, and network performance can be improved.
-Decision is made only with local information, as a result, communication overhead is reduced when the distributed decision has quick convergence. 
+If we can reduce the overhead, spectrum utilization, the number of served users and the network performance can be correspondingly improved.
 As distributed schemes exploit mainly local observation, distributed schemes adapt to the varying environment quite well~\cite{Selforganization_CRN_13}.
-
-Distributed scheme may also make use of centralized entity when it is available and necessary, \ie secondary users can access the centralized database to retrieve available channels in IEEE 802.22 cellular networks.
+In certain scenario, distributed scheme may also makes use of centralized entity when it is available and necessary, \ie secondary users can access the centralized database to retrieve available channels in IEEE 802.22 cellular networks.
 
 %Signalling overhead is even more considerable as the channel state varies due to primary user activity.
 %Thus the distributed scheme is more suitable than cognitive radio networks than other wireless networks.
-It is challenging to design distributed schemes.
+Although distributed scheme entails appealing lightweight computation and overhead, it is actually challenging to design in many scenarios.
 When the distributed decision is not properly designed, it is possible to trigger endless ripple effect across the network, \ie one CR's decision on its strategy prompts neighbouring CR users to change strategies, and it changes its strategy again later due to neighbours' new strategies.
-In this thesis, the interaction between CR users will be discussed under game theoretical framework.
-With certain utility function, secondary users' interaction is \textit{replicated} by a game which permits convergence.
-As to some problems, we need to carefully design the utility function so as to make the corresponding game to converge.
 
 
 
@@ -262,7 +253,7 @@ As to some problems, we need to carefully design the utility function so as to m
 
 
 
-\subsection{Classification Based on Cooperate or Not}
+\subsection{Cooperation}
 Spectrum sharing can also be categorized into cooperative and non-cooperative spectrum sharing.
 As to cooperative spectrum sharing, secondary users take into consideration of the caused interference on other secondary users when deciding their spectrum usage.
 This pattern usually requires cluster structure to facilitate the negotiation of users in a neighbourhood~\cite{Chen07}.
