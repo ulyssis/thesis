@@ -35,25 +35,23 @@ In this dissertation, we investigate the variants of congestion game, and expand
 We propose distributed schemes to solve a series of problems which reside from physical layer up to network layer in cognitive radio networks, wherein we apply congestion game to derive algorithms to solve two problems of them.
 %Based on game models, we design distributed algorithms for CR users to self-organize and utilize the available resources, which doesn't lead to global instability or performance deterioration.
 %
-On physical layer in IEEE 802.22 networks, we propose one distributed scheme deri	for secondary users to decide on the transmission channel and transmission power with little reliance on centralized entity.
+On physical layer in IEEE 802.22 networks, we propose one distributed scheme derived for secondary users to decide on the transmission channel and transmission power with little reliance on centralized entity.
 %We solve the power and spectrum allocation problem in IEEE 802.22 networks.
 After deciding the maximal transmission power on each secondary cellular base station, we formulate the distributed spectrum allocation problem in TV white space scenario into a canonical congestion game, then propose distributed algorithm enlightened by the player behaviours in the game.
 %Power allocation is then conducted on the channel decided before.
 %
 %cognitive radio users form clusters with neighbours, where they share certain common channels, in order to do cooperative sensing.
-Then, we formulate the the clustering problem in cognitive radio ad hoc network into a player specific singleton congestion game, and from where derive a distributed algorithms for the unlicensed users to form robust cluster against the primary users' random appearance
+On MAC layer in cognitive radio ad hoc networks, we formulate the clustering problem into a player specific singleton congestion game, and from where derive a distributed algorithms for the unlicensed users to form robust clusters against the primary users' random appearance.
 In order to investigate the desired performance except for converge speed, we also propose centralized schemes to give bounds on the performance.
 We compare the distributed schemes derived from games with the centralized schemes in the aspects of singling overhead and time complexity, and analysis the strength and weakness of them in different cognitive radio networks.
 %, the formed clusters should poses more common channels within them, and should be able to control their clusters sizes.
 %The negotiation among neighbouring secondary users to form clusters with above characteristics is formulated into a congestion game, then a lightweight distributed scheme is derived.
 %The proposed clustering scheme can be easily applied to other scenarios, where certain similarity exists in local area.
 %
-On network layer, we propose a lightweight geographic routing scheme which works with spectrum aware virtual coordinate for CRN. 
-The spectrum aware virtual coordinate integrates the spectrum availability between any pair of neighbouring secondary users, in particular, the distance between two secondary users is longer when the available spectrum is more scare in between them.
+On network layer in cognitive radio ad hoc networks, we propose a method to assign spectrum aware virtual coordinate to the unlicensed users, and then apply lightweight geographic routing scheme.
+As the virtual coordinate integrates the spectrum availability between any pair of neighbouring secondary users, the geographic routing can easily detour the unlicensed users which are affected by the active primary users.
+%in particular, the distance between two secondary users is longer when the available spectrum is more scare in between them.
 %
-
-
-%solving these problems, w
 %Finally, using thorough simulations and numerical results, we investigate various aspects of the proposed algorithms and analyse their performance.
 
 
