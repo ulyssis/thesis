@@ -2,6 +2,7 @@
 (indexentry :tkey (("ISM band" "\\glossaryentryfield{ISM}{\\glsnamefont{ISM band}}{industrial, scientific, and medical}{\\relax }") ) :locref "{}{1}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("5G" "\\glossaryentryfield{5G}{\\glsnamefont{5G}}{5th generation mobile networks}{\\relax }") ) :locref "{}{2}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("PU" "\\glossaryentryfield{PU}{\\glsnamefont{PU}}{primary user}{\\relax }") ) :locref "{}{2}" :attr "pageglsnumberformat" ) 
+(indexentry :tkey (("SU" "\\glossaryentryfield{SU}{\\glsnamefont{SU}}{secondary user}{\\relax }") ) :locref "{}{2}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("CR" "\\glossaryentryfield{CR}{\\glsnamefont{CR}}{cognitive radio}{\\relax }") ) :locref "{}{2}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("PDA" "\\glossaryentryfield{PDA}{\\glsnamefont{PDA}}{personal digital assistant}{\\relax }") ) :locref "{}{2}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("CRN" "\\glossaryentryfield{CRN}{\\glsnamefont{CRN}}{cognitive radio network}{\\relax }") ) :locref "{}{3}" :attr "pageglsnumberformat" ) 

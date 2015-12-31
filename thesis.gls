@@ -101,14 +101,16 @@
 \glsgroupheading{S}\relax\glsresetentrylist
 \glossaryentryfield{SINR}{\glsnamefont{SINR}}{signal-to-noise-and-interference ratio}{\relax }{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{25}\delimN 
-\glsXpageXglsnumberformat{}{26}}}\glsgroupskip
+\glsXpageXglsnumberformat{}{26}}}\relax\glsresetentrylist
+\glossaryentryfield{SU}{\glsnamefont{SU}}{secondary user}{\relax }{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{2}}}\glsgroupskip
 \glsgroupheading{T}\relax\glsresetentrylist
 \glossaryentryfield{TC}{\glsnamefont{TC}}{Time Complexity}{\relax }{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{80}}}\relax\glsresetentrylist
 \glossaryentryfield{TVBD}{\glsnamefont{TVBD}}{TV band devices}{\relax }{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{9}}}\relax\glsresetentrylist
 \glossaryentryfield{TVWS}{\glsnamefont{TVWS}}{TV white space}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{8}}}\glsgroupskip
+\glsXpageXglsnumberformat{}{7}}}\glsgroupskip
 \glsgroupheading{U}\relax\glsresetentrylist
 \glossaryentryfield{UHF}{\glsnamefont{UHF}}{Ultra high frequency}{\relax }{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{24}}}\glsgroupskip

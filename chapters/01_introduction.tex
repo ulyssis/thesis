@@ -1,7 +1,7 @@
 \chapter{INTRODUCTION}
 \label{INTRODUCTION}
 %Wireless networks utilize radio waves instead of wires to carry information, hence seamless coverage and mobility are achievable in wireless connections.
-Wireless networks have experienced unprecedented growth in the past few decades and will going on evolving in the future.
+%Wireless networks have experienced unprecedented growth in the past few decades and will going on evolving in the future.
 Due to the propagation characteristics and regulations, only a small portion of electromagnetic spectrum which spans from 8.3 kHz to 3000 GHz is suitable for commercial application.
 These spectrum is divided into bands (also referred as channels) and allocated to different services.
 %In the following, we introduce how is the spectrum accessed by different services.
@@ -14,6 +14,7 @@ This spectrum access module is referred \textit{exclusive use model}~\cite{zhao_
 For instance, the second-generation (2G) wireless cellular network \gls{gsm} (global system for mobile communications) in Europe works with GSM-900 band (from 890 MHz to 960 MHz) and GSM-1800 (1710 MHz to 1880 MHz), and the third-generation (3G) wireless cellular network works from 1.8 GHz to 2.4 GHz~\cite{wireless_communicatioins2001}.
 The excludability of licensed spectrum can also be open to other user with conditions.
 The spectrum licences either sell and trade the licensed spectrum, or dynamically use the spectrum within a certain region according to different traffic patterns~\cite{dsa_traffic_2000}.
+
 Open spectrum access~\cite{osa_Noam_1995} is proposed in 1995 for full openness of entry, which allows access to spectrum through access fees which are determined by demand and supply.
 It is claimed that open spectrum access brings in benefits, as for spectrum licensees, the fixed costs on securing the licensed spectrum can be converted into marginal costs, and for the market, the incentives for collusive pricing can be eliminated.
 But as the \textit{openness} here is fully controlled by the licensees, this spectrum usage is still exclusive .
@@ -22,16 +23,17 @@ But as the \textit{openness} here is fully controlled by the licensees, this spe
 In contrary to exclusive use model, certain spectrum are assigned for open sharing for peer users, the representative example is the unlicensed industrial, scientific, and medical (\gls{ISM}) radio band, which supports versatile wireless applications and a prosperous industry, \ie WiFi.
 Many spectrum sharing strategies are proposed to cope with the technical challenges~\cite{Ko_DistributedCA}.
 
-\section{Hierarchical Spectrum Access}
-\label{hierarchical}
+%
 The proliferation of wireless network constantly arises urgent demand on bandwidth and throughput since the first generation of telecommunication in 1980s, which accordingly encourages the efficient use and reuse of the electromagnetic spectrum.
 The next generation of telecommunication technology \gls{5G}, which is reported to come true in 2020, requires a leap forward of spectrum efficiency~\cite{5G_2014}.
 The resorted applications under the label of 5G~\cite{5directions5G_2014}, \ie machine to machine communication, internet of things, etc, requires high speed and lower investment cost, but this is changeling as the achieved capacity approaches Shannon capacity, and most spectrum are licensed.
 Meanwhile, the actual spectrum usage measurement conducted by FCC tells that at many locations or time, the licensed spectrum is idle~\cite{FCC_spectrumEfficiency_2002}, and there exists a large number of spectrum bands which have considerable dormant time intervals ~\cite{Akyildiz06survey}.
 
-
-To seek more opportunities from spectrum, it is natural to consider opening the licensed spectrum to unlicensed users, if the interference perceived by licensed users are restricted.
-We adopt the terms proposed in~\cite{zhao_survey_DSA_2007}, and call this spectrum usage policy as \textit{hierarchical access model}, where licensed users are called primary users (\glspl{PU}), and unlicensed users are named as secondary users.
+%
+To seek more opportunities from spectrum, it is natural to consider opening the licensed spectrum to unlicensed users to use, when the spectrum is not been used by licensed users, or the the licensed users' operation is not hampered.
+%\section{Hierarchical Spectrum Access}
+%\label{hierarchical}
+We adopt the terms proposed in~\cite{zhao_survey_DSA_2007}, and call this spectrum usage policy as \textit{hierarchical access model}, where licensed users are called primary users (\glspl{PU}), and unlicensed users are named as secondary users (\glspl{SU}).
 Hierarchical access model gives a promising solution to the reclamation of new electromagnetic spectrum and the improvement of spectrum efficiency.
 
 
@@ -77,22 +79,21 @@ Hierarchical access model gives a promising solution to the reclamation of new e
 
 
 
-\section{Cognitive Radio}
+\section{Cognitive Radio Network}
 %\cite{spectrumSharingGames_interference_stackelberg_2009, spectrum_sharing_games_2010} spacial opportunistic allocation.
 
-
-Throughout this thesis, we use \textit{cognitive radio networks} to compound the networks composed with secondary users which work in either spectrum underlay or spectrum overlay style.
-There are two reasons, firstly, this name explicitly tells a distinctive property of the devices in the networks, their cognition to their environment, secondly, cognitive radio has become a synonym of the technology employed in the hierarchical spectrum access paradigm in academia and industry in the recent years.
-
-
+A cognitive radio network is composed with secondary users and work with the hierarchical access model.
+Throughout this thesis, we use \textit{cognitive radio networks} to compound the networks composed with secondary users, 
+% which work in either spectrum underlay or spectrum overlay style.
+there are two reasons, firstly, this name explicitly tells a distinctive property of the devices in the networks, which is their cognition ability to their environment, secondly, cognitive radio has become a synonym of the technology employed in the hierarchical spectrum access paradigm in academia and industry in the recent years.
 
 %The dilemma that spectrum scarcity coexists with spectrum underutilization promotes cognitive radio (CR) as a promising technology to make full use of spectrum and accordingly solve the spectrum shortage problem.
 
 The definition of cognitive radio evolves with the development of radio technology and regulations.
-We choose two representative definitions to give a formal description of cognitive radio.
+We choose two representative definitions to draw a full picture of cognitive radio.
 Cognitive radio (\gls{CR}) is firstly proposed by Mitola III who defines the concept of CR in his dissertation~\cite{2000mitola_cognitive_radio} as follows:
 %
-\blockquote{... personal digital assistants (\glspl{PDA}) and the related networks are sufficiently computationally intelligent about radio resources and related computer-to-computer communications to detect user communications needs as a function of use context, and to provide radio resources and wireless services most appropriate to those needs.
+\blockquote{The point in which personal digital assistants (\glspl{PDA}) and the related networks are sufficiently computationally intelligent about radio resources and related computer-to-computer communications to detect user communications needs as a function of use context, and to provide radio resources and wireless services most appropriate to those needs.
 }
 
 FCC (Federal Communications Commission in U.S.) describes CR~\cite{FCC_03-322} as,
@@ -101,9 +102,10 @@ a radio that can change its transmitter parameters based on interaction with the
 This interaction may involve active negotiations with other spectrum users and/or passive sensing and decision making (smart radio) within the radio. The majority of CRs will probably be SDRs~\footnote{software defined radio is a radio communication system which is able to receive any modulation across a large frequency spectrum, and transmit on desired spectrum band.}, but a CR does not necessarily use software, nor does it need to be field programmable.
 }
 
-In this thesis, we see cognitive radio as a device which is able to sense, detect, learn and monitor the surrounding radio frequency environment, or to access a certain database to retrieve primary users' information, so as to reconfigure its radio operating parameters (\eg center frequency, bandwidth and transmit power) on the fly to avoid interfering primary users.
+The first one depicts the functionalities of cognitive radio, and the second one describe the role of cognitive radio in a network.
+In this dissertation, we see cognitive radio as a device which is able to sense, detect, learn and monitor the surrounding radio frequency environment, or to access a certain database to retrieve primary users' information, so as to reconfigure its radio operating parameters (\eg center frequency, bandwidth and transmit power) on the fly to avoid interfering primary users.
 Cognitive radio may only practice one portion of the aforementioned functionalities according to actual situation.
-Apparently, the cognitive radio users which conduct spectrum sensing are usually work with spectrum overlay paradigm, and the cognitive radio users which have means to get information of primary users are suitable to work with spectrum underlay paradigm.
+Apparently, the cognitive radio users which conduct spectrum sensing are usually work with spectrum overlay paradigm (introduced in Section~\ref{overlay}), and the cognitive radio users which have means to get information of primary users are suitable to work with spectrum underlay paradigm (introduced in Section~\ref{underlay}).
 Based on this definition, throughout this thesis the secondary users working with both spectrum underlay and overlay are named as cognitive radio users, besides, the cognitive radio network is deemed to be composed with cognitive radio users, whose acronym is \gls{CRN}.
 
 
@@ -150,17 +152,20 @@ Based on the requirements of interested communication, CR users need to identify
 
 
 \section{Spectrum Sharing Paradigms}
-How is the available licensed spectrum shared among secondary users is a fundamental problem in CRN, because it decides secondary users' performance, and it also poses threat to interferer primary users.
+How is the available licensed spectrum shared among secondary users is a fundamental problem in CRN. Spectrum sharing decides secondary users' performance, and it also poses threat of interfering primary users.
+Thus, spectrum sharing largely defines the challenges and considerations one cognitive radio network faces.
 In this section, we introduce spectrum sharing from three different perspectives.
 
-\subsection{The Relation between Primary and Secondary Users}
- sharing can also be classified by network architecture and spectrum allocation behaviour~\cite{Akyildiz09} respectively.
-In this section, we introduce these classifications to vision spectrum sharing from different prospectives.
+\subsection{Spectrum Underlay and Spectrum Overlay}
+%Spectrum sharing can be classified by network architecture and spectrum allocation behaviour~\cite{Akyildiz09} respectively.
+%In this section, we introduce these classifications to vision spectrum sharing from different prospectives.
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 \subsubsection*{Spectrum Underlay}
-One approach is \textit{spectrum underlay}, where the interference generated by secondary users on the primary receivers should be under a threshold. 
-This kind of spectrum sharing restricts the secondary users' transmission power, but is able to achieve high data rate in short range.
-When implementing spectrum underlay, secondary users are allowed to operate near the primary users when the interference caused on primary users is taken care~\cite{Ellingsaeter2012_Increasing_Available}.
+\label{underlay}
+Working with \textit{spectrum underlay}, secondary users are allowed to transmitting even when some primary users are detected or known to be operating on the same chuck of spectrum, but the interference generated by secondary users on the primary receivers should be under a threshold. 
+Spectrum underlay restricts the secondary users' transmission power, but secondary users are still able to achieve high data rate in short range.
+When implementing spectrum underlay, secondary users are allowed to operate in the close vicinity of primary users when the interference caused on primary users is taken care~\cite{Ellingsaeter2012_Increasing_Available}.
 Figure~\ref{underlay} shows a spectrum underlay sharing scenario, where some secondary users operate within the TV service area when the caused interference by the secondary users on the TV receiver is lower than threshold.
 
 Spectrum underlay is mainly conducted with a centralized controller, which has global knowledge of primary users' location, the attenuation between all secondary transmitters and all primary receivers.
@@ -177,8 +182,9 @@ Working with spectrum underlay paradigm, spectrum sensing functionality on secon
 
 
 \subsubsection*{Spectrum Overlay}
+\label{overlay}
 The other approach is \textit{spectrum overlay}, where secondary transmitters are only allowed to transmit when the primary users are detected as being idle.
-In this paradigm, secondary users should monitor the spectrum of interest preactively to detect primary users' appearance.
+Working with this paradigm, secondary users should monitor the spectrum of interest preactively to detect primary users' appearance.
 The detection metrics include received primary users' signal power, spectral correlation or beacons~\cite{crnsensing_09}.
 Spectrum sensing requires sophisticated technologies when primary users' signal is weak, and can be improved by learning technologies or cooperation among multiple secondary users~\cite{coorperativeSensing_Akyildiz11}.
 When spectrum sensing accuracy can be guaranteed above certain threshold, transmission power restrictions can be removed from  secondary users.
@@ -192,8 +198,8 @@ Spectrum administration bodies FCC of U.S.~\cite{FCC_2010_sedond_memorandumm} an
 
 
 
-\subsection{Management Architecture}
-Based on architecture, spectrum sharing can be classified as centralized and distributed spectrum sharing.
+\subsection{Centralized and Distributed Solutions}
+Based on management architecture, spectrum sharing can be classified as centralized and distributed spectrum sharing.
 
 %Centralized spectrum decision doesn't work well outside the TV channel scenario.
 
@@ -250,10 +256,7 @@ When the distributed decision is not properly designed, it is possible to trigge
 %The distinctive view on spectrum availability and varying radio environment make distributed solution a natural choice for CRN network.
 
 
-
-
-
-\subsection{Cooperation}
+%\subsection{Cooperation}
 Spectrum sharing can also be categorized into cooperative and non-cooperative spectrum sharing.
 As to cooperative spectrum sharing, secondary users take into consideration of the caused interference on other secondary users when deciding their spectrum usage.
 This pattern usually requires cluster structure to facilitate the negotiation of users in a neighbourhood~\cite{Chen07}.
@@ -281,6 +284,7 @@ For instance, non-cooperative spectrum sharing is usually conducted in distribut
 
 %Whenever primary users are detected, the secondary users have to either jump to other spectrum, or turn down its transmission power to avoid interfering the primary users.
 
+\section{Distributed Solutions and Game in CRN}
 
 
 \section{Representative Cognitive Radio Networks}
