@@ -102,12 +102,11 @@ a radio that can change its transmitter parameters based on interaction with the
 This interaction may involve active negotiations with other spectrum users and/or passive sensing and decision making (smart radio) within the radio. The majority of CRs will probably be SDRs~\footnote{software defined radio is a radio communication system which is able to receive any modulation across a large frequency spectrum, and transmit on desired spectrum band.}, but a CR does not necessarily use software, nor does it need to be field programmable.
 }
 
-The first one depicts the functionalities of cognitive radio, and the second one describe the role of cognitive radio in a network.
+The first definition depicts the functionalities of cognitive radio devices, and the second one mentions the relationships between cognitive radio users and the network which it resides.
 In this dissertation, we see cognitive radio as a device which is able to sense, detect, learn and monitor the surrounding radio frequency environment, or to access a certain database to retrieve primary users' information, so as to reconfigure its radio operating parameters (\eg center frequency, bandwidth and transmit power) on the fly to avoid interfering primary users.
 Cognitive radio may only practice one portion of the aforementioned functionalities according to actual situation.
 Apparently, the cognitive radio users which conduct spectrum sensing are usually work with spectrum overlay paradigm (introduced in Section~\ref{overlay}), and the cognitive radio users which have means to get information of primary users are suitable to work with spectrum underlay paradigm (introduced in Section~\ref{underlay}).
 Based on this definition, throughout this thesis the secondary users working with both spectrum underlay and overlay are named as cognitive radio users, besides, the cognitive radio network is deemed to be composed with cognitive radio users, whose acronym is \gls{CRN}.
-
 
 
 \subsection{Spectrum Management}
@@ -120,6 +119,8 @@ In underlay spectrum usage scenario, CR users get to know the available spectrum
 In overlay spectrum usage scenario, secondary users can in principle access all the licensed spectrum.
 In this procedure, quality of the available channels is determined with several parameters, \ie band width, operating frequency, path loss, wireless link errors, link layer delay, and the upper bound of interference on the primary user working on that channel, which decides the maximal permissible transmission power of secondary users.
 Besides, the statistical behaviours of primary users is also an important factor.
+
+Spectrum administration bodies FCC of U.S.~\cite{FCC_2010_sedond_memorandumm} and Electronic Communications Committee (\gls{ECC}) in Europe~\cite{ecc159} encourage to adopt both spectrum sensing and location based method.
 
 \subsubsection*{Spectrum Decision}
 After knowing the available spectrum, CR users select the most appropriate band according to their requirements on quality of service (QoS).
@@ -159,7 +160,9 @@ In this section, we introduce spectrum sharing from three different perspectives
 \subsection{Spectrum Underlay and Spectrum Overlay}
 %Spectrum sharing can be classified by network architecture and spectrum allocation behaviour~\cite{Akyildiz09} respectively.
 %In this section, we introduce these classifications to vision spectrum sharing from different prospectives.
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+The two spectrum sharing models, spectrum underlay and overlay origin from the instinctive understandings of people as to the hierarchical access model, and the different claims on how to effectively protect the primary users' interests.
+
+
 
 \subsubsection*{Spectrum Underlay}
 \label{underlay}
@@ -184,7 +187,8 @@ Working with spectrum underlay paradigm, spectrum sensing functionality on secon
 \subsubsection*{Spectrum Overlay}
 \label{overlay}
 The other approach is \textit{spectrum overlay}, where secondary transmitters are only allowed to transmit when the primary users are detected as being idle.
-Working with this paradigm, secondary users should monitor the spectrum of interest preactively to detect primary users' appearance.
+This kind of spectrum sharing strictly protects the primary users, but entails burden on secondary users especially on the aspect of spectrum sensing.
+Working with this paradigm, secondary users should monitor the spectrum of interest pre-actively to detect primary users' appearance.
 The detection metrics include received primary users' signal power, spectral correlation or beacons~\cite{crnsensing_09}.
 Spectrum sensing requires sophisticated technologies when primary users' signal is weak, and can be improved by learning technologies or cooperation among multiple secondary users~\cite{coorperativeSensing_Akyildiz11}.
 When spectrum sensing accuracy can be guaranteed above certain threshold, transmission power restrictions can be removed from  secondary users.
@@ -193,7 +197,7 @@ When spectrum sensing accuracy can be guaranteed above certain threshold, transm
 %
 
 
-Spectrum administration bodies FCC of U.S.~\cite{FCC_2010_sedond_memorandumm} and Electronic Communications Committee (\gls{ECC}) in Europe~\cite{ecc159} encourage to adopt both spectrum sensing and location based method.
+
 %Secondary users' operation is restricted on certain spectrum bands and transmit power should be below certain threshold according  to their locations, and spectrum sensing ability is also required.
 
 
