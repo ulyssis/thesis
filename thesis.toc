@@ -1,22 +1,21 @@
 \contentsline {chapter}{Abstract}{i}{Doc-Start}
 \contentsline {chapter}{\numberline {1}INTRODUCTION}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Cognitive Radio Network}{2}{section.1.1}
-\contentsline {subsection}{\numberline {1.1.1}Spectrum Management}{3}{subsection.1.1.1}
-\contentsline {section}{\numberline {1.2}Spectrum Sharing Paradigms}{4}{section.1.2}
-\contentsline {subsection}{\numberline {1.2.1}Spectrum Underlay and Spectrum Overlay}{4}{subsection.1.2.1}
-\contentsline {subsection}{\numberline {1.2.2}Centralized and Distributed Solutions}{6}{subsection.1.2.2}
-\contentsline {section}{\numberline {1.3}Distributed Solutions and Game in CRN}{7}{section.1.3}
-\contentsline {section}{\numberline {1.4}Representative Cognitive Radio Networks}{7}{section.1.4}
-\contentsline {subsection}{\numberline {1.4.1}Cognitive Radio Ad Hoc Network}{7}{subsection.1.4.1}
-\contentsline {subsection}{\numberline {1.4.2}Cognitive Radio Cellular Network}{7}{subsection.1.4.2}
-\contentsline {subsection}{\numberline {1.4.3}CRN Working with TV White Space}{7}{subsection.1.4.3}
-\contentsline {section}{\numberline {1.5}Problem Statement}{10}{section.1.5}
-\contentsline {subsection}{\numberline {1.5.1}Channel and Power Allocation in IEEE 802.22 Network}{11}{subsection.1.5.1}
-\contentsline {subsection}{\numberline {1.5.2}Robust Clustering in Ad Hoc Cognitive Radio Network}{11}{subsection.1.5.2}
-\contentsline {subsection}{\numberline {1.5.3}Geographic Routing in CRN with Spectrum Aware Virtual Coordinate}{12}{subsection.1.5.3}
-\contentsline {subsection}{\numberline {1.5.4}Research Questions}{12}{subsection.1.5.4}
-\contentsline {section}{\numberline {1.6}Contributions}{12}{section.1.6}
-\contentsline {section}{\numberline {1.7}Outline}{14}{section.1.7}
+\contentsline {subsection}{\numberline {1.1.1}Spectrum Sharing in CRN}{3}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.2}Spectrum Management}{5}{subsection.1.1.2}
+\contentsline {subsection}{\numberline {1.1.3}Operation model of CRN}{6}{subsection.1.1.3}
+\contentsline {section}{\numberline {1.2}Distributed Solutions and Game in CRN}{7}{section.1.2}
+\contentsline {section}{\numberline {1.3}Representative Cognitive Radio Networks}{7}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Cognitive Radio Ad Hoc Network}{7}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}Cognitive Radio Cellular Network}{8}{subsection.1.3.2}
+\contentsline {subsection}{\numberline {1.3.3}CRN Working with TV White Space}{8}{subsection.1.3.3}
+\contentsline {section}{\numberline {1.4}Problem Statement}{10}{section.1.4}
+\contentsline {subsection}{\numberline {1.4.1}Channel and Power Allocation in IEEE 802.22 Network}{11}{subsection.1.4.1}
+\contentsline {subsection}{\numberline {1.4.2}Robust Clustering in Ad Hoc Cognitive Radio Network}{11}{subsection.1.4.2}
+\contentsline {subsection}{\numberline {1.4.3}Geographic Routing in CRN with Spectrum Aware Virtual Coordinate}{12}{subsection.1.4.3}
+\contentsline {subsection}{\numberline {1.4.4}Research Questions}{12}{subsection.1.4.4}
+\contentsline {section}{\numberline {1.5}Contributions}{13}{section.1.5}
+\contentsline {section}{\numberline {1.6}Outline}{14}{section.1.6}
 \contentsline {chapter}{\numberline {2}BACKGROUND}{15}{chapter.2}
 \contentsline {section}{\numberline {2.1}Algorithmic Game Theory}{15}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}Basics of Game}{16}{subsection.2.1.1}
@@ -84,7 +83,7 @@
 \contentsline {section}{\numberline {6.1}Contribution}{107}{section.6.1}
 \contentsline {section}{\numberline {6.2}Future Work}{108}{section.6.2}
 \vspace *{\baselineskip }
-\contentsline {chapter}{Bibliography}{111}{section*.60}
-\contentsline {chapter}{List of Figures}{122}{section*.60}
-\contentsline {chapter}{List of Tables}{126}{section*.60}
-\contentsline {chapter}{Glossary}{128}{section*.60}
+\contentsline {chapter}{Bibliography}{111}{section*.61}
+\contentsline {chapter}{List of Figures}{122}{section*.61}
+\contentsline {chapter}{List of Tables}{126}{section*.61}
+\contentsline {chapter}{Glossary}{128}{section*.61}
