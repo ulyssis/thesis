@@ -2,9 +2,7 @@
 \label{background}
 %Some mathematical techniques which are used to solve the problems in thesis are introduced in this chapter.
 %Neel06analysisand
-In the past few years, game theory has been extensively applied to problems in communication and networking~\cite{Neel06analysisand, Wang_gtc_crn_survey_2010}.
-Game theory is a powerful mathematical tool for studying, modelling and analysing the interaction among rational decision makers which have potential conflicting objectives.
-When the network entities are seen to be self-interested rational, game theoretic approach can guide the behaviours of them, so as to achieve desirable collective behaviours and performance with respect to the system level objective.
+
 In contrary to game theory where players agree on an equilibrium via autonomous behaviours, optimization problem, which attempts to optimize the welfare of either one equipment or whole network, is usually conducted on a single decision maker.
 In the following, we introduce some basics of game theory and optimization.
 
@@ -15,44 +13,7 @@ In the following, we introduce some basics of game theory and optimization.
 \section{Algorithmic Game Theory}
 
 
-Game theoretic models are used to understand many challenging problems in communication systems, such as resource allocation, topology control, routing, security and so on. 
-%In recent years, game theory attracts people attention into apply it in communication systems.
-There are several reasons to apply game theory in communication systems.
-\begin{itemize}
-\item \textbf{Communication equipments are rational.}
-Although current communication equipments involve only a little artificial intelligence, they are supposed to be manufactured and operate based on standards to fulfil certain functions, but selfish behaviour may appear on certain individual equipments to achieve advantages over their peers~\cite{game_for_communication_01}.
 
-In communication system, a device is programmed to maximize the expected utility, which is perfectly rational.
-For instance, Wi-Fi equipments are manufactured complying the IEEE 802.11 standards.
-But it is possible that certain manufacturers or the personal who uses the Wi-Fi system (we use station in the following) manipulate certain parameters to obtain performance advantage over other stations in the network.
-When all the stations in one network are supposed to run distributed coordination function (\gls{DCF}), \ie the station must wait a random period of time, which is called contention window (\gls{CW}), before accessing the media when it senses the media to be busy, a certain selfish station may not choose to wait and is keen on sensing media.
-The selfish behaviour causes more collisions for other stations, and possibly results in poor performance in the network.
-%In this case, the access point finds more packets coming from that selfish user, but is unaware of its selfishness and has no means to adjust or punish this selfish user.
-In this case, game theory facilitates the network operator to issue rules to make the selfish behaviour unprofitable, or it helps to analyse how much the impact can be caused by the selfish stations.
-% can tell the access point or network operator the impact caused by the selfish systems, and possibly 
-
-\item \textbf{Game theory is effective to solve networking problems.}
-Algorithms can be retrieved from the analysis of a problem under the game theoretical framework.
-In the same example of media access in IEEE 802.11 DCF mentioned in previous item, if stations are allowed to modify the length of contention window, each station will adjust its contention window to obtain the best performance.
-\cite{contentiongame_07} shows as long as each station greedily updates its CW to maximize certain utility, after certain time the system will stabilize as the current CW is the optimal for every station.
-Such best response naturally defines an algorithm for Wi-Fi systems.
-%
-Besides, outcome from game theory is robust~\cite{Han:2008:RAW:1457343}.
-
-
-
-\item \textbf{Game theory is suitable to apply in cognitive radio network because of the properties of CRN.}
-Firstly, as only local information is needed to feed each user, game theory is naturally suitable for designing distributed solutions for cognitive radio networks.
-Distributed solutions doesn't rely on centralized controller, and each user in the network adopts certain action as response to the other users or environment, this falls in the scope of game theory.
-Distributed schemes usually lead to Nash equilibrium (\gls{NE}), which is usually sub optimal.
-As comparison, although optimization is the common tool to pursue global optimality, when the information is not accurate or adequate enough, or the optimization itself is difficult to solve, the optimized results can be far from optimal.
-
-%
-Secondly, combinatorial nature of communication problems makes game theory as one of a few choices~\cite{Han:2008:RAW:1457343}.
-Many problems in wireless communication involve integer variables, \ie channel availability, channel assignment, selection of modulation levels or channel coding.
-It is always challenging to solve combinatorial optimization problems, whereas game theory is natural to describe it in a discrete form.
-
-\end{itemize}
 
 
 
