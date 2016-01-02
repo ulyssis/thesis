@@ -109,14 +109,12 @@ Apparently, the cognitive radio users which conduct spectrum sensing are usually
 Based on this definition, throughout this thesis the secondary users working with both spectrum underlay and overlay are named as cognitive radio users, besides, the cognitive radio network is deemed to be composed with cognitive radio users, whose acronym is \gls{CRN}.
 
 \subsection{Spectrum Sharing in CRN}
-Spectrum sharing contains two related sub problems, the spectrum sharing between the primary users and secondary users, and that among the secondary users.
+Spectrum sharing is composed with two sub problems, the spectrum sharing between the primary users and secondary users, and that among the secondary users.
 The first sub problem is fundamental to the hierarchical access model, as it poses threat of interfering primary users.
 The second sub problem decides the services people can obtain from CRN.
 Thus, spectrum sharing largely defines the challenges and considerations one cognitive radio network faces.
-In the following, we introduce the first sub problem of spectrum sharing, and deal with the second one when we take about the individual problems.
-%In this section, we introduce spectrum sharing from three different perspectives.
 
-There are two spectrum sharing models, spectrum underlay and overlay.
+As to the spectrum sharing between primary users and secondary users, there are two models, spectrum underlay and overlay.
 They origin from the instinctive understandings of people as to the hierarchical access model, and the different claims on how to effectively protect the primary users' interests.
 %\subsection{Spectrum Underlay and Spectrum Overlay}
 %Spectrum sharing can be classified by network architecture and spectrum allocation behaviour~\cite{Akyildiz09} respectively.
@@ -213,19 +211,24 @@ Based on the requirements of interested communication, CR users need to identify
 
 
 
-\subsection{Operation model of CRN}
+\subsection{Operation model of spectrum sharing in CRN}
 Based on management architecture, spectrum sharing can be classified as centralized and distributed spectrum sharing.
 
 %Centralized spectrum decision doesn't work well outside the TV channel scenario.
 
 \subsubsection*{Centralized Scheme}
-Centralized spectrum sharing relies on a centralized entity where the strategy of spectrum usage is decided. 
-There is a considerable number of centralized approaches proposed for spectrum sharing in cognitive radio network, and the global optimality is reported as to different objectives.
+Centralized spectrum sharing is conducted on a centralized entity to decide the secondary users' strategies to operate in the CRN.
+There is a considerable number of centralized approaches proposed for spectrum sharing in cognitive radio network, and the global optimality is reported as to different objectives in certain cases.
+%
+The centralized solution is usually realized by formulating the communication problems into optimization problems.
+There has been a good number of works in this regards~\cite[Chapter~6]{Han:2008:RAW:1457343}.
+When the problems can not be formulated into linear programming, or convex programming problems where optimal is difficult to obtain, certain heuristic methods are available to find out the solution which  approaches to the optimal, \eg simulated annealing [xxx], generic algorithm [xxx], and ant algorithm etc.
+
+
 Centralized scheme is suitable in certain scenarios, \eg when the primary users are TV stations and receivers which work on certain channels for hours of time, spectrum can be seen as constant. 
 When the secondary users access the spectrum in underlay paradigm, they need to take care not to cause more interference than threshold on primary users.
 In this case the channel usage, \ie working channel and transmission power, can be decided on the centralized controller.
-
-
+%
 Nevertheless, centralized solution is not suitable in many other scenarios.
 First, central authority or controller is not available in many CRNs, \eg CRAHN.
 Second, when the centralized decision maker exists, the centralized entity needs to collect spectrum availability sensed on all the secondary users, computes the spectrum usage strategy and distributes it.
