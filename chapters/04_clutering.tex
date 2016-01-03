@@ -135,7 +135,11 @@ The available channels sensed on secondary user $i$ is denoted by $V_i$ and $\ve
 
 Any user outside the transmission range of the transmitter can not receive data from it, \ie  any CR user outside primary users' transmission ranges can not detect their existence, whereas a CR user can always communicate with CR sender, or detect the operating primary user, when it locates within the CR sender or the operating primary user's transmission range.
 As the transmission range of primary users is limited and secondary users are at different locations, secondary users have different views on the occupancy of the spectrum (apart from the fact that there might be false negatives in the sensing process), i.e., $V_i \neq V_j$, for $i \neq j$.
-One control channel\footnote{Note that the assumption on control message is only to simplify the discussion so that we can focus on the kernel of this chapter, robustness of clusters. The control messages involved during the clustering process can be conveyed on available licensed channels, \eg with channel hopping~\cite{channelHopping_Rendezvous_2014}. Control message can be served by ISM band or other reserved channels which are exclusively used for transmitting control messages. } is assumed to be available for the CR nodes to exchange control messages in the process of cluster formation.
+One dedicated control channel is assumed to be available for all the CR nodes to exchange control messages with neighbours in the process of cluster formation.
+The control channel could be in ISM band or other reserved spectrum which is exclusively used for transmitting control messages.
+Note that the assumption of dedicated control channel is to simplify the discussion so that we can focus on the kernel of this chapter, robustness of clusters.
+%One control channel makes a CR user to establish a link for communication with its neighbours.
+Actually, the control messages involved in the clustering process can be conveyed on available licensed channels through rendezvous process by channel hopping~\cite{channelHopping_Rendezvous_2014, Gu_distributed_rendezvous_2014}. 
 The transmission range of CR user on control channel is identical with that on licensed channel.
 Over the control channel, secondary users exchange their spectrum sensing results $V_{i}$ with one hop neighbours. 
 

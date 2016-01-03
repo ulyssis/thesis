@@ -13,7 +13,7 @@ In the following, we introduce some basics of game theory and optimization.
  
 
 %\todo[inline]{expand: Introduction of game theory...}
-\section{Basics of Game}
+\section{Introduction of Game}
 %Game theory is established by Nash in xxxx, and is applied in network communication since xxx
 In this section, we give a brief introduction of game theory and congestion game which is applied to solve problems in our thesis.
 The notations used in this thesis comply with~\cite{agt_book}.
@@ -150,7 +150,7 @@ Whereas as to a general game, the payoff or cost of each player depends on both 
 \subsection{Potential Game}
 \url{http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-254-game-theory-with-engineering-applications-spring-2010/lecture-notes/MIT6_254S10_lec08.pdf}
 
-\subsection{Congestion Game}
+\section{Congestion Game}
 In accordance with~\cite{Voecking06congestiongames}, congestion game is a game where players simultaneously allocate sets of resources to minimize their costs, and the cost of a resource is a function of congestion, which is the number of players choosing the resource.
 Congestion games can be formulated from many problems in realistic world, \eg minimisation of commuting time on the road for commuters, minimization of energy consumption in mobile cloud computing system~\cite{game_cloudcomputing_energy12}.
 
@@ -172,15 +172,23 @@ Congestion games can be formulated from many problems in realistic world, \eg mi
 
 
 Now we give the formal definition of a congestion game.
-A congestion game \cite{Rosenthal}\cite{Voecking06congestiongames} can be expressed by a tuple $\lambda=(\mathcal{N},\mathcal{R},(\mathcal{S}_i)_{i \in \mathcal{N}},(g_r)_{r\in \mathcal{R}})$, where $\mathcal{N}=\left\{1,\ldots,N\right\}$ denotes the set of players (each each is labeled with a unique index number), $\mathcal{R}=\left\{1,\ldots,m\right\}$ the set of resources, $\Sigma_{i\in\mathcal{N}} \subseteq 2^{\mathcal{R}}$ is the strategy space of player $i$. 
+A congestion game \cite{Rosenthal}\cite{Voecking06congestiongames} can be expressed by a tuple $\lambda=(\mathcal{N},\mathcal{R},(\mathcal{S}_i)_{i \in \mathcal{N}},(g_r)_{r\in \mathcal{R}})$, where
+\begin{itemize}
+\item $\mathcal{N}=\left\{1,\ldots,N\right\}$ denotes the set of players (each each is labeled with a unique index number)
+\item $\mathcal{R}=\left\{1,\ldots,m\right\}$ the set of resources
+\item $\mathcal{S}_i$ is the set of resources for player to use.
+\item $\Sigma_{i\in\mathcal{N}} \subseteq 2^{\mathcal{R}}$ is the strategy space of player $i$. 
 Under strategy profile $s=(s_1,s_2,\cdots s_N)$, player $i$ chooses strategy $s_i\in \mathcal{S}_i$, and the total number of users using resource $r$ is $n_r(s)=|\{i\mid r\in s_i\}|$. 
-The cost $g_r: \mathbb{N}\rightarrow \mathbb{Z}$ is a function of the number of users for resource $r$, $g_r^i=\sum_{r\in s_i} g_r(n_r(s))$. 
+\item The cost $g_r: \mathbb{N}\rightarrow \mathbb{Z}$ is a function of the number of users for resource $r$, $g_r^i=\sum_{r\in s_i} g_r(n_r(s))$. 
+\end{itemize}
 In our paper, $g_r^i$ is referred as congestion of a game.
 Congestion game is an attractive game model which describes the problem where participants compete for limited resources in a non-cooperative manner, it has good property that Nash equilibrium can be achieved after finite steps of best response dynamic.
 
+Congestion game has been used to model certain problems in internet-centric applications or cloud computing, where self-interested clients compete for the centralized resources and meanwhile interact with each other.
+For example, server selection is involved in distributed computing platforms~\cite{Cloud_Computing_2010}, or users downloading files from cloud, etc.
+In the following we will introduce an \textit{server matching}~\cite{kothari:congestion_serverMatching} problem to illustrate congestion game's application in communication systems.
+\subsection{Example: Server Matching}
 
-\subsubsection*{Example: Server Matching}
-We describe an exemplary congestion game \textit{server matching}~\cite{kothari:congestion_serverMatching} to illustrate the extensive application of game theory in communication systems.
 Consider a number of self-interested clients and servers as shown in Figure~\ref{server_sharing}.
 Each client is allowed to access one server.
 The latency of one server is a monotonic increasing function of the \textit{number of clients} attached to it.
@@ -195,18 +203,20 @@ When clients try to choose one server which has the shortest latency, a congesti
 More formally, this corresponding congestion game is composed of players (the self-interested clients) and resources (servers), where players are allowed to choose one certain resources to use. 
 There is cost (latency) generated on a resource for the players who use that resource, and the cost is monotonic increasing with the number of players using it. 
 As congestion game permits convergence when every players in turn adopt the strategy which leads to a better utility.
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx   math expression
+
 Thus in server matching problem, when clients in turn choose a permissible server with a smaller predicted latency, then after finite number of steps, no client has motivation to switch any more, and we reach a NE.
 %If every player greedily searches the allowed resources to decrease its cost, the dynamics will cease in Nash equilibrium, where no player has motivation to adopt a new set of resources unilaterally. 
 
-Congestion game can also be used to model many other problems in internet-centric applications or cloud computing, where self-interested clients compete for the centralized resources and meanwhile interact with each other.
-For example, server selection is involved in distributed computing platforms~\cite{Cloud_Computing_2010}, or users downloading files from cloud, etc.
 
 
 
 
 
 
-\subsubsection*{Convergence Time Towards Nash Equilibrium}
+
+\subsection{Convergence Time Towards Nash Equilibrium}
 As to the convergence of congestion game, it is known~\cite{Voecking06congestiongames} that, for every congestion game, every best response ends in finite steps.
 In the following, we introduce the sketch of the proof of this proposition, as the proof also reveals the number of steps needed to reach a Nash Equilibrium.
 

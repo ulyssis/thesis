@@ -181,19 +181,8 @@ Spectrum administration bodies FCC of U.S.~\cite{FCC_2010_sedond_memorandumm} an
 \subsubsection*{Spectrum Decision}
 After knowing the available spectrum, CR users select the most appropriate band according to their requirements on quality of service (QoS).
 This procedure involves considering the statistical behaviours of the primary users so as to accessing the channel quality fairly.
-%
-
-
-\subsubsection*{Spectrum Sharing}
-Then secondary users are to make use of these selected channels, or in other words, to share the spectrum with other secondary users. 
-As there may be multiple secondary users trying to use the same channel, spectrum sharing is important to coordinate the behaviour of secondary users to avoid deteriorating the performance of secondary users.
-Spectrum sharing involves choosing proper channels to mitigate co-channel or adjacent interference, or adjusting transmission power to achieve promise between transmitter's and other secondary users' performance, or adopting a certain media access paradigm to use the spectrum fairly and efficiently.
-Spectrum sharing also involves consideration on primary users, \ie when many secondary users work on the same channel, the accumulated interference caused by secondary users could exceed the interference threshold on primary users.
-%\todo[inline]{spectrum opportunity, detection, tracking, exploitation (whether to access, how to access, sharing),  tazhaosurveyDSA2007.}
-
-%According to \cite{08crn_survey}, 	
-%After assessing RF environment or geographic location, secondary users adjust their operational parameters such as frequency, modulation schemes and transmit power, in order to support QoS aware communications, this process is referred as spectrum decision and spectrum sharing~\cite{08crn_survey}.
-%In this thesis, spectrum decision and sharing consist the major issue discussed in this thesis.
+The available licensed spectrum which spans a wide frequency band exhibits different characteristics~\cite{spectrum_decision_TMC11}.
+Based on the requirements of interested communication, CR users need to identify the characteristics of the spectrum, which include channel quality (channel capacity, error rate, path loss, etc.)~\cite{spectrum_decision_TMC11}, channel switching delay~\cite{channel_switch_delay11}, and channel holding time, \ie the expected time duration that the primary users don't occupy the channel before any one occupies again.
 
 Some work in research community models the spectrum availability with stochastic or statistic model, which is helpful when deciding which channel to use.
 \cite{Discrete-Time_Spectrum_Occupancy_Model_DySPAN_2011} proposes discrete Markov chain and adjusts duty circle models to describe the availability of licensed spectrum for GSM on 900/1800 MHz.
@@ -201,8 +190,21 @@ Some work in research community models the spectrum availability with stochastic
 Statistics of previous sensing results is used to predict spectrum state in the future~\cite{spectrum-discovery-tmc08}.
 Such models provide more complete information on the availability of the licensed channels.
 
-The available licensed spectrum which spans a wide frequency band exhibits different characteristics~\cite{spectrum_decision_TMC11}.
-Based on the requirements of interested communication, CR users need to identify the characteristics of the spectrum, which include channel quality (channel capacity, error rate, path loss, etc.)~\cite{spectrum_decision_TMC11}, channel switching delay~\cite{channel_switch_delay11}, and channel holding time, \ie the expected time duration that the primary users don't occupy the channel before any one occupies again.
+
+
+
+\subsubsection*{Spectrum Sharing}
+Then secondary users are to make use of these channels selected in the spectrum decision procedure, and share the spectrum with both the primary users and the other secondary users.
+As there may be multiple secondary users trying to use the same channel, spectrum sharing is important to coordinate the behaviour of secondary users to avoid deteriorating the performance of secondary users.
+Spectrum sharing involves choosing proper channels to mitigate co-channel and adjacent interference~\cite{ca_crn_survey_2013}, or adjusting transmission power to achieve promise between transmitter's and other secondary users' performance~\cite{pa_crn_survey_2012}, or adopting a certain media access paradigm to use the spectrum fairly and efficiently.
+Spectrum sharing also involves consideration on primary users, \ie when many secondary users work on the same channel, the accumulated interference caused by secondary users could exceed the interference threshold on primary users.
+%\todo[inline]{spectrum opportunity, detection, tracking, exploitation (whether to access, how to access, sharing),  tazhaosurveyDSA2007.}
+
+%According to \cite{08crn_survey}, 	
+%After assessing RF environment or geographic location, secondary users adjust their operational parameters such as frequency, modulation schemes and transmit power, in order to support QoS aware communications, this process is referred as spectrum decision and spectrum sharing~\cite{08crn_survey}.
+%In this thesis, spectrum decision and sharing consist the major issue discussed in this thesis.
+
+
 
 
 
@@ -222,7 +224,7 @@ There is a considerable number of centralized approaches proposed for spectrum s
 %
 The centralized solution is usually realized by formulating the communication problems into optimization problems.
 There has been a good number of works in this regards~\cite[Chapter~6]{Han:2008:RAW:1457343}.
-When the problems can not be formulated into linear programming, or convex programming problems where optimal is difficult to obtain, certain heuristic methods are available to find out the solution which  approaches to the optimal, \eg simulated annealing [xxx], generic algorithm [xxx], and ant algorithm etc.
+When the problems can not be formulated into linear programming, or convex programming problems where optimal is easy to obtain, certain heuristic methods are available to find out the solution which  approaches to the optimal, \eg simulated annealing [xxx], generic algorithm [xxx] and ant algorithm etc.
 
 
 Centralized scheme is suitable in certain scenarios, \eg when the primary users are TV stations and receivers which work on certain channels for hours of time, spectrum can be seen as constant. 
@@ -260,7 +262,7 @@ Consequently, distributed scheme usually requires secondary users to exchange in
 It is the primary users which distinct CRN from other networks.
 Primary users' usually unexpected operation pattern results in dynamic spectrum availability for secondary users.
 As distributed schemes exploit mainly local observation, distributed schemes help the secondary users to adapt to the varying environment quite well~\cite{Selforganization_CRN_13}.
-
+%
 In certain scenarios, distributed scheme may also make use of centralized entity when it is available and necessary, \ie secondary users can access the centralized database to retrieve the available channels in IEEE 802.22 cellular networks.
 
 %Signalling overhead is even more considerable as the channel state varies due to primary user activity.
@@ -271,11 +273,12 @@ When the distributed decision is not properly designed, it is possible to trigge
 The distributed schemes designed for CRN can be roughly grouped into the following categories.
 \begin{itemize}
 \item Heuristic methods. 
-This is the most common method.
 \item Learning schemes.
 Slow convergence, the application scope is narrow.
 \item Analytical methods.
 Complex.
+\item Game theory
+(a transition to game theory)
 \end{itemize}
 
 

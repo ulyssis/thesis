@@ -320,6 +320,15 @@ Report of the spectrum efficiency working group.
 \newblock In {\em Proceedings of IEEE Military Communications Conference
   2006\/} (Oct 2006), pp.~1--7.
 
+\bibitem{Gu_distributed_rendezvous_2014}
+{\sc Gu, Z., Hua, Q.-S., and Dai, W.}
+\newblock Fully distributed algorithms for blind rendezvous in cognitive radio
+  networks.
+\newblock In {\em in Proceedings of the 15th ACM International Symposium on
+  Mobile Ad Hoc Networking and Computing\/} (New York, NY, USA, 2014), MobiHoc
+  '14, ACM, pp.~155--164.
+\newblock \url{http://doi.acm.org/10.1145/2632951.2632981}.
+
 \bibitem{geoTVprotection08dyspan}
 {\sc Gurney, D., Buchwald, G., Ecklund, L., Kuffner, S., and Grosspietsch, J.}
 \newblock Geo-location database techniques for incumbent protection in the {TV}
@@ -696,6 +705,13 @@ Report of the spectrum efficiency working group.
 \newblock In {\em Proc. of IEEE PIMRC 1998\/} (Sep 1998), vol.~3,
   pp.~1427--1432 vol.3.
 
+\bibitem{pa_crn_survey_2012}
+{\sc Sorooshyari, S., Tan, C.~W., and Chiang, M.}
+\newblock Power control for cognitive radio networks: Axioms, algorithms, and
+  analysis.
+\newblock {\em Networking, IEEE/ACM Transactions on 20}, 3 (June 2012),
+  878--891.
+
 \bibitem{clusterRoutingOverhead02infocom}
 {\sc Sucec, J., and Marsic, I.}
 \newblock Clustering overhead for hierarchical routing in mobile ad hoc
@@ -714,6 +730,13 @@ Report of the spectrum efficiency working group.
 \newblock Location information based interference control for cognitive radio
   network in {TV} white spaces.
 \newblock In {\em Proc. of IEEE WCNC 2013}, pp.~3614--3619.
+
+\bibitem{ca_crn_survey_2013}
+{\sc Tragos, E., Zeadally, S., Fragkiadakis, A., and Siris, V.}
+\newblock Spectrum assignment in cognitive radio networks: A comprehensive
+  survey.
+\newblock {\em Communications Surveys Tutorials, IEEE 15}, 3 (Third 2013),
+  1108--1135.
 
 \bibitem{omnetpp_paper08}
 {\sc Varga, A., and Hornig, R.}
@@ -820,7 +843,7 @@ Report of the spectrum efficiency working group.
 {\sc Zhang, Y., Yu, G., Li, Q., Wang, H., Zhu, X., and Wang, B.}
 \newblock Channel-hopping-based communication rendezvous in cognitive radio
   networks.
-\newblock {\em Networking, IEEE/ACM Transactions on 22}, 3 (June 2014),
+\newblock {\em IEEE/ACM Transactions on Networking 22}, 3 (June 2014),
   889--902.
 
 \bibitem{Selforganization_CRN_13}
