@@ -105,8 +105,57 @@ This interaction may involve active negotiations with other spectrum users and/o
 The first definition depicts the functionalities of cognitive radio devices, and the second one mentions the relationships between cognitive radio users and the network which it resides.
 In this dissertation, we see cognitive radio as a device which is able to sense, detect, learn and monitor the surrounding radio frequency environment, or to access a certain database to retrieve primary users' information, so as to reconfigure its radio operating parameters (\eg center frequency, bandwidth and transmit power) on the fly to avoid interfering primary users.
 Cognitive radio may only practice one portion of the aforementioned functionalities according to actual situation.
-Apparently, the cognitive radio users which conduct spectrum sensing are usually work with spectrum overlay paradigm (introduced in Section~\ref{overlay}), and the cognitive radio users which have means to get information of primary users are suitable to work with spectrum underlay paradigm (introduced in Section~\ref{underlay}).
-Based on this definition, throughout this thesis the secondary users working with both spectrum underlay and overlay are named as cognitive radio users, besides, the cognitive radio network is deemed to be composed with cognitive radio users, whose acronym is \gls{CRN}.
+%Apparently, the cognitive radio users which conduct spectrum sensing are usually work with spectrum overlay paradigm (introduced in Section~\ref{overlay}), and the cognitive radio users which have means to get information of primary users are suitable to work with spectrum underlay paradigm (introduced in Section~\ref{underlay}).
+%Based on this definition, throughout this thesis the secondary users working with both spectrum underlay and overlay are named as cognitive radio users, besides, the cognitive radio network is deemed to be composed with cognitive radio users, whose acronym is \gls{CRN}.
+Based on this definition, the cognitive radio network is deemed to be composed with cognitive radio users, whose acronym is \gls{CRN}.
+
+
+\subsection{Functionalities of Cognitive Radio}
+To adapt to the dynamic spectrum environment and make use of the available licensed spectrum, cognitive radio users need to manage the available spectrum by conducting a series of functionalities sequentially, \ie detecting the available spectrum with spectrum sensing, selecting the proper spectrum for communication, communicate with other secondary users using certain spectrum band, and moving to another channel when the current working channel is not usable due to primary user's appearance.
+These functions are incorporated into so called cognitive cycle as described in~\cite{Akyildiz09}.
+
+\subsubsection*{Spectrum Sensing}
+To know which chunk of spectrum is available is the foundation of spectrum management.
+In underlay spectrum usage scenario, CR users get to know the available spectrum by means of spectrum sensing.
+In overlay spectrum usage scenario, secondary users can in principle access all the licensed spectrum.
+In this procedure, quality of the available channels is determined with several parameters, \ie band width, operating frequency, path loss, wireless link errors, link layer delay, and the upper bound of interference on the primary user working on that channel, which decides the maximal permissible transmission power of secondary users.
+Besides, the statistical behaviours of primary users is also an important factor.
+
+Spectrum administration bodies FCC of U.S.~\cite{FCC_2010_sedond_memorandumm} and Electronic Communications Committee (\gls{ECC}) in Europe~\cite{ecc159} encourage to adopt both spectrum sensing and location based method.
+
+\subsubsection*{Spectrum Decision}
+After knowing the available spectrum, CR users select the most appropriate band according to their requirements on quality of service (QoS).
+This procedure involves considering the statistical behaviours of the primary users so as to accessing the channel quality fairly.
+The available licensed spectrum which spans a wide frequency band exhibits different characteristics~\cite{spectrum_decision_TMC11}.
+Based on the requirements of interested communication, CR users need to identify the characteristics of the spectrum, which include channel quality (channel capacity, error rate, path loss, etc.)~\cite{spectrum_decision_TMC11}, channel switching delay~\cite{channel_switch_delay11}, and channel holding time, \ie the expected time duration that the primary users don't occupy the channel before any one occupies again.
+
+Some work in research community models the spectrum availability with stochastic or statistic model, which is helpful when deciding which channel to use.
+\cite{Discrete-Time_Spectrum_Occupancy_Model_DySPAN_2011} proposes discrete Markov chain and adjusts duty circle models to describe the availability of licensed spectrum for GSM on 900/1800 MHz.
+\cite{Wellens200910} models the channel holding time with geometric and log-normal distributions.
+Statistics of previous sensing results is used to predict spectrum state in the future~\cite{spectrum-discovery-tmc08}.
+Such models provide more complete information on the availability of the licensed channels.
+
+
+
+
+\subsubsection*{Spectrum Sharing}
+Then secondary users are to make use of these channels selected in the spectrum decision procedure, and share the spectrum with both the primary users and the other secondary users.
+As there may be multiple secondary users trying to use the same channel, spectrum sharing is important to coordinate the behaviour of secondary users to avoid deteriorating the performance of secondary users.
+Spectrum sharing involves choosing proper channels to mitigate co-channel and adjacent interference~\cite{ca_crn_survey_2013}, or adjusting transmission power to achieve promise between transmitter's and other secondary users' performance~\cite{pa_crn_survey_2012}, or adopting a certain media access paradigm to use the spectrum fairly and efficiently.
+Spectrum sharing also involves consideration on primary users, \ie when many secondary users work on the same channel, the accumulated interference caused by secondary users could exceed the interference threshold on primary users.
+%\todo[inline]{spectrum opportunity, detection, tracking, exploitation (whether to access, how to access, sharing),  tazhaosurveyDSA2007.}
+
+%According to \cite{08crn_survey}, 	
+%After assessing RF environment or geographic location, secondary users adjust their operational parameters such as frequency, modulation schemes and transmit power, in order to support QoS aware communications, this process is referred as spectrum decision and spectrum sharing~\cite{08crn_survey}.
+%In this thesis, spectrum decision and sharing consist the major issue discussed in this thesis.
+
+\subsubsection*{Spectrum Mobility}
+When one primary user starts to work on a certain channel from idle state, a secondary communicating pair working on the this channel should change their operating channel to another one, where no primary user is detected working on the new channel.
+This hand off process between channels is called spectrum mobility, which is critical to maintain the communication and network topology for CRN.  
+
+
+
+
 
 \subsection{Spectrum Sharing in CRN}
 Spectrum sharing is composed with two sub problems, the spectrum sharing between the primary users and secondary users, and that among the secondary users.
@@ -145,9 +194,9 @@ Working with spectrum underlay paradigm, spectrum sensing functionality on secon
 
 \subsubsection*{Spectrum overlay}
 \label{overlay}
-The other approach is \textit{spectrum overlay}, where secondary transmitters are only allowed to transmit when the primary users are detected as being idle.
-This kind of spectrum sharing strictly protects the primary users, but entails burden on secondary users especially on the aspect of spectrum sensing.
+The other approach is \textit{spectrum overlay}, where secondary transmitters are only allowed to transmit when the primary users are detected as being idle, and the spectrum should be vacated if a primary user is detected transmitting.
 Working with this paradigm, secondary users should monitor the spectrum of interest pre-actively to detect primary users' appearance.
+This kind of spectrum sharing strictly protects the primary users, but entails burden on secondary users especially on the aspect of spectrum sensing.
 The detection metrics include received primary users' signal power, spectral correlation or beacons~\cite{crnsensing_09}.
 Spectrum sensing requires sophisticated technologies when primary users' signal is weak, and can be improved by learning technologies or cooperation among multiple secondary users~\cite{coorperativeSensing_Akyildiz11}.
 When spectrum sensing accuracy can be guaranteed above certain threshold, transmission power restrictions can be removed from  secondary users.
@@ -165,55 +214,9 @@ Whereas with non-cooperative spectrum sharing, secondary users only consider the
 
 
 
-\subsection{Spectrum Management}
-To adapt to dynamic spectrum environment and make use of the available licensed spectrum, cognitive radio users need to manage the available spectrum by conducting the following procedures sequentially, detecting the available spectrum with spectrum sensing, selecting the proper spectrum for communication, and sharing the spectrum with other secondary users.
-These functions are incorporated into so called cognitive cycle as described in~\cite{Akyildiz09}.
-
-\subsubsection*{Spectrum Sensing}
-To know which chunk of spectrum is available is the foundation of spectrum management.
-In underlay spectrum usage scenario, CR users get to know the available spectrum by means of spectrum sensing.
-In overlay spectrum usage scenario, secondary users can in principle access all the licensed spectrum.
-In this procedure, quality of the available channels is determined with several parameters, \ie band width, operating frequency, path loss, wireless link errors, link layer delay, and the upper bound of interference on the primary user working on that channel, which decides the maximal permissible transmission power of secondary users.
-Besides, the statistical behaviours of primary users is also an important factor.
-
-Spectrum administration bodies FCC of U.S.~\cite{FCC_2010_sedond_memorandumm} and Electronic Communications Committee (\gls{ECC}) in Europe~\cite{ecc159} encourage to adopt both spectrum sensing and location based method.
-
-\subsubsection*{Spectrum Decision}
-After knowing the available spectrum, CR users select the most appropriate band according to their requirements on quality of service (QoS).
-This procedure involves considering the statistical behaviours of the primary users so as to accessing the channel quality fairly.
-The available licensed spectrum which spans a wide frequency band exhibits different characteristics~\cite{spectrum_decision_TMC11}.
-Based on the requirements of interested communication, CR users need to identify the characteristics of the spectrum, which include channel quality (channel capacity, error rate, path loss, etc.)~\cite{spectrum_decision_TMC11}, channel switching delay~\cite{channel_switch_delay11}, and channel holding time, \ie the expected time duration that the primary users don't occupy the channel before any one occupies again.
-
-Some work in research community models the spectrum availability with stochastic or statistic model, which is helpful when deciding which channel to use.
-\cite{Discrete-Time_Spectrum_Occupancy_Model_DySPAN_2011} proposes discrete Markov chain and adjusts duty circle models to describe the availability of licensed spectrum for GSM on 900/1800 MHz.
-\cite{Wellens200910} models the channel holding time with geometric and log-normal distributions.
-Statistics of previous sensing results is used to predict spectrum state in the future~\cite{spectrum-discovery-tmc08}.
-Such models provide more complete information on the availability of the licensed channels.
 
 
-
-
-\subsubsection*{Spectrum Sharing}
-Then secondary users are to make use of these channels selected in the spectrum decision procedure, and share the spectrum with both the primary users and the other secondary users.
-As there may be multiple secondary users trying to use the same channel, spectrum sharing is important to coordinate the behaviour of secondary users to avoid deteriorating the performance of secondary users.
-Spectrum sharing involves choosing proper channels to mitigate co-channel and adjacent interference~\cite{ca_crn_survey_2013}, or adjusting transmission power to achieve promise between transmitter's and other secondary users' performance~\cite{pa_crn_survey_2012}, or adopting a certain media access paradigm to use the spectrum fairly and efficiently.
-Spectrum sharing also involves consideration on primary users, \ie when many secondary users work on the same channel, the accumulated interference caused by secondary users could exceed the interference threshold on primary users.
-%\todo[inline]{spectrum opportunity, detection, tracking, exploitation (whether to access, how to access, sharing),  tazhaosurveyDSA2007.}
-
-%According to \cite{08crn_survey}, 	
-%After assessing RF environment or geographic location, secondary users adjust their operational parameters such as frequency, modulation schemes and transmit power, in order to support QoS aware communications, this process is referred as spectrum decision and spectrum sharing~\cite{08crn_survey}.
-%In this thesis, spectrum decision and sharing consist the major issue discussed in this thesis.
-
-
-
-
-
-
-
-
-
-
-\subsection{Operation model of spectrum sharing in CRN}
+\subsection{Operation Models of Spectrum Sharing in CRN}
 Based on management architecture, spectrum sharing can be classified as centralized and distributed spectrum sharing.
 
 %Centralized spectrum decision doesn't work well outside the TV channel scenario.
@@ -223,19 +226,31 @@ Centralized spectrum sharing is conducted on a centralized entity to decide the 
 There is a considerable number of centralized approaches proposed for spectrum sharing in cognitive radio network, and the global optimality is reported as to different objectives in certain cases.
 %
 The centralized solution is usually realized by formulating the communication problems into optimization problems.
-There has been a good number of works in this regards~\cite[Chapter~6]{Han:2008:RAW:1457343}.
-When the problems can not be formulated into linear programming, or convex programming problems where optimal is easy to obtain, certain heuristic methods are available to find out the solution which  approaches to the optimal, \eg simulated annealing [xxx], generic algorithm [xxx] and ant algorithm etc.
+Let us take the resource allocation problem in CRN as example.
+The resource refers transmission power, spectrum, transmission time, etc..
+The objective can be the following, improving the overall SINR of secondary users, mitigation of co-channel interference caused secondary users, minimization of transmission power, etc,.
+The constraints can be one or several of the following, the interference caused by secondary users on primary users is below a threshold, the transmission power is restricted by the maximum transmission power, or the number of spectrum bands allowed for secondary users to use.
+There is a good number of research in this regard~\cite{resource_allocation_crn_Ahmad_2015}~\cite[Chapter~6]{Han:2008:RAW:1457343}.
+%There has been a good number of works in this regards~\cite[Chapter~6]{Han:2008:RAW:1457343}.
 
+When the formulated problems are linear programming, or convex programming problems, the optimal is easy to obtain.
+When convexity doesn't held, there all some skills to convert the problem into convex ones, \eg a $\log$ change of variables turns an apparently non-convex problem into a convex one.
+When integer variables are involved in the optimization, \eg in problem of channel assignment, or scheduling, the optimization problem is very difficult to solve.
+In this occasion, swarm intelligence algorithms can be applied to obtain sub optimal result.
+simulated annealing [xxx], generic algorithm [xxx] and ant algorithm etc.
 
 Centralized scheme is suitable in certain scenarios, \eg when the primary users are TV stations and receivers which work on certain channels for hours of time, spectrum can be seen as constant. 
 When the secondary users access the spectrum in underlay paradigm, they need to take care not to cause more interference than threshold on primary users.
 In this case the channel usage, \ie working channel and transmission power, can be decided on the centralized controller.
 %
-Nevertheless, centralized solution is not suitable in many other scenarios.
+Nevertheless, centralized solution is not suitable in many scenarios of CRN.
 First, central authority or controller is not available in many CRNs, \eg CRAHN.
-Second, when the centralized decision maker exists, the centralized entity needs to collect spectrum availability sensed on all the secondary users, computes the spectrum usage strategy and distributes it.
-A large number of control messages are generated during these processes.
-When primary users intensely access the spectrum and result in frequent change of available spectrum, the control overhead becomes higher, and it is different for the centralized entity to obtain a full and up to date picture of the spectrum availability in the whole network.
+Second, when the centralized decision maker exists, centralized solution involves a large number of control messages during network operation.
+The centralized entity needs to collect spectrum availability sensed on all the secondary users, then computes the spectrum usage strategy before finally distributing the result back to every secondary user.
+When primary users intensely access the spectrum and result in frequent change of available spectrum, the control overhead becomes a burden for the CRN.
+Third, Centralized solution need to react to the spectrum variance in the CRN, even when the spectrum changes only happens at a few secondary users.
+This compiled agility worsens the overhead problem.
+%, and it is different for the centralized entity to obtain a full and up to date picture of the spectrum availability in the whole network.
 
 
 
@@ -272,8 +287,10 @@ When the distributed decision is not properly designed, it is possible to trigge
 
 The distributed schemes designed for CRN can be roughly grouped into the following categories.
 \begin{itemize}
+\item decomposition convex opt.
+\item local bargaining~\cite{localBargaining_05}
 \item Heuristic methods. 
-\item Learning schemes.
+\item Learning schemes. AI.~\cite{resource_allocation_crn_Ahmad_2015}
 Slow convergence, the application scope is narrow.
 \item Analytical methods.
 Complex.
