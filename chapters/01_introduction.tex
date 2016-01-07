@@ -305,17 +305,11 @@ The application of online learning in spectrum sharing in CRN includes Q-learnin
 Operating with this method, each secondary user seeks for suitable resources to maximize its utility function.
 Secondary users' operation is in distributed and asynchronized manner, and the CRN ceases to update in a correlated equilibrium.
 online learning has appealing property on distributed execution, but the convergence speed can not be guaranteed.
+
 \item Game theory.
 
-In comparison with optimization which seeks to improve the welfare of the complete network, game theory sheds light on the individual entities in a system.
-A game can be seen as a collection of optimization problems, each of which maximizes/minimizes the utility/cost of one individual entity in the system.
-
-Actually, a distributed scheme can be regarded as a non-cooperative game formulation. 
-Under the game theoretic framework, we can analysis the interaction among the users operating according to the algorithm.
-Then We can check whether the system reaches a desirable equilibrium, \ie the individuals also improve the global welfare of the complete system.
-We can also inverse the procedure to help solve our problems in CRN.
-Given a known game which holds preferred properties such like fast convergence to equilibrium, or the game only has a single equilibrium which is also the global optimal, we can formulate our problem into that kind of game, then modify the best response of the players as the distributed algorithm for the communication entities in our problem.
-
+Game theory is a branch of applied mathematics, and it is a powerful mathematical tool for studying, modelling and analysing the interactions among individuals.
+The approaches derived from a game are complementary to the optimization methods, thus game theory serves as an important role for the communication system when the optimization method doesn't work out.
 We will introduce the application of game theory in CRN in the following section.
 
 \end{itemize}
@@ -351,9 +345,6 @@ We will introduce the application of game theory in CRN in the following section
 
 
 \section{Game Theory and CRN}
-Game theory is a branch of applied mathematics, and it is a powerful mathematical tool for studying, modelling and analysing the interactions among individuals.
-As to one same problem, the approaches derived from game is complementary to the optimization method.
-
 
 A game consists of three tuples: a set of players, a selfish utility for each player, and a set of feasible strategy space for each player.
 In a game, the players are rational and intelligent decision makers, which are related with explicit formalized incentive expressions (the utility), and usually they have potential conflicting objectives with each other.
@@ -364,6 +355,19 @@ Game theory provides standard procedures to study its equilibriums~\cite{game_fo
 The most frequently used concept of equilibrium in game theory is Nash equilibrium (\gls{NE}).
 NE defines a stable state of the system, where with the given policies, no player may gain by unilaterally deviating its current strategy.
 
+In comparison with optimization which seeks to improve the welfare of the complete network, game theory sheds light on the individual entities in a system.
+Thus a game can be seen as a collection of optimization problems, each of which maximizes/minimizes the utility/cost of one individual entity in the system.
+Actually, a distributed scheme can be regarded as a non-cooperative game formulation. 
+Under the game theoretic framework, we can analysis the interaction among the users which operate according to the algorithm, and check whether the system reaches a desirable equilibrium, \ie the individuals also improve the global welfare of the complete system.
+We can also inverse the procedure to help solve our problems in CRN.
+Given a known game which holds preferred properties such like fast convergence to equilibrium, or the game only has a single equilibrium which is also the global optimal, we can formulate our problem into that kind of game, then modify the best response of the players as the distributed algorithm for the communication entities in our problem.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=\linewidth]{game_distributedalgorithms.pdf}
+  \caption{The two ways that game theory is involved in problem solving}
+\label{game_distributedalgorithms}
+\end{figure}
 
 
 When the network entities are seen to be self-interested rational, suitable game theoretic models can guide the behaviours of them, so as to achieve desirable collective behaviours and performance with respect to the system level objective.

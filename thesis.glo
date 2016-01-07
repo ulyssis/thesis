@@ -13,7 +13,7 @@
 (indexentry :tkey (("CRAHN" "\\glossaryentryfield{CRAHN}{\\glsnamefont{CRAHN}}{Cognitive radio ad hoc network}{\\relax }") ) :locref "{}{10}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("TVWS" "\\glossaryentryfield{TVWS}{\\glsnamefont{TVWS}}{TV white space}{\\relax }") ) :locref "{}{11}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("TVBD" "\\glossaryentryfield{TVBD}{\\glsnamefont{TVBD}}{TV band devices}{\\relax }") ) :locref "{}{12}" :attr "pageglsnumberformat" ) 
-(indexentry :tkey (("CCC" "\\glossaryentryfield{CCC}{\\glsnamefont{CCC}}{common control channel}{\\relax }") ) :locref "{}{14}" :attr "pageglsnumberformat" ) 
+(indexentry :tkey (("CCC" "\\glossaryentryfield{CCC}{\\glsnamefont{CCC}}{common control channel}{\\relax }") ) :locref "{}{15}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("PoA" "\\glossaryentryfield{PoA}{\\glsnamefont{PoA}}{price of anarchy}{\\relax }") ) :locref "{}{21}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("PO" "\\glossaryentryfield{PO}{\\glsnamefont{PO}}{Pareto Optimality}{\\relax }") ) :locref "{}{21}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("FCC" "\\glossaryentryfield{FCC}{\\glsnamefont{FCC}}{Federal Communications Commission in U.S.}{\\relax }") ) :locref "{}{27}" :attr "pageglsnumberformat" ) 

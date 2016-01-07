@@ -14,9 +14,9 @@
 \contentsline {subsection}{\numberline {1.4.1}Channel and Power Allocation in IEEE 802.22 Network}{14}{subsection.1.4.1}
 \contentsline {subsection}{\numberline {1.4.2}Robust Clustering in Ad Hoc Cognitive Radio Network}{14}{subsection.1.4.2}
 \contentsline {subsection}{\numberline {1.4.3}Geographic Routing in CRN with Spectrum Aware Virtual Coordinate}{15}{subsection.1.4.3}
-\contentsline {subsection}{\numberline {1.4.4}Research Questions}{15}{subsection.1.4.4}
+\contentsline {subsection}{\numberline {1.4.4}Research Questions}{16}{subsection.1.4.4}
 \contentsline {section}{\numberline {1.5}Contributions}{16}{section.1.5}
-\contentsline {section}{\numberline {1.6}Outline}{17}{section.1.6}
+\contentsline {section}{\numberline {1.6}Outline}{18}{section.1.6}
 \contentsline {chapter}{\numberline {2}BACKGROUND}{19}{chapter.2}
 \contentsline {section}{\numberline {2.1}Introduction of Game}{19}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}Basic Solution Concepts}{20}{subsection.2.1.1}
