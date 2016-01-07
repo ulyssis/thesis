@@ -20,7 +20,7 @@ It is claimed that open spectrum access brings in benefits, as for spectrum lice
 But as the \textit{openness} here is fully controlled by the licensees, this spectrum usage is still exclusive .
 
 %
-In contrary to exclusive use model, certain spectrum are assigned for open sharing for peer users, the representative example is the unlicensed industrial, scientific, and medical (\gls{ISM}) radio band, which supports versatile wireless applications and a prosperous industry, \ie WiFi.
+In contrary to exclusive use model, certain spectrum are assigned for open sharing for peer users, the representative example is the unlicensed industrial, scientific, and medical (\gls{ISM}) radio band, which supports versatile wireless applications and a prosperous industry, \ie Wi-Fi.
 Many spectrum sharing strategies are proposed to cope with the technical challenges~\cite{Ko_DistributedCA}.
 
 %
@@ -272,15 +272,16 @@ This compiled agility worsens the overhead problem.
 %Distributed decision of one CR user should be carefully decided as one CR's behaviour affects neighbouring CR users which go on to prompt all the CR users in the network to act accordingly.
 
 \subsubsection*{Distributed Scheme}
-
-It is reported that the control overhead takes more than 50\% of messages in most networks~\cite{Han:2008:RAW:1457343}.
-If we are able to reduce the overhead, spectrum utilization, the number of served users and the network performance can be correspondingly improved.
-When working with distributed spectrum sharing paradigm, secondary users in CRN decide on their spectrum usage strategies autonomously based on the local information, \ie either on themselves or from their neighbourhoods.
-Consequently, distributed scheme usually requires secondary users to exchange information \ie user ID, channel availability, etc. only with their neighbours, as a result, the overhead involved in the network is reduced.
-
 It is the primary users which distinct CRN from other networks.
 Primary users' usually unexpected operation pattern results in dynamic spectrum availability for secondary users.
 As distributed schemes exploit mainly local observation, distributed schemes help the secondary users to adapt to the varying environment quickly~\cite{Selforganization_CRN_13}.
+
+Distributed solutions generally don't involve large amount of control overhead.
+When working with distributed spectrum sharing paradigm, secondary users in CRN decide on their spectrum usage strategies autonomously based on the local information, \ie either on themselves or from their neighbourhoods.
+Consequently, distributed scheme usually requires secondary users to exchange information \ie user ID, channel availability, etc. only with their neighbours, as a result, the overhead involved in the network is reduced.
+It is reported that control overhead takes account more than 50\% of messages in most networks~\cite{Han:2008:RAW:1457343}.
+When the overhead is decreased, spectrum utilization and the number of served users and the network performance can be correspondingly improved.
+
 %
 In certain scenarios, distributed scheme may also make use of centralized entity when it is available and necessary, \ie secondary users can access the centralized database to retrieve the available channels in IEEE 802.22 cellular networks.
 
@@ -288,19 +289,37 @@ In certain scenarios, distributed scheme may also make use of centralized entity
 %Thus the distributed scheme is more suitable than cognitive radio networks than other wireless networks.
 Although distributed scheme results in appealing lightweight computation and overhead, it is actually challenging to design in many scenarios.
 When the distributed decision is not properly designed, it is possible to trigger endless ripple effect across the network, \ie one CR's decision on its strategy prompts neighbouring CR users to change strategies, and it changes its strategy again later due to neighbours' new strategies.
-
-The distributed schemes designed for CRN can be roughly grouped into the following categories.
+%
+The distributed schemes designed for CRN can be roughly classified into the following categories.
 \begin{itemize}
-\item Distributed realization derived from optimization formulation.
-decomposition convex opt.
-\item Heuristic methods, local bargaining~\cite{localBargaining_05}
-\item Learning schemes. AI.~\cite{resource_allocation_crn_Ahmad_2015}
-Slow convergence, the application scope is narrow.
-\item Game theory (a transition to game theory)
-\end{itemize}
+\item Distributed schemes which are derived from optimization formulation through decomposition.
+This method secondary users use local information, but together achieve global optimal.
+This method requires the optimization problem to be convex, thus it can only solve a small portion of spectrum sharing problems.
+%\item Heuristic methods.
+%Back in 
+% local bargaining~\cite{localBargaining_05}
+\item Online learning.
 
-Game theory is a suitable tool for analyses secondary users in CRN, and from which derive algorithms. 
-In the following, we will introduce game theory in the following.
+Online learning lies in the domain of artificial intelligence. 
+The application of online learning in spectrum sharing in CRN includes Q-learning~\cite{reinforcement_learning_crn_wcnc_2013}, no-regret learning~\cite{hart00correlatedeq,qlearning_huang}, reinforcement learning~\cite{reinforcement_learning_crn_2011}.
+Operating with this method, each secondary user seeks for suitable resources to maximize its utility function.
+Secondary users' operation is in distributed and asynchronized manner, and the CRN ceases to update in a correlated equilibrium.
+online learning has appealing property on distributed execution, but the convergence speed can not be guaranteed.
+\item Game theory.
+
+In comparison with optimization which seeks to improve the welfare of the complete network, game theory sheds light on the individual entities in a system.
+A game can be seen as a collection of optimization problems, each of which maximizes/minimizes the utility/cost of one individual entity in the system.
+
+Actually, a distributed scheme can be regarded as a non-cooperative game formulation. 
+Under the game theoretic framework, we can analysis the interaction among the users operating according to the algorithm.
+Then We can check whether the system reaches a desirable equilibrium, \ie the individuals also improve the global welfare of the complete system.
+We can also inverse the procedure to help solve our problems in CRN.
+Given a known game which holds preferred properties such like fast convergence to equilibrium, or the game only has a single equilibrium which is also the global optimal, we can formulate our problem into that kind of game, then modify the best response of the players as the distributed algorithm for the communication entities in our problem.
+
+We will introduce the application of game theory in CRN in the following section.
+
+\end{itemize}
+%Game theory is a suitable tool for analyses secondary users in CRN, and from which derive algorithms. 
 
 
 %because it is costly to retrieve necessary information from the network to the controller, which includes the spectrum information on each CR users and the network topology. Besides, when the solution is sent back to the CR users, the network state may have changed and be different from the time when the information is collected.
@@ -317,12 +336,6 @@ In the following, we will introduce game theory in the following.
 %Spectrum sharing scheme need to be designed according to actual requirement and available facilities.
 
 
-
-
-
-
-
-
 %The forthcoming vehicular to vehicular communication requires
 
 %Based on the type of primary system which CRN underlays to co-exist, the availability of licensed spectrum exhibits variations on temporal and spatial aspects.
@@ -333,19 +346,35 @@ In the following, we will introduce game theory in the following.
 
 %Whenever primary users are detected, the secondary users have to either jump to other spectrum, or turn down its transmission power to avoid interfering the primary users.
 
-\section{Game Theory in CRN}
+
+
+
+
+\section{Game Theory and CRN}
 Game theory is a branch of applied mathematics, and it is a powerful mathematical tool for studying, modelling and analysing the interactions among individuals.
-In the game theoretical models, the individuals in a system are rational and intelligent decision makers, which are related with explicit formalized incentive expressions, and usually they have potential conflicting objectives with each other.
-The individuals are rational as they make decisions in compliance with the subjective which is to maximize the expected utility, or minimize the expected cost.
-They are intelligent as they understand the other individuals are also rational.
+As to one same problem, the approaches derived from game is complementary to the optimization method.
+
+
+A game consists of three tuples: a set of players, a selfish utility for each player, and a set of feasible strategy space for each player.
+In a game, the players are rational and intelligent decision makers, which are related with explicit formalized incentive expressions (the utility), and usually they have potential conflicting objectives with each other.
+We say the players are rational as they make decisions in compliance with the subjective which is either to maximize the expected utility, or to minimize the expected cost.
+Player are intelligent as they understand the other players are also rational.
+%
+Game theory provides standard procedures to study its equilibriums~\cite{game_for_communication_01}.
+The most frequently used concept of equilibrium in game theory is Nash equilibrium (\gls{NE}).
+NE defines a stable state of the system, where with the given policies, no player may gain by unilaterally deviating its current strategy.
+
+
+
+When the network entities are seen to be self-interested rational, suitable game theoretic models can guide the behaviours of them, so as to achieve desirable collective behaviours and performance with respect to the system level objective.
+A NE in CRN means the CR user has no incentive to change its operating parameters \eg transmission power, spectrum band, time slot, modulation, etc.. 
+
 
 In the past few years, game theory has been extensively applied to problems in communication and networking~\cite{Neel06analysisand, Wang_gtc_crn_survey_2010}.
-When the network entities are seen to be self-interested rational, suitable game theoretic models can guide the behaviours of them, so as to achieve desirable collective behaviours and performance with respect to the system level objective.
-%
 Game theoretic models are used to understand many challenging problems in communication systems, such as resource allocation, topology control, routing, security and so on. 
 
 %In recent years, game theory attracts people attention into apply it in communication systems.
-There are several reasons to apply game theory in communication systems.
+We list the reasons to apply game theory in communication systems.
 \begin{itemize}
 \item \textbf{Communication equipments are rational.}
 Although current communication equipments involve only a little artificial intelligence, they are supposed to be manufactured and operate based on standards to fulfil certain functions, but selfish behaviour may appear on certain individual equipments to achieve advantages over their peers~\cite{game_for_communication_01}.
@@ -361,18 +390,17 @@ In this case, game theory facilitates the network operator to issue rules to mak
 
 \item \textbf{Game theory is effective to solve networking problems.}
 Algorithms can be retrieved from the analysis of a problem under the game theoretical framework.
-In the same example of media access in IEEE 802.11 DCF mentioned in previous item, if stations are allowed to modify the length of contention window, each station will adjust its contention window to obtain the best performance.
-\cite{contentiongame_07} shows as long as each station greedily updates its CW to maximize certain utility, after certain time the system will stabilize as the current CW is the optimal for every station.
-Such best response naturally defines an algorithm for Wi-Fi systems.
+In the same example of media access in IEEE 802.11 DCF mentioned in the previous item, if stations are allowed to modify the length of contention window, each station will adjust its contention window to obtain the best performance.
+\cite{contentiongame_07} shows as long as each station greedily updates its CW to maximize certain utility, after certain time the system will stabilize in NE. 
+In the case, the best response process naturally defines an algorithm for Wi-Fi systems.
 %
 Besides, outcome from game theory is robust~\cite{Han:2008:RAW:1457343}.
-
 
 
 \item \textbf{Game theory is suitable to apply in cognitive radio network because of the properties of CRN.}
 Firstly, as only local information is needed to feed each user, game theory is naturally suitable for designing distributed solutions for cognitive radio networks.
 Distributed solutions doesn't rely on centralized controller, and each user in the network adopts certain action as response to the other users or environment, this falls in the scope of game theory.
-Distributed schemes usually lead to Nash equilibrium (\gls{NE}), which is usually sub optimal.
+Distributed schemes usually lead to Nash equilibrium, which is usually sub optimal.
 As comparison, although optimization is the common tool to pursue global optimality, when the information is not accurate or adequate enough, or the optimization itself is difficult to solve, the optimized results can be far from optimal.
 
 %
@@ -382,6 +410,18 @@ It is always challenging to solve combinatorial optimization problems, whereas g
 
 \end{itemize}
 
+In this dissertation, we look into congestion game and its application in CRN.
+
+
+\subsection{Game and Congestion Game}
+The most frequently used concept of equilibrium in game theory is Nash equilibrium.
+
+
+
+
+\subsubsection*{Congestion Game}
+In accordance with~\cite{Voecking06congestiongames}, congestion game is a game where players simultaneously allocate sets of resources to minimize their costs, and the cost of a resource is a function of congestion, which is the number of players choosing the resource.
+Congestion games can be formulated from many problems in realistic world, \eg minimisation of commuting time on the road for commuters, minimization of energy consumption in mobile cloud computing system~\cite{game_cloudcomputing_energy12}.
 
 
 
@@ -505,16 +545,10 @@ For both regulations, TV receivers may become vulnerable when there are multiple
 Standardization on secondary usage of TVWS is very active. IEEE 802.19 is a family of IEEE 802 standards in Wireless Coexistence Working Group, among which, IEEE 802.19.1 is for wireless coexistence in TVWS. IEEE 802.11af is standards for WLAN operation in TVWS, IEEE 802.15.4m is for low rate (LR) WPAN operating in TVWS. IEEE 802.22 is for Wireless Regional Area Network (WRAN) using TVWS. As TV band is only 6 or 7 MHz while WLAN channel bandwidth is 40 MHz for state-of-the-art IEEE 802.11n amendment, IEEE 802.11af proposes channel aggregation mechanism for WLAN working with TVWS. Maximum transmit power and spectrum mask of Mode I should be approved by Mode II devices beforehand.  
 
 
-%Geolocation is extensively used in cognitive radio network. \cite{nashbargaining_2012jsac} proposes a centralized light weighted scheme to solve channel and power allocation among secondary users with TDMA manner, where geolocation of primary users are used by secondary users to calculate the caused interferences by them on the primary users. Considering the slow change of TV spectrum usage, along with the fact that the TV spectrum usage is scheduled, geolocation approach becomes more appealing in TVWS utilization scenario. Assume there is a database which is connected with all WSDs, and it is aware of the location of TV receivers (optionally with terrain information) and WSDs and proper propagation model in between, the database calculates the RSSI (Received Signal Strength indication) on each WSDs in the whole network. The database decides the channel availability based on whether the RSSI exceeds a threshold value or not, then notices WSDs their available channels in either proactive or reactive manner. This geolocation approach is used for building a WiFi like network working with TVWS ~\cite{SenseLess} which demonstrates the feasibility of predicting the available TV spectrum accurately using suitable propagation models (Longley-Rice and terrain wherein). This approach is also integrated into regulation from Federal Communications Commission (FCC) of U.S. FCC regulates every WSD should access the database to retrieve the available TV channels on its location, and fixes the transmission power for fixed WSD as 4 W which is a conservative value. Aforementioned is calculation RSSI of PU on the location of WSDs to see whether the PUs \textit{appears}, there is another way to work with geolocation. Instead of deciding the available TV channels for WSDs, database calculates the interferences from WSBs on TV receivers, then directly assigns channel and power levels to each WSD and in the same time preventing the TV receivers from harmful interferences (the interferences under a certain threshold). Electronic Communications Committee (ECC) in Europe adopts this approach so that the transmission power for WSD is more flexible depending on WSD's location.
+%Geolocation is extensively used in cognitive radio network. \cite{nashbargaining_2012jsac} proposes a centralized light weighted scheme to solve channel and power allocation among secondary users with TDMA manner, where geolocation of primary users are used by secondary users to calculate the caused interferences by them on the primary users. Considering the slow change of TV spectrum usage, along with the fact that the TV spectrum usage is scheduled, geolocation approach becomes more appealing in TVWS utilization scenario. Assume there is a database which is connected with all WSDs, and it is aware of the location of TV receivers (optionally with terrain information) and WSDs and proper propagation model in between, the database calculates the RSSI (Received Signal Strength indication) on each WSDs in the whole network. The database decides the channel availability based on whether the RSSI exceeds a threshold value or not, then notices WSDs their available channels in either proactive or reactive manner. This geolocation approach is used for building a Wi-Fi like network working with TVWS ~\cite{SenseLess} which demonstrates the feasibility of predicting the available TV spectrum accurately using suitable propagation models (Longley-Rice and terrain wherein). This approach is also integrated into regulation from Federal Communications Commission (FCC) of U.S. FCC regulates every WSD should access the database to retrieve the available TV channels on its location, and fixes the transmission power for fixed WSD as 4 W which is a conservative value. Aforementioned is calculation RSSI of PU on the location of WSDs to see whether the PUs \textit{appears}, there is another way to work with geolocation. Instead of deciding the available TV channels for WSDs, database calculates the interferences from WSBs on TV receivers, then directly assigns channel and power levels to each WSD and in the same time preventing the TV receivers from harmful interferences (the interferences under a certain threshold). Electronic Communications Committee (ECC) in Europe adopts this approach so that the transmission power for WSD is more flexible depending on WSD's location.
 
 
 IEEE 802.22 has been the first IEEE standard for wireless regional area network (WRAN) working on TV white space. According to this standard, the system consists of a base station and customer premises equipment (or terminals for short), where terminals are associated with base stations, and are served by them. Recent standard published in Nov. 2010 mentions both, i.e. sensing ability as well as TVWS geolocation and database look-up as schemes for detecting primary systems. Self-coexistence mechanism is also proposed, which provides a TDMA like mechanism for WBSes to share TVWS. \cite{HoangPowerChannel2010} proposes a distributed solution for power control and channel assignment in both down-link and up-link communication in a WRAN, but the investigated secondary network is composed with only one base station and multiple terminals. % Although the transmission power is decided in a distributed manner, primary transmitters are required to adjust their transmission power in order to guarantee the SINR on primary receivers in a learning process, while, the operation of WSDs working on TVWS should be transparent as to TV services.\fmjg{This summary of the 2010 paper does not make sense to me - why are you talking of primary systems here ??} 
-
-
-
-
-
-
 
 
 
@@ -717,14 +751,6 @@ We design them based on statistics of primary user’s ON/OFF states which are o
 \end{itemize}
 
 To summarize, as the Euclidean distance between two secondary users based on spectrum aware virtual coordinate reflects the availability of unlicensed channel in between from the angel of historical statistics, virtual coordinate contributes a large part to deciding on the on the next hop. 
-
-
-
-
-
-
-
-
 
 
 

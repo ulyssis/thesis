@@ -271,6 +271,13 @@ Report of the spectrum efficiency working group.
 \newblock In {\em Processings of 2012 IEEE International Symposium on Dynamic
   Spectrum Access Networks (DySPAN)\/} (Oct 2012), pp.~131--141.
 
+\bibitem{reinforcement_learning_crn_wcnc_2013}
+{\sc Faganello, L., Kunst, R., Both, C., Granville, L., and Rochol, J.}
+\newblock Improving reinforcement learning algorithms for dynamic spectrum
+  allocation in cognitive sensor networks.
+\newblock In {\em Wireless Communications and Networking Conference (WCNC),
+  2013 IEEE\/} (April 2013), pp.~35--40.
+
 \bibitem{CA_Felegyhazi_07infocom}
 {\sc Felegyhazi, M., Cagalj, M., Bidokhti, S., and Hubaux, J.-P.}
 \newblock Non-cooperative multi-radio channel allocation in wireless networks.
@@ -414,6 +421,12 @@ Report of the spectrum efficiency working group.
 {\sc I, C.-L., Rowell, C., Han, S., Xu, Z., Li, G., and Pan, Z.}
 \newblock Toward green and soft: a 5{G} perspective.
 \newblock {\em Communications Magazine, IEEE 52}, 2 (February 2014), 66--73.
+
+\bibitem{reinforcement_learning_crn_2011}
+{\sc Jiang, T., Grace, D., and Mitchell, P.}
+\newblock Efficient exploration in reinforcement learning-based cognitive radio
+  spectrum sharing.
+\newblock {\em Communications, IET 5}, 10 (July 2011), 1309--1317.
 
 \bibitem{Jaentti11}
 {\sc Jäntti, R., Kerttula, J., Koufos, K., and Ruttik, K.}
