@@ -118,10 +118,10 @@ Having said that, in some games, with the special strategy space structure, or p
 
 
 
-\subsubsection*{Pareto Optimality}
-%There exists other equilibrium conceptions. \ie Pareto Equilibrium . 
-An strategy profile $\bar{s}$ is \textit{Pareto optimality} (\gls{PO}), if there does not exist profile $s$ with $u_i(s)\geq u_i(\bar{s})$ for each $i\in N$, and meanwhile $u_i(s)> u_i(\bar{s})$ for at least one $i\in N$.
-PO is the necessary condition of the global optimality and accordingly is more favoured, but its application in communication system is much less than NE because it is not easy to obtain, and the lack of stability.
+%\subsubsection*{Pareto Optimality}
+%%There exists other equilibrium conceptions. \ie Pareto Equilibrium . 
+%An strategy profile $\bar{s}$ is \textit{Pareto optimality} (\gls{PO}), if there does not exist profile $s$ with $u_i(s)\geq u_i(\bar{s})$ for each $i\in N$, and meanwhile $u_i(s)> u_i(\bar{s})$ for at least one $i\in N$.
+%PO is the necessary condition of the global optimality and accordingly is more favoured, but its application in communication system is much less than NE because it is not easy to obtain, and the lack of stability.
 
 
 \subsubsection*{Pure NE and Mixed NE}
@@ -141,18 +141,19 @@ Other solutions include correlated equilibrium, which also involves probability 
 
 
 \subsubsection*{Individual Optimization and Game}
-As to a player in a game, when its utility $u_i$ is a function only of its strategy $s_i$, but not the strategies chosen by all $n$ players, then the maximization of its payoff or minimization of its cost becomes an optimization problem, and such game has $n$ such optimization problems in total.
-Whereas as to a general game, the payoff or cost of each player depends on both $s_i$ and $s_{-i}$, both its own strategy and the strategies chosen by all other players.
+As to a player in a game, given the strategies of other players $s_{-i}$, its utility $u_i$ is a function of its own strategy $s_i$, then the maximization of its payoff or minimization of its cost becomes one optimization problem.
+Thus, one game comprises $n$ such optimization problems in total.
+%Whereas as to a general game, the payoff or cost of each player depends on both $s_i$ and $s_{-i}$, both its own strategy and the strategies chosen by all other players.
 
 
 
+
+
+\section{Congestion Game}
+Potential game is the basis of congestion game, we will introduce them sequentially.
 
 \subsection{Potential Game}
 \url{http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-254-game-theory-with-engineering-applications-spring-2010/lecture-notes/MIT6_254S10_lec08.pdf}
-
-\section{Congestion Game}
-
-
 
 
 %\subsubsection*{Potential Game}
@@ -168,7 +169,9 @@ Whereas as to a general game, the payoff or cost of each player depends on both 
 %In congestion game, player pays for the resources it occupies.
 %Particularly, the payment for one resource is monotonically increasing with the \textit{number} of players occupying that resource, and each player tries to minimize its payment~\footnote{Another way to describe congestion game: player gets benefit by using a certain resource, the benefit is monotonically decreasing with the number of players on that resource, each player tries to maximize its welfare}. 
 
-
+\subsubsection*{Congestion Game}
+In accordance with~\cite{Voecking06congestiongames}, congestion game is a game where players simultaneously allocate sets of resources to minimize their costs, and the cost of a resource is a function of congestion, which is the number of players choosing the resource.
+Congestion games can be formulated from many problems in realistic world, \eg minimisation of commuting time on the road for commuters, minimization of energy consumption in mobile cloud computing system~\cite{game_cloudcomputing_energy12}.
 
 Now we give the formal definition of a congestion game.
 A congestion game \cite{Rosenthal}\cite{Voecking06congestiongames} can be expressed by a tuple $\lambda=(\mathcal{N},\mathcal{R},(\mathcal{S}_i)_{i \in \mathcal{N}},(g_r)_{r\in \mathcal{R}})$, where

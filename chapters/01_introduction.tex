@@ -347,52 +347,57 @@ We will introduce the application of game theory in CRN in the following section
 \section{Game Theory and CRN}
 
 A game consists of three tuples: a set of players, a selfish utility for each player, and a set of feasible strategy space for each player.
-In a game, the players are rational and intelligent decision makers, which are related with explicit formalized incentive expressions (the utility), and usually they have potential conflicting objectives with each other.
-We say the players are rational as they make decisions in compliance with the subjective which is either to maximize the expected utility, or to minimize the expected cost.
-Player are intelligent as they understand the other players are also rational.
+In a game, the players are rational and intelligent decision makers, which are related with one explicit formalized incentive expression (the utility or cost).
+The players usually have potential conflicting objectives with others.
+We say the players are rational as they make decisions in compliance with the subjective which is either to maximize the their own expected utilities, or to minimize the expected cost.
+Player are said to be intelligent as they understand the other players are also rational.
 %
+
 Game theory provides standard procedures to study its equilibriums~\cite{game_for_communication_01}.
 The most frequently used concept of equilibrium in game theory is Nash equilibrium (\gls{NE}).
 NE defines a stable state of the system, where with the given policies, no player may gain by unilaterally deviating its current strategy.
-
 In comparison with optimization which seeks to improve the welfare of the complete network, game theory sheds light on the individual entities in a system.
 Thus a game can be seen as a collection of optimization problems, each of which maximizes/minimizes the utility/cost of one individual entity in the system.
 Actually, a distributed scheme can be regarded as a non-cooperative game formulation. 
-Under the game theoretic framework, we can analysis the interaction among the users which operate according to the algorithm, and check whether the system reaches a desirable equilibrium, \ie the individuals also improve the global welfare of the complete system.
-We can also inverse the procedure to help solve our problems in CRN.
-Given a known game which holds preferred properties such like fast convergence to equilibrium, or the game only has a single equilibrium which is also the global optimal, we can formulate our problem into that kind of game, then modify the best response of the players as the distributed algorithm for the communication entities in our problem.
 
+
+Figure~\ref{game_distributedalgorithms} illustrates two ways of applying game theory in the problem solving.
 \begin{figure}[h!]
   \centering
   \includegraphics[width=\linewidth]{game_distributedalgorithms.pdf}
   \caption{The two ways that game theory is involved in problem solving}
 \label{game_distributedalgorithms}
 \end{figure}
+Along the dashed line and arrow, proposed distributed schemes can be testified under the game theoretic framework.
+We can analysis a distributed algorithm by looking into the interaction among the users which operate the algorithm, and check whether the system reaches a desirable equilibrium, \ie the individuals not only improve their own performance but also improve the global welfare of the complete system.
+We can also inverse the this procedure to obtain distributed algorithms in CRN from certain games, just as the solid line with arrow points shows.
+Given a known game which holds preferred properties such like fast convergence to equilibrium, or the game only has a single equilibrium which is also the global optimal, we can formulate our problem in CRN into that kind of game, then modify the best response of the players as the distributed algorithm for the communication entities in our problem. 
+%In this dissertation, we 
 
 
-When the network entities are seen to be self-interested rational, suitable game theoretic models can guide the behaviours of them, so as to achieve desirable collective behaviours and performance with respect to the system level objective.
-A NE in CRN means the CR user has no incentive to change its operating parameters \eg transmission power, spectrum band, time slot, modulation, etc.. 
-
+\subsection{Application of Game Theory in CRN}
 
 In the past few years, game theory has been extensively applied to problems in communication and networking~\cite{Neel06analysisand, Wang_gtc_crn_survey_2010}.
 Game theoretic models are used to understand many challenging problems in communication systems, such as resource allocation, topology control, routing, security and so on. 
-
+NE in CRN means the CR user has no incentive to change its operating parameters \eg transmission power, spectrum band, time slot, modulation, etc.. 
 %In recent years, game theory attracts people attention into apply it in communication systems.
-We list the reasons to apply game theory in communication systems.
-\begin{itemize}
-\item \textbf{Communication equipments are rational.}
-Although current communication equipments involve only a little artificial intelligence, they are supposed to be manufactured and operate based on standards to fulfil certain functions, but selfish behaviour may appear on certain individual equipments to achieve advantages over their peers~\cite{game_for_communication_01}.
+We list the reasons to apply game theory in communication systems and CRN in the following.
 
+\subsubsection*{Communication equipments are rational.}
+Although current communication equipments involve only a little artificial intelligence, they are supposed to be manufactured and operate based on standards to fulfil certain functions, but selfish behaviour may appear on certain individual equipments to achieve advantages over their peers~\cite{game_for_communication_01}.
 In communication system, a device is programmed to maximize the expected utility, which is perfectly rational.
 For instance, Wi-Fi equipments are manufactured complying the IEEE 802.11 standards.
 But it is possible that certain manufacturers or the personal who uses the Wi-Fi system (we use station in the following) manipulate certain parameters to obtain performance advantage over other stations in the network.
 When all the stations in one network are supposed to run distributed coordination function (\gls{DCF}), \ie the station must wait a random period of time, which is called contention window (\gls{CW}), before accessing the media when it senses the media to be busy, a certain selfish station may not choose to wait and is keen on sensing media.
 The selfish behaviour causes more collisions for other stations, and possibly results in poor performance in the network.
 %In this case, the access point finds more packets coming from that selfish user, but is unaware of its selfishness and has no means to adjust or punish this selfish user.
-In this case, game theory facilitates the network operator to issue rules to make the selfish behaviour unprofitable, or it helps to analyse how much the impact can be caused by the selfish stations.
+
+In this example, the network entities are seen to be self-interested rational, then suitable game theoretic models can guide the behaviours of them, so as to achieve desirable collective behaviours and performance in terms of the system level objective.
+In Wi-Fi system, game theory facilitates the network operator to issue rules to make the selfish behaviour unprofitable, which curbs the selfish behaviours and lead to NE in the network.
+%or it helps to analyse how much the impact can be caused by the selfish stations.
 % can tell the access point or network operator the impact caused by the selfish systems, and possibly 
 
-\item \textbf{Game theory is effective to solve networking problems.}
+\subsubsection*{Game theory is effective to solve networking problems.}
 Algorithms can be retrieved from the analysis of a problem under the game theoretical framework.
 In the same example of media access in IEEE 802.11 DCF mentioned in the previous item, if stations are allowed to modify the length of contention window, each station will adjust its contention window to obtain the best performance.
 \cite{contentiongame_07} shows as long as each station greedily updates its CW to maximize certain utility, after certain time the system will stabilize in NE. 
@@ -401,7 +406,7 @@ In the case, the best response process naturally defines an algorithm for Wi-Fi 
 Besides, outcome from game theory is robust~\cite{Han:2008:RAW:1457343}.
 
 
-\item \textbf{Game theory is suitable to apply in cognitive radio network because of the properties of CRN.}
+\subsubsection*{Game theory is suitable to apply in cognitive radio network because of the properties of CRN.}
 Firstly, as only local information is needed to feed each user, game theory is naturally suitable for designing distributed solutions for cognitive radio networks.
 Distributed solutions doesn't rely on centralized controller, and each user in the network adopts certain action as response to the other users or environment, this falls in the scope of game theory.
 Distributed schemes usually lead to Nash equilibrium, which is usually sub optimal.
@@ -412,25 +417,17 @@ Secondly, combinatorial nature of communication problems makes game theory as on
 Many problems in wireless communication involve integer variables, \ie channel availability, channel assignment, selection of modulation levels or channel coding.
 It is always challenging to solve combinatorial optimization problems, whereas game theory is natural to describe it in a discrete form.
 
-\end{itemize}
 
 In this dissertation, we look into congestion game and its application in CRN.
-
-
-\subsection{Game and Congestion Game}
-The most frequently used concept of equilibrium in game theory is Nash equilibrium.
+We leave the introduction of game theory and game models which we will use in the Chapter~\ref{background}.
 
 
 
-
-\subsubsection*{Congestion Game}
-In accordance with~\cite{Voecking06congestiongames}, congestion game is a game where players simultaneously allocate sets of resources to minimize their costs, and the cost of a resource is a function of congestion, which is the number of players choosing the resource.
-Congestion games can be formulated from many problems in realistic world, \eg minimisation of commuting time on the road for commuters, minimization of energy consumption in mobile cloud computing system~\cite{game_cloudcomputing_energy12}.
 
 
 
 \section{Representative Cognitive Radio Networks}
-In this section, we introduce two types of cognitive radio networks, and the problems we tackle in this thesis reside in these networks.
+We introduce two types of cognitive radio networks, which contains the problems we will tackle in this dissertation.
 
 \subsection{Cognitive Radio Ad Hoc Network}
 %An ad hoc network is a decentralized paradigm of wireless network, which consists of a collection of autonomous mobile users which communicate over wireless links.
@@ -472,16 +469,18 @@ Hence, the corresponding graph is dynamic under primary users' operation, which 
 %
 %Recent standard published in Nov. 2010 suggests both sensing ability as well as database look-up to avoid affecting primary systems.
 
-\subsection{Cognitive Radio Cellular Network}
-
+\subsubsection*{Cognitive Radio Cellular Network}
+According to Cisco's forecast~\cite{Cisco_report_2015} on mobile data traffic, which published in 2015, the number of mobile-connected devices exceeded the world’s population in 2014 and by 2019 there will be nearly 1.5 mobile devices per capita.
+The monthly global mobile data traffic will surpass 24.3 exabytes by 2019, which is 10 times more than that in 2014.
+Although there is a strong trend that more traffic load will be offloaded from cellular networks (on to Wi-Fi), cellular networks still face the big challenge and need to explore new resource to meet the demand on increased traffic.
+The state of the art mobile systems, such as 3GPP Long term Evolution (\gls{LTE}) and High Speed Packet Access (\gls{HSPA}) are designed to be very efficient on spectrum utilization, thus cellular networks look into cognitive radio for solution.
 
 \subsection{CRN Working with TV White Space}
 \label{TVWS}
 %Opportunistic utilization for unlicensed secondary users (also named as white space devices, abbreviated as WSD) working with TV broadcast spectrum (TV white space) is promising to cope with the scarcity of spectrum resources\cite{fcc}. 
 %UHF TV spectrum (TV white space, TVWS) has low utilization in both spatial and temporal dimensions. \fmjg{xxx relevant data and citation needed here XX also mention where this is the case, i.e. US ? XXX}
 
-
-TV white space (\gls{TVWS}) refers to the unused broadcast television spectrum.
+TV white space (\gls{TVWS}) refers to the unused broadcast television spectrum, which is the most feasible spectrum available for large scale utilization for cognitive radio cellular networks.
 One part of the unused TV spectrum is resulted from the switchover of analog television to digital television, which frees up a large range of TV spectrum.
 The other parts are unassigned spectrum and the spectrum which is not being used at a given time in a given geographical area.
 TV white space is located in the VHF (54-216 MHz) and UHF (470-698 MHz) bands, thus the frequency bands within this spectrum are highly desirable for wireless communications, because they have good properties on propagation, \ie they have broadband payload capacity, and are able to penetrate obstacles such as trees, buildings, and rugged terrain in non-line-of-sight scenarios.
@@ -558,22 +557,17 @@ IEEE 802.22 has been the first IEEE standard for wireless regional area network 
 
 
 \section{Problem Statement}
-The xxx
-
-Adopting centralized or decentralized solutions is largely dependant on the network types and desired services to convey.
+As to the various challenging problems in CRN networks, adopting centralized or decentralized solutions is largely dependant on the network types and nature of the problem to be solved.
 %Working with the TV white space is regarded as one application of cognitive radio network, which is most likely to succeed in near future.
-As to secondary users working with TV white space, regulations and standards desire one centralized database, which can be used to conduct certain centralized solution to assign the resources.
 As to CRAHNs which consist of mobile autonomous secondary users and without any infrastructure, distributed scheme practically becomes the sole choice.
-Actually, the majority of the research in cognitive radio domain is carried out with distributed manner.
+As to secondary users working with TV white space, there is one centralized database which is required by regulations and standards, thus it is possible to conduct certain centralized solutions on it.
+But in fact, the secondary users may not belong to the same cellular network thus it is not possible to let every secondary user to follow the strategy given by the centralized data base~\cite{crn_futurecellular_2014}.
+%Actually, the majority of the research in cognitive radio domain is carried out with distributed manner.
 %In CRAHNs, there are no centralized utility, and the spectrum sensing is necessary for every secondary user.
 
-We proposes distributed solutions for a series of problems in cognitive radio networks.
+In this dissertation, we solve the problems in CRN by proposing distributed schemes under the game theoretical framework.
 We investigate the differences between decentralized and centralized schemes in terms of several criterion, \ie Performance, overhead and needed time.
-
-
-
-In this thesis, the fundamental technical challenges to be addressed in this thesis are shown in Figure~\ref{problemLocation}, which reside from physical layer to network work layer~\cite{osi} are addressed. 
-
+The fundamental technical challenges to be addressed in this thesis are shown in Figure~\ref{problemLocation}, which reside from physical layer to network work layer~\cite{osi} are addressed. 
 
 \begin{figure}[h!]
   \centering
@@ -679,11 +673,11 @@ considering the available spectrum is geographically heterogeneous, applying geo
 Based on he previous analysis on the current secondary spectrum exploit, we conclude the problems into three distinct research questions.
 In the remainder of this thesis, we will provide answers to these questions.
 
-\textbf{Question Q1 - How to make full use of the TV spectrum, using the widely adopted network structure, preventing interference above threshold on primary TV receivers, and improve the performance of the secondary users.}
+\textbf{Question 1 - How to make full use of the TV spectrum, using the widely adopted network structure, preventing interference above threshold on primary TV receivers, and improve the performance of the secondary users.}
 
-\textbf{Question Q2 - How to make the secondary users to form robust clusters against primary users' unpredictable activity?}
+\textbf{Question 2 - How to make the secondary users to form robust clusters against primary users' unpredictable activity?}
 
-\textbf{Question Q3 - How to make use of the statistic information of the spectrum availability, so as to realize light weight geographic routing in CRN.}
+\textbf{Question 3 - How to make use of the statistic information of the spectrum availability, so as to realize light weight geographic routing in CRN.}
 
 
 

@@ -251,6 +251,14 @@ Report of the spectrum efficiency working group.
   networks.
 \newblock In {\em Proc. of IEEE Sarnoff Sym. '09}, pp.~1--6.
 
+\bibitem{Cisco_report_2015}
+{\sc Cisco}.
+\newblock Cisco visual networking index: Global mobile data traffic forecast
+  update 2014–2019 white paper.
+\newblock Tech. rep., February 2015.
+\newblock
+  \url{http://www.cisco.com/c/en/us/solutions/collateral/service-provider/visual-networking-index-vni/white_paper_c11-520862.html}.
+
 \bibitem{tvws_vtc13}
 {\sc Di~Felice, M., Ghandhour, A., Artail, H., and Bononi, L.}
 \newblock Integrating spectrum database and cooperative sensing for cognitive
@@ -498,6 +506,11 @@ Report of the spectrum efficiency working group.
 \newblock Distributed {TV} spectrum allocation for cognitive cellular network
   under game theoretical framework.
 \newblock In {\em Proc. of IEEE DySPAN 2012}.
+
+\bibitem{crn_futurecellular_2014}
+{\sc Lien, S.-Y., Chen, K.-C., Liang, Y.-C., and Lin, Y.}
+\newblock Cognitive radio resource management for future cellular networks.
+\newblock {\em Wireless Communications, IEEE 21}, 1 (February 2014), 70--79.
 
 \bibitem{Lin97adaptiveclustering}
 {\sc Lin, C.~R., and Gerla, M.}
