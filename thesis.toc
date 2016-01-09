@@ -23,7 +23,7 @@
 \contentsline {subsection}{\numberline {2.2.1}Potential Game}{22}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2}Example: Server Matching}{23}{subsection.2.2.2}
 \contentsline {subsection}{\numberline {2.2.3}Convergence Time Towards Nash Equilibrium}{23}{subsection.2.2.3}
-\contentsline {section}{\numberline {2.3}Optimization}{24}{section.2.3}
+\contentsline {section}{\numberline {2.3}Optimization}{25}{section.2.3}
 \contentsline {chapter}{\numberline {3}DISTRIBUTED CHANNEL AND POWER ALLOCATION IEEE 802.22 NETWORKS}{27}{chapter.3}
 \contentsline {section}{\numberline {3.1}Motivation}{27}{section.3.1}
 \contentsline {section}{\numberline {3.2}System Model and Problem Statement}{29}{section.3.2}

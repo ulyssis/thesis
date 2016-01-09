@@ -489,6 +489,13 @@ Report of the spectrum efficiency working group.
 \newblock {\em IEEE Transactions on Mobile Computing, 14}, 4 (April 2015),
   675--687.
 
+\bibitem{caps_potential2012}
+{\sc Latifa, B., Gao, Z., and Liu, S.}
+\newblock No-regret learning for simultaneous power control and channel
+  allocation in cognitive radio networks.
+\newblock In {\em Computing, Communications and Applications Conference
+  (ComComAp), 2012\/} (jan. 2012), pp.~267 --271.
+
 \bibitem{Lazos09}
 {\sc Lazos, L., Liu, S., and Krunz, M.}
 \newblock Spectrum opportunity-based control channel assignment in cognitive

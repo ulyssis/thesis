@@ -28,10 +28,10 @@ A game of normal form can be represented as a tuple $\Gamma = (\mathcal{N}, (\ma
 Player $i$ selects one strategy $s_i\in \mathcal{S}_i$ at one time to play the game.
 \item $\mathcal{S} = \mathcal{S}_1\times\cdots\times \mathcal{S}_n$ is the set of states, which denotes all the possible ways that players may pick strategies.
 
-\item $s=(s_i,\cdots,s_n)$ is vector of strategies and also is called as one strategy profile, which represents an instance of all players' choices.
-There is $s\in \mathcal{S}$.
+\item $s=(s_i,\cdots,s_n)$ is one strategy, which represents an instance of all players' strategy choices.
+$s$ is also called one strategy profile, and there is $s\in \mathcal{S}$.
 
-\item The vector of strategies of opponents of player $i$ is expressed as $s_{-i}$, and the corresponding strategy profile can be shown as $s=\{s_i, s_{-i}\}$.
+\item One vector of strategies of player $i$' opponents is expressed as $s_{-i}$, and the corresponding strategy profile is denoted as $s=\{s_i, s_{-i}\}$.
 $u_i(s) = u_i(s_i, s_{-i})$ is the player $i$' outcome in strategy profile $s$.
 
 \item $u_i:\mathcal{S}\rightarrow \mathbb{R} $ is the utility function of player $i$.
@@ -150,16 +150,31 @@ Thus, one game comprises $n$ such optimization problems in total.
 
 
 \section{Congestion Game}
-Potential game is the basis of congestion game, we will introduce them sequentially.
+Before introducing congestion game, we need to introduce potential game first.
+Potential game has been applied in wireless network and CRN to help solve different problems~\cite{CApotentialLearning_05dyspan, caps_potential2012, self-coexistenceWRAN2010infocom, pimrc_2012}.
+Potential game has two desiring properties, the existence of pure NE, and every improvement path is finite, which makes it a suitable model to design distributed algorithms.
 
 \subsection{Potential Game}
-\url{http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-254-game-theory-with-engineering-applications-spring-2010/lecture-notes/MIT6_254S10_lec08.pdf}
 
+A potential game is a tuple $\lambda=(\mathcal{N},(\sum_i)_{i \in \mathcal{N}},(u_i)_{i\in \mathcal{N}})$, which satisfies the following, if there exists a function $\phi: \mathcal{S}\rightarrow \mathbb{R}$, such that for every $i\in \mathcal{N}$, for every $s_{-i}\in \mathcal{S}_{-i}$, and every $s_i, s_i'\in \mathcal{S}$:
 
-%\subsubsection*{Potential Game}
-%A potential game is a tuple $\lambda=(\mathcal{N},(\sum_i)_{i \in \mathcal{N}},(u_i)_{i\in \mathcal{N}})$, which satisfies the following, if there exists a function $\phi: \sum\rightarrow \mathbb{R}$, such that for every $i\in \mathcal{N}$, for every $s_{-i}\in \sum_{-i}$, and every $s_i, s_i'\in \sum_i$:
-% \[ u_i(s_i, s_{-i})-u_i(s_i', s_{-i}) = \phi_i(s_i, s_{-i})-\phi_i(s_i', s_{-i})\]
-%It is easy to see that the design of function $\phi$ is the key point to form a potential game.
+\begin{equation}
+\label{2:1}
+\begin{split}
+u_i(s_i, s_{-i})-u_i(s_i', s_{-i}) >= \phi_i(s_i, s_{-i})-\phi_i(s_i', s_{-i})
+\end{split}
+\end{equation}
+If equality holds, this game is called an exact potential game, when it doesn't, the game is called an ordinal potential game.
+It is easy to see that the design of function $\phi$ is the key point to form a potential game.
+
+Potential game has two important theorems,
+\begin{itemize}
+\item Every finite ordinal potential game has at least one pure strategy Nash equilibrium.
+\item In every finite ordinal potential game, every improvement path is finite.
+An improvement path is a path $(s^0, s^1, \cdots)$ in which $u_i(s^k) < u_i(s^{k+1}) $, where $s^k$ and $s^{k+1}$ differ in the player $i$'s coordination, \ie only $i$'s strategy changes in the strategy $s={s_1, s_2, \cdots, s_{|\mathcal{N}|}}$.
+
+\end{itemize}
+
 
 
 %\subsubsection*{Congestion Game}
@@ -173,6 +188,8 @@ Potential game is the basis of congestion game, we will introduce them sequentia
 In accordance with~\cite{Voecking06congestiongames}, congestion game is a game where players simultaneously allocate sets of resources to minimize their costs, and the cost of a resource is a function of congestion, which is the number of players choosing the resource.
 Congestion games can be formulated from many problems in realistic world, \eg minimisation of commuting time on the road for commuters, minimization of energy consumption in mobile cloud computing system~\cite{game_cloudcomputing_energy12}.
 
+
+
 Now we give the formal definition of a congestion game.
 A congestion game \cite{Rosenthal}\cite{Voecking06congestiongames} can be expressed by a tuple $\lambda=(\mathcal{N},\mathcal{R},(\mathcal{S}_i)_{i \in \mathcal{N}},(g_r)_{r\in \mathcal{R}})$, where
 \begin{itemize}
@@ -184,6 +201,9 @@ Under strategy profile $s=(s_1,s_2,\cdots s_N)$, player $i$ chooses strategy $s_
 \item The cost $g_r: \mathbb{N}\rightarrow \mathbb{Z}$ is a function of the number of users for resource $r$, $g_r^i=\sum_{r\in s_i} g_r(n_r(s))$. 
 \end{itemize}
 In our paper, $g_r^i$ is referred as congestion of a game.
+
+ssssss
+
 Congestion game is an attractive game model which describes the problem where participants compete for limited resources in a non-cooperative manner, it has good property that Nash equilibrium can be achieved after finite steps of best response dynamic.
 
 Congestion game has been used to model certain problems in internet-centric applications or cloud computing, where self-interested clients compete for the centralized resources and meanwhile interact with each other.
