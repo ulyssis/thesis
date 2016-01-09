@@ -150,9 +150,41 @@ Thus, one game comprises $n$ such optimization problems in total.
 
 
 \section{Congestion Game}
-Before introducing congestion game, we need to introduce potential game first.
+
+
+
+
+%\subsubsection*{Congestion Game}
+
+%Congestion game is a special type of potential game, which has extra conditions, but also yield favourable characteristics.
+
+%In congestion game, player pays for the resources it occupies.
+%Particularly, the payment for one resource is monotonically increasing with the \textit{number} of players occupying that resource, and each player tries to minimize its payment~\footnote{Another way to describe congestion game: player gets benefit by using a certain resource, the benefit is monotonically decreasing with the number of players on that resource, each player tries to maximize its welfare}. 
+
+Congestion game is an attractive game model which describes the problem where participants compete for limited resources in a non-cooperative manner, it has good property that Nash equilibrium can be achieved after finite steps of best response dynamic.
+In accordance with~\cite{Voecking06congestiongames}, congestion game is a game where players simultaneously allocate sets of resources to minimize their costs, and the cost of a resource is a function of congestion, which is the number of players choosing the resource.
+Congestion games can be formulated from many problems in realistic world, \eg minimisation of commuting time on the road for commuters, minimization of energy consumption in mobile cloud computing system~\cite{game_cloudcomputing_energy12}.
+
+
+Now we give the formal definition of a congestion game.
+A congestion game \cite{Rosenthal}\cite{Voecking06congestiongames} can be expressed by a tuple $\lambda=(\mathcal{N},\mathcal{R},(\mathcal{S}_i)_{i \in \mathcal{N}},(g_r)_{r\in \mathcal{R}})$, where
+\begin{itemize}
+\item $\mathcal{N}=\left\{1,\ldots,N\right\}$ denotes the set of players (each each is labeled with a unique index number)
+\item $\mathcal{R}=\left\{1,\ldots,m\right\}$ the set of resources
+\item $\mathcal{S}_i$ is the set of resources for player to use.
+\item $\Sigma_{i\in\mathcal{N}} \subseteq 2^{\mathcal{R}}$ is the strategy space of player $i$. 
+Under strategy profile $s=(s_1,s_2,\cdots s_N)$, player $i$ chooses strategy $s_i\in \mathcal{S}_i$, and the total number of users using resource $r$ is $n_r(s)=|\{i\mid r\in s_i\}|$. 
+\item The cost $g_r: \mathbb{N}\rightarrow \mathbb{Z}$ is a function of the number of users for resource $r$, $g_r^i=\sum_{r\in s_i} g_r(n_r(s))$. 
+\end{itemize}
+In our paper, $g_r^i$ is referred as congestion of a game.
+
+Theorem:
+xxxxxxxxxxxxxxx
+
+To prove this, we need to introduce potential game first.
 Potential game has been applied in wireless network and CRN to help solve different problems~\cite{CApotentialLearning_05dyspan, caps_potential2012, self-coexistenceWRAN2010infocom, pimrc_2012}.
 Potential game has two desiring properties, the existence of pure NE, and every improvement path is finite, which makes it a suitable model to design distributed algorithms.
+
 
 \subsection{Potential Game}
 
@@ -175,41 +207,12 @@ An improvement path is a path $(s^0, s^1, \cdots)$ in which $u_i(s^k) < u_i(s^{k
 
 \end{itemize}
 
-
-
-%\subsubsection*{Congestion Game}
-
-%Congestion game is a special type of potential game, which has extra conditions, but also yield favourable characteristics.
-
-%In congestion game, player pays for the resources it occupies.
-%Particularly, the payment for one resource is monotonically increasing with the \textit{number} of players occupying that resource, and each player tries to minimize its payment~\footnote{Another way to describe congestion game: player gets benefit by using a certain resource, the benefit is monotonically decreasing with the number of players on that resource, each player tries to maximize its welfare}. 
-
-\subsubsection*{Congestion Game}
-In accordance with~\cite{Voecking06congestiongames}, congestion game is a game where players simultaneously allocate sets of resources to minimize their costs, and the cost of a resource is a function of congestion, which is the number of players choosing the resource.
-Congestion games can be formulated from many problems in realistic world, \eg minimisation of commuting time on the road for commuters, minimization of energy consumption in mobile cloud computing system~\cite{game_cloudcomputing_energy12}.
-
-
-
-Now we give the formal definition of a congestion game.
-A congestion game \cite{Rosenthal}\cite{Voecking06congestiongames} can be expressed by a tuple $\lambda=(\mathcal{N},\mathcal{R},(\mathcal{S}_i)_{i \in \mathcal{N}},(g_r)_{r\in \mathcal{R}})$, where
-\begin{itemize}
-\item $\mathcal{N}=\left\{1,\ldots,N\right\}$ denotes the set of players (each each is labeled with a unique index number)
-\item $\mathcal{R}=\left\{1,\ldots,m\right\}$ the set of resources
-\item $\mathcal{S}_i$ is the set of resources for player to use.
-\item $\Sigma_{i\in\mathcal{N}} \subseteq 2^{\mathcal{R}}$ is the strategy space of player $i$. 
-Under strategy profile $s=(s_1,s_2,\cdots s_N)$, player $i$ chooses strategy $s_i\in \mathcal{S}_i$, and the total number of users using resource $r$ is $n_r(s)=|\{i\mid r\in s_i\}|$. 
-\item The cost $g_r: \mathbb{N}\rightarrow \mathbb{Z}$ is a function of the number of users for resource $r$, $g_r^i=\sum_{r\in s_i} g_r(n_r(s))$. 
-\end{itemize}
-In our paper, $g_r^i$ is referred as congestion of a game.
-
-ssssss
-
-Congestion game is an attractive game model which describes the problem where participants compete for limited resources in a non-cooperative manner, it has good property that Nash equilibrium can be achieved after finite steps of best response dynamic.
-
+\subsection{Example of Congestion Game}
 Congestion game has been used to model certain problems in internet-centric applications or cloud computing, where self-interested clients compete for the centralized resources and meanwhile interact with each other.
 For example, server selection is involved in distributed computing platforms~\cite{Cloud_Computing_2010}, or users downloading files from cloud, etc.
 In the following we will introduce an \textit{server matching}~\cite{kothari:congestion_serverMatching} problem to illustrate congestion game's application in communication systems.
-\subsection{Example: Server Matching}
+
+\subsubsection*{Example: Server Matching}
 
 Consider a number of self-interested clients and servers as shown in Figure~\ref{server_sharing}.
 Each client is allowed to access one server.
