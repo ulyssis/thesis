@@ -158,17 +158,46 @@
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% PERSONAL PACKAGES
+%% MY PACKAGES
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\theoremstyle{plain}
+\newtheoremstyle{mytheoremstyle} % name
+        {\topsep}                    % Space above
+        {\topsep}                    % Space below
+        {\itshape\fontfamily{ptm}\selectfont}                   % Body font, ptm is times new roma
+        {}                           % Indent amount
+        {\fontfamily{ptm}\selectfont\scshape\color{black}\bfseries}                   % Theorem head font
+        {:}                          % Punctuation after theorem head
+        {.5em}                       % Space after theorem head
+        {}  % Theorem head spec (can be left empty, meaning ‘normal’)
+
+  
+          
+\theoremstyle{mytheoremstyle}
 \newtheorem{theorem}{Theorem}[section]
 
-\theoremstyle{plain}
-\newtheorem{corollary}{Corollary}
+\theoremstyle{mytheoremstyle}
+\newtheorem{corollary}{Corollary}[section]
 
-\theoremstyle{plain}
-\newtheorem{lemma}{Lemma}
-\newtheorem{mydef}{Definition}
+\theoremstyle{mytheoremstyle}
+\newtheorem{lemma}{Lemma}[section]
+
+%\theoremstyle{mytheoremstyle}
+%\let\definition\relax
+\newtheorem{mydef}{Definition}%[section]
+
+%%%%%%
+%%%%%% Proof
+    \makeatletter
+    \renewenvironment{proof}[1][\proofname]{%
+      \par\pushQED{\qed}\fontfamily{ptm}\selectfont%
+      \topsep6\p@\@plus6\p@\relax
+      \trivlist\item[\hskip\labelsep\bfseries#1\@addpunct{.}]%
+      \ignorespaces
+    }{%
+      \popQED\endtrivlist\@endpefalse
+    }
+    \makeatother 
+%%%%%%%%%%%%%%%%%
 
 \newcommand{\eg}{e.g., }
 \newcommand{\ie}{i.e., }

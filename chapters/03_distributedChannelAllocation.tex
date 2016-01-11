@@ -559,7 +559,7 @@ where $\tilde{f_{ij}}= P_i\cdot h_{ij}\cdot z$ and $\tilde{f_{ji}}= P_j\cdot h_{
 Overlooking the constant coefficient 2, the first item of $u_i$ is one part of the inversed QuasiSINR of station $i$. To minimize the first item, WBS $i$ needs to choose a channel either permits larger transmission power or experiences less interference, whereas the larger power will increase the second item which is part of inversed QuasiSINR of other co-channel WBSs. Hence, the cost function presents a reasonable comprise between the welfare of one WBS and others. If WBS only emphasizes on its own utility (e.g. the first part of Formula \ref{utility}), the best response process doesn't converge. We have following theorem:
 \begin{theorem}
 \label{noconvergence}
-With non-identical transmission power, if every WBS updates its channel based on algorithm \ref{whitecatalgo} with utility based on its own interests, the process doesn't always converge.
+\emph{With non-identical transmission power, if every WBS updates its channel based on algorithm \ref{whitecatalgo} with utility based on its own interests, the process doesn't always converge.}
 \end{theorem}
 The proof is in Appendix \ref{proof}.
 
@@ -846,7 +846,7 @@ The other parameters are listed in Table~\ref{6}ef{simulationparameter}.
 
 \begin{table}[!h]
 \centering
-\begin{tabular}{|r|c|}
+\begin{tabular}{|l|r|}
   \hline
   Number of channels 						& 5 \\
   Number of WBSs							& 16\\
@@ -956,7 +956,7 @@ We also compare the convergence speed between WhteCat with no-regret scheme. We 
 
 \begin{table}[!h]
 \centering
-\begin{tabular}{|r|c|c|c|}
+\begin{tabular}{|l|c|c|c|}
   \hline
   Scheme			 						& average \#steps 	 		& 95\% CI			&average time (s)\\
     \hline
@@ -981,7 +981,7 @@ A certain SINR corresponds to certain transmission configurations like modulatio
 $\gamma_i(0)$ is the SINR for $i$ before starting channel allocation. The variance of SINR in channel allocation process is shown in table \ref{costable} from which we can see WhiteCat achieves only 6\% of oscillation on SINR compared with No-regret approach.
 \begin{table}[!h]
 \centering
-\begin{tabular}{|r|c|c|}
+\begin{tabular}{|l|c|c|}
   \hline
   Scheme			 						& COS 					& 95\% Confidence interval\\
     \hline
@@ -1109,6 +1109,7 @@ For future work we will address the problem of allowing base stations to set the
 %\addcontentsline{toc}{section}{Appendix~\ref{noconvergence}: Proof of Theorem \ref{noconvergence}}
 \chapter{Proof of Theorem \ref{noconvergence}}
 \label{proof}
+
 For selfish best response approach, the utility function is set as follows,
 	\begin{equation}
 \label{selfishutility}
@@ -1116,6 +1117,7 @@ For selfish best response approach, the utility function is set as follows,
 	\end{equation}
 
 \begin{proof}
+
 In order to simplify the proof, we assume $N_0=0$.
 Consider one WBS $i$ executing algorithm \ref{whitecatalgo} with utility \ref{selfishutility}, and updates its channel from $c_i$ to $c_i'$, we denote $u_k', k\in \mathcal{N}$ as the utility of WBS $k$ when $i$ chooses channel $c_i'$, accordingly, the summation of utilities of all WBSs after $i$ changing to $c_i'$ is $U'=\sum_{\forall k\in \mathcal{N}, c(i)=c_i'}u_k'$.
 \begin{equation}
@@ -1170,6 +1172,7 @@ We propose a small contradiction to prove \ref{xxxxxxx} is not true.
 When $m=2,n=1$, and $\alpha_1=1, \alpha_2=0.5, \beta=2.1$, we can see that although $\sum_{i=1}^m\alpha_i=1.5 < \sum_{i=1}^n\beta_i=2.1$, there is
 $\sum_{i=1}^m(\alpha_i+\frac{1}{\alpha_i})=4.5 > \sum_{i=1}^n(\beta_i+\frac{1}{\beta_i})=2.58$.
 hence, with WBS's update, it is possible that $U'> U$, thus there is no monotonically convergence by utilizing \ref{selfishutility}.
+
 \end{proof}
 
 Notice that the last four items in \ref{xxxxx} is exactly the change of summation of utilities of all WBSs after $i$' update if WhiteCat is executed, hence the monotonic convergence of WhiteCat is proved here analytically if noise is considered to be zero. If noise is considered, we can follow the conclusion in the end of \ref{gameforproblem} that WhiteCat converges without monotonicity.

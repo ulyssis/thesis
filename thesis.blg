@@ -83,9 +83,19 @@ I was expecting an "="---line 1094 of file ./backmatter/myrefs.bib
  : // 
  :    publisher = {ACM},\n
 I'm skipping whatever remains of this entry
-Your field is more than 20000 characters---line 1655 of file ./backmatter/myrefs.bib
- : abstract={The Cognitive Radio (CR) technology enables the unlicensed users to share the spectrum with the licensed users on a non-interfering basis. Spectrum sensing is an important function for the unlicensed users to determine availability of a channel in the licensed user's spectrum. However, spectrum sensing consumes considerable energy which can be reduced by employing predictive methods for discovering spectrum holes. Using a reliable prediction scheme, the unlicensed users will sense only those channels which are predicted to be idle. By achieving a low probability of error in predicting the idle channels, the spectrum utilization can also be improved. Since the traffic characteristics of most licensed user systems encountered in real life are not known a priori, we design the spectrum predictor using the neural network 
- :                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        model, multilayer perceptron (MLP), which does not require a prior knowledge of the traffic characteristics of the licensed user systems. The performance of the spectrum predictor is analyzed through extensive simulations.},
+I was expecting a `,' or a `}'---line 1451 of file ./backmatter/myrefs.bib
+ :   
+ :   note="Visited July 2010"
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 1471 of file ./backmatter/myrefs.bib
+ : note: 
+ :       1. one channel
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 1490 of file ./backmatter/myrefs.bib
+ : 
+ : deal with interaction among terminals
+(Error may have been on previous line)
 I'm skipping whatever remains of this entry
 You're missing a field name---line 1870 of file ./backmatter/myrefs.bib
  : 
@@ -126,11 +136,18 @@ You're missing a field name---line 3551 of file ./backmatter/myrefs.bib
  : %author={Shah, V. and Mandayam, N.B. and Goodman, D.},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
+Repeated entry---line 4206 of file ./backmatter/myrefs.bib
+ : @inproceedings{clusterRoutingOverhead_wcnc04
+ :                                             ,
+I'm skipping whatever remains of this entry
 You're missing a field name---line 4304 of file ./backmatter/myrefs.bib
  : 
  : %note= game and utility
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
+A bad cross reference---entry "aaai_IeongMNSS05"
+refers to entry "DBLP:conf/aaai/2005", which doesn't exist
+Warning--I didn't find a database entry for "DBLP:conf/aaai/2005"
 Warning--to sort, need author or key in FCC_spectrumEfficiency_2002
 Warning--to sort, need author or key in FCC_03-322
 Warning--to sort, need author or key in FCC_2010_sedond_memorandumm
@@ -168,45 +185,45 @@ Warning--empty year in spectrumDecision_2013mass
 Warning--empty year in uplink_power_tvws13
 Warning--empty year in willkomm08
 Warning--empty journal in dsa_traffic_2000
-You've used 147 entries,
+You've used 150 entries,
             2950 wiz_defined-function locations,
-            1609 strings with 36978 characters,
-and the built_in function-call counts, 63762 in all, are:
-= -- 6386
-> -- 2305
+            1633 strings with 37842 characters,
+and the built_in function-call counts, 65169 in all, are:
+= -- 6544
+> -- 2356
 < -- 0
-+ -- 979
-- -- 808
-* -- 4101
-:= -- 9091
-add.period$ -- 446
-call.type$ -- 147
-change.case$ -- 840
++ -- 1000
+- -- 826
+* -- 4185
+:= -- 9301
+add.period$ -- 458
+call.type$ -- 150
+change.case$ -- 860
 chr.to.int$ -- 0
-cite$ -- 172
-duplicate$ -- 2170
-empty$ -- 6035
-format.name$ -- 808
-if$ -- 15766
+cite$ -- 175
+duplicate$ -- 2212
+empty$ -- 6155
+format.name$ -- 826
+if$ -- 16111
 int.to.chr$ -- 0
-int.to.str$ -- 147
-missing$ -- 141
-newline$ -- 743
-num.names$ -- 276
-pop$ -- 1600
+int.to.str$ -- 150
+missing$ -- 143
+newline$ -- 761
+num.names$ -- 282
+pop$ -- 1629
 preamble$ -- 1
-purify$ -- 698
+purify$ -- 713
 quote$ -- 0
-skip$ -- 3639
+skip$ -- 3719
 stack$ -- 0
-substring$ -- 3207
-swap$ -- 604
+substring$ -- 3279
+swap$ -- 617
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 574
+type$ -- 586
 warning$ -- 25
-while$ -- 435
-width$ -- 150
-write$ -- 1468
-(There were 30 error messages)
+while$ -- 446
+width$ -- 153
+write$ -- 1506
+(There were 34 error messages)

@@ -1,10 +1,5 @@
 \begin{thebibliography}{100}
 
-\bibitem{FCCdatabasae}
-\url{http://hraunfoss.fcc.gov}.
-\newblock
-  \url{http://hraunfoss.fcc.gov/edocs_public/attachmatch/DOC-301650A1.pdf}.
-
 \bibitem{802.22}
 {IEEE} 802.22 wireless regional area networks.
 \newblock \url{http://www.ieee802.org/22/Technology/}.
@@ -13,7 +8,7 @@
 Information technology -- open systems interconnection -- basic reference model
   -- conventions for the definition of osi services.
 \newblock
-  \url{http://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=18824}.
+  \url{http://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=18824.}
 
 \bibitem{FCC_03-322}
 Order document {FCC} 03-322: Facilitating opportunities for flexible,
@@ -35,13 +30,21 @@ Report of the spectrum efficiency working group.
 \newblock \url{http://www.fcc.gov/sptf/reports.html}, 2002.
 \newblock FCC Spectrum Policy Task Force.
 
-\bibitem{FCC_2010_sedond_memorandumm}
-{In the matter of unlicensed operation in the {TV} broadcast bands: second
-  memorandum opinion and order, Federal Communications Commission, FCC 10-174},
-  Jan. 2011.
+\bibitem{FCCdatabasae}
+{FCC} frees up vacant {TV} airwaves for ”{S}uper {W{i-{F{i” Technologies
+  and Other Technologies}}}}.
+\newblock \url{http://hraunfoss.fcc.gov}, Sep. 2010.
 \newblock Visited July 2012.
 \newblock
-  \url{http://hraunfoss.fcc.gov/edocs_public/attachmatch/DA-11-131A1.pdf}.
+  \url{http://hraunfoss.fcc.gov/edocs_public/attachmatch/DOC-301650A1.pdf}.
+
+\bibitem{FCC_2010_sedond_memorandumm}
+In the matter of unlicensed operation in the {TV} broadcast bands: second
+  memorandum opinion and order, federal communications commission, fcc 10-174.
+\newblock
+  \url{http://hraunfoss.fcc.gov/edocs_public/attachmatch/DA-11-131A1.pdf}, Jan.
+  2011.
+\newblock Visited July 2012.
 
 \bibitem{ecc159}
 {Technical and operational requirements for the possible operation of cognitive
@@ -394,6 +397,11 @@ Report of the spectrum efficiency working group.
 \newblock {\em Wireless Communications, IEEE Transactions on 7}, 8 (August
   2008), 3106--3117.
 
+\bibitem{LectureA}
+{\sc Hoefer, M., and Vöcking, B.}
+\newblock Algorithmische spieltheorie: Congestion games.
+\newblock lecturenotes, RWTH-Aachen University, 2010, Summer Semester.
+
 \bibitem{Inter-Network_Spectrum_Sharing_80222_08}
 {\sc Hu, W., Gerla, M., Vlantis, G., and Pottie, G.}
 \newblock Efficient, flexible, and scalable inter-network spectrum sharing and
@@ -429,6 +437,15 @@ Report of the spectrum efficiency working group.
 {\sc I, C.-L., Rowell, C., Han, S., Xu, Z., Li, G., and Pan, Z.}
 \newblock Toward green and soft: a 5{G} perspective.
 \newblock {\em Communications Magazine, IEEE 52}, 2 (February 2014), 66--73.
+
+\bibitem{aaai_IeongMNSS05}
+{\sc Ieong, S., McGrew, R., Nudelman, E., Shoham, Y., and Sun, Q.}
+\newblock Fast and compact: {A} simple class of congestion games.
+\newblock In {\em Proceedings, The Twentieth National Conference on Artificial
+  Intelligence and the Seventeenth Innovative Applications of Artificial
+  Intelligence Conference, July 9-13, 2005, Pittsburgh, Pennsylvania, {USA}\/}
+  (2005), pp.~489--494.
+\newblock \url{http://www.aaai.org/Library/AAAI/2005/aaai05-077.php}.
 
 \bibitem{reinforcement_learning_crn_2011}
 {\sc Jiang, T., Grace, D., and Mitchell, P.}
@@ -585,6 +602,11 @@ Report of the spectrum efficiency working group.
 \newblock {\em Probability and Computing: Randomized Algorithms and
   Probabilistic Analysis}.
 \newblock Cambridge University Press, New York, NY, USA, 2005.
+
+\bibitem{Mondere_potential_game:1996}
+{\sc Monderer, D., and Shapley, L.}
+\newblock Potential games.
+\newblock {\em Games and Economic Behavior 14}, 1 (1996), 124--143.
 
 \bibitem{SenseLess2011}
 {\sc Murty, R., Chandra, R., Moscibroda, T., and Bahl, V.}

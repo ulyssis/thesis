@@ -34,7 +34,7 @@ $\sigma$ is also called one strategy profile, and there is $\sigma\in \Sigma$.
 \item One vector of strategies of player $i$' opponents is expressed as $\sigma_{-i}$, and the corresponding strategy profile is denoted as $\sigma=\{\sigma_i, \sigma_{-i}\}$.
 $u_i(\sigma) = u_i(\sigma_i, \sigma_{-i})$ is the player $i$' outcome in strategy profile $\sigma$.
 
-\item $u_i:\Sigma\rightarrow \mathbb{R} $ is the utility function of player $i$.
+\item $u_i: \Sigma\rightarrow \mathbb{R} $ is the utility function of player $i$.
 %$\sum=\sqcap_{i\in \mathcal{N}}\sum_i$ is the set of states of the game, which denotes all the possible ways that players may pick strategies.
 $\Sigma_{-i}=\prod_{j\in \mathcal{N}\setminus \{i\}}\Sigma_j$ is the set of states of all the other players except for player $i$.
 As to each player $i$, its utility is decided by its choice on strategy $\sigma_i\in \Sigma_i$, and is also dependant on the choices of other players $\sigma_{-i}\in \Sigma_{-i}$.
@@ -91,8 +91,8 @@ Only a few games have dominant strategy equilibrium, and mechanism design~\cite{
 A desirable solution of games is the one that players choose strategy in accordance with their incentives, minimizing their own cost or maximizing their own payoff/utility.
 Nash equilibrium successfully captures this property, and is the most discussed and pursued solution concept in game theory.
 
-A strategy vector $s\in S$ is a \textit{Nash equilibrium} if for any player $i$ and each alternate strategy $s_i'$, there is
- \[ u_i(s_i, s_{-i}) \geq u_i(s_i', s_{-i})\]
+A strategy vector $s\in S$ is a \textit{Nash equilibrium} if for any player $i$ and each alternate strategy $\sigma_i'$, there is
+ \[ u_i(\sigma_i, \sigma_{-i}) \geq u_i(\sigma_i', \sigma_{-i})\]
 This means for any player in NE state, no unilateral deviation from its current strategy is more profitable.
 This also implies that, NE is self enforcing that once players agree on this solution, it is the best interest for every player to stick to its current strategy.
 
@@ -141,7 +141,7 @@ Other solutions include correlated equilibrium, which also involves probability 
 
 
 \subsubsection*{Individual Optimization and Game}
-As to a player in a game, given the strategies of other players $s_{-i}$, its utility $u_i$ is a function of its own strategy $s_i$, then the maximization of its payoff or minimization of its cost becomes one optimization problem.
+As to a player in a game, given the strategies of other players $\sigma_{-i}$, its utility $u_i$ is a function of its own strategy $\sigma_i$, then the maximization of its payoff or minimization of its cost becomes one optimization problem.
 Thus, one game comprises $n$ such optimization problems in total.
 %Whereas as to a general game, the payoff or cost of each player depends on both $s_i$ and $s_{-i}$, both its own strategy and the strategies chosen by all other players.
 
@@ -150,9 +150,7 @@ Thus, one game comprises $n$ such optimization problems in total.
 
 
 \section{Congestion Game}
-
-
-
+\label{congsetion_game}
 
 %\subsubsection*{Congestion Game}
 
@@ -162,6 +160,10 @@ Thus, one game comprises $n$ such optimization problems in total.
 %Particularly, the payment for one resource is monotonically increasing with the \textit{number} of players occupying that resource, and each player tries to minimize its payment~\footnote{Another way to describe congestion game: player gets benefit by using a certain resource, the benefit is monotonically decreasing with the number of players on that resource, each player tries to maximize its welfare}. 
 
 Congestion game is an attractive game model which describes the problem where participants compete for limited resources in a non-cooperative manner, it has good property that Nash equilibrium can be achieved after finite steps of best response dynamic.
+Congestion game has been used to model certain problems in internet-centric applications or cloud computing, where self-interested clients compete for the centralized resources and meanwhile interact with each other.
+For example, server selection is involved in distributed computing platforms~\cite{Cloud_Computing_2010}, or users downloading files from cloud, etc.
+In the following we will introduce an \textit{server matching}~\cite{kothari:congestion_serverMatching} problem to illustrate congestion game's application in communication systems.
+
 In accordance with~\cite{Voecking06congestiongames}, congestion game is a game where players simultaneously allocate sets of resources to minimize their costs, and the cost of a resource is a function of congestion, which is the number of players choosing the resource.
 Congestion games can be formulated from many problems in realistic world, \eg minimisation of commuting time on the road for commuters, minimization of energy consumption in mobile cloud computing system~\cite{game_cloudcomputing_energy12}.
 
@@ -178,23 +180,31 @@ Under strategy profile $\sigma=(\sigma_1,\sigma_2,\cdots \sigma_N)$, player $i$ 
 \end{itemize}
 In our paper, $g_r^i$ is referred as \textit{congestion} of a game.
 
+We first give a definition of improvement.
+\begin{mydef}
+An improvement path is a path $(\sigma^0, \sigma^1, \cdots)$ in which $u_i(\sigma^k) < u_i(\sigma^{k+1}) $, where $\sigma^k$ and $\sigma^{k+1}$ differ in the player $i$'s coordination, \ie only $i$'s strategy changes in the strategy $\sigma={\sigma_1, \sigma_2, \cdots, \sigma_{|\mathcal{N}|}}$.
+\end{mydef}
+The best response path contains only states for best response improvement steps.
+
+
 \begin{theorem}
 \label{background:finiteImprovement}
 For every congestion game, every sequence of improvement steps is finite.~\cite{Rosenthal}
 \end{theorem}
 
-This theorem immediately implies a corollary
+This theorem immediately implies the following corollary,
 \begin{corollary}
 \label{background:corollary}
-Every congestion game has at least one pure Nash equilibrium.
+%\emph{Every congestion game has at least one pure Nash equilibrium.}
+Every congestion game has at least one pure Nash equilibrium.~\cite{Rosenthal}
 \end{corollary}
 
-To prove this, let us have a look at one similar game, potential game first.
-Potential game has already been applied in wireless network and CRN to help solve different problems~\cite{CApotentialLearning_05dyspan, caps_potential2012, self-coexistenceWRAN2010infocom, pimrc_2012}.
+To prove this, let us first have a look at one similar game, potential game.
+Potential game~\cite{Mondere_potential_game:1996} has already been applied in wireless network and CRN to help solve different problems~\cite{CApotentialLearning_05dyspan, caps_potential2012, self-coexistenceWRAN2010infocom, pimrc_2012}.
 Potential game has two desiring properties, the existence of pure NE, and every improvement path is finite, which makes it a suitable model to design distributed algorithms.
 
 
-\subsection{Potential Game}
+\subsubsection*{Potential Game}
 
 A potential game is a tuple $\lambda=(\mathcal{N},(\Sigma_i)_{i \in \mathcal{N}},(u_i)_{i\in \mathcal{N}})$, which satisfies the following, if there exists a function $\phi: \Sigma\rightarrow \mathbb{R}$, such that for every $i\in \mathcal{N}$, for every $\sigma_{-i}\in \Sigma_{-i}$, and every $\sigma_i, \sigma_i'\in \Sigma$:
 
@@ -205,33 +215,97 @@ u_i(\sigma_i, \sigma_{-i})-u_i(\sigma_i', \sigma_{-i}) >= \phi_i(\sigma_i, \sigm
 \end{split}
 \end{equation}
 If equality holds, this game is called an exact potential game, when it doesn't, the game is called an ordinal potential game.
-It is easy to see that the design of function $\phi$ is the key point to form a potential game.
+It is easy to see that the design of potential function $\phi$ is the key point to form a potential game. 
+The incentive of any player to change its strategy can be expressed using the potential function, in other words, potential game tracks the changes in the payoff/cost with some player deviates.
+
 
 Potential game has two important theorems,
 \begin{itemize}
 \item Every finite ordinal potential game has at least one pure strategy Nash equilibrium.
 \item In every finite ordinal potential game, every improvement path is finite.
-An improvement path is a path $(\sigma^0, \sigma^1, \cdots)$ in which $u_i(\sigma^k) < u_i(\sigma^{k+1}) $, where $\sigma^k$ and $\sigma^{k+1}$ differ in the player $i$'s coordination, \ie only $i$'s strategy changes in the strategy $\sigma={\sigma_1, \sigma_2, \cdots, \sigma_{|\mathcal{N}|}}$.
 
 \end{itemize}
 
-Based on potential game model, Rosenthal~\cite{Rosenthal} built a potential function,
-%\begin{equation}
-%\label{2:potential}
-%\begin{split}
-%
-%\end{split}
-%\end{equation}
+%Based on potential game model, Rosenthal~\cite{Rosenthal} built a potential function,
+\subsection{Convergence Time Towards Nash Equilibrium}
+As to the Theorem~\ref{background:finiteImprovement} which implies the that, for every congestion game, every best response ends in finite steps, we introduce the sketch of the proof of this proposition, as the proof also reveals the number of steps needed to reach a Nash Equilibrium.
+% ~\cite{Voecking06congestiongames} 
+We first introduce Rosenthal's potential function $\phi(s):\Sigma\rightarrow \mathbb{Z}$, where $\sigma$ is the strategy profile of all the players, let $\sigma = \sigma_1, \sigma_2,\cdots, \sigma_N$:
+\begin{equation}
+\label{2:Rosenthal_potential}
+\begin{split}
+\phi(\sigma) 
+& =\sum\limits^{}_{r\in \mathcal{R}} \sum\limits^{n_r(\sigma)}_{i=1} g_r(i)\\
+& =\sum\limits_{i\in \mathcal{N}} \sum\limits^{}_{r\in s_i} g_r(n_r^i(\sigma))\\
+\end{split}
+\end{equation}
+$n_r^i(\sigma)$ is the number of players using resource $r$, whose indices are smaller than or equal to $i$, \ie from $\{1,\cdots,i\}$. 
+In the part after the second equality sign, $\sum\limits^{}_{r\in \sigma_i} g_r(n_r^i(\sigma))$ is a virtual value or cost that player $i$ have when assuming the resource $r$ is not used by players whose indices are greater than $i$.
+%Note that the potential is \textit{not} the sum of congestions experienced by every user. 
+
+The intuitive interpretation of the virtual cost is, according to~\cite{Voecking06congestiongames}, the cost of each player for choosing the strategy when it is inserted into the game.
+Let us assume player $N$ is the last player to be inserted into the game, then $\sum\limits^{}_{r\in s_N} g_r(n_r^N(\sigma))$ equals to the real cost that player $n$ takes.
+When player $N$ can decrease its cost by switching to another strategy by an unilateral move, then $\sum\limits^{}_{r\in \sigma_N} g_r(n_r^N(\sigma))$ and its potential decrease by the same amount.
+As the potential can be calculated by inserting the players with any sequence, each player will have the same property with play $N$, as we just discussed.
+
+In summery, the change of the potential caused by one player's unilateral move from $\sigma_i$ to $\sigma_i'$ is equivalent to the change of gain (or loss) of that player.
+\begin{equation}
+\label{5}
+\varDelta \phi(\sigma_i \rightarrow \sigma_i') = g^i(\sigma',\sigma_{-i}) - g^i(\sigma,\sigma_{-i})
+\end{equation}
+$\sigma_{-i}$ is the strategy profile for all players except for $i$.
+Thus the potential decreases with the update of players monotonically during the convergence process.
+Most importantly, as the potential of a congestion game is bounded, and every best response move made by a player decreases it at least by 1, the length of any sequence of improvement steps is also finite.
 
 
-\subsection{Example of Congestion Game}
-Congestion game has been used to model certain problems in internet-centric applications or cloud computing, where self-interested clients compete for the centralized resources and meanwhile interact with each other.
-For example, server selection is involved in distributed computing platforms~\cite{Cloud_Computing_2010}, or users downloading files from cloud, etc.
-In the following we will introduce an \textit{server matching}~\cite{kothari:congestion_serverMatching} problem to illustrate congestion game's application in communication systems.
+Comparing with potential game, congestion game is much easier to connect with the problems in networks or CRN.
+As long as we can decide the payoff (or cost) happened upon a certain resource, \ie spectrum bands, time slots, transmission power is monotonic increasing (or decreasing), we can formulate the problem into one congestion game, and we can make use of the property of congestion game to implement best response to achieve Nash equilibrium.
+
+
+%As every congestion game is a potential game, and the total potential is finite, thus the number of improvements is upper-bounded by $2\cdot\sum\limits^{}_{r\in \mathcal{R}} \sum\limits^{n_r(\sigma)}_{i=1} g_r(i)$ \cite{Voecking06congestiongames}.
+
+%\section{Application of congestion game in the design of decentralised algorithm}
+%\todo[inline]{expand: the application of potential game in CRN}
+\subsection{Singleton Congestion Game}
+We introduce a special type of congestion game~\cite{aaai_IeongMNSS05}, which implies polynomial number of best response steps towards convergence.
+
+
+\begin{mydef}
+\label{background:singleton}
+A congestion game is called singleton if, for every $i\in \mathcal{N}$ and every $\mathcal{R}\in \Sigma_i$, it holds that $|\mathcal{R}|=1$.
+\end{mydef}
+In words, each player allocates one single resource from its strategy set.
+Although this constraint on the players strategies is very restrictive, there are still $m^n$ different strategy profiles.
+
+\begin{theorem}
+\label{background:polynomialConvergence}
+In singleton congestion games, all improvement sequences have length $\mathcal{O}(n^2m)$~\cite{aaai_IeongMNSS05}
+\end{theorem}
+
+The sketch of the proof is as follows.
+The upper bound on the number of convergence steps is shown in Formula~\ref{2:Rosenthal_potential}.
+Now we need to approximate this expression.
+Replace original delays by smaller integer values without changing the preferences of the player, then calculate an upper bound on the maximum potential with respect to the new delays.
+For example, if the delay on a certain resource is 15, 50, 100 with respect to 1, 2 and 3 players using that resource, then we manipulate the delays as 1, 2, 3.
+When the number of resource is $m$ and number of players is $n$, the largest new delay is $mn$.
+Then the Rosenthal's potential in Formula ~\ref{2:Rosenthal_potential} has the following relationships with an upper bound.
+\begin{equation}
+\label{2:Rosenthal_potential_newdelay}
+\begin{split}
+\phi(\sigma) 
+& =\sum\limits^{}_{r\in \mathcal{R}} \sum\limits^{n_r(\sigma)}_{i=1} g_r(i)\\
+& =\sum\limits^{}_{r\in \mathcal{R}} \sum\limits^{n_r(\sigma)}_{i=1} nm\\
+& \leq n^2m
+\end{split}
+\end{equation}
+Therefore, the length of improvement sequences is upper-bounded by $n^2m$.
+The proof in details can be found in ~\cite{aaai_IeongMNSS05, LectureA}
+
 
 \subsubsection*{Example: Server Matching}
+In order to show how is problem in networks formulated into a game, and from which an effective algorithm is proposed, we introduce a small example with the application of singleton congestion game.
 
-Consider a number of self-interested clients and servers as shown in Figure~\ref{server_sharing}.
+Let us consider a number of self-interested clients and servers as shown in Figure~\ref{server_sharing}.
 Each client is allowed to access one server.
 The latency of one server is a monotonic increasing function of the \textit{number of clients} attached to it.
 When clients try to choose one server which has the shortest latency, a congestion game is formed.
@@ -242,59 +316,32 @@ When clients try to choose one server which has the shortest latency, a congesti
 \label{server_sharing}
 \end{figure}
 
-More formally, this corresponding congestion game is composed of players (the self-interested clients) and resources (servers), where players are allowed to choose one certain resources to use. 
-There is cost (latency) generated on a resource for the players who use that resource, and the cost is monotonic increasing with the number of players using it. 
-As congestion game permits convergence when every players in turn adopt the strategy which leads to a better utility.
+Following the description in Section~\ref{congsetion_game}, we write the game for this problem, 
+\begin{itemize}
+\item The clients constitute the players in the game $\mathcal{N}$, and the collection of servers $\mathcal{M}$ is the strategy space for every player.
+\item The cost of players in the game is equivalent to the latency for the clients .
+If we denote the delay happens on the server as $d(n)$, where $n$ is the number of clients using the server, then the delay (cost) for a client (player) $i$ is $d(n_r(\sigma))$, where $n_r(\sigma)$ and $r\in \sigma_i$ is the number of clients using the server $r$.
+\item As each user is allowed to use on server, this is a singleton congestion game according to Definition~\ref{background:singleton}.
+\end{itemize}
 
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx   math expression
+Then, according to Theorem~\ref{background:finiteImprovement} and~\ref{background:polynomialConvergence}, after maximal $nm$ times best responses, the system reaches Nash equilibrium.
+%More formally, this corresponding congestion game is composed of players (the self-interested clients) and resources (servers), where players are allowed to choose one certain resources to use. 
+%There is cost (latency) generated on a resource for the players who use that resource, and the cost is monotonic increasing with the number of players using it. 
+%As congestion game permits convergence when every players in turn adopt the strategy which leads to a better utility.
 
-Thus in server matching problem, when clients in turn choose a permissible server with a smaller predicted latency, then after finite number of steps, no client has motivation to switch any more, and we reach a NE.
+
+
+%Thus in server matching problem, when clients in turn choose a permissible server with a smaller predicted latency, then after finite number of steps, no client has motivation to switch any more, and we reach a NE.
+
 %If every player greedily searches the allowed resources to decrease its cost, the dynamics will cease in Nash equilibrium, where no player has motivation to adopt a new set of resources unilaterally. 
 
 
 
 
+\subsection{Player-specific Congestion Game}
+The condition for being a congestion game, which xxxxxxxxxxxxx
 
 
-
-
-\subsection{Convergence Time Towards Nash Equilibrium}
-As to the convergence of congestion game, it is known~\cite{Voecking06congestiongames} that, for every congestion game, every best response ends in finite steps.
-In the following, we introduce the sketch of the proof of this proposition, as the proof also reveals the number of steps needed to reach a Nash Equilibrium.
-
-We first introduce Rosenthal's potential function $\phi(s):\mathcal{S}\rightarrow Z$, where $s$ is the strategy profile of all the players, let $s = s_1, s_2,\cdots, s_N$:
-\begin{equation}
-\label{4}
-\begin{split}
-\phi(s) 
-& =\sum\limits^{}_{r\in \mathcal{R}} \sum\limits^{n_r(s)}_{i=1} g_r(i)\\
-& =\sum\limits_{i\in \mathcal{N}} \sum\limits^{}_{r\in s_i} g_r(n_r^i(s))\\
-\end{split}
-\end{equation}
-$n_r^i(s)$ is the number of players using resource $r$, whose indices are smaller than or equal to $i$, \ie from $\{1,\cdots,i\}$. 
-In the part after the second equality sign, $\sum\limits^{}_{r\in s_i} g_r(n_r^i(s))$ is a virtual value or cost that player $i$ have when assuming the resource $r$ is not used by players whose indices are greater than $i$.
-%Note that the potential is \textit{not} the sum of congestions experienced by every user. 
-
-The intuitive interpretation of the virtual cost is, according to~\cite{Voecking06congestiongames}, the cost of each player for choosing the strategy when it is inserted into the game.
-Let us assume player $N$ is the last player to be inserted into the game, then $\sum\limits^{}_{r\in s_N} g_r(n_r^N(s))$ equals to the real cost that player $n$ takes.
-When player $N$ can decrease its cost by switching to another strategy by an unilateral move, then $\sum\limits^{}_{r\in s_N} g_r(n_r^N(s))$ and its potential decrease by the same amount.
-As the potential can be calculated by inserting the players with any sequence, each player will have the same property with play $N$, as we just discussed.
-
-In summery, the change of the potential caused by one player's unilateral move from $s_i$ to $s_i'$ is equivalent to the change of gain (or loss) of that player.
-\begin{equation}
-\label{5}
-\varDelta \phi(s_i \rightarrow s_i') = g^i(s',s_{-i}) - g^i(s,s_{-i})
-\end{equation}
-$s_{-i}$ is the strategy profile for all players except for $i$.
-Thus the potential decreases with the update of players monotonically during the convergence process.
-Most importantly, as the potential of a congestion game is bounded, and every best response move made by a player decreases it at least by 1, the length of any sequence of improvement steps is also finite.
-
-
-
-%As every congestion game is a potential game, and the total potential is finite, thus the number of improvements is upper-bounded by $2\cdot\sum\limits^{}_{r\in \mathcal{R}} \sum\limits^{n_r(\sigma)}_{i=1} g_r(i)$ \cite{Voecking06congestiongames}.
-
-%\section{Application of congestion game in the design of decentralised algorithm}
-%\todo[inline]{expand: the application of potential game in CRN}
 
 
 
@@ -309,7 +356,7 @@ Table~\ref{opt_table} shows the commonly used parameters, objectives and constra
 Part of the contents in Table~\ref{opt_table} refers \cite{Han:2008:RAW:1457343}.
 
 \begin{table}
-\begin{tabular}{|C{2.2cm}|C{3.8cm} | C{3.5cm} | C{3.7cm}|}
+\begin{tabular}{|L{2.1cm}|C{3.8cm} | C{3.5cm} | C{3.7cm}|}
 \hline 
  & Parametres & Optimization goals & Constraints \\ 
 \hline 
