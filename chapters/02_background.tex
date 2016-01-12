@@ -256,8 +256,11 @@ In summery, the change of the potential caused by one player's unilateral move f
 $\sigma_{-i}$ is the strategy profile for all players except for $i$.
 Thus the potential decreases with the update of players monotonically during the convergence process.
 Most importantly, as the potential of a congestion game is bounded, and every best response move made by a player decreases it at least by 1, the length of any sequence of improvement steps is also finite.
+Then the Theorem~\ref{background:finiteImprovement} is proved.
 
 
+
+The existence of Nash equilibria gives a natural solution concept for congestion games.
 Comparing with potential game, congestion game is much easier to connect with the problems in networks or CRN.
 As long as we can decide the payoff (or cost) happened upon a certain resource, \ie spectrum bands, time slots, transmission power is monotonic increasing (or decreasing), we can formulate the problem into one congestion game, and we can make use of the property of congestion game to implement best response to achieve Nash equilibrium.
 
@@ -338,8 +341,18 @@ Then, according to Theorem~\ref{background:finiteImprovement} and~\ref{backgroun
 
 
 
-\subsection{Player-specific Congestion Game}
-The condition for being a congestion game, which xxxxxxxxxxxxx
+\subsection{Variants of Congestion Game}
+In the congestion game we have introduced in Section ~\ref{congsetion_game}, the cost caused on one resource is function of the number of players using that resource.
+In some variants of congestion game, the cost is decided by some other factors.
+In \textit{player specific congestion game}, different players may have different delay functions.
+As to \textit{weighted congestion game}, different players may have different impacts on the delays of the resources they allocate, in other words, there is a weight for every player, and the congestion on a resource is the total weight of all players using that resource.
+
+As to neither player specific congestion game nor weighted congestion game, the finite converge does not hold anymore.
+But there exits NE for both of Player specific congestion game and weighted congestion game when they are singleton congestion game~\cite{Milchtaich1996111, FKKMS02}.
+When these variant of congestion game are not singleton ones, \cite{Ackermann06purenash} points that NE exists when the strategy space of players are matroid.
+
+
+
 
 
 

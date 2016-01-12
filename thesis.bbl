@@ -311,6 +311,14 @@ In the matter of unlicensed operation in the {TV} broadcast bands: second
 \newblock {IEEE} 802.11af: a standard for {TV} white space spectrum sharing.
 \newblock {\em Communications Magazine, IEEE 51}, 10 (October 2013), 92--100.
 
+\bibitem{FKKMS02}
+{\sc Fotakis, D., Kontogiannis, S., Koutsoupias, E., Mavronicolas, M., and
+  Spirakis, P.}
+\newblock The structure and complexity of nash equilibria for a selfish routing
+  game.
+\newblock In {\em Proceedings of the 29th International Colloquium on Automata,
+  Languages, and Programming (ICALP)\/} (Malaga, Spain, 2002), pp.~123--134.
+
 \bibitem{aggregatedInf_Galindo_crowncom09}
 {\sc Galindo-Serrano, A., and Giupponi, L.}
 \newblock Aggregated interference control for cognitive radio networks based on
@@ -584,6 +592,13 @@ In the matter of unlicensed operation in the {TV} broadcast bands: second
   application to power control.
 \newblock In {\em Proc. of IEEE GLOBECOM 2001\/} (2001), vol.~2, pp.~821--826
   vol.2.
+
+\bibitem{Milchtaich1996111}
+{\sc Milchtaich, I.}
+\newblock Congestion games with player-specific payoff functions.
+\newblock {\em Games and Economic Behavior 13}, 1 (1996), 111 -- 124.
+\newblock
+  \url{http://www.sciencedirect.com/science/article/B6WFW-45MH09M-2Y/2/ad6966b4c9b49d9450d3f995ef526373}.
 
 \bibitem{Mitola}
 {\sc Mitola, J., I., and Maguire, G.Q., J.}
