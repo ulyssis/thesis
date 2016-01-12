@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.7.26)  12 JAN 2016 01:28
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.7.26)  12 JAN 2016 16:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1428,53 +1428,63 @@ OUT-
  []
 
 
-Overfull \hbox (1.41573pt too wide) detected at line 75
+Overfull \hbox (1.41573pt too wide) detected at line 73
+ []\T1/phv/m/n/12 100
+ []
+
+
+Overfull \hbox (1.41573pt too wide) detected at line 74
  []\T1/phv/m/n/12 101
  []
 
 
+Overfull \hbox (1.41573pt too wide) detected at line 75
+ []\T1/phv/m/n/12 103
+ []
+
+
 Overfull \hbox (1.41573pt too wide) detected at line 76
- []\T1/phv/m/n/12 102
- []
-
-
-Overfull \hbox (1.41573pt too wide) detected at line 77
- []\T1/phv/m/n/12 103
- []
-
-
-Overfull \hbox (1.41573pt too wide) detected at line 78
- []\T1/phv/m/n/12 103
- []
-
-
-Overfull \hbox (1.41573pt too wide) detected at line 79
  []\T1/phv/m/n/12 104
  []
 
 
-Overfull \hbox (1.41573pt too wide) detected at line 80
+Overfull \hbox (1.41573pt too wide) detected at line 77
  []\T1/phv/m/n/12 105
  []
 
 
+Overfull \hbox (1.41573pt too wide) detected at line 78
+ []\T1/phv/m/n/12 105
+ []
+
+
+Overfull \hbox (1.41573pt too wide) detected at line 79
+ []\T1/phv/m/n/12 106
+ []
+
+
+Overfull \hbox (1.41573pt too wide) detected at line 80
+ []\T1/phv/m/n/12 107
+ []
+
+
 Overfull \hbox (1.41573pt too wide) detected at line 81
- []\T1/phv/m/n/12 110
+ []\T1/phv/m/n/12 112
  []
 
 
 Overfull \hbox (1.41573pt too wide) detected at line 82
- []\T1/phv/m/n/12 110
+ []\T1/phv/m/n/12 112
  []
 
 
 Overfull \hbox (1.41573pt too wide) detected at line 84
- []\T1/phv/m/n/12 111
+ []\T1/phv/m/n/12 113
  []
 
 
 Overfull \hbox (1.41573pt too wide) detected at line 85
- []\T1/phv/m/n/12 112
+ []\T1/phv/m/n/12 114
  []
 
 [9])
@@ -1597,7 +1607,7 @@ Package Fancyhdr Warning: \headheight is too small (17.07164pt):
  This may cause the page layout to be inconsistent, however.
 
 [30]
-<./figures/03_distributedChannelAllocation/systemmodel_working.pdf, id=1015, 44
+<./figures/03_distributedChannelAllocation/systemmodel_working.pdf, id=1017, 44
 9.88506pt x 354.45908pt>
 File: ./figures/03_distributedChannelAllocation/systemmodel_working.pdf Graphic
  file (type pdf)
@@ -1618,7 +1628,7 @@ Package Fancyhdr Warning: \headheight is too small (17.07164pt):
  This may cause the page layout to be inconsistent, however.
 
 [32 <./figures/03_distributedChannelAllocation/systemmodel_working.pdf>]
-<./figures/03_distributedChannelAllocation/quasiSINR2.pdf, id=1114, 140.98071pt
+<./figures/03_distributedChannelAllocation/quasiSINR2.pdf, id=1116, 140.98071pt
  x 79.95865pt>
 File: ./figures/03_distributedChannelAllocation/quasiSINR2.pdf Graphic file (ty
 pe pdf)
@@ -1660,7 +1670,7 @@ Package Fancyhdr Warning: \headheight is too small (17.07164pt):
  This may cause the page layout to be inconsistent, however.
 
 [38] [39]
-<./figures/03_distributedChannelAllocation/lpcvxcdf100runs.pdf, id=1308, 449.68
+<./figures/03_distributedChannelAllocation/lpcvxcdf100runs.pdf, id=1310, 449.68
 pt x 338.26375pt>
 File: ./figures/03_distributedChannelAllocation/lpcvxcdf100runs.pdf Graphic fil
 e (type pdf)
@@ -1721,52 +1731,56 @@ LaTeX Font Warning: Command \tiny invalid in math mode on input line 644.
 LaTeX Font Warning: Command \tiny invalid in math mode on input line 644.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 679.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 682.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 679.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 682.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 679.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 682.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 679.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 682.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 679.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 682.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 679.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 682.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 679.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 682.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 679.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 682.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 679.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 682.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 679.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 682.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 679.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 682.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 679.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 682.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 679.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 682.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 679.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 682.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 679.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 682.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 679.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 682.
+
+
+Underfull \vbox (badness 5475) has occurred while \output is active []
+
 
 
 Package Fancyhdr Warning: \headheight is too small (17.07164pt): 
@@ -1776,37 +1790,37 @@ Package Fancyhdr Warning: \headheight is too small (17.07164pt):
 
 [44]
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 691.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 694.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 691.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 694.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 691.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 694.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 691.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 694.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 691.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 694.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 691.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 694.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 711.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 714.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 711.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 714.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 711.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 714.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 711.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 714.
 
 [45]
-Overfull \hbox (11.53304pt too wide) in paragraph at lines 721--721
+Overfull \hbox (11.53304pt too wide) in paragraph at lines 724--724
 []\T1/phv/b/n/14.4 Communication over-head of Di-CAPS in the phase of chan-
  []
 
@@ -1817,28 +1831,6 @@ Package Fancyhdr Warning: \headheight is too small (17.07164pt):
  This may cause the page layout to be inconsistent, however.
 
 [46] [47]
-<./figures/03_distributedChannelAllocation/layout.pdf, id=1437, 643.40375pt x 6
-44.4075pt>
-File: ./figures/03_distributedChannelAllocation/layout.pdf Graphic file (type p
-df)
- <use ./figures/03_distributedChannelAllocation/layout.pdf>
-Package pdftex.def Info: ./figures/03_distributedChannelAllocation/layout.pdf u
-sed on input line 841.
-(pdftex.def)             Requested size: 213.71576pt x 214.05139pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<./figures/others/3.pdf, id=1441, 483.8075pt x 372.39125pt>
-File: ./figures/others/3.pdf Graphic file (type pdf)
-
-<use ./figures/others/3.pdf>
-Package pdftex.def Info: ./figures/others/3.pdf used on input line 877.
-(pdftex.def)             Requested size: 341.94652pt x 263.21205pt.
-
 
 Package Fancyhdr Warning: \headheight is too small (17.07164pt): 
  Make it at least 27.67601pt.
@@ -1846,24 +1838,43 @@ Package Fancyhdr Warning: \headheight is too small (17.07164pt):
  This may cause the page layout to be inconsistent, however.
 
 [48]
+<./figures/03_distributedChannelAllocation/layout.pdf, id=1442, 643.40375pt x 6
+44.4075pt>
+File: ./figures/03_distributedChannelAllocation/layout.pdf Graphic file (type p
+df)
+ <use ./figures/03_distributedChannelAllocation/layout.pdf>
+Package pdftex.def Info: ./figures/03_distributedChannelAllocation/layout.pdf u
+sed on input line 844.
+(pdftex.def)             Requested size: 213.71576pt x 214.05139pt.
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./figures/others/4.pdf, id=1448, 483.8075pt x 372.39125pt>
-File: ./figures/others/4.pdf Graphic file (type pdf)
+<./figures/others/3.pdf, id=1446, 483.8075pt x 372.39125pt>
+File: ./figures/others/3.pdf Graphic file (type pdf)
 
-<use ./figures/others/4.pdf>
-Package pdftex.def Info: ./figures/others/4.pdf used on input line 884.
+<use ./figures/others/3.pdf>
+Package pdftex.def Info: ./figures/others/3.pdf used on input line 880.
 (pdftex.def)             Requested size: 341.94652pt x 263.21205pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./figures/others/5.pdf, id=1449, 489.83pt x 399.4925pt>
+<./figures/others/4.pdf, id=1447, 483.8075pt x 372.39125pt>
+File: ./figures/others/4.pdf Graphic file (type pdf)
+
+<use ./figures/others/4.pdf>
+Package pdftex.def Info: ./figures/others/4.pdf used on input line 887.
+(pdftex.def)             Requested size: 341.94652pt x 263.21205pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<./figures/others/5.pdf, id=1448, 489.83pt x 399.4925pt>
 File: ./figures/others/5.pdf Graphic file (type pdf)
 
 <use ./figures/others/5.pdf>
-Package pdftex.def Info: ./figures/others/5.pdf used on input line 892.
+Package pdftex.def Info: ./figures/others/5.pdf used on input line 895.
 (pdftex.def)             Requested size: 341.94652pt x 278.88696pt.
 
 
@@ -1876,34 +1887,13 @@ Package Fancyhdr Warning: \headheight is too small (17.07164pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[50 <./figures/others/3.pdf> <./figures/others/4.pdf>]
-<./figures/others/1.pdf, id=1487, 486.81876pt x 372.39125pt>
+[50 <./figures/others/3.pdf>] [51 <./figures/others/4.pdf> <./figures/others/5.
+pdf>] <./figures/others/1.pdf, id=1499, 486.81876pt x 372.39125pt>
 File: ./figures/others/1.pdf Graphic file (type pdf)
 
 <use ./figures/others/1.pdf>
-Package pdftex.def Info: ./figures/others/1.pdf used on input line 916.
+Package pdftex.def Info: ./figures/others/1.pdf used on input line 919.
 (pdftex.def)             Requested size: 341.94652pt x 261.56989pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[51 <./figures/others/5.pdf>]
-<./figures/others/30_31.pdf, id=1506, 490.83376pt x 384.43625pt>
-File: ./figures/others/30_31.pdf Graphic file (type pdf)
-
-<use ./figures/others/30_31.pdf>
-Package pdftex.def Info: ./figures/others/30_31.pdf used on input line 949.
-(pdftex.def)             Requested size: 341.94652pt x 267.83061pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
 
 
 Package Fancyhdr Warning: \headheight is too small (17.07164pt): 
@@ -1912,184 +1902,196 @@ Package Fancyhdr Warning: \headheight is too small (17.07164pt):
  This may cause the page layout to be inconsistent, however.
 
 [52 <./figures/others/1.pdf>]
+<./figures/others/30_31.pdf, id=1516, 490.83376pt x 384.43625pt>
+File: ./figures/others/30_31.pdf Graphic file (type pdf)
+
+<use ./figures/others/30_31.pdf>
+Package pdftex.def Info: ./figures/others/30_31.pdf used on input line 952.
+(pdftex.def)             Requested size: 341.94652pt x 267.83061pt.
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \vbox (badness 2573) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [53 <./figures/others/30_31.pdf>]
-<./figures/others/16.pdf, id=1622, 490.83376pt x 364.36125pt>
+
+Package Fancyhdr Warning: \headheight is too small (17.07164pt): 
+ Make it at least 27.67601pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[54] <./figures/others/16.pdf, id=1627, 490.83376pt x 364.36125pt>
 File: ./figures/others/16.pdf Graphic file (type pdf)
 
 <use ./figures/others/16.pdf>
-Package pdftex.def Info: ./figures/others/16.pdf used on input line 1019.
+Package pdftex.def Info: ./figures/others/16.pdf used on input line 1022.
 (pdftex.def)             Requested size: 341.94652pt x 253.84467pt.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 1020.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 1023.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<./figures/others/14.pdf, id=1625, 483.8075pt x 365.365pt>
+<./figures/others/14.pdf, id=1630, 483.8075pt x 365.365pt>
 File: ./figures/others/14.pdf Graphic file (type pdf)
 
 <use ./figures/others/14.pdf>
-Package pdftex.def Info: ./figures/others/14.pdf used on input line 1038.
+Package pdftex.def Info: ./figures/others/14.pdf used on input line 1041.
 (pdftex.def)             Requested size: 341.94652pt x 258.24579pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./figures/others/15.pdf, id=1626, 483.8075pt x 365.365pt>
+<./figures/others/15.pdf, id=1631, 483.8075pt x 365.365pt>
 File: ./figures/others/15.pdf Graphic file (type pdf)
 
 <use ./figures/others/15.pdf>
-Package pdftex.def Info: ./figures/others/15.pdf used on input line 1053.
+Package pdftex.def Info: ./figures/others/15.pdf used on input line 1056.
 (pdftex.def)             Requested size: 341.94652pt x 258.24579pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./figures/others/24.pdf, id=1627, 498.86375pt x 399.4925pt>
+<./figures/others/24.pdf, id=1632, 498.86375pt x 399.4925pt>
 File: ./figures/others/24.pdf Graphic file (type pdf)
 
 <use ./figures/others/24.pdf>
-Package pdftex.def Info: ./figures/others/24.pdf used on input line 1098.
+Package pdftex.def Info: ./figures/others/24.pdf used on input line 1101.
 (pdftex.def)             Requested size: 384.68576pt x 308.06735pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+[55 <./figures/others/16.pdf>]
 
 Package Fancyhdr Warning: \headheight is too small (17.07164pt): 
  Make it at least 27.67601pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[54] [55 <./figures/others/16.pdf> <./figures/others/14.pdf>]
+[56 <./figures/others/14.pdf> <./figures/others/15.pdf>] [57 <./figures/others/
+24.pdf>]
 
 Package Fancyhdr Warning: \headheight is too small (17.07164pt): 
  Make it at least 27.67601pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[56 <./figures/others/15.pdf> <./figures/others/24.pdf>]
+[58
+
+]
  A.
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1133.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1136.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1133.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1136.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1133.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1136.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1133.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1136.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1133.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1136.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1133.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1136.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1133.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1136.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1133.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1136.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1133.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1136.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1133.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1136.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1133.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1136.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1133.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1136.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1133.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1136.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1133.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1136.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1143.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1146.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1143.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1146.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1143.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1146.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1143.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1146.
 
 
 Underfull \vbox (badness 1735) has occurred while \output is active []
 
- [57
+ [59]
 
-]
-
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1155.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1158.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1155.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1158.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1155.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1158.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1155.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1158.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1155.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1158.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1155.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1158.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1155.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1158.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1155.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1158.
 
-[58]
+[60]
  B.
-[59
+[61
 
-]) [60]
+]) [62]
 \openout2 = `chapters/04_clutering.aux'.
 
  (./chapters/04_clutering.tex
  4.
-[61
+[63
 
 
 
-] [62]
+] [64]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [63]
-[64]
+ [65]
+[66]
 Overfull \hbox (76.15846pt too wide) in paragraph at lines 208--242
  [][] 
  []
 
-[65] <./figures/04_clutering/figure1.pdf, id=1810, 189.70876pt x 114.4275pt>
+[67] <./figures/04_clutering/figure1.pdf, id=1819, 189.70876pt x 114.4275pt>
 File: ./figures/04_clutering/figure1.pdf Graphic file (type pdf)
 
 <use ./figures/04_clutering/figure1.pdf>
 Package pdftex.def Info: ./figures/04_clutering/figure1.pdf used on input line 
 281.
 (pdftex.def)             Requested size: 256.46152pt x 154.7079pt.
- [66 <./figures/04_clutering/figure1.pdf>]
+ [68 <./figures/04_clutering/figure1.pdf>]
 LaTeX Font Info:    Try loading font information for T1+pcr on input line 346.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
@@ -2097,8 +2099,8 @@ File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 
 LaTeX Warning: Float too large for page by 50.2442pt on input line 350.
 
-[67] [68]
-<./figures/04_clutering/clusters_denseNetwork_2.pdf, id=1893, 333.01915pt x 343
+[69] [70]
+<./figures/04_clutering/clusters_denseNetwork_2.pdf, id=1903, 333.01915pt x 343
 .84528pt>
 File: ./figures/04_clutering/clusters_denseNetwork_2.pdf Graphic file (type pdf
 )
@@ -2111,7 +2113,7 @@ d on input line 403.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-<./figures/05_routing/number_clusters_upperBound.pdf, id=1896, 393.47pt x 307.1
+<./figures/05_routing/number_clusters_upperBound.pdf, id=1906, 393.47pt x 307.1
 475pt>
 File: ./figures/05_routing/number_clusters_upperBound.pdf Graphic file (type pd
 f)
@@ -2119,9 +2121,9 @@ f)
 Package pdftex.def Info: ./figures/05_routing/number_clusters_upperBound.pdf us
 ed on input line 424.
 (pdftex.def)             Requested size: 286.37834pt x 223.5503pt.
- [69] [70 <./figures/04_clutering/clusters_denseNetwork_2.pdf> <./figures/05_ro
+ [71] [72 <./figures/04_clutering/clusters_denseNetwork_2.pdf> <./figures/05_ro
 uting/number_clusters_upperBound.pdf>]
-<./figures/04_clutering/figure2.pdf, id=1919, 192.72pt x 127.47626pt>
+<./figures/04_clutering/figure2.pdf, id=1928, 192.72pt x 127.47626pt>
 File: ./figures/04_clutering/figure2.pdf Graphic file (type pdf)
 
 <use ./figures/04_clutering/figure2.pdf>
@@ -2129,7 +2131,7 @@ Package pdftex.def Info: ./figures/04_clutering/figure2.pdf used on input line
 476.
 (pdftex.def)             Requested size: 256.46152pt x 169.63853pt.
 
-<./figures/04_clutering/percentage_overlapping_node.pdf, id=1923, 449.68pt x 33
+<./figures/04_clutering/percentage_overlapping_node.pdf, id=1932, 449.68pt x 33
 8.26375pt>
 File: ./figures/04_clutering/percentage_overlapping_node.pdf Graphic file (type
  pdf)
@@ -2138,17 +2140,17 @@ Package pdftex.def Info: ./figures/04_clutering/percentage_overlapping_node.pdf
  used on input line 494.
 (pdftex.def)             Requested size: 256.46152pt x 192.92589pt.
 
-[71] [72 <./figures/04_clutering/figure2.pdf> <./figures/04_clutering/percentag
+[73] [74 <./figures/04_clutering/figure2.pdf> <./figures/04_clutering/percentag
 e_overlapping_node.pdf>]
-<./figures/04_clutering/singletongame.pdf, id=1979, 239.93639pt x 243.7908pt>
+<./figures/04_clutering/singletongame.pdf, id=1988, 239.93639pt x 243.7908pt>
 File: ./figures/04_clutering/singletongame.pdf Graphic file (type pdf)
 
 <use ./figures/04_clutering/singletongame.pdf>
 Package pdftex.def Info: ./figures/04_clutering/singletongame.pdf used on input
  line 595.
 (pdftex.def)             Requested size: 128.23076pt x 130.29472pt.
- [73] [74] [75 <./figures/04_clutering/singletongame.pdf>]
-<./figures/04_clutering/figure4AinC.pdf, id=2051, 177.66376pt x 109.40875pt>
+ [75] [76] [77 <./figures/04_clutering/singletongame.pdf>]
+<./figures/04_clutering/figure4AinC.pdf, id=2059, 177.66376pt x 109.40875pt>
 File: ./figures/04_clutering/figure4AinC.pdf Graphic file (type pdf)
 
 <use ./figures/04_clutering/figure4AinC.pdf>
@@ -2156,7 +2158,7 @@ Package pdftex.def Info: ./figures/04_clutering/figure4AinC.pdf used on input l
 ine 678.
 (pdftex.def)             Requested size: 185.93167pt x 114.50359pt.
 
-<./figures/04_clutering/figure4AinH.pdf, id=2052, 177.66376pt x 107.40125pt>
+<./figures/04_clutering/figure4AinH.pdf, id=2060, 177.66376pt x 107.40125pt>
 File: ./figures/04_clutering/figure4AinH.pdf Graphic file (type pdf)
 
 <use ./figures/04_clutering/figure4AinH.pdf>
@@ -2164,18 +2166,18 @@ Package pdftex.def Info: ./figures/04_clutering/figure4AinH.pdf used on input l
 ine 682.
 (pdftex.def)             Requested size: 185.93167pt x 112.4026pt.
 
-<./figures/04_clutering/final_clustering_ross.pdf, id=2053, 284.06125pt x 181.6
+<./figures/04_clutering/final_clustering_ross.pdf, id=2061, 284.06125pt x 181.6
 7876pt>
 File: ./figures/04_clutering/final_clustering_ross.pdf Graphic file (type pdf)
  <use ./figures/04_clutering/final_clustering_ross.pdf>
 Package pdftex.def Info: ./figures/04_clutering/final_clustering_ross.pdf used 
 on input line 698.
 (pdftex.def)             Requested size: 213.71576pt x 136.69395pt.
- [76 <./figures/04_clutering/figure4AinC.pdf> <./figures/04_clutering/figure4Ai
-nH.pdf> <./figures/04_clutering/final_clustering_ross.pdf>] [77] [78]
+ [78 <./figures/04_clutering/figure4AinC.pdf> <./figures/04_clutering/figure4Ai
+nH.pdf> <./figures/04_clutering/final_clustering_ross.pdf>] [79] [80]
 Underfull \vbox (badness 2173) has occurred while \output is active []
 
- [79]
+ [81]
 Overfull \hbox (0.91386pt too wide) in paragraph at lines 932--937
 \T1/ptm/m/n/12 3. $\OML/cmm/m/it/12 G \OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12 ff\OML
 /cmm/m/it/12 A\OMS/cmsy/m/n/12 g\OML/cmm/m/it/12 ; \OMS/cmsy/m/n/12 f\OML/cmm/m
@@ -2189,7 +2191,7 @@ B; H\OMS/cmsy/m/n/12 g\OML/cmm/m/it/12 ; []  ; \OMS/cmsy/m/n/12 f\OML/cmm/m/it/
  []
 
 
-<./figures/04_clutering/final_clustering_soc.pdf, id=2114, 284.06125pt x 171.64
+<./figures/04_clutering/final_clustering_soc.pdf, id=2123, 284.06125pt x 171.64
 125pt>
 File: ./figures/04_clutering/final_clustering_soc.pdf Graphic file (type pdf)
  <use ./figures/04_clutering/final_clustering_soc.pdf>
@@ -2197,27 +2199,27 @@ Package pdftex.def Info: ./figures/04_clutering/final_clustering_soc.pdf used o
 n input line 948.
 (pdftex.def)             Requested size: 192.34288pt x 116.22473pt.
 
-<./figures/04_clutering/final_clustering_LP.pdf, id=2115, 283.0575pt x 169.6337
+<./figures/04_clutering/final_clustering_LP.pdf, id=2124, 283.0575pt x 169.6337
 4pt>
 File: ./figures/04_clutering/final_clustering_LP.pdf Graphic file (type pdf)
  <use ./figures/04_clutering/final_clustering_LP.pdf>
 Package pdftex.def Info: ./figures/04_clutering/final_clustering_LP.pdf used on
  input line 949.
 (pdftex.def)             Requested size: 192.34288pt x 115.27176pt.
- [80] [81 <./figures/04_clutering/final_clustering_soc.pdf> <./figures/04_clute
+ [82] [83 <./figures/04_clutering/final_clustering_soc.pdf> <./figures/04_clute
 ring/final_clustering_LP.pdf
 
 pdfTeX warning: pdflatex (file ./figures/04_clutering/final_clustering_LP.pdf):
  PDF inclusion: multiple pdfs with page group included in a single page
->] <./figures/04_clutering/ccc_20.pdf, id=2157, 399.4925pt x 333.245pt>
+>] <./figures/04_clutering/ccc_20.pdf, id=2165, 399.4925pt x 333.245pt>
 File: ./figures/04_clutering/ccc_20.pdf Graphic file (type pdf)
 
 <use ./figures/04_clutering/ccc_20.pdf>
 Package pdftex.def Info: ./figures/04_clutering/ccc_20.pdf used on input line 1
 028.
 (pdftex.def)             Requested size: 277.82788pt x 231.76477pt.
- [82] [83 <./figures/04_clutering/ccc_20.pdf>]
-<./figures/04_clutering/survival_rate_20.pdf, id=2181, 390.45876pt x 310.15875p
+ [84] [85 <./figures/04_clutering/ccc_20.pdf>]
+<./figures/04_clutering/survival_rate_20.pdf, id=2189, 390.45876pt x 310.15875p
 t>
 File: ./figures/04_clutering/survival_rate_20.pdf Graphic file (type pdf)
  <use ./figures/04_clutering/survival_rate_20.pdf>
@@ -2225,14 +2227,14 @@ Package pdftex.def Info: ./figures/04_clutering/survival_rate_20.pdf used on in
 put line 1066.
 (pdftex.def)             Requested size: 299.20076pt x 237.67767pt.
 
-<./figures/04_clutering/cdf_clusterSize_20.pdf, id=2182, 381.425pt x 307.1475pt
+<./figures/04_clutering/cdf_clusterSize_20.pdf, id=2190, 381.425pt x 307.1475pt
 >
 File: ./figures/04_clutering/cdf_clusterSize_20.pdf Graphic file (type pdf)
  <use ./figures/04_clutering/cdf_clusterSize_20.pdf>
 Package pdftex.def Info: ./figures/04_clutering/cdf_clusterSize_20.pdf used on 
 input line 1083.
 (pdftex.def)             Requested size: 341.94652pt x 275.3663pt.
- [84 <./figures/04_clutering/survival_rate_20.pdf>] [85 <./figures/04_clutering
+ [86 <./figures/04_clutering/survival_rate_20.pdf>] [87 <./figures/04_clutering
 /cdf_clusterSize_20.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 1128--1128
 []|\T1/phv/m/n/12 Number of
@@ -2249,22 +2251,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 1130--1130
  []
 
 
-<./figures/04_clutering/number_controlMsg.pdf, id=2211, 381.425pt x 307.1475pt>
+<./figures/04_clutering/number_controlMsg.pdf, id=2220, 381.425pt x 307.1475pt>
 File: ./figures/04_clutering/number_controlMsg.pdf Graphic file (type pdf)
 <use ./figures/04_clutering/number_controlMsg.pdf>
 Package pdftex.def Info: ./figures/04_clutering/number_controlMsg.pdf used on i
 nput line 1141.
 (pdftex.def)             Requested size: 286.37834pt x 230.61781pt.
- [86 <./figures/04_clutering/number_controlMsg.pdf>]
-<./figures/04_clutering/ccc_large_scale_color.pdf, id=2225, 449.68pt x 338.2637
+ [88 <./figures/04_clutering/number_controlMsg.pdf>]
+<./figures/04_clutering/ccc_large_scale_color.pdf, id=2234, 449.68pt x 338.2637
 5pt>
 File: ./figures/04_clutering/ccc_large_scale_color.pdf Graphic file (type pdf)
  <use ./figures/04_clutering/ccc_large_scale_color.pdf>
 Package pdftex.def Info: ./figures/04_clutering/ccc_large_scale_color.pdf used 
 on input line 1157.
 (pdftex.def)             Requested size: 427.43153pt x 321.5397pt.
- [87 <./figures/04_clutering/ccc_large_scale_color.pdf>]
-<./figures/04_clutering/survival_rate_100.pdf, id=2245, 394.47375pt x 310.15875
+ [89 <./figures/04_clutering/ccc_large_scale_color.pdf>]
+<./figures/04_clutering/survival_rate_100.pdf, id=2253, 394.47375pt x 310.15875
 pt>
 File: ./figures/04_clutering/survival_rate_100.pdf Graphic file (type pdf)
  <use ./figures/04_clutering/survival_rate_100.pdf>
@@ -2272,7 +2274,7 @@ Package pdftex.def Info: ./figures/04_clutering/survival_rate_100.pdf used on i
 nput line 1186.
 (pdftex.def)             Requested size: 341.94652pt x 268.86101pt.
 
-<./figures/04_clutering/survival_rate_300.pdf, id=2246, 399.4925pt x 310.15875p
+<./figures/04_clutering/survival_rate_300.pdf, id=2254, 399.4925pt x 310.15875p
 t>
 File: ./figures/04_clutering/survival_rate_300.pdf Graphic file (type pdf)
  <use ./figures/04_clutering/survival_rate_300.pdf>
@@ -2284,7 +2286,7 @@ nput line 1189.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-<./figures/04_clutering/nClusters_largeNetwork.pdf, id=2251, 449.68pt x 339.267
+<./figures/04_clutering/nClusters_largeNetwork.pdf, id=2259, 449.68pt x 339.267
 5pt>
 File: ./figures/04_clutering/nClusters_largeNetwork.pdf Graphic file (type pdf)
 
@@ -2297,7 +2299,7 @@ Package pdftex.def Info: ./figures/04_clutering/nClusters_largeNetwork.pdf used
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-<./figures/04_clutering/cdf_clusterSize_100.pdf, id=2252, 377.41pt x 307.1475pt
+<./figures/04_clutering/cdf_clusterSize_100.pdf, id=2260, 377.41pt x 307.1475pt
 >
 File: ./figures/04_clutering/cdf_clusterSize_100.pdf Graphic file (type pdf)
  <use ./figures/04_clutering/cdf_clusterSize_100.pdf>
@@ -2309,7 +2311,7 @@ Package pdftex.def Info: ./figures/04_clutering/cdf_clusterSize_100.pdf used on
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-<./figures/04_clutering/cdf_clusterSize_200.pdf, id=2253, 377.41pt x 307.1475pt
+<./figures/04_clutering/cdf_clusterSize_200.pdf, id=2261, 377.41pt x 307.1475pt
 >
 File: ./figures/04_clutering/cdf_clusterSize_200.pdf Graphic file (type pdf)
  <use ./figures/04_clutering/cdf_clusterSize_200.pdf>
@@ -2321,7 +2323,7 @@ Package pdftex.def Info: ./figures/04_clutering/cdf_clusterSize_200.pdf used on
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-<./figures/04_clutering/cdf_clusterSize_300.pdf, id=2254, 377.41pt x 307.1475pt
+<./figures/04_clutering/cdf_clusterSize_300.pdf, id=2262, 377.41pt x 307.1475pt
 >
 File: ./figures/04_clutering/cdf_clusterSize_300.pdf Graphic file (type pdf)
  <use ./figures/04_clutering/cdf_clusterSize_300.pdf>
@@ -2332,30 +2334,30 @@ Package pdftex.def Info: ./figures/04_clutering/cdf_clusterSize_300.pdf used on
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[88] [89 <./figures/04_clutering/survival_rate_100.pdf> <./figures/04_clutering
+[90] [91 <./figures/04_clutering/survival_rate_100.pdf> <./figures/04_clutering
 /survival_rate_300.pdf>])
 Underfull \vbox (badness 3281) has occurred while \output is active []
 
- [90 <./figures/04_clutering/nClusters_largeNetwork.pdf> <./figures/04_cluterin
-g/cdf_clusterSize_100.pdf>] [91 <./figures/04_clutering/cdf_clusterSize_200.pdf
+ [92 <./figures/04_clutering/nClusters_largeNetwork.pdf> <./figures/04_cluterin
+g/cdf_clusterSize_100.pdf>] [93 <./figures/04_clutering/cdf_clusterSize_200.pdf
 > <./figures/04_clutering/cdf_clusterSize_300.pdf>]
 \openout2 = `chapters/05_routing.aux'.
 
- (./chapters/05_routing.tex [92
+ (./chapters/05_routing.tex [94
 
 
 
 ]
  5.
-[93]
+[95]
 
 Package Fancyhdr Warning: \headheight is too small (17.07164pt): 
  Make it at least 27.67601pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[94]
-<./figures/05_routing/sensing_period.pdf, id=2362, 156.85744pt x 32.5608pt>
+[96]
+<./figures/05_routing/sensing_period.pdf, id=2370, 156.85744pt x 32.5608pt>
 File: ./figures/05_routing/sensing_period.pdf Graphic file (type pdf)
 
 <use ./figures/05_routing/sensing_period.pdf>
@@ -2369,8 +2371,8 @@ Package Fancyhdr Warning: \headheight is too small (17.07164pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[95 <./figures/05_routing/sensing_period.pdf>]
-<./figures/05_routing/vc_intro.pdf, id=2389, 728.43854pt x 264.23973pt>
+[97 <./figures/05_routing/sensing_period.pdf>]
+<./figures/05_routing/vc_intro.pdf, id=2397, 728.43854pt x 264.23973pt>
 File: ./figures/05_routing/vc_intro.pdf Graphic file (type pdf)
 
 <use ./figures/05_routing/vc_intro.pdf>
@@ -2378,7 +2380,7 @@ Package pdftex.def Info: ./figures/05_routing/vc_intro.pdf used on input line 1
 59.
 (pdftex.def)             Requested size: 364.21837pt x 132.11954pt.
 
-<./figures/05_routing/CAVCap_idea_paper.pdf, id=2391, 352.11583pt x 251.49748pt
+<./figures/05_routing/CAVCap_idea_paper.pdf, id=2399, 352.11583pt x 251.49748pt
 >
 File: ./figures/05_routing/CAVCap_idea_paper.pdf Graphic file (type pdf)
  <use ./figures/05_routing/CAVCap_idea_paper.pdf>
@@ -2395,14 +2397,14 @@ Package Fancyhdr Warning: \headheight is too small (17.07164pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[96]
+[98]
 
 Package Fancyhdr Warning: \headheight is too small (17.07164pt): 
  Make it at least 27.67601pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[97 <./figures/05_routing/vc_intro.pdf> <./figures/05_routing/CAVCap_idea_paper
+[99 <./figures/05_routing/vc_intro.pdf> <./figures/05_routing/CAVCap_idea_paper
 .pdf
 
 pdfTeX warning: pdflatex (file ./figures/05_routing/CAVCap_idea_paper.pdf): PDF
@@ -2417,15 +2419,15 @@ Package Fancyhdr Warning: \headheight is too small (17.07164pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[98]
+[100]
 
 Package Fancyhdr Warning: \headheight is too small (17.07164pt): 
  Make it at least 27.67601pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[99]
-<./figures/05_routing/gamma_lambda.pdf, id=2520, 391.4625pt x 316.18124pt>
+[101]
+<./figures/05_routing/gamma_lambda.pdf, id=2528, 391.4625pt x 316.18124pt>
 File: ./figures/05_routing/gamma_lambda.pdf Graphic file (type pdf)
 
 <use ./figures/05_routing/gamma_lambda.pdf>
@@ -2439,14 +2441,14 @@ Package Fancyhdr Warning: \headheight is too small (17.07164pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[100 <./figures/05_routing/gamma_lambda.pdf>]
+[102 <./figures/05_routing/gamma_lambda.pdf>]
 
 Package Fancyhdr Warning: \headheight is too small (17.07164pt): 
  Make it at least 27.67601pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[101]
+[103]
 Overfull \hbox (9.39842pt too wide) in paragraph at lines 459--466
 []$\T1/ptm/m/n/12 , when vir-tual co-or-di-nate can be de-noted as $\OMS/cmsy/m
 /n/12 f\OML/cmm/m/it/12 x; y; z\OMS/cmsy/m/n/12 g$\T1/ptm/m/n/12 .
@@ -2458,15 +2460,15 @@ Package Fancyhdr Warning: \headheight is too small (17.07164pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[102]
+[104]
 
 Package Fancyhdr Warning: \headheight is too small (17.07164pt): 
  Make it at least 27.67601pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[103]
-<./figures/05_routing/Reachability_DC_EWT.pdf, id=2577, 387.4475pt x 310.15875p
+[105]
+<./figures/05_routing/Reachability_DC_EWT.pdf, id=2586, 387.4475pt x 310.15875p
 t>
 File: ./figures/05_routing/Reachability_DC_EWT.pdf Graphic file (type pdf)
  <use ./figures/05_routing/Reachability_DC_EWT.pdf>
@@ -2480,8 +2482,8 @@ Package Fancyhdr Warning: \headheight is too small (17.07164pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[104]
-<./figures/05_routing/singleChannel_DC_caseStudy.pdf, id=2593, 298.11375pt x 28
+[106]
+<./figures/05_routing/singleChannel_DC_caseStudy.pdf, id=2602, 298.11375pt x 28
 9.08pt>
 File: ./figures/05_routing/singleChannel_DC_caseStudy.pdf Graphic file (type pd
 f)
@@ -2490,7 +2492,7 @@ Package pdftex.def Info: ./figures/05_routing/singleChannel_DC_caseStudy.pdf us
 ed on input line 685.
 (pdftex.def)             Requested size: 194.48212pt x 188.58788pt.
 
-<./figures/05_routing/singleCh_average_pdr_3.pdf, id=2594, 391.4625pt x 314.173
+<./figures/05_routing/singleCh_average_pdr_3.pdf, id=2603, 391.4625pt x 314.173
 75pt>
 File: ./figures/05_routing/singleCh_average_pdr_3.pdf Graphic file (type pdf)
  <use ./figures/05_routing/singleCh_average_pdr_3.pdf>
@@ -2498,7 +2500,7 @@ Package pdftex.def Info: ./figures/05_routing/singleCh_average_pdr_3.pdf used o
 n input line 689.
 (pdftex.def)             Requested size: 194.48212pt x 156.08455pt.
 
-<./figures/05_routing/random_SU_PU.pdf, id=2597, 391.4625pt x 314.17375pt>
+<./figures/05_routing/random_SU_PU.pdf, id=2606, 391.4625pt x 314.17375pt>
 File: ./figures/05_routing/random_SU_PU.pdf Graphic file (type pdf)
 
 <use ./figures/05_routing/random_SU_PU.pdf>
@@ -2506,7 +2508,7 @@ Package pdftex.def Info: ./figures/05_routing/random_SU_PU.pdf used on input li
 ne 698.
 (pdftex.def)             Requested size: 194.48212pt x 156.08455pt.
 
-<./figures/05_routing/plot/delay_dc_c1.pdf, id=2598, 394.47375pt x 310.15875pt>
+<./figures/05_routing/plot/delay_dc_c1.pdf, id=2607, 394.47375pt x 310.15875pt>
 File: ./figures/05_routing/plot/delay_dc_c1.pdf Graphic file (type pdf)
 <use ./figures/05_routing/plot/delay_dc_c1.pdf>
 Package pdftex.def Info: ./figures/05_routing/plot/delay_dc_c1.pdf used on inpu
@@ -2519,17 +2521,17 @@ Package Fancyhdr Warning: \headheight is too small (17.07164pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[105 <./figures/05_routing/Reachability_DC_EWT.pdf>]
+[107 <./figures/05_routing/Reachability_DC_EWT.pdf>]
 
 Package Fancyhdr Warning: \headheight is too small (17.07164pt): 
  Make it at least 27.67601pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[106 <./figures/05_routing/singleChannel_DC_caseStudy.pdf> <./figures/05_routin
+[108 <./figures/05_routing/singleChannel_DC_caseStudy.pdf> <./figures/05_routin
 g/singleCh_average_pdr_3.pdf> <./figures/05_routing/random_SU_PU.pdf> <./figure
 s/05_routing/plot/delay_dc_c1.pdf>]
-<./figures/05_routing/random_SU_PU_2channel.pdf, id=2648, 391.4625pt x 314.1737
+<./figures/05_routing/random_SU_PU_2channel.pdf, id=2656, 391.4625pt x 314.1737
 5pt>
 File: ./figures/05_routing/random_SU_PU_2channel.pdf Graphic file (type pdf)
  <use ./figures/05_routing/random_SU_PU_2channel.pdf>
@@ -2537,14 +2539,14 @@ Package pdftex.def Info: ./figures/05_routing/random_SU_PU_2channel.pdf used on
  input line 794.
 (pdftex.def)             Requested size: 194.48212pt x 156.08455pt.
 
-<./figures/05_routing/plot/delay_dc_c2.pdf, id=2649, 394.47375pt x 310.15875pt>
+<./figures/05_routing/plot/delay_dc_c2.pdf, id=2657, 394.47375pt x 310.15875pt>
 File: ./figures/05_routing/plot/delay_dc_c2.pdf Graphic file (type pdf)
 <use ./figures/05_routing/plot/delay_dc_c2.pdf>
 Package pdftex.def Info: ./figures/05_routing/plot/delay_dc_c2.pdf used on inpu
 t line 797.
 (pdftex.def)             Requested size: 194.48212pt x 152.91144pt.
 
-<./figures/05_routing/topo_single_blocking_time.pdf, id=2655, 297.01967pt x 287
+<./figures/05_routing/topo_single_blocking_time.pdf, id=2663, 297.01967pt x 287
 .95581pt>
 File: ./figures/05_routing/topo_single_blocking_time.pdf Graphic file (type pdf
 )
@@ -2559,9 +2561,9 @@ Package Fancyhdr Warning: \headheight is too small (17.07164pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[107 <./figures/05_routing/random_SU_PU_2channel.pdf> <./figures/05_routing/plo
+[109 <./figures/05_routing/random_SU_PU_2channel.pdf> <./figures/05_routing/plo
 t/delay_dc_c2.pdf>]
-<./figures/05_routing/ewt_pdr_3_ci.pdf, id=2675, 386.44376pt x 313.17pt>
+<./figures/05_routing/ewt_pdr_3_ci.pdf, id=2683, 386.44376pt x 313.17pt>
 File: ./figures/05_routing/ewt_pdr_3_ci.pdf Graphic file (type pdf)
 
 <use ./figures/05_routing/ewt_pdr_3_ci.pdf>
@@ -2569,7 +2571,7 @@ Package pdftex.def Info: ./figures/05_routing/ewt_pdr_3_ci.pdf used on input li
 ne 893.
 (pdftex.def)             Requested size: 196.62137pt x 159.34184pt.
 
-<./figures/05_routing/plot/delay_ewt_c1.pdf, id=2676, 394.47375pt x 313.17pt>
+<./figures/05_routing/plot/delay_ewt_c1.pdf, id=2684, 394.47375pt x 313.17pt>
 File: ./figures/05_routing/plot/delay_ewt_c1.pdf Graphic file (type pdf)
 
 <use ./figures/05_routing/plot/delay_ewt_c1.pdf>
@@ -2583,8 +2585,8 @@ Package Fancyhdr Warning: \headheight is too small (17.07164pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[108 <./figures/05_routing/topo_single_blocking_time.pdf>]
-<./figures/05_routing/multiCh_EWT_rate_3.pdf, id=2740, 386.44376pt x 313.17pt>
+[110 <./figures/05_routing/topo_single_blocking_time.pdf>]
+<./figures/05_routing/multiCh_EWT_rate_3.pdf, id=2748, 386.44376pt x 313.17pt>
 File: ./figures/05_routing/multiCh_EWT_rate_3.pdf Graphic file (type pdf)
 
 <use ./figures/05_routing/multiCh_EWT_rate_3.pdf>
@@ -2592,7 +2594,7 @@ Package pdftex.def Info: ./figures/05_routing/multiCh_EWT_rate_3.pdf used on in
 put line 930.
 (pdftex.def)             Requested size: 196.62137pt x 159.34184pt.
 
-<./figures/05_routing/plot/delay_ewt_c2.pdf, id=2741, 394.47375pt x 313.17pt>
+<./figures/05_routing/plot/delay_ewt_c2.pdf, id=2749, 394.47375pt x 313.17pt>
 File: ./figures/05_routing/plot/delay_ewt_c2.pdf Graphic file (type pdf)
 
 <use ./figures/05_routing/plot/delay_ewt_c2.pdf>
@@ -2609,10 +2611,10 @@ Package Fancyhdr Warning: \headheight is too small (17.07164pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[109 <./figures/05_routing/ewt_pdr_3_ci.pdf> <./figures/05_routing/plot/delay_e
+[111 <./figures/05_routing/ewt_pdr_3_ci.pdf> <./figures/05_routing/plot/delay_e
 wt_c1.pdf> <./figures/05_routing/multiCh_EWT_rate_3.pdf> <./figures/05_routing/
 plot/delay_ewt_c2.pdf>]
-<./figures/05_routing/errorenousEsti_DC.pdf, id=2772, 392.46625pt x 308.15125pt
+<./figures/05_routing/errorenousEsti_DC.pdf, id=2781, 392.46625pt x 308.15125pt
 >
 File: ./figures/05_routing/errorenousEsti_DC.pdf Graphic file (type pdf)
  <use ./figures/05_routing/errorenousEsti_DC.pdf>
@@ -2626,13 +2628,13 @@ Package Fancyhdr Warning: \headheight is too small (17.07164pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[110 <./figures/05_routing/errorenousEsti_DC.pdf>]
+[112 <./figures/05_routing/errorenousEsti_DC.pdf>]
 \openout2 = `chapters/06_conclusion.aux'.
 
 
 (./chapters/06_conclusion.tex
  6.
-[111
+[113
 
 
 
@@ -2642,7 +2644,7 @@ Overfull \hbox (23.6146pt too wide) in paragraph at lines 30--30
 -i-cal Frame-
  []
 
-<./figures/06_conclusion/futurework_1.png, id=2795, 845.1575pt x 343.2825pt>
+<./figures/06_conclusion/futurework_1.png, id=2803, 845.1575pt x 343.2825pt>
 File: ./figures/06_conclusion/futurework_1.png Graphic file (type png)
 
 <use ./figures/06_conclusion/futurework_1.png>
@@ -2653,7 +2655,7 @@ Package pdftex.def Info: ./figures/06_conclusion/futurework_1.png used on input
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[112]) [113 <./figures/06_conclusion/futurework_1.png>] [114
+[114]) [115 <./figures/06_conclusion/futurework_1.png>] [116
 
 
 ] (./thesis.bbl
@@ -2692,9 +2694,9 @@ Underfull \hbox (badness 1939) in paragraph at lines 50--57
 s / doc98 / official / Pdf /
  []
 
-[115
+[117
 
-] [116] [117]
+] [118] [119]
 Underfull \hbox (badness 5504) in paragraph at lines 258--264
 []\T1/phv/m/sc/12 Cisco\T1/ptm/m/n/12 .  Cisco vi-sual net-work-ing in-dex: Glo
 bal mo-bile data traf-fic
@@ -2718,7 +2720,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 258--264
 
  []
 
-[118] [119] [120] [121]
+[120] [121] [122] [123]
 Underfull \hbox (badness 1242) in paragraph at lines 597--602
 []\T1/phv/m/sc/12 Milchtaich, I.  \T1/ptm/m/n/12 Con-ges-tion games with player
 -specific pay-off func-tions.
@@ -2730,7 +2732,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 597--602
  2 /
  []
 
-[122] [123] [124] [125]) [126] (./thesis.lof
+[124] [125] [126] [127]) [128] (./thesis.lof
 Overfull \hbox (49.08969pt too wide) in paragraph at lines 25--25
  \T1/ptm/m/n/12 The avail-able chan-nels sensed by each CR node are: $\OML/cmm/
 m/it/12 V[] \OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 1\OML/cmm/m/it/
@@ -2755,64 +2757,64 @@ mr/m/n/12 = \OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/
 S/cmsy/m/n/12 g\OML/cmm/m/it/12 ; V[] \OT1/cmr/m/n/12 = 
  []
 
-[127
+[129
 
 
-] [128]
+] [130]
 Overfull \hbox (1.41573pt too wide) detected at line 53
- []\T1/phv/m/n/12 100
+ []\T1/phv/m/n/12 102
  []
 
 
 Overfull \hbox (1.41573pt too wide) detected at line 54
- []\T1/phv/m/n/12 105
- []
-
-
-Overfull \hbox (1.41573pt too wide) detected at line 55
- []\T1/phv/m/n/12 106
- []
-
-
-Overfull \hbox (1.41573pt too wide) detected at line 58
- []\T1/phv/m/n/12 106
- []
-
-
-Overfull \hbox (1.41573pt too wide) detected at line 61
  []\T1/phv/m/n/12 107
  []
 
 
-Overfull \hbox (1.41573pt too wide) detected at line 64
+Overfull \hbox (1.41573pt too wide) detected at line 55
  []\T1/phv/m/n/12 108
  []
 
 
-Overfull \hbox (1.41573pt too wide) detected at line 65
+Overfull \hbox (1.41573pt too wide) detected at line 58
+ []\T1/phv/m/n/12 108
+ []
+
+
+Overfull \hbox (1.41573pt too wide) detected at line 61
  []\T1/phv/m/n/12 109
  []
 
 
-Overfull \hbox (1.41573pt too wide) detected at line 68
- []\T1/phv/m/n/12 109
- []
-
-
-Overfull \hbox (1.41573pt too wide) detected at line 71
+Overfull \hbox (1.41573pt too wide) detected at line 64
  []\T1/phv/m/n/12 110
  []
 
 
+Overfull \hbox (1.41573pt too wide) detected at line 65
+ []\T1/phv/m/n/12 111
+ []
+
+
+Overfull \hbox (1.41573pt too wide) detected at line 68
+ []\T1/phv/m/n/12 111
+ []
+
+
+Overfull \hbox (1.41573pt too wide) detected at line 71
+ []\T1/phv/m/n/12 112
+ []
+
+
 Overfull \hbox (1.41573pt too wide) detected at line 73
- []\T1/phv/m/n/12 113
+ []\T1/phv/m/n/12 115
  []
 
 )
 \tf@lof=\write10
 \openout10 = `thesis.lof'.
 
- [129] [130
+ [131] [132
 
 
 ] (./thesis.lot
@@ -2826,7 +2828,7 @@ $\T1/ptm/m/n/12 -number of CR nodes in CRN, $\OML/cmm/m/it/12 h$\T1/ptm/m/n/12
 \tf@lot=\write11
 \openout11 = `thesis.lot'.
 
- [131] (./thesis.gls [132
+ [133] (./thesis.gls [134
 
 
 ]
@@ -2840,7 +2842,7 @@ Package caption Warning: Unused \captionsetup[lstlisting] on input line 81.
 See the caption package documentation for explanation.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 365.
-[133
+[135
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 365.
@@ -2861,9 +2863,9 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 365.
  ) 
 Here is how much of TeX's memory you used:
- 26932 strings out of 495059
- 449832 string characters out of 3182030
- 598770 words of memory out of 3000000
+ 26934 strings out of 495059
+ 449848 string characters out of 3182030
+ 598790 words of memory out of 3000000
  28629 multiletter control sequences out of 15000+200000
  117525 words of font info for 127 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -2937,10 +2939,10 @@ xlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times
 /utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (143 pages, 1917653 bytes).
+Output written on thesis.pdf (145 pages, 1919872 bytes).
 PDF statistics:
- 3343 PDF objects out of 3580 (max. 8388607)
- 2894 compressed objects within 29 object streams
- 785 named destinations out of 1000 (max. 500000)
+ 3355 PDF objects out of 3580 (max. 8388607)
+ 2903 compressed objects within 30 object streams
+ 787 named destinations out of 1000 (max. 500000)
  1018 words of extra memory for PDF output out of 10000 (max. 10000000)
 

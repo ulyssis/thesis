@@ -662,7 +662,10 @@ g_{(i,j,c)}(k) =
 \end{equation}
 
 
-As resource $(i,j,c)$ only lies in the strategy space of player $i$ and $j$, based on \ref{costfuc4resrc}, cost of resource $(i,j,c)$ is only decided by the number of players(0 or 2) using it, thus this is a typical congestion game which has infinite update property \cite{Voecking06congestiongames}.
+As resource $(i,j,c)$ only lies in the strategy space of player $i$ and $j$, and can only be accessed by the two players.
+More specifically, according to Formula~\ref{costfuc4resrc}, the cost of resource $(i,j,c)$ is only decided by the number of players using it, which is either 0 or 2.
+At the first glance, this is a player specific congestion game, as $g_{i,j,k}$ is decided by the transmission power, inference which are associated with players $i$ and $j$, but not other players.
+But the resource ${i,j,k}$ excludes the players except for $i$ and $j$ from using it, and thus the cost happened on this resource is only dependant on how many of players from the set $\{i, j\}$ to use it, thus the cost is a function of the number of players using the resource.
 
 Substitute Formula \ref{costfuc4resrc} to Formula \ref{6}, we get the total cost for user $i$ under strategy profile $\sigma$. 
 
