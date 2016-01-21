@@ -53,12 +53,14 @@ Actually, one player maximizes its utility is equivalent to that the player mini
 When we want to use game theory to analyse a problem in CRN, it is critical to formulate appropriate components of the problem into corresponding elements of a game.
 The commonly used formulation is summarized in Table~\ref{game_crn_component}.
 
+
+
 \begin{table}
 \centering
 \begin{tabular}{|c|C{7cm}|}
 \hline 
 Elements of a game & Components of one CRN \\ 
-\hline 
+\hhline{|=|=|}
 Player $\mathcal{N}$ & secondary users \\ 
 \hline 
 Strategies for player $i$, $\mathcal{S}_i$  & working channels, transmission power, modulation, etc. \\ 
@@ -360,32 +362,53 @@ When these variant of congestion game are not singleton ones, \cite{Ackermann06p
 
 \section{Optimization}
 
-As discussed in Section~\ref{operation_model}, the available radio resources such as spectrum and transmission power are scarce, Meanwhile, new services raise new requirements for these resources.
-Resource allocation and its optimization are needed to accommodate the needs.
-Various optimization problems are formulated to improve radio resource usage in CRN~\cite{cacao_ca_2011, fuzzy_decision_09, resourceAllocation_imperfectSensing_2012}.
-Optimization can be conducted from either a global view or from individual perspectives.
+As discussed in Section~\ref{operation_model}, optimization is a powerful tool to solve problems in wireless networks and CRN.
+Distributed algorithms can be derived with decomposition techniques.
 
-Many wireless resource allocation problems are formulated as constrained optimization problems.
-Table~\ref{opt_table} shows the commonly used parameters, objectives and constraints of some optimization problems in wireless communication.
+
+
+Table~\ref{opt_table} summarizes the commonly used parameters, objectives and constraints in optimization problems in wireless communication.
 Part of the contents in Table~\ref{opt_table} refers \cite{Han:2008:RAW:1457343}.
 
-\begin{table}
-\begin{tabular}{|L{2.1cm}|C{3.8cm} | C{3.5cm} | C{3.7cm}|}
+
+Among the various optimization problems, some centralized optimization problems can be decomposed and distributed schemes can be accordingly designed.
+
+When an optimization problem is convex, \ie to minimize a convex objective function over a convex constraint set, solving it very efficient. 
+More importantly, convexity means zero duality gap and thus enables distributed solutions through dual composition~\cite{Boyd:2004:CO:993483}.
+L methods....
+General procedure....
+Restrictions.....
+
+When the problems involve channel allocation or modulation decision, binary variables need to be introduced in the problem formulation and the problems are mixed integer non-linear programming problems. 
+These problems are NP-hard to solve general, and the computational complexity becomes unaffordable when the network size scales up.
+In this case, we need to decompose the problems.
+
+Many wireless resource allocation or management problems are formulated as constrained optimization problems.
+
+\begin{sidewaystable}
+\centering
+\begin{tabular}{|L{4cm}|C{5cm}|C{5cm}|C{5cm}|}
 \hline 
  & Parametres & Optimization goals & Constraints \\ 
-\hline 
+\hhline{|=|=|=|=|}
 Application layer & source-coding rate, buffer priority, packet arrival rate & minimal delay & base layer transmission, strict delay requirement \\ 
 \hline 
 Network layer & routing path & end to end delay/throughput & maximal hops, security concerns \\ 
 \hline 
 MAC layer & transmission frequency, transmission priorities & maximal overall throughput, minimal buffer overflow probability & contentions, time/frequency slot \\ 
 \hline
-Physical layer & transmission power, modulation, channel coding rate & minimal over power consumption, maximal throughput, minimal BER & maximal transmission power, caused interference on licensed users, available channel coding rate \\ 
+Physical layer & transmission power, modulation, channel coding rate, spectrum bandwidth~\cite{tachwali_opt_bandwidth_power_2013} & minimal over power consumption, maximal throughput, minimal BER & maximal transmission power, caused interference on licensed users, available channel coding rate \\ 
 \hline
 \end{tabular} 
 \caption{Optimization problem of cognitive radio networks}
 \label{opt_table} 
-\end{table}
+\end{sidewaystable}
+
+%the available radio resources such as spectrum and transmission power are scarce, meanwhile, new services raise new requirements for these resources.
+Resource allocation is an important class of problems.
+Various optimization problems are formulated to improve radio resource usage in CRN~\cite{cacao_ca_2011, fuzzy_decision_09, resourceAllocation_imperfectSensing_2012}.
+Optimization can be conducted from either a global view or from individual perspectives.
+
 
 The solutions to optimization problems can be categorized by their properties, \ie convex, linear, integer, or non-convex non-linear, etc.
 In this thesis, we make use of different solvers, \ie Lindo, Gurobi, to solve the formulated optimization problems in different categories.

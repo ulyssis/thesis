@@ -293,9 +293,12 @@ When the distributed decision is not properly designed, it is possible to trigge
 %
 The distributed schemes designed for CRN can be roughly classified into the following categories.
 \begin{itemize}
-\item Distributed schemes which are derived from optimization formulation through decomposition.
-This method secondary users use local information, but together achieve global optimal.
-This method requires the optimization problem to be convex, thus it can only solve a small portion of spectrum sharing problems.
+\item Distributed algorithms can be obtained from optimization formulation through decomposition techniques~\cite{Palomar06atutorial}.
+With this method, secondary users can achieve global optimal only with local information.
+The distributed algorithms from decomposition usually involves communication overhead between different subproblems, and the convergence process is hard to decide.
+
+
+
 %\item Heuristic methods.
 %Back in 
 % local bargaining~\cite{localBargaining_05}
@@ -309,6 +312,9 @@ online learning has appealing property on distributed execution, but the converg
 
 \item Game theory.
 
+The interests of CR users are conflict, as they compete for limited radio resource.
+Besides, the CRN operator's interests not aligned with the CR users, \eg, the operator aims to maximize summed throughput, while CR users only care their own performance.
+In both cases, we need to formulated these non-cooperative problems into games, and then analyze and solve them as games.
 Game theory is a branch of applied mathematics, and it is a powerful mathematical tool for studying, modelling and analysing the interactions among individuals.
 The approaches derived from a game are complementary to the optimization methods, thus game theory serves as an important role for the communication system when the optimization method doesn't work out.
 We will introduce the application of game theory in CRN in the following section.
@@ -369,11 +375,12 @@ Figure~\ref{game_distributedalgorithms} illustrates two ways of applying game th
   \caption{The two ways that game theory is involved in problem solving}
 \label{game_distributedalgorithms}
 \end{figure}
-Along the dashed line and arrow, proposed distributed schemes can be testified under the game theoretic framework.
-In this way we can analyse a distributed algorithm by looking into the interaction among the users which operate the algorithm, and check whether the system reaches a desirable equilibrium, \ie the individuals not only improve their own performance but also improve the global welfare of the complete system.
-We can also inverse the this procedure to obtain distributed algorithms in CRN from certain games, just as the solid line with arrow points shows.
-Given a known game which holds preferred properties such like fast convergence to equilibrium, or the game only has a single equilibrium which is also the global optimal, we can formulate our problem in CRN into that kind of game, then modify the best response of the players as the distributed algorithm for the communication entities in our problem. 
-%In this dissertation, we 
+
+Along the dashed line and arrow, proposed distributed schemes can be examined under the game theoretic framework.
+In this way, a distributed algorithm is analysed by looking into the interaction among the users which operate the algorithm, and check whether the system reaches a desirable equilibrium, \ie the individuals not only improve their own performance but also improve the global welfare of the complete system.
+In most cases, we can also inverse the this procedure to obtain distributed algorithms in CRN from certain known games~\cite{altman_Smodel_pc_2003}.
+As the solid line with arrow points shows, given a known game which holds preferred properties such like fast convergence to equilibrium, or the game only has a single equilibrium which is also the global optimal, we can formulate our problem in CRN into that kind of game, then modify the best response of the players as the distributed algorithm for the communication entities in our problem. 
+
 
 
 \subsection{Application of Game Theory in CRN}

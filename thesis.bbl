@@ -130,6 +130,12 @@ In the matter of unlicensed operation in the {TV} broadcast bands: second
   networks.
 \newblock In {\em Proc. of IPSN 2011\/} (April 2011), pp.~61--72.
 
+\bibitem{altman_Smodel_pc_2003}
+{\sc Altman, E., and Altman, Z.}
+\newblock S-modular games and power control in wireless networks.
+\newblock {\em IEEE Transactions on Automatic Control 48}, 5 (May 2003),
+  839--842.
+
 \bibitem{cluster_EW10}
 {\sc Asterjadhi, A., Baldo, N., and Zorzi, M.}
 \newblock A cluster formation protocol for cognitive radio ad hoc networks.
@@ -800,6 +806,13 @@ In the matter of unlicensed operation in the {TV} broadcast bands: second
 \newblock Cluster-based cooperative spectrum sensing in cognitive radio
   systems.
 \newblock In {\em proc. of IEEE ICC\/} (2007), pp.~2511--2515.
+
+\bibitem{tachwali_opt_bandwidth_power_2013}
+{\sc Tachwali, Y., Lo, B., Akyildiz, I., and Agusti, R.}
+\newblock Multiuser resource allocation optimization using bandwidth-power
+  product in cognitive radio networks.
+\newblock {\em Selected Areas in Communications, IEEE Journal on 31}, 3 (March
+  2013), 451--463.
 
 \bibitem{uplink_power_tvws13}
 {\sc Tao, X., Zhao, Z., and Zhang, H.}
