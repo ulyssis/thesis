@@ -10,7 +10,7 @@
 (indexentry :tkey (("NE" "\\glossaryentryfield{NE}{\\glsnamefont{NE}}{Nash equilibrium}{\\relax }") ) :locref "{}{8}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("DCF" "\\glossaryentryfield{DCF}{\\glsnamefont{DCF}}{distributed coordination function}{\\relax }") ) :locref "{}{9}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("CW" "\\glossaryentryfield{CW}{\\glsnamefont{CW}}{contention window}{\\relax }") ) :locref "{}{9}" :attr "pageglsnumberformat" ) 
-(indexentry :tkey (("CRAHN" "\\glossaryentryfield{CRAHN}{\\glsnamefont{CRAHN}}{Cognitive radio ad hoc network}{\\relax }") ) :locref "{}{10}" :attr "pageglsnumberformat" ) 
+(indexentry :tkey (("CRAHN" "\\glossaryentryfield{CRAHN}{\\glsnamefont{CRAHN}}{Cognitive radio ad hoc network}{\\relax }") ) :locref "{}{11}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("LTE" "\\glossaryentryfield{LTE}{\\glsnamefont{LTE}}{3GPP Long term Evolution}{\\relax }") ) :locref "{}{11}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("HSPA" "\\glossaryentryfield{HSPA}{\\glsnamefont{HSPA}}{High Speed Packet Access}{\\relax }") ) :locref "{}{11}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("TVWS" "\\glossaryentryfield{TVWS}{\\glsnamefont{TVWS}}{TV white space}{\\relax }") ) :locref "{}{11}" :attr "pageglsnumberformat" ) 

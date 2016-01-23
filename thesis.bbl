@@ -179,6 +179,11 @@ In the matter of unlicensed operation in the {TV} broadcast bands: second
 \newblock Distributed clustering for ad hoc networks.
 \newblock {\em Proc. of I-SPAN '99\/} (1999), 310 --315.
 
+\bibitem{Bertsekas_99}
+{\sc Bertsekas, D.}
+\newblock {\em Nonlinear Programming}.
+\newblock Athena Scientific, 1999.
+
 \bibitem{Ellingsaeter2012_Increasing_Available}
 {\sc Bezabih, H., Ellingsaeter, B., Noll, J., and Maseng, T.}
 \newblock Digital broadcasting: Increasing the available white space spectrum
@@ -201,6 +206,16 @@ In the matter of unlicensed operation in the {TV} broadcast bands: second
 {\sc Boccardi, F., Heath, R., Lozano, A., Marzetta, T., and Popovski, P.}
 \newblock Five disruptive technology directions for 5{G}.
 \newblock {\em Communications Magazine, IEEE 52}, 2 (February 2014), 74--80.
+
+\bibitem{Boyd:2004:CO:993483}
+{\sc Boyd, S., and Vandenberghe, L.}
+\newblock {\em Convex Optimization}.
+\newblock Cambridge University Press, New York, NY, USA, 2004.
+
+\bibitem{boyd2007notes}
+{\sc Boyd, S., Xiao, L., Mutapcic, A., and Mattingley, J.}
+\newblock Notes on decomposition methods.
+\newblock {\em Notes for EE364B, Stanford University\/} (2007).
 
 \bibitem{caodv-10wd}
 {\sc Cacciapuoti, A., Calcagno, C., Caleffi, M., and Paura, L.}
@@ -675,6 +690,11 @@ In the matter of unlicensed operation in the {TV} broadcast bands: second
 \newblock From {P}aris to {L}ondon: Comparative analysis of licensed spectrum
   use in two european metropolises.
 \newblock In {\em Proc. of IEEE DySPAN 2014\/} (April 2014), pp.~48--59.
+
+\bibitem{Palomar06atutorial}
+{\sc Palomar, D.~P., and Chiang, M.}
+\newblock A tutorial on decomposition methods for network utility maximization.
+\newblock {\em IEEE J. Sel. Areas Commun 24\/} (2006), 1439--1451.
 
 \bibitem{Routing-crn-INFOCOM11}
 {\sc Pan, M., Zhang, C., Li, P., and Fang, Y.}

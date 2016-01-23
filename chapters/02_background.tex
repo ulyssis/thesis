@@ -362,28 +362,44 @@ When these variant of congestion game are not singleton ones, \cite{Ackermann06p
 
 \section{Optimization}
 
-As discussed in Section~\ref{operation_model}, optimization is a powerful tool to solve problems in wireless networks and CRN.
-Distributed algorithms can be derived with decomposition techniques.
+how to design distributed algorithms on the basis of a optimization problem?
 
-
-
+As is mentioned in Section~\ref{operation_model}, constrained optimization has been used to formulate and solve a variety of problems in wireless networks and CRN.
 Table~\ref{opt_table} summarizes the commonly used parameters, objectives and constraints in optimization problems in wireless communication.
 Part of the contents in Table~\ref{opt_table} refers \cite{Han:2008:RAW:1457343}.
+As to CRN, the interference caused by secondary users on primary users is usually formulated into constraints, which distinguishes the problems in CRN from that in traditional wireless networks. 
+
+Convexity is a pursued property in optimization problem solving~\cite{Boyd:2004:CO:993483}.
+As to a convex optimization \ie minimizing a convex objective function over a convex constraint set, a local optimum is also a global optimum and the duality gap is zero, and there are provably polynomial-time algorithms to solve the convex optimization, \ie interior-point methods. 
+It is common to conduct optimization in centralized manner in small scale network, but in large scale network, centralized solution is infeasible for several reasons.
+First, it is hard to obtain the information resides across the network, especially when the information is varying, \ie the spectrum availability at secondary users in CRN.
+Second, it is hard for the centralized scheme to scale with the network~\cite{Palomar06atutorial}.
+
+\subsection{Decomposition Methods}
+To design distributed algorithms on the basis of an optimization problem, we need to decompose the original problem.
+The decomposition methods are originally proposed to solve very large optimization problems, but its side effect, yielding decentralized solution algorithms is very important in many scenarios in wireless network~\cite{boyd2007notes}. 
+\textit{decomposition method} decomposes the original problem into distributively solvable subproblmes.
+In certain cases, decentralized solutions can be interpreted as a set of simple protocols which allow a collection of subsystems to coordinate so that to achieve global optimality.
+
+Specifically, the decomposition techniques includes primal decomposition and dual decomposition.
+The former decomposing the original problem by allocating the available resources to each subproblems, and the latter is based on decomposing the Lagrangian dual problem~\cite{Bertsekas_99, Palomar06atutorial}.
+
+We take the joint channel and power allocation problem in CRN, which is addressed in~\cite{tachwali_opt_bandwidth_power_2013} as an example, in order to show how is one distributed algorithms is obtained by decomposing the optimization problem.
+To eliminate the impact of the coupling optimization variable, \ie channel and power levels, primal decomposition derives two subproblems, channel allocation and power control. 
+As to each subproblem, Lagrangian method is used to eliminate the coupling constraints.
+The sequential solution of the two subproblems form one iteration, and the iterations cease when the change of the objective is below a given stopping criterion.
 
 
-Among the various optimization problems, some centralized optimization problems can be decomposed and distributed schemes can be accordingly designed.
 
-When an optimization problem is convex, \ie to minimize a convex objective function over a convex constraint set, solving it very efficient. 
-More importantly, convexity means zero duality gap and thus enables distributed solutions through dual composition~\cite{Boyd:2004:CO:993483}.
-L methods....
-General procedure....
-Restrictions.....
+%When an optimization problem is convex, \ie to minimize a convex objective function over a convex constraint set, solving it very efficient. 
+%More importantly, convexity means zero duality gap and thus enables distributed solutions through dual composition.
 
-When the problems involve channel allocation or modulation decision, binary variables need to be introduced in the problem formulation and the problems are mixed integer non-linear programming problems. 
-These problems are NP-hard to solve general, and the computational complexity becomes unaffordable when the network size scales up.
-In this case, we need to decompose the problems.
 
-Many wireless resource allocation or management problems are formulated as constrained optimization problems.
+%When the problems involve channel allocation or modulation decision, binary variables need to be introduced in the problem formulation and the problems are mixed integer non-linear programming problems. 
+%These problems are NP-hard to solve general, and the computational complexity becomes unaffordable when the network size scales up.
+%In this case, we need to decompose the problems.
+%
+%Many wireless resource allocation or management problems are formulated as constrained optimization problems.
 
 \begin{sidewaystable}
 \centering
@@ -397,7 +413,7 @@ Network layer & routing path & end to end delay/throughput & maximal hops, secur
 \hline 
 MAC layer & transmission frequency, transmission priorities & maximal overall throughput, minimal buffer overflow probability & contentions, time/frequency slot \\ 
 \hline
-Physical layer & transmission power, modulation, channel coding rate, spectrum bandwidth~\cite{tachwali_opt_bandwidth_power_2013} & minimal over power consumption, maximal throughput, minimal BER & maximal transmission power, caused interference on licensed users, available channel coding rate \\ 
+Physical layer & transmission power, modulation, channel coding rate, spectrum bandwidth & minimal over power consumption, maximal throughput, minimal BER, maximize product of bandwidth of power~\cite{tachwali_opt_bandwidth_power_2013} & maximal transmission power, caused interference on licensed users, available channel coding rate \\ 
 \hline
 \end{tabular} 
 \caption{Optimization problem of cognitive radio networks}
