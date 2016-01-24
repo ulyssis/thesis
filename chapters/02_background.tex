@@ -362,11 +362,9 @@ When these variant of congestion game are not singleton ones, \cite{Ackermann06p
 
 \section{Optimization}
 
-how to design distributed algorithms on the basis of a optimization problem?
-
-As is mentioned in Section~\ref{operation_model}, constrained optimization has been used to formulate and solve a variety of problems in wireless networks and CRN.
-Table~\ref{opt_table} summarizes the commonly used parameters, objectives and constraints in optimization problems in wireless communication.
-Part of the contents in Table~\ref{opt_table} refers \cite{Han:2008:RAW:1457343}.
+As is mentioned in Section~\ref{operation_model}, a variety of problems in CRN are formulated and solved by constrained optimization~\cite{cacao_ca_2011, fuzzy_decision_09, resourceAllocation_imperfectSensing_2012}.
+Table~\ref{opt_table} summarizes the commonly proposed objectives, involved resources and constraints in the optimization problems in the domain of wireless communication.
+Part of the contents in the table refers \cite{Han:2008:RAW:1457343}.
 As to CRN, the interference caused by secondary users on primary users is usually formulated into constraints, which distinguishes the problems in CRN from that in traditional wireless networks. 
 
 Convexity is a pursued property in optimization problem solving~\cite{Boyd:2004:CO:993483}.
@@ -376,18 +374,26 @@ First, it is hard to obtain the information resides across the network, especial
 Second, it is hard for the centralized scheme to scale with the network~\cite{Palomar06atutorial}.
 
 \subsection{Decomposition Methods}
-To design distributed algorithms on the basis of an optimization problem, we need to decompose the original problem.
-The decomposition methods are originally proposed to solve very large optimization problems, but its side effect, yielding decentralized solution algorithms is very important in many scenarios in wireless network~\cite{boyd2007notes}. 
-\textit{decomposition method} decomposes the original problem into distributively solvable subproblmes.
+The decomposition methods are originally proposed to solve very large optimization problems, but as a side effect, it also yields decentralized solution algorithms, which is important in many scenarios of wireless network~\cite{boyd2007notes}. 
 In certain cases, decentralized solutions can be interpreted as a set of simple protocols which allow a collection of subsystems to coordinate so that to achieve global optimality.
+%To design distributed algorithms on the basis of an optimization problem, we need to decompose the original problem.
 
-Specifically, the decomposition techniques includes primal decomposition and dual decomposition.
-The former decomposing the original problem by allocating the available resources to each subproblems, and the latter is based on decomposing the Lagrangian dual problem~\cite{Bertsekas_99, Palomar06atutorial}.
+\textit{Decomposition method} decomposes the original problem into distributively solvable subproblmes.
+Specifically, the decomposition techniques includes \textit{primal decomposition} and \textit{dual decomposition}.
+The primal decomposition decouples variables, \ie decomposes the original problem by allocating the available resources to each subproblem, and derived problem formulation is \textit{master problem}.
+The dual decomposition solves the subproblems and decouples the constraints usually by forming Lagrangian~\cite{Bertsekas_99, Palomar06atutorial}.
+There is communication between the master problem and the subproblems.
+The communication is in the form of message passing which introduces overhead in the network.
+In some cases, however, the communication is implicit in the system, \eg delay, packet error probability, as these quantities have physical meanings and can be implicitly measured without the need of explicit signaling.
+The different ways to decouple the resources lead to different algorithms which have different characteristics of the amount of communication overhead and convergence properties.
 
-We take the joint channel and power allocation problem in CRN, which is addressed in~\cite{tachwali_opt_bandwidth_power_2013} as an example, in order to show how is one distributed algorithms is obtained by decomposing the optimization problem.
-To eliminate the impact of the coupling optimization variable, \ie channel and power levels, primal decomposition derives two subproblems, channel allocation and power control. 
-As to each subproblem, Lagrangian method is used to eliminate the coupling constraints.
-The sequential solution of the two subproblems form one iteration, and the iterations cease when the change of the objective is below a given stopping criterion.
+We take the joint channel and power allocation problem in CRN~\cite{tachwali_opt_bandwidth_power_2013} as an example, to show how is one distributed algorithms obtained by decomposing the optimization problem.
+To eliminate the impact of the coupling optimization variable, \ie channel and power levels, primal decomposition decomposes the original problem into two subproblems, channel allocation subproblem and power control subproblem. 
+After solving the first subproblem of channel allocation, the power allocation subproblem is solved using dual-decomposition method, where the Lagrangian variables are calculated in decentralized manner with iterative sub-gradient algorithm.
+Solving the two subproblems sequentially in one iteration, and the iterations cease when the change of the objective is below a given stopping criterion.
+When the original problem is assumed convex, the derived distributed algorithms could have a provable con vergence to the global optimum.
+The speed of convergence is difficult to quantify and will depend on how is the original problem is decomposed, \ie the number of levels in the decomposition, the amount of signaling, and the particular combination of numerical algorithms employed.
+
 
 
 
@@ -405,7 +411,7 @@ The sequential solution of the two subproblems form one iteration, and the itera
 \centering
 \begin{tabular}{|L{4cm}|C{5cm}|C{5cm}|C{5cm}|}
 \hline 
- & Parametres & Optimization goals & Constraints \\ 
+ & Parameters & Optimization goals & Constraints \\ 
 \hhline{|=|=|=|=|}
 Application layer & source-coding rate, buffer priority, packet arrival rate & minimal delay & base layer transmission, strict delay requirement \\ 
 \hline 
@@ -413,7 +419,7 @@ Network layer & routing path & end to end delay/throughput & maximal hops, secur
 \hline 
 MAC layer & transmission frequency, transmission priorities & maximal overall throughput, minimal buffer overflow probability & contentions, time/frequency slot \\ 
 \hline
-Physical layer & transmission power, modulation, channel coding rate, spectrum bandwidth & minimal over power consumption, maximal throughput, minimal BER, maximize product of bandwidth of power~\cite{tachwali_opt_bandwidth_power_2013} & maximal transmission power, caused interference on licensed users, available channel coding rate \\ 
+Physical layer & transmission power, modulation, channel coding rate, spectrum bandwidth & minimal over power consumption, maximal throughput, minimal BER, maximize product of bandwidth of power~\cite{tachwali_opt_bandwidth_power_2013} & maximal transmission power, interference on licensed users, available channel coding rate \\ 
 \hline
 \end{tabular} 
 \caption{Optimization problem of cognitive radio networks}
@@ -421,13 +427,9 @@ Physical layer & transmission power, modulation, channel coding rate, spectrum b
 \end{sidewaystable}
 
 %the available radio resources such as spectrum and transmission power are scarce, meanwhile, new services raise new requirements for these resources.
-Resource allocation is an important class of problems.
-Various optimization problems are formulated to improve radio resource usage in CRN~\cite{cacao_ca_2011, fuzzy_decision_09, resourceAllocation_imperfectSensing_2012}.
-Optimization can be conducted from either a global view or from individual perspectives.
 
-
-The solutions to optimization problems can be categorized by their properties, \ie convex, linear, integer, or non-convex non-linear, etc.
-In this thesis, we make use of different solvers, \ie Lindo, Gurobi, to solve the formulated optimization problems in different categories.
+%The solutions to optimization problems can be categorized by their properties, \ie convex, linear, integer, or non-convex non-linear, etc.
+%In this thesis, we make use of different solvers, \ie Lindo, Gurobi, to solve the formulated optimization problems in different categories.
 
 
 %Optimization outputs the results with the global information.

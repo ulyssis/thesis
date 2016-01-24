@@ -43,9 +43,9 @@
 \contentsline {figure}{\numberline {4.16}{\ignorespaces Number of CRs which are not included in any clusters, $N=100$\relax }}{91}{figure.4.16}
 \contentsline {figure}{\numberline {4.17}{\ignorespaces Number of CRs which are not included in any clusters, $N=300$\relax }}{91}{figure.4.17}
 \contentsline {figure}{\numberline {4.18}{\ignorespaces Number of formed clusters\relax }}{92}{figure.4.18}
-\contentsline {figure}{\numberline {4.19}{\ignorespaces 100 CRs, 30 PRs, the average number of neighbours is 9.5.\relax }}{92}{figure.4.19}
+\contentsline {figure}{\numberline {4.19}{\ignorespaces 100 CRs, 30 PRs, the average number of neighbours is 9.5.\relax }}{93}{figure.4.19}
 \contentsline {figure}{\numberline {4.20}{\ignorespaces 200 CRs, 30 PRs, the average number of neighbours is 20\relax }}{93}{figure.4.20}
-\contentsline {figure}{\numberline {4.21}{\ignorespaces 300 CRs, 30 PRs, the average number of neighbours is 30\relax }}{93}{figure.4.21}
+\contentsline {figure}{\numberline {4.21}{\ignorespaces 300 CRs, 30 PRs, the average number of neighbours is 30\relax }}{94}{figure.4.21}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Sensing duration $T_s$ and sensing period $T_p$\relax }}{97}{figure.5.1}
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Left: nodes with physical locations, Right: nodes with doublet virtual coordinate, each element in the virtual coordinate is the number of hops away from corresponding anchor. Connecting lines denote the communication is possible.\relax }}{99}{figure.5.2}
