@@ -26,21 +26,18 @@
 \contentsline {section}{\numberline {2.3}Optimization}{26}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}Decomposition Methods}{27}{subsection.2.3.1}
 \contentsline {chapter}{\numberline {3}DISTRIBUTED CHANNEL AND POWER ALLOCATION IEEE 802.22 NETWORKS}{29}{chapter.3}
-\contentsline {section}{\numberline {3.1}Motivation}{29}{section.3.1}
+\contentsline {section}{\numberline {3.1}Introduction}{29}{section.3.1}
 \contentsline {section}{\numberline {3.2}System Model and Problem Statement}{31}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}SINR on terminals}{31}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}Problem Statement}{32}{subsection.3.2.2}
-\contentsline {section}{\numberline {3.3}Related Work}{35}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Utilization of TV white space}{35}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Resource Allocation in CRN}{35}{subsection.3.3.2}
-\contentsline {section}{\numberline {3.4}Problem Decomposition and Corresponding Related Works}{37}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Maximal transmission power planning}{38}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Channel allocation with fixed transmission power level}{38}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}Power allocation}{39}{subsection.3.4.3}
+\contentsline {section}{\numberline {3.3}Problem Decomposition and Related Works}{35}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Resource Allocation in CRN}{36}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Utilization of TV white space}{37}{subsection.3.3.2}
+\contentsline {section}{\numberline {3.4}Related Work}{39}{section.3.4}
 \contentsline {section}{\numberline {3.5}The Maximum Permitted Transmission Power}{39}{section.3.5}
-\contentsline {section}{\numberline {3.6}Channel Allocation with Fixed Transmission Power}{41}{section.3.6}
-\contentsline {subsection}{\numberline {3.6.1}Centralized optimization programming}{41}{subsection.3.6.1}
-\contentsline {subsection}{\numberline {3.6.2}Distributed White Space Channel Allocation (WitheCat): Algorithm and Protocol}{41}{subsection.3.6.2}
+\contentsline {section}{\numberline {3.6}Channel Allocation with Fixed Transmission Power}{40}{section.3.6}
+\contentsline {subsection}{\numberline {3.6.1}Centralized optimization programming}{40}{subsection.3.6.1}
+\contentsline {subsection}{\numberline {3.6.2}Distributed White Space Channel Allocation (WitheCat): Algorithm and Protocol}{42}{subsection.3.6.2}
 \contentsline {subsection}{\numberline {3.6.3}Analysis in game theoretical framework}{43}{subsection.3.6.3}
 \contentsline {subsection}{\numberline {3.6.4}Communication overhead of DiCAPS in the phase of channel allocation}{46}{subsection.3.6.4}
 \contentsline {section}{\numberline {3.7}Variable transmission power after channel allocation}{46}{section.3.7}
@@ -85,7 +82,7 @@
 \contentsline {section}{\numberline {6.1}Contribution}{113}{section.6.1}
 \contentsline {section}{\numberline {6.2}Future Work}{114}{section.6.2}
 \vspace *{\baselineskip }
-\contentsline {chapter}{Bibliography}{117}{section*.65}
-\contentsline {chapter}{List of Figures}{129}{section*.65}
-\contentsline {chapter}{List of Tables}{132}{section*.65}
-\contentsline {chapter}{Glossary}{134}{section*.65}
+\contentsline {chapter}{Bibliography}{117}{section*.68}
+\contentsline {chapter}{List of Figures}{129}{section*.68}
+\contentsline {chapter}{List of Tables}{132}{section*.68}
+\contentsline {chapter}{Glossary}{134}{section*.68}

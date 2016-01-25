@@ -7,8 +7,8 @@
 \contentsline {figure}{\numberline {2.1}{\ignorespaces An example server matching, one server is possible strategy of the client at the other end of the connecting line\relax }}{25}{figure.2.1}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces System model: WBS cells and DTV systems\relax }}{32}{figure.3.1}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces QuasiSINR is the ratio between the power of signal of interest on the green point with the co-channel interferences on the red points\relax }}{33}{figure.3.2}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Distribution of maximal transmission power levels obtained from convex and linear programming respectively\relax }}{40}{figure.3.3}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces QuasiSINR is the ratio between the power of signal of interest on the green point with the sum of co-channel interference on the red points\relax }}{33}{figure.3.2}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Distribution of maximal transmission power levels obtained from convex and linear programming respectively\relax }}{41}{figure.3.3}
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Layout of WBSs and TV contours\relax }}{49}{figure.3.4}
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Power consumed by different distributed spectrum allocation schemes under different ways deciding the maximal transmission power map\relax }}{50}{figure.3.5}
 \contentsline {figure}{\numberline {3.6}{\ignorespaces QuasiSINR achieved by different distributed spectrum allocation schemes under different ways deciding the maximal transmission power map\relax }}{51}{figure.3.6}
