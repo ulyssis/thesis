@@ -43,17 +43,17 @@
 \contentsline {subsection}{\numberline {3.7.1}Centralized optimization}{48}{subsection.3.7.1}
 \contentsline {section}{\numberline {3.8}Performance Evaluation}{49}{section.3.8}
 \contentsline {subsection}{\numberline {3.8.1}Maximal Permitted Power Decision and the Distributed Channel Allocation Schemes}{50}{subsection.3.8.1}
-\contentsline {subsection}{\numberline {3.8.2}Performance of joint power and channel allocation: cascaded distributed schemes vs. joint distributed/centralized schemes}{55}{subsection.3.8.2}
-\contentsline {section}{\numberline {3.9}Conclusion}{57}{section.3.9}
+\contentsline {subsection}{\numberline {3.8.2}Performance of Joint Power and Channel Allocation}{55}{subsection.3.8.2}
+\contentsline {section}{\numberline {3.9}Conclusion}{56}{section.3.9}
 \contentsline {chapter}{ \numberline {A}Proof of Theorem \ref {noconvergence}}{59}{.1.A}
 \contentsline {chapter}{ \numberline {B}Deviation of Problem \ref {QLP}}{61}{.1.B}
 \contentsline {chapter}{\numberline {4}ROBUST CLUSTERING of AD HOC COGNITIVE RADIO NETWORK}{63}{chapter.4}
 \contentsline {section}{\numberline {4.1}Introduction}{63}{section.4.1}
-\contentsline {section}{\numberline {4.2}Related Work}{65}{section.4.2}
-\contentsline {section}{\numberline {4.3}System Model}{66}{section.4.3}
-\contentsline {section}{\numberline {4.4}Distributed Coordination Framework: Clustering Algorithm}{67}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Phase I - Cluster Formation}{67}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Phase II - Membership Clarification}{73}{subsection.4.4.2}
+\contentsline {section}{\numberline {4.2}Related Work}{64}{section.4.2}
+\contentsline {section}{\numberline {4.3}System Model}{65}{section.4.3}
+\contentsline {section}{\numberline {4.4}Distributed Coordination Framework: Clustering Algorithm}{68}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Phase I - Cluster Formation}{68}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Phase II - Membership Clarification}{74}{subsection.4.4.2}
 \contentsline {section}{\numberline {4.5}Centralized Clustering Scheme}{79}{section.4.5}
 \contentsline {subsection}{\numberline {4.5.1}The Optimization Problem}{81}{subsection.4.5.1}
 \contentsline {section}{\numberline {4.6}Performance Evaluation}{82}{section.4.6}

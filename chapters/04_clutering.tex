@@ -2,11 +2,11 @@
 \section{Introduction}
 \label{intro}
 %\todo[inline]{The first paragraph will be moved/integrated to INTRODUCTION chapter later.}
-\gls{CR} is a promising technology to solve the spectrum scarcity problem~\cite{Mitola}. 
-In CR systems, primary users access their allocated spectrum band whenever there is information to be transmitted. 
-In contrast, CR users (forming cognitive radio networks, abbreviated as CRN) can only access primary channels after validating the channel is idle. 
-This refers to the process of sensing a particular channel and verifying (with a previously specified probability of error) that it is not used by a primary user currently. 
-This form of spectrum sharing is also referred to as opportunistic spectrum access.
+%\gls{CR} is a promising technology to solve the spectrum scarcity problem~\cite{Mitola}. 
+%In CR systems, primary users access their allocated spectrum band whenever there is information to be transmitted. 
+%In contrast, CR users (forming cognitive radio networks, abbreviated as CRN) can only access primary channels after validating the channel is idle. 
+%This refers to the process of sensing a particular channel and verifying (with a previously specified probability of error) that it is not used by a primary user currently. 
+%This form of spectrum sharing is also referred to as opportunistic spectrum access.
 
 %[Benefits of clustering]
 
@@ -16,15 +16,13 @@ This form of spectrum sharing is also referred to as opportunistic spectrum acce
 
 %[clustering in crn] 
 As introduced in Chapter~\ref{INTRODUCTION}, efficient spectrum sensing is identified as to be critical to the success of cognitive radio networks~\cite{Sahai_FundamentalDesignTradeoffs2006}.
-Cooperative spectrum sensing is able to effectively cope with noise uncertainty and channel
-fading, thus improves the sensing accuracy remarkably~\cite{coorperativeSensing_Akyildiz11}.
-Clustering is regarded as an effective method used in cooperative spectrum sensing~\cite{Sun07_clustering_spectrum_secsing, Zhao07}.
-Collaborative sensing relays on the consensus of CR users within certain area, and decreases considerably the false sensing reports caused by fading and shadowing of reporting channel.
+Cooperative spectrum sensing is able to effectively cope with noise uncertainty and channel fading, thus remarkably improves the sensing accuracy.~\cite{coorperativeSensing_Akyildiz11}.
+Collaborative sensing relies on the consensus of CR users within certain area, and decreases considerably the false sensing reports caused by fading and shadowing of reporting channel.
+Clustering, \ie forming adjacent secondary users as a collectivity to perform certain tasks together, is regarded as an effective method used in cooperative spectrum sensing~\cite{Sun07_clustering_spectrum_secsing, Zhao07}.
 %As a result, more accurate sensing result can be obtained by collaborative sensing, and the improvement on spectrum sensing decreases the interference originating from CR users to primary users, which is highly desirable.
 %Also,  prevents CR users from using channels that are occupied by primary users. 
-
-Clustering is also efficient to let all CR users\footnote{User and node are used interchangeably in this chapter} within the same cluster stop payload transmission on the operating channel and initiate the sensing process, so that the all the CR nodes within the one cluster are able to vacate the channel swiftly when primary users are detected by at least one CR node residing in the cluster~\cite{willkomm08}.
-With cluster structure, the possibility that one CR node interferes neighbouring clusters after vacating the channel due to primary node appearance is reduced~\cite{centralizedSharing80222}, as it can be notified by cluster head (\gls{CH}) or other cluster members about the possible collision. 
+Clustering is also efficient to enable all CR users\footnote{User and node are used interchangeably in this chapter} within the same cluster to stop payload transmission on the operating channel and initiate the sensing process, so that the all the CR nodes within the one cluster are able to vacate the channel swiftly when primary users are detected by at least one CR node residing in the cluster~\cite{willkomm08}.
+With cluster structure, as CR users can be notified by cluster head (\gls{CH}) or other cluster members about the possible collision, the possibility for them to interfere neighbouring clusters is reduced~\cite{centralizedSharing80222}. 
 Clustering algorithm has also proposed to support routing in cognitive ad-hoc networks~\cite{Abbasi_survey_07}.
 
 %%[crn for clustering] 
@@ -33,23 +31,22 @@ Clustering algorithm has also proposed to support routing in cognitive ad-hoc ne
 %The similarity of available spectrum on a group of neighbouring CR nodes, along with the benefit of collaborative decision among multiple nodes, leads to clustering as an effective approach for many applications.
 
 %[robustness issue for clustering]
-Except for the advantages brought in by clustering, there is an issue on clustering structure itself in cognitive radio network.
-As the activity of primary users is controlled by licensed operators which are generally not known to CR users, the connectivity between CR nodes in a CRN is not guaranteed. 
+Except for the advantages brought in by clustering, there is an issue on forming clusters in cognitive radio network.
+As the activity of primary users is controlled by licensed operators which are generally not known to CR nodes, the communication on licensed channels between CR nodes is not guaranteed. 
 For a pair of communicating CR nodes, whenever a primary user is detected to be operating on the working channel, CR nodes have to retreat that working channel.
-The affected CR nodes switch to one other idle channel if there are available idle channels, if not, the communication is cut down.
-As a result, when coexisting with primary users, the ability for one pair of CR nodes to maintain communication with licensed channels is totally decided by primary users' activity.
+The affected CR nodes switch to one other idle channel if there are available idle channels, if not, the communication has to be stopped.
+As a result, when coexisting with primary users, the ability for one pair of CR nodes to maintain communication on licensed channels is totally decided by primary users' activity.
 
-Although the communication among secondary users is vulnerable under the affection of primary users, which is objective in the eyes of secondary users, there is something can be done by secondary users when they form clusters. 
-%Thus robustness of connection with licensed channels demonstrates to be objective from the perspective of secondary users.
-To maintain one cluster operating on licensed channels, at least one common channel is available for all members in that cluster.
-When the increase of channel occupation by primary users is assumed to be random, a cluster with more channels will stand ground with higher probability.
-Thus the number of available common channels in the cluster indicates robustness of it when facing uncontrolled influence from primary users.
+Although the formed clusters is vulnerable under the influence of primary users, and there is little possibility to change primary users' operation, there is something can be done by secondary users in the process of forming clusters. 
+One cluster is sustained when there is at least one common channel available for all members in that cluster, so that the cluster can operate on the licensed channel.
+As the increase of channel occupation by primary users is assumed to be random, a cluster with more channels will survive with higher probability.
+Thus the number of available common channels in the cluster indicates robustness of it when facing ungovernable influence from primary users.
 It is not difficult to see that forming clusters with different neighbours leads to different amount of common channels in the clusters.
 As a result, how to form the clusters plays an important role on the robustness of clusters in CRN.
 
 %Furthermore, the clustering algorithm also determines the connectivity between several clusters which ultimately determines the robustness of the entire network on the respect of connectivity. 
 
-To solely pursue connectivity robustness against the primary users' activity, \ie to achieve more common channels within clusters, which is adopted by~\cite{Lazos09}, the ultimately best clustering strategy is ironically that each node constitutes one single node clusters.
+To solely pursue cluster robustness against the primary users' activity, \ie to achieve more common channels within clusters, the ultimately best clustering strategy is ironically that each node constitutes one single node clusters.
 %In that case, the common channels within cluster are the available channels available at that node's place.
 Apparently this contradicts our motivation of proposing cluster in cognitive radio network.
 This contradiction indicates that, the robustness discussed in terms of number of common channels carries little meaning when the sizes of formed clusters are not given consideration.
@@ -57,15 +54,14 @@ Besides, cluster size plays import roles in certain aspects.
 For instance, cluster size is one decisive factor in power preservation~\cite{clustering_globecom11, EnergyEfficientClusteringRouting_2015}, and it is also influence the accuracy of cooperative spectrum sensing~\cite{Consensus_based_clustering12}.
 Hence, cluster size should be given consideration when discussing cluster robustness against primary users.
 
-In this chapter, a decentralized clustering approach ROSS is proposed.
-ROSS is able to form clusters whose sizes are not far away from the desired size, and the generated clusters are more robust than other robust clustering scheme, \ie more secondary users residing in clusters against increasing affection from primary users.
+In this chapter, a decentralized clustering approach ROSS is proposed to cover the issue of robustness of clusters in CRN.
+ROSS is able to form clusters with desired sizes, and the generated clusters are more robust than other robust clustering schemes, \ie more secondary users residing in clusters against increasing influence from primary users.
 Compared to previous work, ROSS involves much less control messages, and the generated clusters are significantly more robust.
-In ROSS, cluster head is selected through coordination within its neighborhood, and then cluster membership is decided locally and its convergence is proved under game theoretic framework. 
+ROSS selects cluster head through coordination within its neighborhood, and then cluster membership is decided locally and its fast convergence is proved under game theoretic framework. 
 %building more homogeneous clusters with respect to their size and forcing nodes with a high connectivity degree to the border of a cluster (making the cluster therefore more robust regarding connectivity loss to its neighbor).
 %For our scheme we can prove convergence in cluster formation phase and resolve ambiguities with respect to cluster membership in a game-theoretic setting. 
-On the basis of ROSS, we propose \gls{ROSS-DFA} which is a light weighted version of ROSS, which requires exchanging less overheads.
-%We leave the channel selection undiscussed.
-Throughout this chapter, we refer both \gls{ROSS-DGA} and ROSS-DFA, along with these added size control feature, as \textit{variants of ROSS}. 
+On the basis of ROSS, we propose a light weighted version \gls{ROSS-DFA} which requires exchanging less overheads.
+Throughout this chapter, we refer both \gls{ROSS-DGA}, ROSS-DFA, and the other versions with size control feature, as \textit{variants of ROSS}. 
 
 The rest of chapter is organized as follows. 
 After reviewing related work in section~\ref{related_work}, we present our system model in Section~\ref{sec:model}. 
@@ -387,6 +383,7 @@ The pseudo code for cluster head to obtain at least one common channel is shown 
 
 \subsubsection*{Cluster Size Control in Dense CRN}
 \label{cluster_pruning}
+
 In the introduction section, we have stated that cluster size should be given consideration to justify the pursuing of robust clusters, here we illustrate the pressing necessity to control cluster size when CRN becomes dense via theoretical analysis and simulation, and provide solution to it.
 
 Assume CR nodes and primary users are evenly distributed and primary users occupy the licensed channels randomly, \ie both CR nodes density and channel availability in the CRN is homogeneous.
