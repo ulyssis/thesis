@@ -468,13 +468,10 @@ In the matter of unlicensed operation in the {TV} broadcast bands: second
 \newblock {\em Communications Magazine, IEEE 52}, 2 (February 2014), 66--73.
 
 \bibitem{aaai_IeongMNSS05}
-{\sc Ieong, S., McGrew, R., Nudelman, E., Shoham, Y., and Sun, Q.}
-\newblock Fast and compact: {A} simple class of congestion games.
-\newblock In {\em Proceedings, The Twentieth National Conference on Artificial
-  Intelligence and the Seventeenth Innovative Applications of Artificial
-  Intelligence Conference, July 9-13, 2005, Pittsburgh, Pennsylvania, {USA}\/}
-  (2005), pp.~489--494.
-\newblock \url{http://www.aaai.org/Library/AAAI/2005/aaai05-077.php}.
+{\sc Ieong, S., Mcgrew, R., Nudelman, E., Shoham, Y., and Sun, Q.}
+\newblock Fast and compact: A simple class of congestion games.
+\newblock In {\em Proc. of the 20th Nat. Conference on Artificial Intelligence
+  (AAAI\/} (2005), pp.~489--494.
 
 \bibitem{reinforcement_learning_crn_2011}
 {\sc Jiang, T., Grace, D., and Mitchell, P.}

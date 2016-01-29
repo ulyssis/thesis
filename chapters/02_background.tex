@@ -230,7 +230,7 @@ Potential game has two important theorems,
 
 %Based on potential game model, Rosenthal~\cite{Rosenthal} built a potential function,
 \subsection{Convergence Time Towards Nash Equilibrium}
-As to the Theorem~\ref{background:finiteImprovement} which implies the that, for every congestion game, every best response ends in finite steps, we introduce the sketch of the proof of this proposition, as the proof also reveals the number of steps needed to reach a Nash Equilibrium.
+As to the Theorem~\ref{background:finiteImprovement} which implies that for every congestion game, every best response ends in finite steps, we introduce the sketch of the proof of this proposition, as the proof also reveals the number of steps needed to reach a Nash Equilibrium.
 % ~\cite{Voecking06congestiongames} 
 We first introduce Rosenthal's potential function $\phi(s):\Sigma\rightarrow \mathbb{Z}$, where $\sigma$ is the strategy profile of all the players, let $\sigma = \sigma_1, \sigma_2,\cdots, \sigma_N$:
 \begin{equation}
@@ -272,6 +272,7 @@ As long as we can decide the payoff (or cost) happened upon a certain resource, 
 %\section{Application of congestion game in the design of decentralised algorithm}
 %\todo[inline]{expand: the application of potential game in CRN}
 \subsection{Singleton Congestion Game}
+\label{singleton_congestion_game}
 We introduce a special type of congestion game~\cite{aaai_IeongMNSS05}, which implies polynomial number of best response steps towards convergence.
 
 
@@ -292,14 +293,14 @@ The upper bound on the number of convergence steps is shown in Formula~\ref{2:Ro
 Now we need to approximate this expression.
 Replace original delays by smaller integer values without changing the preferences of the player, then calculate an upper bound on the maximum potential with respect to the new delays.
 For example, if the delay on a certain resource is 15, 50, 100 with respect to 1, 2 and 3 players using that resource, then we manipulate the delays as 1, 2, 3.
-When the number of resource is $m$ and number of players is $n$, the largest new delay is $mn$.
+When the number of resource is $m$ and number of players is $n$, the largest new delay is $nm$.
 Then the Rosenthal's potential in Formula ~\ref{2:Rosenthal_potential} has the following relationships with an upper bound.
 \begin{equation}
 \label{2:Rosenthal_potential_newdelay}
 \begin{split}
 \phi(\sigma) 
 & =\sum\limits^{}_{r\in \mathcal{R}} \sum\limits^{n_r(\sigma)}_{i=1} g_r(i)\\
-& =\sum\limits^{}_{r\in \mathcal{R}} \sum\limits^{n_r(\sigma)}_{i=1} nm\\
+& \leq \sum\limits^{}_{r\in \mathcal{R}} \sum\limits^{n_r(\sigma)}_{i=1} (nm)\\
 & \leq n^2m
 \end{split}
 \end{equation}

@@ -145,9 +145,6 @@ You're missing a field name---line 4385 of file ./backmatter/myrefs.bib
  : %note= game and utility
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-A bad cross reference---entry "aaai_IeongMNSS05"
-refers to entry "DBLP:conf/aaai/2005", which doesn't exist
-Warning--I didn't find a database entry for "DBLP:conf/aaai/2005"
 Warning--to sort, need author or key in FCC_spectrumEfficiency_2002
 Warning--to sort, need author or key in FCC_03-322
 Warning--to sort, need author or key in FCC_2010_sedond_memorandumm
@@ -187,34 +184,34 @@ Warning--empty year in willkomm08
 Warning--empty journal in dsa_traffic_2000
 You've used 158 entries,
             2950 wiz_defined-function locations,
-            1681 strings with 39326 characters,
-and the built_in function-call counts, 68471 in all, are:
-= -- 6883
+            1678 strings with 39095 characters,
+and the built_in function-call counts, 68431 in all, are:
+= -- 6876
 > -- 2477
 < -- 0
 + -- 1052
 - -- 868
-* -- 4401
-:= -- 9790
-add.period$ -- 483
+* -- 4398
+:= -- 9786
+add.period$ -- 482
 call.type$ -- 158
 change.case$ -- 903
 chr.to.int$ -- 0
 cite$ -- 183
-duplicate$ -- 2309
-empty$ -- 6459
+duplicate$ -- 2307
+empty$ -- 6454
 format.name$ -- 868
-if$ -- 16917
+if$ -- 16905
 int.to.chr$ -- 0
 int.to.str$ -- 158
 missing$ -- 153
-newline$ -- 802
+newline$ -- 801
 num.names$ -- 298
 pop$ -- 1705
 preamble$ -- 1
 purify$ -- 750
 quote$ -- 0
-skip$ -- 3901
+skip$ -- 3898
 stack$ -- 0
 substring$ -- 3453
 swap$ -- 641
@@ -225,5 +222,5 @@ type$ -- 614
 warning$ -- 25
 while$ -- 470
 width$ -- 161
-write$ -- 1588
-(There were 34 error messages)
+write$ -- 1586
+(There were 33 error messages)

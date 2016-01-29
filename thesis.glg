@@ -1,6 +1,6 @@
 ;; This logfile was generated automatically by `xindy'
-;; at 24.01.2016  16:47:58
-;; Indexstyle: "/tmp/nvekOV11QR", Rawindex: "/tmp/6UrEgs5thR", Output: "thesis.gls"
+;; at 28.01.2016  23:17:39
+;; Indexstyle: "/tmp/f_pm7Xipyv", Rawindex: "/tmp/9PBRBTUv2c", Output: "thesis.gls"
 
 
 Building indexentry-tree:
@@ -74,11 +74,11 @@ Letter-group: "à¤œ" -> "U"
 Letter-group: "Úå" -> "D"
 Letter-group: "ÊÃÐ" -> "Q"
 Letter-group: "Ð¨¼Ë" -> "S"
+Letter-group: "¨†€ÈÐ" -> "D"
+Letter-group: "æ¤¨Ú—†€Ú" -> "W"
 Letter-group: "æË€¼" -> "W"
 Letter-group: "»€¼" -> "M"
 Letter-group: "´È" -> "L"
-Letter-group: "¨†€ÈÐ" -> "D"
-Letter-group: "æ¤¨Ú—†€Ú" -> "W"
 Letter-group: "†ÃÐ" -> "C"
 Letter-group: "†¤" -> "C"
 Letter-group: "ËÃÐÐœ€" -> "R"

@@ -8,17 +8,18 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces System model: WBS cells and DTV systems\relax }}{32}{figure.3.1}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces QuasiSINR is the ratio between the power of signal of interest on the green point with the sum of co-channel interference on the red points\relax }}{33}{figure.3.2}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Distribution of maximal transmission power levels obtained from convex and linear programming respectively\relax }}{41}{figure.3.3}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Layout of WBSs and TV contours\relax }}{49}{figure.3.4}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Power consumed by different distributed spectrum allocation schemes under different ways deciding the maximal transmission power map\relax }}{50}{figure.3.5}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces QuasiSINR achieved by different distributed spectrum allocation schemes under different ways deciding the maximal transmission power map\relax }}{51}{figure.3.6}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces CDF of SINR on end users obtained by different CA schemes under different methods to decide the maximal transmission power map\relax }}{51}{figure.3.7}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces The average SINR of the 20\% worst end terminals\relax }}{52}{figure.3.8}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Convergence with three different schemes in one simulation instance\relax }}{53}{figure.3.9}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Summed utility of all WBSs, which is the objective in problem\nobreakspace {}\ref {problem}. dpa in legend represents \textit {distributed power allocation}\relax }}{55}{figure.3.10}
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Average transmission power of one WBSs\relax }}{56}{figure.3.11}
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Average quasiSINR of a WBS\relax }}{56}{figure.3.12}
-\contentsline {figure}{\numberline {3.13}{\ignorespaces SINR on end users after channel and power allocation\relax }}{57}{figure.3.13}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Distribution of maximal transmission power levels obtained from convex and linear programming respectively\relax }}{40}{figure.3.3}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces The evaluation contents in this section, the left part is discussed in Section\nobreakspace {}\ref {MaxPower_whitecat} and the right part is in Section\nobreakspace {}\ref {joint}. \relax }}{49}{figure.3.4}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Layout of WBSs and TV contours\relax }}{49}{figure.3.5}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Power consumed by different distributed spectrum allocation schemes under different ways deciding the maximal transmission power map\relax }}{51}{figure.3.6}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces QuasiSINR achieved by different distributed spectrum allocation schemes under different ways deciding the maximal transmission power map\relax }}{52}{figure.3.7}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces CDF of SINR on end users obtained by different CA schemes under different methods to decide the maximal transmission power map\relax }}{53}{figure.3.8}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces The average SINR of the 20\% worst end terminals\relax }}{54}{figure.3.9}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Convergence with three different schemes in one simulation instance\relax }}{54}{figure.3.10}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Summed utility of all WBSs, which is the objective in problem\nobreakspace {}\ref {problem}. dpa in legend represents \textit {distributed power allocation}\relax }}{56}{figure.3.11}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Average transmission power of one WBSs\relax }}{56}{figure.3.12}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Average quasiSINR of a WBS\relax }}{57}{figure.3.13}
+\contentsline {figure}{\numberline {3.14}{\ignorespaces SINR on end users after channel and power allocation\relax }}{57}{figure.3.14}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
