@@ -611,17 +611,19 @@ In the matter of unlicensed operation in the {TV} broadcast bands: second
 \newblock In {\em Proc. of IEEE GLOBECOM 2001\/} (2001), vol.~2, pp.~821--826
   vol.2.
 
+\bibitem{Mansoor2014}
+{\sc Mansoor, N., Muzahidul~Islam, A. K.~M., Zareei, M., Baharun, S.,
+  Wakabayashi, T., and Komaki, S.}
+\newblock Cognitive radio ad-hoc network architectures: A survey.
+\newblock {\em Wireless Personal Communications 81}, 3 (2014), 1117--1142.
+\newblock \url{http://dx.doi.org/10.1007/s11277-014-2175-3}.
+
 \bibitem{Milchtaich1996111}
 {\sc Milchtaich, I.}
 \newblock Congestion games with player-specific payoff functions.
 \newblock {\em Games and Economic Behavior 13}, 1 (1996), 111 -- 124.
 \newblock
   \url{http://www.sciencedirect.com/science/article/B6WFW-45MH09M-2Y/2/ad6966b4c9b49d9450d3f995ef526373}.
-
-\bibitem{Mitola}
-{\sc Mitola, J., I., and Maguire, G.Q., J.}
-\newblock Cognitive radio: making software radios more personal.
-\newblock {\em Personal Communications, IEEE 6}, 4 (aug. 1999), 13 --18.
 
 \bibitem{2000mitola_cognitive_radio}
 {\sc Mitola, J.}
@@ -929,7 +931,7 @@ In the matter of unlicensed operation in the {TV} broadcast bands: second
 {\sc Yucek, T., and Arslan, H.}
 \newblock A survey of spectrum sensing algorithms for cognitive radio
   applications.
-\newblock {\em Communications Surveys Tutorials, IEEE 11}, 1 (First 2009),
+\newblock {\em in Proc. of IEEE Communications Surveys Tutorials 11}, 1 (2009),
   116--130.
 
 \bibitem{cacao_ca_2011}

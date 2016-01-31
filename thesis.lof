@@ -1,6 +1,6 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces The concept of overlay spectrum usage in a TV service scenario. The hull shows the range of a TV service area, inside and out of which secondary users work on the licensed channels.\relax }}{5}{figure.1.1}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces The concept of underlay spectrum usage in a TV service scenario. The hull shows the range of a TV service area, inside and out of which secondary users work on the licensed channels.\relax }}{5}{figure.1.1}
 \contentsline {figure}{\numberline {1.2}{\ignorespaces The two ways that game theory is involved in problem solving\relax }}{9}{figure.1.2}
 \contentsline {figure}{\numberline {1.3}{\ignorespaces Spectrum management and the problems addressed in this thesis\relax }}{14}{figure.1.3}
 \addvspace {10\p@ }
@@ -8,7 +8,7 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces System model: WBS cells and DTV systems\relax }}{32}{figure.3.1}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces QuasiSINR is the ratio between the power of signal of interest on the green point with the sum of co-channel interference on the red points\relax }}{33}{figure.3.2}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Distribution of maximal transmission power levels obtained from convex and linear programming respectively\relax }}{40}{figure.3.3}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Distribution of maximum permitted transmission power levels obtained from convex and linear programming formulations\relax }}{40}{figure.3.3}
 \contentsline {figure}{\numberline {3.4}{\ignorespaces The evaluation contents in this section, the left part is discussed in Section\nobreakspace {}\ref {MaxPower_whitecat} and the right part is in Section\nobreakspace {}\ref {joint}. \relax }}{49}{figure.3.4}
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Layout of WBSs and TV contours\relax }}{49}{figure.3.5}
 \contentsline {figure}{\numberline {3.6}{\ignorespaces Power consumed by different distributed spectrum allocation schemes under different ways deciding the maximal transmission power map\relax }}{51}{figure.3.6}
@@ -16,59 +16,60 @@
 \contentsline {figure}{\numberline {3.8}{\ignorespaces CDF of SINR on end users obtained by different CA schemes under different methods to decide the maximal transmission power map\relax }}{53}{figure.3.8}
 \contentsline {figure}{\numberline {3.9}{\ignorespaces The average SINR of the 20\% worst end terminals\relax }}{54}{figure.3.9}
 \contentsline {figure}{\numberline {3.10}{\ignorespaces Convergence with three different schemes in one simulation instance\relax }}{54}{figure.3.10}
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Summed utility of all WBSs, which is the objective in problem\nobreakspace {}\ref {problem}. dpa in legend represents \textit {distributed power allocation}\relax }}{56}{figure.3.11}
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Average transmission power of one WBSs\relax }}{56}{figure.3.12}
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Average quasiSINR of a WBS\relax }}{57}{figure.3.13}
-\contentsline {figure}{\numberline {3.14}{\ignorespaces SINR on end users after channel and power allocation\relax }}{57}{figure.3.14}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Summed utility of all WBSs, which is the objective in problem\nobreakspace {}\ref {problem}. dpa in legend represents distributed power allocation\relax }}{56}{figure.3.11}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Average transmission power of one WBS\relax }}{56}{figure.3.12}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Cumulative distribution of SINR on end users after channel and power allocation\relax }}{57}{figure.3.13}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Connectivity graph and the connectivity vector $\{D_i, G_i\}$ on each node. The available channels sensed by each CR node are: $V_A=\{1,2,3,4,5,6,10\}, V_B=\{1,2,3,5,7\}, V_C=\{1,3,4,10\}, V_D=\{1,2,3,5\}, V_E=\{2,3,5,7\}, V_F=\{2,4,5,6,7\}, V_G=\{1,2,3,4,8\}, V_H=\{1,2,5,8\}$. Dashed lines indicates two end nodes are within transmission range of each other. Each edge is labelled by the number of common channels between the two ends.\relax }}{64}{figure.4.1}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces The node series in the proof, the deduction starts from node $\alpha $\relax }}{65}{figure.4.2}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Clusters formation in extremely dense CRN. Black dots are cluster heads, cluster members are not drawn.\relax }}{68}{figure.4.3}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Number of clusters formed\relax }}{70}{figure.4.4}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Clusters formation after the first phase of ROSS. Some nodes remain debatable nodes after the first phase.\relax }}{70}{figure.4.5}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces The number of debatbale nodes after the first phase of ROSS. The unit of Y axis is 100\%\relax }}{71}{figure.4.6}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Debatable nodes and claiming clusters\relax }}{72}{figure.4.7}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Node A stays in cluster $C_C$, quits $C_H$, $\Delta \delimiter "026A30C K_{C_C}\delimiter "026A30C +\Delta \delimiter "026A30C K_{C_H}\delimiter "026A30C =2$}}}{75}{figure.4.8}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Node A stays in cluster $C_H$, quits $C_C$, $\Delta \delimiter "026A30C K_{C_C}\delimiter "026A30C +\Delta \delimiter "026A30C K_{C_H}\delimiter "026A30C =1$}}}{75}{figure.4.8}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Final formation of clusters, common channels for each cluster is shown.\relax }}{75}{figure.4.9}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Matrix Q, \relax }}{78}{figure.4.10}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Final clustering of the example CRN\relax }}{80}{figure.4.11}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {SOC}}}{80}{figure.4.11}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Linear programming}}}{80}{figure.4.11}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Number of common channels for non-singleton clusters, the numbers in the names of schemes annotate the desired cluster size.\relax }}{82}{figure.4.12}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Number of CRs which are not included in any clusters\relax }}{83}{figure.4.13}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Cumulative distribution of CRs residing in clusters with different sizes, as to ROSS with size control feature, the desired cluster size is 3. The average number of neighbours is 4.8.\relax }}{84}{figure.4.14}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Number of control messages\relax }}{85}{figure.4.15}
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Number of common channels of non-singleton clusters. As to ROSS with size control feature, we adopt $x=6$ when $N=100$, $x=12$ when $N=200$, $x=21$ when $N=300$, which is around $2/3$ of the number of average neighbours\relax }}{86}{figure.4.16}
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Number of CRs which are not included in any clusters, $N=100$\relax }}{87}{figure.4.17}
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Number of CRs which are not included in any clusters, $N=300$\relax }}{88}{figure.4.18}
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Number of formed clusters\relax }}{88}{figure.4.19}
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Cumulative distribution of CRs residing in clusters with different sizes. Desired cluster size $x$ is 5. 100 CRs, 30 PRs in network, the average number of neighbours of CR node is 9.5.\relax }}{89}{figure.4.20}
+\contentsline {figure}{\numberline {4.21}{\ignorespaces Cumulative distribution of CRs residing in clusters with different sizes. Desired cluster size $x$ is 7. 200 CRs, 30 PRs in network, the average number of neighbours of CR node is 20\relax }}{89}{figure.4.21}
+\contentsline {figure}{\numberline {4.22}{\ignorespaces Cumulative distribution of CRs residing in clusters with different sizes. Desired cluster size $x$ is . 300 CRs, 30 PRs, the average number of neighbours is 30\relax }}{90}{figure.4.22}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Sensing duration $T_s$ and sensing period $T_p$\relax }}{93}{figure.5.1}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Left: nodes with physical locations, Right: nodes with doublet virtual coordinate, each element in the virtual coordinate is the number of hops away from corresponding anchor. Connecting lines denote the communication is possible.\relax }}{95}{figure.5.2}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces A network under primary users' influence assigned with SAViC, only anchor 1 is adopted. Flooding of anchor messages is not shown.\relax }}{95}{figure.5.3}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Normalized spectrum availability with respect to the likelihood of spectrum being available one a node\relax }}{98}{figure.5.4}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Reachability of different virtual coordinates, the average number of neighbors is 6, 12, and 14\relax }}{103}{figure.5.5}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Routing paths and corresponding PDR\relax }}{104}{figure.5.6}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Routing paths}}}{104}{figure.5.6}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {PDR over 50 random CRN network, PU's location is fixed as shown in Figure\nobreakspace {}\ref {fig:singleChannelPioff_case_topo}}}}{104}{figure.5.6}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Packet delivery ratio with single secondary channel, over 50 randomly located CR nodes and PUs\relax }}{104}{figure.5.7}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {PDR}}}{104}{figure.5.7}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Delay}}}{104}{figure.5.7}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Packet delivery ratio with multiple secondary channel scenario\relax }}{105}{figure.5.8}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {PDR over 50 CRNs where SUs and PUs are randomly located}}}{105}{figure.5.8}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {PDR over 50 CRNs where SUs and PUs are randomly located}}}{105}{figure.5.8}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Routing paths in one network, $T_1 = 3s$. cycles denote the transmission range of primary uers.\relax }}{106}{figure.5.9}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Geographic routing in single secondary channel scenario, $P_{\textsc {\relax \fontsize {6}{7}\selectfont OFF}}=0.9$ for all primary users, $T_1=3s$, $T_2$ varies.\relax }}{107}{figure.5.10}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Packet delivery ratio}}}{107}{figure.5.10}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Delay}}}{107}{figure.5.10}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Geographic routing in two secondary channel scenario, $P_{\textsc {\relax \fontsize {6}{7}\selectfont OFF}}=0.9$ for all primary users, $T_1=3s$, $T_2$ varies.\relax }}{107}{figure.5.11}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Packet delivery ratio}}}{107}{figure.5.11}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Delay}}}{107}{figure.5.11}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces In the setting of Figure\nobreakspace {}\ref {fig:singleChannelPioff_case_topo}, perofrmance of DC based virtual coordinate is not affected greatly by the erroneous estimation\relax }}{108}{figure.5.12}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Multiple to one communication\relax }}{111}{figure.6.1}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Connectivity graph and the connectivity vector $\{D_i, G_i\}$ on each node. The available channels sensed by each CR node are: $V_A=\{1,2,3,4,5,6,10\}, V_B=\{1,2,3,5,7\}, V_C=\{1,3,4,10\}, V_D=\{1,2,3,5\}, V_E=\{2,3,5,7\}, V_F=\{2,4,5,6,7\}, V_G=\{1,2,3,4,8\}, V_H=\{1,2,5,8\}$. Dashed lines indicates two end nodes are within transmission range of each other. Each edge is labelled by the number of common channels between the two ends.\relax }}{68}{figure.4.1}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Clusters formation in extremely dense CRN. Black dots are cluster heads, cluster members are not drawn.\relax }}{72}{figure.4.2}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Number of clusters formed\relax }}{72}{figure.4.3}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Clusters formation after the first phase of ROSS. Some nodes remain debatable nodes after the first phase.\relax }}{74}{figure.4.4}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Clusters formation after the first phase of ROSS. Some nodes remain debatable nodes after the first phase.\relax }}{74}{figure.4.5}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces debatable nodes and claiming clusters\relax }}{77}{figure.4.6}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Node A stays in cluster $C_C$, quits $C_H$, $\Delta \delimiter "026A30C K_{C_C}\delimiter "026A30C +\Delta \delimiter "026A30C K_{C_H}\delimiter "026A30C =2$}}}{78}{figure.4.7}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Node A stays in cluster $C_H$, quits $C_C$, $\Delta \delimiter "026A30C K_{C_C}\delimiter "026A30C +\Delta \delimiter "026A30C K_{C_H}\delimiter "026A30C =1$}}}{78}{figure.4.7}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Final formation of clusters, common channels for each cluster is shown.\relax }}{78}{figure.4.8}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Matrix Q, \relax }}{81}{figure.4.9}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Final clustering of the example CRN\relax }}{83}{figure.4.10}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {SOC}}}{83}{figure.4.10}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Linear programming}}}{83}{figure.4.10}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Number of common channels for non-singleton clusters, the numbers in the names of schemes annotate the desired cluster size.\relax }}{85}{figure.4.11}
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Number of CRs which are not included in any clusters\relax }}{86}{figure.4.12}
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Distribution of CRs residing in clusters with different sizes, as to ROSS with size control feature, the desired cluster size is 3. The average number of neighbours is 4.838.\relax }}{87}{figure.4.13}
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Number of control messages\relax }}{88}{figure.4.14}
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Number of common channels for non-singleton clusters. As to ROSS with size control feature, we adopt $x=6$ when $N=100$, $x=12$ when $N=200$, $x=21$ when $N=300$, which is around $2/3$ of the number of average neighbours\relax }}{89}{figure.4.15}
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Number of CRs which are not included in any clusters, $N=100$\relax }}{91}{figure.4.16}
-\contentsline {figure}{\numberline {4.17}{\ignorespaces Number of CRs which are not included in any clusters, $N=300$\relax }}{91}{figure.4.17}
-\contentsline {figure}{\numberline {4.18}{\ignorespaces Number of formed clusters\relax }}{92}{figure.4.18}
-\contentsline {figure}{\numberline {4.19}{\ignorespaces 100 CRs, 30 PRs, the average number of neighbours is 9.5.\relax }}{93}{figure.4.19}
-\contentsline {figure}{\numberline {4.20}{\ignorespaces 200 CRs, 30 PRs, the average number of neighbours is 20\relax }}{93}{figure.4.20}
-\contentsline {figure}{\numberline {4.21}{\ignorespaces 300 CRs, 30 PRs, the average number of neighbours is 30\relax }}{94}{figure.4.21}
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Sensing duration $T_s$ and sensing period $T_p$\relax }}{97}{figure.5.1}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Left: nodes with physical locations, Right: nodes with doublet virtual coordinate, each element in the virtual coordinate is the number of hops away from corresponding anchor. Connecting lines denote the communication is possible.\relax }}{99}{figure.5.2}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces A network under primary users' influence assigned with SAViC, only anchor 1 is adopted. Flooding of anchor messages is not shown.\relax }}{99}{figure.5.3}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Normalized spectrum availability with respect to the likelihood of spectrum being available one a node\relax }}{102}{figure.5.4}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Reachability of different virtual coordinates, the average number of neighbors is 6, 12, and 14\relax }}{107}{figure.5.5}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Routing paths and corresponding PDR\relax }}{108}{figure.5.6}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Routing paths}}}{108}{figure.5.6}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {PDR over 50 random CRN network, PU's location is fixed as shown in Figure\nobreakspace {}\ref {fig:singleChannelPioff_case_topo}}}}{108}{figure.5.6}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Packet delivery ratio with single secondary channel, over 50 randomly located CR nodes and PUs\relax }}{108}{figure.5.7}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {PDR}}}{108}{figure.5.7}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Delay}}}{108}{figure.5.7}
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Packet delivery ratio with multiple secondary channel scenario\relax }}{109}{figure.5.8}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {PDR over 50 CRNs where SUs and PUs are randomly located}}}{109}{figure.5.8}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {PDR over 50 CRNs where SUs and PUs are randomly located}}}{109}{figure.5.8}
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Routing paths in one network, $T_1 = 3s$. cycles denote the transmission range of primary uers.\relax }}{110}{figure.5.9}
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Geographic routing in single secondary channel scenario, $P_{\textsc {\relax \fontsize {6}{7}\selectfont OFF}}=0.9$ for all primary users, $T_1=3s$, $T_2$ varies.\relax }}{111}{figure.5.10}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Packet delivery ratio}}}{111}{figure.5.10}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Delay}}}{111}{figure.5.10}
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Geographic routing in two secondary channel scenario, $P_{\textsc {\relax \fontsize {6}{7}\selectfont OFF}}=0.9$ for all primary users, $T_1=3s$, $T_2$ varies.\relax }}{111}{figure.5.11}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Packet delivery ratio}}}{111}{figure.5.11}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Delay}}}{111}{figure.5.11}
-\contentsline {figure}{\numberline {5.12}{\ignorespaces In the setting of Figure\nobreakspace {}\ref {fig:singleChannelPioff_case_topo}, perofrmance of DC based virtual coordinate is not affected greatly by the erroneous estimation\relax }}{112}{figure.5.12}
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Multiple to one communication\relax }}{115}{figure.6.1}

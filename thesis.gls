@@ -31,14 +31,13 @@
 \glossaryentryfield{CCC}{\glsnamefont{CCC}}{Common control channel}{\relax }{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{15}\delimN 
 \glsXpageXglsnumberformat{}{67}\delimN 
-\glsXpageXglsnumberformat{}{73}}}\relax\glsresetentrylist
+\glsXpageXglsnumberformat{}{72}}}\relax\glsresetentrylist
 \glossaryentryfield{CH}{\glsnamefont{CH}}{cluster head}{\relax }{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{63}}}\relax\glsresetentrylist
 \glossaryentryfield{COS}{\glsnamefont{COS}}{Cost of oscillation}{\relax }{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{54}}}\relax\glsresetentrylist
 \glossaryentryfield{CR}{\glsnamefont{CR}}{Cognitive radio}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{2}\delimN 
-\glsXpageXglsnumberformat{}{63}}}\relax\glsresetentrylist
+\glsXpageXglsnumberformat{}{2}}}\relax\glsresetentrylist
 \glossaryentryfield{CRAHN}{\glsnamefont{CRAHN}}{Cognitive radio ad hoc network}{\relax }{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{11}}}\relax\glsresetentrylist
 \glossaryentryfield{CRN}{\glsnamefont{CRN}}{Cognitive radio network}{\relax }{\glossaryentrynumbers{\relax 
@@ -48,8 +47,6 @@
 \glsgroupheading{D}\relax\glsresetentrylist
 \glossaryentryfield{DCF}{\glsnamefont{DCF}}{Distributed coordination function}{\relax }{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{9}}}\relax\glsresetentrylist
-\glossaryentryfield{DiCAPS}{\glsnamefont{DiCAPS}}{Distributed channel allocation and power selection}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{36}}}\relax\glsresetentrylist
 \glossaryentryfield{DSR}{\glsnamefont{DSR}}{Dynamic source routing}{\relax }{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{96}}}\relax\glsresetentrylist
 \glossaryentryfield{DTV}{\glsnamefont{DTV}}{digital TV}{\relax }{\glossaryentrynumbers{\relax 
@@ -109,7 +106,7 @@
 \glsXpageXglsnumberformat{}{2}}}\glsgroupskip
 \glsgroupheading{T}\relax\glsresetentrylist
 \glossaryentryfield{TC}{\glsnamefont{TC}}{Time complexity}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{88}}}\relax\glsresetentrylist
+\glsXpageXglsnumberformat{}{89}}}\relax\glsresetentrylist
 \glossaryentryfield{TVBD}{\glsnamefont{TVBD}}{TV band devices}{\relax }{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{12}}}\relax\glsresetentrylist
 \glossaryentryfield{TVWS}{\glsnamefont{TVWS}}{TV white space}{\relax }{\glossaryentrynumbers{\relax 
