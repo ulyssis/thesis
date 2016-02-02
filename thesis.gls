@@ -24,36 +24,38 @@
 \begin{theglossary}\glossaryheader
 \glsgroupheading{glsnumbers}\relax\glsresetentrylist
 \glossaryentryfield{2TDMC}{\glsnamefont{2TDMC}}{two-state discrete time Markov chain}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{105}}}\relax\glsresetentrylist
+\glsXpageXglsnumberformat{}{101}}}\relax\glsresetentrylist
+\glossaryentryfield{3g}{\glsnamefont{3G}}{Third generation}{\relax }{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{1}}}\relax\glsresetentrylist
 \glossaryentryfield{5G}{\glsnamefont{5G}}{5th generation mobile networks}{\relax }{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{2}}}\glsgroupskip
 \glsgroupheading{C}\relax\glsresetentrylist
 \glossaryentryfield{CCC}{\glsnamefont{CCC}}{Common control channel}{\relax }{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{15}\delimN 
-\glsXpageXglsnumberformat{}{67}\delimN 
-\glsXpageXglsnumberformat{}{72}}}\relax\glsresetentrylist
+\glsXpageXglsnumberformat{}{63}\delimN 
+\glsXpageXglsnumberformat{}{68}}}\relax\glsresetentrylist
 \glossaryentryfield{CH}{\glsnamefont{CH}}{cluster head}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{63}}}\relax\glsresetentrylist
+\glsXpageXglsnumberformat{}{59}}}\relax\glsresetentrylist
 \glossaryentryfield{COS}{\glsnamefont{COS}}{Cost of oscillation}{\relax }{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{54}}}\relax\glsresetentrylist
 \glossaryentryfield{CR}{\glsnamefont{CR}}{Cognitive radio}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{2}}}\relax\glsresetentrylist
+\glsXpageXglsnumberformat{}{3}}}\relax\glsresetentrylist
 \glossaryentryfield{CRAHN}{\glsnamefont{CRAHN}}{Cognitive radio ad hoc network}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{11}}}\relax\glsresetentrylist
+\glsXpageXglsnumberformat{}{7}}}\relax\glsresetentrylist
 \glossaryentryfield{CRN}{\glsnamefont{CRN}}{Cognitive radio network}{\relax }{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{3}}}\relax\glsresetentrylist
 \glossaryentryfield{CW}{\glsnamefont{CW}}{Contention window}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{9}}}\glsgroupskip
+\glsXpageXglsnumberformat{}{10}}}\glsgroupskip
 \glsgroupheading{D}\relax\glsresetentrylist
 \glossaryentryfield{DCF}{\glsnamefont{DCF}}{Distributed coordination function}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{9}}}\relax\glsresetentrylist
+\glsXpageXglsnumberformat{}{10}}}\relax\glsresetentrylist
 \glossaryentryfield{DSR}{\glsnamefont{DSR}}{Dynamic source routing}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{96}}}\relax\glsresetentrylist
+\glsXpageXglsnumberformat{}{92}}}\relax\glsresetentrylist
 \glossaryentryfield{DTV}{\glsnamefont{DTV}}{digital TV}{\relax }{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{31}}}\glsgroupskip
 \glsgroupheading{E}\relax\glsresetentrylist
 \glossaryentryfield{ECC}{\glsnamefont{ECC}}{Electronic communications committee in Europe}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{3}\delimN 
+\glsXpageXglsnumberformat{}{4}\delimN 
 \glsXpageXglsnumberformat{}{29}}}\glsgroupskip
 \glsgroupheading{F}\relax\glsresetentrylist
 \glossaryentryfield{FCC}{\glsnamefont{FCC}}{Federal communications commission in U.S.}{\relax }{\glossaryentrynumbers{\relax 
@@ -63,7 +65,7 @@
 \glsXpageXglsnumberformat{}{1}}}\glsgroupskip
 \glsgroupheading{H}\relax\glsresetentrylist
 \glossaryentryfield{HSPA}{\glsnamefont{HSPA}}{High speed packet access}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{11}}}\glsgroupskip
+\glsXpageXglsnumberformat{}{12}}}\glsgroupskip
 \glsgroupheading{I}\relax\glsresetentrylist
 \glossaryentryfield{ISM}{\glsnamefont{ISM band}}{Industrial, scientific, and medical}{\relax }{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{1}}}\glsgroupskip
@@ -71,30 +73,35 @@
 \glossaryentryfield{LP}{\glsnamefont{LP}}{linear programming program}{\relax }{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{38}}}\relax\glsresetentrylist
 \glossaryentryfield{LTE}{\glsnamefont{LTE}}{3GPP Long term Evolution}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{11}}}\glsgroupskip
+\glsXpageXglsnumberformat{}{12}}}\glsgroupskip
 \glsgroupheading{M}\relax\glsresetentrylist
+\glossaryentryfield{mac}{\glsnamefont{MAC}}{Media Control Layer}{\relax }{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{14}}}\relax\glsresetentrylist
 \glossaryentryfield{MAN}{\glsnamefont{MAN}}{Metropolitan area networks}{\relax }{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{37}}}\glsgroupskip
 \glsgroupheading{N}\relax\glsresetentrylist
 \glossaryentryfield{NE}{\glsnamefont{NE}}{Nash equilibrium}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{8}}}\glsgroupskip
+\glsXpageXglsnumberformat{}{9}}}\glsgroupskip
 \glsgroupheading{P}\relax\glsresetentrylist
 \glossaryentryfield{PDA}{\glsnamefont{PDA}}{Personal digital assistant}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{2}}}\relax\glsresetentrylist
+\glsXpageXglsnumberformat{}{3}}}\relax\glsresetentrylist
 \glossaryentryfield{PoA}{\glsnamefont{PoA}}{price of anarchy}{\relax }{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{21}}}\relax\glsresetentrylist
 \glossaryentryfield{PU}{\glsnamefont{PU}}{Primary user}{\relax }{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{2}}}\glsgroupskip
 \glsgroupheading{Q}\relax\glsresetentrylist
 \glossaryentryfield{QoS}{\glsnamefont{QoS}}{Quality of service}{\relax }{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{1}\delimN 
 \glsXpageXglsnumberformat{}{31}}}\glsgroupskip
 \glsgroupheading{R}\relax\glsresetentrylist
+\glossaryentryfield{rf}{\glsnamefont{RF}}{Radio Frequency}{\relax }{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{1}}}\relax\glsresetentrylist
 \glossaryentryfield{ROSS}{\glsnamefont{ROSS}}{Robust spectrum sharing}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{67}}}\relax\glsresetentrylist
+\glsXpageXglsnumberformat{}{63}}}\relax\glsresetentrylist
 \glossaryentryfield{ROSS-DFA}{\glsnamefont{ROSS-DFA}}{Robust spectrum sharing-distributed fast algorithm}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{64}}}\relax\glsresetentrylist
+\glsXpageXglsnumberformat{}{60}}}\relax\glsresetentrylist
 \glossaryentryfield{ROSS-DGA}{\glsnamefont{ROSS-DGA}}{Robust spectrum Sharing-distributed greedy algorithm}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{64}}}\relax\glsresetentrylist
+\glsXpageXglsnumberformat{}{60}}}\relax\glsresetentrylist
 \glossaryentryfield{RSSI}{\glsnamefont{RSSI}}{Received signal strength index}{\relax }{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{30}\delimN 
 \glsXpageXglsnumberformat{}{49}}}\glsgroupskip
@@ -106,22 +113,28 @@
 \glsXpageXglsnumberformat{}{2}}}\glsgroupskip
 \glsgroupheading{T}\relax\glsresetentrylist
 \glossaryentryfield{TC}{\glsnamefont{TC}}{Time complexity}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{89}}}\relax\glsresetentrylist
+\glsXpageXglsnumberformat{}{85}}}\relax\glsresetentrylist
 \glossaryentryfield{TVBD}{\glsnamefont{TVBD}}{TV band devices}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{12}}}\relax\glsresetentrylist
+\glsXpageXglsnumberformat{}{13}}}\relax\glsresetentrylist
 \glossaryentryfield{TVWS}{\glsnamefont{TVWS}}{TV white space}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{11}}}\glsgroupskip
+\glsXpageXglsnumberformat{}{12}}}\glsgroupskip
 \glsgroupheading{U}\relax\glsresetentrylist
 \glossaryentryfield{UHF}{\glsnamefont{UHF}}{Ultra high frequency}{\relax }{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{30}}}\glsgroupskip
 \glsgroupheading{V}\relax\glsresetentrylist
 \glossaryentryfield{VCap}{\glsnamefont{VCap}}{virtual coordinate assignment protocol}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{98}}}\glsgroupskip
+\glsXpageXglsnumberformat{}{94}}}\glsgroupskip
 \glsgroupheading{W}\relax\glsresetentrylist
 \glossaryentryfield{WBS}{\glsnamefont{WBS}}{White base station}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{13}}}\relax\glsresetentrylist
+\glsXpageXglsnumberformat{}{14}}}\relax\glsresetentrylist
 \glossaryentryfield{whiteCat}{\glsnamefont{WhiteCat}}{White space channel allocation}{\relax }{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{36}}}\relax\glsresetentrylist
+\glossaryentryfield{wlan}{\glsnamefont{WLAN}}{Wireless local-area network}{\relax }{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{1}}}\relax\glsresetentrylist
+\glossaryentryfield{wman}{\glsnamefont{WMAN}}{Wireless metropolitan-area network}{\relax }{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{1}}}\relax\glsresetentrylist
+\glossaryentryfield{wpan}{\glsnamefont{WPAN}}{Wireless personal-area network}{\relax }{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{1}}}\relax\glsresetentrylist
 \glossaryentryfield{WRAN}{\glsnamefont{WRAN}}{Wireless regional area network}{\relax }{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{37}}}%
 \end{theglossary}\glossarypostamble

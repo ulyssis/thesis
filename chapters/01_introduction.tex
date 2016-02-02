@@ -1,26 +1,39 @@
 \chapter{INTRODUCTION}
 \label{INTRODUCTION}
-%Wireless networks utilize radio waves instead of wires to carry information, hence seamless coverage and mobility are achievable in wireless connections.
-%Wireless networks have experienced unprecedented growth in the past few decades and will going on evolving in the future.
-Due to the propagation characteristics and regulations, only a small portion of electromagnetic spectrum which spans from 8.3 kHz to 3000 GHz is suitable for commercial application.
-These spectrum is divided into bands (also referred as channels) and allocated to different services.
+
+Wireless networks utilize radio waves instead of wires to carry information, which makes seamless coverage and mobility possible to realize.
+%Wireless networks use have experienced unprecedented growth in the past few decades and will going on evolving in the future.
+After decades of fast growth, there have been many wireless standards designed for different purposes.
+For example, wireless personal-area network (\gls{wpan}) connects devices which locate within a short range of 10 meters.
+The WPAN specifications \ie Zigbee, Bluetooth are specified by IEEE 802.15 standards.
+Wireless local-area network (\gls{wlan}) enables mobile user to connect to to a local area network (LAN) through wireless connection within a range of one hundred meters, where the technologies are specified by the IEEE 802.11 group of standards.
+WiFi is a successful realization of WLAN technology, which is based on IEEE 802.11 standard.
+Wireless metropolitan-area network (\gls{wman}) provides connection with broadband speeds and larger coverage (from one hundred meters to several kilometres), where the technologies adopted are specified by IEEE 802.16.
+Third generation (\gls{3g}) mobile communication systems have seen widespread deployment around the globe, which provide people with higher data rates and better quality of service (\gls{QoS}) for different services.
+These technologies and standards, along with many others~\cite{Molisch:2011:WC:1984860}, fit different needs of various applications.
+
+
+Due to the propagation characteristics and regulations, the electromagnetic spectrum which spans from 8.3 kHz to 3000 GHz is suitable for commercial application.
+These spectrum is divided into bands (also referred as channels) and allocated to different networks and services.
+For example, WiFi and Bluetooth devices communicate in the 2.4 GHz radio frequency (\gls{rf}) industrial, scientific, and medical (\gls{ISM}).
+Wimax networks work from 2 GHz to 66 GHZ in the RF spectrum.
 %In the following, we introduce how is the spectrum accessed by different services.
 %
 As one kind of limited and precious resource, radio spectrum is strictly regulated by the national administration.
 The channels are assigned or leased by governments to different operators and entities.
 In most cases, the operators pay high price for the commercial usage of certain spectrum, and the usage is exclusive for them~\cite{Spectrum_Management07}.
 This spectrum management policy rules out the unlicensed users to use the spectrum, thus strictly protects the interest of the spectrum licensees.
-This spectrum access module is referred \textit{exclusive use model}~\cite{zhao_survey_DSA_2007}, and is the mainstream of spectrum access worldwide, and many existing wireless applications work on the licensed spectrum.
+This spectrum access module is referred as \textit{exclusive use model}~\cite{zhao_survey_DSA_2007}, and is the mainstream of spectrum access worldwide, and many existing wireless applications work on the licensed spectrum.
 For instance, the second-generation (2G) wireless cellular network \gls{gsm} (global system for mobile communications) in Europe works with GSM-900 band (from 890 MHz to 960 MHz) and GSM-1800 (1710 MHz to 1880 MHz), and the third-generation (3G) wireless cellular network works from 1.8 GHz to 2.4 GHz~\cite{wireless_communicatioins2001}.
 The excludability of licensed spectrum can also be open to other user with conditions.
 The spectrum licences either sell and trade the licensed spectrum, or dynamically use the spectrum within a certain region according to different traffic patterns~\cite{dsa_traffic_2000}.
 
 Open spectrum access~\cite{osa_Noam_1995} is proposed in 1995 for full openness of entry, which allows access to spectrum through access fees which are determined by demand and supply.
-It is claimed that open spectrum access brings in benefits, as for spectrum licensees, the fixed costs on securing the licensed spectrum can be converted into marginal costs, and for the market, the incentives for collusive pricing can be eliminated.
+It is claimed that open spectrum access yields benefits, as for spectrum licensees, the fixed costs on securing the licensed spectrum can be converted into marginal costs, and for the market, the incentives for collusive pricing can be eliminated.
 But as the \textit{openness} here is fully controlled by the licensees, this spectrum usage is still exclusive .
 
 %
-In contrary to exclusive use model, certain spectrum are assigned for open sharing for peer users, the representative example is the unlicensed industrial, scientific, and medical (\gls{ISM}) radio band, which supports versatile wireless applications and a prosperous industry, \ie Wi-Fi.
+In contrary to exclusive use model, certain spectrum are assigned for open sharing for peer users, the representative example is the unlicensed ISM radio band, which supports versatile wireless applications and a prosperous industry, \ie Wi-Fi.
 Many spectrum sharing strategies are proposed to cope with the technical challenges~\cite{Ko_DistributedCA}.
 
 %
@@ -99,7 +112,8 @@ Cognitive radio (\gls{CR}) is firstly proposed by Mitola III who defines the con
 FCC (Federal Communications Commission in U.S.) describes CR~\cite{FCC_03-322} as,
 \blockquote{
 a radio that can change its transmitter parameters based on interaction with the environment in which it operates. $\ldots$
-This interaction may involve active negotiations with other spectrum users and/or passive sensing and decision making (smart radio) within the radio. The majority of CRs will probably be SDRs~\footnote{software defined radio is a radio communication system which is able to receive any modulation across a large frequency spectrum, and transmit on desired spectrum band.}, but a CR does not necessarily use software, nor does it need to be field programmable.
+This interaction may involve active negotiations with other spectrum users and/or passive sensing and decision making (smart radio) within the radio. 
+The majority of CRs will probably be SDRs~\footnote{software defined radio is a radio communication system which is able to receive any modulation across a large frequency spectrum, and transmit on desired spectrum band.}, but a CR does not necessarily use software, nor does it need to be field programmable.
 }
 
 The first definition depicts the functionalities of cognitive radio devices, and the second one mentions the relationships between cognitive radio users and the network which it resides.
@@ -111,14 +125,14 @@ Based on this definition, the cognitive radio network is deemed to be composed w
 
 
 \subsection{Functionalities of Cognitive Radio}
-To adapt to the dynamic spectrum environment and make use of the available licensed spectrum, cognitive radio users need to manage the available spectrum by conducting a series of functionalities sequentially, \ie detecting the available spectrum with spectrum sensing, selecting the proper spectrum for communication, communicate with other secondary users using certain spectrum band, and moving to another channel when the current working channel is not usable due to primary user's appearance.
+To adapt to the dynamic spectrum environment and make use of the available licensed spectrum, cognitive radio users %need to manage the available spectrum by conducting a series of functionalities sequentially, \ie detecting the available spectrum with spectrum sensing, selecting the proper spectrum for communication, communicate with other secondary users using certain spectrum band, and moving to another channel when the current working channel is not usable due to primary user's appearance.
 These functions are incorporated into so called cognitive cycle as described in~\cite{Akyildiz09}.
 
 \subsubsection*{Spectrum Sensing}
 To know which chunk of spectrum is available is the foundation of spectrum management.
 In underlay spectrum usage scenario, CR users get to know the available spectrum by means of spectrum sensing.
 In overlay spectrum usage scenario, secondary users can in principle access all the licensed spectrum.
-In this procedure, quality of the available channels is determined with several parameters, \ie band width, operating frequency, path loss, wireless link errors, link layer delay, and the upper bound of interference on the primary user working on that channel, which decides the maximal permissible transmission power of secondary users.
+In this procedure, quality of the available channels is determined with several parameters, \ie bandwidth, operating frequency, path loss, wireless link errors, link layer delay, and the upper bound of interference on the primary user working on that channel, which decides the maximal permissible transmission power of secondary users.
 Besides, the statistical behaviours of primary users is also an important factor.
 
 Spectrum administration bodies FCC of U.S.~\cite{FCC_2010_sedond_memorandumm} and Electronic Communications Committee (\gls{ECC}) in Europe~\cite{ecc159} encourage to adopt both spectrum sensing and location based method.
@@ -129,8 +143,8 @@ This procedure involves considering the statistical behaviours of the primary us
 The available licensed spectrum which spans a wide frequency band exhibits different characteristics~\cite{spectrum_decision_TMC11}.
 Based on the requirements of interested communication, CR users need to identify the characteristics of the spectrum, which include channel quality (channel capacity, error rate, path loss, etc.)~\cite{spectrum_decision_TMC11}, channel switching delay~\cite{channel_switch_delay11}, and channel holding time, \ie the expected time duration that the primary users don't occupy the channel before any one occupies again.
 
-Some work in research community models the spectrum availability with stochastic or statistic model, which is helpful when deciding which channel to use.
-\cite{Discrete-Time_Spectrum_Occupancy_Model_DySPAN_2011} proposes discrete Markov chain and adjusts duty circle models to describe the availability of licensed spectrum for GSM on 900/1800 MHz.
+Some works in research community model the spectrum availability with stochastic or statistical model, which is helpful when deciding which channel to use.
+\cite{Discrete-Time_Spectrum_Occupancy_Model_DySPAN_2011} proposes discrete Markov chain and adjusts duty cycle models to describe the availability of licensed spectrum for GSM on 900/1800 MHz.
 \cite{Wellens200910} models the channel holding time with geometric and log-normal distributions.
 Statistics of previous sensing results is used to predict spectrum state in the future~\cite{spectrum-discovery-tmc08}.
 Such models provide more complete information on the availability of the licensed channels.
@@ -141,8 +155,8 @@ Such models provide more complete information on the availability of the license
 \subsubsection*{Spectrum Sharing}
 Then secondary users are to make use of these channels selected in the spectrum decision procedure, and share the spectrum with both the primary users and the other secondary users.
 As there may be multiple secondary users trying to use the same channel, spectrum sharing is important to coordinate the behaviour of secondary users to avoid deteriorating the performance of secondary users.
-Spectrum sharing involves choosing proper channels to mitigate co-channel and adjacent interference~\cite{ca_crn_survey_2013}, or adjusting transmission power to achieve promise between transmitter's and other secondary users' performance~\cite{pa_crn_survey_2012}, or adopting a certain media access paradigm to use the spectrum fairly and efficiently.
-Spectrum sharing also involves consideration on primary users, \ie when many secondary users work on the same channel, the accumulated interference caused by secondary users could exceed the interference threshold on primary users.
+Spectrum sharing involves choosing proper channels to mitigate co-channel and adjacent interference~\cite{ca_crn_survey_2013}, or adjusting transmission power to reach compromise between transmitter's and other secondary users' performance~\cite{pa_crn_survey_2012}, or adopting a certain media access paradigm to use the spectrum fairly and efficiently.
+Spectrum sharing also involves the concerns from primary users, \ie when many secondary users work on the same channel, the accumulated interference caused by secondary users could exceed the interference threshold on primary users.
 %\todo[inline]{spectrum opportunity, detection, tracking, exploitation (whether to access, how to access, sharing),  tazhaosurveyDSA2007.}
 
 %According to \cite{08crn_survey}, 	
@@ -176,11 +190,12 @@ The two models origin from the distinctive understandings of people as to the hi
 \item \label{underlay}  Spectrum underlay:
 Working with \textit{spectrum underlay}, secondary users are allowed to transmitting even when some primary users are detected or known to be operating on the same chuck of spectrum, but the interference generated by secondary users on the primary receivers should be under a threshold. 
 Spectrum underlay restricts the secondary users' transmission power, but secondary users are still able to achieve high data rate in short range.
-When implementing spectrum underlay, secondary users are allowed to operate in the close vicinity of primary users when the interference caused on primary users is taken care~\cite{Ellingsaeter2012_Increasing_Available}.
+When implementing spectrum underlay, secondary users are allowed to operate in the close vicinity of primary users when the interference caused on primary users is carefully watched~\cite{Ellingsaeter2012_Increasing_Available}.
+For instance, a there is a device need to monitor the interference level caused on primary users, and the secondary user need to be aware of this information via certain means~\cite{HoangPowerChannel2010}.
 Figure~\ref{underlay} shows a spectrum underlay sharing scenario, where some secondary users operate within the TV service area when the caused interference by the secondary users on the TV receiver is lower than threshold.
 
-Spectrum underlay is mainly conducted with a centralized controller, which has global knowledge of primary users' location, the attenuation between all secondary transmitters and all primary receivers.
-Then the centralized controller calculates the maximal permitted transmission power with certain optimization solutions in a situation where secondary users pose the maximal thread to primary users' operation, where all the secondary users work one the same licensed spectrum.
+Spectrum underlay is usually conducted in a centralized controller, which has global knowledge of primary users' locations, the attenuation between all secondary transmitters and all primary receivers.
+Then the centralized controller obtains the maximum permitted transmission power by solving an optimization problem where the interference generated by secondary users doesn't exceed the thread of primary users serves as one constraint.
 %secondary users at certain locations are restricted to operate on a few certain spectrum bands and with limited transmit power~\cite{whitefi09}.
 %Given the attenuation between all secondary transmitters and all primary receivers and their locations, when the interference threshold is known, the maximal permitted transmission power levels of secondary transmitters can be obtained with linear programming.
 Working with spectrum underlay paradigm, spectrum sensing functionality on secondary users becomes auxiliary~\cite{FCC_2010_sedond_memorandumm, ecc159}.
@@ -250,7 +265,7 @@ When the secondary users access the spectrum in underlay paradigm, they need to 
 In this case the channel usage, \ie working channel and transmission power, can be decided on the centralized controller.
 %
 Nevertheless, centralized solution is not suitable in many scenarios of CRN.
-First, central authority or controller is not available in many CRNs, \eg CRAHN.
+First, central authority or controller is not available in many CRNs, \eg Cognitive radio ad hoc network (\gls{CRAHN}).
 Second, when the centralized decision maker exists, centralized solution involves a large number of control messages during network operation.
 The centralized entity needs to collect spectrum availability sensed on all the secondary users, then computes the spectrum usage strategy before finally distributing the result back to every secondary user.
 When primary users intensely access the spectrum and result in frequent change of available spectrum, the control overhead becomes a burden for the CRN.
@@ -443,7 +458,7 @@ We introduce two types of cognitive radio networks, which contains the problems 
 
 %Efficient distributed algorithms are needed to determine network organization, link scheduling, and routing.
 
-Cognitive radio ad hoc network (\gls{CRAHN}) is composed with autonomous mobile cognitive radio users which work with overlay spectrum sharing paradigm.
+CRAHN is composed with autonomous mobile cognitive radio users which work with overlay spectrum sharing paradigm.
 CRAHN is one mobile ad hoc network, whereas each mobile user has cognitive ability for spectrum access.
 Mobile users in CRAHN need to determine which channels are available to use with spectrum sensing, either cooperatively with neighbour users or individually.
 Mobile users have different knowledge of spectrum availability, which poses new challenges in addition to the ones for the management of mobile ad hoc network.
@@ -568,10 +583,12 @@ Standardization on secondary usage of TVWS is very active. IEEE 802.19 is a fami
 %Geolocation is extensively used in cognitive radio network. \cite{nashbargaining_2012jsac} proposes a centralized light weighted scheme to solve channel and power allocation among secondary users with TDMA manner, where geolocation of primary users are used by secondary users to calculate the caused interferences by them on the primary users. Considering the slow change of TV spectrum usage, along with the fact that the TV spectrum usage is scheduled, geolocation approach becomes more appealing in TVWS utilization scenario. Assume there is a database which is connected with all WSDs, and it is aware of the location of TV receivers (optionally with terrain information) and WSDs and proper propagation model in between, the database calculates the RSSI (Received Signal Strength indication) on each WSDs in the whole network. The database decides the channel availability based on whether the RSSI exceeds a threshold value or not, then notices WSDs their available channels in either proactive or reactive manner. This geolocation approach is used for building a Wi-Fi like network working with TVWS ~\cite{SenseLess} which demonstrates the feasibility of predicting the available TV spectrum accurately using suitable propagation models (Longley-Rice and terrain wherein). This approach is also integrated into regulation from Federal Communications Commission (FCC) of U.S. FCC regulates every WSD should access the database to retrieve the available TV channels on its location, and fixes the transmission power for fixed WSD as 4 W which is a conservative value. Aforementioned is calculation RSSI of PU on the location of WSDs to see whether the PUs \textit{appears}, there is another way to work with geolocation. Instead of deciding the available TV channels for WSDs, database calculates the interferences from WSBs on TV receivers, then directly assigns channel and power levels to each WSD and in the same time preventing the TV receivers from harmful interferences (the interferences under a certain threshold). Electronic Communications Committee (ECC) in Europe adopts this approach so that the transmission power for WSD is more flexible depending on WSD's location.
 
 
-IEEE 802.22 has been the first IEEE standard for wireless regional area network (WRAN) working on TV white space. According to this standard, the system consists of a base station and customer premises equipment (or terminals for short), where terminals are associated with base stations, and are served by them. Recent standard published in Nov. 2010 mentions both, i.e. sensing ability as well as TVWS geolocation and database look-up as schemes for detecting primary systems. Self-coexistence mechanism is also proposed, which provides a TDMA like mechanism for white base stations (\gls{WBS}) to share TVWS. \cite{HoangPowerChannel2010} proposes a distributed solution for power control and channel assignment in both down-link and up-link communication in a WRAN, but the investigated secondary network is composed with only one base station and multiple terminals. % Although the transmission power is decided in a distributed manner, primary transmitters are required to adjust their transmission power in order to guarantee the SINR on primary receivers in a learning process, while, the operation of WSDs working on TVWS should be transparent as to TV services.\fmjg{This summary of the 2010 paper does not make sense to me - why are you talking of primary systems here ??} 
+IEEE 802.22 has been the first IEEE standard for wireless regional area network (WRAN) working on TV white space. According to this standard, the system consists of a base station and customer premises equipment (or terminals for short), where terminals are associated with base stations, and are served by them. Recent standard published in Nov. 2010 mentions both, i.e. sensing ability as well as TVWS geolocation and database look-up as schemes for detecting primary systems. Self-coexistence mechanism is also proposed, which provides a TDMA like mechanism for white base stations (\gls{WBS}) to share TVWS. 
+%\cite{HoangPowerChannel2010} proposes a distributed solution for power control and channel assignment in both down-link and up-link communication in a WRAN, but the investigated secondary network is composed with only one base station and multiple terminals.
+ % Although the transmission power is decided in a distributed manner, primary transmitters are required to adjust their transmission power in order to guarantee the SINR on primary receivers in a learning process, while, the operation of WSDs working on TVWS should be transparent as to TV services.\fmjg{This summary of the 2010 paper does not make sense to me - why are you talking of primary systems here ??} 
 
 \section{Problem Statement}
-As to the various challenging problems in CRN networks, adopting centralized or decentralized solutions is largely dependant on the network types and nature of the problem to be solved.
+As to the various challenging problems in CRN networks, adopting centralized or decentralized solutions is largely dependant on the network types and the nature of the problem to be solved.
 %Working with the TV white space is regarded as one application of cognitive radio network, which is most likely to succeed in near future.
 CRAHNs consist of mobile autonomous secondary users and don't have infrastructure, thus the network topology evolves with time, besides, the ungovernable primary users' activity leads to the temporal spectrum availability. 
 These factors make distributed scheme to be the sole choice to manage the CRAHN to convey services.
@@ -594,7 +611,7 @@ To answer these questions, we turn to game theory, in particular, the recent pro
 %We focus on the distributed solutions for several correlated fundamental problems in CRN.
 %The interaction among autonomous secondary users is a common scene in CRN as there usually lacks central controller.
 
-The concrete technical challenges addressed in this thesis are shown in Figure~\ref{problemLocation}, which reside from physical layer to network layer~\cite{osi}. 
+The concrete technical challenges addressed in this thesis are shown in Figure~\ref{problemLocation}, which reside in physical layer, media access layer (\gls{mac}) layer and network layer~\cite{osi}. 
 These questions are individually orthogonal, but as pressing problems in each layers, they together form a test field to check the feasibility of distributed solutions.
 
 \begin{figure}[h!]

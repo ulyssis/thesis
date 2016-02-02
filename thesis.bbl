@@ -638,6 +638,11 @@ In the matter of unlicensed operation in the {TV} broadcast bands: second
   Probabilistic Analysis}.
 \newblock Cambridge University Press, New York, NY, USA, 2005.
 
+\bibitem{Molisch:2011:WC:1984860}
+{\sc Molisch, A.~F.}
+\newblock {\em Wireless Communications}, 2nd~ed.
+\newblock Wiley Publishing, 2011.
+
 \bibitem{Mondere_potential_game:1996}
 {\sc Monderer, D., and Shapley, L.}
 \newblock Potential games.
@@ -931,7 +936,7 @@ In the matter of unlicensed operation in the {TV} broadcast bands: second
 {\sc Yucek, T., and Arslan, H.}
 \newblock A survey of spectrum sensing algorithms for cognitive radio
   applications.
-\newblock {\em in Proc. of IEEE Communications Surveys Tutorials 11}, 1 (2009),
+\newblock {\em In Proc. of IEEE Communications Surveys Tutorials 11}, 1 (2009),
   116--130.
 
 \bibitem{cacao_ca_2011}
