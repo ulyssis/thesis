@@ -1,55 +1,50 @@
 \chapter{Abstract}
 Owing to the proprietary spectrum allocation paradigm and the boom of wireless communications, spectrum scarcity has become an increasingly pressing problem. 
 Cognitive radio is a promising technology to provide high bandwidth for unlicensed users via dynamic spectrum access. 
-Unlicensed users are allowed to utilize licensed spectrum in the following two scenarios, the first, their operation doesn't cause harmful interferences, the second, there are no working primary users which are detected with respect to a certain probability.
+Unlicensed users are allowed to utilize licensed spectrum in the following two scenarios, the first, their operation doesn't cause harmful interferences on licensed users, the second, there are no working primary users which are detected with respect to a certain probability.
 This spectrum usage paradigm brings new spectrum for unlicensed users, nevertheless, it comes at a cost that the unlicensed users need to decide on the spectrum which is available to use, and to take care of the maximum transmission power to avoid harmful interference at primary users carefully.
-%These functionalities usually are not considered by users working with the licensed or the industrial, scientific and medical radio bands.
-Furthermore, the available spectrum or resources at unlicensed users are dependent upon their locations with respect to primary users and thus different and varying.
+Furthermore, the available spectrum or resources at unlicensed users are dependant upon their locations with respect to primary users whose operation states vary with time, thus the spectrum availability is different at different unlicensed users and varying.
 
 % varying environment: ... , \eg primary users or other unlicensed users change their operation states ...
 Consequently, as distributed scheme enables unlicensed users to respond quickly to the varying environment with the help of spectrum detection functionality on itself or its neighbourhood, distributed solutions are extensively adopted by the communications systems which are composed with unlicensed users.
-%
-%Due to the propagation path attenuation of spectrum, the available spectrum or resources at cognitive radio users are dependent upon their locations, which are usually different from place to place.
-%
 %One challenge is the spectrum allocation problem needs reformulation as primary users should be considered in the problem formulation.
 %The second issue is how to improve the accuracy of sensing result by applying robust cooperative sensing.
 %The robust clustering maintains the clusters for longer time under primary users' unexpected activities, so as to gains more benefits from cooperative sensing.
 %%that when clustering is needed to facilitate local cooperation, as the amount of available spectrum on unlicensed users is different, it is necessary to form nearby unlicensed users which have similar spectrum together.
-%%thus choosing a suitable neighbour to communicate with wider spectrum band 
 %Routing on cognitive radio network needs to consider the influence from primary users besides the conventional concerns in ad hoc network.
-%
-In this context, a significant amount of research efforts has been dedicated to studying distributed schemes in cognitive radio networks, but designing efficient distributed schemes faces numerous challenges.
-First, the autonomous decision on each unlicensed user should lead to fast convergence in system scale.
+In this context, a significant amount of research efforts has been dedicated to study the distributed schemes in cognitive radio networks, but designing efficient distributed schemes faces numerous challenges.
+First, the autonomous decision adopted by the unlicensed users should lead to fast convergence in system scale.
 Second, unlicensed users tend to be selfish in nature, therefore, the individual decision should not degrade the performance of the system and other users.
 %In this thesis, we design distributed algorithms to solve the problems imposed on cognitive radio networks (CRNs), and show the advantages of distributed solutions over centralized schemes in CRNs.
 
-In this regard, congestion game becomes a highly suited mathematical tool to model the interaction among the unlicensed users which strive to fulfil its own purpose, as congestion game guarantee convergence or fast convergence when certain conditions are met.
-With suitable utility function which involves certain information which is easy to get, unlicensed users' operation is replicated by a game which permits fast convergence.
-In the field, most of the current research leverage the primitive or standard congestion game model to study the problem with ideal assumptions. 
+In this regard, congestion game becomes a highly suited mathematical tool to model the interaction among the unlicensed users which strive to fulfil their own purposes, as congestion game guarantees convergence into Nash equilibrium and convergence speed is fast when certain conditions are met.
+But the current application of congestion game is very restricted as it is challenging to formulate a problem into a congestion game.
+Besides, most of the current research leverage the primitive or standard congestion game model to study the problem with ideal assumptions, which further restricts congestion game's application in problem solving.
 %As to different problems, we need to design the utility function carefully so as to fulfil the devices' goal, and to make the corresponding game to converge.
 %We employ congestion game to model the interaction among the unlicensed users.
 %to guarantee the dynamics within CRN to converge into Nash equilibrium.
 %Distributed solution is more suitable for wireless networks, because it doesn't require global information across the network, and individual unlicensed user is either agile to react to network dynamics, or only needs local information.
 
-In this dissertation, we investigate the variants of congestion game, and expand the application of congestion game in cognitive radio networks.
-We propose distributed schemes to solve a series of problems which reside from physical layer up to network layer in cognitive radio networks, wherein we apply congestion game to derive algorithms to solve two problems of them.
+In this dissertation, we propose distributed schemes to solve a series of problems which reside from physical layer up to network layer in cognitive radio networks.
+We expand the application of congestion game and its variants in the problem solving.
+By designing the suitable utility function which involves local information or certain other information which is easy to obtain, unlicensed users' operation are formulated into a congestion game which permits convergence.
+We show that the distributed scheme designed with assistance with congestion game model achieve good performance compared with centralized schemes which require big singling overhead, and the distributed solutions are stable in the aspects of convergence.
 %Based on game models, we design distributed algorithms for CR users to self-organize and utilize the available resources, which doesn't lead to global instability or performance deterioration.
 %
-On physical layer in IEEE 802.22 networks, we propose one distributed scheme derived for secondary users to decide on the transmission channel and transmission power with little reliance on centralized entity.
-%We solve the power and spectrum allocation problem in IEEE 802.22 networks.
-After deciding the maximal transmission power on each secondary cellular base station, we formulate the distributed spectrum allocation problem in TV white space scenario into a canonical congestion game, then propose distributed algorithm enlightened by the player behaviours in the game.
-%Power allocation is then conducted on the channel decided before.
+For secondary cellular networks which comply to IEEE 802.22 standard, we propose a solution for secondary users with assistance of the centralized database to exploit the TV spectrum which is underutilized.
+As one part of the solution, the distributed spectrum allocation problem is formulated into a canonical congestion game, then propose distributed algorithm enlightened by the player behaviours in the game.
 %
-%cognitive radio users form clusters with neighbours, where they share certain common channels, in order to do cooperative sensing.
-On MAC layer in cognitive radio ad hoc networks, we formulate the clustering problem into a player specific singleton congestion game, and from where derive a distributed algorithms for the unlicensed users to form robust clusters against the primary users' random appearance.
-In order to investigate the desired performance except for converge speed, we also propose centralized schemes to give bounds on the performance.
-We compare the distributed schemes derived from games with the centralized schemes in the aspects of singling overhead and time complexity, and analysis the strength and weakness of them in different cognitive radio networks.
+To form robust clusters against the ungovernable primary users' activity, a distributed clustering scheme is proposed.
+We formulate the clustering problem into a player specific singleton congestion game, from where a distributed algorithms is derived.
+%In order to investigate the desired performance except for converge speed, we also propose centralized schemes to give bounds on the performance.
+%We compare the distributed schemes derived from games with the centralized schemes in the aspects of singling overhead and time complexity, and analysis the strength and weakness of them in different cognitive radio networks.
 %, the formed clusters should poses more common channels within them, and should be able to control their clusters sizes.
 %The negotiation among neighbouring secondary users to form clusters with above characteristics is formulated into a congestion game, then a lightweight distributed scheme is derived.
 %The proposed clustering scheme can be easily applied to other scenarios, where certain similarity exists in local area.
 %
-On network layer in cognitive radio ad hoc networks, we propose a method to assign spectrum aware virtual coordinate to the unlicensed users, and then apply lightweight geographic routing scheme.
-As the virtual coordinate integrates the spectrum availability between any pair of neighbouring secondary users, the geographic routing can easily detour the unlicensed users which are affected by the active primary users.
+As to routing in network layer in cognitive radio ad hoc networks, we propose geographic routing working with spectrum aware virtual coordinate assigned for the unlicensed users.
+The virtual coordinate integrates the spectrum availability between any pair of neighbouring secondary users, thus geographic routing can easily detour the unlicensed users which are affected by the active primary users.
+%This is a distributed routing scheme, although game theory is not involved.
 %in particular, the distance between two secondary users is longer when the available spectrum is more scare in between them.
 %
 %Finally, using thorough simulations and numerical results, we investigate various aspects of the proposed algorithms and analyse their performance.
