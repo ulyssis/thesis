@@ -66,20 +66,35 @@
 \contentsline {section}{\numberline {3.8}Performance Evaluation}{49}{section.3.8}
 \contentsline {subsection}{\numberline {3.8.1}Maximal Permitted Power Decision and the Distributed Channel Allocation Schemes}{50}{subsection.3.8.1}
 \contentsline {subsection}{\numberline {3.8.2}Performance of Joint Power and Channel Allocation}{55}{subsection.3.8.2}
-\contentsline {section}{\numberline {3.9}Conclusion}{55}{section.3.9}
-\contentsline {chapter}{\numberline {4}ROBUST CLUSTERING of AD HOC COGNITIVE RADIO NETWORK}{59}{chapter.4}
+\contentsline {section}{\numberline {3.9}Conclusions}{56}{section.3.9}
+\contentsline {chapter}{\numberline {4}ROBUST CLUSTERING OF AD HOC COGNITIVE RADIO NETWORK}{59}{chapter.4}
 \contentsline {section}{\numberline {4.1}Introduction}{59}{section.4.1}
 \contentsline {section}{\numberline {4.2}Related Work}{60}{section.4.2}
 \contentsline {section}{\numberline {4.3}System Model}{61}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Clustering}{62}{subsection.4.3.1}
 \contentsline {section}{\numberline {4.4}Distributed Coordination Framework: Clustering Algorithm}{63}{section.4.4}
 \contentsline {subsection}{\numberline {4.4.1}Phase I - Cluster Formation}{64}{subsection.4.4.1}
+\contentsline {subsubsection}{\numberline {4.4.1.1}Determining Cluster Heads and Form the Initial Clusters}{64}{subsubsection.4.4.1.1}
+\contentsline {subsubsection}{\numberline {4.4.1.2}Guarantee Availability of Common Control Channel}{67}{subsubsection.4.4.1.2}
+\contentsline {subsubsection}{\numberline {4.4.1.3}Cluster Size Control in Dense CRN}{67}{subsubsection.4.4.1.3}
 \contentsline {subsection}{\numberline {4.4.2}Phase II - Membership Clarification}{70}{subsection.4.4.2}
+\contentsline {subsubsection}{\numberline {4.4.2.1}Distributed Greedy Algorithm}{71}{subsubsection.4.4.2.1}
+\contentsline {subsubsection}{\numberline {4.4.2.2}Bridging ROSS-DGA with Congestion Game}{72}{subsubsection.4.4.2.2}
+\contentsline {subsubsection}{\numberline {4.4.2.3}Distributed Fast Algorithm (DFA)}{74}{subsubsection.4.4.2.3}
 \contentsline {section}{\numberline {4.5}Centralized Clustering Scheme}{76}{section.4.5}
+\contentsline {subsubsection}{\numberline {4.5.0.4}Complexity of Clustering Problem}{76}{subsubsection.4.5.0.4}
 \contentsline {subsection}{\numberline {4.5.1}Centralized Optimization}{78}{subsection.4.5.1}
 \contentsline {section}{\numberline {4.6}Performance Evaluation}{79}{section.4.6}
 \contentsline {subsection}{\numberline {4.6.1}Centralized Schemes vs. Decentralized Schemes}{81}{subsection.4.6.1}
-\contentsline {subsection}{\numberline {4.6.2}Comparison between Distributed Schemes}{85}{subsection.4.6.2}
-\contentsline {section}{\numberline {4.7}Conclusions}{90}{section.4.7}
+\contentsline {subsubsection}{\numberline {4.6.1.1}Number of Common Control Channels in Non-singleton Clusters}{81}{subsubsection.4.6.1.1}
+\contentsline {subsubsection}{\numberline {4.6.1.2}Survival Rate of Clusters with Increasing Primary Users}{82}{subsubsection.4.6.1.2}
+\contentsline {subsubsection}{\numberline {4.6.1.3}Cluster Size Control}{83}{subsubsection.4.6.1.3}
+\contentsline {subsubsection}{\numberline {4.6.1.4}Control Signalling Overhead}{84}{subsubsection.4.6.1.4}
+\contentsline {subsection}{\numberline {4.6.2}Comparison between Distributed Schemes}{86}{subsection.4.6.2}
+\contentsline {subsubsection}{\numberline {4.6.2.1}Number of CCC per Non-singleton Clusters}{86}{subsubsection.4.6.2.1}
+\contentsline {subsubsection}{\numberline {4.6.2.2}Survival Rate of Clusters with Increasing Primary Users}{87}{subsubsection.4.6.2.2}
+\contentsline {subsubsection}{\numberline {4.6.2.3}Cluster Size Control}{87}{subsubsection.4.6.2.3}
+\contentsline {section}{\numberline {4.7}Conclusions}{89}{section.4.7}
 \contentsline {chapter}{\numberline {5}SPECTRUM AWARE VIRTUAL COORDINATE ASSIGNMENT AND ROUTING IN MULTIHOP COGNITIVE RADIO NETWORK}{91}{chapter.5}
 \contentsline {section}{\numberline {5.1}Introduction}{91}{section.5.1}
 \contentsline {section}{\numberline {5.2}Related Work}{92}{section.5.2}
@@ -94,7 +109,7 @@
 \contentsline {subsection}{\numberline {5.6.2}Success Rate of Geographic Routing on Finding Path}{102}{subsection.5.6.2}
 \contentsline {subsection}{\numberline {5.6.3}Routing Performance}{103}{subsection.5.6.3}
 \contentsline {subsection}{\numberline {5.6.4}Sensitivity of SAViC to Estimation Errors}{108}{subsection.5.6.4}
-\contentsline {section}{\numberline {5.7}Conclusion}{108}{section.5.7}
+\contentsline {section}{\numberline {5.7}Conclusions}{108}{section.5.7}
 \contentsline {chapter}{\numberline {6}Conclusion and Future work}{109}{chapter.6}
 \contentsline {section}{\numberline {6.1}Contribution}{109}{section.6.1}
 \contentsline {section}{\numberline {6.2}Future Work}{110}{section.6.2}
@@ -102,7 +117,7 @@
 \contentsline {chapter}{ \numberline {A}Proof of Theorem \ref {noconvergence}}{115}{.1.A}
 \contentsline {chapter}{ \numberline {B}Deviation of Problem \ref {QLP}}{117}{.1.B}
 \vspace *{\baselineskip }
-\contentsline {chapter}{Bibliography}{119}{section*.47}
-\contentsline {chapter}{List of Figures}{132}{section*.47}
-\contentsline {chapter}{List of Tables}{136}{section*.47}
-\contentsline {chapter}{Glossary}{138}{section*.47}
+\contentsline {chapter}{Bibliography}{119}{section*.32}
+\contentsline {chapter}{List of Figures}{132}{section*.32}
+\contentsline {chapter}{List of Tables}{136}{section*.32}
+\contentsline {chapter}{Glossary}{138}{section*.32}

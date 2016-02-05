@@ -38,13 +38,13 @@
 \contentsline {figure}{\numberline {4.12}{\ignorespaces Number of common channels for non-singleton clusters, the numbers in the names of schemes annotate the desired cluster size.\relax }}{82}{figure.4.12}
 \contentsline {figure}{\numberline {4.13}{\ignorespaces Number of CRs which are not included in any clusters\relax }}{83}{figure.4.13}
 \contentsline {figure}{\numberline {4.14}{\ignorespaces Cumulative distribution of CRs residing in clusters with different sizes, as to ROSS with size control feature, the desired cluster size is 3. The average number of neighbours is 4.8.\relax }}{84}{figure.4.14}
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Number of control messages\relax }}{85}{figure.4.15}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Number of control messages, note that the curve for ROSS-DGA and ROSS-DFA is the upper bound for the number of messages.\relax }}{85}{figure.4.15}
 \contentsline {figure}{\numberline {4.16}{\ignorespaces Number of common channels of non-singleton clusters. As to ROSS with size control feature, we adopt $x=6$ when $N=100$, $x=12$ when $N=200$, $x=21$ when $N=300$, which is around $2/3$ of the number of average neighbours\relax }}{86}{figure.4.16}
 \contentsline {figure}{\numberline {4.17}{\ignorespaces Number of CRs which are not included in any clusters, $N=100$\relax }}{87}{figure.4.17}
 \contentsline {figure}{\numberline {4.18}{\ignorespaces Number of CRs which are not included in any clusters, $N=300$\relax }}{88}{figure.4.18}
 \contentsline {figure}{\numberline {4.19}{\ignorespaces Number of formed clusters\relax }}{88}{figure.4.19}
 \contentsline {figure}{\numberline {4.20}{\ignorespaces Cumulative distribution of CRs residing in clusters with different sizes. Desired cluster size $x$ is 5. 100 CRs, 30 PRs in network, the average number of neighbours of CR node is 9.5.\relax }}{89}{figure.4.20}
-\contentsline {figure}{\numberline {4.21}{\ignorespaces Cumulative distribution of CRs residing in clusters with different sizes. Desired cluster size $x$ is 7. 200 CRs, 30 PRs in network, the average number of neighbours of CR node is 20\relax }}{89}{figure.4.21}
+\contentsline {figure}{\numberline {4.21}{\ignorespaces Cumulative distribution of CRs residing in clusters with different sizes. Desired cluster size $x$ is 7. 200 CRs, 30 PRs in network, the average number of neighbours of CR node is 20\relax }}{90}{figure.4.21}
 \contentsline {figure}{\numberline {4.22}{\ignorespaces Cumulative distribution of CRs residing in clusters with different sizes. Desired cluster size $x$ is . 300 CRs, 30 PRs, the average number of neighbours is 30\relax }}{90}{figure.4.22}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Sensing duration $T_s$ and sensing period $T_p$\relax }}{93}{figure.5.1}

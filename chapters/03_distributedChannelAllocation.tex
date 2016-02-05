@@ -38,7 +38,7 @@ The base station is referred as WBS.
 %The corresponding secondary base stations are referred as white base stations (WBS). 
 Some cellular networks, \ie GSM or LTE network, work on licensed spectrum and emphasis on providing satisfactory services to their end terminals by choosing proper transmission channel and power. 
 As to cellular network working on TV white spectrum, they have to keep one eye on the primary users to make sure that TV service is not violated, which makes the problem of channel and power selection difficult.
-With the existence of central database, it is natural to utilize it as a central controller to assign channel and power usage for secondary users, but the secondary users may belong to different commercial groups and they may not content with the assigned resource.
+With the existence of central database, it is natural to utilize it as a central controller to assign channel and power usage for secondary users, but the secondary users may belong to different commercial groups and they may not contend with the assigned resource.
 %Besides, as the TV channels have different quality, \ie interference level, and permitted transmission power, it is difficult for the database to assign them to the 
 Hence, the spectrum sharing of the secondary users in IEEE 802.22 network should be decided in distributed manner and each secondary user takes care of its own interest, \ie to maximize its preferred utility.
 
@@ -107,7 +107,7 @@ The sum of all disturbing radio frequency effects (including interference) on te
 \begin{equation}
 \label{interference}
 \begin{aligned}
-f_m^c=\sum_{\bar{i}} (P_{\bar{i}}^c \cdot h_{\bar{i}j} \cdot z_{\bar{i}m}) +  N_0, \quad \quad \bar{i}\in \mathcal{N}\setminus i, c(\bar{i}) = c
+f_m^c=\sum_{\bar{i}} (P_{\bar{i}}^c \cdot h_{\bar{i}m} \cdot z_{\bar{i}m}) +  N_0, \quad \quad \bar{i}\in \mathcal{N}\setminus i, c(\bar{i}) = c
 \end{aligned}
 \end{equation}
 where $P_{\bar{i}}^c$ denotes the transmission power of interfering WBS $\bar{i}$.
@@ -913,7 +913,7 @@ To illustrate the structure, we list the contents in Figure~\ref{evaluationConte
 
 \begin{figure}[h!]
   \centering
-  \includegraphics[width=0.95\linewidth]{evaluation_content.pdf}
+  \includegraphics[width=\linewidth]{evaluation_content.pdf}
   \caption{The evaluation contents in this section, the left part is discussed in Section~\ref{MaxPower_whitecat} and the right part is in Section~\ref{joint}. 	}
 \label{evaluationContent}
 \end{figure}
@@ -1141,8 +1141,11 @@ The other comparison is distributed joint power and channel allocation scheme~\c
 We need to point it out that, scheme proposed in~\cite{pimrc_2012} doesn't aim to improve the SINR on end terminals, but on the sum of produced and received interferences.
 The performance of joint channel and power allocation schemes are presented in Fig.~\ref{CAPA_utility}, \ref{CAPA_power} and \ref{joint_SINRcdf} in terms of total utility, power consumption and achieved SINR on end users respectively.
 
-In Figure~\ref{CAPA_utility}, we see that our proposed scheme \textit{whiteCat+dpa}, the cascaded channel and power allocation method falls behind the cascaded channel allocation optimization and power allocation, and the joint channel and power allocation optimization, but outperforms other solutions.
-Figure~\ref{joint_SINRcdf} illustrates clearly that our proposed scheme approaches the two centralised schemes in providing SINR to end users.
+Figure~\ref{CAPA_utility} illustrates the comparison of the cascaded solutions, \ie channel allocation and the following power control, in terms of the total utility in the network.
+We can see that our proposed scheme \textit{whiteCat+dpa}, the cascaded channel and power allocation method fall behind the cascaded channel allocation optimization and power allocation, and the joint channel and power allocation optimization, but outperforms all the other distributed solutions.
+Note that the potentialGame method along with power control results the worst performance, the reason is the objective adopted by that scheme is the to minimize the sum of received interference in the network, with this objective, the performance on summed utility demonstrates randomness.
+Figure~\ref{joint_SINRcdf} illustrates the CDF of SINR on end users when applying different channel allocation and power allocation schemes.
+it is clear that our proposed approaches achieve the best among the distributed schemes, and only worse wore than the schemes involving centralized optimization.
 
 %Fig.~\ref{CAPA_power} shows DiCAPS together with power allocation consumes the least power.
 %Figure~\ref{CAPA_quasiSINR} demonstrates the cumulative distribution of SINR on all end terminals,
@@ -1233,7 +1236,7 @@ Figure~\ref{joint_SINRcdf} illustrates clearly that our proposed scheme approach
           \label{joint_SINRcdf}
 \end{figure}
 
-\section{Conclusion}
+\section{Conclusions}
 
 We propose a set of solutions on the utilization of TV white space.
 The method to decide the maximum permitted transmission power which complies with IEEE 802.22 standard is proposed.
