@@ -137,7 +137,7 @@ Besides, the statistical behaviours of primary users is also an important factor
 
 Spectrum administration bodies FCC of U.S.~\cite{FCC_2010_sedond_memorandumm} and Electronic Communications Committee (\gls{ECC}) in Europe~\cite{ecc159} encourage to adopt both spectrum sensing and location based method.
 
-\subsubsection*{Spectrum Decision}
+\subsubsection{Spectrum Decision}
 After knowing the available spectrum, CR users select the most appropriate band according to their requirements on quality of service (QoS).
 This procedure involves considering the statistical behaviours of the primary users so as to accessing the channel quality fairly.
 The available licensed spectrum which spans a wide frequency band exhibits different characteristics~\cite{spectrum_decision_TMC11}.
@@ -152,7 +152,7 @@ Such models provide more complete information on the availability of the license
 
 
 
-\subsubsection*{Spectrum Sharing}
+\subsubsection{Spectrum Sharing}
 Then secondary users are to make use of these channels selected in the spectrum decision procedure, and share the spectrum with both the primary users and the other secondary users.
 As there may be multiple secondary users trying to use the same channel, spectrum sharing is important to coordinate the behaviour of secondary users to avoid deteriorating the performance of secondary users.
 Spectrum sharing involves choosing proper channels to mitigate co-channel and adjacent interference~\cite{ca_crn_survey_2013}, or adjusting transmission power to reach compromise between transmitter's and other secondary users' performance~\cite{pa_crn_survey_2012}, or adopting a certain media access paradigm to use the spectrum fairly and efficiently.
@@ -163,7 +163,7 @@ Spectrum sharing also involves the concerns from primary users, \ie when many se
 %After assessing RF environment or geographic location, secondary users adjust their operational parameters such as frequency, modulation schemes and transmit power, in order to support QoS aware communications, this process is referred as spectrum decision and spectrum sharing~\cite{08crn_survey}.
 %In this thesis, spectrum decision and sharing consist the major issue discussed in this thesis.
 
-\subsubsection*{Spectrum Mobility}
+\subsubsection{Spectrum Mobility}
 When one primary user starts to work on a certain channel from idle state, a secondary communicating pair working on the this channel should change their operating channel to another one, where no primary user is detected working on the new channel.
 This hand off process between channels is called spectrum mobility, which is critical to maintain the communication and network topology for CRN.  
 
@@ -179,7 +179,7 @@ The second category decides the services that people can obtain from CRN.
 Thus, spectrum sharing largely defines the challenges and considerations one cognitive radio network faces.
 
 
-\subsubsection*{Spectrum Sharing between primary users and secondary users}
+\subsubsection{Spectrum Sharing between primary users and secondary users}
 As to the spectrum sharing between primary users and secondary users, there are two models, spectrum underlay and overlay.
 The two models origin from the distinctive understandings of people as to the hierarchical access model, and the different claims on how to effectively protect the primary users' interests.
 %\subsection{Spectrum Underlay and Spectrum Overlay}
@@ -220,7 +220,7 @@ When spectrum sensing accuracy can be guaranteed above certain threshold, transm
 
 
 
-\subsubsection*{Spectrum sharing among the secondary users}
+\subsubsection{Spectrum sharing among the secondary users}
 Among the secondary users, there is also competition on transmission power, spectrum bands or transmission time slots.
 When we put the consideration on protection of primary users aside, spectrum sharing among the second users is similar with the counterpart problems in the conventional wireless networks, \ie ad hoc networks, cellular networks, etc..
 In CRN, spectrum sharing among the secondary users can be conducted with either cooperative or non-cooperative manner.
@@ -242,7 +242,7 @@ From the perspective of network operation, spectrum sharing can be classified as
 
 %Centralized spectrum decision doesn't work well outside the TV channel scenario.
 
-\subsubsection*{Centralized Scheme}
+\subsubsection{Centralized Scheme}
 Centralized spectrum sharing is conducted on a centralized entity to decide the secondary users' strategies to operate in the CRN.
 There is a considerable number of centralized approaches proposed for spectrum sharing in cognitive radio network, and the global optimality is reported as to different objectives in certain cases.
 %
@@ -257,8 +257,7 @@ There is a good number of research in this regard~\cite{resource_allocation_crn_
 When the formulated problems are linear programming, or convex programming problems, the optimal is easy to obtain.
 When convexity doesn't held, there all some skills to convert the problem into convex ones, \eg a $\log$ change of variables turns an apparently non-convex problem into a convex one.
 When integer variables are involved in the optimization, \eg in problem of channel assignment, or scheduling, the optimization problem is very difficult to solve.
-In this occasion, swarm intelligence algorithms can be applied to obtain sub optimal result.
-simulated annealing [xxx], generic algorithm [xxx] and ant algorithm etc.
+In this occasion, swarm intelligence algorithms can be applied to obtain sub optimal result, \ie simulated annealing~\cite{simulated_annealing_09, Tang20122690}, generic algorithm~\cite{Chen_2010} and ant algorithm~\cite{he_2012}.
 
 Centralized scheme is suitable in certain scenarios, \eg when the primary users are TV stations and receivers which work on certain channels for hours of time, spectrum can be seen as constant. 
 When the secondary users access the spectrum in underlay paradigm, they need to take care not to cause more interference than threshold on primary users.
@@ -288,7 +287,8 @@ This compiled agility worsens the overhead problem.
 %Thus distributed solutions are preferred in such varying radio environment.
 %Distributed decision of one CR user should be carefully decided as one CR's behaviour affects neighbouring CR users which go on to prompt all the CR users in the network to act accordingly.
 
-\subsubsection*{Distributed Scheme}
+\subsubsection{Distributed Scheme}
+\label{distributed_scheme}
 It is the primary users which distinct CRN from other networks.
 Primary users' usually unexpected operation pattern results in dynamic spectrum availability for secondary users.
 As distributed schemes exploit mainly local observation, distributed schemes help the secondary users to adapt to the varying environment quickly~\cite{Selforganization_CRN_13}.
@@ -368,7 +368,7 @@ We will introduce the application of game theory in CRN in the following section
 
 
 \section{Game Theory and CRN}
-
+\label{gametheory_crn}
 A game consists of three elements: a set of players, a selfish utility for each player, and a set of feasible strategy space for each player.
 In a game, the players are rational and intelligent decision makers, which are related with one explicit formalized incentive expression (the utility or cost).
 The players usually have potential conflicting objectives with others.
@@ -388,7 +388,7 @@ Figure~\ref{game_distributedalgorithms} illustrates two ways of applying game th
 \begin{figure}[h!]
   \centering
   \includegraphics[width=\linewidth]{game_distributedalgorithms.pdf}
-  \caption{The two ways that game theory is involved in problem solving}
+  \caption{The two loops that game theory is involved in problem solving}
 \label{game_distributedalgorithms}
 \end{figure}
 
@@ -407,21 +407,22 @@ NE in CRN means the CR user has no incentive to change its operating parameters 
 %In recent years, game theory attracts people attention into apply it in communication systems.
 We introduce the reasons to apply game theory in communication systems and CRN in details.
 
-\subsubsection*{Communication equipments are rational.}
-Although current communication equipments involve only a little artificial intelligence, they are supposed to be manufactured and operate based on standards to fulfil certain functions, but selfish behaviour may appear on certain individual equipments to achieve advantages over their peers~\cite{game_for_communication_01}.
-In communication system, a device is programmed to maximize the expected utility, which is perfectly rational.
-For instance, Wi-Fi equipments are manufactured complying the IEEE 802.11 standards.
-But it is possible that certain manufacturers or the personal who uses the Wi-Fi system (we use station in the following) manipulate certain parameters to obtain performance advantage over other stations in the network.
-When all the stations in one network are supposed to run distributed coordination function (\gls{DCF}), \ie the station must wait a random period of time, which is called contention window (\gls{CW}), before accessing the media when it senses the media to be busy, a certain selfish station may not choose to wait and is keen on sensing media.
-The selfish behaviour causes more collisions for other stations, and possibly results in poor performance in the network.
-%In this case, the access point finds more packets coming from that selfish user, but is unaware of its selfishness and has no means to adjust or punish this selfish user.
+\subsubsection{Communication equipments are rational.}
+%Although current communication equipments involve little artificial intelligence, 
+Current communication equipments are supposed to be manufactured and operate based on standards to fulfil certain functions, but selfish behaviour may appear on certain individual equipments to achieve advantages over their peers~\cite{game_for_communication_01}.
+For instance, a device in a communication system can be programmed on purpose to maximize the expected utility, which is selfish but is also regarded as \textit{rational} from the perspective of the user using that device.
 
-In this example, the network entities are seen to be self-interested rational, then suitable game theoretic models can guide the behaviours of them, so as to achieve desirable collective behaviours and performance in terms of the system level objective.
+For example, Wi-Fi equipments are manufactured complying to the IEEE 802.11 standards.
+But it is possible that certain manufacturers or the personal who uses the Wi-Fi system (we use station in the following) manipulate certain parameters to obtain performance advantage over other stations in the network.
+When all the stations in one network are supposed to run distributed coordination function (\gls{DCF}), \ie each station must wait for a random period of time, which is called contention window (\gls{CW}), before accessing the media when it senses the media to be busy, one certain selfish station may not choose to wait but is keen on sensing media.
+The selfish behaviour causes more collisions with other stations, and possibly results in poor performance in the network.
+%In this case, the access point finds more packets coming from that selfish user, but is unaware of its selfishness and has no means to adjust or punish this selfish user.
+In this example, the selfish network entities are seen to be self-interested rational, then suitable game theoretic models can guide the behaviours of them, so as to achieve desirable collective behaviours and performance in terms of the system level objective.
 In Wi-Fi system, game theory facilitates the network operator to issue rules to make the selfish behaviour unprofitable, which curbs the selfish behaviours and lead to NE in the network.
 %or it helps to analyse how much the impact can be caused by the selfish stations.
 % can tell the access point or network operator the impact caused by the selfish systems, and possibly 
 
-\subsubsection*{Game theory is effective to solve networking problems.}
+\subsubsection{Game theory is effective to solve networking problems.}
 Algorithms can be retrieved from the analysis of a problem under the game theoretical framework.
 In the same example of media access in IEEE 802.11 DCF mentioned in the previous item, if stations are allowed to modify the length of contention window, each station will adjust its contention window to obtain the best performance.
 \cite{contentiongame_07} shows as long as each station greedily updates its CW to maximize certain utility, after certain time the system will stabilize in NE. 
@@ -430,16 +431,16 @@ In the case, the best response process naturally defines an algorithm for Wi-Fi 
 Besides, outcome from game theory is robust~\cite{Han:2008:RAW:1457343}.
 
 
-\subsubsection*{Game theory is suitable to apply in cognitive radio network because of the properties of CRN.}
+\subsubsection{Game theory is suitable to apply in cognitive radio network because of the properties of CRN.}
 Firstly, as only local information is needed to feed each user, game theory is naturally suitable for designing distributed solutions for cognitive radio networks.
 Distributed solutions doesn't rely on centralized controller, and each user in the network adopts certain action as response to the other users or environment, this falls in the scope of game theory.
 Distributed schemes usually lead to Nash equilibrium, which is usually sub optimal.
-As comparison, although optimization is the common tool to pursue global optimality, when the information is not accurate or adequate enough, or the optimization itself is difficult to solve, the optimized results can be far from optimal.
+As comparison, although optimization is the common tool to pursue global optimal, when the information is not accurate or adequate, or the optimization itself is difficult to solve, the optimized results can diverge from the optimal.
 
 %
 Secondly, combinatorial nature of communication problems makes game theory as one of a few choices~\cite{Han:2008:RAW:1457343}.
 Many problems in wireless communication involve integer variables, \ie channel availability, channel assignment, selection of modulation levels or channel coding.
-It is always challenging to solve combinatorial optimization problems, whereas game theory is natural to describe it in a discrete form.
+It is challenging to solve certain combinatorial optimization problems, whereas game theory is natural to describe it in a discrete form.
 
 
 In this dissertation, we look into congestion game and its applications in CRN.
@@ -508,7 +509,7 @@ Although there is a strong trend that more traffic load will be offloaded from c
 The state of the art mobile systems, such as 3GPP Long term Evolution (\gls{LTE}) and High Speed Packet Access (\gls{HSPA}) are designed to be very efficient on spectrum utilization, thus cellular networks look into cognitive radio for solution.
 
 
-\subsection{CRN Working with TV White Space}
+\subsection{CRN Working in TV White Space}
 \label{TVWS}
 %Opportunistic utilization for unlicensed secondary users (also named as white space devices, abbreviated as WSD) working with TV broadcast spectrum (TV white space) is promising to cope with the scarcity of spectrum resources\cite{fcc}. 
 %UHF TV spectrum (TV white space, TVWS) has low utilization in both spatial and temporal dimensions. \fmjg{xxx relevant data and citation needed here XX also mention where this is the case, i.e. US ? XXX}
@@ -554,23 +555,25 @@ In the following, we give a brief introduction to the governing regulations and 
 
 
 
-\subsubsection*{Co-Existence in TV White Space}
+\subsubsection{Regulations and Standards}
 %In compliance with the methodology of cognitive radio, 
 
 %this is a intro to a general cr work.
 %Temperature regulation~\cite{Temperature_regulation03} opens another way to utilize TVWS. \cite{wuinfocom09} deals with the joint channel-power selection for multiple transmission links (pairs) in a general cognitive radio scenario. The distributed scheme is derived from decomposition of Lagrangian dual, which converges pure Nash equilibrium. To facilitate this scheme, monitors from TV stations are required to watch interference from WSDs, furthermore, monitors have to be equipped with computational ability and interact with secondary users in the whole process of convergence. This methodology works in try-error-try mode, which asks for modification on the current operation of TV services.
 Regulatory bodies in different countries have issued requirements on the occupancy of TVWS bands by secondary users respectively. 
 The permitted channels regulated by FCC have been briefly introduced above.
-Besides, FCC divides the devices operating in the TVWS (TV band devices, or \glspl{TVBD}) into three categories: Fixed device, Mode I personal/portable device, and Mode II personal/portable device. Every category obeys distinct rules on transmission power, mandatory database access and so on.
-Fixed and Mode II devices are connected to the database directly (or indirectly by another fixed or Mode II TVBD), Fixed device accesses DB at least once per day, Mode II device has to access DB every 60 seconds, or when it changes location by more than 100 meters.
-The transmission power for Fixed TVBD is 4 W, and 100 mW for Mode II TVBD. 
-Mode I TVBD operates only under the control of a fixed or Mode II TVBD, and accesses them for available channels every 60 seconds.
+Besides, FCC divides the devices operating in the TVWS (TV band devices, or \glspl{TVBD}) into three categories: \textit{fixed device, mode I personal/portable device}, and \textit{mode II personal/portable device}. 
+Every category obeys distinct rules on transmission power, mandatory database access and so on.
+Fixed and mode II devices are connected to the database directly (or indirectly by another fixed or mode II TVBD), fixed device accesses database at least once per day, mode II device has to access database every 60 seconds, or when it changes location by more than 100 meters.
+The transmission power for fixed TVBD is 4 W, and 100 mW for mode II TVBD. 
+Mode I TVBD operates only under the control of a fixed or mode II TVBD, and accesses them for available channels every 60 seconds.
 There is also regulations on the antenna heights and other aspects.
-OFCOM (being the regulatory authority in UK) opens less TVWS for TVBD and categorizes White Space Devices (WSDs) into Master WSD and Slave WSD which are roughly equivalent to fixed/Mode II TVBD and Mode I TVBD, respectively.
-ECC (being the regulatory authority in Europe) also adopts Master and Slave structure while utilizing the geolocation and database solution to assign channels and corresponding operating parameters to TVBD.
-In both FCC and ECC regulations, the available channels are calculated based on the distance between primary and secondary systems together with some propagation model.
+
+OFCOM (the regulatory authority in UK) opens less TVWS for TVBD and categorizes White Space Devices (WSDs) into \textit{master WSD} and \textit{slave WSD} which are roughly equivalent to fixed/mode II TVBD and mode I TVBD, respectively.
+ECC (the regulatory authority in Europe) also adopts Master and Slave structure while utilizing the geolocation and database solution to assign channels and corresponding operating parameters to TVBD.
+In both FCC and ECC regulations, the available channels are calculated based on the distance between primary and secondary systems together with propagation model.
 Hence, the principle behind the notion of channel availability is the presumed received signal strength at potential TV receivers, which should be obviously below a certain level.
-FCC adopts a fixed transmit power level for secondary systems and assumes that the distance used (resulting from the propagation model) is sufficient to protect the TV receivers.
+FCC adopts a fixed transmit power level for secondary systems and assumes that the distance adopted (resulting from the propagation model) is sufficient to protect the TV receivers.
 ECC's restriction is more flexible on the transmission power which can be adjusted based on the distance between the secondary user and the TV receivers. 
 For both regulations, TV receivers may become vulnerable when there are multiple secondary equipments transmitting simultaneously.
 \cite{Jaentti11} shows that even the regulations integrate an interference margin for multiple secondary users' transmitting, the TV receivers are still vulnerable.
@@ -578,7 +581,12 @@ For both regulations, TV receivers may become vulnerable when there are multiple
 %
 %Some regulations, as that from FCC and ECC, are sufficient guidance for actual implementation, while some other rules are providing test for interference assessment. 
 %
-Standardization on secondary usage of TVWS is very active. IEEE 802.19 is a family of IEEE 802 standards in Wireless Coexistence Working Group, among which, IEEE 802.19.1 is for wireless coexistence in TVWS. IEEE 802.11af is standards for WLAN operation in TVWS, IEEE 802.15.4m is for low rate (LR) WPAN operating in TVWS. IEEE 802.22 is for Wireless Regional Area Network (WRAN) using TVWS. As TV band is only 6 or 7 MHz while WLAN channel bandwidth is 40 MHz for state-of-the-art IEEE 802.11n amendment, IEEE 802.11af proposes channel aggregation mechanism for WLAN working with TVWS. Maximum transmit power and spectrum mask of Mode I should be approved by Mode II devices beforehand.  
+Standardization on secondary usage of TVWS is very active. 
+IEEE 802.19 is a family of IEEE 802 standards in Wireless Coexistence Working Group, among which, IEEE 802.19.1 is for wireless coexistence in TVWS. 
+IEEE 802.11af is standards for WLAN operation in TVWS, IEEE 802.15.4m is for low rate (LR) WPAN operating in TVWS. 
+IEEE 802.22 is for Wireless Regional Area Network (WRAN) using TVWS. 
+As TV band is only 6 or 7 MHz while WLAN channel bandwidth is 40 MHz for state-of-the-art IEEE 802.11n amendment, IEEE 802.11af proposes channel aggregation mechanism for WLAN working with TVWS. 
+Maximum transmit power and spectrum mask of mode I should be approved by the mode II devices beforehand.  
 
 
 %Geolocation is extensively used in cognitive radio network. \cite{nashbargaining_2012jsac} proposes a centralized light weighted scheme to solve channel and power allocation among secondary users with TDMA manner, where geolocation of primary users are used by secondary users to calculate the caused interferences by them on the primary users. Considering the slow change of TV spectrum usage, along with the fact that the TV spectrum usage is scheduled, geolocation approach becomes more appealing in TVWS utilization scenario. Assume there is a database which is connected with all WSDs, and it is aware of the location of TV receivers (optionally with terrain information) and WSDs and proper propagation model in between, the database calculates the RSSI (Received Signal Strength indication) on each WSDs in the whole network. The database decides the channel availability based on whether the RSSI exceeds a threshold value or not, then notices WSDs their available channels in either proactive or reactive manner. This geolocation approach is used for building a Wi-Fi like network working with TVWS ~\cite{SenseLess} which demonstrates the feasibility of predicting the available TV spectrum accurately using suitable propagation models (Longley-Rice and terrain wherein). This approach is also integrated into regulation from Federal Communications Commission (FCC) of U.S. FCC regulates every WSD should access the database to retrieve the available TV channels on its location, and fixes the transmission power for fixed WSD as 4 W which is a conservative value. Aforementioned is calculation RSSI of PU on the location of WSDs to see whether the PUs \textit{appears}, there is another way to work with geolocation. Instead of deciding the available TV channels for WSDs, database calculates the interferences from WSBs on TV receivers, then directly assigns channel and power levels to each WSD and in the same time preventing the TV receivers from harmful interferences (the interferences under a certain threshold). Electronic Communications Committee (ECC) in Europe adopts this approach so that the transmission power for WSD is more flexible depending on WSD's location.
@@ -589,30 +597,45 @@ IEEE 802.22 has been the first IEEE standard for wireless regional area network 
  % Although the transmission power is decided in a distributed manner, primary transmitters are required to adjust their transmission power in order to guarantee the SINR on primary receivers in a learning process, while, the operation of WSDs working on TVWS should be transparent as to TV services.\fmjg{This summary of the 2010 paper does not make sense to me - why are you talking of primary systems here ??} 
 
 \section{Problem Statement}
-As to the various challenging problems in CRN networks, adopting centralized or decentralized solutions is largely dependant on the network types and the nature of the problem to be solved.
+As to the various challenging problems in CRN networks, adopting centralized or decentralized solutions is largely dependant on the network types and the nature of the problems to be solved.
 %Working with the TV white space is regarded as one application of cognitive radio network, which is most likely to succeed in near future.
-CRAHNs consist of mobile autonomous secondary users and don't have infrastructure, thus the network topology evolves with time, besides, the ungovernable primary users' activity leads to the temporal spectrum availability. 
-These factors make distributed scheme to be the sole choice to manage the CRAHN to convey services.
+CRAHNs consist of mobile autonomous secondary users and don't have infrastructure, the network topology evolves with time, besides, the ungovernable primary users' activity leads to temporal spectrum availability. 
+Due to these factors, secondary users need to adjust their operation parameters based on the local information, then the distributed scheme becomes the sole choice to manage the CRAHN to convey services.
 %
-Traditional commercial cellular networks work with licensed spectrum, which operate with centralized manner to provide services meeting QoS criterion.
-The openness of TV white space attracts private people and organizations to build cellular networks to launch various services.
-There is one centralized database which is required by regulations and standards, thus it is possible to conduct certain centralized solutions on it.
-But owners of the cellular networks have different or conflicting interests, thus it may not be possible to let every secondary user to follow the strategy given by the centralized data base~\cite{crn_futurecellular_2014}.
+%In the networks with structure, \eg the commercial cellular networks work with licensed spectrum, the network they operate in centralized manner to provide services meeting QoS criterion.
+%As to the cellular networks working with unlicensed spectrum opportunistically, there exists a centralized data base to regulate the working channel for secondary users~\cite{crn_futurecellular_2014}.
+The opening of TV white space attracts people and organizations to build cellular networks to launch various services.
+A data base is required to register the fixed and mode II TVBDs~\cite{crn_futurecellular_2014}, but it is not supposed to afford the computation on the resources for each TVBD.
+Besides, the operation of TVBDs is carried out by different users or operators, thus it is not feasible for the centralized entity to coordinate the devices and assign the network sources to them.
+Thus distributed scheme is also needed in the utilization of TV white spectrum.
+%There is one centralized database which is required by regulations and standards, thus it is possible to conduct certain centralized solutions on it.
+%But the owners of the cellular networks have different or conflicting interests, \eg the networks compete for resources, besides, there maybe secondary users which start or cease to use the TV white spectrum,  
+%Last but not least, the TVBDs may join or leave the network, \ie start to transmit or cease transmitting, which brings dynamics to the network, thus centralized scheme
 %Actually, the majority of the research in cognitive radio domain is carried out with distributed manner.
 %In CRAHNs, there are no centralized utility, and the spectrum sensing is necessary for every secondary user.
 
-
-
-When designing distributed solution is necessary, which 
-
+As introduce in Sections~\ref{gametheory_crn} and \ref{distributed_scheme}, game theory is suitable to design distributed schemes.
+Suitable game models can be used to analyse distributed scheme in terms of the final state of the system after convergence, and the speed to reach the equilibrium.
+In this thesis, we propose distributed schemes to solve the pressing problems about utilizing the unlicensed spectrum.
 Except for the provisioning of services, we are also interested in the mechanism the distributed algorithms.
 In particular, we look into the following questions, 
 Does the distributed algorithm converge? 
-If the algorithm converges, in which state the algorithm finally ceases, and how robust and quickly the convergence process is?
+If the algorithm converges, in which state the algorithm finally ceases, and how robust and quick the convergence process is?
 To answer these questions, we turn to game theory, in particular, the recent progress of congestion game models for help.
 
 %We focus on the distributed solutions for several correlated fundamental problems in CRN.
 %The interaction among autonomous secondary users is a common scene in CRN as there usually lacks central controller.
+
+
+
+%On physical layer, the secondary users endeavour to maximize their performance by choosing the channel and power, and meanwhile the accumulative interference caused on primary users should be below a threshold.
+%How to refrain the accumulative interference from exceeding the threshold of primary users is a critical question, and how does the distributed decision on channel and transmission power improves performance is worth considering.
+%After forming the connected network with the chosen channel and transmission power, obtaining the cluster structure brings many benefits, \ie more accurate spectrum sensing results due to local cooperation and facilities on other service provisioning.
+%How to form such clusters which can survive in front of the unpredictable activity of primary users is challenging.
+%Having had solid CRN infrastructure, it is time to deliver services via routing.
+%A light weight routing tailored for CRN is needed.
+%In the following sections, we will introduce the problems in Figure~\ref{problemLocation} in details.
+\subsection{Technical Problems about Utilizing the Unlicensed Spectrum}
 
 The concrete technical challenges addressed in this thesis are shown in Figure~\ref{problemLocation}, which reside in physical layer, media access layer (\gls{mac}) layer and network layer~\cite{osi}. 
 These questions are individually orthogonal, but as pressing problems in each layers, they together form a test field to check the feasibility of distributed solutions.
@@ -624,16 +647,8 @@ These questions are individually orthogonal, but as pressing problems in each la
 \label{problemLocation}
 \end{figure}
 
-%On physical layer, the secondary users endeavour to maximize their performance by choosing the channel and power, and meanwhile the accumulative interference caused on primary users should be below a threshold.
-%How to refrain the accumulative interference from exceeding the threshold of primary users is a critical question, and how does the distributed decision on channel and transmission power improves performance is worth considering.
-%After forming the connected network with the chosen channel and transmission power, obtaining the cluster structure brings many benefits, \ie more accurate spectrum sensing results due to local cooperation and facilities on other service provisioning.
-%How to form such clusters which can survive in front of the unpredictable activity of primary users is challenging.
-%Having had solid CRN infrastructure, it is time to deliver services via routing.
-%A light weight routing tailored for CRN is needed.
-In the following sections, we will introduce the problems in Figure~\ref{problemLocation} in details.
-
-\subsection{Utilization of TV white spectrum}
-%\subsubsection*{Utilize TV White Space}
+\subsubsection{Problem 1: Utilization of TV white spectrum}
+%\subsubsection{Utilize TV White Space}
 
  %Considering that secondary base stations are likely to be from different administrative domains, a distributed solution would be required. And that makes us turn to game theory and the separation of the problem into two different ones. 
 
@@ -665,9 +680,9 @@ The asymmetry disables the heuristic distributed schemes provided in~\cite{Ko_Di
 % FCC regulates portable secondary users to operate from channel 21 (512 MHz) to 51 (698 MHz), with the exception of channel 37. As to fixed secondary usage, the allowed spectrum band is from TV channel 2 (54 MHz) to TV channel 51, with TV channels 3, 4 and 37 being prohibited. Thus, the available TV spectrum is about 600 MHz wide. Compared to conventional unlicensed ISM bands in the 2.4 GHz and 5 GHz band, all together TVWS has more to offer.
 
 
-\subsection{Robust Clustering in Ad Hoc Cognitive Radio Network}
+\subsubsection{Problem 2: Robust Cluster Structure in Ad Hoc Cognitive Radio Network}
 Clustering is an important paving stone for the practical utilization of the unused portions of the licensed spectrum.
-Clustering secondary users based on geographical proximity and other relevant properties together produces following benefits.
+Clustering secondary users based on geographical proximity and other relevant properties together to produce following benefits.
 First, it is more efficient to solve common control channel (\gls{CCC}) problem with cluster structure.
 Dedicated CCC which is allocated to all nodes for the purpose of control information exchange is regarded to be under utilization.
 Whereas, cluster based approaches group CR nodes into clusters based on their similarity of available unlicensed channels, so that the common channels within each cluster are used to carry the control messages~\cite{Lazos09}.
@@ -696,7 +711,7 @@ Second, the scheme should result in more CCCs in the formed clusters.
 %
 %These requirements will be fulfilled by the scheme proposed in this thesis.
 
-\subsection{Geographic Routing in CRN with Spectrum Aware Virtual Coordinate}
+\subsubsection{Problem 3: Light Weight Routing in CRN}
 
 Recent measurement in~\cite{measurement_Palaios14} shows the spectrum occupancy doesn't have significant spatial correlations between different locations.
 It follows that licensed spectrum is used by primary users heavily in some areas, whereas in the other areas licensed spectrum is available over longer timespan for secondary users to use.
@@ -714,29 +729,42 @@ How to make light weight geographic routing work well in CRN is the problem to b
 
 
 
-\subsection*{Research Questions}
-Based on the description of the challenges, we formulate the 
-three research questions which will be answered in this thesis.
+\subsection{Research Questions}
+Based on the description of the challenges in cognitive radio network, we formulate two research questions which will be answered in this thesis.
 
-Question 1 - How to design distributed solution with assistance of game model, so that to make full use of the TV spectrum with the regulated network structure? 
+Question 1 - What are the strengths and weaknesses of the distributed algorithm compared with the centralized scheme, which are applied to solve a specific problem in cognitive radio network?
 
-Question 2 - How to design distributed solution with assistance of game model, to form robust clusters against primary users' unpredictable activity, so that maintain the benefits brought by cluster structure?
+Question 2 - When the distributed algorithm is necessary due to the specific properties of one problem, how to guarantee the convergence and performance? What is the role of game model in the process of algorithm design?
 
-Question 3 - How to make use of the statistic information of the spectrum availability, so as to realize light weight geographic routing in CRN?
+%Question 1 - How to design distributed solution with assistance of game model, so that to make full use of the TV spectrum with the regulated network structure? 
+%
+%Question 2 - How to design distributed solution with assistance of game model, to form robust clusters against primary users' unpredictable activity, so that maintain the benefits brought by cluster structure?
+%
+%Question 3 - How to make use of the statistic information of the spectrum availability, so as to realize light weight geographic routing in CRN?
 
 
 
+\subsubsection{Contributions}
+In this thesis, we answer the aforementioned research questions by making the one to one contributions.
 
-\section{Contributions}
+Contribution C1 - We compare the performance of distributed schemes and centralized schemes in concrete problems in CRN.
 
-We briefly introduce the contribution of this dissertation by addressing the aforementioned questions.
-xxxx
-In this dissertation, we meet the challenges in CRN by proposing distributed solutions.
-We investigate the differences between decentralized and centralized schemes in terms of several criteria, \ie performance, overhead, computation time, etc..
-xxxx
-%We use congestion game to derive distributed algorithms in order to solve different problems in CRN.????
+Contribution C2 - Design distributed schemes with congestion game model in CRN, and investigate the concerns on convergence and overhead.
 
-\subsection*{Contribution 1: Utilization of TV white spectrum and application of game model in designing algorithm}
+%We briefly introduce the contribution of this dissertation by addressing the aforementioned questions.
+We demonstrate how to refrain the overhead and fasten the convergence process, especially, we make utilize the available game models to design distributed algorithms which have the desired these properties.
+These contributions are illustrated in the process of solving three problems.
+%We investigate the differences between decentralized and centralized schemes in terms of several criteria, \ie performance, overhead, computation time, etc..
+Figure~\ref{overview} illustrate the relation between contributions and the concrete technical problems to be addressed in this thesis.
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=\linewidth]{overview.pdf}
+  \caption{Overview of the problems and contributions, and the concrete problems addressed in this thesis.}
+\label{overview}
+\end{figure}
+
+
+\subsubsection{Solution to Problem 1: Utilization of TV white spectrum and application of game model in designing algorithm}
 
 %and apply it on different cognitive radio networks.
 %rethink channel allocation problem from the perspective of game theory, particularly,
@@ -760,7 +788,7 @@ The successful practice of congestion game in this problem is enlightening for t
 
 
 
-\subsection*{Contribution 2: Versatile robust clustering in CRAHN}
+\subsubsection{Solution to Problem 2: Versatile robust clustering in CRAHN}
 %We investigate the robust clustering problem thoroughly.
 Our proposed distributed clustering scheme achieves robust cluster structure against primary users.
 Furthermore, the clustering algorithm is versatile enough to fulfil other requirements, \ie fast convergence, less signalling and cluster size control.
@@ -781,7 +809,7 @@ Congestion game model is adopted during the algorithm design, which not only con
 
 
 
-\subsection*{Contribution 3: Spectrum aware virtual coordinates and geographic routing in CRN}
+\subsubsection{Solution to Problem 3: Spectrum aware virtual coordinates and geographic routing in CRN}
 
 %In this paper we propose SAViC, spectrum aware virtual coordinates for secondary users in multi-channel multi-hop CRN where secondary users are source limited.
 We design spectrum virtual coordinate for CRN, which is not only independent on geographic position, but decided by connection quality among nodes, for instance, channel availability, link quality or hop numbers.

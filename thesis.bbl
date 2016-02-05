@@ -250,6 +250,12 @@ In the matter of unlicensed operation in the {TV} broadcast bands: second
 \newblock In {\em Proc. of 2007 46th IEEE Conference on Decision and Control\/}
   (Dec 2007), pp.~3428--3434.
 
+\bibitem{Chen_2010}
+{\sc Chen, S., Newman, T., Evans, J., and Wyglinski, A.~M.}
+\newblock Genetic algorithm-based optimization for cognitive radio networks.
+\newblock In {\em In Proceedings of 2010 IEEE Sarnoff Symposium\/} (April
+  2010), pp.~1--6.
+
 \bibitem{Chen07}
 {\sc Chen, T., Zhang, H., Maggio, G., and Chlamtac, I.}
 \newblock Cogmesh: A cluster-based cognitive radio network.
@@ -405,6 +411,13 @@ In the matter of unlicensed operation in the {TV} broadcast bands: second
 \newblock {A simple adaptive procedure leading to correlated equilibrium}.
 \newblock {\em Econometrica 68}, 5 (2000), 1127--1150.
 \newblock \url{http://dx.doi.org/10.2307/2999445}.
+
+\bibitem{he_2012}
+{\sc He, Q., and Zhang, P.}
+\newblock Dynamic channel assignment using ant colony optimization for
+  cognitive radio networks.
+\newblock In {\em In Proceedings of 2012 IEEE Vehicular Technology Conference
+  (VTC Fall)\/} (Sept 2012), pp.~1--5.
 
 \bibitem{hmam2010quadratic}
 {\sc Hmam, H.}
@@ -617,6 +630,13 @@ In the matter of unlicensed operation in the {TV} broadcast bands: second
 \newblock Cognitive radio ad-hoc network architectures: A survey.
 \newblock {\em Wireless Personal Communications 81}, 3 (2014), 1117--1142.
 \newblock \url{http://dx.doi.org/10.1007/s11277-014-2175-3}.
+
+\bibitem{simulated_annealing_09}
+{\sc Meshkova, E., Riihijarvi, J., Achtzehn, A., and Mahonen, P.}
+\newblock Exploring simulated annealing and graphical models for optimization
+  in cognitive wireless networks.
+\newblock In {\em In Proceedings of 2009 IEEE Global Telecommunications
+  Conference\/} (Nov 2009), pp.~1--8.
 
 \bibitem{Milchtaich1996111}
 {\sc Milchtaich, I.}
@@ -837,6 +857,14 @@ In the matter of unlicensed operation in the {TV} broadcast bands: second
   product in cognitive radio networks.
 \newblock {\em Selected Areas in Communications, IEEE Journal on 31}, 3 (March
   2013), 451--463.
+
+\bibitem{Tang20122690}
+{\sc Tang, M., Long, C., Guan, X., and Wei, X.}
+\newblock Nonconvex dynamic spectrum allocation for cognitive radio networks
+  via particle swarm optimization and simulated annealing.
+\newblock {\em Computer Networks 56}, 11 (2012), 2690 -- 2699.
+\newblock
+  \url{http://www.sciencedirect.com/science/article/pii/S1389128612001521}.
 
 \bibitem{uplink_power_tvws13}
 {\sc Tao, X., Zhao, Z., and Zhang, H.}

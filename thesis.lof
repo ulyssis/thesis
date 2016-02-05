@@ -1,10 +1,11 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {1.1}{\ignorespaces The concept of underlay spectrum usage in a TV service scenario. The hull shows the range of a TV service area, inside and out of which secondary users work on the licensed channels.\relax }}{6}{figure.1.1}
-\contentsline {figure}{\numberline {1.2}{\ignorespaces The two ways that game theory is involved in problem solving\relax }}{9}{figure.1.2}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces The two loops that game theory is involved in problem solving\relax }}{9}{figure.1.2}
 \contentsline {figure}{\numberline {1.3}{\ignorespaces Spectrum management and the problems addressed in this thesis\relax }}{15}{figure.1.3}
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Overview of the problems and contributions, and the concrete problems addressed in this thesis.\relax }}{17}{figure.1.4}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces An example server matching, one server is possible strategy of the client at the other end of the connecting line\relax }}{25}{figure.2.1}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces An example server matching problem. A client is allowed to access only one server. The line illustrates that the corresponding server is within the client's strategy space.\relax }}{25}{figure.2.1}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces System model: WBS cells and DTV systems\relax }}{32}{figure.3.1}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces QuasiSINR is the ratio between the power of signal of interest on the green point with the sum of co-channel interference on the red points\relax }}{33}{figure.3.2}

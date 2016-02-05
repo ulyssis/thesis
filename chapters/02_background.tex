@@ -78,19 +78,19 @@ Utility of player $i$, $u_i$ & performance in respect of SINR, throughput, etc. 
 
 \subsection{Basic Solution Concepts}
 In this section, we will introduce some basic solution concepts, some of them are used in this thesis.
-\subsubsection*{Dominant Strategy Equilibrium}
-In some games, each player has a unique best strategy, which is independent of the strategies chosen by the other players, then we say a game of this kind has a dominant strategy solution.
-The mathematical expression is, a strategy vector $s\in \mathcal{S}$ is a dominant strategy, if for each player $i$ and each alternate strategy $s'\in \mathcal{S}$, there is, 
+\subsubsection{Dominant Strategy Equilibrium}
+In some games, each player has one unique best strategy, which is independent of the strategies chosen by the other players, then we say a game of this kind has a dominant strategy solution.
+The mathematical expression is as follows, when a strategy vector $s\in \mathcal{S}$ is a dominant strategy, for each player $i$ and each alternate strategy $s'\in \mathcal{S}$, there is, 
  \[ u_i(s_i, s_{-i}') > u_i(s_i', s_{-i}')\]
-$s$ is also called strong dominant strategy, and when the $>$ can be written as $\geq$, $s$ is called weak dominate strategy.
+in this case, $s$ is also called strong dominant strategy, and when the $>$ can be written as $\geq$, $s$ is called weak dominate strategy.
 Note that a dominant strategy solution may not give an optimal payoff to any of the players.
-This is the case in \textit{prisoner's dilemma}, which is one of the most well known and well studied games.
+This is the case in \textit{prisoner's dilemma}, which is one of the most well known and studied games (Chapter 1, ~\cite{agt_book}).
 To confess is the dominant solution for both prisoners, which brings them longer time behind bars than that when both of them keep silent\footnote{Prisoner's dilemma can be found in almost all the game theory textbooks, thus omitted in this thesis.}.
 Only a few games have dominant strategy equilibrium, and mechanism design~\cite{Design_Mechanisms_1973} is developed to design games which have dominate strategy equilibrium, and these dominate strategies lead to desirable outcome.
 
 
 
-\subsubsection*{Nash Equilibrium}
+\subsubsection{Nash Equilibrium}
 A desirable solution of games is the one that players choose strategy in accordance with their incentives, minimizing their own cost or maximizing their own payoff/utility.
 Nash equilibrium successfully captures this property, and is the most discussed and pursued solution concept in game theory.
 
@@ -110,7 +110,7 @@ This can be partially answered by \textit{price of anarchy (\gls{PoA})}, the rat
 
 Nash equilibrium is an appealing concept, but it doesn't tell how to reach such a state.
 Hence, it is important to find an efficient algorithm to reach the equilibrium.
-The notion of \textit{NP-completeness} is not an appropriate concept of complexity for \textit{finding a Nash equilibrium} problem as NE always exists, nevertheless, theoretical scientists tell \textit{finding a Nash equilibrium} problem is a combinatorial problem and is often very difficult (Chapter 2, \cite{agt_book}).
+The notion of \textit{NP-completeness} is not an appropriate concept of complexity for the problem of \textit{finding a Nash equilibrium}, because NE always exists, nevertheless, theoretical scientists tell \textit{finding a Nash equilibrium} problem is a combinatorial problem and can be very difficult to solve (Chapter 2, \cite{agt_book}).
 Having said that, in some games, with the special strategy space structure, or players' special behaviours, efficient algorithms to reach NE exist.
 
 
@@ -121,17 +121,17 @@ Having said that, in some games, with the special strategy space structure, or p
 
 
 
-%\subsubsection*{Pareto Optimality}
+%\subsubsection{Pareto Optimality}
 %%There exists other equilibrium conceptions. \ie Pareto Equilibrium . 
 %An strategy profile $\bar{s}$ is \textit{Pareto optimality} (\gls{PO}), if there does not exist profile $s$ with $u_i(s)\geq u_i(\bar{s})$ for each $i\in N$, and meanwhile $u_i(s)> u_i(\bar{s})$ for at least one $i\in N$.
 %PO is the necessary condition of the global optimality and accordingly is more favoured, but its application in communication system is much less than NE because it is not easy to obtain, and the lack of stability.
 
 
-\subsubsection*{Pure NE and Mixed NE}
-In the aforementioned games, players deterministically choose one strategy from theirs strategy sets, then play their chosen strategies and don't involve randomized strategies, then the achieved NE is called pure NE. 
+\subsubsection{Pure NE and Mixed NE}
+In the aforementioned games, players deterministically choose one strategy from their strategy sets, then play their chosen strategies and don't involve randomized strategies, then the achieved NE is called pure NE. 
 When players play a game with certain randomization on strategies, and aim to maximize their expected payoff, we call the resulted NE as mixed NE.
 As to mixed NE, the action of a player is to choose certain strategies according to a probability distribution.
-Games with finite number of players and strategy set are guaranteed to have NE, whereas, games with an infinite number of players, or games with a finite number of players but they can access to an infinite strategy set may not have NE~\cite{agt_book}.
+Games with finite number of players and strategy set are guaranteed to have NE, whereas, the games with infinite number of players, or the games with a finite number of players but the players can access an infinite strategy set may not have NE~\cite{agt_book}.
 
 In this thesis, we only consider pure NE, as players deterministically play a certain strategy, and the corresponding network components stick to certain operation instead to switch among several different operations based on a vector of probabilities.
 Other solutions include correlated equilibrium, which also involves probability distribution over strategy vectors.
@@ -143,7 +143,7 @@ Other solutions include correlated equilibrium, which also involves probability 
 %\subsubsection*{Different Games in Nutshell}
 
 
-\subsubsection*{Individual Optimization and Game}
+\subsubsection{Individual Optimization and Game}
 As to a player in a game, given the strategies of other players $\sigma_{-i}$, its utility $u_i$ is a function of its own strategy $\sigma_i$, then the maximization of its payoff or minimization of its cost becomes one optimization problem.
 Thus, one game comprises $n$ such optimization problems in total.
 %Whereas as to a general game, the payoff or cost of each player depends on both $s_i$ and $s_{-i}$, both its own strategy and the strategies chosen by all other players.
@@ -162,7 +162,7 @@ Thus, one game comprises $n$ such optimization problems in total.
 %In congestion game, player pays for the resources it occupies.
 %Particularly, the payment for one resource is monotonically increasing with the \textit{number} of players occupying that resource, and each player tries to minimize its payment~\footnote{Another way to describe congestion game: player gets benefit by using a certain resource, the benefit is monotonically decreasing with the number of players on that resource, each player tries to maximize its welfare}. 
 
-Congestion game is an attractive game model which describes the problem where participants compete for limited resources in a non-cooperative manner, it has good property that Nash equilibrium can be achieved after finite steps of best response dynamic.
+Congestion game is an attractive game model which describes the problem where participants compete for limited resources in a non-cooperative manner, it has good property that Nash equilibrium can be achieved after finite steps of best response dynamic, \ie each player choose strategy to maximizes/minimizes its utility/cost with respect to the other players' strategies.
 Congestion game has been used to model certain problems in internet-centric applications or cloud computing, where self-interested clients compete for the centralized resources and meanwhile interact with each other.
 For example, server selection is involved in distributed computing platforms~\cite{Cloud_Computing_2010}, or users downloading files from cloud, etc.
 In the following we will introduce an \textit{server matching}~\cite{kothari:congestion_serverMatching} problem to illustrate congestion game's application in communication systems.
@@ -181,7 +181,7 @@ A congestion game~\cite{Rosenthal}\cite{Voecking06congestiongames} can be expres
 Under strategy profile $\sigma=(\sigma_1,\sigma_2,\cdots \sigma_N)$, player $i$ chooses strategy $\sigma_i\in \Sigma_i$, and the total number of users using resource $r$ is $n_r(\sigma)=|\{i\mid r\in \sigma_i\}|$. 
 \item The cost $g_r: \mathbb{N}\rightarrow \mathbb{Z}$ is a function of the number of users for resource $r$, $g_r^i=\sum_{r\in \sigma_i} g_r(n_r(\sigma))$. 
 \end{itemize}
-In our paper, $g_r^i$ is referred as \textit{congestion} of a game.
+In this thesis, $g_r^i$ is referred as \textit{congestion} of a game.
 
 We first give a definition of improvement.
 \begin{mydef}
@@ -207,7 +207,7 @@ Potential game~\cite{Mondere_potential_game:1996} has already been applied in wi
 Potential game has two desiring properties, the existence of pure NE, and every improvement path is finite, which makes it a suitable model to design distributed algorithms.
 
 
-\subsubsection*{Potential Game}
+\subsubsection{Potential Game}
 
 A potential game is a tuple $\lambda=(\mathcal{N},(\Sigma_i)_{i \in \mathcal{N}},(u_i)_{i\in \mathcal{N}})$, which satisfies the following, if there exists a function $\phi: \Sigma\rightarrow \mathbb{R}$, such that for every $i\in \mathcal{N}$, for every $\sigma_{-i}\in \Sigma_{-i}$, and every $\sigma_i, \sigma_i'\in \Sigma$:
 
@@ -309,7 +309,7 @@ Therefore, the length of improvement sequences is upper-bounded by $n^2m$.
 The proof in details can be found in ~\cite{aaai_IeongMNSS05, LectureA}
 
 
-\subsubsection*{Example: Server Matching}
+\subsubsection{Example: Server Matching}
 In order to show how is problem in networks formulated into a game, and from which an effective algorithm is proposed, we introduce a small example with the application of singleton congestion game.
 
 Let us consider a number of self-interested clients and servers as shown in Figure~\ref{server_sharing}.
@@ -319,19 +319,21 @@ When clients try to choose one server which has the shortest latency, a congesti
 \begin{figure}[h!]
   \centering
   \includegraphics[width=0.6\linewidth]{server_sharing.pdf}
-  \caption{An example server matching, one server is possible strategy of the client at the other end of the connecting line}
+  \caption{An example server matching problem. A client is allowed to access only one server. The line illustrates that the corresponding server is within the client's strategy space.}
 \label{server_sharing}
 \end{figure}
 
-Following the description in Section~\ref{congsetion_game}, we write the game for this problem, 
+Following the description in Section~\ref{congsetion_game}, we formulate the congestion game for this problem, 
 \begin{itemize}
-\item The clients constitute the players in the game $\mathcal{N}$, and the collection of servers $\mathcal{M}$ is the strategy space for every player.
-\item The cost of players in the game is equivalent to the latency for the clients .
-If we denote the delay happens on the server as $d(n)$, where $n$ is the number of clients using the server, then the delay (cost) for a client (player) $i$ is $d(n_r(\sigma))$, where $n_r(\sigma)$ and $r\in \sigma_i$ is the number of clients using the server $r$.
+\item The clients constitute the players in the game $\mathcal{N}$, and the collection of servers $\mathcal{M}_i$ is the strategy space for player $i\in \mathcal{N}$.
+\item The cost of a player in the game is equivalent to the latency experienced by the client in the problem.
+If we denote the delay happens on the server $\alpha$ as $d_{\alpha}(n)$, where $n$ is the number of clients accessing the server, then the delay (cost) for a client (player) $i$ is $d_{\alpha}(n_r(\sigma))$, where $n_r(\sigma)$, $r\in \sigma_i$ is the number of clients using the server $r$.
 \item As each user is allowed to use on server, this is a singleton congestion game according to Definition~\ref{background:singleton}.
 \end{itemize}
 
-Then, according to Theorem~\ref{background:finiteImprovement} and~\ref{background:polynomialConvergence}, after maximal $nm$ times best responses, the system reaches Nash equilibrium.
+\textit{Solution}: The solution for clients to match the servers is explicitly given by the proof of~\ref{background:polynomialConvergence}.
+When the clients adopt best response strategy, \ie each player chooses the server which causes it the shortest delay with respect to other clients' choices, after a number of updates on the servers, the system reaches at NE, \ie the players cease to switch as they have the shortest delay in that state of NE. 
+According to Theorem~\ref{background:finiteImprovement} and~\ref{background:polynomialConvergence}, the algorithm converges at Nash equilibrium after maximal $nm$ times of best responses.
 %More formally, this corresponding congestion game is composed of players (the self-interested clients) and resources (servers), where players are allowed to choose one certain resources to use. 
 %There is cost (latency) generated on a resource for the players who use that resource, and the cost is monotonic increasing with the number of players using it. 
 %As congestion game permits convergence when every players in turn adopt the strategy which leads to a better utility.
