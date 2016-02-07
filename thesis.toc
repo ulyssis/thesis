@@ -102,12 +102,20 @@
 \contentsline {section}{\numberline {5.4}Spectrum Aware Virtual Coordinates}{94}{section.5.4}
 \contentsline {subsection}{\numberline {5.4.1}Assign Spectrum Aware Virtual Coordinate}{96}{subsection.5.4.1}
 \contentsline {subsection}{\numberline {5.4.2}Normalized Spectrum Availability on Secondary Users}{97}{subsection.5.4.2}
+\contentsline {subsubsection}{\numberline {5.4.2.1}Single licensed channel}{97}{subsubsection.5.4.2.1}
+\contentsline {subsubsection}{\numberline {5.4.2.2}Multiple licensed channels}{98}{subsubsection.5.4.2.2}
 \contentsline {subsection}{\numberline {5.4.3}Normalized Longest Blocking Time on Secondary Users}{99}{subsection.5.4.3}
+\contentsline {subsubsection}{\numberline {5.4.3.1}Single licensed channel}{99}{subsubsection.5.4.3.1}
+\contentsline {subsubsection}{\numberline {5.4.3.2}Multiple licensed channels}{100}{subsubsection.5.4.3.2}
 \contentsline {section}{\numberline {5.5}Geographic Routing and Opportunistic Spectrum Access}{100}{section.5.5}
 \contentsline {section}{\numberline {5.6}Performance Evaluation}{101}{section.5.6}
 \contentsline {subsection}{\numberline {5.6.1}Simulation Setup}{101}{subsection.5.6.1}
+\contentsline {subsubsection}{\numberline {5.6.1.1}Primary Users}{101}{subsubsection.5.6.1.1}
+\contentsline {subsubsection}{\numberline {5.6.1.2}Parameter Setting}{102}{subsubsection.5.6.1.2}
 \contentsline {subsection}{\numberline {5.6.2}Success Rate of Geographic Routing on Finding Path}{102}{subsection.5.6.2}
 \contentsline {subsection}{\numberline {5.6.3}Routing Performance}{103}{subsection.5.6.3}
+\contentsline {subsubsection}{\numberline {5.6.3.1}Duty Cycle Based Virtual Coordinate}{103}{subsubsection.5.6.3.1}
+\contentsline {subsubsection}{\numberline {5.6.3.2}Longest Blocking time Based Virtual Coordinate}{105}{subsubsection.5.6.3.2}
 \contentsline {subsection}{\numberline {5.6.4}Sensitivity of SAViC to Estimation Errors}{108}{subsection.5.6.4}
 \contentsline {section}{\numberline {5.7}Conclusions}{108}{section.5.7}
 \contentsline {chapter}{\numberline {6}Conclusion and Future work}{109}{chapter.6}
@@ -117,7 +125,7 @@
 \contentsline {chapter}{ \numberline {A}Proof of Theorem \ref {noconvergence}}{115}{.1.A}
 \contentsline {chapter}{ \numberline {B}Deviation of Problem \ref {QLP}}{117}{.1.B}
 \vspace *{\baselineskip }
-\contentsline {chapter}{Bibliography}{119}{section*.32}
-\contentsline {chapter}{List of Figures}{132}{section*.32}
-\contentsline {chapter}{List of Tables}{136}{section*.32}
-\contentsline {chapter}{Glossary}{138}{section*.32}
+\contentsline {chapter}{Bibliography}{119}{section*.24}
+\contentsline {chapter}{List of Figures}{132}{section*.24}
+\contentsline {chapter}{List of Tables}{136}{section*.24}
+\contentsline {chapter}{Glossary}{138}{section*.24}

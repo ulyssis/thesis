@@ -1083,7 +1083,7 @@ Figure \ref{convergeComp} depicts one instance of the convergence processes of t
 \centering
 \begin{tabular}{|l|c|c|c|}
   \hline
-  Scheme			 						& Average steps 	 		& 95\% CI			&Average time\footnote{The time involved with communication with database is note considered} (s)\\
+  Scheme			 						& Average steps 	 		& 95\% CI			&Average time (s)\\
     \hhline{|=|=|=|=|}
   whiteCat									& 58						& 5.6						&2\\\hline
   no-regret									& 1916						& 1541						&144\\\hline
@@ -1092,7 +1092,7 @@ Figure \ref{convergeComp} depicts one instance of the convergence processes of t
   whiteCase 								& 4587 						& 2742						&50\\  
   \hline
 \end{tabular}
-\caption{Convergence speed of the distributed channel allocation schemes}
+\caption{Convergence speed of the distributed channel allocation schemes. As to the distributed scheme, the time involved to communicate with database is note considered and included.}
 \label{convergencespeed}
 \end{table}
 
@@ -1237,13 +1237,19 @@ it is clear that our proposed approaches achieve the best among the distributed 
 \end{figure}
 
 \section{Conclusions}
-
-We propose a set of solutions on the utilization of TV white space.
-The method to decide the maximum permitted transmission power which complies with IEEE 802.22 standard is proposed.
+We propose a set of solution on the utilization of TV white spectrum.
+With the centralized database, a centralized method to obtain the maximum permitted transmission power which complies to IEEE 802.22 standard is proposed.
 Then a distributed channel allocation algorithm is designed based on congestion game, where WBS can distributively choose the working channel which is associated with maximum permitted transmission power.
-A transmission power control procedure is conducted afterwards.
-This solution makes full use of the infrastructure, the centralized database, and distributes the computation and decision making afterwards on channel and transmission power.
-This scheme outperforms several other related works, and has comparable performance with the centralized solution.
+The distributed channel allocation scheme outperforms several other distributed solutions, and obtains worse performance only than the centralized solution, while.
+Without consider the communication latency between WBSs and the database, this distributed scheme executes much faster than the centralized scheme.
+
+A transmission power control procedure is conducted on the previous channel allocation.
+We investigate the performance of applying the combination of channel allocation and the power control.
+Our proposed channel allocation scheme together with power control achieve better performance than the other channel allocation scheme with the same power control scheme.
+The centralized joint channel and power scheme performs the best, but the problem is very difficult to solve.
+
+%This solution makes full use of the infrastructure, the centralized database, and distributes the computation and decision making afterwards on channel and transmission power.
+
 
 
 
