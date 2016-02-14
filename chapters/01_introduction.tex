@@ -1,4 +1,4 @@
-\chapter{INTRODUCTION}
+\chapter{Introduction}
 \label{INTRODUCTION}
 
 Wireless networks utilize radio waves instead of wires to carry information, which makes seamless coverage and mobility possible to realize.
@@ -128,7 +128,7 @@ Based on this definition, the cognitive radio network is deemed to be composed w
 To adapt to the dynamic spectrum environment and make use of the available licensed spectrum, cognitive radio users %need to manage the available spectrum by conducting a series of functionalities sequentially, \ie detecting the available spectrum with spectrum sensing, selecting the proper spectrum for communication, communicate with other secondary users using certain spectrum band, and moving to another channel when the current working channel is not usable due to primary user's appearance.
 These functions are incorporated into so called cognitive cycle as described in~\cite{Akyildiz09}.
 
-\subsubsection*{Spectrum Sensing}
+\subsubsection{Spectrum Sensing}
 To know which chunk of spectrum is available is the foundation of spectrum management.
 In underlay spectrum usage scenario, CR users get to know the available spectrum by means of spectrum sensing.
 In overlay spectrum usage scenario, secondary users can in principle access all the licensed spectrum.
@@ -179,7 +179,7 @@ The second category decides the services that people can obtain from CRN.
 Thus, spectrum sharing largely defines the challenges and considerations one cognitive radio network faces.
 
 
-\subsubsection{Spectrum Sharing between primary users and secondary users}
+\subsubsection{Spectrum Sharing between Primary and Secondary Users}
 As to the spectrum sharing between primary users and secondary users, there are two models, spectrum underlay and overlay.
 The two models origin from the distinctive understandings of people as to the hierarchical access model, and the different claims on how to effectively protect the primary users' interests.
 %\subsection{Spectrum Underlay and Spectrum Overlay}
@@ -220,7 +220,7 @@ When spectrum sensing accuracy can be guaranteed above certain threshold, transm
 
 
 
-\subsubsection{Spectrum sharing among the secondary users}
+\subsubsection{Spectrum Sharing among the Secondary Users}
 Among the secondary users, there is also competition on transmission power, spectrum bands or transmission time slots.
 When we put the consideration on protection of primary users aside, spectrum sharing among the second users is similar with the counterpart problems in the conventional wireless networks, \ie ad hoc networks, cellular networks, etc..
 In CRN, spectrum sharing among the secondary users can be conducted with either cooperative or non-cooperative manner.
@@ -264,7 +264,7 @@ When the secondary users access the spectrum in underlay paradigm, they need to 
 In this case the channel usage, \ie working channel and transmission power, can be decided on the centralized controller.
 %
 Nevertheless, centralized solution is not suitable in many scenarios of CRN.
-First, central authority or controller is not available in many CRNs, \eg Cognitive radio ad hoc network (\gls{CRAHN}).
+First, central authority or controller is not available in many CRNs, \eg cognitive radio ad hoc network (\gls{CRAHN}).
 Second, when the centralized decision maker exists, centralized solution involves a large number of control messages during network operation.
 The centralized entity needs to collect spectrum availability sensed on all the secondary users, then computes the spectrum usage strategy before finally distributing the result back to every secondary user.
 When primary users intensely access the spectrum and result in frequent change of available spectrum, the control overhead becomes a burden for the CRN.
@@ -407,12 +407,12 @@ NE in CRN means the CR user has no incentive to change its operating parameters 
 %In recent years, game theory attracts people attention into apply it in communication systems.
 We introduce the reasons to apply game theory in communication systems and CRN in details.
 
-\subsubsection{Communication equipments are rational.}
+\subsubsection{Communication Equipments are Rational}
 %Although current communication equipments involve little artificial intelligence, 
 Current communication equipments are supposed to be manufactured and operate based on standards to fulfil certain functions, but selfish behaviour may appear on certain individual equipments to achieve advantages over their peers~\cite{game_for_communication_01}.
 For instance, a device in a communication system can be programmed on purpose to maximize the expected utility, which is selfish but is also regarded as \textit{rational} from the perspective of the user using that device.
 
-For example, Wi-Fi equipments are manufactured complying to the IEEE 802.11 standards.
+For example, Wi-Fi equipments are manufactured complying with the IEEE 802.11 standards.
 But it is possible that certain manufacturers or the personal who uses the Wi-Fi system (we use station in the following) manipulate certain parameters to obtain performance advantage over other stations in the network.
 When all the stations in one network are supposed to run distributed coordination function (\gls{DCF}), \ie each station must wait for a random period of time, which is called contention window (\gls{CW}), before accessing the media when it senses the media to be busy, one certain selfish station may not choose to wait but is keen on sensing media.
 The selfish behaviour causes more collisions with other stations, and possibly results in poor performance in the network.
@@ -422,7 +422,7 @@ In Wi-Fi system, game theory facilitates the network operator to issue rules to 
 %or it helps to analyse how much the impact can be caused by the selfish stations.
 % can tell the access point or network operator the impact caused by the selfish systems, and possibly 
 
-\subsubsection{Game theory is effective to solve networking problems.}
+\subsubsection{Game Theory is Effective to Solve Networking Problems}
 Algorithms can be retrieved from the analysis of a problem under the game theoretical framework.
 In the same example of media access in IEEE 802.11 DCF mentioned in the previous item, if stations are allowed to modify the length of contention window, each station will adjust its contention window to obtain the best performance.
 \cite{contentiongame_07} shows as long as each station greedily updates its CW to maximize certain utility, after certain time the system will stabilize in NE. 
@@ -431,7 +431,7 @@ In the case, the best response process naturally defines an algorithm for Wi-Fi 
 Besides, outcome from game theory is robust~\cite{Han:2008:RAW:1457343}.
 
 
-\subsubsection{Game theory is suitable to apply in cognitive radio network because of the properties of CRN.}
+\subsubsection{Game Theory is Suitable to Apply in Cognitive Radio Network because of the Properties of CRN}
 Firstly, as only local information is needed to feed each user, game theory is naturally suitable for designing distributed solutions for cognitive radio networks.
 Distributed solutions doesn't rely on centralized controller, and each user in the network adopts certain action as response to the other users or environment, this falls in the scope of game theory.
 Distributed schemes usually lead to Nash equilibrium, which is usually sub optimal.
@@ -647,7 +647,7 @@ These questions are individually orthogonal, but as pressing problems in each la
 \label{problemLocation}
 \end{figure}
 
-\subsubsection{Problem 1: Utilization of TV white spectrum}
+\subsubsection{Problem 1: Utilization of TV White Spectrum}
 %\subsubsection{Utilize TV White Space}
 
  %Considering that secondary base stations are likely to be from different administrative domains, a distributed solution would be required. And that makes us turn to game theory and the separation of the problem into two different ones. 
@@ -764,71 +764,71 @@ Figure~\ref{overview} illustrate the relation between contributions and the conc
 \end{figure}
 
 
-\subsubsection{Solution to Problem 1: Utilization of TV white spectrum and application of game model in designing algorithm}
-
-%and apply it on different cognitive radio networks.
-%rethink channel allocation problem from the perspective of game theory, particularly,
-
-In term of providing solution to fully exploit TV white space complying to IEEE 802.22 standard, we propose a complete set of methods to regulate the upper bound of transmission power, working channel and power.
-%Both FCC regulation and 802.22 standard try to make TVBD transparent to incumbent users, but as long as TV system is not affected, i.e. certain quality of service is fulfilled, the strict restriction on unlicensed users can be relaxed so that more TVWS can be provided~\cite{multipleIntf_pimrc11}. 
-%Abiding by the operation paradigm using data base, we investigate the maximal downlink transmission power for TVBDs by solving optimization problem where the cumulative interference on TV receivers is under a threshold.
-Our solution makes full use of the current network structure, strictly protect primary users with a centralized scheme which is conducted in the centralized database.
-Proposed scheme also considers the necessity of distributable execution which decides the working channel and transmission power.
-
-As to the channel allocation problem, we innovatively formulate this problem in to a canonical congestion game, and design efficient distributed channel selection strategy with the assistance of the centralized database.
-The successful practice of congestion game in this problem is enlightening for the application of congestion game in other problems where asymmetric interaction exists.
-
-%According to 802.22 regulation, spectrum allocation is done centrally in TV database, this is not realistic when TVBDs belong to different economic interest groups, thus a distributed solution is needed.
-%We propose efficient distributed scheme to allocate the TV channels in order to improve the quality of service of TVBDs.
-%The major difference between our scheme and other spectrum allocation lies in that the downlink transmission power on different channel is different.
-%We formulate this problem into a canonical congestion game, and derive the distributed algorithm from the best response behaviour of the player in the game. 
-
-
-
-
-
-
-\subsubsection{Solution to Problem 2: Versatile robust clustering in CRAHN}
-%We investigate the robust clustering problem thoroughly.
-Our proposed distributed clustering scheme achieves robust cluster structure against primary users.
-Furthermore, the clustering algorithm is versatile enough to fulfil other requirements, \ie fast convergence, less signalling and cluster size control.
-
-Congestion game model is adopted during the algorithm design, which not only contributes the algorithm design directly, but also provides guarantee on convergence and convergence speed.
-
-%We propose a decentralized clustering approach, which is able to form clusters whose sizes are not far away from the desired size, and the generated clusters are more robust than other robust clustering scheme, \ie more secondary users residing in clusters against increasing affection from primary users.
-%Compared to previous work, our proposed scheme involves much less control messages, and the generated clusters are significantly more robust.
-%We formulate one procedure of the scheme into a singleton congestion game, which permits Nash equilibrium when CR users adopt  best response strategy. 
-%building more homogeneous clusters with respect to their size and forcing nodes with a high connectivity degree to the border of a cluster (making the cluster therefore more robust regarding connectivity loss to its neighbor).
-%For our scheme we can prove convergence in cluster formation phase and resolve ambiguities with respect to cluster membership in a game-theoretic setting. 
-%On the basis of proposed scheme, we propose a light weighted version of ROSS, which requires exchanging less overheads.
-%We leave the channel selection undiscussed.
-
-
-
-
-
-
-
-\subsubsection{Solution to Problem 3: Spectrum aware virtual coordinates and geographic routing in CRN}
-
-%In this paper we propose SAViC, spectrum aware virtual coordinates for secondary users in multi-channel multi-hop CRN where secondary users are source limited.
-We design spectrum virtual coordinate for CRN, which is not only independent on geographic position, but decided by connection quality among nodes, for instance, channel availability, link quality or hop numbers.
-With this new coordinate, Euclidean distance between two secondary users reflects the availability of unlicensed channel between them.
-Then the geographic routing can run with this coordinate system as the spectrum virtual coordinate contributes a large part to the decision on next hop.
-%The proposed virtual coordinate depicts the availability of licensed spectrum influenced by primary users, on top of which geographic routing decides the next hop with Euclidean distance metric, and unconsciously detours the primary affecting area, or cuts through the area with better access opportunity.
-%This routing paradigm imposes little computation and communication cost on secondary users after assigning virtual coordinate, besides, it doesn't need real geographic location which is employed in ~\cite{search_geo_routing_chowdhury, routing-crn-jsac12}.
+%\subsubsection{Solution to Problem 1: Utilization of TV white spectrum and application of game model in designing algorithm}
 %
-%This scheme is composed with two steps,
-%\begin{itemize}
-%\item Design virtual coordinates so that virtual coordinates of any two secondary users reflect both geographic distance and opportunistic spectrum availability between them.
-%We design them based on statistics of primary user’s ON/OFF states which are obtained from local spectrum sensing.
+%%and apply it on different cognitive radio networks.
+%%rethink channel allocation problem from the perspective of game theory, particularly,
 %
-%\item After deciding on the next hop, we adopt a lightweight heuristic method to decide which channel to transmit packet when multiple licensed channels exist in the network.
+%In term of providing solution to fully exploit TV white space complying with IEEE 802.22 standard, we propose a complete set of methods to regulate the upper bound of transmission power, working channel and power.
+%%Both FCC regulation and 802.22 standard try to make TVBD transparent to incumbent users, but as long as TV system is not affected, i.e. certain quality of service is fulfilled, the strict restriction on unlicensed users can be relaxed so that more TVWS can be provided~\cite{multipleIntf_pimrc11}. 
+%%Abiding by the operation paradigm using data base, we investigate the maximal downlink transmission power for TVBDs by solving optimization problem where the cumulative interference on TV receivers is under a threshold.
+%Our solution makes full use of the current network structure, strictly protect primary users with a centralized scheme which is conducted in the centralized database.
+%Proposed scheme also considers the necessity of distributable execution which decides the working channel and transmission power.
+%
+%As to the channel allocation problem, we innovatively formulate this problem in to a canonical congestion game, and design efficient distributed channel selection strategy with the assistance of the centralized database.
+%The successful practice of congestion game in this problem is enlightening for the application of congestion game in other problems where asymmetric interaction exists.
+%
+%%According to 802.22 regulation, spectrum allocation is done centrally in TV database, this is not realistic when TVBDs belong to different economic interest groups, thus a distributed solution is needed.
+%%We propose efficient distributed scheme to allocate the TV channels in order to improve the quality of service of TVBDs.
+%%The major difference between our scheme and other spectrum allocation lies in that the downlink transmission power on different channel is different.
+%%We formulate this problem into a canonical congestion game, and derive the distributed algorithm from the best response behaviour of the player in the game. 
 %
 %
-%\end{itemize}
+%
+%
+%
+%
+%\subsubsection{Solution to Problem 2: Versatile robust clustering in CRAHN}
+%%We investigate the robust clustering problem thoroughly.
+%Our proposed distributed clustering scheme achieves robust cluster structure against primary users.
+%Furthermore, the clustering algorithm is versatile enough to fulfil other requirements, \ie fast convergence, less signalling and cluster size control.
+%
+%Congestion game model is adopted during the algorithm design, which not only contributes the algorithm design directly, but also provides guarantee on convergence and convergence speed.
+%
+%%We propose a decentralized clustering approach, which is able to form clusters whose sizes are not far away from the desired size, and the generated clusters are more robust than other robust clustering scheme, \ie more secondary users residing in clusters against increasing affection from primary users.
+%%Compared to previous work, our proposed scheme involves much less control messages, and the generated clusters are significantly more robust.
+%%We formulate one procedure of the scheme into a singleton congestion game, which permits Nash equilibrium when CR users adopt  best response strategy. 
+%%building more homogeneous clusters with respect to their size and forcing nodes with a high connectivity degree to the border of a cluster (making the cluster therefore more robust regarding connectivity loss to its neighbor).
+%%For our scheme we can prove convergence in cluster formation phase and resolve ambiguities with respect to cluster membership in a game-theoretic setting. 
+%%On the basis of proposed scheme, we propose a light weighted version of ROSS, which requires exchanging less overheads.
+%%We leave the channel selection undiscussed.
+%
+%
+%
+%
+%
+%
+%
+%\subsubsection{Solution to Problem 3: Spectrum aware virtual coordinates and geographic routing in CRN}
+%
+%%In this paper we propose SAViC, spectrum aware virtual coordinates for secondary users in multi-channel multi-hop CRN where secondary users are source limited.
+%We design spectrum virtual coordinate for CRN, which is not only independent on geographic position, but decided by connection quality among nodes, for instance, channel availability, link quality or hop numbers.
+%With this new coordinate, Euclidean distance between two secondary users reflects the availability of unlicensed channel between them.
+%Then the geographic routing can run with this coordinate system as the spectrum virtual coordinate contributes a large part to the decision on next hop.
+%%The proposed virtual coordinate depicts the availability of licensed spectrum influenced by primary users, on top of which geographic routing decides the next hop with Euclidean distance metric, and unconsciously detours the primary affecting area, or cuts through the area with better access opportunity.
+%%This routing paradigm imposes little computation and communication cost on secondary users after assigning virtual coordinate, besides, it doesn't need real geographic location which is employed in ~\cite{search_geo_routing_chowdhury, routing-crn-jsac12}.
+%%
+%%This scheme is composed with two steps,
+%%\begin{itemize}
+%%\item Design virtual coordinates so that virtual coordinates of any two secondary users reflect both geographic distance and opportunistic spectrum availability between them.
+%%We design them based on statistics of primary user’s ON/OFF states which are obtained from local spectrum sensing.
+%%
+%%\item After deciding on the next hop, we adopt a lightweight heuristic method to decide which channel to transmit packet when multiple licensed channels exist in the network.
+%%
+%%
+%%\end{itemize}
 
-%To summarize, as the Euclidean distance between two secondary users based on spectrum aware virtual coordinate reflects the availability of unlicensed channel in between from the angel of historical statistics, virtual coordinate contributes a large part to deciding on the on the next hop. 
+%%To summarize, as the Euclidean distance between two secondary users based on spectrum aware virtual coordinate reflects the availability of unlicensed channel in between from the angel of historical statistics, virtual coordinate contributes a large part to deciding on the on the next hop. 
 
 
 

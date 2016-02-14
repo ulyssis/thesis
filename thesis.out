@@ -1,6 +1,6 @@
 \BOOKMARK [0][]{Doc-Start}{Abstract}{}% 1
 \BOOKMARK [0][]{Contents.0}{Contents}{}% 2
-\BOOKMARK [0][]{chapter.1}{1 INTRODUCTION}{}% 3
+\BOOKMARK [0][]{chapter.1}{1 Introduction}{}% 3
 \BOOKMARK [1][-]{section.1.1}{1.1 Cognitive Radio Network}{chapter.1}% 4
 \BOOKMARK [2][-]{subsection.1.1.1}{1.1.1 Functionalities of Cognitive Radio}{section.1.1}% 5
 \BOOKMARK [2][-]{subsection.1.1.2}{1.1.2 Spectrum Sharing in CRN}{section.1.1}% 6
@@ -15,7 +15,7 @@
 \BOOKMARK [2][-]{subsection.1.4.1}{1.4.1 Technical Problems about Utilizing the Unlicensed Spectrum}{section.1.4}% 15
 \BOOKMARK [2][-]{subsection.1.4.2}{1.4.2 Research Questions}{section.1.4}% 16
 \BOOKMARK [1][-]{section.1.5}{1.5 Outline}{chapter.1}% 17
-\BOOKMARK [0][]{chapter.2}{2 BACKGROUND}{}% 18
+\BOOKMARK [0][]{chapter.2}{2 Background}{}% 18
 \BOOKMARK [1][-]{section.2.1}{2.1 Introduction of Game}{chapter.2}% 19
 \BOOKMARK [2][-]{subsection.2.1.1}{2.1.1 Basic Solution Concepts}{section.2.1}% 20
 \BOOKMARK [1][-]{section.2.2}{2.2 Congestion Game}{chapter.2}% 21
@@ -44,7 +44,7 @@
 \BOOKMARK [2][-]{subsection.3.8.1}{3.8.1 Maximal Permitted Power Decision and the Distributed Channel Allocation Schemes}{section.3.8}% 44
 \BOOKMARK [2][-]{subsection.3.8.2}{3.8.2 Performance of Joint Power and Channel Allocation}{section.3.8}% 45
 \BOOKMARK [1][-]{section.3.9}{3.9 Conclusions}{chapter.3}% 46
-\BOOKMARK [0][]{chapter.4}{4 ROBUST CLUSTERING OF AD HOC COGNITIVE RADIO NETWORK}{}% 47
+\BOOKMARK [0][]{chapter.4}{4 Congestion Game in Cluster Membership Assignment}{}% 47
 \BOOKMARK [1][-]{section.4.1}{4.1 Introduction}{chapter.4}% 48
 \BOOKMARK [1][-]{section.4.2}{4.2 Related Work}{chapter.4}% 49
 \BOOKMARK [1][-]{section.4.3}{4.3 System Model}{chapter.4}% 50
@@ -58,7 +58,7 @@
 \BOOKMARK [2][-]{subsection.4.6.1}{4.6.1 Centralized Schemes vs. Decentralized Schemes}{section.4.6}% 58
 \BOOKMARK [2][-]{subsection.4.6.2}{4.6.2 Comparison between Distributed Schemes}{section.4.6}% 59
 \BOOKMARK [1][-]{section.4.7}{4.7 Conclusions}{chapter.4}% 60
-\BOOKMARK [0][]{chapter.5}{5 SPECTRUM AWARE VIRTUAL COORDINATE ASSIGNMENT AND ROUTING IN MULTIHOP COGNITIVE RADIO NETWORK}{}% 61
+\BOOKMARK [0][]{chapter.5}{5 Decentralized Virtual Coordinate Assignment and Routing}{}% 61
 \BOOKMARK [1][-]{section.5.1}{5.1 Introduction}{chapter.5}% 62
 \BOOKMARK [1][-]{section.5.2}{5.2 Related Work}{chapter.5}% 63
 \BOOKMARK [1][-]{section.5.3}{5.3 System Model}{chapter.5}% 64
@@ -73,13 +73,13 @@
 \BOOKMARK [2][-]{subsection.5.6.3}{5.6.3 Routing Performance}{section.5.6}% 73
 \BOOKMARK [2][-]{subsection.5.6.4}{5.6.4 Sensitivity of SAViC to Estimation Errors}{section.5.6}% 74
 \BOOKMARK [1][-]{section.5.7}{5.7 Conclusions}{chapter.5}% 75
-\BOOKMARK [0][]{chapter.6}{6 Conclusion and Future work}{}% 76
+\BOOKMARK [0][]{chapter.6}{6 Conclusion and Future Work}{}% 76
 \BOOKMARK [1][-]{section.6.1}{6.1 Contribution}{chapter.6}% 77
 \BOOKMARK [1][-]{section.6.2}{6.2 Future Work}{chapter.6}% 78
 \BOOKMARK [0][]{chapter.7}{7 Appendix}{}% 79
 \BOOKMARK [0][]{.1.A}{ A Proof of Theorem 3.5.1}{}% 80
 \BOOKMARK [0][]{.1.B}{ B Deviation of Problem 3.11}{}% 81
-\BOOKMARK [0][]{section*.24}{Bibliography}{}% 82
-\BOOKMARK [0][]{section*.24}{List of Figures}{}% 83
-\BOOKMARK [0][]{section*.24}{List of Tables}{}% 84
-\BOOKMARK [0][]{section*.24}{Glossary}{}% 85
+\BOOKMARK [0][]{section*.23}{Bibliography}{}% 82
+\BOOKMARK [0][]{section*.23}{List of Figures}{}% 83
+\BOOKMARK [0][]{section*.23}{List of Tables}{}% 84
+\BOOKMARK [0][]{section*.23}{Glossary}{}% 85

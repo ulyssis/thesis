@@ -1,4 +1,15 @@
-\chapter{SPECTRUM AWARE VIRTUAL COORDINATE ASSIGNMENT AND ROUTING IN MULTIHOP COGNITIVE RADIO NETWORK}
+\chapter{Decentralized Virtual Coordinate Assignment and Routing}
+% SPECTRUM AWARE VIRTUAL COORDINATE ASSIGNMENT AND ROUTING IN MULTIHOP COGNITIVE RADIO NETWORK
+\begin{quote}
+{\textbf{Abstract}\\
+\small In order to facilitate light weight geographic routing, we design spectrum virtual coordinate for CRN, which is not only independent on geographic position, but decided by connection quality among nodes, for instance, channel availability, link quality or hop numbers.
+With this new coordinate, Euclidean distance between two secondary users reflects the availability of unlicensed channel between them.
+Then the geographic routing can run with this coordinate system as the spectrum virtual coordinate contributes a large part to the decision on next hop.
+}
+\end{quote}
+
+
+
 %\section{Introduction}
 %\label{introduction}
 %
@@ -296,7 +307,7 @@ where $\Delta_{\textsc{\tiny OFF}}$ is the number of sensing periods when channe
 %$\gamma_i^k$ represents the likelihood that $i$ is allowed to access the licensed channel $k$.
 To implement SAViC whose resultant Euclidean distance between two nodes reflects both influence from primary users and distance in terms of hops, we need to design a normalized quantified spectrum availability $\lambda_i$.
 
-\subsubsection{Single licensed channel}
+\subsubsection{Single Licensed Channel}
 When there is only one licensed channel in CRN (the superscript of channel $\lambda$ is omitted), the normalized spectrum availability on node $i$ is proposed as,% (upper script for channel is omitted for clarity), 
 \begin{equation}
 \lambda_i = -\ln \gamma_i+ c \cdot \gamma_i
@@ -348,7 +359,7 @@ In the simulation part, we choose $c=0.2$ so that $\lambda$ visibly reflects the
 %Echoing the idea of virtual coordinate assignment in Figure \ref{fig:SA-VCapidea}, this function should be monotonically decreasing with respect to $\lambda_i$, thus the tuning parameter $c$ should be smaller than 1.ZA
 
 
-\subsubsection{Multiple licensed channels}
+\subsubsection{Multiple Licensed Channels}
 When multiple licensed channels are allowed to use without interfering primary users, one node can switch to an another channel which is at present available to send or forward packet, then the normalized channel availability is,
 \begin{equation}
 \gamma_i = 1-\prod_{k=1}^{|C|} (1-\gamma_i^k)
@@ -375,7 +386,7 @@ Let ${T_{ON}^k}$ be the length of time period that channel $k$ is not available,
 ${T_{ON}^k}$ is recorded within $T_{access}$, and we use $\tau^k = \overline {T_{ON}^k}$ to denote the average value of the time duration that channel $k$ is occupied by primary user, which is the maximum time period that secondary user is blocked from sending/forwarding.
 %$\tau^k$ models when channel is not available, the average maximal time needed to wait before the spectrum opportunity comes back again.
 
-\subsubsection{Single licensed channel}
+\subsubsection{Single Licensed Channel}
 In single licensed channel scenario, the normalized maximum blocking time on node $i$ is (superscript $k$ is omitted), 
 \begin{equation}
 \label{eq:SingleChannel_blockingtime}
@@ -418,7 +429,7 @@ b  < e^{\gamma_i\cdot \tau_i}
 \end{equation}
 then we set the tuning parameter $b$ as 1.
 
-\subsubsection{Multiple licensed channels}
+\subsubsection{Multiple Licensed Channels}
 In multiple licensed channel scenario, $\tau_i$ equals to the smallest maximum blocking time over all secondary channels on node $i$, 
 \begin{equation}
 \tau_i = \min \tau_i^x, x\in C
@@ -823,7 +834,7 @@ SAViC still outperform the other schemes especially in the aspect of PDR.
 
 
 
-\subsubsection{Longest Blocking time Based Virtual Coordinate}    \mbox{}
+\subsubsection{Longest Blocking Time Based Virtual Coordinate}    \mbox{}
 \label{subsection:blocking_time}
 %As we have pointed out in \ref{BT}, the duty cycle of channel's availability is not adequate to describe the waiting time in buffer for a packet if there is no spectrum available, thus we test the delay based virtual coordinate when all PUs' duty cycles are identical.
 

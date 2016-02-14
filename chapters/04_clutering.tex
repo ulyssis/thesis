@@ -1,4 +1,16 @@
-\chapter{ROBUST CLUSTERING OF AD HOC COGNITIVE RADIO NETWORK}
+\chapter{Congestion Game in Cluster Membership Assignment}
+% ROBUST CLUSTERING OF AD HOC COGNITIVE RADIO NETWORK
+\begin{quote}
+{\textbf{Abstract}\\
+\small In the process of forming clusters, every secondary user needs to decide with whom to form a cluster, or which cluster to join.
+Congestion game model is adopted to analyse this process, which not only contributes the algorithm design directly, but also provides guarantee on reaching Nash Equilibrium and convergence speed.
+
+Our proposed distributed clustering scheme outperforms comparison scheme in terms of robustness against primary users, convergence speed and volume of control messages.
+Furthermore, the clustering algorithm is versatile enough to fulfil other requirements such like fast convergence and cluster size control.
+}
+\end{quote}
+
+
 \section{Introduction}
 \label{intro}
 %\todo[inline]{The first paragraph will be moved/integrated to INTRODUCTION chapter later.}
@@ -616,7 +628,7 @@ Thus, we must answer this question raised when implementing ROSS-DGA.
 In the following we show that the process of membership clarification can be formulated into a singleton congestion game, and a equilibrium state is reached after a finite number of best response updates.
 
 \subsubsection{Bridging ROSS-DGA with Congestion Game}
-In this part, we illustrate that when debatable nodes decide on the exclusive clusters to stay, in particular, the 
+%In this part, we illustrate that when debatable nodes decide on the exclusive clusters to stay, in particular, the 
 To formulate the problem of membership clarification for the debatable nodes in the context of a game, we look at the problem from a different perspective. 
 In the new perspective, the debatable nodes are regarded as isolated and don't belong to any cluster, which means the clusters they used to belong to become their neighbouring clusters. 
 Then as to each debatable node, the previous problem to decide which clusters to leave becomes a new problem that which cluster to join.
@@ -991,8 +1003,8 @@ The final clusterings of the example CRN by SOC and linear programming are as fo
 \begin{center}
 %\subfigure[ROSS]{\label{fig:final_clustering_ross}\includegraphics[width=0.3\textwidth]{final_clustering_ross}}
 %
-\subfigure[SOC]{\label{fig:final_clustering_soc}\includegraphics[width=0.45\textwidth]{final_clustering_soc}}
-\subfigure[Linear programming]{\label{fig:final_clustering_LP}\includegraphics[width=0.45\textwidth]{final_clustering_LP}}
+\subfigure[SOC]{\includegraphics[width=0.45\textwidth]{final_clustering_soc}\label{fig:final_clustering_soc}}
+\subfigure[Linear programming]{\includegraphics[width=0.45\textwidth]{final_clustering_LP}\label{fig:final_clustering_LP}}
 \end{center}
 \caption{Final clustering of the example CRN}
 \label{fig:final_clustering}
@@ -1313,7 +1325,7 @@ The clusters generated from SOC demonstrate randomness on cluster sizes, which d
 \begin{figure}[!h]
   \centering
    \includegraphics[width=0.7\linewidth]{cdf_clusterSize_300.pdf}
-  \caption{Cumulative distribution of CRs residing in clusters with different sizes. Desired cluster size $x$ is . 300 CRs, 30 PRs, the average number of neighbours is 30}
+  \caption{Cumulative distribution of CRs residing in clusters with different sizes. Desired cluster size $x$ is 12. 300 CRs, 30 PRs, the average number of neighbours is 30}
   \label{cdf_clusterSize_300}
 \end{figure}
 

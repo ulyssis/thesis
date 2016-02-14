@@ -1,8 +1,27 @@
 \chapter{Congestion Game in Spectrum Allocation}
 % DISTRIBUTED CHANNEL AND POWER ALLOCATION IEEE 802.22 NETWORKS
 
+\begin{quote}
+{\textbf{Abstract}\\
+\small In this chapter, we will see the application of congestion game in solving the channel allocation problem in the context of TV white space.
+The channel allocation problem we will address is a general problem, as the transmission power is not identical for every transmitter and on each channel, actually, the transmission power could be unique for each transmitter-channel combination.
+With the suitable utility function designed for transmitters, the behaviours of the transmitters can be described by a congestion game.
+The algorithm of channel allocation is derived from the dynamics of the transmitter in the game, which reaches Nash equilibrium quickly.
+
+Furthermore, we provide a complete solution to fully exploit TV white space complying with IEEE 802.22 standard.
+We propose a centralized methods to regulate the upper bound of transmission power, so that to strictly protect the primary users.
+%Proposed scheme also considers the necessity of distributable execution which decides the working channel and transmission power.
+The the distributed channel allocation and power control are conducted sequentially.
+%As to the channel allocation problem, we innovatively formulate this problem in to a canonical congestion game, and design efficient distributed channel selection strategy with the assistance of the centralized database.
+%The successful practice of congestion game in this problem is enlightening for the application of congestion game in other problems where asymmetric interaction exists.
+}
+\end{quote}
 
 \section{Introduction}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Secondary users working with TV white space is promising to cope with the scarcity of spectrum resources~\cite{FCC_2010_sedond_memorandumm}. 
 Firstly, more unused TV white frequencies become vacant than ever with the ongoing transition from analog to digital broadcasts. Secondly, the frequencies of TV bands enable broadband access over larger geographic ranges compared to higher frequency bands. Nevertheless, services on TV receivers need to be protected with so called interference margin~\footnotetext[2]{interference margin is the maximal interference caused by secondary users, which doesn't violate TV service.}~\cite{multipleIntf_pimrc11} which should not be exceeded by the accumulated interference caused by all secondary users working on the the channel.

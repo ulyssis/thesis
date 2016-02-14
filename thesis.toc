@@ -1,21 +1,22 @@
 \contentsline {chapter}{Abstract}{iii}{Doc-Start}
-\contentsline {chapter}{\numberline {1}INTRODUCTION}{1}{chapter.1}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Cognitive Radio Network}{2}{section.1.1}
 \contentsline {subsection}{\numberline {1.1.1}Functionalities of Cognitive Radio}{3}{subsection.1.1.1}
-\contentsline {subsubsection}{\numberline {1.1.1.1}Spectrum Decision}{4}{subsubsection.1.1.1.1}
-\contentsline {subsubsection}{\numberline {1.1.1.2}Spectrum Sharing}{4}{subsubsection.1.1.1.2}
-\contentsline {subsubsection}{\numberline {1.1.1.3}Spectrum Mobility}{4}{subsubsection.1.1.1.3}
+\contentsline {subsubsection}{\numberline {1.1.1.1}Spectrum Sensing}{3}{subsubsection.1.1.1.1}
+\contentsline {subsubsection}{\numberline {1.1.1.2}Spectrum Decision}{4}{subsubsection.1.1.1.2}
+\contentsline {subsubsection}{\numberline {1.1.1.3}Spectrum Sharing}{4}{subsubsection.1.1.1.3}
+\contentsline {subsubsection}{\numberline {1.1.1.4}Spectrum Mobility}{4}{subsubsection.1.1.1.4}
 \contentsline {subsection}{\numberline {1.1.2}Spectrum Sharing in CRN}{5}{subsection.1.1.2}
-\contentsline {subsubsection}{\numberline {1.1.2.1}Spectrum Sharing between primary users and secondary users}{5}{subsubsection.1.1.2.1}
-\contentsline {subsubsection}{\numberline {1.1.2.2}Spectrum sharing among the secondary users}{6}{subsubsection.1.1.2.2}
+\contentsline {subsubsection}{\numberline {1.1.2.1}Spectrum Sharing between Primary and Secondary Users}{5}{subsubsection.1.1.2.1}
+\contentsline {subsubsection}{\numberline {1.1.2.2}Spectrum Sharing among the Secondary Users}{6}{subsubsection.1.1.2.2}
 \contentsline {subsection}{\numberline {1.1.3}Operation Models of Spectrum Sharing in CRN}{6}{subsection.1.1.3}
 \contentsline {subsubsection}{\numberline {1.1.3.1}Centralized Scheme}{6}{subsubsection.1.1.3.1}
 \contentsline {subsubsection}{\numberline {1.1.3.2}Distributed Scheme}{7}{subsubsection.1.1.3.2}
 \contentsline {section}{\numberline {1.2}Game Theory and CRN}{8}{section.1.2}
 \contentsline {subsection}{\numberline {1.2.1}Application of Game Theory in CRN}{9}{subsection.1.2.1}
-\contentsline {subsubsection}{\numberline {1.2.1.1}Communication equipments are rational.}{10}{subsubsection.1.2.1.1}
-\contentsline {subsubsection}{\numberline {1.2.1.2}Game theory is effective to solve networking problems.}{10}{subsubsection.1.2.1.2}
-\contentsline {subsubsection}{\numberline {1.2.1.3}Game theory is suitable to apply in cognitive radio network because of the properties of CRN.}{10}{subsubsection.1.2.1.3}
+\contentsline {subsubsection}{\numberline {1.2.1.1}Communication Equipments are Rational}{10}{subsubsection.1.2.1.1}
+\contentsline {subsubsection}{\numberline {1.2.1.2}Game Theory is Effective to Solve Networking Problems}{10}{subsubsection.1.2.1.2}
+\contentsline {subsubsection}{\numberline {1.2.1.3}Game Theory is Suitable to Apply in Cognitive Radio Network because of the Properties of CRN}{10}{subsubsection.1.2.1.3}
 \contentsline {section}{\numberline {1.3}Representative Cognitive Radio Networks and Available Licensed Spectrum}{11}{section.1.3}
 \contentsline {subsection}{\numberline {1.3.1}Cognitive Radio Ad Hoc Network}{11}{subsection.1.3.1}
 \contentsline {subsection}{\numberline {1.3.2}Cognitive Radio Cellular Network}{11}{subsection.1.3.2}
@@ -23,16 +24,13 @@
 \contentsline {subsubsection}{\numberline {1.3.3.1}Regulations and Standards}{13}{subsubsection.1.3.3.1}
 \contentsline {section}{\numberline {1.4}Problem Statement}{14}{section.1.4}
 \contentsline {subsection}{\numberline {1.4.1}Technical Problems about Utilizing the Unlicensed Spectrum}{14}{subsection.1.4.1}
-\contentsline {subsubsection}{\numberline {1.4.1.1}Problem 1: Utilization of TV white spectrum}{15}{subsubsection.1.4.1.1}
+\contentsline {subsubsection}{\numberline {1.4.1.1}Problem 1: Utilization of TV White Spectrum}{15}{subsubsection.1.4.1.1}
 \contentsline {subsubsection}{\numberline {1.4.1.2}Problem 2: Robust Cluster Structure in Ad Hoc Cognitive Radio Network}{15}{subsubsection.1.4.1.2}
 \contentsline {subsubsection}{\numberline {1.4.1.3}Problem 3: Light Weight Routing in CRN}{16}{subsubsection.1.4.1.3}
 \contentsline {subsection}{\numberline {1.4.2}Research Questions}{16}{subsection.1.4.2}
 \contentsline {subsubsection}{\numberline {1.4.2.1}Contributions}{16}{subsubsection.1.4.2.1}
-\contentsline {subsubsection}{\numberline {1.4.2.2}Solution to Problem 1: Utilization of TV white spectrum and application of game model in designing algorithm}{17}{subsubsection.1.4.2.2}
-\contentsline {subsubsection}{\numberline {1.4.2.3}Solution to Problem 2: Versatile robust clustering in CRAHN}{17}{subsubsection.1.4.2.3}
-\contentsline {subsubsection}{\numberline {1.4.2.4}Solution to Problem 3: Spectrum aware virtual coordinates and geographic routing in CRN}{18}{subsubsection.1.4.2.4}
-\contentsline {section}{\numberline {1.5}Outline}{18}{section.1.5}
-\contentsline {chapter}{\numberline {2}BACKGROUND}{19}{chapter.2}
+\contentsline {section}{\numberline {1.5}Outline}{17}{section.1.5}
+\contentsline {chapter}{\numberline {2}Background}{19}{chapter.2}
 \contentsline {section}{\numberline {2.1}Introduction of Game}{19}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}Basic Solution Concepts}{20}{subsection.2.1.1}
 \contentsline {subsubsection}{\numberline {2.1.1.1}Dominant Strategy Equilibrium}{20}{subsubsection.2.1.1.1}
@@ -50,34 +48,34 @@
 \contentsline {chapter}{\numberline {3}Congestion Game in Spectrum Allocation}{29}{chapter.3}
 \contentsline {section}{\numberline {3.1}Introduction}{29}{section.3.1}
 \contentsline {section}{\numberline {3.2}System Model and Problem Statement}{31}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Problem Statement}{32}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.1}Problem Statement}{33}{subsection.3.2.1}
 \contentsline {section}{\numberline {3.3}Problem Decomposition and Related Works}{35}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}Problem Decomposition}{35}{subsection.3.3.1}
 \contentsline {subsection}{\numberline {3.3.2}Resource Allocation in CRN}{36}{subsection.3.3.2}
 \contentsline {subsection}{\numberline {3.3.3}Utilization of TV White Space}{37}{subsection.3.3.3}
 \contentsline {section}{\numberline {3.4}The Maximum Permitted Transmission Power}{39}{section.3.4}
-\contentsline {section}{\numberline {3.5}Channel Allocation with Fixed Transmission Power}{41}{section.3.5}
+\contentsline {section}{\numberline {3.5}Channel Allocation with Fixed Transmission Power}{40}{section.3.5}
 \contentsline {subsection}{\numberline {3.5.1}Centralized optimization programming}{41}{subsection.3.5.1}
 \contentsline {subsection}{\numberline {3.5.2}Distributed White Space Channel Allocation (WitheCat): Algorithm and Protocol}{42}{subsection.3.5.2}
-\contentsline {subsection}{\numberline {3.5.3}Analysis in game theoretical framework}{43}{subsection.3.5.3}
+\contentsline {subsection}{\numberline {3.5.3}Analysis in game theoretical framework}{44}{subsection.3.5.3}
 \contentsline {section}{\numberline {3.6}Variable transmission power after channel allocation}{47}{section.3.6}
-\contentsline {section}{\numberline {3.7}Joint Channel and Power Allocation}{47}{section.3.7}
+\contentsline {section}{\numberline {3.7}Joint Channel and Power Allocation}{48}{section.3.7}
 \contentsline {subsection}{\numberline {3.7.1}Centralized optimization}{48}{subsection.3.7.1}
 \contentsline {section}{\numberline {3.8}Performance Evaluation}{49}{section.3.8}
-\contentsline {subsection}{\numberline {3.8.1}Maximal Permitted Power Decision and the Distributed Channel Allocation Schemes}{50}{subsection.3.8.1}
-\contentsline {subsection}{\numberline {3.8.2}Performance of Joint Power and Channel Allocation}{55}{subsection.3.8.2}
+\contentsline {subsection}{\numberline {3.8.1}Maximal Permitted Power Decision and the Distributed Channel Allocation Schemes}{51}{subsection.3.8.1}
+\contentsline {subsection}{\numberline {3.8.2}Performance of Joint Power and Channel Allocation}{56}{subsection.3.8.2}
 \contentsline {section}{\numberline {3.9}Conclusions}{56}{section.3.9}
-\contentsline {chapter}{\numberline {4}ROBUST CLUSTERING OF AD HOC COGNITIVE RADIO NETWORK}{59}{chapter.4}
+\contentsline {chapter}{\numberline {4}Congestion Game in Cluster Membership Assignment}{59}{chapter.4}
 \contentsline {section}{\numberline {4.1}Introduction}{59}{section.4.1}
-\contentsline {section}{\numberline {4.2}Related Work}{60}{section.4.2}
-\contentsline {section}{\numberline {4.3}System Model}{61}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Clustering}{62}{subsection.4.3.1}
+\contentsline {section}{\numberline {4.2}Related Work}{61}{section.4.2}
+\contentsline {section}{\numberline {4.3}System Model}{62}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Clustering}{63}{subsection.4.3.1}
 \contentsline {section}{\numberline {4.4}Distributed Coordination Framework: Clustering Algorithm}{63}{section.4.4}
 \contentsline {subsection}{\numberline {4.4.1}Phase I - Cluster Formation}{64}{subsection.4.4.1}
 \contentsline {subsubsection}{\numberline {4.4.1.1}Determining Cluster Heads and Form the Initial Clusters}{64}{subsubsection.4.4.1.1}
 \contentsline {subsubsection}{\numberline {4.4.1.2}Guarantee Availability of Common Control Channel}{67}{subsubsection.4.4.1.2}
 \contentsline {subsubsection}{\numberline {4.4.1.3}Cluster Size Control in Dense CRN}{67}{subsubsection.4.4.1.3}
-\contentsline {subsection}{\numberline {4.4.2}Phase II - Membership Clarification}{70}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.2}Phase II - Membership Clarification}{69}{subsection.4.4.2}
 \contentsline {subsubsection}{\numberline {4.4.2.1}Distributed Greedy Algorithm}{71}{subsubsection.4.4.2.1}
 \contentsline {subsubsection}{\numberline {4.4.2.2}Bridging ROSS-DGA with Congestion Game}{72}{subsubsection.4.4.2.2}
 \contentsline {subsubsection}{\numberline {4.4.2.3}Distributed Fast Algorithm (DFA)}{74}{subsubsection.4.4.2.3}
@@ -95,18 +93,18 @@
 \contentsline {subsubsection}{\numberline {4.6.2.2}Survival Rate of Clusters with Increasing Primary Users}{87}{subsubsection.4.6.2.2}
 \contentsline {subsubsection}{\numberline {4.6.2.3}Cluster Size Control}{87}{subsubsection.4.6.2.3}
 \contentsline {section}{\numberline {4.7}Conclusions}{89}{section.4.7}
-\contentsline {chapter}{\numberline {5}SPECTRUM AWARE VIRTUAL COORDINATE ASSIGNMENT AND ROUTING IN MULTIHOP COGNITIVE RADIO NETWORK}{91}{chapter.5}
+\contentsline {chapter}{\numberline {5}Decentralized Virtual Coordinate Assignment and Routing}{91}{chapter.5}
 \contentsline {section}{\numberline {5.1}Introduction}{91}{section.5.1}
 \contentsline {section}{\numberline {5.2}Related Work}{92}{section.5.2}
 \contentsline {section}{\numberline {5.3}System Model}{93}{section.5.3}
 \contentsline {section}{\numberline {5.4}Spectrum Aware Virtual Coordinates}{94}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}Assign Spectrum Aware Virtual Coordinate}{96}{subsection.5.4.1}
-\contentsline {subsection}{\numberline {5.4.2}Normalized Spectrum Availability on Secondary Users}{97}{subsection.5.4.2}
-\contentsline {subsubsection}{\numberline {5.4.2.1}Single licensed channel}{97}{subsubsection.5.4.2.1}
-\contentsline {subsubsection}{\numberline {5.4.2.2}Multiple licensed channels}{98}{subsubsection.5.4.2.2}
-\contentsline {subsection}{\numberline {5.4.3}Normalized Longest Blocking Time on Secondary Users}{99}{subsection.5.4.3}
-\contentsline {subsubsection}{\numberline {5.4.3.1}Single licensed channel}{99}{subsubsection.5.4.3.1}
-\contentsline {subsubsection}{\numberline {5.4.3.2}Multiple licensed channels}{100}{subsubsection.5.4.3.2}
+\contentsline {subsection}{\numberline {5.4.1}Assign Spectrum Aware Virtual Coordinate}{95}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}Normalized Spectrum Availability on Secondary Users}{96}{subsection.5.4.2}
+\contentsline {subsubsection}{\numberline {5.4.2.1}Single Licensed Channel}{97}{subsubsection.5.4.2.1}
+\contentsline {subsubsection}{\numberline {5.4.2.2}Multiple Licensed Channels}{98}{subsubsection.5.4.2.2}
+\contentsline {subsection}{\numberline {5.4.3}Normalized Longest Blocking Time on Secondary Users}{98}{subsection.5.4.3}
+\contentsline {subsubsection}{\numberline {5.4.3.1}Single Licensed Channel}{99}{subsubsection.5.4.3.1}
+\contentsline {subsubsection}{\numberline {5.4.3.2}Multiple Licensed Channels}{99}{subsubsection.5.4.3.2}
 \contentsline {section}{\numberline {5.5}Geographic Routing and Opportunistic Spectrum Access}{100}{section.5.5}
 \contentsline {section}{\numberline {5.6}Performance Evaluation}{101}{section.5.6}
 \contentsline {subsection}{\numberline {5.6.1}Simulation Setup}{101}{subsection.5.6.1}
@@ -115,17 +113,17 @@
 \contentsline {subsection}{\numberline {5.6.2}Success Rate of Geographic Routing on Finding Path}{102}{subsection.5.6.2}
 \contentsline {subsection}{\numberline {5.6.3}Routing Performance}{103}{subsection.5.6.3}
 \contentsline {subsubsection}{\numberline {5.6.3.1}Duty Cycle Based Virtual Coordinate}{103}{subsubsection.5.6.3.1}
-\contentsline {subsubsection}{\numberline {5.6.3.2}Longest Blocking time Based Virtual Coordinate}{105}{subsubsection.5.6.3.2}
-\contentsline {subsection}{\numberline {5.6.4}Sensitivity of SAViC to Estimation Errors}{108}{subsection.5.6.4}
-\contentsline {section}{\numberline {5.7}Conclusions}{108}{section.5.7}
-\contentsline {chapter}{\numberline {6}Conclusion and Future work}{109}{chapter.6}
+\contentsline {subsubsection}{\numberline {5.6.3.2}Longest Blocking Time Based Virtual Coordinate}{105}{subsubsection.5.6.3.2}
+\contentsline {subsection}{\numberline {5.6.4}Sensitivity of SAViC to Estimation Errors}{107}{subsection.5.6.4}
+\contentsline {section}{\numberline {5.7}Conclusions}{107}{section.5.7}
+\contentsline {chapter}{\numberline {6}Conclusion and Future Work}{109}{chapter.6}
 \contentsline {section}{\numberline {6.1}Contribution}{109}{section.6.1}
 \contentsline {section}{\numberline {6.2}Future Work}{110}{section.6.2}
 \contentsline {chapter}{\numberline {7}Appendix}{113}{chapter.7}
 \contentsline {chapter}{ \numberline {A}Proof of Theorem \ref {noconvergence}}{115}{.1.A}
 \contentsline {chapter}{ \numberline {B}Deviation of Problem \ref {QLP}}{117}{.1.B}
 \vspace *{\baselineskip }
-\contentsline {chapter}{Bibliography}{119}{section*.24}
-\contentsline {chapter}{List of Figures}{132}{section*.24}
-\contentsline {chapter}{List of Tables}{136}{section*.24}
-\contentsline {chapter}{Glossary}{138}{section*.24}
+\contentsline {chapter}{Bibliography}{119}{section*.23}
+\contentsline {chapter}{List of Figures}{132}{section*.23}
+\contentsline {chapter}{List of Tables}{136}{section*.23}
+\contentsline {chapter}{Glossary}{138}{section*.23}
