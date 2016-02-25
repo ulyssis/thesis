@@ -478,7 +478,8 @@ Secondary users have the same transmission range on both licensed and control ch
 As to a pair of secondary users, when the distance between them is smaller than secondary users' transmission range, we assume the pair is able to communicate on both control channel and licensed channel, and the both are considered to be neighbours of each other.
 %When licensed channels are available on two neighbouring secondary nodes in the same time, payload communication can be conducted on one or multiple licensed channels.
 %Any user outside the transmission range of the transmitter can not receive data from it, \ie a secondary user outside primary users' transmission ranges can not detect their presence, whereas a secondary user can always communicate with secondary sender, or detect the operating primary user, when it locates within the secondary sender or the operating primary user's transmission range.
-A secondary user outside primary users' transmission ranges can not detect their presence, as the transmission range of primary users is limited and secondary users are at different locations, secondary users have different views on the occupancy of the spectrum (apart from the fact that there might be false negatives in the sensing process), i.e., $V_i \neq V_j$, for $i \neq j$.
+When a secondary user sits outside primary users' transmission ranges, it can not detect their presence.
+As the transmission range of primary users is limited and secondary users are at different locations, secondary users have different views on the occupancy of the spectrum (apart from the fact that there might be false negatives in the sensing process), i.e., $V_i \neq V_j$, for $i \neq j$.	
 %
 %Neighbourhood establishment and maintenance with control channel and according to a neighborhood discovery protocol which is out of scope of our work.
 %While primary users are assumed to be fixed, secondary users can be mobile.
@@ -1917,7 +1918,7 @@ Biography text here.
 
 
 \bibliographystyle{IEEEtran}
-\bibliography{../../thesis/thesisTemplate/backmatter/myrefs}
+\bibliography{../backmatter/myrefs}
 
 \end{document}
 

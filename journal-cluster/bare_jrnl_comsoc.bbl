@@ -139,6 +139,11 @@ S.~Liu, L.~Lazos, and M.~Krunz, ``Cluster-based control channel allocation in
   opportunistic cognitive radio networks,'' \emph{IEEE Trans. Mob. Comput.},
   vol.~11, no.~10, pp. 1436--1449, 2012.
 
+\bibitem{sensing_survey_2009}
+T.~Yucek and H.~Arslan, ``A survey of spectrum sensing algorithms for cognitive
+  radio applications,'' \emph{IEEE Communications Surveys Tutorials}, vol.~11,
+  no.~1, pp. 116--130, First 2009.
+
 \bibitem{channelHopping_Rendezvous_2014}
 Y.~Zhang, G.~Yu, Q.~Li, H.~Wang, X.~Zhu, and B.~Wang, ``Channel-hopping-based
   communication rendezvous in cognitive radio networks,'' \emph{IEEE/ACM
@@ -148,11 +153,6 @@ Y.~Zhang, G.~Yu, Q.~Li, H.~Wang, X.~Zhu, and B.~Wang, ``Channel-hopping-based
 Z.~Gu, Q.-S. Hua, and W.~Dai, ``Fully distributed algorithms for blind
   rendezvous in cognitive radio networks,'' in \emph{Proceedings of the 2014
   ACM MobiHoc}, ser. MobiHoc '14.
-
-\bibitem{sensing_survey_2009}
-T.~Yucek and H.~Arslan, ``A survey of spectrum sensing algorithms for cognitive
-  radio applications,'' \emph{IEEE Communications Surveys Tutorials}, vol.~11,
-  no.~1, pp. 116--130, First 2009.
 
 \bibitem{Ackermann06purenash}
 H.~Ackermann, H.~Röglin, and B.~Vöcking, ``Pure {N}ash equilibria in
