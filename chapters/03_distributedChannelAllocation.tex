@@ -545,6 +545,7 @@ Thus, there is exists a interference margin created by using multiple channels, 
 First, we give the centralized solution to obtain the global optimum for this subproblem, then the decentralized scheme under the game theoretic framework is introduced.
 
 \subsection{Centralized optimization programming}
+\label{03_centralized_ca}
 We formulate the channel allocation problem into a binary quadratic programming problem which can be solved in a centralized way.  
 Let $X_i = \{x_{i1}\cdots x_{ik}\cdots x_{i|\mathcal{C}|}\}$ denote the vector of channel usage, there is $|X_i| = |\mathcal{C}|$ and binary element $x_{ik}$ represent whether WBS $i$ occupies channel $k$.
 For two WBSs $i$ and $j$, there is,
@@ -990,7 +991,7 @@ We compare our proposed channel allocation scheme \textit{whiteCat} with three o
 WBSs update such mapping dynamically and this approach converges to correlated equilibrium. 
 Please refer the original paper \cite{hart00correlatedeq} for details.
 		
-\item \textit{Quadratic optimization}: centralized quadratic optimization introduced in Section~\ref{CA_fixedPower_2subproblem}.
+\item \textit{Quadratic optimization}: centralized quadratic optimization introduced in Section~\ref{03_centralized_ca}.
 \end{itemize}
 
 

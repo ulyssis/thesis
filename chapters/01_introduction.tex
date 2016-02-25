@@ -236,8 +236,8 @@ Whereas with non-cooperative spectrum sharing, secondary users only consider the
 
 
 
-\subsection{Operation Models of Spectrum Sharing in CRN}
-\label{operation_model}
+%\subsection{Operation Models of Spectrum Sharing in CRN}
+%\label{operation_model}
 From the perspective of network operation, spectrum sharing can be classified as centralized and distributed spectrum sharing.
 
 %Centralized spectrum decision doesn't work well outside the TV channel scenario.
@@ -451,10 +451,10 @@ We leave the introduction of game theory and game models in the Chapter~\ref{bac
 
 
 
-\section{Representative Cognitive Radio Networks and Available Licensed Spectrum}
+\subsection{Representative Cognitive Radio Networks}
 We introduce two types of cognitive radio networks, which contains the problems we will tackle in this dissertation.
 
-\subsection{Cognitive Radio Ad Hoc Network}
+\subsubsection{Cognitive Radio Ad Hoc Network}
 %An ad hoc network is a decentralized paradigm of wireless network, which consists of a collection of autonomous mobile users which communicate over wireless links.
 
 %Efficient distributed algorithms are needed to determine network organization, link scheduling, and routing.
@@ -502,14 +502,14 @@ It is challenging for CRAHN to meet the QoS criteria withe the spatial and tempo
 %
 %Recent standard published in Nov. 2010 suggests both sensing ability as well as database look-up to avoid affecting primary systems.
 
-\subsection{Cognitive Radio Cellular Network}
+\subsubsection{Cognitive Radio Cellular Network}
 According to Cisco's forecast~\cite{Cisco_report_2015} on mobile data traffic, which published in 2015, the number of mobile-connected devices exceeded the world’s population in 2014 and by 2019 there will be nearly 1.5 mobile devices per capita.
 The monthly global mobile data traffic will surpass 24.3 exabytes by 2019, which is 10 times more than that in 2014.
 Although there is a strong trend that more traffic load will be offloaded from cellular networks (on to Wi-Fi), cellular networks still face the big challenge and need to explore new resource to meet the demand on increased traffic.
 The state of the art mobile systems, such as 3GPP Long term Evolution (\gls{LTE}) and High Speed Packet Access (\gls{HSPA}) are designed to be very efficient on spectrum utilization, thus cellular networks look into cognitive radio for solution.
 
 
-\subsection{CRN Working in TV White Space}
+\subsubsection{CRN Working in TV White Space}
 \label{TVWS}
 %Opportunistic utilization for unlicensed secondary users (also named as white space devices, abbreviated as WSD) working with TV broadcast spectrum (TV white space) is promising to cope with the scarcity of spectrum resources\cite{fcc}. 
 %UHF TV spectrum (TV white space, TVWS) has low utilization in both spatial and temporal dimensions. \fmjg{xxx relevant data and citation needed here XX also mention where this is the case, i.e. US ? XXX}
@@ -555,7 +555,7 @@ In the following, we give a brief introduction to the governing regulations and 
 
 
 
-\subsubsection{Regulations and Standards}
+\subsubsection{Regulations and Standards on TV White Spectrum}
 %In compliance with the methodology of cognitive radio, 
 
 %this is a intro to a general cr work.
@@ -596,7 +596,7 @@ IEEE 802.22 has been the first IEEE standard for wireless regional area network 
 %\cite{HoangPowerChannel2010} proposes a distributed solution for power control and channel assignment in both down-link and up-link communication in a WRAN, but the investigated secondary network is composed with only one base station and multiple terminals.
  % Although the transmission power is decided in a distributed manner, primary transmitters are required to adjust their transmission power in order to guarantee the SINR on primary receivers in a learning process, while, the operation of WSDs working on TVWS should be transparent as to TV services.\fmjg{This summary of the 2010 paper does not make sense to me - why are you talking of primary systems here ??} 
 
-\section{Problem Statement}
+\section{Problem Statement and Research Scope}
 As to the various challenging problems in CRN networks, adopting centralized or decentralized solutions is largely dependant on the network types and the nature of the problems to be solved.
 %Working with the TV white space is regarded as one application of cognitive radio network, which is most likely to succeed in near future.
 CRAHNs consist of mobile autonomous secondary users and don't have infrastructure, the network topology evolves with time, besides, the ungovernable primary users' activity leads to temporal spectrum availability. 
@@ -607,7 +607,7 @@ Due to these factors, secondary users need to adjust their operation parameters 
 The opening of TV white space attracts people and organizations to build cellular networks to launch various services.
 A data base is required to register the fixed and mode II TVBDs~\cite{crn_futurecellular_2014}, but it is not supposed to afford the computation on the resources for each TVBD.
 Besides, the operation of TVBDs is carried out by different users or operators, thus it is not feasible for the centralized entity to coordinate the devices and assign the network sources to them.
-Thus distributed scheme is also needed in the utilization of TV white spectrum.
+Thus distributed scheme is also necessary in the utilization of TV white spectrum.
 %There is one centralized database which is required by regulations and standards, thus it is possible to conduct certain centralized solutions on it.
 %But the owners of the cellular networks have different or conflicting interests, \eg the networks compete for resources, besides, there maybe secondary users which start or cease to use the TV white spectrum,  
 %Last but not least, the TVBDs may join or leave the network, \ie start to transmit or cease transmitting, which brings dynamics to the network, thus centralized scheme
@@ -623,6 +623,45 @@ Does the distributed algorithm converge?
 If the algorithm converges, in which state the algorithm finally ceases, and how robust and quick the convergence process is?
 To answer these questions, we turn to game theory, in particular, the recent progress of congestion game models for help.
 
+
+
+
+\subsection{Research Questions}
+Based on the description of the challenges in cognitive radio network, we formulate two research questions which will be answered in this thesis.
+
+Question 1 - When distributed algorithms are necessary due to the specific properties of one problem, how to guarantee the convergence and performance? How to design utility function to make use of game model in the process of algorithm design?
+
+Question 2 - What are the strengths and weaknesses of the distributed algorithm compared with the centralized scheme?
+
+%Question 1 - How to design distributed solution with assistance of game model, so that to make full use of the TV spectrum with the regulated network structure? 
+%
+%Question 2 - How to design distributed solution with assistance of game model, to form robust clusters against primary users' unpredictable activity, so that maintain the benefits brought by cluster structure?
+%
+%Question 3 - How to make use of the statistic information of the spectrum availability, so as to realize light weight geographic routing in CRN?
+
+
+
+\subsubsection{Contributions}
+In this thesis, we answer the aforementioned research questions by making the one to one contributions.
+
+Contribution C1 - We apply congestion game in the new domains, and design distributed schemes which comply with the behaviours of players of the congestion game.
+With the properties of congestion game, we investigate the concerns on convergence and overhead of the proposed distributed algorithms.
+
+Contribution C2 - We compare the performance of distributed schemes and centralized schemes in concrete problems in CRN.
+
+
+
+%We briefly introduce the contribution of this dissertation by addressing the aforementioned questions.
+We demonstrate how to refrain the overhead and fasten the convergence process, especially, we make utilize the available game models to design distributed algorithms which have the desired these properties.
+These contributions are illustrated in the process of solving three problems.
+%We investigate the differences between decentralized and centralized schemes in terms of several criteria, \ie performance, overhead, computation time, etc..
+Figure~\ref{overview} illustrate the relation between contributions and the concrete technical problems to be addressed in this thesis.
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=\linewidth]{overview.pdf}
+  \caption{Overview of the problems and contributions, and the concrete problems addressed in this thesis.}
+\label{overview}
+\end{figure}
 %We focus on the distributed solutions for several correlated fundamental problems in CRN.
 %The interaction among autonomous secondary users is a common scene in CRN as there usually lacks central controller.
 
@@ -635,7 +674,10 @@ To answer these questions, we turn to game theory, in particular, the recent pro
 %Having had solid CRN infrastructure, it is time to deliver services via routing.
 %A light weight routing tailored for CRN is needed.
 %In the following sections, we will introduce the problems in Figure~\ref{problemLocation} in details.
-\subsection{Technical Problems about Utilizing the Unlicensed Spectrum}
+\subsection{Research Scope}
+This thesis doesn't chase the properties of games, but make use of the available knowledge of game, and apply them to solve the pressing challenges existing in cognitive radio networks.
+In particular, we bring the congestion game out of the routing problem~\cite{Ackermann06purenash, Papadimitriou:2001:AGI}, where the congestion game is proposed and analysed.
+We apply congestion game to solve channel allocation and network structure formation problems by designing suitable utility functions for the network units.
 
 The concrete technical challenges addressed in this thesis are shown in Figure~\ref{problemLocation}, which reside in physical layer, media access layer (\gls{mac}) layer and network layer~\cite{osi}. 
 These questions are individually orthogonal, but as pressing problems in each layers, they together form a test field to check the feasibility of distributed solutions.
@@ -643,7 +685,7 @@ These questions are individually orthogonal, but as pressing problems in each la
 \begin{figure}[h!]
   \centering
   \includegraphics[width=\linewidth]{problemLocation.pdf}
-  \caption{Spectrum management and the problems addressed in this thesis}
+  \caption{Spectrum management and the examples discussed in this thesis, congestion game is applied in two of them.}
 \label{problemLocation}
 \end{figure}
 
@@ -729,39 +771,7 @@ How to make light weight geographic routing work well in CRN is the problem to b
 
 
 
-\subsection{Research Questions}
-Based on the description of the challenges in cognitive radio network, we formulate two research questions which will be answered in this thesis.
 
-Question 1 - What are the strengths and weaknesses of the distributed algorithm compared with the centralized scheme, which are applied to solve a specific problem in cognitive radio network?
-
-Question 2 - When the distributed algorithm is necessary due to the specific properties of one problem, how to guarantee the convergence and performance? What is the role of game model in the process of algorithm design?
-
-%Question 1 - How to design distributed solution with assistance of game model, so that to make full use of the TV spectrum with the regulated network structure? 
-%
-%Question 2 - How to design distributed solution with assistance of game model, to form robust clusters against primary users' unpredictable activity, so that maintain the benefits brought by cluster structure?
-%
-%Question 3 - How to make use of the statistic information of the spectrum availability, so as to realize light weight geographic routing in CRN?
-
-
-
-\subsubsection{Contributions}
-In this thesis, we answer the aforementioned research questions by making the one to one contributions.
-
-Contribution C1 - We compare the performance of distributed schemes and centralized schemes in concrete problems in CRN.
-
-Contribution C2 - Design distributed schemes with congestion game model in CRN, and investigate the concerns on convergence and overhead.
-
-%We briefly introduce the contribution of this dissertation by addressing the aforementioned questions.
-We demonstrate how to refrain the overhead and fasten the convergence process, especially, we make utilize the available game models to design distributed algorithms which have the desired these properties.
-These contributions are illustrated in the process of solving three problems.
-%We investigate the differences between decentralized and centralized schemes in terms of several criteria, \ie performance, overhead, computation time, etc..
-Figure~\ref{overview} illustrate the relation between contributions and the concrete technical problems to be addressed in this thesis.
-\begin{figure}[h!]
-  \centering
-  \includegraphics[width=\linewidth]{overview.pdf}
-  \caption{Overview of the problems and contributions, and the concrete problems addressed in this thesis.}
-\label{overview}
-\end{figure}
 
 
 %\subsubsection{Solution to Problem 1: Utilization of TV white spectrum and application of game model in designing algorithm}

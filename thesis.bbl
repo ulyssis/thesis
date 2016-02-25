@@ -384,10 +384,7 @@ In the matter of unlicensed operation in the {TV} broadcast bands: second
 {\sc Gu, Z., Hua, Q.-S., and Dai, W.}
 \newblock Fully distributed algorithms for blind rendezvous in cognitive radio
   networks.
-\newblock In {\em in Proceedings of the 15th ACM International Symposium on
-  Mobile Ad Hoc Networking and Computing\/} (New York, NY, USA, 2014), MobiHoc
-  '14, ACM, pp.~155--164.
-\newblock \url{http://doi.acm.org/10.1145/2632951.2632981}.
+\newblock In {\em Proceedings of the 2014 ACM MobiHoc}, MobiHoc '14.
 
 \bibitem{geoTVprotection08dyspan}
 {\sc Gurney, D., Buchwald, G., Ecklund, L., Kuffner, S., and Grosspietsch, J.}
@@ -725,6 +722,14 @@ In the matter of unlicensed operation in the {TV} broadcast bands: second
 \newblock Joint routing and link scheduling for cognitive radio networks under
   uncertain spectrum supply.
 \newblock In {\em Proc. of IEEE INFOCOM 2011}.
+
+\bibitem{Papadimitriou:2001:AGI}
+{\sc Papadimitriou, C.}
+\newblock Algorithms, games, and the internet.
+\newblock In {\em Proceedings of the Thirty-third Annual ACM Symposium on
+  Theory of Computing\/} (New York, NY, USA, 2001), STOC '01, ACM,
+  pp.~749--753.
+\newblock \url{http://doi.acm.org/10.1145/380752.380883}.
 
 \bibitem{whitefi09}
 {\sc Paramvir~Bahl, Ranveer~Chandra, T. M. R.~M., and Welsh, M.}

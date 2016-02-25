@@ -102,16 +102,16 @@ This also implies that, NE is self enforcing that once players agree on this sol
 A dominant strategy equilibrium is a Nash equilibrium, but a NE is not necessarily a dominant strategy.
 There may be multiple NEs in one game, and NE may not be optimal for players. 
 In prisoner dilemma, the dominating strategy is NE but is obviously not the optimal.
-
-
+%
 Being not unique and possibly sub-optimal, NE is still applied in extremely diverse applications due to the reasons discussed in the beginning of this section.
 Thus, when pursuing NE as solution, people should answer the question that, what is the gap between NE and global optimal?
 This can be partially answered by \textit{price of anarchy (\gls{PoA})}, the ratio between the worst-case Nash equilibrium to the optimality is used to denote the quality of the solution.
 
-Nash equilibrium is an appealing concept, but it doesn't tell how to reach such a state.
+\subsubsection{Complexity of Obtaining NE}
+Nash equilibrium is an appealing concept, but it doesn't tell how to obtain such a state.
 Hence, it is important to find an efficient algorithm to reach the equilibrium.
-The notion of \textit{NP-completeness} is not an appropriate concept of complexity for the problem of \textit{finding a Nash equilibrium}, because NE always exists, nevertheless, theoretical scientists tell \textit{finding a Nash equilibrium} problem is a combinatorial problem and can be very difficult to solve (Chapter 2, \cite{agt_book}).
-Having said that, in some games, with the special strategy space structure, or players' special behaviours, efficient algorithms to reach NE exist.
+The notion of \textit{NP-completeness} is not an appropriate concept of complexity for the problem of \textit{finding a Nash equilibrium}, because NE always exists, nevertheless, theoretical scientists tell that \textit{finding a Nash equilibrium} problem is a combinatorial problem and can be very difficult to solve (Chapter 2, \cite{agt_book}).
+Having said that, in some games, with the special strategy space structure, or players' special behaviours, there exist efficient algorithms to reach NE.
 
 
 
@@ -127,13 +127,13 @@ Having said that, in some games, with the special strategy space structure, or p
 %PO is the necessary condition of the global optimality and accordingly is more favoured, but its application in communication system is much less than NE because it is not easy to obtain, and the lack of stability.
 
 
-\subsubsection{Pure NE and Mixed NE}
+%\subsubsection{Pure NE and Mixed NE}
 In the aforementioned games, players deterministically choose one strategy from their strategy sets, then play their chosen strategies and don't involve randomized strategies, then the achieved NE is called pure NE. 
 When players play a game with certain randomization on strategies, and aim to maximize their expected payoff, we call the resulted NE as mixed NE.
 As to mixed NE, the action of a player is to choose certain strategies according to a probability distribution.
 Games with finite number of players and strategy set are guaranteed to have NE, whereas, the games with infinite number of players, or the games with a finite number of players but the players can access an infinite strategy set may not have NE~\cite{agt_book}.
 
-In this thesis, we only consider pure NE, as players deterministically play a certain strategy, and the corresponding network components stick to certain operation instead to switch among several different operations based on a vector of probabilities.
+In this thesis, we always look for pure NE, as players deterministically play a certain strategy, and the corresponding network components stick to certain operation instead to switch among several different operations based on a vector of probabilities.
 Other solutions include correlated equilibrium, which also involves probability distribution over strategy vectors.
 
 
@@ -143,9 +143,6 @@ Other solutions include correlated equilibrium, which also involves probability 
 %\subsubsection*{Different Games in Nutshell}
 
 
-\subsubsection{Individual Optimization and Game}
-As to a player in a game, given the strategies of other players $\sigma_{-i}$, its utility $u_i$ is a function of its own strategy $\sigma_i$, then the maximization of its payoff or minimization of its cost becomes one optimization problem.
-Thus, one game comprises $n$ such optimization problems in total.
 %Whereas as to a general game, the payoff or cost of each player depends on both $s_i$ and $s_{-i}$, both its own strategy and the strategies chosen by all other players.
 
 
@@ -367,6 +364,9 @@ When these variant of congestion game are not singleton ones, \cite{Ackermann06p
 \section{Optimization}
 
 As is mentioned in Section~\ref{operation_model}, a variety of problems in CRN are formulated and solved by constrained optimization~\cite{cacao_ca_2011, fuzzy_decision_09, resourceAllocation_imperfectSensing_2012}.
+As to a player in a game, given the strategies of other players $\sigma_{-i}$, its utility $u_i$ is a function of its own strategy $\sigma_i$, then the maximization of its payoff or minimization of its cost becomes one optimization problem.
+Thus, one game comprises $n$ such optimization problems in total.
+
 Table~\ref{opt_table} summarizes the commonly proposed objectives, involved resources and constraints in the optimization problems in the domain of wireless communication.
 Part of the contents in the table refers \cite{Han:2008:RAW:1457343}.
 As to CRN, the interference caused by secondary users on primary users is usually formulated into constraints, which distinguishes the problems in CRN from that in traditional wireless networks. 

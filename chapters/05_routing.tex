@@ -198,41 +198,43 @@ We integrate this obstacle caused by spectrum scarcity to transmission into virt
 %Similar with VCap~\cite{gpsfree05infocom}, SAViC consists of four rounds of anchor message flooding initiated from four anchors $A$, $X$, $Y$, $Z$ respectively.
 As to SAViC, anchors broadcast anchor messages which flood over the network and result in virtual coordinate for each secondary user.
 Several anchors are needed to assign unique virtual coordinate for each secondary user.
-How to select anchors is out of the scope of this chapter.
+Anchors are located at the edges of network and there is distance between each pair of them.
+The number of anchors is $r$.
+How to decide their locations is out of the scope of this chapter.
 %Each round of anchor message flooding results in one value on each node, and the last three values $x$, $y$, $z$ compose the triplet of virtual coordinate $\{x,y,z\}$.
 %Besides, each node also has one auxiliary quadruplet virtual coordinate $\{a',x',y',z'\}$ which is used to decide on anchors.
 In the following, we introduce how is virtual coordinate decided on each node with respect to anchors.
 %Each coordinate is composed with four elements which correspond to four anchors $A$, $X$, $Y$, $Z$ respectively.
 
 
-Each secondary user maintains its virtual coordinate which is one $r$-tuple where each element contained corresponds to one anchor, and the tuple length is $r$.
-The elements of virtual coordinate on each node is set as big positive value.
-An anchor message is generated on the anchor, which contains a $counter$ whose value is set as 0.
-The anchor message is broadcast on control channel.
+A secondary user's virtual coordinate is one $r$-tuple where each element corresponds to one anchor.
+Before the assignment, the elements of virtual coordinate on each node are set as a large positive value.
+An anchor message is generated on each anchor and broadcast on control channel.
+The anchor message contains a $counter$ whose value is set as 0.
 The influence of primary users on a secondary user is quantified as spectrum utility $\lambda$ on that secondary user.
-The bigger value indicates heavier spectrum occupation by primary users.
-$\lambda$ will be discussed in Section~\ref{CA_VC_likelihood} and \ref{BT}.
+The larger value indicates heavier spectrum occupation by primary users.
+Quantization of $\lambda$ will be discussed in Section~\ref{CA_VC_likelihood} and \ref{BT}.
 
-When a node $i$ receives an anchor message from the $t$th anchor, $i$ compares the $t$th element in its current virtual coordinate with the sum of the $\lambda$ and $counter1$ which is contained in the arriving anchor message.
+When a node $i$ receives an anchor message from the $t$th anchor, $i$ obtains the value of $counter1$ which is contained in the arriving anchor message.
+Then $i$ compares its $t$th element in its current virtual coordinate with the sum of the spectrum utility $\lambda$ and $counter$.
 %When a secondary user receives anchor message originating from anchor $A$, it adds the normalized channel availability $\Psi$ (introduced in next subsection) on itself and VC\_counter which is contained in the message, and compares the summation with its own $VC_i$.
-If the sum is greater than the $t$th element in its current virtual coordinate, which indicates that the path traversed by this anchor message exposes to more active primary users, node $i$ drops the anchor message.
-If the sum is smaller than the $t$th element in its current virtual coordinate, the node set the $t$th element as the sum and updates $counter1$ contained in the anchor message before forwarding it.
-%The acquisition of auxiliary coordinate \textit{a'} is very similar with that for virtual coordinate.
+When its current $t$th element in its current virtual coordinate is less than the sum, node $i$ drops the anchor message.
+The rational behind this operation is, the sum of $\lambda$ on the current node and $counter$ from the arriving anchor message indicates the spectrum availability along the path which begins from the anchor node to the current node, thus when the sum is larger in value, the path traversed by this anchor message exposes to more active primary users and thus dropped.
+When the sum is less than the $t$th element in its current virtual coordinate, the node replaces its $t$th element with the sum, and updates $counter$ contained in the anchor message before forwarding it.
 This process is presented as Algorithm~\ref{algo:receiveAnchorMessage}.
-% which also applies to obtain virtual coordinate and auxiliary coordinate in other rounds.
-The process ceases within a period of time.
+
+The number of anchor messages involved in this process is linear to the network size, which is supported by the following proofs.
 \begin{lemma}
 \label{savic:lemma1}
-The times that one secondary node forwards the anchor messages which are associated with one specific anchor is bounded by $g$, where $g$ is the number of one hop neighbours of that anchor.
-\end{lemma}
-
-\begin{lemma}
-\label{savic:lemma2}
-The counter value of one anchor message is increased after it is forwarded.
+For each secondary user, the number of times to forward anchor messages which are associated with one specific anchor is bounded by $g$, where $g$ is the number of one hop neighbours of that anchor.
 \end{lemma}
 \begin{proof}
-This is proved by the lines 18-20 in Algorithm~\ref{algo:receiveAnchorMessage}.
+Assuming a extreme situation, where 
 \end{proof}
+
+The counter value of one anchor message is increased after it is forwarded.
+This is can be seen from the lines 10-12 in Algorithm~\ref{algo:receiveAnchorMessage}.
+
 
 \begin{lemma}
 \label{savic:lemma3}
@@ -254,32 +256,32 @@ This is proved by Lemma~\ref{savic:lemma1} and \ref{savic:lemma3}.
 \end{proof}
 
 According to Theorem~\ref{savic:theorem_anchorMsg}, every secondary users obtains virtual coordinate which respects to all anchors after a finite time duration.
-%The algorithm for secondary user $i$ to receive one element $vc_i$ is given in Algorithm~\ref{algo:receiveAnchorMessage}.
+
+% \lnl{InRes1} regulate the line number
 \begin{algorithm}[!h]
-\caption{Secondary user $i$ obtains one element $vc_i$ in its VC with respect to an anchor}%, $\lambda_i$ is normalized spectrum availability on $i$}          % give the algorithm a caption
-\label{algo:receiveAnchorMessage} 
+\caption{Assignment of $vc_i$ for secondary user $i$ with respect to one anchor}%, $\lambda_i$ is normalized spectrum availability on $i$}          % give the algorithm a caption
+\label{algo:receiveAnchorMessage}
 \DontPrintSemicolon
 \SetAlgoLined
 \KwIn{$vc_i =M$, $M$ is one big positive number}
 %\KwOut{}
-\lnl{InRes1}\If {$i$ is anchor}{
-\lnl{InRes2}$vc_i=0$;\\
+\If {$i$ is anchor}{
+$vc_i=0$;\\
 %\lnl{InRes3}$VC\_counter=\Psi_i$ \\ %\tcc*[f]{or $\Lambda_i$, based on }
-\lnl{InRes4} set $counter1=\lambda_i$ in anchor message;\\
-\lnl{InRes5} broadcast anchor message;\\
+ set $counter1=\lambda_i$ in anchor message;\\
+ broadcast anchor message;\\
 }
 
-\lnl{InRes6}\If{receive anchor message}{
-\lnl{InRes7}\eIf{$counter +\lambda_i \geqslant vc_i$}{
-\lnl{InRes8}drop anchor message;}{
+\If{$i$ receives anchor message}{
+\eIf{$counter +\lambda_i \geqslant vc_i$}{
+drop anchor message;}{
 %\lnl{InRes9}$VC\_counter + \Psi_i < VC_i$  \\
-\lnl{InRes9}$vc_i=counter + \lambda_i$;\\
-\lnl{InRes10}set $counter=vc_i$ in anchor message;\\
-\lnl{InRes11}broadcast anchor message;
+$vc_i=counter + \lambda_i$;\\
+set $counter=vc_i$ in anchor message;\\
+broadcast anchor message;
 }
 }
 \end{algorithm}
-
 
 % which previously was stable at a low level during a long period of time. 
 
