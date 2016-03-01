@@ -635,19 +635,31 @@ After introducing connectivity vector, we proceed to introduce the first phase o
 
 
 \subsubsection{Determining Cluster Heads and Form the Initial Clusters}
-In this phase, each CR node comparing its connectivity vector with its neighbours, so that the CR node decides whether it is cluster head or not.
-When CR node $i$ has bigger individual connectivity degree than any neighbours except for those who have already become cluster heads, then node $i$ becomes clusters head.
+In this phase, each CR node comparing its connectivity vector with its neighbours to decide whether it is cluster head or not.
+When CR node $i$ has bigger individual connectivity degree than any neighbours except for those which have already become cluster heads, then node $i$ becomes clusters head.
 In other words, CR node $i$ becomes cluster head if $D_i > D_k, \forall k\in Nb_i\setminus CHs$ ($CHs$ donate the cluster heads existing in $Nb_i$).
-If there is another CR node $j$ in its neighborhood has the same individual connectivity degree, \ie $D_j = D_i$ and $D_j > D_{k}, \forall k\in Nb_j\setminus \{CHs\cup i\}$, then the node out of $\{i, j\}$ with higher social connectivity degree becomes cluster head, and the other one becomes one member of it. 
+If there is another CR node $j$ in its neighborhood, which has the same individual connectivity degree with $i$, \ie $D_j = D_i$ and $D_j > D_{k}, \forall k\in Nb_j\setminus \{CHs\cup i\}$, then the node out of $\{i, j\}$ with higher social connectivity degree becomes cluster head, and the other one becomes one member of it. 
 If $G_i = G_j$ as well, node ID is used to break the tie, \ie the one with smaller node ID takes precedence and becomes cluster head.
 %This algorithm is contradictory to intuition by choosing the node with smallest $D_i$ as cluster head.
 %The reason is that, by deciding cluster head in this way, the CR node with bigger $D_i$ will locate at the edge of clusters, and as they have higher \textit{Individual Connection Degree}, they are more likely to be integrated into one certain cluster, thus less singleton clusters are formed.
-
-The node which becomes cluster head broadcasts its new identity, and claim its neighbourhood except for the 
-After receiving the notification from a cluster head, a CR node, \eg $i$, is aware it is one member of a cluster, then CR user $i$ sets its individual connectivity degree to zero, which is smaller than all the possible individual connectivity degrees in the CR network.
+%
+The node which becomes cluster head broadcasts a message on its eligibility of being cluster head to notify its neighbours, and claims its neighbourhood as its cluster.
+After receiving the notification from a cluster head, a CR node, \eg $i$, is aware that it becomes one member of a cluster, then $i$ sets its individual connectivity degree to zero. %, which is smaller than all the possible individual connectivity degrees in the CR network.
 Then node $i$ broadcasts its new individual connectivity degree to all its neighbours. 
-When a CR node $i$ is associated to multiple clusters, $D_i$ is still set to zero. %Note here that connectivity degree on cluster head will still be the actual value.% The value will expire after some duration and is changed later on back to the original value. 
-When a cluster member is excluded from a cluster, that CR user's individual connectivity degree is restored to the original value which is further broadcast to its neighbours.
+
+%Note that there is no cluster head which receives the notification on cluster head eligibility, and there is a Lemma on this.
+%\begin{theorem}{lemma}
+%There is no cluster head receiving the notification message on cluster head eligibility, which is sent from a node which newly becomes a cluster head.
+%\end{theorem}
+%\begin{proof}
+%We use contradiction to prove. 
+%Assume a CR node $j$ is cluster head, and receives a notification on cluster head eligibility form CR node $i$. 
+%According to the assumption on the reciprocal communication link, $i$ should have received the notification message from $j$ when $j$ becomes cluster head.
+%Then CR node $i$ will set its individual connectivity degree to zero, and has no possibility to become a cluster head.
+%\end{proof}
+
+When a CR node $i$ is associated to multiple clusters \ie $i$ receives multiple notifications on cluster head eligibility from different CR nodes, $D_i$ is still set to zero. %Note here that connectivity degree on cluster head will still be the actual value.% The value will expire after some duration and is changed later on back to the original value. 
+When a cluster member is excluded from a cluster (this may happen in the following steps to guarantee the existence of CCC or to control cluster size), that CR user's individual connectivity degree is restored to the original value which is further broadcast to its neighbours.
 The purpose of this temporary manipulation on individual connectivity degree is to let the CR nodes out side of the cluster be possible to become cluster heads, so that every CR node either becomes cluster head or a member of at least one cluster.
 In other words, with this manipulation on its individual connectivity degree, every CR node in the network will be involved in the clustering process, the proof will be given later.
 The final states of all the CR users in the CRN are described in the following theorem.
@@ -665,21 +677,21 @@ We have the following theorem to show that as long as a secondary user's connect
 Given a CRN, every secondary user is included into at least one cluster within $N$ steps.
 \end{theorem}
 The Proof is in Appendix~\ref{proof_clustering:theorem}.
-
+	
 According to Theorem~\ref{clustering:theorem}, we can assign reasonable amount of time for phase I to complete.
 
 
 
 \subsubsection{Guarantee Availability of Common Control Channel}
 After deciding itself being cluster head, CR node broadcasts to notify its neighbours on control channel, meanwhile, $i$'s initial cluster is formed immediately, which is $i$'s neighborhood except for those nodes which have become cluster heads, \ie $C_i=(Nb_i\setminus CHs)\cup i$.
-The reason for say the previous step generates initial clusters is, it is possible that certain formed clusters don't poses any common control channels.
-This problem can be solved with the following method. 
+Note this is the initial cluster, as it is possible that the formed cluster doesn't pose any common control channels.
+This problem can be solved with the following method.
 
-As smaller cluster size increases the number of common channels within the cluster, certain nodes are eliminated until there is at least one common channel.
+As smaller cluster size increases the number of CCCs within the cluster, certain nodes are eliminated until there is at least one common channel.
 The elimination of nodes is performed according to an ascending list of nodes sorted by their number of common channels with the cluster head, which means, the cluster member which has the least number of common channels with the cluster head is excluded first.
 If there are nodes having the same number of common channels with cluster head, the node whose elimination brings in more common channels will be excluded.
 If this criterion meets a tie, the tie will be broken by deleting the node with smaller ID.
-It is possible that the cluster head excludes all its neighbours and resulting itself to be the cluster.
+It is possible that the cluster head excludes all its neighbours and resulting into a singleton cluster composed by itself.
 %At the end of this procedure every formed cluster has at least one common channel.
 The pseudo code for cluster head to obtain at least one common channel is shown in Algorithm~\ref{alg_size_control_available_CCC}.
 As to the nodes eliminated in this procedure, they become either cluster heads or get included into other clusters later on according to Theorem~\ref{clustering:theorem}.
@@ -690,7 +702,9 @@ As to the nodes eliminated in this procedure, they become either cluster heads o
 \subsubsection{Cluster Size Control in Dense CRN}
 \label{cluster_pruning}
 
-In the introduction section, we have stated that cluster size should be given consideration to justify the pursuing of robust clusters, here we illustrate the pressing necessity to control cluster size when CRN becomes dense via theoretical analysis and simulation, and provide solution to it.
+In the introduction section, we have stated that cluster size should be given consideration to justify the concept of robustness of clusters, \ie without specifying requirement on cluster sizes, small clusters will be generated to obtain more CCCs.
+Except for cooperative sensing, clusters need to conduct some other functionalities, and the cluster size should fall in a desired range~\cite{Chen04clusteringalgorithms, capacity_cluster_06}.
+Here we illustrate the pressing necessity to control cluster size when CRN becomes dense via theoretical analysis and simulation.
 
 Assuming the CR and primary users are evenly distributed and primary users occupy the licensed channels randomly, then both CR nodes density and channel availability in the CRN can be seen as homogeneous.
 Based on Algorithm~\ref{alg0}, cluster heads are the CR nodes which possess the biggest individual connectivity degrees in their neighborhood respectively, and they are surrounded by CR nodes.
@@ -715,13 +729,13 @@ The estimated number of cluster heads is the product of the number of cluster he
 Now we verify the estimation with simulation.
 We distribute CR users and primary users randomly on a square plan, and set $r=10, l=50$.
 Network density is increased by adding more CR users.
-For each network scale, simulation is run for 50 times.
 %We now have a look at how does the network density affect the cluster size when the transmission range is constant.
 %This implicates when the cluster size is decided by the density of the network.
 %As to SOC, the membership of one cluster is decided after a complex process, and the cluster size is roughly the same with one neighborhood.xxxx
 %We can see from the example that although two neighbouring clusters can overlap greatly with each other, no cluster head will be covered by other clusters.
 Figure~\ref{number_clusters_scale} shows the number of formed clusters.
 With the increase of CR users in the network, network density increases linearly (see the right hand side Y axis, which indicates the number of neighbours.), and the number of formed clusters also increases and approaches to the the upper bound of 25 which complies with the estimation.
+For each network scale, simulation is run for 50 times.
 The confidence rate is 95\% in the figure.
 
 \begin{figure}[h]
@@ -731,14 +745,14 @@ The confidence rate is 95\% in the figure.
   \label{number_clusters_scale}
 \end{figure}
 
-Both the analysis and simulation show that with the increase of network density, the cluster size also increases.
+Both the analysis and simulation show that when applying ROSS, the cluster size also increases with the increase of network density.
 In case of dense network where cluster size is large, there is substantial burden on cluster heads to manage the cluster members, which is a challenge for resource limited cluster heads.
 As a result, certain measures are needed to prevent the network size to increase with the increasing network density.
 This task falls on cluster head.
 To control cluster size, cluster heads prune their cluster members if sizes are greater than the desired size $\delta$.
 Given desired size as $\delta$, cluster head excludes members sequentially, whose absence leads to the maximum increase of common channels within the cluster.
 This process ends when the size of resultant cluster is at most $\delta$ and at least one CCC is available.
-This procedure is similar with guaranteeing CCC available to be available in cluster, thus the algorithm is also given in Algorithm~\ref{alg_size_control_available_CCC}.
+This procedure is similar with that to guarantee CCCs in cluster, thus the algorithm is also given in Algorithm~\ref{alg_size_control_available_CCC}.
 The nodes eliminated in this procedure later become a member or cluster head according to Theorem~\ref{clustering:theorem}.
 
 
@@ -772,7 +786,7 @@ We will introduce the solution for cluster membership clarification in the follo
 \begin{figure}[ht!]
   \centering
   \includegraphics[width=0.8\linewidth]{percentage_overlapping_node.pdf}
-  \caption{The number of debatbale nodes after the first phase of ROSS. The unit of Y axis is 100\%}\label{percentage_overlapping_node}
+  \caption{The percentage of debatbale nodes among all CR nodes after the first phase of ROSS.}\label{percentage_overlapping_node}
 \end{figure}
 
 
@@ -1130,6 +1144,10 @@ Choice of $\alpha_i$ affects the resultant clusters.
 
 
 This is a integer linear optimization problem, which is solved by function $bintprog$ provided in MATLAB.
+Note that the proposed centralized solution is heuristic.
+There are two reasons for pursuing the heuristic scheme, first, the problem of centralized clustering is NP hard, and there is no efficient solution to solve it.
+The second reason is, the collection of legitimate clusters is dependant on the network topology and spectrum availability in the network, thus to each specific CRN, the space of solution is different.
+
 
 \subsubsection{Example of the Centralized Optimization}
 To make the solution easier to understand, we look into the toy example of the CRN in Figure~\ref{fig1}.
@@ -1162,9 +1180,7 @@ Note there is one singleton cluster $C_H$ generated.
 When the singleton cluster $\{E\}$ is excluded, the average number of common channels of SOC drops to 2.5. 
 
 
-Note that the proposed centralized solution is heuristic.
-There are two reasons for pursuing the heuristic scheme, first, the problem of centralized clustering is NP hard, and there is no efficient solution to solve it.
-The second reason is, the collection of legitimate clusters is dependant on the network topology and spectrum availability in the network, thus to each specific CRN, the space of solution is different.
+
 
 \section{Performance Evaluation}
 \label{performance}

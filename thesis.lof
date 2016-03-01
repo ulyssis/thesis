@@ -8,7 +8,7 @@
 \contentsline {figure}{\numberline {2.1}{\ignorespaces An example server matching problem. A client is allowed to access only one server. The line illustrates that the corresponding server is within the client's strategy space.\relax }}{25}{figure.2.1}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces System model: WBS cells and DTV systems\relax }}{32}{figure.3.1}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces QuasiSINR is the ratio between the power of signal of interest on the green point with the sum of co-channel interference on the red points\relax }}{33}{figure.3.2}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces QuasiSINR is the ratio between the power of signal of interest on the green point with the sum of co-channel interference on the red points\relax }}{34}{figure.3.2}
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Distribution of maximum permitted transmission power levels obtained from convex and linear programming formulations\relax }}{41}{figure.3.3}
 \contentsline {figure}{\numberline {3.4}{\ignorespaces The evaluation contents in this section, the left part is discussed in Section\nobreakspace {}\ref {MaxPower_whitecat} and the right part is in Section\nobreakspace {}\ref {joint}. \relax }}{50}{figure.3.4}
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Layout of WBSs and TV contours\relax }}{50}{figure.3.5}

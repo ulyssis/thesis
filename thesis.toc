@@ -47,22 +47,22 @@
 \contentsline {section}{\numberline {3.1}Introduction}{29}{section.3.1}
 \contentsline {section}{\numberline {3.2}System Model and Problem Statement}{31}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Problem Statement}{33}{subsection.3.2.1}
-\contentsline {section}{\numberline {3.3}Problem Decomposition and Related Works}{35}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Problem Decomposition}{35}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Resource Allocation in CRN}{36}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}Utilization of TV White Space}{37}{subsection.3.3.3}
-\contentsline {section}{\numberline {3.4}The Maximum Permitted Transmission Power}{39}{section.3.4}
-\contentsline {section}{\numberline {3.5}Channel Allocation with Fixed Transmission Power}{40}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}Centralized optimization programming}{41}{subsection.3.5.1}
-\contentsline {subsection}{\numberline {3.5.2}Distributed White Space Channel Allocation (WitheCat): Algorithm and Protocol}{42}{subsection.3.5.2}
+\contentsline {section}{\numberline {3.3}Problem Decomposition and Related Works}{36}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Problem Decomposition}{36}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Resource Allocation in CRN}{37}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Utilization of TV White Space}{38}{subsection.3.3.3}
+\contentsline {section}{\numberline {3.4}The Maximum Permitted Transmission Power}{40}{section.3.4}
+\contentsline {section}{\numberline {3.5}Channel Allocation with Fixed Transmission Power}{42}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Centralized optimization programming}{42}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Distributed White Space Channel Allocation (WitheCat): Algorithm and Protocol}{43}{subsection.3.5.2}
 \contentsline {subsection}{\numberline {3.5.3}Analysis in game theoretical framework}{44}{subsection.3.5.3}
-\contentsline {section}{\numberline {3.6}Variable transmission power after channel allocation}{47}{section.3.6}
+\contentsline {section}{\numberline {3.6}Variable transmission power after channel allocation}{48}{section.3.6}
 \contentsline {section}{\numberline {3.7}Joint Channel and Power Allocation}{48}{section.3.7}
-\contentsline {subsection}{\numberline {3.7.1}Centralized optimization}{48}{subsection.3.7.1}
-\contentsline {section}{\numberline {3.8}Performance Evaluation}{49}{section.3.8}
+\contentsline {subsection}{\numberline {3.7.1}Centralized optimization}{49}{subsection.3.7.1}
+\contentsline {section}{\numberline {3.8}Performance Evaluation}{50}{section.3.8}
 \contentsline {subsection}{\numberline {3.8.1}Maximal Permitted Power Decision and the Distributed Channel Allocation Schemes}{51}{subsection.3.8.1}
 \contentsline {subsection}{\numberline {3.8.2}Performance of Joint Power and Channel Allocation}{56}{subsection.3.8.2}
-\contentsline {section}{\numberline {3.9}Conclusions}{56}{section.3.9}
+\contentsline {section}{\numberline {3.9}Conclusions}{57}{section.3.9}
 \contentsline {chapter}{\numberline {4}Congestion Game in Cluster Membership Assignment}{59}{chapter.4}
 \contentsline {section}{\numberline {4.1}Introduction}{59}{section.4.1}
 \contentsline {section}{\numberline {4.2}Related Work}{61}{section.4.2}

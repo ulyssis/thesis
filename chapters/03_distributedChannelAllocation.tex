@@ -24,7 +24,7 @@ The the distributed channel allocation and power control are conducted sequentia
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Secondary users working with TV white space is promising to cope with the scarcity of spectrum resources~\cite{FCC_2010_sedond_memorandumm}. 
-Firstly, more unused TV white frequencies become vacant than ever with the ongoing transition from analog to digital broadcasts. Secondly, the frequencies of TV bands enable broadband access over larger geographic ranges compared to higher frequency bands. Nevertheless, services on TV receivers need to be protected with so called interference margin~\footnotetext[2]{interference margin is the maximal interference caused by secondary users, which doesn't violate TV service.}~\cite{multipleIntf_pimrc11} which should not be exceeded by the accumulated interference caused by all secondary users working on the the channel.
+Firstly, more unused TV white frequencies become vacant than ever with the ongoing transition from analog to digital broadcasts. Secondly, the frequencies of TV bands enable broadband access over larger geographic ranges compared to higher frequency bands. Nevertheless, services on TV receivers need to be protected with so called interference margin~\footnote{interference margin is the maximal interference caused by secondary users, which doesn't violate TV service.}~\cite{multipleIntf_pimrc11} which should not be exceeded by the accumulated interference caused by all secondary users working on the the channel.
 
 \gls{FCC} and \gls{ECC} have announced rules on the transmission power of secondary users working in TV white space in US and Europe respectively~\cite{FCC_2010_sedond_memorandumm, ecc159}. 
 FCC requires a minimum distance between secondary user and TV service area, besides, the transmission power for fixed secondary users is set as $4$ \textup{W}, which is a conservative setting. %If the interference margin of the TV receivers can be fully utilized, the requirement on secondary users' transmission power can be relaxed to some extent. 
@@ -117,39 +117,39 @@ As to performance metric for the \gls{QoS} provisioning, we choose the signal to
 SINR is the ratio between the received power of signal of interest and the summed interference experienced by the terminal. 
 %We only focus on the down-link SINR, as the interference caused by uplink communication is neglectable.
 %
-Given a WBS $i$, another WBS which works on the same channel is denoted as $\bar{i}$.
-As to a certain terminal $m$ associated to WBS $i$, the path losses between $m$ and the serving WBS $i$ and interfering WBS $\bar{i}$ are denoted as $h_{im}$ and $h_{\bar{i}m}$ respectively.
+%Given a WBS $i$, another WBS which works on the same channel is denoted as $\bar{i}$.
+As to a terminal $m$ associated to WBS $i$, the attenuation between its serving WBS $i$ and itself is denoted as $h_{im}$, and the attenuation between the interfering WBS $j$ and $m$ is denoted as $h_{jm}$.
 The path loss is dependent on the distance between the corresponding equipments, e.g. $h_{im}=K \cdot d_{im}^{-\alpha}$, where $\alpha$ is the path loss exponent, $d_{im}$ is the distance between $i$ and $m$, $K$ is a constant which models the reference loss over a single unit of distance.  
 $N_0$ denotes the thermal noise power.
 Shadowing without fading is considered in our model.
-$z_{\bar{i}m}$ models the zero-mean log-normally distributed shadow fading between $\bar{i}$ and $m$, and the standard deviation is $\sigma_{\text{SH}}$.
+$z_{im}$ models the zero-mean log-normally distributed shadow fading between $i$ and $m$, and the standard deviation is $\sigma_{\text{SH}}$.
 
 The sum of all disturbing radio frequency effects (including interference) on terminal $m$ (we assume the working channel is $c$) is as following,
 \begin{equation}
 \label{interference}
 \begin{aligned}
-f_m^c=\sum_{\bar{i}} (P_{\bar{i}}^c \cdot h_{\bar{i}m} \cdot z_{\bar{i}m}) +  N_0, \quad \quad \bar{i}\in \mathcal{N}\setminus i, c(\bar{i}) = c
+f_m^c=\sum_{\bar{i}} (P_{j}^c \cdot h_{jm} \cdot z_{jm}) +  N_0, \quad \quad j\in \mathcal{N}\setminus i, c(j) = c
 \end{aligned}
 \end{equation}
-where $P_{\bar{i}}^c$ denotes the transmission power of interfering WBS $\bar{i}$.
+where $P_{j}^c$ denotes the transmission power of interfering WBS $j$.
 %Note that $z$ is dependent on the individual transmitter/receiver pair, but we omit the subscripts for simplicity. 
 The \gls{SINR} on end terminal $m$ is,
 \begin{equation}
 \label{SINR}
 \begin{aligned}
-\gamma_{m} = \frac{P_{i}^c \cdot h_{im}\cdot z_{\bar{i}m}} {f_m^c}
+\gamma_{m} = \frac{P_{i}^c \cdot h_{im}\cdot z_{im}} {f_m^c}
 \end{aligned}
 \end{equation}
 
 
 
 \subsection{Problem Statement}
-Our goal is to design distributed solution for WBSs to choose channel and transmission power, so as to improve the SINR on their end terminals.
-Each WBS's utility is a function of certain form of the SINR on all its end terminals, \ie the utility can be the average SINR at all its terminals.
-When adopting a function of SINR on all terminals as utility, as the terminals are mobile, and they are influenced by many factors, \ie the type of service provided to the terminals, the utility may diverge from the real performance of the terminals.
+Our goal is to design distributed solution for WBSs to choose channel and transmission power, so as to improve the SINR of their associated end terminals.
+Each WBS's utility is a function of the SINR on all its end terminals, \ie the utility can be the average SINR at all its terminals.
+When adopting a function of SINR on all terminals as utility, as the terminals are mobile and they are influenced by many factors, \ie the type of service provided to the terminals, the utility may diverge from the real performance of the terminals.
 %Thus, due to the mobility of terminals, it is non realistic to adopt a function of SINR on all terminals.
 On the other hand, it is not appropriate to choose one~\cite{spectrum_sharing_tvspace_2012} or more fixed terminals, and use their SINRs to represent the SINR for all the other terminals in that cell, because their location could diverge greatly with the locations of the other terminals.
-As a result, we propose a metric \textit{QuasiSINR} to represent WBS's performance, which is independent on the actual locations terminals.
+Thus, we propose a metric \textit{QuasiSINR} to represent WBS's performance on providing services to its end terminals, which is independent on the actual locations of end terminals.
 
 %We are interested in improving the SINR on the terminals of each cell by rendering WBSes to decide their channel and transmission power.
 %The distribution of mobile terminals is varying and influenced by many factors, \ie the type of services provided to the terminals, the type of area and mobility of terminals.
@@ -161,19 +161,21 @@ As a result, we propose a metric \textit{QuasiSINR} to represent WBS's performan
 
 \subsubsection*{QuasiSINR of WBS}
 
-Instead of improving the SINR on each end users of WBSs, we propose a new metric QuasiSINR to represent the services provided by WBSs to its end users, and try to improve this metric.
+Instead of improving the SINR on each end users of WBSs, we propose a metric QuasiSINR to represent the services provided by WBSs to its end users.
+Then the utility of WBS becomes a function of the  and try to improve this metric.
 %QuasiSINR is an indication of SINR that a WBS can provide to its terminals.
 QuasiSINR of a WBS is the ratio between the weakest signal of interest on a reference point and the summation of the strongest interference caused on the relevant reference point.
 
 We need an auxiliary circle to construct the reference point for each WBS, which is shown in Figure~\ref{quasiSINRfigure}. % illustrates how is quasiSINR calculated.
-The dashed circle centred at WBS $i$ is the auxiliary circle for WBS $i$, whose radius is $\delta$.
-Assume all the WBSs shown in the figure are working on channel $c$, thus co-channel interference happen between them.
-The point of intersection of the connecting line between WBS $i$ and interfering WBS $\bar{i}$, \ie the red dot on the auxiliary circle, is the reference point for co-channel interference for other WBSs working on the channel $k$.
+As to WBS $i$, the auxiliary circle is the dashed circle centred at WBS $i$, whose radius is $\delta$.
+Assume WBS $i$ and all the other WBSs work on the same channel $c$, then co-channel interference are caused on its end users by all the other WBSs.
+The intersection of the auxiliary circle and the connecting line between WBS $i$ and one interfering WBS $j$, which is shown as red dot, is a reference point which corresponds to the interfering WBS $j$.
+There are multiple reference points on the auxiliary circle, which corresponds to the co-channel interfering WBSs respectively.
 The power of signal from $i$ on the auxiliary circle, the green dot, is the reference point for the power of signal of interest.
 %The discussed WBS is denoted as $i$, and the rest WBSs are denoted as $j$, $j'$ and $j''$ respectively.
 %We assume all the WBSs work on the channel $k$, this co-channel interference is caused on each WBS.
 %An auxiliary dashed circle centering at WBS $i$ is shown, whose radius is $\delta$. 
-
+We can see both of the reference point of interference and the reference point for the power of signal of interest are largely decided by the radius of the auxiliary circle $\delta$.
 
 \begin{figure}[h!]
   \centering
@@ -183,17 +185,22 @@ The power of signal from $i$ on the auxiliary circle, the green dot, is the refe
 \end{figure}
 
 
-
-The co-channel interference on the reference point of WBS $i$ from channel WBS $\bar{i}$ is,
+The co-channel interference on the reference point of WBS $i$ from WBS $j$ is,
 \begin{equation}
 \label{quasiSINR_inf}
 \begin{aligned}
-\tilde{f}_{\bar{i}i}^c = P_{\bar{i}}^c\cdot h_{\bar{i}i}\cdot z_{\bar{i}i} = P_{\bar{i}}^c\cdot (d_{\bar{i}i}-\delta)^{-\alpha}\cdot z_{\bar{i}i}
+f_{ji}^c = P_{j}^c\cdot h_{ji}\cdot z_{ji} = P_{j}^c\cdot (d_{ji}-\delta)^{-\alpha}\cdot z_{ji}
 \end{aligned}
 \end{equation}
-where $d_{\bar{i}i}$ is the distance between WBS $i$ and $\bar{i}$, while, $h_{\bar{i}i}$ and $z_{\bar{i}i}$ are the attenuation and shadowing from WBS $\bar{i}$ to the relevant interference reference point.
-Based on Formula~\ref{quasiSINR_inf}, as to WBS $i$, when the information is given, which include the locations of other co-channel WBSs, the radius of auxiliary circle and the standard deviation of shadow fading, then the co-channel inference caused on its interference reference points by other co-channel WBSs can be obtained, besides, WBS $i$ is also aware of the interference it causes on the interference reference points associated with other co-channel WBSs.
-%
+where $d_{ji}$ is the distance between WBS $i$ and $j$, while, $h_{ji}$ and $z_{ji}$ are the attenuation and shadowing from WBS $j$ to the relevant interference reference point.
+The sum of interference on WBS $i$' interference reference points is denoted as $f_{i}^c$.
+\begin{equation}
+\label{quasiSINR_infs}
+\begin{aligned}
+f_{i}^c = \sum_{j\in\mathcal{N}, c(j)= c} f_{ji}^c
+\end{aligned}
+\end{equation}
+
 The power of the signal of interest on auxiliary circle is expressed as,
 \begin{equation}
 \label{quasiSINR_1}
@@ -206,25 +213,20 @@ where $h_i$ and $z_i$ are the attenuation and shadowing from $i$ to any point on
 
 %In this model with flat environment, attenuation and shadow fading are function of distance, then we can say the power of signal caused by a WBS $j$ is the strongest co-channel interference caused by WBS $j$.
 %In Figure~\ref{quasiSINRfigure}, $\tilde{f_{ji}}$ equals to received interfering power from WBS $j$ on the red dot, which is the crossing of the connecting line between WBS $i$ and $j$ and the auxiliary circle.
-The sum of interference on WBS $i$' interference reference points is denoted as $\tilde{f_{i}}$.
 
-\begin{equation}
-\label{quasiSINR_infs}
-\begin{aligned}
-\tilde{f_{i}} = \sum_{j\in\mathcal{N}, c(j)= c} \tilde{f_{ji}}
-\end{aligned}
-\end{equation}	
 
 %In the rest of this chapter, $\tilde{P}$ and $\tilde{f}$ represent the received power of interest and the strongest interference on the auxiliary circle.
-Then the quasiSINR of WBS $i$ is, 
+Then the quasiSINR of WBS $i$ is denoted as $\gamma_{i}$, 
 \begin{equation}
 \label{quasiSINR}
 \begin{aligned}
- \tilde{\gamma_{i}} & = \frac{\tilde{P_i}^c}{\tilde{f_i}^k + N_0} \\
+ \gamma_{i} & = \frac{\tilde{P_i}^c}{f_i^c + N_0} \\
 &=\frac{P_{i}^c \cdot h_i \cdot z_i} {\sum_{\tiny\substack{j\neq i, j\in \mathcal{N}\\c(j)=c(i)}} (P_j^c \cdot h_{ji} \cdot z_{ji}) + N_0}\\
 &= \frac{P_{i}^c \cdot \delta^{-\alpha}\cdot z} {\sum_{\tiny\substack{j\neq i, j\in \mathcal{N}\\c(j)=c(i)}} (P_j^c \cdot (d_{ji}-\delta)^{-\alpha} \cdot z_{ji}) + N_0}
 \end{aligned}
 \end{equation}
+
+
 
 %and we can see QuasiSINR is the ratio between the weakest signal of interest and the summation of the strongest interference.
 The radius of the auxiliary circle $\delta$ can be adjusted to let WBS foster better service to the terminals in certain area.
@@ -240,15 +242,46 @@ When the terminals concentrate towards to the WBS, $\delta$ can be set smaller t
 
 
 %any change of the transmit powers of co-channel interference source (i.e. other WBS working on channel $k$) will have always fixed impact to the quasiSINR of the WBS concerned, 
-Because of the auxiliary circle, the interaction between co-channel WBSs are independent on the location of individual end terminals. 
+Because of the auxiliary circle, the interaction between co-channel WBSs are independent on the location of individual end terminals, and WBSs only take care the co-channel WBSs. 
 As a result,  the concrete terminals are excluded from the channel and power allocation problem, which simplifies the problem to be discussed. 
-%QuasiSINR will be validated in Section \ref{simulation}. 
+In the following part of this chapter, the notations are exclusively about the WBSs.
+We clarify the meaning of some notations here.
+
+\begin{table}[h]
+\caption{Notations applied in the following part of this chapter}
+\label{tab1}
+\centering
+\begin{tabular}{llr}
+\toprule
+%\multicolumn{2}{c}{Item} \\
+%\cmidrule(r){1-2}
+Symbol & Description \\
+\midrule
+$\gamma_i$ & QuasiSINR of WBS $i$\\
+$f_{ji}^c$  & The interference caused by WBS $j$ on the interference reference \\
+			& point of WBS $i$, and both of them work on channel $c$\\
+$f_i^c$ & The sum of interference caused on the interference reference \\
+			& points of WBS $i$ \\
+$\tilde{P_i}^c$ & The power of the signal of interest on auxiliary circle of WBS $i$ \\
+			& which works on channel $c$     \\
+$P_i$		& The transmission power of WBS $i$\\
+$h_{ij}$ & The attenuation from the co-channel interfering WBS $j$ to the \\
+		& corresponding interference reference point of WBS $i$.\\
+$z_{ij}$ & The shadowing from the co-channel interfering  WBS $j$ to the\\
+		& corresponding interference reference point of WBS $i$.\\
+xxxx & xxxxxx\\
+\bottomrule
+\end{tabular}
+\end{table}
 
 %Notice regrading the QuasiSINR, that any modification of the transmit powers of co-channel interference source (i.e. other WBS working on channel $c$) will have always the same scaled impact. I.e. we have symmetry among the co-channel interferes regarding their impact on the QuasiSINR. This is the main reason for introducing the QuasiSINR.\todo{?}
 
 
 
 \subsubsection*{Calculation Instead of Measurement}
+Based on Formula~\ref{quasiSINR_infs}, as to WBS $i$, when the information is given, which include the locations of other co-channel WBSs, the radius of auxiliary circle and the standard deviation of shadow fading, then the co-channel inference caused on its interference reference points by other co-channel WBSs can be obtained, besides, WBS $i$ is also aware of the interference it causes on the interference reference points associated with other co-channel WBSs.
+
+
 According to our system model, WBSs are able to access the central database which stores all WBSs' geolocations \ie working channel, transmission power, the characteristics of radio frequency environment such as parameters of attenuation and shadowing.
 To obtain quasiSINR, one WBS doesn't need to measure the signal strength on the reference points which is needed in Formula~\ref{quasiSINR}, instead, it can can make use of the propagation model~\cite{Jaentti11} along with the operating parameters of all the other WBSs, which are stored in the central database to calculate the quasiSINR of any specific WBS.
 %Besides, the channel usage of each WBS is also recorded in the data center.
@@ -259,22 +292,25 @@ To obtain quasiSINR, one WBS doesn't need to measure the signal strength on the 
 
 
 \subsubsection*{Problem Statement in the Form of Optimization}
-Our goal can be illustrated in the form of an constrained optimization problem.
+Our goal can be illustrated in the form of a constrained optimization problem.
 To ensure fairness among WBSs, instead of maximizing the sum of quasiSINR of all WBSs, we minimize the sum of inverted quasiSINR. 
 	\begin{equation}
 \label{problem}
 			\begin{aligned}
 			& {\text{Minimize}}
-			& & \sum_{i\in \mathcal{N}}\frac{1}{\tilde{\gamma_{i}}} \\
+			& & \sum_{i\in \mathcal{N}}\frac{1}{\gamma_{i}} \\
 			& \text{subject to}
 			& & \sum_{k=1}^{|\mathcal{C}|}x_{ik}=1 \\
 			& & & P_{i,min}^c \leq P_i^c \leq P_{i,max}^c, c \in \mathcal{C}, i\in \mathcal{N}
 			\end{aligned}
 		\end{equation}
+		where $P_{i,min}^c$ and $P_{i,max}^c$ are the minimal and maximal transmission power of the transmitter of WBS $i$, where are restricted by the hardware configuration or capabilities.
+We assume $P_{i,min}^c$ and $P_{i,max}^c$ are identical for all WBSs and over all channels.
+
 %XXX Please formalize the constraints, do not simply write 'one node, one channel'\todo{i'll do it!}
 %where $\tilde{\gamma_{i}}$ is the QuasiSINR as defined in Equation~\ref{quasiSINR} XXX Always when you reference to a section, a figure, an equation or a table, mention the corresponding word in front of the reference - otherwise the reader does not know, should he reference to a section, an equation etc. - here I put in an 'Equation' for you but check this for the rest of the paper XXX. 
-For a WBS working on different channel, its end terminals receive different levels of interference from other WBSs working on the same channel.
-In order to provide better service to its end users, WBS is liable to choose either the channel permitting higher transmission power or the channel which experiences less interference, or the channel compromising the two factors according to Formula \ref{SINR}.
+When a WBS works on different channels, the co-channel interference received by its end users from other WBSs is different.
+In order to provide better service to its end users, WBS is motivated to choose the channel which either permits higher transmission power or experiences less interference, or the channel compromising the two factors according to Formula \ref{SINR}.
 Achieving optimal white spectrum allocation in a distributed style is the goal of this work, furthermore, this distributed solution should converge fast and lead to an efficient and stable solution.
 
 
@@ -963,12 +999,12 @@ The other parameters are listed in Table~\ref{6}.
   Number of channels 						& 5 \\
   Number of WBSs							& 16\\
   Noise 									& $10^{-12}$W \\ % -90dbm
-  Length of the square to locate WBSs		& 60km\\
+  Length of side the square to locate WBSs		& 60km\\
   Distance between quasai terminal and WBS 	& 7km \\
   Interference threshold on TV contour 		& $10^{-7}$W \\ % -67dbm
   Path loss factor 							& 2 \\
   Standard deviation in flat shadowing		& 8\\
-  Minimal WBS transmission power 			& 4W \\
+  Minimal WBS transmission power~\footnotemark{} 			& 4W \\
   Maximal WBS transmission power 			& 40W \\
   Number of end terminals in network 		& 800 \\
   \hline
@@ -976,6 +1012,7 @@ The other parameters are listed in Table~\ref{6}.
 \caption{Simulation parameters}
 \label{simulationparameter}
 \end{table}
+\footnotetext{minimal and maximal power here denote the power level restricted by the specification of hardware.}
 
 \subsection{Maximal Permitted Power Decision and the Distributed Channel Allocation Schemes}
 \label{MaxPower_whitecat}
