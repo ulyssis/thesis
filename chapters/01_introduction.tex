@@ -123,6 +123,10 @@ Cognitive radio may only practice one portion of the aforementioned functionalit
 %Based on this definition, throughout this thesis the secondary users working with both spectrum underlay and overlay are named as cognitive radio users, besides, the cognitive radio network is deemed to be composed with cognitive radio users, whose acronym is \gls{CRN}.
 Based on this definition, the cognitive radio network is deemed to be composed with cognitive radio users, whose acronym is \gls{CRN}.
 
+Throughout this dissertation, we use several different terms to denote cognitive radio devices, \ie, cognitive radio users, secondary users, or secondary nodes in different contexts.
+In particular, when we want to stress the devices' cognitive ability on their environment, we use the term cognitive user or CR user, when we discuss spectrum sharing, and want to indicate the passiveness of the devices in terms of spectrum, we call them secondary users. 
+If the CRN is depicted as a graph, and we emphasis on the network topology, then the term node will be used.
+
 
 \subsection{Functionalities of Cognitive Radio}
 To adapt to the dynamic spectrum environment and make use of the available licensed spectrum, cognitive radio users %need to manage the available spectrum by conducting a series of functionalities sequentially, \ie detecting the available spectrum with spectrum sensing, selecting the proper spectrum for communication, communicate with other secondary users using certain spectrum band, and moving to another channel when the current working channel is not usable due to primary user's appearance.
@@ -463,7 +467,7 @@ CRAHN is composed with autonomous mobile cognitive radio users which work with o
 CRAHN is one mobile ad hoc network, whereas each mobile user has cognitive ability for spectrum access.
 Mobile users in CRAHN need to determine which channels are available to use with spectrum sensing, either cooperatively with neighbour users or individually.
 Mobile users have different knowledge of spectrum availability, which poses new challenges in addition to the ones for the management of mobile ad hoc network.
-CRAHN can be usually represented by an undirected graph $G$.
+CRAHN can usually be represented by an undirected graph $G$.
 Cognitive radio users constitute the vertices, the edge between two vertices is decided not only by the distance, propagation and attenuation properties between the two vertices, but also the spectrum availability on both vertices, \ie when they can decode the received signal from each other correctly, and there is common channel available between them on which communication is conducted, then an bidirectional edge is available on graph $G$.
 As to ad hoc network, the graph is constant when users are static.
 As to cognitive radio ad hoc network, due to primary users' activity, an edge between two vertices is decided by the fact that whether the two vertices can simultaneously access the same licensed channel.
@@ -471,7 +475,7 @@ Hence, the corresponding graph is dynamic under primary users' operation, which 
 
 As a versatile and flexible network infrastructure, CRAHN is comparatively easy to implement and operate, thus CRAHN is proposed to apply in many scenarios~\cite{Akyildiz09}.
 There are several open issues for CRAHN.
-For instance, a robust architecture against the network dynamics caused by nodes' mobility, primary users' activity is still due.
+For instance, a robust architecture against the network dynamics caused by user' mobility, primary users' activity is still due.
 It is challenging for CRAHN to meet the QoS criteria withe the spatial and temporal temporal availability of spectrum~\cite{Mansoor2014}.
 
 
@@ -597,17 +601,17 @@ IEEE 802.22 has been the first IEEE standard for wireless regional area network 
  % Although the transmission power is decided in a distributed manner, primary transmitters are required to adjust their transmission power in order to guarantee the SINR on primary receivers in a learning process, while, the operation of WSDs working on TVWS should be transparent as to TV services.\fmjg{This summary of the 2010 paper does not make sense to me - why are you talking of primary systems here ??} 
 
 \section{Problem Statement and Research Scope}
-As to the various challenging problems in CRN networks, adopting centralized or decentralized solutions is largely dependant on the network types and the nature of the problems to be solved.
+As to the various challenging problems in CRN networks, adopting centralized or decentralized solutions is largely dependant on the natures of the networks, and the concrete problems to be addressed.
 %Working with the TV white space is regarded as one application of cognitive radio network, which is most likely to succeed in near future.
-CRAHNs consist of mobile autonomous secondary users and don't have infrastructure, the network topology evolves with time, besides, the ungovernable primary users' activity leads to temporal spectrum availability. 
-Due to these factors, secondary users need to adjust their operation parameters based on the local information, then the distributed scheme becomes the sole choice to manage the CRAHN to convey services.
+CRAHNs consist of mobile autonomous secondary users and don't have infrastructure, besides, the network topology evolves with time due to users' mobility, and the ungovernable primary users' activity leads to temporal spectrum availability. 
+Because of these factors, secondary users execute concurrently based on the local information, then the distributed scheme becomes the natural choice to manage the CRAHN to convey services.
 %
 %In the networks with structure, \eg the commercial cellular networks work with licensed spectrum, the network they operate in centralized manner to provide services meeting QoS criterion.
 %As to the cellular networks working with unlicensed spectrum opportunistically, there exists a centralized data base to regulate the working channel for secondary users~\cite{crn_futurecellular_2014}.
 The opening of TV white space attracts people and organizations to build cellular networks to launch various services.
 A data base is required to register the fixed and mode II TVBDs~\cite{crn_futurecellular_2014}, but it is not supposed to afford the computation on the resources for each TVBD.
 Besides, the operation of TVBDs is carried out by different users or operators, thus it is not feasible for the centralized entity to coordinate the devices and assign the network sources to them.
-Thus distributed scheme is also necessary in the utilization of TV white spectrum.
+Hence distributed scheme is also necessary in the utilization of TV white spectrum.
 %There is one centralized database which is required by regulations and standards, thus it is possible to conduct certain centralized solutions on it.
 %But the owners of the cellular networks have different or conflicting interests, \eg the networks compete for resources, besides, there maybe secondary users which start or cease to use the TV white spectrum,  
 %Last but not least, the TVBDs may join or leave the network, \ie start to transmit or cease transmitting, which brings dynamics to the network, thus centralized scheme
@@ -627,11 +631,11 @@ To answer these questions, we turn to game theory, in particular, the recent pro
 
 
 \subsection{Research Questions}
-Based on the description of the challenges in cognitive radio network, we formulate two research questions which will be answered in this thesis.
+Based on the description of the challenges in cognitive radio networks, we formulate two research questions which will be answered in this thesis.
 
-Question 1 - When distributed algorithms are necessary due to the specific properties of one problem, how to guarantee the convergence and performance? How to design utility function to make use of game model in the process of algorithm design?
+Question 1 - When distributed algorithms are necessary due to the specific properties of a problem, how to guarantee the convergence and performance? How to design utility function to make use of the game model when designing the algorithm?
 
-Question 2 - What are the strengths and weaknesses of the distributed algorithm compared with the centralized scheme?
+Question 2 - What are the strengths and weaknesses of the distributed algorithm compared with other schemes, in particular, the centralized scheme?
 
 %Question 1 - How to design distributed solution with assistance of game model, so that to make full use of the TV spectrum with the regulated network structure? 
 %
@@ -644,16 +648,16 @@ Question 2 - What are the strengths and weaknesses of the distributed algorithm 
 \subsubsection{Contributions}
 In this thesis, we answer the aforementioned research questions by making the one to one contributions.
 
-Contribution C1 - We apply congestion game in the new domains, and design distributed schemes which comply with the behaviours of players of the congestion game.
+Contribution C1 - We apply congestion game in the new domains to solve the concrete problems in CRN, and design distributed schemes with which the secondary users comply with the behaviours of players of the congestion game.
 With the properties of congestion game, we investigate the concerns on convergence and overhead of the proposed distributed algorithms.
 
-Contribution C2 - We compare the performance of distributed schemes and centralized schemes in concrete problems in CRN.
+Contribution C2 - We compare the performance of the proposed scheme with other distributed schemes and centralized scheme.
 
 
 
 %We briefly introduce the contribution of this dissertation by addressing the aforementioned questions.
-We demonstrate how to refrain the overhead and fasten the convergence process, especially, we make utilize the available game models to design distributed algorithms which have the desired these properties.
-These contributions are illustrated in the process of solving three problems.
+We demonstrate how to refrain the overhead and fasten the convergence process, especially, we utilize the available game models to design distributed algorithms which have the desired these properties.
+These contributions are illustrated in the process of solving three concrete technical problems.
 %We investigate the differences between decentralized and centralized schemes in terms of several criteria, \ie performance, overhead, computation time, etc..
 Figure~\ref{overview} illustrate the relation between contributions and the concrete technical problems to be addressed in this thesis.
 \begin{figure}[h!]
@@ -675,7 +679,7 @@ Figure~\ref{overview} illustrate the relation between contributions and the conc
 %A light weight routing tailored for CRN is needed.
 %In the following sections, we will introduce the problems in Figure~\ref{problemLocation} in details.
 \subsection{Research Scope}
-This thesis doesn't chase the properties of games, but make use of the available knowledge of game, and apply them to solve the pressing challenges existing in cognitive radio networks.
+This thesis doesn't chase new properties of games, but make use of the available knowledge of game, and apply them to solve the pressing challenges existing in cognitive radio networks.
 In particular, we bring the congestion game out of the routing problem~\cite{Ackermann06purenash, Papadimitriou:2001:AGI}, where the congestion game is proposed and analysed.
 We apply congestion game to solve channel allocation and network structure formation problems by designing suitable utility functions for the network units.
 
@@ -696,16 +700,16 @@ These questions are individually orthogonal, but as pressing problems in each la
 
 
 %As introduced in Section~\ref{ieee80222}, the TV white spectrum has appealing characteristics for secondary users, for instance, the TV spectrum spans wide frequency range, it is not used by TV services frequently and the spectrum availability lasts relatively longer.
-There are several problems with the current regulations and standards proposing on the utilization of TVWS.
+There are several problems in the current regulations and standards which are proposed on the utilization of TVWS.
 First, most of these proposals rely on the centralized database to manage the spectrum usage in a centralized manner.
 This paradigm is not suitable when the TVBD belong to different business bodies, \ie operators.
 Thus, a centralized resource allocation is infeasible.
-Second, the current usage of TVWS is prudent, \ie on working channel and transmission power as introduced in Section~\ref{TVWS}.
+Next, the current usage of TVWS is prudent, \ie on working channel and transmission power as introduced in Section~\ref{TVWS}.
 These conservative measures on the transmission power restrict the full utilization of TV spectrum.
 Third, although the transmission power of TVBD is restricted, the interference between TVBDs is not given consideration by any regulation or standard.
 %In fact, as the interference caused between co-channel transmitters may not be symmetric, 
 In fact, the channel allocation problem we encountered in this problem is unique as the transmission power for each user and on each channel is different.
-In other words, the symmetric interaction doesn't exist, thus the solutions proposed for the channel assignment problems in conventional networks, \eg ad hoc networks, or mesh networks can not be applied any more.
+In other words, the symmetric interaction doesn't exist, thus the solutions proposed for the channel assignment problems in conventional networks, \eg ad hoc networks, or mesh networks don't work any more.
 % \ie transmission power is identical for all users, and the propagation path loss is reciprocal. 
 The asymmetry disables the heuristic distributed schemes provided in~\cite{Ko_DistributedCA}, and makes channel allocation problem not to fit into the congestion game model proposed in~\cite{allerton08_liu} which is the first paper to discuss channel allocation from the respective of game theory.
 %Up to our knowledge, there is no work coping with co-existence between secondary base station with both primary TV broadcasters and other base stations.
@@ -724,26 +728,26 @@ The asymmetry disables the heuristic distributed schemes provided in~\cite{Ko_Di
 
 \subsubsection{Problem 2: Robust Cluster Structure in Ad Hoc Cognitive Radio Network}
 Clustering is an important paving stone for the practical utilization of the unused portions of the licensed spectrum.
-Clustering secondary users based on geographical proximity and other relevant properties together to produce following benefits.
+Forming clusters with the secondary users which have proximity of geography and other properties produces several benefits.
 First, it is more efficient to solve common control channel (\gls{CCC}) problem with cluster structure.
-Dedicated CCC which is allocated to all nodes for the purpose of control information exchange is regarded to be under utilization.
-Whereas, cluster based approaches group CR nodes into clusters based on their similarity of available unlicensed channels, so that the common channels within each cluster are used to carry the control messages~\cite{Lazos09}.
+Dedicated and static CCC which is allocated to all users is regarded to be under utilization and contrary to the opportunistic access paradigm.
+Whereas, cluster based approaches group CR users into clusters based on their similarity of available unlicensed channels, so that different common channels are used in various clusters to convey control messages~\cite{Lazos09}.
 %whereas communication rendezvous, \ie the process to establish control channel between two CR users before they can communicate is proposed to be a economic solution.
 %Within one cluster which is composed with CR nodes with similar available unlicensed channels, communication rendezvous can be accomplished within in shorter time~\cite{CommunicationRendezvous_ToN13}.
 Second, cluster structure facilitates cooperative sensing and increases the sensing reliability~\cite{Sun07_clustering_spectrum_secsing}.
-Third, cluster structure supports coordinated channel switching and simplifies routing in ad-hoc cognitive radio networks~\cite{cluster_routing_2013ICC}.
+Third, cluster structure supports coordinated channel switching and routing in ad-hoc cognitive radio networks~\cite{cluster_routing_2013ICC}.
 
-The benefits promised by cluster structure is challenged by the ungovernable activity of primary users.
+The benefits promised by cluster structure is challenged by the ungovernable (from the perspective of secondary users) activity of primary users.
 %The first is the abundance of common control channels within cluster should be achieved.
-If the members of one cluster have to vacate all the CCCs due to primary users' appearance, the cluster doesn't exist any more.
-But if the cluster members can migrate to another CCC when one CCC is occupied by primary user, the cluster survives.
+If the members of one cluster have to vacate all the CCCs due to primary users' appearance, the cluster can not be maintained any more.
+But the cluster survives if all the cluster members can migrate to another CCC after one CCC is occupied by primary user.
 Thus, a large number of CCCs within cluster means high robustness against primary users.
-Unfortunately, related works~\cite{Zhao07,Affinity_clustering_09icccn,Consensus_based_clustering12,clustering_globecom11} fail to pay attention to this aspect.
+Unfortunately, related works~\cite{Zhao07,Affinity_clustering_09icccn,Consensus_based_clustering12,clustering_globecom11} fail to pay attention to this issue.
 %Besides, more control channels makes multiple concurrent transmission within cluster possible.
 %In this thesis, a distributed clustering algorithm which is especially designed to support robustness under active primary users is proposed.
 There is a pressing need for one distributed clustering scheme, which should fulfil the following requirements.
 First, the execution of the scheme should be finished quickly, so that the scheme can react quickly enough to the primary users' activity.
-Second, the scheme should result in more CCCs in the formed clusters.
+next, the scheme should achieve a proper compromise between the number of CCCs and cluster sizes.
 
 
 %\item Efficient channel allocation scheme within and among clusters is needed, so that communication rendezvous between two clusters is quick. 

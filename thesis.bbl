@@ -155,6 +155,13 @@ In the matter of unlicensed operation in the {TV} broadcast bands: second
 \newblock In {\em In Proceedings of IEEE Sarnoff Symposium 2008\/} (April
   2008), pp.~1--5.
 
+\bibitem{BCJ10}
+{\sc Baccelli, E., Cordero, J.~A., and Jacquet, P.}
+\newblock Optimization of critical data synchronization via link overlay rng in
+  mobile ad hoc networks.
+\newblock In {\em In 7th IEEE International Conference Mobile Ad-hoc and Sensor
+  Systems (MASS)\/} (2010).
+
 \bibitem{Affinity_clustering_09icccn}
 {\sc Baddour, K., Ureten, O., and Willink, T.}
 \newblock Efficient clustering of cognitive radio networks using affinity
@@ -566,6 +573,12 @@ In the matter of unlicensed operation in the {TV} broadcast bands: second
 \newblock Distributed {TV} spectrum allocation for cognitive cellular network
   under game theoretical framework.
 \newblock In {\em Proc. of IEEE DySPAN 2012}.
+
+\bibitem{complexity_aggregation_2011}
+{\sc Li, X.-Y., Wang, Y., and Wang, Y.}
+\newblock Complexity of data collection, aggregation, and selection for
+  wireless sensor networks.
+\newblock {\em IEEE Transactions on Computers 60}, 3 (2011), 386--399.
 
 \bibitem{crn_futurecellular_2014}
 {\sc Lien, S.-Y., Chen, K.-C., Liang, Y.-C., and Lin, Y.}

@@ -154,6 +154,16 @@ Z.~Gu, Q.-S. Hua, and W.~Dai, ``Fully distributed algorithms for blind
   rendezvous in cognitive radio networks,'' in \emph{Proceedings of the 2014
   ACM MobiHoc}, ser. MobiHoc '14.
 
+\bibitem{Chen04clusteringalgorithms}
+Y.~P. Chen, A.~L. Liestman, and J.~Liu, ``Clustering algorithms for ad hoc
+  wireless networks,'' in \emph{Ad Hoc and Sensor Networks. Nova Science
+  Publishers}, 2004.
+
+\bibitem{capacity_cluster_06}
+E.~Perevalov, R.~S. Blum, and D.~Safi, ``Capacity of clustered ad hoc networks:
+  how large is "large"?'' \emph{IEEE Transactions on Communications}, vol.~54,
+  no.~9, pp. 1672--1681, Sept 2006.
+
 \bibitem{Ackermann06purenash}
 H.~Ackermann, H.~Röglin, and B.~Vöcking, ``Pure {N}ash equilibria in
   player-specific and weighted congestion games,'' \emph{Theoretical Computer
@@ -163,6 +173,12 @@ H.~Ackermann, H.~Röglin, and B.~Vöcking, ``Pure {N}ash equilibria in
 M.~R. Garey and D.~S. Johnson, \emph{Computers and Intractability: {A} Guide to
   the Theory of NP-Completeness}.\hskip 1em plus 0.5em minus 0.4em\relax W. H.
   Freeman, 1979.
+
+\bibitem{BCJ10}
+E.~Baccelli, J.~A. Cordero, and P.~Jacquet, ``Optimization of critical data
+  synchronization via link overlay rng in mobile ad hoc networks,'' in \emph{In
+  7th IEEE International Conference Mobile Ad-hoc and Sensor Systems (MASS)},
+  2010.
 
 \bibitem{complexity_aggregation_2011}
 X.-Y. Li, Y.~Wang, and Y.~Wang, ``Complexity of data collection, aggregation,

@@ -243,7 +243,7 @@ One anchor message affiliated with one anchor visits any secondary user at most 
 \begin{proof}
 Assume one node is accessed by the same anchor message for two times.
 When the anchor message arrives at the secondary user, let's say $i$, for the first time, there is $\text{vc} > counter+\lambda$, and both of the vc and counter in the anchor message are updated to be $counter+\lambda$.
-After being forwarded, the anchor message travels at least one other secondary user before arriving $i$, and the counter is greater than the counter value when it is forwarded from $i$ according to Lemma \ref{savic:lemma2}, which means, current counter value is greater than $\lambda_i$, and the anchor message is dropped.
+After being forwarded, the anchor message travels at least one other secondary user before arriving $i$, and the counter is greater than the counter value when it is forwarded from $i$ according to Lemma \ref{savic:lemma1}, which means, current counter value is greater than $\lambda_i$, and the anchor message is dropped.
 Thus, this anchor message accesses secondary user $i$ for at most two times.
 \end{proof}
 

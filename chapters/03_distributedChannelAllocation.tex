@@ -267,9 +267,10 @@ $\tilde{P_i}^c$ & The power of the signal of interest on auxiliary circle of WBS
 $P_i$		& The transmission power of WBS $i$\\
 $h_{ij}$ & The attenuation from the co-channel interfering WBS $j$ to the \\
 		& corresponding interference reference point of WBS $i$.\\
+$h_{i}$ & The attenuation from the WBS $i$ to its auxiliary circle.\\
 $z_{ij}$ & The shadowing from the co-channel interfering  WBS $j$ to the\\
 		& corresponding interference reference point of WBS $i$.\\
-xxxx & xxxxxx\\
+$z_{i}$ & The shadowing from WBS $i$ to its auxiliary circle.\\		
 \bottomrule
 \end{tabular}
 \end{table}
@@ -278,7 +279,7 @@ xxxx & xxxxxx\\
 
 
 
-\subsubsection*{Calculation Instead of Measurement}
+%\subsubsection*{Obtain quasiSINR and  Instead of Measurement}
 Based on Formula~\ref{quasiSINR_infs}, as to WBS $i$, when the information is given, which include the locations of other co-channel WBSs, the radius of auxiliary circle and the standard deviation of shadow fading, then the co-channel inference caused on its interference reference points by other co-channel WBSs can be obtained, besides, WBS $i$ is also aware of the interference it causes on the interference reference points associated with other co-channel WBSs.
 
 
@@ -291,7 +292,7 @@ To obtain quasiSINR, one WBS doesn't need to measure the signal strength on the 
 
 
 
-\subsubsection*{Problem Statement in the Form of Optimization}
+\subsubsection*{Problem Formulation}
 Our goal can be illustrated in the form of a constrained optimization problem.
 To ensure fairness among WBSs, instead of maximizing the sum of quasiSINR of all WBSs, we minimize the sum of inverted quasiSINR. 
 	\begin{equation}
@@ -605,7 +606,7 @@ Problem \ref{problem} can be modeled via general purpose nonlinear optimization:
 \label{QLP}
 		\begin{aligned}
 		& \underset{}{\text{minimize}}
-		& & \sum\limits^{n}_{i=1} \frac{\sum\limits_{j\in\mathcal{N}, j\neq i}P^TX_j(X_j^TX_i)h_{ji}z + N_0}{P^TX_i}\\
+		& & \sum\limits^{n}_{i=1} \frac{\sum\limits_{j\in\mathcal{N}, j\neq i}P^TX_j(X_j^TX_i)h_{ji}z_{ji} + N_0}{P^TX_ih_iz_i}\\
 		& \text{subject to}
 		& & \sum\limits_{k=1}^{|\mathcal{C}|}x_{ik}=1, x_{ik}\in X_i\in \{0,1\}^{|\mathcal{C}|}\\
 		\end{aligned}
@@ -615,7 +616,7 @@ Problem \ref{QLP} is a non-linear problem with binary variables, but it can be r
 \label{QLP_2}
 			\begin{aligned}
 			& \underset{}{\text{minimize}}
-			& &\sum\limits^{n}_{i=1}(\sum\limits_{j\in\mathcal{N}, j\neq i}\sum\limits_k \frac{P_{j}^k}{P_{i}^k}\cdot h_{ji}\cdot z\cdot x_{jk}\cdot x_{ik} + \sum\limits_k \frac{N_0}{P_{ik}}\cdot x_{ik})\\
+			& &	\sum\limits^{n}_{i=1} ( \sum\limits_{j\in\mathcal{N}, j\neq i}\sum\limits_k \frac{P_{jk}\cdot h_{ji}\cdot z_{ji}}{P_{ik}\cdot h_i\cdot z_i}\cdot  x_{jk}\cdot x_{ik}  + \sum\limits_k \frac{N_0}{P_{ik}\cdot h_i\cdot z_i}\cdot x_{ik})\\
 			& \text{subject to} 
 			& & \sum\limits_{k=1}^{|\mathcal{C}|}x_{ik}=1, x_{ik}\in X_i\in \{0,1\}^{|\mathcal{C}|}\\
 			\end{aligned}
@@ -636,11 +637,11 @@ WitheCat is depicted by algorithm \ref{whitecatalgo}.
 
 \begin{equation}
 \label{utility}
-u_i =\dfrac{\sum\limits_{\tiny\substack{j\in \mathcal{N}, j\ne i,\\ c(\sigma_j)=c(\sigma_i)}}\tilde{f_{ji}}}{2\cdot \tilde{P_i}} + \dfrac{1}{2}\sum_{\tiny\substack{j\in \mathcal{N}, j\ne i,\\ c(\sigma_j)=c(\sigma_i)}}\dfrac{\tilde{f_{ij}}}{\tilde{P_j}} + \sum_{\tiny\substack{\mathcal{S}:i,j\in \mathcal{S},\\ c(\sigma_j)=c(\sigma_i)}}\dfrac{N_0}{C\cdot \tilde{P_i}}\\
+u_i =\dfrac{\sum\limits_{\tiny\substack{j\in \mathcal{N}, j\ne i,\\ c(\sigma_j)=c(\sigma_i)}}f_{ji}}{2\cdot \tilde{P_i}} + \dfrac{1}{2}\sum_{\tiny\substack{j\in \mathcal{N}, j\ne i,\\ c(\sigma_j)=c(\sigma_i)}}\dfrac{f_{ij}}{\tilde{P_j}} + \sum_{\tiny\substack{\mathcal{S}:i,j\in \mathcal{S},\\ c(\sigma_j)=c(\sigma_i)}}\dfrac{N_0}{C\cdot \tilde{P_i}}\\
 \end{equation}
 
-where $\tilde{f_{ij}}= P_i\cdot h_{ij}\cdot z$ and $\tilde{f_{ji}}= P_j\cdot h_{ij}\cdot z$.
-Note that $\tilde{f_{ij}}$ is the sum of interference on WBS $i$'s interference reference points.
+where $f_{ij}= P_i\cdot h_{ij}\cdot z$ and $f_{ji}= P_j\cdot h_{ij}\cdot z$.
+Note that $f_{ij}$ is the sum of interference on WBS $i$'s interference reference points.
 Overlooking the constant coefficient 2, the first item of $u_i$ is a part of the inverted QuasiSINR of station $i$. 
 To minimize the first item, WBS $i$ needs to choose a channel either permits higher transmission power or experiences less interference, whereas the higher power increases the second item which is a part of inverted QuasiSINR of other co-channel WBSs. 
 Hence, the cost function presents a reasonable comprise between the welfare of one WBS and others.
@@ -683,8 +684,8 @@ Notify database of its channel usage, which further notifies the other WBSs
 
 Some parameters needed to calculate the utility are identical for all WBSs, such as quasi distance $e$, the total number of WBSs $N$, number of channels $C$, attenuation factor $\alpha$, standard deviation $\sigma_{WBS}$ in flat shadowing and noise $N_0$, albeit the following information is further needed to calculate $u_i$: 
 	\begin{itemize} %{labelitemi}{$\bullet$}
-	\item $\sum_{\tiny\substack{j\in \mathcal{N}, j\ne i,\\ c(\sigma_j)=c(\sigma_i)}}\tilde{f_{ji}^c}, c\in \mathcal{C}$: the received interference on $i$' virtual measurement point from other WBSs $j$ working on the same channel for $\forall c\in \mathcal{C}$.
-	\item $\tilde f_{ij}^c$: the interference caused by $i$ on $j$'s virtual measurement point when $i$ works on channel $\forall c\in \mathcal{C}$.
+	\item $\sum_{\tiny\substack{j\in \mathcal{N}, j\ne i,\\ c(\sigma_j)=c(\sigma_i)}}f_{ji}^c, c\in \mathcal{C}$: the received interference on $i$' virtual measurement point from other WBSs $j$ working on the same channel for $\forall c\in \mathcal{C}$.
+	\item $ f_{ij}^c$: the interference caused by $i$ on $j$'s virtual measurement point when $i$ works on channel $\forall c\in \mathcal{C}$.
 	\item $P_j^c$: transmission power of $j$ for using $\forall c\in \mathcal{C}$.
 	\end{itemize}
 Unfortunately, it is difficult to get these interferences of interested measured, for station $i$, it is low efficient to scan all channels and obtain the interferences $f_{ji}$ on virtual measurement point for each channel, furthermore, it is impossible to split the interference $f_{ij}$ from the total interference received on WBS $j$' virtual measurement point. 
@@ -696,7 +697,7 @@ After executing Algorithm \ref{whitecatalgo}, it reports to centralized database
 As the location of WBSs and TV stations and the transmission channel and power of TV stations are usually static (entries of TV station change averagely once in 2 days\cite{SenseLess2011}), except for the channel usage in the network, the change of the other data stored in WBS is infrequent. 
 
 
-\subsection{Analysis in game theoretical framework}
+\subsection{Analysis in Game Theoretical Framework}
 \label{game}
 In this section, We give the proof on whiteCat's convergence in the framework of congestion game theory.
 Formulating a spectrum sharing problem into a congestion game and the concept of \textit{virtual resources} are firstly proposed in \cite{allerton08_liu}.
@@ -766,7 +767,7 @@ g_{(i,j,c)}(k) =
 \left\{ \begin{array}{ll}
 %\tilde{f_{ji}}/(2\tilde{P_i}) + f_{ij}/(2\tilde{P_j}) + N_0/(C\cdot \tilde{P_i})\\\\
 %=\dfrac{P_j\cdot h_{ji}\cdot z/2 + N_0/C}{P_i\cdot h_{iQ}\cdot z} +\dfrac{P_i\cdot h_{ij}\cdot z/2}{P_j\cdot h_{jQ}\cdot z} & \mbox{if $k=2$} \\
-\dfrac{\tilde{f_{ji}}}{2\tilde{P_i}} + \dfrac{\tilde{f_{ij}}}{2\tilde{P_j}} + \dfrac{C\cdot N_0}{N\cdot \tilde{P_i}} & \mbox{if $k=2$} \\
+\dfrac{f_{ji}}{2\tilde{P_i}} + \dfrac{f_{ij}}{2\tilde{P_j}} + \dfrac{C\cdot N_0}{N\cdot \tilde{P_i}} & \mbox{if $k=2$} \\
 %=\dfrac{P_j\cdot h_{ji}\cdot z/2 + N_0/C}{P_i\cdot h_{iQ}\cdot z} +\dfrac{P_i\cdot h_{ij}\cdot z/2}{P_j\cdot h_{jQ}\cdot z} & \mbox{if $k=2$} \\
 0 & \mbox{otherwise}
 \end{array}
@@ -791,10 +792,10 @@ When we substitute Formula \ref{costfuc4resrc} to Formula \ref{6}, the total cos
 g^i(\sigma)
 %& = \sum_{\tiny\substack{j\in \mathcal{N}\setminus i,\\ c=c(\sigma_j)=c(\sigma_i)}} g_{(i,j,c)}(2) + \sum_{\tiny\substack{j\in \mathcal{N}, j\ne i,\\ c=c(\sigma_j)=c(\sigma_i)}} g_{(j,i,c)}(2)\\
 & = \sum_{\tiny\substack{j\in \mathcal{N}\setminus i,\\ c=c(\sigma_j)=c(\sigma_i)}} (g_{(i,j,c)}(2) + g_{(j,i,c)}(2))\\
-%& = \sum_{\tiny\substack{j\in \mathcal{N}, j\ne i,\\ c(\sigma_j)=c(\sigma_i)}} (\dfrac{\tilde{f_{ji}}/2 + N_0/C}{\tilde{P_i}} + \dfrac{\tilde{f_{ij}}/2}{\tilde{P_j}})\\
-& = \sum_{\tiny\substack{j\in \mathcal{N}\setminus i,\\ c(\sigma_j)=c(\sigma_i)}}(\dfrac{\tilde{f_{ji}}}{\tilde{P_i}} + \dfrac{\tilde{f_{ij}}}{\tilde{P_j}}+ \dfrac{C\cdot N_0}{N}(\dfrac{1}{\tilde P_i}+\dfrac{1}{\tilde P_j})) \\
-& = \dfrac{\sum\limits_{\tiny\substack{j\in \mathcal{N}\setminus i,\\ c(\sigma_j)=c(\sigma_i)}}\tilde{f_{ji}}}{ \tilde{P_i}} + \sum_{\tiny\substack{j\in \mathcal{N}\setminus i, \\c(\sigma_j)=c(\sigma_i)}}\dfrac{\tilde{f_{ij}}}{\tilde{P_j}} + \dfrac{CN_0}{N}\sum_{\tiny\substack{j\in \mathcal{N}\setminus i,\\ c(\sigma_j)=c(\sigma_i)}}(\dfrac{1}{\tilde{P_i}}+\dfrac{1}{\tilde{P_j}})\\
-& = \dfrac{\sum\limits_{\tiny\substack{j\in \mathcal{N}\setminus i,\\ c(\sigma_j)=c(\sigma_i)}}\tilde{f_{ji}}}{ \tilde{P_i}} + \sum_{\tiny\substack{j\in \mathcal{N}\setminus i,\\ c(\sigma_j)=c(\sigma_i)}}\dfrac{\tilde{f_{ij}}}{\tilde{P_j}} + \dfrac{2CN_0}{N}\sum_{\tiny\substack{i\in\mathcal{S}\subset\mathcal{N},\\\mathcal{S}:\forall i\in \mathcal{S}\\ c(\sigma_i)=c}}\dfrac{1}{\tilde{P_i}}\\
+%& = \sum_{\tiny\substack{j\in \mathcal{N}, j\ne i,\\ c(\sigma_j)=c(\sigma_i)}} (\dfrac{f_{ji}/2 + N_0/C}{\tilde{P_i}} + \dfrac{f_{ij}/2}{\tilde{P_j}})\\
+& = \sum_{\tiny\substack{j\in \mathcal{N}\setminus i,\\ c(\sigma_j)=c(\sigma_i)}}(\dfrac{f_{ji}}{\tilde{P_i}} + \dfrac{f_{ij}}{\tilde{P_j}}+ \dfrac{C\cdot N_0}{N}(\dfrac{1}{\tilde P_i}+\dfrac{1}{\tilde P_j})) \\
+& = \dfrac{\sum\limits_{\tiny\substack{j\in \mathcal{N}\setminus i,\\ c(\sigma_j)=c(\sigma_i)}}f_{ji}}{ \tilde{P_i}} + \sum_{\tiny\substack{j\in \mathcal{N}\setminus i, \\c(\sigma_j)=c(\sigma_i)}}\dfrac{f_{ij}}{\tilde{P_j}} + \dfrac{CN_0}{N}\sum_{\tiny\substack{j\in \mathcal{N}\setminus i,\\ c(\sigma_j)=c(\sigma_i)}}(\dfrac{1}{\tilde{P_i}}+\dfrac{1}{\tilde{P_j}})\\
+& = \dfrac{\sum\limits_{\tiny\substack{j\in \mathcal{N}\setminus i,\\ c(\sigma_j)=c(\sigma_i)}}f_{ji}}{ \tilde{P_i}} + \sum_{\tiny\substack{j\in \mathcal{N}\setminus i,\\ c(\sigma_j)=c(\sigma_i)}}\dfrac{f_{ij}}{\tilde{P_j}} + \dfrac{2CN_0}{N}\sum_{\tiny\substack{i\in\mathcal{S}\subset\mathcal{N},\\\mathcal{S}:\forall i\in \mathcal{S}\\ c(\sigma_i)=c}}\dfrac{1}{\tilde{P_i}}\\
 \end{split}
 \end{equation}
 
@@ -811,7 +812,7 @@ Then the total potential is,
 G(\sigma) 
 & =\sum\limits^{}_{r\in \mathcal{R}} \sum\limits^{n_r(\sigma)}_{i=1} g_r(i)  =\sum\limits_{i\in \mathcal{N}} \sum\limits^{}_{r\in \sigma_i} g_r(n_r^i(\sigma))\\
 %& = \sum\limits_{i\in \mathcal{N}}\dfrac{\sum\limits_{\tiny\substack{j\in \mathcal{N}, j\ne i,\\ c(\sigma_j)=c(\sigma_i)}}\tilde{f_{ji}}}{\tilde{P_i}} + \sum\limits_{\tiny\substack{\mathcal{S}\backepsilon i, \mathcal{S}\subset \mathcal{N},\\ \forall j\in \mathcal{S}, j\neq i,\\ c(\sigma_j)=c(\sigma_i)}}  (\dfrac{\mid\mathcal{S}\setminus 1 \mid}{C} \frac{N_0}{\tilde{P_i}})
-& = \sum\limits_{i\in \mathcal{N}}\dfrac{\sum\limits_{\tiny\substack{j\in \mathcal{N}, j\ne i,\\ c(\sigma_j)=c(\sigma_i)}}\tilde{f_{ji}}}{\tilde{P_i}} + \dfrac{CN_0}{N}\sum\limits_{\tiny\substack{\mathcal{S}\subset \mathcal{N},\\ \forall i\in \mathcal{S}, c(\sigma_i)=c}} \mid \mathcal{S}\mid   \sum\limits_{\tiny\substack{i\in \mathcal{S}}}\frac{1}{\tilde{P_i}}
+& = \sum\limits_{i\in \mathcal{N}}\dfrac{\sum\limits_{\tiny\substack{j\in \mathcal{N}, j\ne i,\\ c(\sigma_j)=c(\sigma_i)}}f_{ji}}{\tilde{P_i}} + \dfrac{CN_0}{N}\sum\limits_{\tiny\substack{\mathcal{S}\subset \mathcal{N},\\ \forall i\in \mathcal{S}, c(\sigma_i)=c}} \mid \mathcal{S}\mid   \sum\limits_{\tiny\substack{i\in \mathcal{S}}}\frac{1}{\tilde{P_i}}
 \end{split}
 \end{equation}
 
@@ -831,9 +832,9 @@ Recall the target objective we want to minimize in Problem \ref{problem} is,
 \begin{equation}
 \label{compare}
 \begin{split}	
-\sum_{i\in \mathcal{N}}\dfrac{\tilde{f_i}}{\tilde{P_i}}
-& = \sum\limits_{i\in \mathcal{N}}\dfrac{\sum_{\tiny\substack{j\in \mathcal{N}, j\ne i,\\ c(\sigma_j)=c(\sigma_i)}}\tilde{f_{ji}}+N_0}{\tilde{P_i}}\\
-& = \sum\limits_{i\in \mathcal{N}}\dfrac{\sum_{\tiny\substack{j\in \mathcal{N}, j\ne i,\\ c(\sigma_j)=c(\sigma_i)}}\tilde{f_{ji}}}{\tilde{P_i}} + \sum\limits_{i\in \mathcal{N}}  (\dfrac{N_0}{\tilde{P_i}})\\
+\sum_{i\in \mathcal{N}}\dfrac{f_i}{\tilde{P_i}}
+& = \sum\limits_{i\in \mathcal{N}}\dfrac{\sum_{\tiny\substack{j\in \mathcal{N}, j\ne i,\\ c(\sigma_j)=c(\sigma_i)}}f_{ji}+N_0}{\tilde{P_i}}\\
+& = \sum\limits_{i\in \mathcal{N}}\dfrac{\sum_{\tiny\substack{j\in \mathcal{N}, j\ne i,\\ c(\sigma_j)=c(\sigma_i)}}f_{ji}}{\tilde{P_i}} + \sum\limits_{i\in \mathcal{N}}  (\dfrac{N_0}{\tilde{P_i}})\\
 \end{split}
 \end{equation}
 We notice that only the last items of the objective~\ref{compare} and the potential of the congestion game~\ref{allPotential} are different.
@@ -880,7 +881,7 @@ The upper bound of total update steps is $2n^2$, thus averagely, the upper bound
 
 
 
-\section{Variable transmission power after channel allocation}
+\section{Variable Transmission Power after Channel Allocation}
 \label{powerAllocation}
 After deciding on the working channel, WBSs operate with the maximum permitted transmission power.
 As the utility defined in Formula~\ref{quasiSINR} is a division of linear function of transmission power and received interference, it is natural to assume that there could exist a vector of transmission power $\{p_1, p_2, \cdots, p_N\}$ where $p_i<P_{max}^c,\forall i\in \mathcal{N}$, and the performance doesn't diverge much from the already achieved performance.
@@ -912,10 +913,10 @@ To adopt this algorithm, every WBS keeps on minimizing its utility and finally a
 \section{Joint Channel and Power Allocation}
 In the section~\ref{CA_fixedPower_2subproblem}, the problem is decomposed into three subproblems which are solved sequentially.
 The first is solved with linear/convex programming in the centralized database, and the others are solved with distributed schemes.
-The decomposition of the original problem along with the distributed scheme may yield a result away from the global optimum, so in this section, we propose a centralized scheme which looking for the global optimum results in order to examine the performance of our cascaded channel and power allocation scheme.
+The decomposition of the original problem, and the distributed scheme may yield result which is far away from the global optimum, so in this section, we propose a centralized scheme which looks for the global optimum in order to examine the performance of our cascaded and distributed channel and power allocation scheme.
 
 
-\subsection{Centralized optimization}
+\subsection{Centralized Optimization}
 \label{opt_channelAndPower}
 When we consider to optimize the transmission power and channel jointly, the optimization problem \ref{QLP_2} is not quadratic any more and becomes mixed integer non-linear problem, for which no efficient solution exists.
 We reformulate problem \ref{QLP_2} into a mixed binary quadratic optimization problem with some auxiliary variables created, \ie binary number $\alpha$, real number $\beta$ and $q$, where
@@ -949,18 +950,21 @@ Then the optimization problem can be stated as:
 			\end{aligned}
 		\end{equation}
 %		\todo{result is not ready.}
-The objective function is quadratic, but the quadratic equality constraint makes this optimization problem very challenging to solve.
-Linearisation is possible when Q is positive definite 'Quadratic Optimisation with One Quadratic Equality
-Constraint'.
-As we don't regulate the locations of the WBSs, and the attenuation is random among them, thus the positive definite can not be guaranteed.
-We use solver Lindo to look for the global optimum.
-This form of optimization is non linear, but several algorithms are available to obtain the global optimum~\cite{hmam2010quadratic,Quadratic_min_one_equality}.		
 
-		all the constraints except for the last one are linear.
+The objective function is quadratic.
+We notice that all the constraints except for the last one are linear.
 The first two constrains realizes Formula~\ref{alpha_opt}, the following four constraints realizes Formula~\ref{beta_opt}.
-Due to the quadratic equability constraint $q_i\cdot p_i =1$, the optimization problem is non-convex and only a few solvers are able to solve it by using global searching.
-One workaround to avoid global searching is to linearise the equality constraint. 
-After linearising constraint $q_i\cdot p_i =1$, the problem becomes mixed integer quadratic problem, and can be solved with Gurobi.
+Due to the quadratic equability constraint $q_i\cdot p_i =1$, the optimization problem is non-convex which makes this optimization problem very challenging to solve~\cite{hmam2010quadratic,Quadratic_min_one_equality}.
+%
+Linearisation is possible when the matrix Q in the quadratic is positive definite.% 'Quadratic Optimisation with One Quadratic Equality Constraint'.
+As we don't regulate the locations of the WBSs, and the attenuation is random among them, thus the positive definite can not be guaranteed.
+We use solver LINDO~\cite{lindo} to look for the global optimum.
+
+
+
+
+%One workaround to avoid global searching is to linearise the equality constraint. 
+%After linearising constraint $q_i\cdot p_i =1$, the problem becomes mixed integer quadratic problem, and can be solved with Gurobi.
 
 
 \section{Performance Evaluation}
@@ -980,9 +984,12 @@ The evaluation setting is as follows.
 A square area which is 60km x 60km is divided into 16 square blocks evenly, for each block there is one WBS locating in the middle of it. 
 Same mount of end terminals distributed in each minor block.
 The terminals don't necessarily choose the WBS which is nearest to them to obtain service, in stead they choose the WBS to join, which provides the strongest \gls{RSSI} at them.
-There is a 30km wide rim area around the square area, where TV contours are randomly located.
-The TV station which protected by TV contour works only with one channel. 
+There is a 20km wide rim area around the square area, where the interference measurement devices for TV receiver are randomly located.
+The number of such interference measurement devices is the same with the number of channels in the system, each device works on one channel.
 The locations of WBSs and TV contours are illustrated in Fig.~\ref{sim:layout}.
+WBSs' locations are fixed, but the locations of interference measurement devices for TV receivers, the end terminals, and the sequence for WBS to update are randomly decided in each run.
+Simulations are conducted for 50 times.
+
 \begin{figure}[h!]
   \centering
   \includegraphics[width=0.5\linewidth]{layout.pdf}
@@ -1024,7 +1031,7 @@ We compare our proposed channel allocation scheme \textit{whiteCat} with three o
 \begin{itemize}
 \item \textit{WhiteCase}:  \underline{White}space \underline{c}hannel \underline{a}llocation \underline{se}lfish, where each WBS selfishly updates its channel to achieve the best (as to the considered problem, smallest) possible utility based on Formula~\ref{selfishutility}.
 
-\item \textit{No-regret learning}: Each WBS maps the probability of choosing each strategy to a certain proportion of the regret which the WBS may have if it doesn't choose that strategy, and the WBS choose the strategy with the biggest probability.  
+\item \textit{Noregret learning}: Each WBS maps the probability of choosing each strategy to a certain proportion of the regret which the WBS may have if it doesn't choose that strategy, and the WBS choose the strategy with the biggest probability.  
 WBSs update such mapping dynamically and this approach converges to correlated equilibrium. 
 Please refer the original paper \cite{hart00correlatedeq} for details.
 		
@@ -1032,77 +1039,156 @@ Please refer the original paper \cite{hart00correlatedeq} for details.
 \end{itemize}
 
 
-\subsubsection*{Comparison of the Methods for Maximum Permitted Transmission Power}
+\subsubsection*{The Choice of Radius of Auxiliary Circles, quasiSINR of WBS, and SINR on End Users}
+The usage of quasiSINR exempts WBSs from taking care the SINR on the end terminals.
+A WBS's quasiSINR is related with WBS's location and the radius of auxiliary circle.
+Figure~\ref{radius} illustrates the effect of using different radii of the auxiliary circle on the data rate can be achieved by end terminals.
 
-In Section~\ref{powermap}, two different optimization formulations are introduced to calculate the maximum permitted transmission power, \ie convex optimization and linear optimization respectively.
-In Fig.~\ref{lpcvx}, we have seen that the convex optimization generates power levels which distribute evenly between the minimum and maximum possible transmission power, while, the majority of the power levels generated by linear optimization are either the minimum or maximum possible transmission power.
-In this section we will run the channel allocation schemes with the power levels obtained from convex and linear optimization respectively, in order to answer two questions, the first is which maximum permitted power decision outperforms the other, and the second is to see the performance of the channel allocation schemes.
+\begin{figure}[h]
+\centering
+\subfigure[quasiSINR of WBSs]{
+\includegraphics[width=0.435\linewidth]{qusaiSINR_with_radius.pdf}
+\label{qusaiSINR_with_radius}
+}
+\subfigure[Data rate of end terminals when applying whiteCat]{
+\includegraphics[width=0.435\linewidth]{sinr_on_endusers_with_radius.pdf}
+\label{sinr_on_endusers_with_radius}
+}
+\caption[]{The effects of different radii of auxiliary circle on end terminals' data rate. Maximum permitted power is obtained by solving convex optimization. WhiteCat is used to assign the channels.}
+\label{radius}
+\end{figure}
+
+Subfigure~\ref{qusaiSINR_with_radius} shows WBSs' quasiSINR decreases when the radii of auxiliary circles increase.
+Subfigure~\ref{sinr_on_endusers_with_radius} illustrates the choice on radius of auxiliary circle don't influence the performance of whiteCat.
+In the following simulation, we fixed the radius at 6000 m.
+
+     
+
+
+\subsubsection*{Performance of Channel Allocation Schemes}
+In Section~\ref{powermap}, two different optimization formulations are introduced to obtain the maximum permitted transmission power for WBSs, \ie convex optimization and linear optimization respectively.
+In Figure~\ref{lpcvx}, we have seen that the convex optimization generates power levels which distribute evenly between the minimum and maximum transmission power levels configured by the hardware, while, the majority of the power levels generated by linear optimization are either the minimum or maximum transmission power.
+In this section we run the channel allocation schemes with the maximum permitted power levels obtained from convex and linear optimization respectively.
+The simulation in this subsection carries twofold meanings.
+The first is to see which maximum permitted power decision method outperforms the other, the second is to evaluate the performance of the channel allocation schemes.
 The adopted metrics are the SINR on end terminals and transmission power consumption.
 
 
+%we apply convex programming and linear programming to decide the maximal transmission power, and then the 4 distributed schemes are executed.
+
+\subsubsection*{Comparison of the Methods for Maximum Permitted Transmission Power}
 %We simulate the 4 distributed spectrum allocation schemes with the  map obtained from , and then tell which maximal power map generation outperforms based on the performances of the 4 spectrum allocation schemes.
-In each simulation, WBSs' locations are fixed whereas the location of interference measurement devices for TV receivers, end terminals and the sequence for WBS to update are randomly decided.
-%In each run of simulation, end users select the WBS which brings it the best SINR performance.
-Simulations are conducted for 100 times.
-%we apply convex programming and linear programming to decide the maximal transmission power, and then the 4 distributed schemes are executed. 
-Fig.~\ref{sim:group1_power} depicts the power consumptions of the channel allocation schemes working with the two groups of maximum transmission power decided by linear and convex problems respectively.
-
- and~\ref{sim:group1_qsinr} show that when convex formulation is applied to decide the maximal power map, all the four distributed spectrum allocation schemes consume less transmission power consumption by 15\% to 30\% and achieve better QuasiSINR. 
-The cumulative distribution function curve of SINR on end terminals is drawn in Figure \ref{group1_sinr}, where the X axis represents SINR level, and the Y axis shows the cumulative proportion of end terminals whose SINR equals or smaller than that level. 
-The curves show that except for the random method, all three other distributed schemes perform better in low SINR area (SINR $<10 dB$) with convex formulation, while worse in the high SINR area. 
-Hence we adopt convex formulation to decide the maximal transmission power in the following simulation.
-
- \begin{figure}[h]
+ 
+Figure~\ref{transPower} depicts the power consumption of the channel allocation schemes which work with the two groups of maximum permitted transmission power decided by linear and convex problems respectively.
+When given maximum permitted transmission power, whiteCat and the centralized optimization scheme consume the least energy.
+The schemes utilize less transmission power with the maximum permitted transmission power decided by convex optimization.
+%
+Figure~\ref{qusaiSINR} shows the quasiSINR of WBSs.
+The centralized optimization scheme achieves the highest quasiSINR, because the optimization formulation~\ref{QLP} obtains the global optima.
+ \begin{figure}[h!]
     \centering
-      \includegraphics[width=0.8\linewidth]{3.pdf}
-    \caption{Power consumed by different distributed spectrum allocation schemes under different ways deciding the maximal transmission power map}
-\label{sim:group1_power}    
+      \includegraphics[width=0.7\linewidth]{transPower.pdf}
+    \caption{Power consumed of WBSs by different distributed spectrum allocation schemes under different ways deciding the maximal transmission power map}
+\label{transPower}    
   \end{figure}
   
-   \begin{figure}[h]
+   \begin{figure}[h!]
        \centering
-       \includegraphics[width=0.8\linewidth]{4.pdf}
-       \caption{QuasiSINR achieved by different distributed spectrum allocation schemes under different ways deciding the maximal transmission power map}
-	\label{sim:group1_qsinr}       
+       \includegraphics[width=0.7\linewidth]{qusaiSINR.pdf}
+       \caption{QuasiSINR of WBSs achieved by different distributed spectrum allocation schemes under different ways deciding the maximal transmission power map}
+	\label{qusaiSINR}
      \end{figure}
-  
- 
-  \begin{figure}[h]
+     
+The average SINR on the end terminals is depicted in Figure~\ref{6000_sinr}.
+When the given maximum permitted transmission power, whiteCat and the centralized optimization achieve similar and the best performance among the schemes.
+It is also noticed that, the maximum permitted transmission power decided by linear optimization helps the channel allocation schemes achieve better SINR.
+     \begin{figure}[h!]
+       \centering
+       \includegraphics[width=0.7\linewidth]{6000_sinr.pdf}
+       \caption{SINR on end terminals achieved by different distributed spectrum allocation schemes under different ways deciding the maximal transmission power map}
+	\label{6000_sinr}
+     \end{figure}
+
+  \begin{figure}[h!]
      \centering
-     \includegraphics[width=0.8\linewidth]{5.pdf}
+     \includegraphics[width=0.7\linewidth]{6000_sinr_cdf.pdf}
      \caption{CDF of SINR on end users obtained by different CA schemes under different methods to decide the maximal transmission power map}
-\label{group1_sinr}     
-   \end{figure}
+     \label{6000_sinr_cdf}
+  \end{figure}
+
+The empirical cumulative distribution function curve of SINR on end terminals is drawn in Figure \ref{6000_sinr_cdf}.
+%where the X axis represents SINR level, and the Y axis shows the cumulative proportion of end terminals whose SINR equals or smaller than that level. 
+The SINR achieved by WhiteCat and the centralized optimization is stably higher than that obtained from other schemes.
+For example, the 20\% and 80\% percentile of the SINR achieved by WhiteCat and the centralized optimization are 0.5 to 1 dB higher than the other channel allocation schemes.
+%The curves show that except for the random method, all three other distributed schemes perform better in low SINR area (SINR $<10 dB$) with convex formulation, while worse in the high SINR area. 
+%Hence we adopt convex formulation to decide the maximum transmission power in the following simulation.
 
 
-\subsubsection*{Comparison of Channel Allocation Schemes }
-After deciding the maximum permitted transmission power on each channel for each WBS, the data center distributes this maximum power map to all WBSs, and trigger the procedure of distributed channel allocation. 
 
-
-
-The performance of the five spectrum allocation approaches working with the maximum transmission power map calculated from convex formulation is elucidated in the right part of both Fig.~\ref{sim:group1_power} and \ref{sim:group1_qsinr}. 
-We can see that whiteCat consumes 12\% less transmission power than WhiteCase and No-regret learning schemes, whereas better QuasiSINR is obtained. 
-The cumulative distribution function curve of SINR on end terminals with convex programming is presented in Fig.~\ref{group1_sinr} with solid curves.
-It can be seen that for any cumulative proportion under 90\%, the corresponding SINR level caused by whitecat on end terminals is slightly (around 0.5-1 dB) but stably higher than that obtained by WhiteCase and No-regret schemes, and 3 dB higher than that in random scheme.
-
-In each run of simulation, average value of the 20 \% end terminals with the worst SINR is recorded, and the averaged such value over 100 simulations is illustrated in Figure \ref{group1_worst20sinr} which shows whiteCat achieves better performance for the worst suffered end terminals than WhiteCase and No-regret approaches.
-
-\begin{figure}[h]
-  \centering
-  \includegraphics[width=0.8\linewidth]{1.pdf}
-  \caption{The average SINR of the 20\% worst end terminals}
-\label{group1_worst20sinr}
-\end{figure}
-
-
+%\subsubsection*{Comparison of Channel Allocation Schemes }
+%After deciding the maximum permitted transmission power on each channel for each WBS, the data center distributes this maximum power map to all WBSs, and trigger the procedure of distributed channel allocation. 
+%
+%
+%
+%The performance of the five spectrum allocation approaches working with the maximum transmission power map calculated from convex formulation is elucidated in the right part of both Fig.~\ref{sim:group1_power} and \ref{transPower}. 
+%We can see that whiteCat consumes 12\% less transmission power than WhiteCase and No-regret learning schemes, whereas better QuasiSINR is obtained. 
+%The cumulative distribution function curve of SINR on end terminals with convex programming is presented in Fig.~\ref{group1_sinr} with solid curves.
+%It can be seen that for any cumulative proportion under 90\%, the corresponding SINR level caused by whitecat on end terminals is slightly (around 0.5-1 dB) but stably higher than that obtained by WhiteCase and No-regret schemes, and 3 dB higher than that in random scheme.
+%
+%In each run of simulation, average value of the 20 \% end terminals with the worst SINR is recorded, and the averaged such value over 100 simulations is illustrated in Figure \ref{group1_worst20sinr} which shows whiteCat achieves better performance for the worst suffered end terminals than WhiteCase and No-regret approaches.
+%
+%\begin{figure}[h]
+%  \centering
+%  \includegraphics[width=0.8\linewidth]{1.pdf}
+%  \caption{The average SINR of the 20\% worst end terminals}
+%\label{group1_worst20sinr}
+%\end{figure}
+%
+%
 
 \subsubsection*{Convergence Speed}
 
 %Complexity: 
 %For each player, there are at most $(n-1)*|\mathcal{C}|$ resources available for usage, while, because the produced congestion on each resource is independent on channel, in other words, the congestions involving the same pair of players are quantitatively identical, there are only $(n-1)$ quantitatively different congestions on one player's resources. So, the number of combinations with quantitatively non-identical congestions involved with that player is $2^{(n-1)}$, accordingly there are totally $n*2^{(n-1)}$ quantitatively different congestions for the whole the problem. We adopt the method of \cite{LectureA}, which resorts the congestions in a increasing sequence, and replaces the original congestions with integer values starting form 1. We call the integers as \textit{new} congestions. In this way the preferences of the players are preserved and we can find easily the biggest possible congestion is $n*2^{(n-1)}$, which is the upper bound for the number of steps towards convergence.
-In the congestion game, each player has at most $(n-1)*|\mathcal{C}|$ resources available for usage, so there is no polynomial steps converging to NE, while, simulation shows the algorithm can quickly converge to NE when the number of WBS is up to 100. 
+In the congestion game where scheme whiteCat is derived, each player (WBS) has at most $(n-1)*|\mathcal{C}|$ resources available for usage, thus there is no polynomial steps converging to NE, while, simulation shows the algorithm can quickly converge to NE when the number of WBS is up to 100. 
 %Figure \ref{100converge} shows that for 100 WBSs, whitecat executes at most 5 iterations (in one iteration all WBSs update their choices). 
 %Figure \ref{convergeComp} depicts one instance of simulation, where whiteCat converges quickly, No-regret produces oscillation but converges finally, while WhiteCase can not converge thus has to be enforced stop after 16000 updates. %\todo{replot}%, whereas 
+%
+Table~\ref{convergencespeed} shows the average number of steps needed before convergence in 100 runs of simulations.
+As to whiteCat, we account each WBS accessing the base station (refer to \ref{whitecat}) as \textit{one step}.
+We compare the convergence speed of WhteCat with no-regret learning, the scheme derived from potential game~\cite{pimrc_2012} and whiteCase.
+Note that the potential game scheme is to solve joint power and channel allocation problem, as it is developed with game theory, it is reasonable to see its convergence speed.
+As there is no guarantee for WhiteCase to converge, we stop the channel allocation process after 16000 steps (1000 rounds).
+
+Table~\ref{convergencespeed} tells that whiteCat is two times faster than the scheme derived from potential game, and 20 times faster than no-regret learning scheme.
+The relatively smaller confidence interval shows that whiteCat's convergence is not affected by different network configurations.
+Fast converge is attributed to the working style of WBSs whcih access the database to get the information of other WBSs, thus the distributable decision involves a part of the global information of the network.
+Thus, we can see that the speed up of convergence is due to the overhead caused by accessing the database.
+
+
+Figure \ref{convergeComp} depicts one instance of the convergence processes of three schemes.
+The Y axis is the summed utility of all WBSs.
+We can see whiteCat decreases the summed utility constantly, and the channel allocation process ceases after 38 times of updates.
+Whereas, noregret learning scheme takes 120 steps before convergence, and whiteCase fails to converge.
+%XXXXXX ***************
+%Notice that there is a slight rise when the value on the X-axis is 35, which comes from the difference between \ref{compare} and \ref{allPotential}.
+%XXXXXX ***************
+\begin{table}[!h]
+\centering
+\begin{tabular}{|l|c|c|c|}
+  \hline
+  Scheme			 						& Average steps 	 		& 95\% CI			&Average time (s)\\
+    \hhline{|=|=|=|=|}
+  whiteCat									& 58						& 5.6						&2\\\hline
+  noregret									& 1916						& 1541						&144\\\hline
+  PotentialGame~\cite{pimrc_2012}			& 120						& 10						&4\\\hline
+  optimization-LINDO						& -                         & -                         &40\\\hline
+  whiteCase 								& 4587 						& 2742						&50\\  
+  \hline
+\end{tabular}
+\caption{Convergence speed of the distributed channel allocation schemes. As to the distributed scheme, the time involved to communicate with database is note considered and included.}
+\label{convergencespeed}
+\end{table}
 
 %\begin{figure}[h!]
 %\label{100converge}
@@ -1113,47 +1199,12 @@ In the congestion game, each player has at most $(n-1)*|\mathcal{C}|$ resources 
 
 \begin{figure}[h!]
   \centering
-  \includegraphics[width=0.8\linewidth]{30_31.pdf}
-  \caption{Convergence with three different schemes in one simulation instance}
+  \includegraphics[width=0.8\linewidth]{convergence.pdf}
+  \caption{Convergence process of three different schemes in one simulation.}
 \label{convergeComp}
 \end{figure}
 
 
-As to whiteCat, we account each WBS accessing the base station (refer to \ref{whitecat}) as \textit{one step}.
-We compare the convergence speed of WhteCat with no-regret learning, the scheme derived from potential game~\cite{pimrc_2012} and whiteCase.
-Note that the potential game scheme is to solve joint power and channel allocation problem, as it is developed with game theory, it is reasonable to see its convergence speed.
-%We fix 16 WBSs' location working with 4 channels, whereas the location of TV contours and end terminals are randomly decided. 
-We record the number steps before convergence.
-
-Table \ref{convergencespeed} shows the average number of steps needed before convergence in 100 runs of simulations.
-As there is no guarantee for WhiteCase to converge, we stop the channel allocation process after 16000 steps (1000 rounds).
-The table tells that whiteCat is two times faster than the scheme derived from potential game, and 20 times faster than no-regret learning scheme.
-The relatively smaller confidence interval shows that whiteCat's convergence is not affected by different network conditions.
-Fast converge is attributed to WBSs accessing the database, so that the distributable decision involves a part of the global information.
-Thus, we can see that the speed up of convergence is due to the overhead caused by accessing the database.
-
-As to average running time for each convergence with Matlab, Whitecat is much faster than other schemes.
-Figure \ref{convergeComp} depicts one instance of the convergence processes of three schemes.
-%XXXXXX ***************
-%Notice that there is a slight rise when the value on the X-axis is 35, which comes from the difference between \ref{compare} and \ref{allPotential}.
-%XXXXXX ***************
-
-\begin{table}[!h]
-\centering
-\begin{tabular}{|l|c|c|c|}
-  \hline
-  Scheme			 						& Average steps 	 		& 95\% CI			&Average time (s)\\
-    \hhline{|=|=|=|=|}
-  whiteCat									& 58						& 5.6						&2\\\hline
-  no-regret									& 1916						& 1541						&144\\\hline
-  PotentialGame~\cite{pimrc_2012}			& 120						& 10						&4\\\hline
-  optimization-LINDO						& -                         & -                         &40\\\hline
-  whiteCase 								& 4587 						& 2742						&50\\  
-  \hline
-\end{tabular}
-\caption{Convergence speed of the distributed channel allocation schemes. As to the distributed scheme, the time involved to communicate with database is note considered and included.}
-\label{convergencespeed}
-\end{table}
 
 
 \subsubsection*{Stability of SINR in Convergence Process}
@@ -1176,9 +1227,9 @@ The variance of SINR in channel allocation process is shown in table \ref{costab
   \hline
   Scheme			 						& COS 					& 95\% confidence interval\\
     \hhline{|=|=|=|}
-  Whitecat									& 8850					& 2984\\\hline
+  WhiteCat									& 8850					& 2984\\\hline
   No-regret									& 145460				& 1541\\\hline
-  Whitecase 								& 246790 				& 168050\\ 
+  WhiteCase 								& 246790 				& 168050\\ 
   \hline
 \end{tabular}
 \caption{Variance of SINR during the convergence process}
@@ -1196,18 +1247,16 @@ In other words, power and channel allocation is executed with two cascaded distr
 %Distributed channel allocation schemes, along with the power adjustment, are compared with two other schems.
 As comparisons, we implement two joint power channel allocation schemes.
 One is centralized optimization introduced in section~\ref{opt_channelAndPower}, which is used as upper bound in the comparison.
-The other comparison is distributed joint power and channel allocation scheme~\cite{pimrc_2012} which is introduced in Section~\ref{decomposition_relatedwork}.
-We need to point it out that, scheme proposed in~\cite{pimrc_2012} doesn't aim to improve the SINR on end terminals, but on the sum of produced and received interferences.
+The other comparison is distributed joint power and channel allocation scheme~\cite{pimrc_2012} which is introduced in Section~\ref{decomposition_relatedwork}, we name it as \textit{potentialGame}.
+We need to point it out that, scheme \textit{potentialGame} doesn't aim to improve the SINR on end terminals, but on the sum of produced and received interferences.
 The performance of joint channel and power allocation schemes are presented in Fig.~\ref{CAPA_utility}, \ref{CAPA_power} and \ref{joint_SINRcdf} in terms of total utility, power consumption and achieved SINR on end users respectively.
 
 Figure~\ref{CAPA_utility} illustrates the comparison of the cascaded solutions, \ie channel allocation and the following power control, in terms of the total utility in the network.
-We can see that our proposed scheme \textit{whiteCat+dpa}, the cascaded channel and power allocation method fall behind the cascaded channel allocation optimization and power allocation, and the joint channel and power allocation optimization, but outperforms all the other distributed solutions.
-Note that the potentialGame method along with power control results the worst performance, the reason is the objective adopted by that scheme is the to minimize the sum of received interference in the network, with this objective, the performance on summed utility demonstrates randomness.
-Figure~\ref{joint_SINRcdf} illustrates the CDF of SINR on end users when applying different channel allocation and power allocation schemes.
-it is clear that our proposed approaches achieve the best among the distributed schemes, and only worse wore than the schemes involving centralized optimization.
+We can see that our proposed scheme \textit{whiteCat+dpa}, the cascaded channel and power allocation method falls behind the cascaded channel allocation optimization and power allocation, and the joint channel and power allocation optimization, but outperforms all the other distributed solutions.
+Note that the \textit{potentialGame} method along with power control results the worst performance, the reason is the objective adopted by \textit{potentialGame} is to minimize the sum of received interference in the network, thus the performance on summed utility demonstrates randomness.
+Figure~\ref{joint_SINRcdf} draws the CDF of SINR on end users when applying different channel allocation and power allocation schemes.
+it is clear that our proposed approach achieves the best among the distributed schemes, and only worse wore than the schemes which involves centralized optimization.
 
-%Fig.~\ref{CAPA_power} shows DiCAPS together with power allocation consumes the least power.
-%Figure~\ref{CAPA_quasiSINR} demonstrates the cumulative distribution of SINR on all end terminals,
 
 
 \begin{figure}[h!]
@@ -1216,7 +1265,7 @@ it is clear that our proposed approaches achieve the best among the distributed 
   \caption{Summed utility of all WBSs, which is the objective in problem~\ref{problem}. dpa in legend represents distributed power allocation}
 \label{CAPA_utility}
 \end{figure}
-%{ \label{summedU:sub2}	  
+
 
 
 %\begin{figure}[h!]
@@ -1296,16 +1345,20 @@ it is clear that our proposed approaches achieve the best among the distributed 
 \end{figure}
 
 \section{Conclusions}
-We propose a set of solution on the utilization of TV white spectrum.
-With the centralized database, a centralized method to obtain the maximum permitted transmission power which complies with IEEE 802.22 standard is proposed.
-Then a distributed channel allocation algorithm is designed based on congestion game, where WBS can distributively choose the working channel which is associated with maximum permitted transmission power.
-The distributed channel allocation scheme outperforms several other distributed solutions, and obtains worse performance only than the centralized solution, while.
+Congestion game is applied to analyse the channel allocation problem, where transmission power is not necessarily identical.
+The proposed algorithm which is derived from the best response of the congestion game converges quickly, and achieves better performance than other distributed schemes.
 Without consider the communication latency between WBSs and the database, this distributed scheme executes much faster than the centralized scheme.
 
-A transmission power control procedure is conducted on the previous channel allocation.
-We investigate the performance of applying the combination of channel allocation and the power control.
-Our proposed channel allocation scheme together with power control achieve better performance than the other channel allocation scheme with the same power control scheme.
-The centralized joint channel and power scheme performs the best, but the problem is very difficult to solve.
+In particular, we investigate the channel allocation problem in the context of utilization of TV white space.
+Except for channel allocation, we also propose solutions for transmission power control for the cellular network which complies with IEEE 802.22 standard.
+%With the centralized database, a centralized method to obtain the maximum permitted transmission power which complies with IEEE 802.22 standard is proposed.
+%Then a distributed channel allocation algorithm is designed based on congestion game, where WBS can distributively choose the working channel which is associated with maximum permitted transmission power.
+%The distributed channel allocation scheme outperforms several other distributed solutions, and obtains worse performance only than the centralized solution, while.
+
+%A transmission power control procedure is conducted on the previous channel allocation.
+%We investigate the performance of applying the combination of channel allocation and the power control.
+%Our proposed channel allocation scheme together with power control achieve better performance than the other channel allocation scheme with the same power control scheme.
+%The centralized joint channel and power scheme performs the best, but the problem is very difficult to solve.
 
 %This solution makes full use of the infrastructure, the centralized database, and distributes the computation and decision making afterwards on channel and transmission power.
 

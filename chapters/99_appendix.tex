@@ -11,7 +11,7 @@
 For selfish best response approach, the utility function is set as follows,
 	\begin{equation}
 \label{selfishutility}
-		u_i=\frac{\sum_{c(i)=c(i)} \tilde{f_{ji}}+N_0}{P_i\cdot h_{ii}}
+		u_i=\frac{\sum_{c(i)=c(i)} f_{ji}+N_0}{P_i\cdot h_i\cdot z_i}
 	\end{equation}
 
 \begin{proof}
@@ -27,7 +27,7 @@ U'
 & =u_i' + \sum\limits_{j\in\mathcal{N},j\neq i}u_j+\sum\limits_{j\in\mathcal{N},j\neq i}(u_j'-u_j)\\
 & =u_i' + \sum\limits_{\tiny\substack{j\in\mathcal{N},j\neq i}}u_j + \sum\limits_{\tiny\substack{j\in\mathcal{N},\\j\neq i, \\c(j)=c_i'}}(u_j'-u_j) + \sum\limits_{\tiny\substack{j\in\mathcal{N},\\j\neq i, \\c(j)=c_i}}(u_j'-u_j)\\
 &  + \sum\limits_{\tiny\substack{j\in\mathcal{N},j\neq i, \\c(j)\neq c_i', c(j)\neq c_i}}(u_j'-u_j)\\
-& =u_i' + \sum\limits_{\tiny\substack{j\in\mathcal{N},j\neq i}}u_j + \sum\limits_{\tiny\substack{j\in\mathcal{N},\\j\neq i, \\c(j)=c_i'}}(\dfrac{\tilde f_{ij}}{\tilde P_j}) - \sum\limits_{\tiny\substack{j\in\mathcal{N},\\j\neq i, \\c(j)=c_i}}(\dfrac{\tilde f_{ij}}{\tilde P_j})\\
+& =u_i' + \sum\limits_{\tiny\substack{j\in\mathcal{N},j\neq i}}u_j + \sum\limits_{\tiny\substack{j\in\mathcal{N},\\j\neq i, \\c(j)=c_i'}}(\dfrac{ f_{ij}}{\tilde P_j}) - \sum\limits_{\tiny\substack{j\in\mathcal{N},\\j\neq i, \\c(j)=c_i}}(\dfrac{ f_{ij}}{\tilde P_j})\\
 \end{split}
 \end{equation}
 
@@ -37,7 +37,7 @@ where,
 \begin{split}	
 u_i'
 & = u_i + \varDelta u_i(c_i\rightarrow c_i')\\
-& = u_i + \sum\limits_{\tiny\substack{j\in\mathcal{N},\\j\neq i, \\c(j)=c_i'}}(\dfrac{\tilde f_{ji}}{\tilde P_i}) - \sum\limits_{\tiny\substack{j\in\mathcal{N},\\j\neq i, \\c(j)=c_i}}(\dfrac{\tilde f_{ji}}{\tilde P_i})
+& = u_i + \sum\limits_{\tiny\substack{j\in\mathcal{N},\\j\neq i, \\c(j)=c_i'}}(\dfrac{ f_{ji}}{\tilde P_i}) - \sum\limits_{\tiny\substack{j\in\mathcal{N},\\j\neq i, \\c(j)=c_i}}(\dfrac{ f_{ji}}{\tilde P_i})
 \end{split}
 \end{equation}
 
@@ -46,8 +46,8 @@ bring \ref{xxxx} into \ref{xxx}, we get,
 \label{xxxxx}
 \begin{split}	
 U'
-& =U + \sum\limits_{\tiny\substack{j\in\mathcal{N},\\j\neq i, \\c(j)=c_i'}}(\dfrac{\tilde f_{ji}}{\tilde P_i}) - \sum\limits_{\tiny\substack{j\in\mathcal{N},\\j\neq i, \\c(j)=c_i}}(\dfrac{\tilde f_{ji}}{\tilde P_i}) \\
-& + \sum\limits_{\tiny\substack{j\in\mathcal{N},\\j\neq i, \\c(j)=c_i'}}(\dfrac{\tilde f_{ij}}{\tilde P_j}) - \sum\limits_{\tiny\substack{j\in\mathcal{N},\\j\neq i, \\c(j)=c_i}}(\dfrac{\tilde f_{ij}}{\tilde P_j})\\
+& =U + \sum\limits_{\tiny\substack{j\in\mathcal{N},\\j\neq i, \\c(j)=c_i'}}(\dfrac{ f_{ji}}{\tilde P_i}) - \sum\limits_{\tiny\substack{j\in\mathcal{N},\\j\neq i, \\c(j)=c_i}}(\dfrac{f_{ji}}{\tilde P_i}) \\
+& + \sum\limits_{\tiny\substack{j\in\mathcal{N},\\j\neq i, \\c(j)=c_i'}}(\dfrac{ f_{ij}}{\tilde P_j}) - \sum\limits_{\tiny\substack{j\in\mathcal{N},\\j\neq i, \\c(j)=c_i}}(\dfrac{f_{ij}}{\tilde P_j})\\
 %& =U + \sum\limits_{\tiny\substack{j\in\mathcal{N},\\j\neq i, \\c(j)=c_i'}}(\dfrac{P_j\cdot h_{ji}+\delta}{P_i'}) - \sum\limits_{\tiny\substack{j\in\mathcal{N},\\j\neq i, \\c(j)=c_i}}(\dfrac{P_j\cdot h_{ji}+\delta}{P_i'}) \\
 %& + \sum\limits_{\tiny\substack{j\in\mathcal{N},\\j\neq i, \\c(j)=c_i'}}(\dfrac{P_i\cdot h_{ji}+\delta}{P_j'}) - \sum\limits_{\tiny\substack{j\in\mathcal{N},\\j\neq i, \\c(j)=c_i}}(\dfrac{P_i\cdot h_{ji}+\delta}{P_j'})\\
 \end{split}
@@ -89,35 +89,36 @@ We reformulate the objective problem \ref{QLP} which is a binary non-linear prog
 \label{QLP2_1}
 		\begin{aligned}
 %		\begin{split}
-		& \sum\limits^{n}_{i=1} \frac{\sum\limits_{j\in\mathcal{N}, j\neq i}P^TX_j(X_j^TX_i)h_{ji}z + N_0}{P^TX_i}\\
-		& =\sum\limits^{n}_{i=1}( \frac{\sum\limits_{j\in\mathcal{N}, j\neq i}\sum\limits_k (P_{jk}\cdot x_{jk}\cdot x_{ik}\cdot x_{jk}\cdot h_{ji}\cdot z) + \sum\limits_k N_0\cdot x_{i k}}{P^TX_i})\\
-		& =\sum\limits^{n}_{i=1}( \frac{\sum\limits_{j\in\mathcal{N}, j\neq i}\sum\limits_k (P_{jk}\cdot x_{jk}\cdot x_{ik}\cdot h_{ji}\cdot z)}{P^TX_i}  + \frac{\sum\limits_k N_0\cdot x_{ik}}{P^TX_i})\\
-		& =\sum\limits^{n}_{i=1}( \sum\limits_{j\in\mathcal{N}, j\neq i}\sum\limits_k \frac{(P_{jk}\cdot x_{jk}\cdot x_{ik}\cdot h_{ji}\cdot z)}{P^TX_i}  + \sum\limits_k\frac{N_0\cdot x_{ik}}{P^TX_i})
+		& \sum\limits^{n}_{i=1} \frac{\sum\limits_{j\in\mathcal{N}, j\neq i}P^TX_j(X_j^TX_i)h_{ji}z_{ji} + N_0}{P^TX_ih_iz_i}\\
+		& =\sum\limits^{n}_{i=1}( \frac{\sum\limits_{j\in\mathcal{N}, j\neq i}\sum\limits_k (P_{jk}\cdot x_{jk}\cdot x_{ik}\cdot x_{jk}\cdot h_{ji}\cdot z_{ji}) + \sum\limits_k N_0\cdot x_{i k}}{P^TX_ih_iz_i})\\
+		& =\sum\limits^{n}_{i=1}( \frac{\sum\limits_{j\in\mathcal{N}, j\neq i}\sum\limits_k (P_{jk}\cdot x_{jk}\cdot x_{ik}\cdot h_{ji}\cdot z_{ji})}{P^TX_ih_iz_i}  + \frac{\sum\limits_k N_0\cdot x_{ik}}{P^TX_ih_iz_i})\\
+		& =\sum\limits^{n}_{i=1}( \sum\limits_{j\in\mathcal{N}, j\neq i}\sum\limits_k \frac{(P_{jk}\cdot x_{jk}\cdot x_{ik}\cdot h_{ji}\cdot z_{ji})}{P^TX_ih_iz_i}  + \sum\limits_k\frac{N_0\cdot x_{ik}}{P^TX_ih_iz_i})
 %		\end{split}
 		\end{aligned}
 	\end{equation}
-we now simplify the first item in the parenthesis. If we assume secondary base station $i$ is working on channel $m$, then there is $x_{im}=1$, then 
+
+If we assume WBS $i$ is working on channel $m$, then there is $x_{im}=1$, then the first item in the parenthesis becomes,
 	\begin{equation}
-\label{QLP2_22}
+		\label{QLP2_22}
 				\begin{aligned}
-				 &\frac{P_{jk}\cdot x_{jk}\cdot x_{ik}\cdot h_{ji}\cdot z}{P^TX_i}
-				 &= \frac{P_{jk}\cdot x_{jk}\cdot x_{im}\cdot h_{ji}\cdot z}{P_{im}\cdot x_{im}} \\
-				 &= \frac{P_{jk}\cdot x_{jk}\cdot h_{ji}\cdot z}{P_{im}}
+				 &\frac{P_{jk}\cdot x_{jk}\cdot x_{ik}\cdot h_{ji}\cdot z_{ji}}{P^TX_ih_iz_i}
+				 &= \frac{P_{jk}\cdot x_{jk}\cdot x_{im}\cdot h_{ji}\cdot z_{ji}}{P_{im}\cdot x_{im} \cdot h_i\cdot z_i} \\
+				 &= \frac{P_{jk}\cdot x_{jk}\cdot h_{ji}\cdot z_{ji}}{P_{im}\cdot h_i\cdot z_i}
 		 	\end{aligned}
 	\end{equation}
-other wise, formula \ref{QLP2_22} equals to 0.
+%other wise, formula \ref{QLP2_22} equals to 0.
 
-Similarly, for the second item in the bracket,		
+Similarly, for the second item in the parenthesis,		
 
 	\begin{equation}
 \label{QLP2_4}
-			\frac{N_0\cdot x_{ik}}{P^TX_i} = \frac{N_0}{P_{ik}}\cdot x_{ik}
+			\frac{N_0\cdot x_{ik}}{P^TX_ih_iz_i} = \frac{N_0}{P_{ik}h_iz_i}\cdot x_{ik}
 	\end{equation}		
 		
 then, formula \ref{QLP2_1} becomes,
 	\begin{equation}
 \label{QLP2_5}
-			\sum\limits^{n}_{i=1}( \sum\limits_{j\in\mathcal{N}, j\neq i}\sum\limits_k \frac{P_{jk}}{P_{ik}}\cdot h_{ji}\cdot z\cdot x_{jk}\cdot x_{ik}  + \sum\limits_k \frac{N_0}{P_{ik}}\cdot x_{ik})
+			\sum\limits^{n}_{i=1}( \sum\limits_{j\in\mathcal{N}, j\neq i}\sum\limits_k \frac{P_{jk}\cdot h_{ji}\cdot z_{ji}}{P_{ik}\cdot h_i\cdot z_i}\cdot  x_{jk}\cdot x_{ik}  + \sum\limits_k \frac{N_0}{P_{ik}\cdot h_i\cdot z_i}\cdot x_{ik})
 		\end{equation}	
 
 which is a binary quadratic programming problem.
