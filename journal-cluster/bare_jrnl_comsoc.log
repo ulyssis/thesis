@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.7.26)  7 MAR 2016 00:52
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.7.26)  9 MAR 2016 20:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -18,12 +18,12 @@ Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
 \@IEEEtrantmpcountB=\count80
 \@IEEEtrantmpcountC=\count81
 \@IEEEtrantmptoksA=\toks14
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 503.
+LaTeX Font Info:    Try loading font information for OT1+ppl on input line 503.
 
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
-File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ppl.fd
+File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
--- Using IEEE Communications Society mode.
+-- Using IEEE Computer Society mode.
 -- Using 8.5in x 11in (letter) paper.
 -- Using PDF output.
 \@IEEEnormalsizeunitybaselineskip=\dimen105
@@ -31,55 +31,57 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 \CLASSINFOnormalsizebaselineskip=\dimen106
 \CLASSINFOnormalsizeunitybaselineskip=\dimen107
 \IEEEnormaljot=\dimen108
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <5.01874> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <5.01874> not available
+(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 1090.
 
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <7.02625> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <7.02625> not available
+(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 1090.
 
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <8.03> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <8.03> not available
+(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 1090.
 
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <9.03374> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <9.03374> not available
+(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 1090.
 
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <9.53561> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <9.53561> not available
+(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 1090.
 
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <11> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <11> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <11.04124> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <11.04124> not available
 
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 1090.
 
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <17> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <12.045> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <12.045> not available
+(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 1090.
 
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <20> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <17.06374> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <17.06374> not available
 
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <20.075> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <20.075> not available
+(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <24.09> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <24.09> not available
+(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 1090.
 
 \IEEEquantizedlength=\dimen109
 \IEEEquantizedlengthdiff=\dimen110
@@ -768,16 +770,16 @@ Package: algorithm2e 2008/00/00 v3.10 algorithms environments
 (/usr/share/texlive/texmf-dist/tex/latex/relsize/relsize.sty
 Package: relsize 2011/09/21 ver 4.0
 
-Examine \normalsize starts \@setfontsize size may be 10. 
-Examine \small starts \@setfontsize size may be 9. 
-Examine \footnotesize starts \@setfontsize size may be 8. 
-Examine \large starts \@setfontsize size may be 12. 
-Examine \Large starts \@setfontsize size may be 14. 
-Examine \LARGE starts \@setfontsize size may be 17. 
-Examine \scriptsize starts \@setfontsize size may be 7. 
-Examine \tiny starts \@setfontsize size may be 5. 
-Examine \huge starts \@setfontsize size may be 20. 
-Examine \Huge starts \@setfontsize size may be 24. )
+Examine \normalsize starts \@setfontsize size may be 9.5bp. 
+Examine \small starts \@setfontsize size may be 9bp. 
+Examine \footnotesize starts \@setfontsize size may be 8bp. 
+Examine \large starts \@setfontsize size may be 12bp. 
+Examine \Large starts \@setfontsize size may be 14bp. 
+Examine \LARGE starts \@setfontsize size may be 17bp. 
+Examine \scriptsize starts \@setfontsize size may be 7bp. 
+Examine \tiny starts \@setfontsize size may be 5bp. 
+Examine \huge starts \@setfontsize size may be 20bp. 
+Examine \Huge starts \@setfontsize size may be 24bp. )
 ********************************************************
 Package `algorithm2e' Release 4.01 -- december 14 2009 --
 - algorithm2e-announce@lirmm.fr mailing list for announcement about releases
@@ -1146,6 +1148,53 @@ Package: subfigure 2002/03/15 v2.1.5 subfigure package
 \subfig@top=\skip95
 \subfig@bottom=\skip96
 )
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+Package: adjustbox 2012/05/21 v1.0 Adjusting TeX boxes (trim, clip, ...)
+
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/trimclip.sty
+Package: trimclip 2012/05/16 v1.0 Trim and clip general TeX material
+
+(/usr/share/texlive/texmf-dist/tex/latex/collectbox/collectbox.sty
+Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
+\collectedbox=\box82
+)
+\tc@llx=\dimen318
+\tc@lly=\dimen319
+\tc@urx=\dimen320
+\tc@ury=\dimen321
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
+File: tc-pdftex.def 2012/05/13 v1.0 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen322
+\adjbox@Height=\dimen323
+\adjbox@Depth=\dimen324
+\adjbox@Totalheight=\dimen325
+
+(/usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2011/09/13 v1.0 Conditionals for odd/even page detection
+\c@checkoddpage=\count353
+)
+(/usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box83
+\sift@deathcycles=\count354
+\@vwid@loff=\dimen326
+\@vwid@roff=\dimen327
+))
+(/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2011/09/28 v3.5.2 Customized lists
+\labelindent=\skip97
+\enit@outerparindent=\dimen328
+\enit@toks=\toks45
+\enit@inbox=\box84
+\enitdp@description=\count355
+)
 (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
@@ -1153,10 +1202,10 @@ Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
 )
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 100.
+LaTeX Font Info:    Try loading font information for T1+ppl on input line 100.
 
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
-File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ppl.fd
+File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/newtx/newtxmath.sty
 Package: newtxmath 2012/05/26 v0.95
@@ -1250,106 +1299,109 @@ Package csquotes Info: ... none found.
 
 
 Package csquotes Warning: No multilingual support.
-(csquotes)                Cannot enable multilingual quotes on input line 229.
+(csquotes)                Cannot enable multilingual quotes on input line 235.
 
 (./bare_jrnl_comsoc.aux)
 \openout1 = `bare_jrnl_comsoc.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 229.
-LaTeX Font Info:    Try loading font information for OML+ntxmi on input line 22
-9.
+LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 235.
+LaTeX Font Info:    Try loading font information for OML+ntxmi on input line 23
+5.
 
 (/usr/share/texlive/texmf-dist/tex/latex/newtx/omlntxmi.fd
 File: omlntxmi.fd 2012/03/22 Fontinst v1.933 font definitions for OML/ntxmi.
 )
-LaTeX Font Info:    ... okay on input line 229.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 229.
-LaTeX Font Info:    ... okay on input line 229.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 229.
-LaTeX Font Info:    ... okay on input line 229.
-LaTeX Font Info:    Checking defaults for OMS/ntxsy/m/n on input line 229.
-LaTeX Font Info:    Try loading font information for OMS+ntxsy on input line 22
-9.
+LaTeX Font Info:    ... okay on input line 235.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 235.
+LaTeX Font Info:    ... okay on input line 235.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 235.
+LaTeX Font Info:    ... okay on input line 235.
+LaTeX Font Info:    Checking defaults for OMS/ntxsy/m/n on input line 235.
+LaTeX Font Info:    Try loading font information for OMS+ntxsy on input line 23
+5.
 
 (/usr/share/texlive/texmf-dist/tex/latex/newtx/omsntxsy.fd
 File: omsntxsy.fd 2012/04/10 Fontinst v1.933 font definitions for OMS/ntxsy.
 )
-LaTeX Font Info:    ... okay on input line 229.
-LaTeX Font Info:    Checking defaults for OMX/ntxex/m/n on input line 229.
-LaTeX Font Info:    Try loading font information for OMX+ntxex on input line 22
-9.
+LaTeX Font Info:    ... okay on input line 235.
+LaTeX Font Info:    Checking defaults for OMX/ntxex/m/n on input line 235.
+LaTeX Font Info:    Try loading font information for OMX+ntxex on input line 23
+5.
 
 (/usr/share/texlive/texmf-dist/tex/latex/newtx/omxntxex.fd
 File: omxntxex.fd 2012/04/18 Fontinst v1.933 font definitions for OMX/ntxex.
 )
-LaTeX Font Info:    ... okay on input line 229.
-LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 229.
-LaTeX Font Info:    Try loading font information for U+ntxexa on input line 229
+LaTeX Font Info:    ... okay on input line 235.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 235.
+LaTeX Font Info:    Try loading font information for U+ntxexa on input line 235
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/newtx/untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
-LaTeX Font Info:    ... okay on input line 229.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 229.
-LaTeX Font Info:    ... okay on input line 229.
+LaTeX Font Info:    ... okay on input line 235.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 235.
+LaTeX Font Info:    ... okay on input line 235.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 235.
 
--- Verifying Times compatible math font.
--- newtxmath loaded, OK.
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 229.
-LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <5> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 229.
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 229.
-LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <7> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 229.
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 229.
-LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <8> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 229.
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 229.
-LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <9> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 229.
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 229.
-LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <10> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 229.
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <11> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 229.
-LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <11> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 229.
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 229.
-LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <12> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 229.
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 229.
-LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <17> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 229.
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <20> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 229.
-LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <20> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 229.
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 229.
-LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <24> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 229.
--- Lines per column: 58 (exact).
-\AtBeginShipoutBox=\box82
-Package hyperref Info: Link coloring ON on input line 229.
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
+File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
+)
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <5.01874> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 235.
+LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <5.01874> not available
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 235.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <7.02625> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 235.
+LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <7.02625> not available
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 235.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <8.03> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 235.
+LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <8.03> not available
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 235.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <9.03374> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 235.
+LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <9.03374> not available
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 235.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <9.53561> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 235.
+LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <9.53561> not available
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 235.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <11.04124> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 235.
+LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <11.04124> not available
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 235.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12.045> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 235.
+LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <12.045> not available
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 235.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17.06374> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 235.
+LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <17.06374> not available
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 235.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <20.075> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 235.
+LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <20.075> not available
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 235.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24.09> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 235.
+LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <24.09> not available
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 235.
+
+-- Lines per column: 61 (exact).
+\AtBeginShipoutBox=\box85
+Package hyperref Info: Link coloring ON on input line 235.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count353
+\c@section@level=\count356
 )
-LaTeX Info: Redefining \ref on input line 229.
-LaTeX Info: Redefining \pageref on input line 229.
-LaTeX Info: Redefining \nameref on input line 229.
+LaTeX Info: Redefining \ref on input line 235.
+LaTeX Info: Redefining \pageref on input line 235.
+LaTeX Info: Redefining \nameref on input line 235.
 
 (./bare_jrnl_comsoc.out) (./bare_jrnl_comsoc.out)
 \@outlinefile=\write5
@@ -1358,17 +1410,17 @@ LaTeX Info: Redefining \nameref on input line 229.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count354
-\scratchdimen=\dimen318
-\scratchbox=\box83
-\nofMPsegments=\count355
-\nofMParguments=\count356
-\everyMPshowfont=\toks45
-\MPscratchCnt=\count357
-\MPscratchDim=\dimen319
-\MPnumerator=\count358
-\makeMPintoPDFobject=\count359
-\everyMPtoPDFconversion=\toks46
+\scratchcounter=\count357
+\scratchdimen=\dimen329
+\scratchbox=\box86
+\nofMPsegments=\count358
+\nofMParguments=\count359
+\everyMPshowfont=\toks46
+\MPscratchCnt=\count360
+\MPscratchDim=\dimen330
+\MPnumerator=\count361
+\makeMPintoPDFobject=\count362
+\everyMPtoPDFconversion=\toks47
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -1385,454 +1437,440 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 ABD: EveryShipout initializing macros
-LaTeX Font Info:    Try loading font information for U+ntxsya on input line 364
+LaTeX Font Info:    Try loading font information for T1+phv on input line 313.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
+File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
+)
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <11.04124> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 313.
+LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 31
+3.
+LaTeX Font Info:    Try loading font information for U+ntxsya on input line 313
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/newtx/untxsya.fd
 File: untxsya.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsya.
 )
-LaTeX Font Info:    Try loading font information for U+ntxsyb on input line 364
+LaTeX Font Info:    Try loading font information for U+ntxsyb on input line 313
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/newtx/untxsyb.fd
 File: untxsyb.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyb.
 )
-LaTeX Font Info:    Try loading font information for U+ntxmia on input line 364
+LaTeX Font Info:    Try loading font information for U+ntxmia on input line 313
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/newtx/untxmia.fd
 File: untxmia.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxmia.
 )
-LaTeX Font Info:    Try loading font information for U+ntxsyc on input line 364
+LaTeX Font Info:    Try loading font information for U+ntxsyc on input line 313
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/newtx/untxsyc.fd
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
-) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+)
+LaTeX Font Info:    Try loading font information for U+pzd on input line 313.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/upzd.fd
+File: upzd.fd 2001/06/04 font definitions for U/pzd.
+)
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <8.03> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 316.
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <11.04124> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 354.
+LaTeX Font Info:    Font shape `T1/phv/bx/sc' in size <11.04124> not available
+(Font)              Font shape `T1/phv/b/sc' tried instead on input line 354.
+LaTeX Font Info:    Calculating math sizes for size <9.53561> on input line 370
+.
+ [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ] [2]
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 505.
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <9.53561> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 506.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 511.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-Overfull \hbox (6.45834pt too wide) in paragraph at lines 545--581
- [][] 
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 593--593
+ \T1/phv/b/sc/11.04124 4 Dis-tributed Co-or-di-na-tion Frame-work:
  []
 
 
-</home/di/work/thesis/thesisTemplate/figures/04_clutering/figure1.pdf, id=170, 
+</home/di/work/thesis/thesisTemplate/figures/04_clutering/figure1.pdf, id=169, 
 189.70876pt x 114.4275pt>
 File: /home/di/work/thesis/thesisTemplate/figures/04_clutering/figure1.pdf Grap
 hic file (type pdf)
 
 <use /home/di/work/thesis/thesisTemplate/figures/04_clutering/figure1.pdf>
 Package pdftex.def Info: /home/di/work/thesis/thesisTemplate/figures/04_cluteri
-ng/figure1.pdf used on input line 632.
-(pdftex.def)             Requested size: 176.39923pt x 106.40076pt.
+ng/figure1.pdf used on input line 634.
+(pdftex.def)             Requested size: 177.06071pt x 106.80058pt.
+LaTeX Font Info:    Calculating math sizes for size <8.03> on input line 636.
 
-Underfull \hbox (badness 3407) in paragraph at lines 634--634
-\T1/ptm/m/n/8 Fig. 1.  []Connectivity graph and the con-nec-tiv-ity vec-tor $\O
-MS/ntxsy/m/n/8 f\OML/ntxmi/m/it/8 D[]; G[]\OMS/ntxsy/m/n/8 g$
+Underfull \hbox (badness 10000) in paragraph at lines 636--636
+\OMS/ntxsy/m/n/8.03 f\T1/ptm/m/n/8.03 1\OML/ntxmi/m/it/8.03 ; \T1/ptm/m/n/8.03 
+2\OML/ntxmi/m/it/8.03 ; \T1/ptm/m/n/8.03 3\OML/ntxmi/m/it/8.03 ; \T1/ptm/m/n/8.
+03 5\OMS/ntxsy/m/n/8.03 g\OML/ntxmi/m/it/8.03 ; V[] \U/ntxmia/m/it/8.03 = \OMS/
+ntxsy/m/n/8.03 f\T1/ptm/m/n/8.03 2\OML/ntxmi/m/it/8.03 ; \T1/ptm/m/n/8.03 3\OML
+/ntxmi/m/it/8.03 ; \T1/ptm/m/n/8.03 5\OML/ntxmi/m/it/8.03 ; \T1/ptm/m/n/8.03 7\
+OMS/ntxsy/m/n/8.03 g\OML/ntxmi/m/it/8.03 ; V[] \U/ntxmia/m/it/8.03 = \OMS/ntxsy
+/m/n/8.03 f\T1/ptm/m/n/8.03 2\OML/ntxmi/m/it/8.03 ; \T1/ptm/m/n/8.03 4\OML/ntxm
+i/m/it/8.03 ; \T1/ptm/m/n/8.03 5\OML/ntxmi/m/it/8.03 ; \T1/ptm/m/n/8.03 6\OML/n
+txmi/m/it/8.03 ; \T1/ptm/m/n/8.03 7\OMS/ntxsy/m/n/8.03 g\OML/ntxmi/m/it/8.03 ; 
+V[] \U/ntxmia/m/it/8.03 =
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 634--634
-\OMS/ntxsy/m/n/8 f\T1/ptm/m/n/8 1\OML/ntxmi/m/it/8 ; \T1/ptm/m/n/8 2\OML/ntxmi/
-m/it/8 ; \T1/ptm/m/n/8 3\OML/ntxmi/m/it/8 ; \T1/ptm/m/n/8 5\OMS/ntxsy/m/n/8 g\O
-ML/ntxmi/m/it/8 ; V[] \U/ntxmia/m/it/8 = \OMS/ntxsy/m/n/8 f\T1/ptm/m/n/8 2\OML/
-ntxmi/m/it/8 ; \T1/ptm/m/n/8 3\OML/ntxmi/m/it/8 ; \T1/ptm/m/n/8 5\OML/ntxmi/m/i
-t/8 ; \T1/ptm/m/n/8 7\OMS/ntxsy/m/n/8 g\OML/ntxmi/m/it/8 ; V[] \U/ntxmia/m/it/8
- = \OMS/ntxsy/m/n/8 f\T1/ptm/m/n/8 2\OML/ntxmi/m/it/8 ; \T1/ptm/m/n/8 4\OML/ntx
-mi/m/it/8 ; \T1/ptm/m/n/8 5\OML/ntxmi/m/it/8 ; \T1/ptm/m/n/8 6\OML/ntxmi/m/it/8
- ; \T1/ptm/m/n/8 7\OMS/ntxsy/m/n/8 g\OML/ntxmi/m/it/8 ; V[] \U/ntxmia/m/it/8 =
+Underfull \hbox (badness 2035) in paragraph at lines 636--636
+\OMS/ntxsy/m/n/8.03 f\T1/ptm/m/n/8.03 1\OML/ntxmi/m/it/8.03 ; \T1/ptm/m/n/8.03 
+2\OML/ntxmi/m/it/8.03 ; \T1/ptm/m/n/8.03 3\OML/ntxmi/m/it/8.03 ; \T1/ptm/m/n/8.
+03 4\OML/ntxmi/m/it/8.03 ; \T1/ptm/m/n/8.03 8\OMS/ntxsy/m/n/8.03 g\OML/ntxmi/m/
+it/8.03 ; V[] \U/ntxmia/m/it/8.03 = \OMS/ntxsy/m/n/8.03 f\T1/ptm/m/n/8.03 1\OML
+/ntxmi/m/it/8.03 ; \T1/ptm/m/n/8.03 2\OML/ntxmi/m/it/8.03 ; \T1/ptm/m/n/8.03 5\
+OML/ntxmi/m/it/8.03 ; \T1/ptm/m/n/8.03 8\OMS/ntxsy/m/n/8.03 g$\T1/phv/m/n/8.03 
+. Dashed lines in-di-cates two end
  []
 
-
-Underfull \hbox (badness 4621) in paragraph at lines 634--634
-\OMS/ntxsy/m/n/8 f\T1/ptm/m/n/8 1\OML/ntxmi/m/it/8 ; \T1/ptm/m/n/8 2\OML/ntxmi/
-m/it/8 ; \T1/ptm/m/n/8 3\OML/ntxmi/m/it/8 ; \T1/ptm/m/n/8 4\OML/ntxmi/m/it/8 ; 
-\T1/ptm/m/n/8 8\OMS/ntxsy/m/n/8 g\OML/ntxmi/m/it/8 ; V[] \U/ntxmia/m/it/8 = \OM
-S/ntxsy/m/n/8 f\T1/ptm/m/n/8 1\OML/ntxmi/m/it/8 ; \T1/ptm/m/n/8 2\OML/ntxmi/m/i
-t/8 ; \T1/ptm/m/n/8 5\OML/ntxmi/m/it/8 ; \T1/ptm/m/n/8 8\OMS/ntxsy/m/n/8 g$\T1/
-ptm/m/n/8 . Dashed lines in-di-cates two end
- []
-
-[3]
-LaTeX Font Info:    Font shape `T1/ptm/bx/sc' in size <10> not available
-(Font)              Font shape `T1/ptm/b/sc' tried instead on input line 680.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9.53561> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 644.
+[3 </home/di/work/thesis/thesisTemplate/figures/04_clutering/figure1.pdf>]
+LaTeX Font Info:    Font shape `T1/ptm/bx/sc' in size <9.53561> not available
+(Font)              Font shape `T1/ptm/b/sc' tried instead on input line 675.
 
 </home/di/work/thesis/thesisTemplate/figures/04_clutering/clusters_denseNetwork
-_2.pdf, id=197, 333.01915pt x 343.84528pt>
+_2.pdf, id=202, 333.01915pt x 343.84528pt>
 File: /home/di/work/thesis/thesisTemplate/figures/04_clutering/clusters_denseNe
 twork_2.pdf Graphic file (type pdf)
 
 <use /home/di/work/thesis/thesisTemplate/figures/04_clutering/clusters_denseNet
 work_2.pdf>
 Package pdftex.def Info: /home/di/work/thesis/thesisTemplate/figures/04_cluteri
-ng/clusters_denseNetwork_2.pdf used on input line 725.
-(pdftex.def)             Requested size: 100.79846pt x 104.07253pt.
- [4 </home/di/work/thesis/thesisTemplate/figures/04_clutering/figure1.pdf>]
+ng/clusters_denseNetwork_2.pdf used on input line 729.
+(pdftex.def)             Requested size: 101.17645pt x 104.46603pt.
+
 </home/di/work/thesis/thesisTemplate/figures/04_clutering/number_clusters_upper
-Bound.pdf, id=220, 393.47pt x 307.1475pt>
+Bound.pdf, id=205, 413.545pt x 311.1625pt>
 File: /home/di/work/thesis/thesisTemplate/figures/04_clutering/number_clusters_
 upperBound.pdf Graphic file (type pdf)
 
 <use /home/di/work/thesis/thesisTemplate/figures/04_clutering/number_clusters_u
 pperBound.pdf>
 Package pdftex.def Info: /home/di/work/thesis/thesisTemplate/figures/04_cluteri
-ng/number_clusters_upperBound.pdf used on input line 747.
-(pdftex.def)             Requested size: 201.60077pt x 157.36958pt.
+ng/number_clusters_upperBound.pdf used on input line 749.
+(pdftex.def)             Requested size: 202.35675pt x 152.26204pt.
 
-</home/di/work/thesis/thesisTemplate/figures/04_clutering/figure2.pdf, id=223, 
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[4 </home/di/work/thesis/thesisTemplate/figures/04_clutering/clusters_denseNetw
+ork_2.pdf>]
+</home/di/work/thesis/thesisTemplate/figures/04_clutering/figure2.pdf, id=224, 
 192.72pt x 127.47626pt>
 File: /home/di/work/thesis/thesisTemplate/figures/04_clutering/figure2.pdf Grap
 hic file (type pdf)
 
 <use /home/di/work/thesis/thesisTemplate/figures/04_clutering/figure2.pdf>
 Package pdftex.def Info: /home/di/work/thesis/thesisTemplate/figures/04_cluteri
-ng/figure2.pdf used on input line 773.
-(pdftex.def)             Requested size: 176.39923pt x 116.68047pt.
+ng/figure2.pdf used on input line 779.
+(pdftex.def)             Requested size: 151.76852pt x 100.38808pt.
 
 </home/di/work/thesis/thesisTemplate/figures/04_clutering/percentage_overlappin
-g_node.pdf, id=227, 395.4775pt x 311.1625pt>
+g_node.pdf, id=228, 395.4775pt x 311.1625pt>
 File: /home/di/work/thesis/thesisTemplate/figures/04_clutering/percentage_overl
 apping_node.pdf Graphic file (type pdf)
 
 <use /home/di/work/thesis/thesisTemplate/figures/04_clutering/percentage_overla
 pping_node.pdf>
 Package pdftex.def Info: /home/di/work/thesis/thesisTemplate/figures/04_cluteri
-ng/percentage_overlapping_node.pdf used on input line 792.
-(pdftex.def)             Requested size: 176.39923pt x 138.79211pt.
- [5 </home/di/work/thesis/thesisTemplate/figures/04_clutering/clusters_denseNet
-work_2.pdf> </home/di/work/thesis/thesisTemplate/figures/04_clutering/number_cl
-usters_upperBound.pdf> </home/di/work/thesis/thesisTemplate/figures/04_cluterin
-g/figure2.pdf>]
+ng/percentage_overlapping_node.pdf used on input line 798.
+(pdftex.def)             Requested size: 177.06071pt x 139.31438pt.
+ [5 </home/di/work/thesis/thesisTemplate/figures/04_clutering/number_clusters_u
+pperBound.pdf> </home/di/work/thesis/thesisTemplate/figures/04_clutering/figure
+2.pdf> </home/di/work/thesis/thesisTemplate/figures/04_clutering/percentage_ove
+rlapping_node.pdf>]
 </home/di/work/thesis/thesisTemplate/figures/04_clutering/singletongame_png.png
-, id=253, 399.894pt x 406.318pt>
+, id=256, 399.894pt x 406.318pt>
 File: /home/di/work/thesis/thesisTemplate/figures/04_clutering/singletongame_pn
 g.png Graphic file (type png)
 
 <use /home/di/work/thesis/thesisTemplate/figures/04_clutering/singletongame_png
 .png>
 Package pdftex.def Info: /home/di/work/thesis/thesisTemplate/figures/04_cluteri
-ng/singletongame_png.png used on input line 859.
-(pdftex.def)             Requested size: 100.79846pt x 102.41623pt.
- [6 </home/di/work/thesis/thesisTemplate/figures/04_clutering/percentage_overla
-pping_node.pdf> </home/di/work/thesis/thesisTemplate/figures/04_clutering/singl
-etongame_png.png>]
+ng/singletongame_png.png used on input line 866.
+(pdftex.def)             Requested size: 63.23624pt x 64.24962pt.
+ [6 </home/di/work/thesis/thesisTemplate/figures/04_clutering/singletongame_png
+.png>]
 </home/di/work/thesis/thesisTemplate/figures/04_clutering/figure4AinC.pdf, id=2
-80, 177.66376pt x 109.40875pt>
+89, 177.66376pt x 109.40875pt>
 File: /home/di/work/thesis/thesisTemplate/figures/04_clutering/figure4AinC.pdf 
 Graphic file (type pdf)
 
 <use /home/di/work/thesis/thesisTemplate/figures/04_clutering/figure4AinC.pdf>
 Package pdftex.def Info: /home/di/work/thesis/thesisTemplate/figures/04_cluteri
-ng/figure4AinC.pdf used on input line 954.
-(pdftex.def)             Requested size: 109.61938pt x 67.50716pt.
+ng/figure4AinC.pdf used on input line 971.
+(pdftex.def)             Requested size: 110.03044pt x 67.76093pt.
 
 </home/di/work/thesis/thesisTemplate/figures/04_clutering/figure4AinH.pdf, id=2
-81, 177.66376pt x 107.40125pt>
+90, 177.66376pt x 107.40125pt>
 File: /home/di/work/thesis/thesisTemplate/figures/04_clutering/figure4AinH.pdf 
 Graphic file (type pdf)
 
 <use /home/di/work/thesis/thesisTemplate/figures/04_clutering/figure4AinH.pdf>
 Package pdftex.def Info: /home/di/work/thesis/thesisTemplate/figures/04_cluteri
-ng/figure4AinH.pdf used on input line 958.
-(pdftex.def)             Requested size: 109.61938pt x 66.26851pt.
+ng/figure4AinH.pdf used on input line 976.
+(pdftex.def)             Requested size: 110.03044pt x 66.5176pt.
 
 </home/di/work/thesis/thesisTemplate/figures/04_clutering/final_clustering_ross
-.pdf, id=282, 284.06125pt x 181.67876pt>
+.pdf, id=291, 284.06125pt x 181.67876pt>
 File: /home/di/work/thesis/thesisTemplate/figures/04_clutering/final_clustering
 _ross.pdf Graphic file (type pdf)
 
 <use /home/di/work/thesis/thesisTemplate/figures/04_clutering/final_clustering_
 ross.pdf>
 Package pdftex.def Info: /home/di/work/thesis/thesisTemplate/figures/04_cluteri
-ng/final_clustering_ross.pdf used on input line 974.
-(pdftex.def)             Requested size: 126.0pt x 80.58759pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[7 </home/di/work/thesis/thesisTemplate/figures/04_clutering/figure4AinC.pdf> <
-/home/di/work/thesis/thesisTemplate/figures/04_clutering/figure4AinH.pdf> </hom
-e/di/work/thesis/thesisTemplate/figures/04_clutering/final_clustering_ross.pdf>
-]
-Underfull \hbox (badness 4467) in paragraph at lines 1159--1164
-[]\T1/ptm/m/n/10 We let the clus-ter size $\OML/ntxmi/m/it/10 ^^N$ \T1/ptm/m/n/
-10 to be 3. A col-lec-tion
- []
-
-
-Underfull \hbox (badness 7379) in paragraph at lines 1159--1164
-\T1/ptm/m/n/10 and the sizes of clus-ters are 1, 2 or 3. $\OMS/ntxsy/m/n/10 G \
-U/ntxmia/m/it/10 =
- []
-
-
-Underfull \hbox (badness 3872) in paragraph at lines 1165--1169
-[]\T1/ptm/m/n/10 The clus-ter-ing re-sult of cen-tral-ized pro-gram-ming is
- []
-
-
-Underfull \hbox (badness 1874) in paragraph at lines 1165--1169
-\OMS/ntxsy/m/n/10 ff\OML/ntxmi/m/it/10 B; H; G\OMS/ntxsy/m/n/10 g\OML/ntxmi/m/i
-t/10 ; \OMS/ntxsy/m/n/10 f\OML/ntxmi/m/it/10 C; A\OMS/ntxsy/m/n/10 g\OML/ntxmi/
-m/it/10 ; \OMS/ntxsy/m/n/10 f\OML/ntxmi/m/it/10 D; E; F\OMS/ntxsy/m/n/10 gg$\T1
-/ptm/m/n/10 , the num-bers of CCCs are
- []
-
-
-Underfull \hbox (badness 4726) in paragraph at lines 1165--1169
-\T1/ptm/m/n/10 2, 4, 2. By ap-ply-ing SOC, the clus-ter-ing re-sult is
- []
-
-
+ng/final_clustering_ross.pdf used on input line 992.
+(pdftex.def)             Requested size: 126.47249pt x 80.88976pt.
+ [7 </home/di/work/thesis/thesisTemplate/figures/04_clutering/figure4AinC.pdf> 
+</home/di/work/thesis/thesisTemplate/figures/04_clutering/figure4AinH.pdf> </ho
+me/di/work/thesis/thesisTemplate/figures/04_clutering/final_clustering_ross.pdf
+>]
 </home/di/work/thesis/thesisTemplate/figures/04_clutering/final_clustering_soc.
-pdf, id=337, 284.06125pt x 171.64125pt>
+pdf, id=345, 284.06125pt x 171.64125pt>
 File: /home/di/work/thesis/thesisTemplate/figures/04_clutering/final_clustering
 _soc.pdf Graphic file (type pdf)
 
 <use /home/di/work/thesis/thesisTemplate/figures/04_clutering/final_clustering_
 soc.pdf>
 Package pdftex.def Info: /home/di/work/thesis/thesisTemplate/figures/04_cluteri
-ng/final_clustering_soc.pdf used on input line 1174.
-(pdftex.def)             Requested size: 109.61938pt x 66.23529pt.
+ng/final_clustering_soc.pdf used on input line 1183.
+(pdftex.def)             Requested size: 110.03044pt x 66.48409pt.
 
 </home/di/work/thesis/thesisTemplate/figures/04_clutering/final_clustering_LP.p
-df, id=338, 283.0575pt x 169.63374pt>
+df, id=346, 283.0575pt x 169.63374pt>
 File: /home/di/work/thesis/thesisTemplate/figures/04_clutering/final_clustering
 _LP.pdf Graphic file (type pdf)
 
 <use /home/di/work/thesis/thesisTemplate/figures/04_clutering/final_clustering_
 LP.pdf>
 Package pdftex.def Info: /home/di/work/thesis/thesisTemplate/figures/04_cluteri
-ng/final_clustering_LP.pdf used on input line 1175.
-(pdftex.def)             Requested size: 109.61938pt x 65.69356pt.
+ng/final_clustering_LP.pdf used on input line 1185.
+(pdftex.def)             Requested size: 110.03044pt x 65.93945pt.
 
-Underfull \hbox (badness 4416) in paragraph at lines 1175--1175
-[]\T1/ptm/m/n/8 (b) Re-sulted from Cen-tral-ized
+Underfull \hbox (badness 3601) in paragraph at lines 1185--1185
+[]\T1/ptm/m/n/8.03 (b) Re-sulted from Cen-tral-ized
  []
 
-[8] [9 </home/di/work/thesis/thesisTemplate/figures/04_clutering/final_clusteri
-ng_soc.pdf> </home/di/work/thesis/thesisTemplate/figures/04_clutering/final_clu
-stering_LP.pdf
+[8 </home/di/work/thesis/thesisTemplate/figures/04_clutering/final_clustering_s
+oc.pdf> </home/di/work/thesis/thesisTemplate/figures/04_clutering/final_cluster
+ing_LP.pdf
 
 pdfTeX warning: pdflatex (file /home/di/work/thesis/thesisTemplate/figures/04_c
 lutering/final_clustering_LP.pdf): PDF inclusion: multiple pdfs with page group
  included in a single page
 >]
-</home/di/work/thesis/thesisTemplate/figures/04_clutering/ccc_20.pdf, id=384, 3
-99.4925pt x 333.245pt>
+Underfull \hbox (badness 2205) in paragraph at lines 1249--1249
+ \T1/phv/m/sl/9.53561 6.1.1 Num-ber of Com-mon Con-trol Chan-nels in Non-
+ []
+
+
+</home/di/work/thesis/thesisTemplate/figures/04_clutering/ccc_20.pdf, id=389, 3
+99.4925pt x 319.1925pt>
 File: /home/di/work/thesis/thesisTemplate/figures/04_clutering/ccc_20.pdf Graph
 ic file (type pdf)
 
 <use /home/di/work/thesis/thesisTemplate/figures/04_clutering/ccc_20.pdf>
 Package pdftex.def Info: /home/di/work/thesis/thesisTemplate/figures/04_cluteri
-ng/ccc_20.pdf used on input line 1257.
-(pdftex.def)             Requested size: 201.60077pt x 168.1679pt.
+ng/ccc_20.pdf used on input line 1327.
+(pdftex.def)             Requested size: 164.61499pt x 131.52728pt.
 
 </home/di/work/thesis/thesisTemplate/figures/04_clutering/survival_rate_20.pdf,
- id=389, 390.45876pt x 310.15875pt>
+ id=390, 390.45876pt x 310.15875pt>
 File: /home/di/work/thesis/thesisTemplate/figures/04_clutering/survival_rate_20
 .pdf Graphic file (type pdf)
 
 <use /home/di/work/thesis/thesisTemplate/figures/04_clutering/survival_rate_20.
 pdf>
 Package pdftex.def Info: /home/di/work/thesis/thesisTemplate/figures/04_cluteri
-ng/survival_rate_20.pdf used on input line 1297.
-(pdftex.def)             Requested size: 201.60077pt x 160.13817pt.
+ng/survival_rate_20.pdf used on input line 1328.
+(pdftex.def)             Requested size: 164.61499pt x 130.75798pt.
 
 </home/di/work/thesis/thesisTemplate/figures/04_clutering/cdf_clusterSize_20.pd
-f, id=390, 396.48125pt x 307.1475pt>
+f, id=391, 400.49625pt x 311.1625pt>
 File: /home/di/work/thesis/thesisTemplate/figures/04_clutering/cdf_clusterSize_
 20.pdf Graphic file (type pdf)
 
 <use /home/di/work/thesis/thesisTemplate/figures/04_clutering/cdf_clusterSize_2
 0.pdf>
 Package pdftex.def Info: /home/di/work/thesis/thesisTemplate/figures/04_cluteri
-ng/cdf_clusterSize_20.pdf used on input line 1314.
-(pdftex.def)             Requested size: 201.60077pt x 156.17917pt.
+ng/cdf_clusterSize_20.pdf used on input line 1329.
+(pdftex.def)             Requested size: 164.61499pt x 127.89555pt.
+ [9]
+LaTeX Font Info:    Calculating math sizes for size <9.03374> on input line 142
+3.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[10 </home/di/work/thesis/thesisTemplate/figures/04_clutering/ccc_20.pdf> </hom
-e/di/work/thesis/thesisTemplate/figures/04_clutering/survival_rate_20.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 1401--1401
-[]|\T1/ptm/m/n/9 Quantitative num-ber of
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1402--1402
-[]|\T1/ptm/m/n/9 ROSS-DGA,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1404--1404
-[]|\T1/ptm/m/n/9 ROSS-DFA,
+Overfull \vbox (18.11803pt too high) detected at line 1426
  []
 
 
 </home/di/work/thesis/thesisTemplate/figures/04_clutering/number_controlMsg.pdf
-, id=420, 403.5075pt x 307.1475pt>
+, id=414, 403.5075pt x 307.1475pt>
 File: /home/di/work/thesis/thesisTemplate/figures/04_clutering/number_controlMs
 g.pdf Graphic file (type pdf)
 
 <use /home/di/work/thesis/thesisTemplate/figures/04_clutering/number_controlMsg
 .pdf>
 Package pdftex.def Info: /home/di/work/thesis/thesisTemplate/figures/04_cluteri
-ng/number_controlMsg.pdf used on input line 1419.
-(pdftex.def)             Requested size: 176.39923pt x 134.27359pt.
+ng/number_controlMsg.pdf used on input line 1441.
+(pdftex.def)             Requested size: 177.06071pt x 134.77505pt.
 
 </home/di/work/thesis/thesisTemplate/figures/04_clutering/ccc_large_scale_color
-.pdf, id=421, 449.68pt x 338.26375pt>
+.pdf, id=416, 449.68pt x 338.26375pt>
 File: /home/di/work/thesis/thesisTemplate/figures/04_clutering/ccc_large_scale_
 color.pdf Graphic file (type pdf)
 
 <use /home/di/work/thesis/thesisTemplate/figures/04_clutering/ccc_large_scale_c
 olor.pdf>
 Package pdftex.def Info: /home/di/work/thesis/thesisTemplate/figures/04_cluteri
-ng/ccc_large_scale_color.pdf used on input line 1436.
-(pdftex.def)             Requested size: 252.0pt x 189.5606pt.
- [11 </home/di/work/thesis/thesisTemplate/figures/04_clutering/cdf_clusterSize_
-20.pdf> </home/di/work/thesis/thesisTemplate/figures/04_clutering/number_contro
-lMsg.pdf>]
+ng/ccc_large_scale_color.pdf used on input line 1476.
+(pdftex.def)             Requested size: 252.94499pt x 190.27287pt.
+ [10 </home/di/work/thesis/thesisTemplate/figures/04_clutering/ccc_20.pdf> </ho
+me/di/work/thesis/thesisTemplate/figures/04_clutering/survival_rate_20.pdf> </h
+ome/di/work/thesis/thesisTemplate/figures/04_clutering/cdf_clusterSize_20.pdf> 
+</home/di/work/thesis/thesisTemplate/figures/04_clutering/number_controlMsg.pdf
+>]
 </home/di/work/thesis/thesisTemplate/figures/04_clutering/survival_rate_100.pdf
-, id=453, 394.47375pt x 310.15875pt>
+, id=456, 396.48125pt x 311.1625pt>
 File: /home/di/work/thesis/thesisTemplate/figures/04_clutering/survival_rate_10
 0.pdf Graphic file (type pdf)
 
 <use /home/di/work/thesis/thesisTemplate/figures/04_clutering/survival_rate_100
 .pdf>
 Package pdftex.def Info: /home/di/work/thesis/thesisTemplate/figures/04_cluteri
-ng/survival_rate_100.pdf used on input line 1465.
-(pdftex.def)             Requested size: 201.60077pt x 158.51015pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
+ng/survival_rate_100.pdf used on input line 1507.
+(pdftex.def)             Requested size: 202.35675pt x 158.81422pt.
 
 </home/di/work/thesis/thesisTemplate/figures/04_clutering/survival_rate_300.pdf
-, id=454, 399.4925pt x 310.15875pt>
+, id=457, 401.5pt x 311.1625pt>
 File: /home/di/work/thesis/thesisTemplate/figures/04_clutering/survival_rate_30
 0.pdf Graphic file (type pdf)
 
 <use /home/di/work/thesis/thesisTemplate/figures/04_clutering/survival_rate_300
 .pdf>
 Package pdftex.def Info: /home/di/work/thesis/thesisTemplate/figures/04_cluteri
-ng/survival_rate_300.pdf used on input line 1472.
-(pdftex.def)             Requested size: 201.60077pt x 156.51772pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
+ng/survival_rate_300.pdf used on input line 1514.
+(pdftex.def)             Requested size: 202.35675pt x 156.82957pt.
+ [11 </home/di/work/thesis/thesisTemplate/figures/04_clutering/ccc_large_scale_
+color.pdf> </home/di/work/thesis/thesisTemplate/figures/04_clutering/survival_r
+ate_100.pdf> </home/di/work/thesis/thesisTemplate/figures/04_clutering/survival
+_rate_300.pdf>]
 </home/di/work/thesis/thesisTemplate/figures/04_clutering/nClusters_largeNetwor
-k.pdf, id=459, 449.68pt x 339.2675pt>
+k.pdf, id=494, 449.68pt x 338.26375pt>
 File: /home/di/work/thesis/thesisTemplate/figures/04_clutering/nClusters_largeN
 etwork.pdf Graphic file (type pdf)
 
 <use /home/di/work/thesis/thesisTemplate/figures/04_clutering/nClusters_largeNe
 twork.pdf>
 Package pdftex.def Info: /home/di/work/thesis/thesisTemplate/figures/04_cluteri
-ng/nClusters_largeNetwork.pdf used on input line 1492.
-(pdftex.def)             Requested size: 214.20154pt x 161.60928pt.
- [12 </home/di/work/thesis/thesisTemplate/figures/04_clutering/ccc_large_scale_
-color.pdf> </home/di/work/thesis/thesisTemplate/figures/04_clutering/survival_r
-ate_100.pdf> </home/di/work/thesis/thesisTemplate/figures/04_clutering/survival
-_rate_300.pdf>]
+ng/nClusters_largeNetwork.pdf used on input line 1534.
+(pdftex.def)             Requested size: 252.94499pt x 190.27287pt.
+
 </home/di/work/thesis/thesisTemplate/figures/04_clutering/cdf_clusterSize_100.p
-df, id=489, 392.46625pt x 307.1475pt>
+df, id=498, 396.48125pt x 311.1625pt>
 File: /home/di/work/thesis/thesisTemplate/figures/04_clutering/cdf_clusterSize_
 100.pdf Graphic file (type pdf)
 
 <use /home/di/work/thesis/thesisTemplate/figures/04_clutering/cdf_clusterSize_1
 00.pdf>
 Package pdftex.def Info: /home/di/work/thesis/thesisTemplate/figures/04_cluteri
-ng/cdf_clusterSize_100.pdf used on input line 1523.
-(pdftex.def)             Requested size: 164.0pt x 128.34961pt.
+ng/cdf_clusterSize_100.pdf used on input line 1568.
+(pdftex.def)             Requested size: 164.61499pt x 129.19176pt.
 
 </home/di/work/thesis/thesisTemplate/figures/04_clutering/cdf_clusterSize_200.p
-df, id=490, 392.46625pt x 307.1475pt>
+df, id=499, 396.48125pt x 311.1625pt>
 File: /home/di/work/thesis/thesisTemplate/figures/04_clutering/cdf_clusterSize_
 200.pdf Graphic file (type pdf)
 
 <use /home/di/work/thesis/thesisTemplate/figures/04_clutering/cdf_clusterSize_2
 00.pdf>
 Package pdftex.def Info: /home/di/work/thesis/thesisTemplate/figures/04_cluteri
-ng/cdf_clusterSize_200.pdf used on input line 1524.
-(pdftex.def)             Requested size: 164.0pt x 128.34961pt.
+ng/cdf_clusterSize_200.pdf used on input line 1569.
+(pdftex.def)             Requested size: 164.61499pt x 129.19176pt.
 
 </home/di/work/thesis/thesisTemplate/figures/04_clutering/cdf_clusterSize_300.p
-df, id=491, 392.46625pt x 307.1475pt>
+df, id=500, 396.48125pt x 311.1625pt>
 File: /home/di/work/thesis/thesisTemplate/figures/04_clutering/cdf_clusterSize_
 300.pdf Graphic file (type pdf)
 
 <use /home/di/work/thesis/thesisTemplate/figures/04_clutering/cdf_clusterSize_3
 00.pdf>
 Package pdftex.def Info: /home/di/work/thesis/thesisTemplate/figures/04_cluteri
-ng/cdf_clusterSize_300.pdf used on input line 1525.
-(pdftex.def)             Requested size: 164.0pt x 128.34961pt.
-LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <10> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 1584.
- [13 </home/di/work/thesis/thesisTemplate/figures/04_clutering/nClusters_largeN
-etwork.pdf>]
-</home/di/work/thesis/thesisTemplate/figures/04_clutering/lemma1.pdf, id=541, 5
+ng/cdf_clusterSize_300.pdf used on input line 1570.
+(pdftex.def)             Requested size: 164.61499pt x 129.19176pt.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <6.62196> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 1629.
+LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <9.53561> not available
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 1629.
+
+</home/di/work/thesis/thesisTemplate/figures/04_clutering/lemma1.pdf, id=504, 5
 63.8709pt x 112.73901pt>
 File: /home/di/work/thesis/thesisTemplate/figures/04_clutering/lemma1.pdf Graph
 ic file (type pdf)
 
 <use /home/di/work/thesis/thesisTemplate/figures/04_clutering/lemma1.pdf>
 Package pdftex.def Info: /home/di/work/thesis/thesisTemplate/figures/04_cluteri
-ng/lemma1.pdf used on input line 1685.
-(pdftex.def)             Requested size: 151.20154pt x 30.23006pt.
+ng/lemma1.pdf used on input line 1733.
+(pdftex.def)             Requested size: 151.76852pt x 30.3436pt.
 
-[14 </home/di/work/thesis/thesisTemplate/figures/04_clutering/cdf_clusterSize_1
-00.pdf> </home/di/work/thesis/thesisTemplate/figures/04_clutering/cdf_clusterSi
-ze_200.pdf> </home/di/work/thesis/thesisTemplate/figures/04_clutering/cdf_clust
-erSize_300.pdf> </home/di/work/thesis/thesisTemplate/figures/04_clutering/lemma
-1.pdf>] [15] (./bare_jrnl_comsoc.bbl
+[12 </home/di/work/thesis/thesisTemplate/figures/04_clutering/nClusters_largeNe
+twork.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [13 </home/di/work/thesis/thesisTemplate/figures/04_clutering/cdf_clusterSize_
+100.pdf> </home/di/work/thesis/thesisTemplate/figures/04_clutering/cdf_clusterS
+ize_200.pdf> </home/di/work/thesis/thesisTemplate/figures/04_clutering/cdf_clus
+terSize_300.pdf> </home/di/work/thesis/thesisTemplate/figures/04_clutering/lemm
+a1.pdf>]
+(./bare_jrnl_comsoc.bbl [14]
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `English'. Using the pattern for
 ** the default language instead.
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `English'. Using the pattern for
 ** the default language instead.
-[16])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1860.
- [17
-
-]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1860.
+)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1937.
+ [15]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1937.
  (./bare_jrnl_comsoc.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1860.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1860.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1937.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1937.
 
 Package rerunfilecheck Info: File `bare_jrnl_comsoc.out' has not changed.
-(rerunfilecheck)             Checksum: 638829563F080E78521D9FAA0542AA48;1254.
+(rerunfilecheck)             Checksum: 0BF2D14F9A884190007A49561D410B5B;1187.
 
 
 LaTeX Font Warning: Size substitutions with differences
-(Font)              up to 1.97499pt have occurred.
+(Font)              up to 2.11545pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1860.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1937.
  ) 
 Here is how much of TeX's memory you used:
- 25659 strings out of 495059
- 443769 string characters out of 3182030
- 828650 words of memory out of 3000000
- 28056 multiletter control sequences out of 15000+200000
- 192793 words of font info for 280 fonts, out of 3000000 for 9000
+ 26652 strings out of 495059
+ 461601 string characters out of 3182030
+ 844359 words of memory out of 3000000
+ 28992 multiletter control sequences out of 15000+200000
+ 235011 words of font info for 348 fonts, out of 3000000 for 9000
  17 hyphenation exceptions out of 8191
- 63i,16n,60p,944b,516s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exi
+ 63i,16n,60p,944b,518s stack positions out of 5000i,500n,10000p,200000b,50000s
+pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exi
 st, replaced by a fixed one
-
-pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist
-, replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
 , replaced by a fixed one
@@ -1851,14 +1889,17 @@ sy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/public/txfonts/txsyc.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/urw/courier/ucrro8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/tim
-es/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on bare_jrnl_comsoc.pdf (17 pages, 628518 bytes).
+ype1/urw/courier/ucrro8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/hel
+vetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/urw/times/utmri8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/zap
+fding/uzdr.pfb>
+Output written on bare_jrnl_comsoc.pdf (15 pages, 642051 bytes).
 PDF statistics:
- 730 PDF objects out of 1000 (max. 8388607)
- 629 compressed objects within 7 object streams
- 188 named destinations out of 1000 (max. 500000)
- 280 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 756 PDF objects out of 1000 (max. 8388607)
+ 653 compressed objects within 7 object streams
+ 194 named destinations out of 1000 (max. 500000)
+ 272 words of extra memory for PDF output out of 10000 (max. 10000000)
 

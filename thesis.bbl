@@ -166,7 +166,7 @@ In the matter of unlicensed operation in the {TV} broadcast bands: second
 {\sc Baddour, K., Ureten, O., and Willink, T.}
 \newblock Efficient clustering of cognitive radio networks using affinity
   propagation.
-\newblock In {\em Proc. of ICCCN 2009\/} (2009).
+\newblock In {\em Proc. of ICCCN 2009}.
 
 \bibitem{joint_power_channel_linkpair_08ICT}
 {\sc Bahramian, S., and Khalaj, B.}
@@ -266,7 +266,7 @@ In the matter of unlicensed operation in the {TV} broadcast bands: second
 \bibitem{Chen07}
 {\sc Chen, T., Zhang, H., Maggio, G., and Chlamtac, I.}
 \newblock Cogmesh: A cluster-based cognitive radio network.
-\newblock {\em Proc. of DySPAN '07\/} (apr. 2007), 168 --178.
+\newblock {\em Proc. of DySPAN '07\/}.
 
 \bibitem{spectrum_sharing_tvspace_2012}
 {\sc Chen, X., and Huang, J.}
@@ -534,7 +534,7 @@ In the matter of unlicensed operation in the {TV} broadcast bands: second
 \bibitem{kothari:congestion_serverMatching}
 {\sc Kothari, A., Suri, S., Tóth, C.~D., and Zhou, Y.}
 \newblock Congestion games, load balancing, and price of anarchy.
-\newblock In {\em Proc. of CAAN'04\/} (2004), pp.~13--27.
+\newblock In {\em Proc. of CAAN'04}.
 
 \bibitem{multipleIntf_pimrc11}
 {\sc Koufos, K., Ruttik, K., and Jantti, R.}
@@ -631,8 +631,7 @@ In the matter of unlicensed operation in the {TV} broadcast bands: second
 {\sc MacKenzie, A., and Wicker, S.}
 \newblock Game theory in communications: motivation, explanation, and
   application to power control.
-\newblock In {\em Proc. of IEEE GLOBECOM 2001\/} (2001), vol.~2, pp.~821--826
-  vol.2.
+\newblock In {\em Proc. of IEEE GLOBECOM 2001}.
 
 \bibitem{Mansoor2014}
 {\sc Mansoor, N., Muzahidul~Islam, A. K.~M., Zareei, M., Baharun, S.,
@@ -760,8 +759,8 @@ In the matter of unlicensed operation in the {TV} broadcast bands: second
 {\sc Passiatore, C., and Camarda, P.}
 \newblock A centralized inter-network resource sharing ({CIRS}) scheme in
   {IEEE} 802.22 cognitive networks.
-\newblock In {\em Ad Hoc Networking Workshop (Med-Hoc-Net), 2011 The 10th IFIP
-  Annual Mediterranean\/} (june 2011), pp.~17 --24.
+\newblock In {\em Proc. of IFIP Annual Mediterranean Ad Hoc Networking Workshop
+  2011\/} (2011).
 
 \bibitem{tvwhite_lte2011}
 {\sc Rahman, M.~I., Behravan, A., Koorapaty, H., Sachs, J., and Balachandran,
@@ -796,9 +795,8 @@ In the matter of unlicensed operation in the {TV} broadcast bands: second
 \bibitem{Sahai_FundamentalDesignTradeoffs2006}
 {\sc Sahai, A., Tandra, R., Mishra, S.~M., and Hoven, N.}
 \newblock Fundamental design tradeoffs in cognitive radio systems.
-\newblock In {\em Proceedings of the First International Workshop on Technology
-  and Policy for Accessing Spectrum\/} (New York, NY, USA, 2006), TAPAS '06,
-  ACM.
+\newblock In {\em Proc. of the First International Workshop on Technology and
+  Policy for Accessing Spectrum}, ACM TAPAS '06.
 
 \bibitem{spectrumDecision_2013mass}
 {\sc Saifan, R., Kamal, A., and Guan, Y.}
@@ -1015,8 +1013,7 @@ In the matter of unlicensed operation in the {TV} broadcast bands: second
 {\sc Zhao, J., Zheng, H., and Yang, G.-H.}
 \newblock Spectrum sharing through distributed coordination in dynamic spectrum
   access networks.
-\newblock {\em Wireless Communications and Mobile Computing 7}, 9 (2007),
-  1061--1075.
+\newblock {\em Wireless Com. and Mobile Computing 7}, 9 (2007), 1061--1075.
 
 \bibitem{zhao_survey_DSA_2007}
 {\sc Zhao, Q., and Sadler, B.}

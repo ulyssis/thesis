@@ -32,9 +32,9 @@ Q.~Zhao and B.~Sadler, ``A survey of dynamic spectrum access,'' \emph{Signal
 
 \bibitem{Sahai_FundamentalDesignTradeoffs2006}
 A.~Sahai, R.~Tandra, S.~M. Mishra, and N.~Hoven, ``Fundamental design tradeoffs
-  in cognitive radio systems,'' in \emph{Proceedings of the First International
-  Workshop on Technology and Policy for Accessing Spectrum}, ser. TAPAS
-  '06.\hskip 1em plus 0.5em minus 0.4em\relax New York, NY, USA: ACM, 2006.
+  in cognitive radio systems,'' in \emph{Proc. of the First International
+  Workshop on Technology and Policy for Accessing Spectrum}, ser. ACM TAPAS
+  '06.
 
 \bibitem{coorperativeSensing_Akyildiz11}
 I.~F. Akyildiz, B.~F. Lo, and R.~Balakrishnan, ``Cooperative spectrum sensing
@@ -58,9 +58,8 @@ D.~Willkomm, M.~Bohge, D.~Holl{\'o}s, J.~Gross, and A.~Wolisz, ``Double
 
 \bibitem{centralizedSharing80222}
 C.~Passiatore and P.~Camarda, ``A centralized inter-network resource sharing
-  ({CIRS}) scheme in {IEEE} 802.22 cognitive networks,'' in \emph{Ad Hoc
-  Networking Workshop (Med-Hoc-Net), 2011 The 10th IFIP Annual Mediterranean},
-  june 2011, pp. 17 --24.
+  ({CIRS}) scheme in {IEEE} 802.22 cognitive networks,'' in \emph{Proc. of IFIP
+  Annual Mediterranean Ad Hoc Networking Workshop 2011}, 2011.
 
 \bibitem{Abbasi_survey_07}
 A.~A. Abbasi and M.~Younis, ``A survey on clustering algorithms for wireless
@@ -110,8 +109,7 @@ H.~Wu and A.~Abouzeid, ``Cluster-based routing overhead in networks with
 
 \bibitem{Chen07}
 T.~Chen, H.~Zhang, G.~Maggio, and I.~Chlamtac, ``Cogmesh: A cluster-based
-  cognitive radio network,'' \emph{Proc. of DySPAN '07}, pp. 168 --178, apr.
-  2007.
+  cognitive radio network,'' \emph{Proc. of DySPAN '07}.
 
 \bibitem{TWC2012_cooperative_communication}
 D.~Wu, Y.~Cai, L.~Zhou, and J.~Wang, ``A cooperative communication scheme based
@@ -121,8 +119,7 @@ D.~Wu, Y.~Cai, L.~Zhou, and J.~Wang, ``A cooperative communication scheme based
 
 \bibitem{Affinity_clustering_09icccn}
 K.~Baddour, O.~Ureten, and T.~Willink, ``Efficient clustering of cognitive
-  radio networks using affinity propagation,'' in \emph{Proc. of ICCCN 2009},
-  2009.
+  radio networks using affinity propagation,'' in \emph{Proc. of ICCCN 2009}.
 
 \bibitem{cluster_EW10}
 A.~Asterjadhi, N.~Baldo, and M.~Zorzi, ``A cluster formation protocol for
@@ -164,25 +161,50 @@ E.~Perevalov, R.~S. Blum, and D.~Safi, ``Capacity of clustered ad hoc networks:
   how large is "large"?'' \emph{IEEE Transactions on Communications}, vol.~54,
   no.~9, pp. 1672--1681, Sept 2006.
 
+\bibitem{game_for_communication_01}
+A.~MacKenzie and S.~Wicker, ``Game theory in communications: motivation,
+  explanation, and application to power control,'' in \emph{Proc. of IEEE
+  GLOBECOM 2001}.
+
+\bibitem{Neel06analysisand}
+J.~O. Neel, ``Analysis and design of cognitive radio networks and distributed
+  radio resource management algorithms,'' Ph.D. dissertation, Blacksburg, VA,
+  USA, 2006, aAI3249450.
+
+\bibitem{Wang_gtc_crn_survey_2010}
+B.~Wang, Y.~Wu, and K.~R. Liu, ``Game theory for cognitive radio networks: An
+  overview,'' \emph{Comput. Netw.}, vol.~54, no.~14, pp. 2537--2561, Oct. 2010.
+
+\bibitem{Cloud_Computing_2010}
+B.~J.~S. Chee and C.~Franklin, Jr., \emph{Cloud Computing: Technologies and
+  Strategies of the Ubiquitous Data Center}, 1st~ed.\hskip 1em plus 0.5em minus
+  0.4em\relax Boca Raton, FL, USA: CRC Press, Inc., 2010.
+
+\bibitem{kothari:congestion_serverMatching}
+A.~Kothari, S.~Suri, C.~D. Tóth, and Y.~Zhou, ``Congestion games, load
+  balancing, and price of anarchy,'' in \emph{Proc. of CAAN'04}.
+
 \bibitem{Ackermann06purenash}
 H.~Ackermann, H.~Röglin, and B.~Vöcking, ``Pure {N}ash equilibria in
   player-specific and weighted congestion games,'' \emph{Theoretical Computer
   Science}, vol. Vol. 410, no.~17, pp. 1552 -- 1563, 2009.
 
-\bibitem{Computers_a_Intractability}
-M.~R. Garey and D.~S. Johnson, \emph{Computers and Intractability: {A} Guide to
-  the Theory of NP-Completeness}.\hskip 1em plus 0.5em minus 0.4em\relax W. H.
-  Freeman, 1979.
-
-\bibitem{BCJ10}
-E.~Baccelli, J.~A. Cordero, and P.~Jacquet, ``Optimization of critical data
-  synchronization via link overlay rng in mobile ad hoc networks,'' in \emph{In
-  7th IEEE International Conference Mobile Ad-hoc and Sensor Systems (MASS)},
-  2010.
+\bibitem{unitDiskModel}
+B.~Clark, C.~Colbourn, and D.~Johnson, ``Unit disk graphs,'' \emph{Annals of
+  Discrete Mathematics}, vol.~48, no.~C, pp. 165--177, 1991.
 
 \bibitem{complexity_aggregation_2011}
 X.-Y. Li, Y.~Wang, and Y.~Wang, ``Complexity of data collection, aggregation,
   and selection for wireless sensor networks,'' \emph{IEEE Transactions on
   Computers}, vol.~60, no.~3, pp. 386--399, 2011.
+
+\bibitem{Efficient_broadcasting_gathering_adhoc}
+M.~Onus, A.~Richa, K.~Kothapalli, and C.~Scheideler, ``Efficient broadcasting
+  and gathering in wireless ad-hoc networks,'' in \emph{Proc. of ISPAN 2005}.
+
+\bibitem{Computers_a_Intractability}
+M.~R. Garey and D.~S. Johnson, \emph{Computers and Intractability: {A} Guide to
+  the Theory of NP-Completeness}.\hskip 1em plus 0.5em minus 0.4em\relax W. H.
+  Freeman, 1979.
 
 \end{thebibliography}
