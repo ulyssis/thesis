@@ -253,10 +253,10 @@
 %
 
 \author{Di~Li,~\IEEEmembership{Member,~IEEE,}
-        %Erwin~Fang,
+        Erwin~Fang,
         and James~Gross,~\IEEEmembership{Member,~IEEE}% <-this % stops a space
 \thanks{D. Li was with RWTH Aachen university, Germany.}% <-this % stops a space
-%\thanks{Erwin. Fang is with ETH, Switzerland.}% <-this % stops a space
+\thanks{Erwin. Fang is with ETH, Switzerland.}% <-this % stops a space
 \thanks{J. Gross is with KTH Royal Institute of Technology, Sweden.}% <-this % stops a space
 \thanks{Manuscript received xxxx xx, 20xx; revised xxxx xx, 20xx.}}
 
@@ -1016,8 +1016,9 @@ Based on certain correlation, certain secondary users constitute one cluster $C$
 $1\leq |C| \leqslant k$ where $|C|$ is the size of cluster $C$ and $k$ is a positive integer.
 We name the collection of such clusters as $\mathcal{S}=\{C_1, C_2,\ldots,C_{|\mathcal{S}|}\}$ (the subscript $i$ is the unique index of cluster in $\mathcal{S}$, not the ID of cluster head of that cluster), $\mathcal{S}$ satisfies the following properties: $\bigcup_{1\leq i \leq |\mathcal{S}|} C_i = N$ and $V_{C_i}\neq \emptyset$ for any $i$ which satisfies $1\leq i \leq |\mathcal{S}|$.
 
-Following condition distinguish the centralized clustering problem discussed in this thesis.
-The number of common channels is denoted as $f$ which is $|V_{C}|$ if $|V_{C}|>1$, and $f=0$ if $|V_{C}|=1$.
+Following condition distinguishes the centralized clustering problem discussed in this paper.
+The number of common control channels is $|V_{C}|$ if $|V_{C}|>1$, and is zero when $|V_{C}|=1$.
+We use $f$ to denoted this new number of CCCs. 
 The question of this problem is to find a subcollection $\mathcal{S}' \subseteq \mathcal{S}$, so that $\bigcup_{C_j\in \mathcal{S}'} C_j = N$, and $C_j'\cap C_j =\emptyset$ for $C_j', C_j\in \mathcal{S}'$, so that $\sum_{C\in \mathcal{S}'} f$ is maximized.
 % when $|C|>1$, and $f(\cdot)=0$ when $|C|=1$.
 %As to $f(\cdot):z\rightarrow z$, under this problem setting, if only number of common channels are given consideration, only singleton clusters will be preferred, which contradicts to our goal of clustering CR nodes together, thus we choose $f(\cdot)= |V_{C}|\cdot |C|$, the product of number of common channels and cluster size.
@@ -1040,7 +1041,7 @@ The proof is in Appendix~\ref{proof_theorem1}.
 
 
 \subsection{Centralized Optimization}
-
+\label{centralized_opt}
 %Exact cover problem can be solved with Knuth's Algorithm X~\cite{dancingLinks_Knuth} as it finds out all the instances of exact cover, then we can choose the one with the biggest sum of weights. 
 As there is no efficient algorithm to solve clustering problem in CRN, we propose a centralized optimization where the objective function and the constraints are heuristic, then we adopt binary linear programming to solve the problem.
 %Note that binary linear programming is in NP-complete.
@@ -1097,9 +1098,9 @@ Now, we can formulate the optimization problem as follows,
 \begin{aligned}
      &\min\limits_{x_{ij}} && \Sigma_{j=1}^N\Sigma_{i=1}^G (-x_{ij}q_{ij} + (1-w_i)*p) \\
      &\text{subject to}   && \Sigma_{i=1}^G x_{ij} = 1, for \forall j=1, \ldots, N \\
-   &&& \Sigma_{j=1}^N x_{ij} = |C_i|*(1-w_i), for \forall i=1, \ldots, g \\
+   &&& \Sigma_{j=1}^N x_{ij} = |C_i|*(1-w_i), for \forall i=1, \ldots, G \\
    &&& \text{$x_{ij}$ and $w_i$ are binary variables.}\\
-   &&& i\in \{1,2, \cdots g\}, \hspace{0.3cm} j\in \{1,2,\cdots n\}
+   &&& i\in \{1,2, \cdots G\}, \hspace{0.3cm} j\in \{1,2,\cdots N\}
 \notag
 \end{aligned}
 \end{equation}
@@ -1746,7 +1747,7 @@ Meanwhile, through this proof, we know that within at most $N$ steps, all nodes 
 \end{proof}
 
 
-
+%
 \section*{Proof of Theorem~\ref{theorem1}}
 \label{proof_theorem1}
 \begin{proof}
@@ -1762,17 +1763,18 @@ Weighted k-set packing is NP-hard when $k\geqslant 3$.~\cite{Computers_a_Intract
 \end{mydef}
 
 
-To see centralized clustering problem is NP-hard, we reduce the NP-hard problem \textit{weighted k-set packing} to it.
+To prove the centralized clustering problem is of NP-hard, we reduce the NP-hard problem \textit{weighted k-set packing} to it to prove the former is as hard as the later.
 %, which means centralized clustering in CRN problem is as hard as weighted k-set packing to be solved.
 To complete the reduction, we need to conduct following two steps:
 \begin{itemize}
-\item step 1: Show there exists a polynomial algorithm $\sigma$, by which any instance (\eg $\mathcal{S}$) of a weighted k-set packing can be transformed to instance $\sigma(\mathcal{S})$ for centralized clustering.
-\item step 2: Show that $\mathcal{S}$ is a \textit{yes} instance of weighted k-set packing if and only if $\sigma(\mathcal{S})$ is an \textit{yes} instance for CRN clustering problem.
+\item step 1: Show there exists a polynomial algorithm $\sigma$, by which any instance $\mathcal{S}$ of a weighted k-set packing can be transformed to a clustering solution $\sigma(\mathcal{S})$ which complies with Definition~\ref{def_centralized_clustering}.
+\item step 2: Show that $\mathcal{S}$ is a \textit{yes} instance of weighted k-set packing if and only if $\sigma(\mathcal{S})$ is a \textit{yes} instance for CRN clustering problem.
 \end{itemize}
 
-We continue using the notation introduced in the problem definition.
-Let set $\mathcal{G}$ contains $N$ positive integer numbers which are indexed from 1 to $N$ sequentially.
-Assume one instance $\mathcal{S}$ of weighted k-set packing is a collection of disjoint sets $\mathcal{Q} = \{s_1, s_2,\cdots s_m\}$, and each set is composed by certain amount of elements in $\mathcal{G}$.
+We continue to use the notation adopted in the problem definition in Section~\ref{centralized_opt}.
+Let set $\mathcal{G}$ contain $N$ natural numbers which are from 1 to $N$.
+$\mathcal{Q}$ is a collection of sets $\{s_1, s_2,\cdots s_m\}$, each set is composed with certain elements in $\mathcal{G}$.
+Assume $\mathcal{S}\subseteq \mathcal{Q}$ is one instance of weighted k-set packing, and the sets in $\mathcal{S}$ are disjoint.
 $\omega$ indicates the weight for each set $s$, $\omega:\mathcal{S}\rightarrow \mathbb{Z}^{+}$.
 %As the number of common channel of clusters is always integer
 %give new weight to them in following way
@@ -1780,57 +1782,102 @@ $\omega$ indicates the weight for each set $s$, $\omega:\mathcal{S}\rightarrow \
 
 
 The polynomial algorithm $\sigma$ consists of three transformations.
+
 \begin{itemize}
-\item In the first transformation, for each set $s_i$ of instance $\mathcal{S}$, the elements are duplicated, for instance, given $s_i=\{1, 4, 6\}$, the dummy set $s_i'$ is $\{1,1,4,4,6,6\}$.
-By doing this, we obtain the dummy sets and constitute the dummy instance $\mathcal{S}'$ based on $\mathcal{S}$.
-The purpose of this transformation is to eliminate the single element set in $\mathcal{S}$.
-The weight of set is unchanged after this transformation, \ie $\omega(s_i)=\omega(s_i')$.
-After this transmission, there is no set with only one element.
-This transformation requires $\sum_{s_i \in \mathcal{S}} |s_i|$ steps.
-\item In the immediate following second transformation, we transform the dummy instance $\mathcal{S}'$ to an instance for CRN clustering problem.
-Given an instance $\mathcal{S}'$, we retrieve all the elements which appear in it, and map each of those elements into one CR node, \ie each integer corresponds to one CR node, particularly, that integer becomes the CR node's ID.
-As to duplicated elements, we also map them into a CR node, thus there exist CR nodes with the same ID.
-As a result, these CR nodes constitute a collection of CR nodes, but note that they have not constituted one CRN yet as there are not connections drawn among them.
-Connections in CRN under this context is decided by physical conditions, which says the corresponding CR nodes have common channels and close enough to communicate with each other.
-This transformation requires $2\cdot\sum_{s_i \in \mathcal{S}} |s_i|$ steps.
-%We further assume that all CR nodes locate in a way that any two pair of nodes has potential to be connected if their IDs are in the same set in $\mathcal{S}$, the instance for weighted k-set packing.
-\item Mere isolated nodes don't constitute network, thus we add connections in CRN based on the sets in $\mathcal{S}'$ sequentially.
-For each set $s'\in \mathcal{S}'$, we add connection between two CR nodes if their IDs are in $s'$.
-There is also connection between the CR node and its dummy node.
-The number of common channels of the CR nodes equals to the weight of set $s'$.
-No connection exists between two CR nodes if their IDs don't appear in one set in $\mathcal{Q}$.
-Afterwards, the CR node whose ID doesn't appear in any set in $\mathcal{S'}$ becomes single node clusters, according to the definition of clustering problem in CRN, the number of common channels is 0.
-This procedure requires $\sum_{s_i' \in \mathcal{S}'} |s_i|$ steps to map sets in $\mathcal{S}'$ into CRN and connections, and at most $N$ steps to complement the single node clusters in CRN.
+\item Given a collection $\mathcal{Q}$, on basis of which we construct a CRN.
+We prepare $N$ CR nodes who are labelled from 1 to $N$.
+We put the CR users on a 2 dimension space, and deem a pair of them can communicate if they appear in the same set in $\mathcal{Q}$.
+We regard each set in $\mathcal{Q}$ is a cluster, whose number of CCCs equals to the weight of that set.
 
-The number of common channels of cluster $f$ is non-decreasing function of cluster size, while, the weight of set in weighted k-set packing problem doesn't have this property.
-In weighted k-set packing, the weight of a set with smaller size could be larger than a set with more elements.
-But this difference doesn't hinder the transformation and we use an example to explain.
+
 %There is one situation deserving extra explanation in the second transformation, we adopt one example to discuss it.
-Assuming two sets in $\mathcal{S}$ are $s_1=\{1,2\}$ and $s_2=\{1,2,3,4\}$, then their weights are 3 and 5 respectively.
-Their dummy sets are $s_1'=\{1,1,2,2\}$ and $s_2'=\{1,1,2,2,3,3,4,4\}$ and their new weights are 3 and 5 as before.
-The connections mapped to CRN are contradictory to reality, as the number of common channels of CR node group $\{1,1,2,2\}$ can only be smaller than that of $\{1,1,2,2,3,3,4,4\}$.
-We let this contradiction in the process of mapping happen because it will be eliminated later: no matter one instance $\mathcal{S}$ for weighted k-set packing results in \textit{yes} or \textit{no}, at most only one set of $s_1'$ and $s_2'$ is chosen, then we can safely delete the connections based on the deleted set from the CRN, and the contradiction is eliminated.
+Assuming two sets in $\mathcal{Q}$ are $s_1=\{1,2\}$ and $s_2=\{1,2,3\}$, then their weights are 3 and 5 respectively.
+%Their dummy sets are $s_1'=\{1,1,2,2\}$ and $s_2'=\{1,1,2,2,3,3,4,4\}$ and their new weights are 3 and 5 as before.
+We find it is impossible to map the sets into clusters in the same time, because the number of CCCs of the cluster which bases on $s_1$ should be no less than the cluster which bases on $s_2$, as the latter has one extra node compared with the former cluster.
+%When $s_1'$ and $s_2'$ are mapped to CRN respectively, there is contradiction between them, because the number of common channels of CR node group $\{1,1,2,2\}$ is smaller than that of $\{1,1,2,2,3,3,4,4\}$.
+But as to any instance of the solution to the weighted k-set packing problem, this contradiction doesn't happen because the instance $\mathcal{S}$ contains only disjoint sets, thus at most only one set of $s_1$ and $s_2$ appears in $\mathcal{S}$.%, then we can safely delete the connections based on the deleted set from the CRN, and the contradiction is eliminated.
+
+\item In the second step, we transform the instance $\mathcal{S}$ to $\mathcal{S'}$ by adding dummy elements into each set in $\mathcal{S}$.
+For each set $s_i\in \mathcal{S}$, the elements in $s_i$ are duplicated, for instance, given $s_i=\{1, 4, 6\}$, the dummy set $s_i'$ is $\{1,1,4,4,6,6\}$.
+%By doing this, we obtain the dummy sets and constitute the dummy instance $\mathcal{S}'$ based on $\mathcal{S}$.
+The purpose of this transformation is to eliminate the set in $\mathcal{S}$, which has single element.
+The weight of set is unchanged after this transformation, \ie $\omega(s_i)=\omega(s_i')$.
+%After this transmission, there is no set with only one element.
+This transformation requires $\sum_{s_i \in \mathcal{S}} |s_i|$ steps.
+
+\item In this step, we transform the instance $\mathcal{S'}$ to a clustering solution for CRN.
+We prepare a second pool of CR nodes which are identical with the CR nodes prepared in step 1, i.e., identical IDs and channel availabilities on them, we call these CR nodes as dummy nodes.
+We locate these CR nodes besides the CR nodes with the sane IDs in the CRN built in step 1, and there is connection between the CR node and its dummy node (the one CR node and its dummy node can be seen as two transceivers at one node).
+Because of the dummy nodes, the clustering solution which corresponds to $\mathcal{S'}$ doesn't have singleton cluster.
+This transformation requires $2\cdot\sum_{s_i \in \mathcal{S}} |s_i|$ steps.
+%
+Afterwards, the CR node whose ID doesn't appear in any set in $\mathcal{S}$ becomes single node clusters, according to the definition of clustering problem in CRN, the number of CCCs in these single node clusters is 0.
+These singleton clusters and the clusters in $\mathcal{S}$ constitute a clustering solution, and finding the singleton clusters requires at most $N$ steps.
+%We deliberately locate them so that at least one CR node can communicate with the rest of them.
+%map every element in $\mathcal{S}$ into one CR node, \ie each integer corresponds to one CR node, in particular, that integer becomes the CR node's ID.
+%As $s'$ is dummy set which has duplicated elements, we also deploy the the same CR node twice.
+
+An example is shown in Table~\ref{no_hard_proof_instance}.
+\begin{table}[h!]
+     \begin{center}
+     \begin{tabular}{ p{3cm}  p{4.5cm} }
+     \toprule
+      $\mathcal{N}$  & $\{1,2,3,4,5\}$\\ 
+    \cmidrule(r){1-1}\cmidrule(lr){2-2}     
+      $\mathcal{Q}$  & $\{(1),(1, 5),(1,2,4),(2,3), (4)\}$\\ 
+    \cmidrule(r){1-1}\cmidrule(lr){2-2}     
+      Instance for Weighted k-set packing  & $\{(1),(2,3), (4)\}$\\ 
+    \cmidrule(r){1-1}\cmidrule(lr){2-2}
+      Instance with dummy elements
+      & 
+		$\{(1,1),(2,2,3,3), (4,4)\}$
+      \\    \cmidrule(r){1-1}\cmidrule(lr){2-2}
+	Instance for clustering solution (dashed circles are dummy nodes)
+	  &
+	  %\raisebox{-\totalheight}{\includegraphics[width=0.8\linewidth]{np_hard_proof_dummy.pdf}}      
+	  \begin{minipage}{.3\textwidth}
+      \includegraphics[width=0.8\linewidth]{np_hard_proof_dummy.pdf}
+    \end{minipage}
+	  \\       \bottomrule
+      \end{tabular}
+      \caption{}
+      \label{no_hard_proof_instance}
+      \end{center}
+      \end{table}
+
+%As to duplicated elements, we also map them into a CR node, thus there exist CR nodes with identical ID.
+%As a result, these CR nodes constitute a collection of CR nodes, and they can not be called as a CRN yet as there are not communication links drawn between them.
+%Connections in CRN under this context is decided by physical conditions, which means to have a communication link, the two CR nodes should have common channels and locate within each other's transmission range.
+%We further assume that all CR nodes locate in a way that any two pair of nodes has potential to be connected if their IDs are in the same set in $\mathcal{S}$, the instance for weighted k-set packing.
+%\item Mere isolated nodes don't constitute network, thus we add connections in CRN based on the sets in $\mathcal{S}'$ sequentially.
+%For each set $s'\in \mathcal{S}'$, we add connection between two CR nodes if their IDs can be found in $s'$.
+%No connection exists between two CR nodes if their IDs don't appear in the same set in $\mathcal{S}$.
+
+
+
+%We complete the polynomial algorithm $\sigma$ for the the transformation so far.
+%The number of common channels of cluster $f$ is non-increasing function of cluster size, while, the weight of set in weighted k-set packing problem doesn't have this property.
+%In weighted k-set packing, the weight of a set with smaller size could be larger than a set with more elements.
+%But this difference doesn't hinder the transformation because an instance of weighted k-set packing contains only disjoint sets in $\mathcal{G}$.
+
 \end{itemize}
-
-
-
-
-
 
 We have crossed the hurdle of finding one polynomial algorithm $\sigma$ to transform instance of weighted k-set packing to an instance for clustering in CRN.
 Now we look into the step 2 in reduction.
 
-When the instance $\mathcal{S}$ for weighted k-set packing contains one solution, \ie there is a group of sets in $\mathcal{S}$, whose sum weights is greater than $\lambda$, then in the CRN which is mapped from $\mathcal{S}'$, the sum number of common channels of the clusters which correspond to the selected sets in $\mathcal{S}$ and $\mathcal{S}'$, is greater than $\lambda$.
+As to an instance $\mathcal{S}$ for weighted k-set packing, the sum weights is identical to the sum of CCCs in the CRN mapped from $\mathcal{S'}$, even $\mathcal{S}$ contains set which only has one element.
+Thus, when the instance $\mathcal{S}$ is one solution and its sum weights is greater than $\lambda$, in the CRN which is mapped from $\mathcal{S'}$, the summed number of CCCs of the clusters is greater than $\lambda$.
 %
-When there is no solution out of set $\mathcal{G}$ for weighted k-set packing, let's assume the maximum sum of weights of all instances is $\sum_{s_i\in \mathcal{S}}\omega(s_i)=\delta < \lambda$. 
-The dummy set of each $s_i\in \mathcal{S}$ is mapped to cluster of CR nodes.
-Definition of CRN clustering regulates that the number of common channels is 0 when the cluster has only one node.
-As to $|s_i|=1$, the mapped cluster has two nodes, with one of them is the dummy CR node.
-Then number of common channels is on longer 0 but equals to the weight of corresponding set $s_i$.
-%Meanwhile, the number of common channels of all the other single node cluster is 0.
-Then the sum number of common channels of the clusters in CRN is $\delta < \lambda$, thus, there is no clustering solution for the mapped CRN.
+When there is no solution out of set $\mathcal{G}$ for weighted k-set packing,
+%let's assume the maximum sum of weights of all instances is $\sum_{s_i\in \mathcal{S}}\omega(s_i)=\delta < \lambda$. 
+%The dummy set of each $s_i\in \mathcal{S}$ is mapped to cluster of CR nodes.
+%Definition of CRN clustering regulates that the number of common channels is 0 when the cluster has only one node.
+%As to $|s_i|=1$, the mapped cluster has two nodes, with one of them is the dummy CR node.
+%Then number of common channels is on longer 0 but equals to the weight of corresponding set $s_i$.
+%%Meanwhile, the number of common channels of all the other single node cluster is 0.
+the summed number of CCCs of the clusters in the mapped CRN is also smaller than $\lambda$.
 
-After proving weighted k-set packing can be reduced to centralized clustering in CRN, we can say the latter problem is NP-hard.
+Thus, weighted k-set packing can be reduced to centralized clustering problem in CRN, and we can say the latter problem is of NP-hard.
 \end{proof}
 
 
@@ -1887,19 +1934,19 @@ received BE and MS degrees in control engineering from Zhejiang University and S
 He worked with James Gross for his PhD in RWTH Aachen University since 2010.
 \end{IEEEbiographynophoto}
 
-%% if you will not have a photo at all:
-%\begin{IEEEbiography}{Erwin Fang}
-%Biography text here.
-%Biography text here.
-%Biography text here.
-%Biography text here.
-%Biography text here.
-%Biography text here.
-%Biography text here.
-%Biography text here.
-%Biography text here.
-%Biography text here.
-%\end{IEEEbiography}
+% if you will not have a photo at all:
+\begin{IEEEbiography}{Erwin Fang}
+Biography text here.
+Biography text here.
+Biography text here.
+Biography text here.
+Biography text here.
+Biography text here.
+Biography text here.
+Biography text here.
+Biography text here.
+Biography text here.
+\end{IEEEbiography}
 
 % insert where needed to balance the two columns on the last page with
 % biographies

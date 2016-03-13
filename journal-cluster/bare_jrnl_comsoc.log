@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.7.26)  9 MAR 2016 20:02
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.7.26)  12 MAR 2016 22:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1503,7 +1503,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 593--593
  []
 
 
-</home/di/work/thesis/thesisTemplate/figures/04_clutering/figure1.pdf, id=169, 
+</home/di/work/thesis/thesisTemplate/figures/04_clutering/figure1.pdf, id=173, 
 189.70876pt x 114.4275pt>
 File: /home/di/work/thesis/thesisTemplate/figures/04_clutering/figure1.pdf Grap
 hic file (type pdf)
@@ -1545,7 +1545,7 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/sc' in size <9.53561> not available
 (Font)              Font shape `T1/ptm/b/sc' tried instead on input line 675.
 
 </home/di/work/thesis/thesisTemplate/figures/04_clutering/clusters_denseNetwork
-_2.pdf, id=202, 333.01915pt x 343.84528pt>
+_2.pdf, id=206, 333.01915pt x 343.84528pt>
 File: /home/di/work/thesis/thesisTemplate/figures/04_clutering/clusters_denseNe
 twork_2.pdf Graphic file (type pdf)
 
@@ -1556,7 +1556,7 @@ ng/clusters_denseNetwork_2.pdf used on input line 729.
 (pdftex.def)             Requested size: 101.17645pt x 104.46603pt.
 
 </home/di/work/thesis/thesisTemplate/figures/04_clutering/number_clusters_upper
-Bound.pdf, id=205, 413.545pt x 311.1625pt>
+Bound.pdf, id=209, 413.545pt x 311.1625pt>
 File: /home/di/work/thesis/thesisTemplate/figures/04_clutering/number_clusters_
 upperBound.pdf Graphic file (type pdf)
 
@@ -1571,7 +1571,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [4 </home/di/work/thesis/thesisTemplate/figures/04_clutering/clusters_denseNetw
 ork_2.pdf>]
-</home/di/work/thesis/thesisTemplate/figures/04_clutering/figure2.pdf, id=224, 
+</home/di/work/thesis/thesisTemplate/figures/04_clutering/figure2.pdf, id=228, 
 192.72pt x 127.47626pt>
 File: /home/di/work/thesis/thesisTemplate/figures/04_clutering/figure2.pdf Grap
 hic file (type pdf)
@@ -1582,7 +1582,7 @@ ng/figure2.pdf used on input line 779.
 (pdftex.def)             Requested size: 151.76852pt x 100.38808pt.
 
 </home/di/work/thesis/thesisTemplate/figures/04_clutering/percentage_overlappin
-g_node.pdf, id=228, 395.4775pt x 311.1625pt>
+g_node.pdf, id=232, 395.4775pt x 311.1625pt>
 File: /home/di/work/thesis/thesisTemplate/figures/04_clutering/percentage_overl
 apping_node.pdf Graphic file (type pdf)
 
@@ -1596,7 +1596,7 @@ pperBound.pdf> </home/di/work/thesis/thesisTemplate/figures/04_clutering/figure
 2.pdf> </home/di/work/thesis/thesisTemplate/figures/04_clutering/percentage_ove
 rlapping_node.pdf>]
 </home/di/work/thesis/thesisTemplate/figures/04_clutering/singletongame_png.png
-, id=256, 399.894pt x 406.318pt>
+, id=260, 399.894pt x 406.318pt>
 File: /home/di/work/thesis/thesisTemplate/figures/04_clutering/singletongame_pn
 g.png Graphic file (type png)
 
@@ -1608,7 +1608,7 @@ ng/singletongame_png.png used on input line 866.
  [6 </home/di/work/thesis/thesisTemplate/figures/04_clutering/singletongame_png
 .png>]
 </home/di/work/thesis/thesisTemplate/figures/04_clutering/figure4AinC.pdf, id=2
-89, 177.66376pt x 109.40875pt>
+93, 177.66376pt x 109.40875pt>
 File: /home/di/work/thesis/thesisTemplate/figures/04_clutering/figure4AinC.pdf 
 Graphic file (type pdf)
 
@@ -1618,7 +1618,7 @@ ng/figure4AinC.pdf used on input line 971.
 (pdftex.def)             Requested size: 110.03044pt x 67.76093pt.
 
 </home/di/work/thesis/thesisTemplate/figures/04_clutering/figure4AinH.pdf, id=2
-90, 177.66376pt x 107.40125pt>
+94, 177.66376pt x 107.40125pt>
 File: /home/di/work/thesis/thesisTemplate/figures/04_clutering/figure4AinH.pdf 
 Graphic file (type pdf)
 
@@ -1628,7 +1628,7 @@ ng/figure4AinH.pdf used on input line 976.
 (pdftex.def)             Requested size: 110.03044pt x 66.5176pt.
 
 </home/di/work/thesis/thesisTemplate/figures/04_clutering/final_clustering_ross
-.pdf, id=291, 284.06125pt x 181.67876pt>
+.pdf, id=295, 284.06125pt x 181.67876pt>
 File: /home/di/work/thesis/thesisTemplate/figures/04_clutering/final_clustering
 _ross.pdf Graphic file (type pdf)
 
@@ -1642,28 +1642,28 @@ ng/final_clustering_ross.pdf used on input line 992.
 me/di/work/thesis/thesisTemplate/figures/04_clutering/final_clustering_ross.pdf
 >]
 </home/di/work/thesis/thesisTemplate/figures/04_clutering/final_clustering_soc.
-pdf, id=345, 284.06125pt x 171.64125pt>
+pdf, id=349, 284.06125pt x 171.64125pt>
 File: /home/di/work/thesis/thesisTemplate/figures/04_clutering/final_clustering
 _soc.pdf Graphic file (type pdf)
 
 <use /home/di/work/thesis/thesisTemplate/figures/04_clutering/final_clustering_
 soc.pdf>
 Package pdftex.def Info: /home/di/work/thesis/thesisTemplate/figures/04_cluteri
-ng/final_clustering_soc.pdf used on input line 1183.
+ng/final_clustering_soc.pdf used on input line 1184.
 (pdftex.def)             Requested size: 110.03044pt x 66.48409pt.
 
 </home/di/work/thesis/thesisTemplate/figures/04_clutering/final_clustering_LP.p
-df, id=346, 283.0575pt x 169.63374pt>
+df, id=350, 283.0575pt x 169.63374pt>
 File: /home/di/work/thesis/thesisTemplate/figures/04_clutering/final_clustering
 _LP.pdf Graphic file (type pdf)
 
 <use /home/di/work/thesis/thesisTemplate/figures/04_clutering/final_clustering_
 LP.pdf>
 Package pdftex.def Info: /home/di/work/thesis/thesisTemplate/figures/04_cluteri
-ng/final_clustering_LP.pdf used on input line 1185.
+ng/final_clustering_LP.pdf used on input line 1186.
 (pdftex.def)             Requested size: 110.03044pt x 65.93945pt.
 
-Underfull \hbox (badness 3601) in paragraph at lines 1185--1185
+Underfull \hbox (badness 3601) in paragraph at lines 1186--1186
 []\T1/ptm/m/n/8.03 (b) Re-sulted from Cen-tral-ized
  []
 
@@ -1675,70 +1675,70 @@ pdfTeX warning: pdflatex (file /home/di/work/thesis/thesisTemplate/figures/04_c
 lutering/final_clustering_LP.pdf): PDF inclusion: multiple pdfs with page group
  included in a single page
 >]
-Underfull \hbox (badness 2205) in paragraph at lines 1249--1249
+Underfull \hbox (badness 2205) in paragraph at lines 1250--1250
  \T1/phv/m/sl/9.53561 6.1.1 Num-ber of Com-mon Con-trol Chan-nels in Non-
  []
 
 
-</home/di/work/thesis/thesisTemplate/figures/04_clutering/ccc_20.pdf, id=389, 3
+</home/di/work/thesis/thesisTemplate/figures/04_clutering/ccc_20.pdf, id=393, 3
 99.4925pt x 319.1925pt>
 File: /home/di/work/thesis/thesisTemplate/figures/04_clutering/ccc_20.pdf Graph
 ic file (type pdf)
 
 <use /home/di/work/thesis/thesisTemplate/figures/04_clutering/ccc_20.pdf>
 Package pdftex.def Info: /home/di/work/thesis/thesisTemplate/figures/04_cluteri
-ng/ccc_20.pdf used on input line 1327.
+ng/ccc_20.pdf used on input line 1328.
 (pdftex.def)             Requested size: 164.61499pt x 131.52728pt.
 
 </home/di/work/thesis/thesisTemplate/figures/04_clutering/survival_rate_20.pdf,
- id=390, 390.45876pt x 310.15875pt>
+ id=394, 390.45876pt x 310.15875pt>
 File: /home/di/work/thesis/thesisTemplate/figures/04_clutering/survival_rate_20
 .pdf Graphic file (type pdf)
 
 <use /home/di/work/thesis/thesisTemplate/figures/04_clutering/survival_rate_20.
 pdf>
 Package pdftex.def Info: /home/di/work/thesis/thesisTemplate/figures/04_cluteri
-ng/survival_rate_20.pdf used on input line 1328.
+ng/survival_rate_20.pdf used on input line 1329.
 (pdftex.def)             Requested size: 164.61499pt x 130.75798pt.
 
 </home/di/work/thesis/thesisTemplate/figures/04_clutering/cdf_clusterSize_20.pd
-f, id=391, 400.49625pt x 311.1625pt>
+f, id=395, 400.49625pt x 311.1625pt>
 File: /home/di/work/thesis/thesisTemplate/figures/04_clutering/cdf_clusterSize_
 20.pdf Graphic file (type pdf)
 
 <use /home/di/work/thesis/thesisTemplate/figures/04_clutering/cdf_clusterSize_2
 0.pdf>
 Package pdftex.def Info: /home/di/work/thesis/thesisTemplate/figures/04_cluteri
-ng/cdf_clusterSize_20.pdf used on input line 1329.
+ng/cdf_clusterSize_20.pdf used on input line 1330.
 (pdftex.def)             Requested size: 164.61499pt x 127.89555pt.
  [9]
 LaTeX Font Info:    Calculating math sizes for size <9.03374> on input line 142
-3.
+4.
 
-Overfull \vbox (18.11803pt too high) detected at line 1426
+Overfull \vbox (18.11803pt too high) detected at line 1427
  []
 
 
 </home/di/work/thesis/thesisTemplate/figures/04_clutering/number_controlMsg.pdf
-, id=414, 403.5075pt x 307.1475pt>
+, id=418, 403.5075pt x 307.1475pt>
 File: /home/di/work/thesis/thesisTemplate/figures/04_clutering/number_controlMs
 g.pdf Graphic file (type pdf)
 
 <use /home/di/work/thesis/thesisTemplate/figures/04_clutering/number_controlMsg
 .pdf>
 Package pdftex.def Info: /home/di/work/thesis/thesisTemplate/figures/04_cluteri
-ng/number_controlMsg.pdf used on input line 1441.
+ng/number_controlMsg.pdf used on input line 1442.
 (pdftex.def)             Requested size: 177.06071pt x 134.77505pt.
 
 </home/di/work/thesis/thesisTemplate/figures/04_clutering/ccc_large_scale_color
-.pdf, id=416, 449.68pt x 338.26375pt>
+.pdf, id=420, 449.68pt x 338.26375pt>
 File: /home/di/work/thesis/thesisTemplate/figures/04_clutering/ccc_large_scale_
 color.pdf Graphic file (type pdf)
 
 <use /home/di/work/thesis/thesisTemplate/figures/04_clutering/ccc_large_scale_c
 olor.pdf>
 Package pdftex.def Info: /home/di/work/thesis/thesisTemplate/figures/04_cluteri
-ng/ccc_large_scale_color.pdf used on input line 1476.
+ng/ccc_large_scale_color.pdf used on input line 1477.
 (pdftex.def)             Requested size: 252.94499pt x 190.27287pt.
  [10 </home/di/work/thesis/thesisTemplate/figures/04_clutering/ccc_20.pdf> </ho
 me/di/work/thesis/thesisTemplate/figures/04_clutering/survival_rate_20.pdf> </h
@@ -1746,86 +1746,86 @@ ome/di/work/thesis/thesisTemplate/figures/04_clutering/cdf_clusterSize_20.pdf>
 </home/di/work/thesis/thesisTemplate/figures/04_clutering/number_controlMsg.pdf
 >]
 </home/di/work/thesis/thesisTemplate/figures/04_clutering/survival_rate_100.pdf
-, id=456, 396.48125pt x 311.1625pt>
+, id=460, 396.48125pt x 311.1625pt>
 File: /home/di/work/thesis/thesisTemplate/figures/04_clutering/survival_rate_10
 0.pdf Graphic file (type pdf)
 
 <use /home/di/work/thesis/thesisTemplate/figures/04_clutering/survival_rate_100
 .pdf>
 Package pdftex.def Info: /home/di/work/thesis/thesisTemplate/figures/04_cluteri
-ng/survival_rate_100.pdf used on input line 1507.
+ng/survival_rate_100.pdf used on input line 1508.
 (pdftex.def)             Requested size: 202.35675pt x 158.81422pt.
 
 </home/di/work/thesis/thesisTemplate/figures/04_clutering/survival_rate_300.pdf
-, id=457, 401.5pt x 311.1625pt>
+, id=461, 401.5pt x 311.1625pt>
 File: /home/di/work/thesis/thesisTemplate/figures/04_clutering/survival_rate_30
 0.pdf Graphic file (type pdf)
 
 <use /home/di/work/thesis/thesisTemplate/figures/04_clutering/survival_rate_300
 .pdf>
 Package pdftex.def Info: /home/di/work/thesis/thesisTemplate/figures/04_cluteri
-ng/survival_rate_300.pdf used on input line 1514.
+ng/survival_rate_300.pdf used on input line 1515.
 (pdftex.def)             Requested size: 202.35675pt x 156.82957pt.
  [11 </home/di/work/thesis/thesisTemplate/figures/04_clutering/ccc_large_scale_
 color.pdf> </home/di/work/thesis/thesisTemplate/figures/04_clutering/survival_r
 ate_100.pdf> </home/di/work/thesis/thesisTemplate/figures/04_clutering/survival
 _rate_300.pdf>]
 </home/di/work/thesis/thesisTemplate/figures/04_clutering/nClusters_largeNetwor
-k.pdf, id=494, 449.68pt x 338.26375pt>
+k.pdf, id=498, 449.68pt x 338.26375pt>
 File: /home/di/work/thesis/thesisTemplate/figures/04_clutering/nClusters_largeN
 etwork.pdf Graphic file (type pdf)
 
 <use /home/di/work/thesis/thesisTemplate/figures/04_clutering/nClusters_largeNe
 twork.pdf>
 Package pdftex.def Info: /home/di/work/thesis/thesisTemplate/figures/04_cluteri
-ng/nClusters_largeNetwork.pdf used on input line 1534.
+ng/nClusters_largeNetwork.pdf used on input line 1535.
 (pdftex.def)             Requested size: 252.94499pt x 190.27287pt.
 
 </home/di/work/thesis/thesisTemplate/figures/04_clutering/cdf_clusterSize_100.p
-df, id=498, 396.48125pt x 311.1625pt>
+df, id=502, 396.48125pt x 311.1625pt>
 File: /home/di/work/thesis/thesisTemplate/figures/04_clutering/cdf_clusterSize_
 100.pdf Graphic file (type pdf)
 
 <use /home/di/work/thesis/thesisTemplate/figures/04_clutering/cdf_clusterSize_1
 00.pdf>
 Package pdftex.def Info: /home/di/work/thesis/thesisTemplate/figures/04_cluteri
-ng/cdf_clusterSize_100.pdf used on input line 1568.
+ng/cdf_clusterSize_100.pdf used on input line 1569.
 (pdftex.def)             Requested size: 164.61499pt x 129.19176pt.
 
 </home/di/work/thesis/thesisTemplate/figures/04_clutering/cdf_clusterSize_200.p
-df, id=499, 396.48125pt x 311.1625pt>
+df, id=503, 396.48125pt x 311.1625pt>
 File: /home/di/work/thesis/thesisTemplate/figures/04_clutering/cdf_clusterSize_
 200.pdf Graphic file (type pdf)
 
 <use /home/di/work/thesis/thesisTemplate/figures/04_clutering/cdf_clusterSize_2
 00.pdf>
 Package pdftex.def Info: /home/di/work/thesis/thesisTemplate/figures/04_cluteri
-ng/cdf_clusterSize_200.pdf used on input line 1569.
+ng/cdf_clusterSize_200.pdf used on input line 1570.
 (pdftex.def)             Requested size: 164.61499pt x 129.19176pt.
 
 </home/di/work/thesis/thesisTemplate/figures/04_clutering/cdf_clusterSize_300.p
-df, id=500, 396.48125pt x 311.1625pt>
+df, id=504, 396.48125pt x 311.1625pt>
 File: /home/di/work/thesis/thesisTemplate/figures/04_clutering/cdf_clusterSize_
 300.pdf Graphic file (type pdf)
 
 <use /home/di/work/thesis/thesisTemplate/figures/04_clutering/cdf_clusterSize_3
 00.pdf>
 Package pdftex.def Info: /home/di/work/thesis/thesisTemplate/figures/04_cluteri
-ng/cdf_clusterSize_300.pdf used on input line 1570.
+ng/cdf_clusterSize_300.pdf used on input line 1571.
 (pdftex.def)             Requested size: 164.61499pt x 129.19176pt.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <6.62196> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 1629.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 1630.
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <9.53561> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 1629.
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 1630.
 
-</home/di/work/thesis/thesisTemplate/figures/04_clutering/lemma1.pdf, id=504, 5
+</home/di/work/thesis/thesisTemplate/figures/04_clutering/lemma1.pdf, id=508, 5
 63.8709pt x 112.73901pt>
 File: /home/di/work/thesis/thesisTemplate/figures/04_clutering/lemma1.pdf Graph
 ic file (type pdf)
 
 <use /home/di/work/thesis/thesisTemplate/figures/04_clutering/lemma1.pdf>
 Package pdftex.def Info: /home/di/work/thesis/thesisTemplate/figures/04_cluteri
-ng/lemma1.pdf used on input line 1733.
+ng/lemma1.pdf used on input line 1734.
 (pdftex.def)             Requested size: 151.76852pt x 30.3436pt.
 
 [12 </home/di/work/thesis/thesisTemplate/figures/04_clutering/nClusters_largeNe
@@ -1837,7 +1837,36 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ize_200.pdf> </home/di/work/thesis/thesisTemplate/figures/04_clutering/cdf_clus
 terSize_300.pdf> </home/di/work/thesis/thesisTemplate/figures/04_clutering/lemm
 a1.pdf>]
-(./bare_jrnl_comsoc.bbl [14]
+Underfull \hbox (badness 1389) in paragraph at lines 1835--1836
+[]|\T1/ptm/m/n/9.53561 Instance for clus-ter-
+ []
+
+
+Underfull \hbox (badness 6188) in paragraph at lines 1835--1836
+\T1/ptm/m/n/9.53561 cir-cles are dummy
+ []
+
+
+</home/di/work/thesis/thesisTemplate/figures/04_clutering/np_hard_proof_dummy.p
+df, id=637, 358.55832pt x 193.88058pt>
+File: /home/di/work/thesis/thesisTemplate/figures/04_clutering/np_hard_proof_du
+mmy.pdf Graphic file (type pdf)
+
+<use /home/di/work/thesis/thesisTemplate/figures/04_clutering/np_hard_proof_dum
+my.pdf>
+Package pdftex.def Info: /home/di/work/thesis/thesisTemplate/figures/04_cluteri
+ng/np_hard_proof_dummy.pdf used on input line 1839.
+(pdftex.def)             Requested size: 124.30612pt x 67.21428pt.
+
+Overfull \hbox (27.34467pt too wide) in paragraph at lines 1838--1841
+[]|$[]$| 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[14 </home/di/work/thesis/thesisTemplate/figures/04_clutering/np_hard_proof_dum
+my.pdf>] (./bare_jrnl_comsoc.bbl
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `English'. Using the pattern for
 ** the default language instead.
@@ -1845,30 +1874,30 @@ a1.pdf>]
 ** loaded for the language `English'. Using the pattern for
 ** the default language instead.
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1937.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1984.
  [15]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1937.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1984.
  (./bare_jrnl_comsoc.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1937.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1937.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1984.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1984.
 
 Package rerunfilecheck Info: File `bare_jrnl_comsoc.out' has not changed.
-(rerunfilecheck)             Checksum: 0BF2D14F9A884190007A49561D410B5B;1187.
+(rerunfilecheck)             Checksum: 638829563F080E78521D9FAA0542AA48;1254.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 2.11545pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1937.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1984.
  ) 
 Here is how much of TeX's memory you used:
- 26652 strings out of 495059
- 461601 string characters out of 3182030
- 844359 words of memory out of 3000000
- 28992 multiletter control sequences out of 15000+200000
+ 26663 strings out of 495059
+ 462058 string characters out of 3182030
+ 844641 words of memory out of 3000000
+ 29000 multiletter control sequences out of 15000+200000
  235011 words of font info for 348 fonts, out of 3000000 for 9000
  17 hyphenation exceptions out of 8191
- 63i,16n,60p,944b,518s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 63i,18n,60p,944b,664s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -1896,10 +1925,10 @@ share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/urw/times/utmri8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/zap
 fding/uzdr.pfb>
-Output written on bare_jrnl_comsoc.pdf (15 pages, 642051 bytes).
+Output written on bare_jrnl_comsoc.pdf (15 pages, 646738 bytes).
 PDF statistics:
- 756 PDF objects out of 1000 (max. 8388607)
- 653 compressed objects within 7 object streams
- 194 named destinations out of 1000 (max. 500000)
- 272 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 774 PDF objects out of 1000 (max. 8388607)
+ 668 compressed objects within 7 object streams
+ 196 named destinations out of 1000 (max. 500000)
+ 285 words of extra memory for PDF output out of 10000 (max. 10000000)
 
