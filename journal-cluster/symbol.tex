@@ -1,0 +1,40 @@
+% arara: lualatex
+
+\documentclass{article}
+\usepackage{fontspec}
+\newcommand*{\house}[2]{{\fontspec{#1}\symbol{"#2}}}
+
+\begin{document}
+    Lamentable class:
+    \house{symbola.ttf}{26FA}
+    \house{quivira.otf}{26FA}
+
+    Lower class:
+    \house{code2000.ttf}{2302}
+    \house{symbola.ttf}{2302}
+    \house{Linux Libertine O}{2302}
+    \house{quivira.otf}{2302}
+    \house{freeserif.ttf}{2302}
+
+    Middle class:
+    \house{symbola.ttf}{1F3E0}
+    \house{quivira.otf}{1F3E0}
+
+    Upper class:
+    \house{symbola.ttf}{1F3E1}
+    \house{quivira.otf}{1F3E1}
+
+    Property owner:
+    \house{symbola.ttf}{1F3D8}
+
+    Business:
+    \house{symbola.ttf}{1F3E2}
+    \house{quivira.otf}{1F3E2}
+
+    Dandy:
+    \house{symbola.ttf}{1F3DB}
+    \house{symbola.ttf}{1F3EF}
+
+    King:
+    \house{symbola.ttf}{1F3F0}
+\end{document}
