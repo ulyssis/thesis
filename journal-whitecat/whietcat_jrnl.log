@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.7.26)  19 JUN 2016 11:21
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.7.26)  19 JUN 2016 22:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1500,313 +1500,296 @@ LaTeX Font Info:    Calculating math sizes for size <9.53561> on input line 422
 
 
  <../figures/03_distributedChannelAllocation/TWWS_availability_east.pdf>] [2]
-<../figures/03_distributedChannelAllocation/systemmodel_working.pdf, id=145, 46
+<../figures/03_distributedChannelAllocation/systemmodel_working.pdf, id=144, 46
 3.06215pt x 354.85098pt>
 File: ../figures/03_distributedChannelAllocation/systemmodel_working.pdf Graphi
 c file (type pdf)
 
 <use ../figures/03_distributedChannelAllocation/systemmodel_working.pdf>
 Package pdftex.def Info: ../figures/03_distributedChannelAllocation/systemmodel
-_working.pdf used on input line 555.
+_working.pdf used on input line 567.
 (pdftex.def)             Requested size: 227.64894pt x 174.45244pt.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <9.53561> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 591.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 575.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9.53561> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 607.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 630.
 
-<../figures/03_distributedChannelAllocation/quasiSINR2_2.pdf, id=148, 138.5175p
+[3 <../figures/03_distributedChannelAllocation/systemmodel_working.pdf>]
+<../figures/03_distributedChannelAllocation/quasiSINR2_2.pdf, id=243, 138.5175p
 t x 74.54153pt>
 File: ../figures/03_distributedChannelAllocation/quasiSINR2_2.pdf Graphic file 
 (type pdf)
 
 <use ../figures/03_distributedChannelAllocation/quasiSINR2_2.pdf>
 Package pdftex.def Info: ../figures/03_distributedChannelAllocation/quasiSINR2_
-2.pdf used on input line 627.
+2.pdf used on input line 655.
 (pdftex.def)             Requested size: 151.76852pt x 81.6729pt.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 690.
 
-[3 <../figures/03_distributedChannelAllocation/systemmodel_working.pdf>]
-
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 669.
-
-LaTeX Font Info:    Calculating math sizes for size <5.01874> on input line 669
+LaTeX Font Info:    Calculating math sizes for size <5.01874> on input line 690
 .
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <2.76031> not available
-(Font)              size <5> substituted on input line 669.
+(Font)              size <5> substituted on input line 690.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <2.76031> not available
-(Font)              size <5> substituted on input line 669.
+(Font)              size <5> substituted on input line 690.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <2.76031> not available
-(Font)              size <5> substituted on input line 669.
+(Font)              size <5> substituted on input line 690.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 670.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 691.
 
 
-Overfull \hbox (47.57545pt too wide) in paragraph at lines 699--721
+Overfull \hbox (24.99553pt too wide) in paragraph at lines 717--739
  [][] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+[4 <../figures/03_distributedChannelAllocation/quasiSINR2_2.pdf>]
 
-Underfull \hbox (badness 10000) in paragraph at lines 763--763
- \T1/phv/b/sc/11.04124 3 Prob-lem De-com-po-si-tion and Re-lated
- []
+LaTeX Warning: Reference `INTRODUCTION' on page 5 undefined on input line 812.
 
-
-Underfull \vbox (badness 2088) has occurred while \output is active []
-
- [4 <../figures/03_distributedChannelAllocation/quasiSINR2_2.pdf>]
-
-LaTeX Warning: Reference `INTRODUCTION' on page 5 undefined on input line 826.
-
-[5]
-Underfull \hbox (badness 7740) in paragraph at lines 945--945
- \T1/phv/b/sc/11.04124 4 The Max-i-mum Per-mit-ted Trans-mis-sion
- []
-
-[6]
-<../figures/03_distributedChannelAllocation/lpcvxcdf100runs.pdf, id=421, 449.68
+[5] [6]
+<../figures/03_distributedChannelAllocation/lpcvxcdf100runs.pdf, id=424, 449.68
 pt x 338.26375pt>
 File: ../figures/03_distributedChannelAllocation/lpcvxcdf100runs.pdf Graphic fi
 le (type pdf)
 
 <use ../figures/03_distributedChannelAllocation/lpcvxcdf100runs.pdf>
 Package pdftex.def Info: ../figures/03_distributedChannelAllocation/lpcvxcdf100
-runs.pdf used on input line 1011.
+runs.pdf used on input line 997.
 (pdftex.def)             Requested size: 225.12088pt x 169.34306pt.
- [7 <../figures/03_distributedChannelAllocation/lpcvxcdf100runs.pdf>]
-Overfull \hbox (40.47864pt too wide) detected at line 1068
+
+Overfull \hbox (40.47864pt too wide) detected at line 1054
 [] []
  []
 
 
-LaTeX Warning: Reference `optdeviation' on page 8 undefined on input line 1070.
+LaTeX Warning: Reference `optdeviation' on page 7 undefined on input line 1056.
 
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1085.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1071.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1085.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1071.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1085.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1071.
 
 LaTeX Font Info:    Font shape `T1/ptm/bx/sc' in size <9.53561> not available
-(Font)              Font shape `T1/ptm/b/sc' tried instead on input line 1097.
+(Font)              Font shape `T1/ptm/b/sc' tried instead on input line 1083.
 
-LaTeX Warning: Reference `proof' on page 8 undefined on input line 1100.
+LaTeX Warning: Reference `proof' on page 7 undefined on input line 1086.
 
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <6.62196> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 1118.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 1104.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+[7 <../figures/03_distributedChannelAllocation/lpcvxcdf100runs.pdf>]
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1132.
-
-[8]
-
-LaTeX Warning: Reference `background' on page 9 undefined on input line 1173.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1118.
 
 
-Underfull \hbox (badness 1953) in paragraph at lines 1181--1181
+Underfull \vbox (badness 3895) has occurred while \output is active []
+
+
+
+LaTeX Warning: Reference `background' on page 8 undefined on input line 1159.
+
+
+Underfull \hbox (badness 1953) in paragraph at lines 1167--1167
  []\T1/phv/m/sl/9.53561 The Con-ges-tion Game For-mu-lated from the Al-go-rithm
 
  []
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1200.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1186.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1200.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1186.
+
+[8]
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1230.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1244.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1230.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1244.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1230.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1244.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1230.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1244.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1230.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1244.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1230.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1244.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1230.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1244.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1230.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1244.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1230.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1244.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1230.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1244.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1230.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1244.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1230.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1244.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1230.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1244.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1230.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1244.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1230.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1244.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1230.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1244.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1247.
 
 
-Underfull \vbox (badness 3199) has occurred while \output is active []
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1247.
 
 
-
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1261.
-
-
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1261.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1247.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1261.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1247.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1261.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1247.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1261.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1247.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1261.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1269.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1283.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1269.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1283.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1269.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1283.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1269.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1283.
+LaTeX Warning: Reference `singleton_congestion_game' on page 9 undefined on inp
+ut line 1298.
 
 
-Underfull \vbox (badness 1895) has occurred while \output is active []
-
- [9]
-
-LaTeX Warning: Reference `singleton_congestion_game' on page 10 undefined on in
-put line 1312.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1329--1329
+Underfull \hbox (badness 10000) in paragraph at lines 1315--1315
  \T1/phv/b/sc/11.04124 6 Vari-able Trans-mis-sion Power af-ter
  []
 
-
+[9]
 Underfull \vbox (badness 2237) has occurred while \output is active []
 
- [10]
-<../figures/03_distributedChannelAllocation/evaluation_content.pdf, id=540, 613
+
+<../figures/03_distributedChannelAllocation/evaluation_content.pdf, id=529, 613
 .29124pt x 148.555pt>
 File: ../figures/03_distributedChannelAllocation/evaluation_content.pdf Graphic
  file (type pdf)
 
 <use ../figures/03_distributedChannelAllocation/evaluation_content.pdf>
 Package pdftex.def Info: ../figures/03_distributedChannelAllocation/evaluation_
-content.pdf used on input line 1423.
+content.pdf used on input line 1409.
 (pdftex.def)             Requested size: 252.94499pt x 61.27061pt.
 
-<../figures/03_distributedChannelAllocation/layout.pdf, id=547, 643.40375pt x 6
+[10 <../figures/03_distributedChannelAllocation/evaluation_content.pdf>]
+<../figures/03_distributedChannelAllocation/layout.pdf, id=558, 643.40375pt x 6
 44.4075pt>
 File: ../figures/03_distributedChannelAllocation/layout.pdf Graphic file (type 
 pdf)
  <use ../figures/03_distributedChannelAllocation/layout.pdf>
 Package pdftex.def Info: ../figures/03_distributedChannelAllocation/layout.pdf 
-used on input line 1443.
+used on input line 1429.
 (pdftex.def)             Requested size: 126.47249pt x 126.66682pt.
 
 
 LaTeX Warning: Reference `selfishutility' on page 11 undefined on input line 14
-80.
+66.
 
-[11 <../figures/03_distributedChannelAllocation/evaluation_content.pdf> <../fig
-ures/03_distributedChannelAllocation/layout.pdf>]
+
 <../figures/03_distributedChannelAllocation/1mar2016/qusaiSINR_with_radius.pdf,
- id=583, 381.425pt x 310.15875pt>
+ id=565, 381.425pt x 310.15875pt>
 File: ../figures/03_distributedChannelAllocation/1mar2016/qusaiSINR_with_radius
 .pdf Graphic file (type pdf)
 
 <use ../figures/03_distributedChannelAllocation/1mar2016/qusaiSINR_with_radius.
 pdf>
 Package pdftex.def Info: ../figures/03_distributedChannelAllocation/1mar2016/qu
-saiSINR_with_radius.pdf used on input line 1500.
+saiSINR_with_radius.pdf used on input line 1486.
 (pdftex.def)             Requested size: 110.03044pt x 89.47046pt.
 
 <../figures/03_distributedChannelAllocation/1mar2016/sinr_on_endusers_with_radi
-us.pdf, id=584, 384.43625pt x 320.19624pt>
+us.pdf, id=566, 384.43625pt x 320.19624pt>
 File: ../figures/03_distributedChannelAllocation/1mar2016/sinr_on_endusers_with
 _radius.pdf Graphic file (type pdf)
 
 <use ../figures/03_distributedChannelAllocation/1mar2016/sinr_on_endusers_with_
 radius.pdf>
 Package pdftex.def Info: ../figures/03_distributedChannelAllocation/1mar2016/si
-nr_on_endusers_with_radius.pdf used on input line 1504.
+nr_on_endusers_with_radius.pdf used on input line 1490.
 (pdftex.def)             Requested size: 110.03044pt x 91.64285pt.
 
 <../figures/03_distributedChannelAllocation/1mar2016/radius_6000_runtimes_50/tr
-ansPower.pdf, id=592, 384.43625pt x 293.095pt>
+ansPower.pdf, id=574, 384.43625pt x 293.095pt>
 File: ../figures/03_distributedChannelAllocation/1mar2016/radius_6000_runtimes_
 50/transPower.pdf Graphic file (type pdf)
 
 <use ../figures/03_distributedChannelAllocation/1mar2016/radius_6000_runtimes_5
 0/transPower.pdf>
 Package pdftex.def Info: ../figures/03_distributedChannelAllocation/1mar2016/ra
-dius_6000_runtimes_50/transPower.pdf used on input line 1538.
+dius_6000_runtimes_50/transPower.pdf used on input line 1524.
 (pdftex.def)             Requested size: 177.06071pt x 134.99527pt.
-
+ [11 <../figures/03_distributedChannelAllocation/layout.pdf> <../figures/03_dis
+tributedChannelAllocation/1mar2016/qusaiSINR_with_radius.pdf> <../figures/03_di
+stributedChannelAllocation/1mar2016/sinr_on_endusers_with_radius.pdf>]
 <../figures/03_distributedChannelAllocation/1mar2016/radius_6000_runtimes_50/qu
-saiSINR.pdf, id=593, 384.43625pt x 297.11pt>
+saiSINR.pdf, id=606, 384.43625pt x 297.11pt>
 File: ../figures/03_distributedChannelAllocation/1mar2016/radius_6000_runtimes_
 50/qusaiSINR.pdf Graphic file (type pdf)
 
 <use ../figures/03_distributedChannelAllocation/1mar2016/radius_6000_runtimes_5
 0/qusaiSINR.pdf>
 Package pdftex.def Info: ../figures/03_distributedChannelAllocation/1mar2016/ra
-dius_6000_runtimes_50/qusaiSINR.pdf used on input line 1545.
+dius_6000_runtimes_50/qusaiSINR.pdf used on input line 1531.
 (pdftex.def)             Requested size: 177.06071pt x 136.84453pt.
 
 <../figures/03_distributedChannelAllocation/1mar2016/radius_6000_runtimes_50/60
-00_sinr.pdf, id=595, 384.43625pt x 297.11pt>
+00_sinr.pdf, id=608, 384.43625pt x 297.11pt>
 File: ../figures/03_distributedChannelAllocation/1mar2016/radius_6000_runtimes_
 50/6000_sinr.pdf Graphic file (type pdf)
 
 <use ../figures/03_distributedChannelAllocation/1mar2016/radius_6000_runtimes_5
 0/6000_sinr.pdf>
 Package pdftex.def Info: ../figures/03_distributedChannelAllocation/1mar2016/ra
-dius_6000_runtimes_50/6000_sinr.pdf used on input line 1555.
+dius_6000_runtimes_50/6000_sinr.pdf used on input line 1541.
 (pdftex.def)             Requested size: 177.06071pt x 136.84453pt.
 
 
@@ -1814,69 +1797,69 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 <../figures/03_distributedChannelAllocation/1mar2016/radius_6000_runtimes_50/60
-00_sinr_cdf.pdf, id=596, 384.43625pt x 319.1925pt>
+00_sinr_cdf.pdf, id=609, 384.43625pt x 319.1925pt>
 File: ../figures/03_distributedChannelAllocation/1mar2016/radius_6000_runtimes_
 50/6000_sinr_cdf.pdf Graphic file (type pdf)
 
 <use ../figures/03_distributedChannelAllocation/1mar2016/radius_6000_runtimes_5
 0/6000_sinr_cdf.pdf>
 Package pdftex.def Info: ../figures/03_distributedChannelAllocation/1mar2016/ra
-dius_6000_runtimes_50/6000_sinr_cdf.pdf used on input line 1562.
+dius_6000_runtimes_50/6000_sinr_cdf.pdf used on input line 1548.
 (pdftex.def)             Requested size: 177.06071pt x 147.0154pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[12 <../figures/03_distributedChannelAllocation/1mar2016/qusaiSINR_with_radius.
-pdf> <../figures/03_distributedChannelAllocation/1mar2016/sinr_on_endusers_with
-_radius.pdf> <../figures/03_distributedChannelAllocation/1mar2016/radius_6000_r
-untimes_50/transPower.pdf> <../figures/03_distributedChannelAllocation/1mar2016
-/radius_6000_runtimes_50/qusaiSINR.pdf>]
-Overfull \hbox (24.77258pt too wide) in paragraph at lines 1626--1637
+
+Overfull \hbox (24.77258pt too wide) in paragraph at lines 1612--1623
  [][] 
  []
 
-
+[12 <../figures/03_distributedChannelAllocation/1mar2016/radius_6000_runtimes_5
+0/transPower.pdf> <../figures/03_distributedChannelAllocation/1mar2016/radius_6
+000_runtimes_50/qusaiSINR.pdf> <../figures/03_distributedChannelAllocation/1mar
+2016/radius_6000_runtimes_50/6000_sinr.pdf> <../figures/03_distributedChannelAl
+location/1mar2016/radius_6000_runtimes_50/6000_sinr_cdf.pdf>]
 <../figures/03_distributedChannelAllocation/1mar2016/radius_6000_runtimes_50/co
-nvergence.pdf, id=642, 398.48875pt x 316.18124pt>
+nvergence.pdf, id=657, 398.48875pt x 316.18124pt>
 File: ../figures/03_distributedChannelAllocation/1mar2016/radius_6000_runtimes_
 50/convergence.pdf Graphic file (type pdf)
 
 <use ../figures/03_distributedChannelAllocation/1mar2016/radius_6000_runtimes_5
 0/convergence.pdf>
 Package pdftex.def Info: ../figures/03_distributedChannelAllocation/1mar2016/ra
-dius_6000_runtimes_50/convergence.pdf used on input line 1650.
+dius_6000_runtimes_50/convergence.pdf used on input line 1636.
 (pdftex.def)             Requested size: 202.35675pt x 160.56038pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[13 <../figures/03_distributedChannelAllocation/1mar2016/radius_6000_runtimes_5
-0/6000_sinr.pdf> <../figures/03_distributedChannelAllocation/1mar2016/radius_60
-00_runtimes_50/6000_sinr_cdf.pdf> <../figures/03_distributedChannelAllocation/1
-mar2016/radius_6000_runtimes_50/convergence.pdf>]
-<../figures/others/16.pdf, id=684, 490.83376pt x 364.36125pt>
+
+LaTeX Warning: Reference `decomposition_relatedwork' on page 13 undefined on in
+put line 1684.
+
+<../figures/others/16.pdf, id=667, 490.83376pt x 364.36125pt>
 File: ../figures/others/16.pdf Graphic file (type pdf)
 
 <use ../figures/others/16.pdf>
-Package pdftex.def Info: ../figures/others/16.pdf used on input line 1712.
+Package pdftex.def Info: ../figures/others/16.pdf used on input line 1698.
 (pdftex.def)             Requested size: 202.35675pt x 150.2119pt.
 
-<../figures/others/14.pdf, id=687, 483.8075pt x 365.365pt>
+<../figures/others/14.pdf, id=670, 483.8075pt x 365.365pt>
 File: ../figures/others/14.pdf Graphic file (type pdf)
 
 <use ../figures/others/14.pdf>
-Package pdftex.def Info: ../figures/others/14.pdf used on input line 1731.
+Package pdftex.def Info: ../figures/others/14.pdf used on input line 1717.
 (pdftex.def)             Requested size: 202.35675pt x 152.8167pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<../figures/others/24.pdf, id=688, 498.86375pt x 399.4925pt>
+<../figures/others/24.pdf, id=671, 498.86375pt x 399.4925pt>
 File: ../figures/others/24.pdf Graphic file (type pdf)
 
 <use ../figures/others/24.pdf>
-Package pdftex.def Info: ../figures/others/24.pdf used on input line 1790.
+Package pdftex.def Info: ../figures/others/24.pdf used on input line 1776.
 (pdftex.def)             Requested size: 207.17084pt x 165.90211pt.
 
 
@@ -1885,18 +1868,18 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Underfull \vbox (badness 2181) has occurred while \output is active []
 
-
+ [13 <../figures/03_distributedChannelAllocation/1mar2016/radius_6000_runtimes_
+50/convergence.pdf> <../figures/others/16.pdf>]
 
 LaTeX Warning: Reference `clustering:theorem' on page 14 undefined on input lin
-e 1852.
+e 1838.
 
 
-LaTeX Warning: Reference `theorem1' on page 14 undefined on input line 1857.
+LaTeX Warning: Reference `theorem1' on page 14 undefined on input line 1843.
 
-[14 <../figures/others/16.pdf> <../figures/others/14.pdf> <../figures/others/24
-.pdf>] (./whietcat_jrnl.bbl
+(./whietcat_jrnl.bbl
 LaTeX Font Info:    Calculating math sizes for size <8.03> on input line 28.
- [15]
+ [14 <../figures/others/14.pdf> <../figures/others/24.pdf>] [15]
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `English'. Using the pattern for
 ** the default language instead.
@@ -1904,15 +1887,17 @@ LaTeX Font Info:    Calculating math sizes for size <8.03> on input line 28.
 ** loaded for the language `English'. Using the pattern for
 ** the default language instead.
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1961.
- [16]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1961.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1947.
+ [16
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1947.
  (./whietcat_jrnl.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1961.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1961.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1947.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1947.
 
 Package rerunfilecheck Info: File `whietcat_jrnl.out' has not changed.
-(rerunfilecheck)             Checksum: 2233D2D4F8B43BF850EDBC728CC9DF43;1736.
+(rerunfilecheck)             Checksum: 5F6B4DA1393D8F9C8D06B9F78148057E;1701.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -1921,12 +1906,12 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1961.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1947.
  ) 
 Here is how much of TeX's memory you used:
- 26577 strings out of 495059
- 457787 string characters out of 3182030
- 847374 words of memory out of 3000000
+ 26576 strings out of 495059
+ 457776 string characters out of 3182030
+ 851149 words of memory out of 3000000
  28963 multiletter control sequences out of 15000+200000
  219263 words of font info for 322 fonts, out of 3000000 for 9000
  17 hyphenation exceptions out of 8191
@@ -1963,10 +1948,10 @@ w/helvetic/uhvro8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utm
 b8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/s
 hare/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on whietcat_jrnl.pdf (16 pages, 780675 bytes).
+Output written on whietcat_jrnl.pdf (16 pages, 778008 bytes).
 PDF statistics:
- 859 PDF objects out of 1000 (max. 8388607)
- 717 compressed objects within 8 object streams
- 173 named destinations out of 1000 (max. 500000)
+ 855 PDF objects out of 1000 (max. 8388607)
+ 713 compressed objects within 8 object streams
+ 172 named destinations out of 1000 (max. 500000)
  277 words of extra memory for PDF output out of 10000 (max. 10000000)
 
