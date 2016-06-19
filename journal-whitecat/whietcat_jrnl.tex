@@ -1,8 +1,320 @@
-\chapter{Congestion Game in Spectrum Allocation}
-% Distributed Channel and Power Allocation in IEEE 802.22 Networks
-\begin{quote}
-{\textbf{Abstract}\\
-\small In this chapter, we will see the application of congestion game in solving the channel allocation problem in the context of TV white space.
+\documentclass[10pt,journal,compsoc]{IEEEtran}
+%
+% If IEEEtran.cls has not been installed into the LaTeX system files,
+% manually specify the path to it like:
+% \documentclass[journal,comsoc]{../sty/IEEEtran}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% copied from thesis
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Packages für Formeln %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[colorlinks,
+            linkcolor=red,
+            anchorcolor=blue,
+            citecolor=green
+            ]{hyperref}
+\usepackage{amsmath}
+\usepackage{amsthm}
+%\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{booktabs}
+\newcommand{\ra}[1]{\renewcommand{\arraystretch}{#1}}
+
+%% Packages
+%\usepackage{tikz}
+%\usetikzlibrary{shapes,arrows}
+%\usetikzlibrary{positioning}
+\usepackage{graphicx}
+\usepackage{kantlipsum} %<- For dummy text
+\usepackage{mwe} %<- For dummy images
+\usepackage{multirow}
+\usepackage{multicol}
+%\usepackage{colortbl}
+%\usepackage{todonotes}	
+\newcounter{todocounter}
+\newcommand{\todonum}[2][]
+{\stepcounter{todocounter}\todo[inline,backgroundcolor=blue!10!white, #1]{\thetodocounter: #2}}
+
+%% Zeilenabstand %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{setspace}
+%\singlespacing        %% 1-zeilig (Standard)
+%\onehalfspacing       %% 1,5-zeilig
+%\doublespacing        %% 2-zeilig
+
+
+%% Andere Packages %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\usepackage{a4wide} %%Kleinere Seitenränder = mehr Text pro Zeile.
+\usepackage{fancyhdr} %%Fancy Kopf- und Fußzeilen
+%\usepackage{longtable} %%Für Tabellen, die eine Seite überschreiten
+\usepackage{lscape}
+\usepackage{rotating} 
+%\usepackage[htt]{hyphenat} %Trennung von Typewriter-Schriften
+%\usepackage{listings}
+%\usepackage{pstricks-add} --> This package generates problems with booktabs (toprule, etc.)
+\usepackage[autostyle]{csquotes}
+\usepackage{amsmath,bm}
+\usepackage{array}
+% Tabellen mit Center und left
+\usepackage{tabularx,colortbl} % colored table background
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+% Table spacings
+\newcommand\T{\rule{0pt}{2.5ex}\rule[-1.0ex]{0pt}{0pt}}
+\newcommand\B{\rule[-1.0ex]{0pt}{0pt}}
+
+\definecolor{slightgray}{gray}{.90} 
+\usepackage{rotating}
+\usepackage{hhline}
+
+
+
+\newtheoremstyle{mytheoremstyle} % name
+        {\topsep}                    % Space above
+        {\topsep}                    % Space below
+        {\itshape\fontfamily{ptm}\selectfont}                   % Body font, ptm is times new roma
+        {}                           % Indent amount
+        {\fontfamily{ptm}\selectfont\scshape\color{black}\bfseries}                   % Theorem head font
+        {:}                          % Punctuation after theorem head
+        {.5em}                       % Space after theorem head
+        {}  % Theorem head spec (can be left empty, meaning ‘normal’)
+
+  
+          
+\theoremstyle{mytheoremstyle}
+\newtheorem{theorem}{Theorem}[section]
+
+\theoremstyle{mytheoremstyle}
+\newtheorem{corollary}{Corollary}[section]
+
+\theoremstyle{mytheoremstyle}
+\newtheorem{lemma}{Lemma}[section]
+
+%\theoremstyle{mytheoremstyle}
+%\let\definition\relax
+\newtheorem{mydef}{Definition}%[section]
+
+%%%%%%
+%%%%%% Proof
+    \makeatletter
+    \renewenvironment{proof}[1][\proofname]{%
+      \par\pushQED{\qed}\fontfamily{ptm}\selectfont%
+      \topsep6\p@\@plus6\p@\relax
+      \trivlist\item[\hskip\labelsep\bfseries#1\@addpunct{.}]%
+      \ignorespaces
+    }{%
+      \popQED\endtrivlist\@endpefalse
+    }
+    \makeatother 
+%%%%%%%%%%%%%%%%%
+
+\newcommand{\eg}{e.g., }
+\newcommand{\ie}{i.e., }
+\usepackage[linesnumbered,ruled,vlined]{algorithm2e}
+%\usepackage{algorithmic}
+\usepackage{times}
+%\usepackage{mathptmx}
+\usepackage{mathtools}
+\usepackage[draft,nomargin,marginclue,footnote,silent]{fixme}
+\setcounter{tocdepth}{2}
+
+\makeatother
+\usepackage{comment}
+\newcommand{\Tau}{\mathrm{T}}
+\usepackage[colorinlistoftodos]{todonotes}
+\DeclareMathOperator*{\Max}{Max}
+\DeclareMathOperator*{\Min}{Min}
+
+\newcommand{\bigO}{\ensuremath{\mathcal{O}}}% big-O notation/symbol
+\usepackage{subfigure}
+\usepackage{adjustbox}
+\usepackage{multirow}
+\usepackage{enumitem}
+\usepackage{lipsum}
+\setlist[itemize]{leftmargin=*}
+%%%%%%%%%%%%%%%%%%%%%%%%%% copied from thesis
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\usepackage[T1]{fontenc}% optional T1 font encoding
+
+
+
+% *** GRAPHICS RELATED PACKAGES ***
+%
+\ifCLASSINFOpdf
+  % \usepackage[pdftex]{graphicx}
+  % declare the path(s) where your graphic files are
+  % \graphicspath{{../pdf/}{../jpeg/}}
+  % and their extensions so you won't have to specify these with
+  % every instance of \includegraphics
+  % \DeclareGraphicsExtensions{.pdf,.jpeg,.png}
+\else
+  % or other class option (dvipsone, dvipdf, if not using dvips). graphicx
+  % will default to the driver specified in the system graphics.cfg if no
+  % driver is specified.
+  % \usepackage[dvips]{graphicx}
+  % declare the path(s) where your graphic files are
+  % \graphicspath{{../eps/}}
+  % and their extensions so you won't have to specify these with
+  % every instance of \includegraphics
+  % \DeclareGraphicsExtensions{.eps}
+\fi
+% graphicx was written by David Carlisle and Sebastian Rahtz. It is
+% required if you want graphics, photos, etc. graphicx.sty is already
+% installed on most LaTeX systems. The latest version and documentation
+% can be obtained at: 
+% http://www.ctan.org/pkg/graphicx
+% Another good source of documentation is "Using Imported Graphics in
+% LaTeX2e" by Keith Reckdahl which can be found at:
+% http://www.ctan.org/pkg/epslatex
+%
+% latex, and pdflatex in dvi mode, support graphics in encapsulated
+% postscript (.eps) format. pdflatex in pdf mode supports graphics
+% in .pdf, .jpeg, .png and .mps (metapost) formats. Users should ensure
+% that all non-photo figures use a vector format (.eps, .pdf, .mps) and
+% not a bitmapped formats (.jpeg, .png). The IEEE frowns on bitmapped formats
+% which can result in "jaggedy"/blurry rendering of lines and letters as
+% well as large increases in file sizes.
+%
+% You can find documentation about the pdfTeX application at:
+% http://www.tug.org/applications/pdftex
+
+
+
+
+
+% *** MATH PACKAGES ***
+%
+\usepackage{amsmath}
+% A popular package from the American Mathematical Society that provides
+% many useful and powerful commands for dealing with mathematics.
+% Do NOT use the amsbsy package under comsoc mode as that feature is
+% already built into the Times Math font (newtxmath, mathtime, etc.).
+% 
+% Also, note that the amsmath package sets \interdisplaylinepenalty to 10000
+% thus preventing page breaks from occurring within multiline equations. Use:
+\interdisplaylinepenalty=2500
+% after loading amsmath to restore such page breaks as IEEEtran.cls normally
+% does. amsmath.sty is already installed on most LaTeX systems. The latest
+% version and documentation can be obtained at:
+% http://www.ctan.org/pkg/amsmath
+
+
+% Select a Times math font under comsoc mode or else one will automatically
+% be selected for you at the document start. This is required as Communications
+% Society journals use a Times, not Computer Modern, math font.
+\usepackage[cmintegrals]{newtxmath}
+% The freely available newtxmath package was written by Michael Sharpe and
+% provides a feature rich Times math font. The cmintegrals option, which is
+% the default under IEEEtran, is needed to get the correct style integral
+% symbols used in Communications Society journals. Version 1.451, July 28,
+% 2015 or later is recommended. Also, do *not* load the newtxtext.sty package
+% as doing so would alter the main text font.
+% http://www.ctan.org/pkg/newtx
+%
+% Alternatively, you can use the MathTime commercial fonts if you have them
+% installed on your system:
+%\usepackage{mtpro2}
+%\usepackage{mt11p}
+%\usepackage{mathtime}
+
+
+%\usepackage{bm}
+% The bm.sty package was written by David Carlisle and Frank Mittelbach.
+% This package provides a \bm{} to produce bold math symbols.
+% http://www.ctan.org/pkg/bm
+
+
+% correct bad hyphenation here
+\hyphenation{op-tical net-works semi-conduc-tor}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
+
+\begin{document}
+%
+% paper title
+% Titles are generally capitalized except for words such as a, an, and, as,
+% at, but, by, for, in, nor, of, on, or, the, to and up, which are usually
+% not capitalized unless they are the first or last word of the title.
+% Linebreaks \\ can be used within to get better formatting as desired.
+% Do not put math or special symbols in the title.
+\title{Versatile Robust Clustering of Ad Hoc Cognitive Radio Network}
+%
+%
+% author names and IEEE memberships
+% note positions of commas and nonbreaking spaces ( ~ ) LaTeX will not break
+% a structure at a ~ so this keeps an author's name from being broken across
+% two lines.
+% use \thanks{} to gain access to the first footnote area
+% a separate \thanks must be used for each paragraph as LaTeX2e's \thanks
+% was not built to handle multiple paragraphs
+%
+
+\author{Di~Li,~\IEEEmembership{Member,~IEEE,}
+        %Erwin~Fang,
+        and James~Gross,~\IEEEmembership{Member,~IEEE}% <-this % stops a space
+\thanks{D. Li was with RWTH Aachen university, Germany.}% <-this % stops a space
+%\thanks{Erwin. Fang is with ETH, Switzerland.}% <-this % stops a space
+\thanks{J. Gross is with KTH Royal Institute of Technology, Sweden.}% <-this % stops a space
+\thanks{Manuscript received xxxx xx, 20xx; revised xxxx xx, 20xx.}}
+
+% note the % following the last \IEEEmembership and also \thanks - 
+% these prevent an unwanted space from occurring between the last author name
+% and the end of the author line. i.e., if you had this:
+% 
+% \author{....lastname \thanks{...} \thanks{...} }
+%                     ^------------^------------^----Do not want these spaces!
+%
+% a space would be appended to the last name and could cause every name on that
+% line to be shifted left slightly. This is one of those "LaTeX things". For
+% instance, "\textbf{A} \textbf{B}" will typeset as "A B" not "AB". To get
+% "AB" then you have to do: "\textbf{A}\textbf{B}"
+% \thanks is no different in this regard, so shield the last } of each \thanks
+% that ends a line with a % and do not let a space in before the next \thanks.
+% Spaces after \IEEEmembership other than the last one are OK (and needed) as
+% you are supposed to have spaces between the names. For what it is worth,
+% this is a minor point as most people would not even notice if the said evil
+% space somehow managed to creep in.
+
+
+
+% The paper headers
+\markboth{Journal of xxxxx,~Vol.~xx, No.~x, xxxx~20xx}%
+{Shell \MakeLowercase{\textit{et al.}}: Bare Demo of IEEEtran.cls for IEEE Communications Society Journals}
+% The only time the second header will appear is for the odd numbered pages
+% after the title page when using the twoside option.
+% 
+% *** Note that you probably will NOT want to include the author's ***
+% *** name in the headers of peer review papers.                   ***
+% You can use \ifCLASSOPTIONpeerreview for conditional compilation here if
+% you desire.
+
+
+
+
+% If you want to put a publisher's ID mark on the page you can do it like
+% this:
+%\IEEEpubid{0000--0000/00\$00.00~\copyright~2015 IEEE}
+% Remember, if you use this you must call \IEEEpubidadjcol in the second
+% column for its text to clear the IEEEpubid mark.
+
+
+
+% use for special paper notices
+%\IEEEspecialpapernotice{(Invited Paper)}
+
+
+
+
+% make the title area
+\maketitle
+
+% As a general rule, do not put math, special symbols or citations
+% in the abstract or keywords.
+\begin{abstract}
+In this paper, we will see the application of congestion game in solving the channel allocation problem in the context of TV white space.
 The channel allocation problem we will address is a general problem, as the transmission power is not identical for every transmitter and on each channel, actually, the transmission power could be unique for each transmitter-channel combination.
 With the suitable utility function designed for transmitters, the behaviours of the transmitters can be described by a congestion game.
 The algorithm of channel allocation is derived from the dynamics of the transmitter in the game, which reaches Nash equilibrium quickly.
@@ -13,25 +325,57 @@ We propose a centralized methods to regulate the upper bound of transmission pow
 The the distributed channel allocation and power control are conducted sequentially.
 %As to the channel allocation problem, we innovatively formulate this problem in to a canonical congestion game, and design efficient distributed channel selection strategy with the assistance of the centralized database.
 %The successful practice of congestion game in this problem is enlightening for the application of congestion game in other problems where asymmetric interaction exists.
+\end{abstract}
+
+% Note that keywords are not normally used for peerreview papers.
+\begin{IEEEkeywords}
+TV white space, IEEE 802.22, channel allocation
+\end{IEEEkeywords}
+
+
+
+
+
+
+% For peer review papers, you can put extra information on the cover
+% page as needed:
+% \ifCLASSOPTIONpeerreview
+% \begin{center} \bfseries EDICS Category: 3-BBND \end{center}
+% \fi
+%
+% For peerreview papers, this IEEEtran command inserts a page break and
+% creates the second title. It will be ignored for other modes.
+\IEEEpeerreviewmaketitle
+
+\graphicspath{
+{../figures/03_distributedChannelAllocation/}
+{../figures/03_distributedChannelAllocation/1mar2016/}
+{../figures/03_distributedChannelAllocation/1mar2016/radius_6000_runtimes_50/}
+{../figures/others/}
 }
-\end{quote}
+
 
 \section{Introduction}
 
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Wireless data communication needs to access radio waves, known as spectrum.
+Spectrum is divided into different frequency bands, known as channels, and then allocated for different types of use.
+The majority of the spectrum is allocated with licences, for instance licenses to military units or mobile operators.
+A small portion is made licence exempt, such as the ISM band where Wi-Fi works.
 
-Secondary users working with TV white space is promising to cope with the scarcity of spectrum resources~\cite{FCC_2010_sedond_memorandumm}. 
-Firstly, more unused TV white frequencies become vacant than ever with the ongoing transition from analog to digital broadcasts. Secondly, the frequencies of TV bands enable broadband access over larger geographic ranges compared to higher frequency bands. Nevertheless, services on TV receivers need to be protected with so called interference margin~\footnote{interference margin is the maximal interference caused by secondary users, which doesn't violate TV service.}~\cite{multipleIntf_pimrc11} which should not be exceeded by the accumulated interference caused by all secondary users working on the the channel.
+The allocated spectrum is not used in all locations or at all times.
+Such temporally and spatially unused spectrum is known as white space, and it can be used by other devices and services.
+The white space devices can change their spectrum use according to the spectrum availability and don't make harm to the licensed users' operation.
+Because white space devices are cognitive to the radio environment, they are also called cognitive radio users.
 
-\gls{FCC} and \gls{ECC} have announced rules on the transmission power of secondary users working in TV white space in US and Europe respectively~\cite{FCC_2010_sedond_memorandumm, ecc159}. 
-FCC requires a minimum distance between secondary user and TV service area, besides, the transmission power for fixed secondary users is set as $4$ \textup{W}, which is a conservative setting. %If the interference margin of the TV receivers can be fully utilized, the requirement on secondary users' transmission power can be relaxed to some extent. 
-FCC believes with these prudent measures, the interference margin can not be exceeded by interference from secondary users.
-But it may not be the case when there are multiple secondary equipments transmitting at the same time, which is pointed in~\cite{Jaentti11}.
-ECC requires the secondary users to adapt their maximum transmission power according to the distance away from the TV receivers.
-%In this manner, secondary systems have to determine their maximum transmission power.
 
+Among the white space, the UHF TV band attracts a lot of attention from research, industry and regulatory bodies.
+Allowing license exempted users to work with TV white space is promising to cope with the scarcity of spectrum resources~\cite{FCC_2010_sedond_memorandumm}. 
+Firstly, more unused TV white frequencies become vacant than ever with the ongoing transition from analogue to digital broadcasts.
+Secondly, the frequencies of TV bands enable broadband access over larger geographic ranges compared to higher frequency bands.
+WSDs can potentially provide a wide range of services such as hot spot coverage, in home broadband, rural broadband and machine to machine communications [fcom].
+Figure~\ref{variability_avai_channel} shows the available TV white space in some parts of the east coast of United States.
 \begin{figure}[h!]
   \centering
   \includegraphics[width=0.9\linewidth]{TWWS_availability_east.pdf}
@@ -40,13 +384,104 @@ ECC requires the secondary users to adapt their maximum transmission power accor
 \end{figure}
 
 
-FCC issued a memorandum~\cite{FCC_2010_sedond_memorandumm,FCCdatabasae} in 2010, which removes the mandatory rigid sensing requirements, and prompts the usage of geolocations\footnote{Geolocation means both geographic location and terrain.} of secondary users.
-FCC regulates a centralized database, which registers all the secondary users within one certain area.
-Secondary users can access the database, and can only use the channels assigned by the database.
+\begin{center}
+\begin{table*}[ht]
+\caption{Summery of rules on using TV white space by regulatory bodies}\label{tab_overhead}
+\label{regulatoryBody}
+{\small
+\hfill{}
+\begin{tabular}{|L{5 cm}|C{2 cm}|C{3 cm}|C{5.5 cm}|}
+\hline
+ Specification 															& FCC 									&   ECC 								& ofcom 		  \\ \hline
+ target spectrum range (certain channels in between are excluded) 	&54-698 MHz 							&   470-790 MHz			 				&   470 - 790 MHz \\ \hline
+ categorise of WSDs													 	&Fixed/portable, master/slave			&   master/slave 						& 	master/slave  \\ \hline
+ maximum permissible power of WSDs				 					&fixed: 30dBm; portable: 16dBm-20dBm	&   According to location and WSD characteristics
+				& According to location	and WSD characteristics\\ \hline
+ criterion for the transmission power as to protect the DTT receiver			&power level at the protected contour			&	maximal degradation of location probability (e.g. 01.\%)		& maximal likelihood that the rise in the noise plus interference floor exceeds 1 dB at the edge of DTT coverage (e.g. 10\%)        					\\ \hline
+  database availability 															& Yes 									&   Yes 								& Yes 		  \\ \hline
+ Translation from WSD's location to frequency availability happens in				& regulatory body 									&   database 				& database 		  \\ \hline
+ sensing ability required 															& No 									&   No, but recommended 								& No 		  \\ \hline
+ Frequency for WSD to update available channel and power							& 24 hours 								&   2 hours 							& 2 hours 	\\ \hline
+ information provided by the database to WSD 										& list of channels 						&   list of channels and corresponding transmission power 								& list of channels and corresponding transmission power 		  \\ \hline
+ information provided to the database before a WSD operates 						& location 								&   location and equipment types		& location 		  \\ \hline
+ separation from the protected contour										& Yes 									&   No 								& No 		  \\ \hline
+ Consideration of out of band emissions 											& Yes 									&   Yes 							& Yes 		  \\ \hline
+ 
+ 
+\end{tabular}
+}
+\hfill{}
+\end{table*}
+\end{center}
+
+The devices working with TV white space is call white space device (WSD).
+Together with academy and industry, the regulatory bodies in different regions have issued regulations or guidelines on the operation of WBSs.
+Figure~\ref{regulatoryBody} shows a high level summery of the regulations decided by Federal Communications Commission (FCC) in United States, Electronic Communications Committee (ECC) in Europe and Office of Communications (Ofcom) in UK respectively.
+The regulations are different in many aspects due to the special realities in different regions, but they have consensus on two important aspects.
+\begin{itemize}
+\item Firstly, the harmful interference from the white space devices to the TV receivers should be prevented. 
+In this regard, a WBS should work on proper channels and with suitable transmission power according to its location and the locations of DTT receivers.
+\item Secondly, white space databases (WSDBs) should be available.
+Some WSDs should access WSDB to obtain a list of channels (and the corresponding maximum transmission power according to ECC and ofcom) which are allowed to use at their location.
+%These WSDs are called master WSDs by ECC and ofcom, and the other WSD which are associated with the master WSDs are called slave devices, which obtain the available channel and maximum power information from their associated master WSDs.
+According to the regulations, WSDs are categorised as master and slave devices.~\footnote{FCC adopts different terminologies, fixed and portable mode II are equivalent to master devices, and portable mode I acts as slave device}
+The master WSDs communicate their geographical location and certain technical characteristics about the devices such as device model or antenna height to the WSDB, which in turn inform the master WSDs which channel to use and at what powers\footnote{FCC only requires to return channels.}.
+Then the master WSDs inform their slave devices the operation parameters.
+With this structure, the database takes over the task of spectrum sensing for the WSDs, as a result, the design of WSDs becomes simpler and the devices are more affordable.
+
+\end{itemize}
+
+%FCC and ECC have announced rules on the transmission power of secondary users working in TV white space in US and Europe respectively~\cite{FCC_2010_sedond_memorandumm, ecc159}. 
+%FCC requires a minimum distance between secondary user and TV service area, besides, the transmission power for fixed secondary users is set as $4$ \textup{W}, which is a conservative setting. %If the interference margin of the TV receivers can be fully utilized, the requirement on secondary users' transmission power can be relaxed to some extent. 
+%FCC believes with these prudent measures, the interference margin can not be exceeded by interference from secondary users.
+%But it may not be the case when there are multiple secondary equipments transmitting at the same time, which is pointed in~\cite{Jaentti11}.
+%ECC requires the secondary users to adapt their maximum transmission power according to the distance away from the TV receivers.
+%In this manner, secondary systems have to determine their maximum transmission power.
+
+IEEE 802.22 is proposed in response to the rules issued by the the regulatory bodies.
+It adopts a master/slave structure for the WSDs, except for the geolocation capability, it requires the WSDs to be capable of detecting the incumbent services on  working channel.
+%
+According to the rules of ECC and ofcom, In the database, the transformation of the reported information from WSDs and the information on incumbent services, \ie location, devices types, into the list of allowed frequencies and associated transmit powers for WSDs is conduct. 
+%A part of the WSDs should access the WSBD to retrieve the available channels and the corresponding maximum transmission powers.
+As spectrum sensing is not mandatory to be deployed on WSDs by the regulatory bodies, this translation is critical to the co-existing issue.
+The co-existing issue includes two aspects. 
+The first, the operation of WSDs should not be harmful to the incumbent services.
+The second, WSDs should choose proper channel and power, which are obtained from the WSDB, to mitigate interferences among them.
+%
+The regulatory bodies regulate prudent rules on the transmission power and working channel, so as to prevent the co-channel interference and adjacent channel leakage to cause harmful interference to incumbent services.
+But they don't regulate the co-existing problem among the WSDs.
+
+In this paper, we consider the co-existing problem not only between WSDs and incumbent systems, but also among WSDs.
+After obtaining the the list of available channels and associated maximum permitted transmission power from a WSDB, WSDs need to decide which channel and power level to use.
+We propose a distribution solution to offload the functionality for co-existing among the WSDs from the WSDB to the WSDs.
+There are two reasons for implement distributed solutions.
+First, distributed solution complies with the current regulations, \ie it is the WSDs who decide their operation parameters which don't go beyond the information from the WSBD.
+Second, choosing channel and power is a complex optimization problem.
+As WSDs' location and types are different, the spectrum available and corresponding maximum transmission powers are accordingly different.
+Hence, the co-existing problem among the WSDs is a resource allocation problem with special conditions, \ie different available channels and different transmission power levels.
+The channel allocation problem, which is a sub-problem of the resource allocation problem, is NP hard.
+Thus we let the channel and power allocation functionality be completed by the master WSDs.
+
+
+\begin{comment}
+Given all the other WBSs' selection on channel and transmission power, a WBS is interested in choosing the channel which brings it the best performance, \ie the data rate of its end users.
+A WBS prefers to choose the channel which experiences the minimum interference, and the transmission power allowed on that channel is higher, so as to obtain better SINR on its terminals and meanwhile maximize their coverage \cite{wuinfocom09, HoangPowerChannel2010}. 
+Nevertheless, high transmission power causes significant co-channel interference to other secondary users operating on the same channel. 
+Hence, a secondary cell has to balance its transmission power and the caused interference on other cells, meanwhile to choose working channel to decrease the experienced interference on its terminals. 
+The goal of this chapter is to protect the primary users from harmful interferences, meanwhile to find a strategy for WBSs to choose channel and power level in order to acquire good SINR on end terminals.
+
+%In particular, we focus on the issue of channel allocation. 
+%
+
+Nevertheless, services on TV receivers need to be protected with so called interference margin~\footnote{interference margin is the maximal interference caused by secondary users, which doesn't violate TV service.}~\cite{multipleIntf_pimrc11} which should not be exceeded by the accumulated interference caused by the license exempted users working on the the channel.
+
+FCC issued a memorandum~\cite{FCC_2010_sedond_memorandumm, FCCdatabasae} in 2010, which removes the mandatory rigid sensing requirements, and prompts the usage of geolocations\footnote{Geolocation means both geographic location and terrain.} of secondary users.
+%FCC regulates a centralized database, which registers all the secondary users within one certain area.
+%Secondary users can access the database, and can only use the channels assigned by the database.
 % thus greatly facilitates the use of the spectrum with geolocation based channel allocation.
 Work~\cite{SenseLess2011} follows this rule to obviate spectrum sensing and only relies on the database of TV incumbents to determine the white space availability for secondary users. 
 The authors of~\cite{SenseLess2011} demonstrate the feasibility of predicting the available TV spectrum accurately using sophisticated propagation models (Longley-Rice) and geolocations of secondary users. 
-A central database contains the geolocations of all TV stations, then the database calculates the received signal strength index (\gls{RSSI}) levels of TV \gls{UHF} signals on all secondary users and accordingly determines the available TV spectrum for them. 
+A central database contains the geolocations of all TV stations, then the database calculates the received signal strength index (RSSI) levels of TV UHF signals on all secondary users and accordingly determines the available TV spectrum for them. 
 If RSSI of a channel is below a certain threshold, TV service is regarded not to exist, and the channel is seen available there.
 The calculated results on channel availability is very close to the measurement results.
 The work of~\cite{SenseLess2011} gives big impetus to the usage of database mode.
@@ -60,42 +495,45 @@ As in TV white space, the accurate RSSI can be obtained with geolocations and su
 
 %, and meanwhile the aggregated interference generated by them should be kept below a certain threshold on the TV system.
 
-In this chapter, we investigate the usage of TV spectrum in a wireless regional area network which complies with IEEE 802.22 network.
-The secondary users are assumed to be cellular base stations and associated terminals, all of which work on TV white spectrum. 
-The base station is referred as WBS.
+\end{comment}
+%
+%The secondary WSDs include the base stations and associated terminals. 
+%The base station is referred as white base station (WBS).
 %The corresponding secondary base stations are referred as white base stations (WBS). 
-Some cellular networks, \ie GSM or LTE network, work on licensed spectrum and emphasis on providing satisfactory services to their end terminals by choosing proper transmission channel and power. 
-As to cellular network working on TV white spectrum, they have to keep one eye on the primary users to make sure that TV service is not violated, which makes the problem of channel and power selection difficult.
-With the existence of central database, it is natural to utilize it as a central controller to assign channel and power usage for secondary users, but the secondary users may belong to different commercial groups and they may not contend with the assigned resource.
+%Some cellular networks, \ie GSM or LTE network, work on licensed spectrum and emphasis on providing satisfactory services to their end terminals by choosing proper transmission channel and power. 
+%As to cellular network working on TV white spectrum, they have to keep one eye on the primary users to make sure that TV service is not violated, which makes the problem of channel and power selection difficult.
+%With the existence of central database, it is natural to utilize it as a central controller to assign channel and power usage for secondary users, but the secondary users may belong to different commercial groups and they may not contend with the assigned resource.
 %Besides, as the TV channels have different quality, \ie interference level, and permitted transmission power, it is difficult for the database to assign them to the 
-Hence, the spectrum sharing of the secondary users in IEEE 802.22 network should be decided in distributed manner and each secondary user takes care of its own interest, \ie to maximize its preferred utility.
+%Hence, the spectrum sharing of the secondary users in IEEE 802.22 network should be decided in distributed manner and each secondary user takes care of its own interest, \ie to maximize its preferred utility.
 
-Given all the other WBSs' selection on channel and transmission power, a WBS is interested in choosing the channel which brings it the best performance, \ie the data rate of its end users.
-A WBS prefers to choose the channel which experiences the minimum interference, and the transmission power allowed on that channel is higher, so as to obtain better SINR on its terminals and meanwhile maximize their coverage \cite{wuinfocom09, HoangPowerChannel2010}. 
-Nevertheless, high transmission power causes significant co-channel interference to other secondary users operating on the same channel. 
-Hence, a secondary cell has to balance its transmission power and the caused interference on other cells, meanwhile to choose working channel to decrease the experienced interference on its terminals. 
-The goal of this chapter is to protect the primary users from harmful interferences, meanwhile to find a strategy for WBSs to choose channel and power level in order to acquire good SINR on end terminals.
 
-The rest of the chapter is organized as follows. we elucidate the system model in Section II, afterwards related work and problem formulation is presented in Section III. In Section IV, we discuss how to utilize the white space sufficiently by setting the transmission powers based on a convex problem formulation. We analyze the spectrum allocation problem under game theoretical framework and propose an algorithm in Section V, thereafter performance evaluation is presented in Section VI. Finally, we conclude our work and point out directions of future research in Section VII.
+
+The rest of the paper is organized as follows. we elucidate the system model in Section II, afterwards related work and problem formulation is presented in Section III. In Section IV, we discuss how to utilize the white space sufficiently by setting the transmission powers based on a convex problem formulation. We analyze the spectrum allocation problem under game theoretical framework and propose an algorithm in Section V, thereafter performance evaluation is presented in Section VI. Finally, we conclude our work and point out directions of future research in Section VII.
 
 
 \section{System Model and Problem Statement}
 \label{SystemModel}
-Following the IEEE 802.22 standard, the primary systems considered in this chapter are digital TV (\gls{DTV}) stations which use the TV spectrum legally. 
-TV stations provide service to passive TV receivers.
-The secondary users are IEEE 802.22 Wireless Regional Area Network base stations utilizing the TV spectrum with senseless mode~\cite{SenseLess2011}. 
-DTV's service should not be interfered by secondary systems. 
-WBSs locate in one area which is surrounded by areas where TV service is delivered.
-WBSs serve a set of end users/terminals.
-These secondary systems are distributed over a certain area $A$ and is surrounded by multiple DTV service areas, as Fig.~\ref{sysmodel} shows. 
+We consider a group of WSDs which work with the master/slave model.
+We assume there is one database in our considered model.
+The WSDs which work as masters can access the database to obtain permitted channel and associated maximum transmission power.
+The WSDs which work as slaves communicate with their corresponding master to obtain the operation parameters.
+This model is different from that defined by IEEE 802.22 standard at the WSDs don't need to be capable to sense the spectrum.
+
+We consider the DTT receivers as incumbent users.
+To protect them from harmful interference generated by the WSD devices, a series of interference measurement devices are deployed at the contour of the DTT service area.
+Their location and the upper bound of interference are known by the database.
+%The secondary users are IEEE 802.22 Wireless Regional Area Network base stations utilizing the TV spectrum with senseless mode~\cite{SenseLess2011}. 
+%DTV's service should not be interfered by secondary systems. 
+%WBSs locate in one area which is surrounded by areas where TV service is delivered.
+%WBSs serve a set of end users/terminals.
+The considered system is shown as Figure~\ref{sysmodel}
+%These secondary systems are distributed over a certain area $A$ and is surrounded by multiple DTV service areas, as Fig.~\ref{sysmodel} shows. 
+
 The set of DTV stations is denoted as $\mathcal{K}$ and the collection of WBSs is denoted as $\mathcal{N}$ where $|\mathcal{N}|=N$. 
 The set of TV white spectrum contains multiple channels which are denoted as $\mathcal{C}$, they are assumed to be identical in terms of attenuation and shadowing on the same path.
 Let $c(i)$ denote the channel used by a WBS $i\in \mathcal{N}$.
 
 When two WBSs working on the same channel, co-channel interference is caused on each, while, neighbouring channel interference is not considered in our model. 
-To simplify the analysis, we assume that each DTV station as well as each WBS utilizes exactly one channel.\footnote{The assumption that one WBS only utilizes one channel is for convenience of analysis. In reality multiple channel usage (channel bonding) is requisite as one single TV channel's bandwidth is 6 MHz which is not adequate for a WBS to fulfil system requirement. 
-%We will relax this single channel usage assumption without hammering our scheme in the end of section \ref{sec_CA}.
-}
 We represent the usage of channel for WBS $i$ with a binary vector $X_i^{|\mathcal{C}|\times 1}=\{\cdots, x_{ik}, \cdots\}\in \{0,1\}^{|\mathcal{C}|}$, where $k\in \mathcal{C}$ and binary variable $x_{ik}$ denotes whether channel $k$ is used by user $i$. 
 As each node can only uses one channel, for $X_i$, there is $\sum_{k=1}^{|\mathcal{C}|}x_{ik}=1$. 
 The transmission power of WBS $i$ on channel $c$ is $P_i^c$. 
@@ -120,7 +558,7 @@ We assume the secondary base stations are not under the same operators, thus the
 \end{figure}
 
 WBSs are interested in payload data communication with their associated terminals. 
-As to performance metric for the \gls{QoS} provisioning, we choose the signal to noise and interference ratio (\gls{SINR}) on the terminals.
+As to performance metric for the QoS provisioning, we choose the signal to noise and interference ratio (SINR) on the terminals.
 SINR is the ratio between the received power of signal of interest and the summed interference experienced by the terminal. 
 %We only focus on the down-link SINR, as the interference caused by uplink communication is neglectable.
 %
@@ -347,7 +785,7 @@ In this subproblem, the maximum permitted transmission power $p_i^c$ could be di
 \end{itemize}
 %The first subproblem is a centralized approach, the following two problems are solved with distributed schemes.
 %We name the our solution of channel and power allocation as \gls{DiCAPS} (Distributed Channel Allocation and Power Selection).
-The solution to the channel allocation subproblem is named as \gls{whiteCat} (white space Channel allocation).
+The solution to the channel allocation subproblem is named as whiteCat (white space Channel allocation).
 
 In the following, we introduce the related works of spectrum and power allocation problem in CRN, especially the works about the usage of TV white space.
 we also introduce the works related with subproblems mentioned above.
@@ -415,7 +853,7 @@ Here we introduce the solutions proposed on the utilization of TV white space, w
 In accordance with the regulations of FCC, there are some prototype applications proposed in both cellular network~\cite{tvwhite_lte2011, multicell_geo_dyspan11} and WiFi-like network~\cite{whitefi09}.
 The secondary users access a centralized data base to know the allowed channels and transmission power.
 %
-Standardization bodies are also working on TVWS utilization, including IEEE 802.22~\cite{802.22} for Wireless Regional Area Networks (\gls{WRAN}), IEEE 802.11af~\cite{802.11af} for WLAN, IEEE 802.15.4m~\cite{802.15.4m} for 802.15.4 wireless networks in TVWS and 802.19.1~\cite{802.19} for coexistence methods among local and Metropolitan Area Networks (\gls{MAN}).
+Standardization bodies are also working on TVWS utilization, including IEEE 802.22~\cite{802.22} for Wireless Regional Area Networks (WRAN), IEEE 802.11af~\cite{802.11af} for WLAN, IEEE 802.15.4m~\cite{802.15.4m} for 802.15.4 wireless networks in TVWS and 802.19.1~\cite{802.19} for coexistence methods among local and Metropolitan Area Networks (MAN).
 
 %\cite{HoangPowerChannel2010} proposes a distributed solution for power control and channel assignment in both down-link and up-link communication in a WRAN, but the investigated secondary network is composed with only one base station and multiple terminals.
 
@@ -443,7 +881,7 @@ To protect the TV receivers from harmful interference, the aggregate interferenc
 Work \cite{maximum_power_TVWS_dyspan_2011} proposes detailed calculations which a geolocation database performs in order to derive location-specific maximum permitted EIRP levels for white-space devices (WSDs) which operate in digital terrestrial TV bands.
 \cite{multipleIntf_pimrc11} considers the maximum permitted transmission power for the network which complies with IEEE 802.22 standard. 
 The standard requires a centralized database to store the available channels for each secondary base station, thus centralized scheme can be conducted there after trivial modification.
-The sufficient condition for the TV receivers not be interfered in the context of TV white space is formulated into a centralized linear programming program (\gls{LP}) in~\cite{multipleIntf_pimrc11}.
+The sufficient condition for the TV receivers not be interfered in the context of TV white space is formulated into a centralized linear programming program (LP) in~\cite{multipleIntf_pimrc11}.
 The objective function is to maximize the summation of all secondary base stations' transmission power, and the constraints are formed to satisfy the sufficient condition for every interference measuring device for the TV receivers. 
 However, this approach doesn't take the channel assignment problem into account.
 %XXX This discussion of the related work is a bit confusing. The problem is that it is no clear per discussed paper what the shortcoming of the approach is. I.e. you describe the approaches but you do not help the reader why this approach is not contributing to the goal defined in the first sentence. Try to reformulate this section more precisely expressing what is the problem with the corresponding approach XXX.
@@ -990,9 +1428,12 @@ To illustrate the structure, we list the contents in Figure~\ref{evaluationConte
 The evaluation setting is as follows.
 A square area which is 60km x 60km is divided into 16 square blocks evenly, for each block there is one WBS locating in the middle of it. 
 Same mount of end terminals distributed in each minor block.
-The terminals don't necessarily choose the WBS which is nearest to them to obtain service, in stead they choose the WBS to join, which provides the strongest \gls{RSSI} at them.
+The terminals don't necessarily choose the WBS which is nearest to them to obtain service, in stead they choose the WBS to join, which provides the strongest RSSI at them.
 There is a 20km wide rim area around the square area, where the interference measurement devices for TV receiver are randomly located.
-The number of such interference measurement devices is the same with the number of channels in the system, each device works on one channel.
+The number of such interference measurement devices is the same with the number of channels in the system, every DTV and WSD device works on one channel.
+\footnote{In reality multiple channel usage (channel bonding) is requisite as one single TV channel's bandwidth is 6 MHz which is not adequate for a WBS to fulfil system requirement. We need to point out, our scheme can also be applied to the multiple channel usage scenario, in tha case, we regard the WSD working with multiple channels as multiple different WSDs, which work on only one channel, but locate as the same place.
+%We will relax this single channel usage assumption without hammering our scheme in the end of section \ref{sec_CA}.
+}
 The locations of WBSs and TV contours are illustrated in Fig.~\ref{sim:layout}.
 WBSs' locations are fixed, but the locations of interference measurement devices for TV receivers, the end terminals, and the sequence for WBS to update are randomly decided in each run.
 Simulations are conducted for 50 times.
@@ -1218,7 +1659,7 @@ Whereas, noregret learning scheme takes 120 steps before convergence, and whiteC
 WBS provides service to end users in the process of channel allocation. 
 A certain SINR corresponds to certain transmission configurations like modulation type and data rate. 
 The oscillation of SINR resulted from WBS changing the working channel during the convergence process may cause reconfiguration, reduced throughput or delay variance, which is not preferred.
-We propose a metric \textit{Cost of Oscillation} (\gls{COS}) to represent the stability of SINR in the converging process.
+We propose a metric \textit{Cost of Oscillation} (COS) to represent the stability of SINR in the converging process.
 Assuming each update of channel takes 1 time unit, the variance of SINR of end user $i$ at time $t+1$ is \[\varDelta  \gamma_i(t+1)=\mid\frac{\gamma_i(t+1)-\gamma_i(t)}{\gamma_i(t)} \mid\]. 
 
 The COS value for one network applied with a certain channel allocation scheme is,
@@ -1346,7 +1787,7 @@ it is clear that our proposed approach achieves the best among the distributed s
 
 \begin{figure}[h!]
   \centering
-      \includegraphics[width=0.9\textwidth]{24.pdf}
+      \includegraphics[width=0.4\textwidth]{24.pdf}
   \caption{Cumulative distribution of SINR on end users after channel and power allocation}
           \label{joint_SINRcdf}
 \end{figure}
@@ -1370,5 +1811,153 @@ Except for channel allocation, we also propose solutions for transmission power 
 %This solution makes full use of the infrastructure, the centralized database, and distributes the computation and decision making afterwards on channel and transmission power.
 
 
+
+
+
+
+
+
+% if have a single appendix:
+%\appendix[Proof of the Zonklar Equations]
+% or
+%\appendix  % for no appendix heading
+% do not use \section anymore after \appendix, only \section*
+% is possibly needed
+
+% use appendices with more than one appendix
+% then use \section to start each appendix
+% you must declare a \section before using any
+% \subsection or using \label (\appendices by itself
+% starts a section numbered zero.)
+%
+
+
+\appendices
+%\section{Algorithm~\ref{alg0}}
+\section*{}
+
+
+% you can choose not to have a title for an appendix
+% if you want by leaving the argument blank
+%\section*{Algorithm~\ref{alg_size_control_available_CCC}}
+\section*{}
+
+
+
+\section*{}
+
+
+% use section* for acknowledgment
+
+\section*{Proof of Theorem~\ref{clustering:theorem}}
+
+
+
+
+\section*{Proof of Theorem~\ref{theorem1}}
+
+
+
+\section*{Acknowledgment}
+
+The authors would like to thank xxxx
+
+
+% Can use something like this to put references on a page
+% by themselves when using endfloat and the captionsoff option.
+\ifCLASSOPTIONcaptionsoff
+  \newpage
+\fi
+
+
+
+% trigger a \newpage just before the given reference
+% number - used to balance the columns on the last page
+% adjust value as needed - may need to be readjusted if
+% the document is modified later
+%\IEEEtriggeratref{8}
+% The "triggered" command can be changed if desired:
+%\IEEEtriggercmd{\enlargethispage{-5in}}
+
+% references section
+
+% can use a bibliography generated by BibTeX as a .bbl file
+% BibTeX documentation can be easily obtained at:
+% http://mirror.ctan.org/biblio/bibtex/contrib/doc/
+% The IEEEtran BibTeX style support page is at:
+% http://www.michaelshell.org/tex/ieeetran/bibtex/
+%\bibliographystyle{IEEEtran}
+% argument is your BibTeX string definitions and bibliography database(s)
+%\bibliography{IEEEabrv,../bib/paper}
+%
+% <OR> manually copy in the resultant .bbl file
+% set second argument of \begin to the number of references
+% (used to reserve space for the reference number labels box)
+
+
+% biography section
+% 
+% If you have an EPS/PDF photo (graphicx package needed) extra braces are
+% needed around the contents of the optional argument to biography to prevent
+% the LaTeX parser from getting confused when it sees the complicated
+% \includegraphics command within an optional argument. (You could create
+% your own custom macro containing the \includegraphics command to make things
+% simpler here.)
+%\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{mshell}}]{Michael Shell}
+% or if you just want to reserve a space for a photo:
+
+\begin{IEEEbiographynophoto}{Di Li}
+received BE and MS degrees in control engineering from Zhejiang University and Shaanxi University of Science and Technology respectively in China.
+He worked with James Gross for his PhD in RWTH Aachen University since 2010.
+\end{IEEEbiographynophoto}
+
+%% if you will not have a photo at all:
+%\begin{IEEEbiography}{Erwin Fang}
+%Biography text here.
+%Biography text here.
+%Biography text here.
+%Biography text here.
+%Biography text here.
+%Biography text here.
+%Biography text here.
+%Biography text here.
+%Biography text here.
+%Biography text here.
+%\end{IEEEbiography}
+
+% insert where needed to balance the two columns on the last page with
+% biographies
+%\newpage
+
+\begin{IEEEbiography}{James Gross}
+Biography text here.
+Biography text here.
+Biography text here.
+Biography text here.
+Biography text here.
+Biography text here.
+Biography text here.
+Biography text here.
+Biography text here.
+\end{IEEEbiography}
+
+% You can push biographies down or up by placing
+% a \vfill before or after them. The appropriate
+% use of \vfill depends on what kind of text is
+% on the last page and whether or not the columns
+% are being equalized.
+
+%\vfill
+
+% Can be used to pull up biographies so that the bottom of the last one
+% is flush with the other column.
+%\enlargethispage{-5in}
+
+
+
+\bibliographystyle{IEEEtran}
+\bibliography{../backmatter/myrefs}
+
+\end{document}
 
 

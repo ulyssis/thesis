@@ -1,0 +1,196 @@
+This is BibTeX, Version 0.99d (TeX Live 2012/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: whietcat_jrnl.aux
+The style file: IEEEtran.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: ../backmatter/myrefs.bib
+I was expecting an "="---line 13 of file ../backmatter/myrefs.bib
+ : //    
+ :       year={2015},
+I'm skipping whatever remains of this entry
+You're missing a field name---line 363 of file ../backmatter/myrefs.bib
+ : 
+ : %year={2007},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 516 of file ../backmatter/myrefs.bib
+ :    
+ :    #url = {http://dx.doi.org/10.1007/BF01737559},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 537 of file ../backmatter/myrefs.bib
+ : 
+ : comments_DI ="a survey of routing in CRN."
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 633 of file ../backmatter/myrefs.bib
+ : 
+ : keywords={Nash equilibrium;base stations-access points;congestion game theory;designing protocols;frequency reuse;frequency-space blocks;model pair-wise interference;multiuser frequency adaptation;signaling assumptions;spectrum sharing;wireless channels;wireless networking;game theory;protocols;radio networks;wireless channels;},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 691 of file ../backmatter/myrefs.bib
+ : //    
+ :       pages = {9-20},\n
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 792 of file ../backmatter/myrefs.bib
+ : month=30 
+ :          2008-dec. 4,
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 816 of file ../backmatter/myrefs.bib
+ :  // 
+ :     year  = {2011},
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 907 of file ../backmatter/myrefs.bib
+ : 
+ : keywords={asynchronous algorithm;cognitive radio network;duality theory;end-to-end rate control algorithm;interference temperature limits;optimal resource allocation;power control;cognitive radio;power control;telecommunication control;telecommunication network management;},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 920 of file ../backmatter/myrefs.bib
+ : 
+ : keywords={bi-directional nature;cognitive user access;distributed power control algorithms;higher spectrum usage;listen-before-talk strategy;primary link control feedback;primary user communications;secondary users communications;cognitive radio;distributed control;feedback;power control;radio links;telecommunication control;},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 933 of file ../backmatter/myrefs.bib
+ : 
+ : keywords={Lagrangian dual decomposition;Nash equilibrium;cochannel interference;cognitive radio;distributed power allocation;non-cooperative game;quality of service;spectrum sharing;cochannel interference;cognitive radio;game theory;quality of service;resource allocation;},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 1048 of file ../backmatter/myrefs.bib
+ : 
+ : keywords={Euclidean distance;connectivity properties;multihop network;transmission range;wireless ad hoc networks;wireless multihop networks;wireless sensor networks;ad hoc networks;wireless sensor networks;},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 1069 of file ../backmatter/myrefs.bib
+ : }
+ :  ;
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 1243 of file ../backmatter/myrefs.bib
+ : 
+ : keywords={Nash equilibrium point;cognitive radio network;distributed adaptive channel allocation;information exchange;network performance;noncooperative learning;spectrum etiquette;spectrum sharing game;channel allocation;cooperative systems;game theory;learning (artificial intelligence);radio networks;radio spectrum management;},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 1277 of file ../backmatter/myrefs.bib
+ : 
+ : abstract={This paper considers a Markovian dynamical game theoretic setting for distributed transmission control in a wireless sensor network. The available spectrum bandwidth is modeled as a Markov chain. A distributed algorithm named correlated Q-learning algorithm is proposed to obtain the correlated equilibrium policies of the system. This algorithm has the decentralized feature and is easily implementable in a real system. Numerical example is also provided to verify the performances of the proposed algorithms.},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 1403 of file ../backmatter/myrefs.bib
+ : // 
+ :    publisher = {ACM},\n
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 1760 of file ../backmatter/myrefs.bib
+ :   
+ :   note="Visited July 2010"
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 1780 of file ../backmatter/myrefs.bib
+ : note: 
+ :       1. one channel
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 1799 of file ../backmatter/myrefs.bib
+ : 
+ : deal with interaction among terminals
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 2179 of file ../backmatter/myrefs.bib
+ : 
+ : %year={2012},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 2313 of file ../backmatter/myrefs.bib
+ : 
+ : @TechReport{Adaptive_MAClayer_sensing_06,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 2480 of file ../backmatter/myrefs.bib
+ :     
+ :     notse = {bigger transmission power decreases the number of hops, but causes interference when transmission power exceeds a certain level. This can be used to argue that transmission can not be done with high power.
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 2499 of file ../backmatter/myrefs.bib
+ : 
+ : ISSN={0743-166X},}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 2755 of file ../backmatter/myrefs.bib
+ : 
+ : keywords={cognitive radio;mobile ad hoc networks;protocols;radio networks;telecommunication network routing;CAODV protocol;ad-hoc on-demand distance vector;channel selection;cognitive mobile ad hoc networks;mobile ad hoc cognitive radio networks;packet discovery;route cost;route formation;Ad hoc networks;Cognitive radio;Copper;Mobile communication;Routing;Routing protocols;ad hoc;cognitive;manet;routing},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 3510 of file ../backmatter/myrefs.bib
+ : //    
+ :       url = {http://web.it.kth.se/\~{}maguire/jmitola/Mitola\_Dissertation8\_Integrated.pdf},
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 3705 of file ../backmatter/myrefs.bib
+ :   
+ :   archivePrefix = "arXiv",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 3860 of file ../backmatter/myrefs.bib
+ : 
+ : %author={Shah, V. and Mandayam, N.B. and Goodman, D.},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 4207 of file ../backmatter/myrefs.bib
+ : // 
+ :    year = {2006},
+I'm skipping whatever remains of this entry
+You're missing a field name---line 4611 of file ../backmatter/myrefs.bib
+ : 
+ : %note= game and utility
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+-- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Too many commas in name 1 of "Paramvir Bahl, Ranveer Chandra, Thomas Moscibroda, Rohan Murty and Matt Welsh" for entry whitefi09
+while executing---line 2403 of file IEEEtran.bst
+Warning--empty year in uplink_power_tvws13
+
+Done.
+You've used 52 entries,
+            4087 wiz_defined-function locations,
+            1117 strings with 18049 characters,
+and the built_in function-call counts, 35847 in all, are:
+= -- 2709
+> -- 765
+< -- 244
++ -- 423
+- -- 130
+* -- 1702
+:= -- 5197
+add.period$ -- 104
+call.type$ -- 52
+change.case$ -- 56
+chr.to.int$ -- 588
+cite$ -- 53
+duplicate$ -- 2710
+empty$ -- 3320
+format.name$ -- 172
+if$ -- 8504
+int.to.chr$ -- 0
+int.to.str$ -- 52
+missing$ -- 510
+newline$ -- 193
+num.names$ -- 45
+pop$ -- 1308
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 2
+skip$ -- 2759
+stack$ -- 0
+substring$ -- 1428
+swap$ -- 2026
+text.length$ -- 48
+text.prefix$ -- 0
+top$ -- 5
+type$ -- 52
+warning$ -- 1
+while$ -- 135
+width$ -- 54
+write$ -- 499
+(There were 30 error messages)

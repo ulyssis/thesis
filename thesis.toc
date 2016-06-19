@@ -9,40 +9,40 @@
 \contentsline {subsection}{\numberline {1.1.2}Spectrum Sharing in CRN}{5}{subsection.1.1.2}
 \contentsline {subsubsection}{\numberline {1.1.2.1}Spectrum Sharing between Primary and Secondary Users}{5}{subsubsection.1.1.2.1}
 \contentsline {subsubsection}{\numberline {1.1.2.2}Spectrum Sharing among the Secondary Users}{6}{subsubsection.1.1.2.2}
-\contentsline {subsubsection}{\numberline {1.1.2.3}Centralized Scheme}{6}{subsubsection.1.1.2.3}
-\contentsline {subsubsection}{\numberline {1.1.2.4}Distributed Scheme}{7}{subsubsection.1.1.2.4}
-\contentsline {section}{\numberline {1.2}Game Theory and CRN}{8}{section.1.2}
-\contentsline {subsection}{\numberline {1.2.1}Application of Game Theory in CRN}{9}{subsection.1.2.1}
-\contentsline {subsubsection}{\numberline {1.2.1.1}Communication Equipments are Rational}{10}{subsubsection.1.2.1.1}
-\contentsline {subsubsection}{\numberline {1.2.1.2}Game Theory is Effective to Solve Networking Problems}{10}{subsubsection.1.2.1.2}
-\contentsline {subsubsection}{\numberline {1.2.1.3}Game Theory is Suitable to Apply in Cognitive Radio Network because of the Properties of CRN}{10}{subsubsection.1.2.1.3}
-\contentsline {subsection}{\numberline {1.2.2}Representative Cognitive Radio Networks}{11}{subsection.1.2.2}
-\contentsline {subsubsection}{\numberline {1.2.2.1}Cognitive Radio Ad Hoc Network}{11}{subsubsection.1.2.2.1}
-\contentsline {subsubsection}{\numberline {1.2.2.2}Cognitive Radio Cellular Network}{11}{subsubsection.1.2.2.2}
-\contentsline {subsubsection}{\numberline {1.2.2.3}CRN Working in TV White Space}{12}{subsubsection.1.2.2.3}
-\contentsline {subsubsection}{\numberline {1.2.2.4}Regulations and Standards on TV White Spectrum}{13}{subsubsection.1.2.2.4}
-\contentsline {section}{\numberline {1.3}Problem Statement and Research Scope}{14}{section.1.3}
-\contentsline {subsection}{\numberline {1.3.1}Research Questions}{14}{subsection.1.3.1}
-\contentsline {subsubsection}{\numberline {1.3.1.1}Contributions}{15}{subsubsection.1.3.1.1}
-\contentsline {subsection}{\numberline {1.3.2}Research Scope}{15}{subsection.1.3.2}
-\contentsline {subsubsection}{\numberline {1.3.2.1}Problem 1: Utilization of TV White Spectrum}{16}{subsubsection.1.3.2.1}
-\contentsline {subsubsection}{\numberline {1.3.2.2}Problem 2: Robust Cluster Structure in Ad Hoc Cognitive Radio Network}{16}{subsubsection.1.3.2.2}
-\contentsline {subsubsection}{\numberline {1.3.2.3}Problem 3: Light Weight Routing in CRN}{17}{subsubsection.1.3.2.3}
-\contentsline {section}{\numberline {1.4}Outline}{17}{section.1.4}
-\contentsline {chapter}{\numberline {2}Background}{19}{chapter.2}
-\contentsline {section}{\numberline {2.1}Introduction of Game}{19}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Basic Solution Concepts}{20}{subsection.2.1.1}
-\contentsline {subsubsection}{\numberline {2.1.1.1}Dominant Strategy Equilibrium}{20}{subsubsection.2.1.1.1}
-\contentsline {subsubsection}{\numberline {2.1.1.2}Nash Equilibrium}{21}{subsubsection.2.1.1.2}
-\contentsline {subsubsection}{\numberline {2.1.1.3}Complexity of Obtaining NE}{21}{subsubsection.2.1.1.3}
-\contentsline {section}{\numberline {2.2}Congestion Game}{22}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Potential Game}{23}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Convergence Time Towards Nash Equilibrium}{23}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}Singleton Congestion Game}{24}{subsection.2.2.3}
-\contentsline {subsubsection}{\numberline {2.2.3.1}Example: Server Matching}{25}{subsubsection.2.2.3.1}
-\contentsline {subsection}{\numberline {2.2.4}Variants of Congestion Game}{26}{subsection.2.2.4}
-\contentsline {section}{\numberline {2.3}Optimization}{26}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Decomposition Methods}{27}{subsection.2.3.1}
+\contentsline {section}{\numberline {1.2}Solutions in CRN and Game Theory}{7}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}The solutions in CRN}{7}{subsection.1.2.1}
+\contentsline {subsubsection}{\numberline {1.2.1.1}Centralized Scheme}{7}{subsubsection.1.2.1.1}
+\contentsline {subsubsection}{\numberline {1.2.1.2}Distributed Scheme}{8}{subsubsection.1.2.1.2}
+\contentsline {subsection}{\numberline {1.2.2}Game theory and Communication Systems}{8}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {1.2.3}Game theory and CRN}{9}{subsection.1.2.3}
+\contentsline {subsubsection}{\numberline {1.2.3.1}Application of Game in CRN}{10}{subsubsection.1.2.3.1}
+\contentsline {section}{\numberline {1.3}Problem Statement and Research Scope}{11}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Research Questions}{11}{subsection.1.3.1}
+\contentsline {subsubsection}{\numberline {1.3.1.1}Contributions}{11}{subsubsection.1.3.1.1}
+\contentsline {subsection}{\numberline {1.3.2}Research Scope}{12}{subsection.1.3.2}
+\contentsline {subsubsection}{\numberline {1.3.2.1}Problem 1: Utilization of TV White Spectrum}{12}{subsubsection.1.3.2.1}
+\contentsline {subsubsection}{\numberline {1.3.2.2}Problem 2: Robust Cluster Structure in Ad Hoc Cognitive Radio Network}{13}{subsubsection.1.3.2.2}
+\contentsline {subsubsection}{\numberline {1.3.2.3}Problem 3: Light Weight Routing in CRN}{14}{subsubsection.1.3.2.3}
+\contentsline {section}{\numberline {1.4}Outline}{14}{section.1.4}
+\contentsline {chapter}{\numberline {2}Background}{15}{chapter.2}
+\contentsline {section}{\numberline {2.1}Cognitive radio networks}{15}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Cognitive Radio Ad Hoc Network}{15}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Cognitive Radio Cellular Network}{16}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}CRN Working in TV White Space}{16}{subsection.2.1.3}
+\contentsline {subsubsection}{\numberline {2.1.3.1}Regulations and Standards on TV White Spectrum}{17}{subsubsection.2.1.3.1}
+\contentsline {section}{\numberline {2.2}Introduction of Game}{18}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Basic Solution Concepts}{19}{subsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.1.1}Dominant Strategy Equilibrium}{20}{subsubsection.2.2.1.1}
+\contentsline {subsubsection}{\numberline {2.2.1.2}Nash Equilibrium}{20}{subsubsection.2.2.1.2}
+\contentsline {subsubsection}{\numberline {2.2.1.3}Complexity of Obtaining NE}{20}{subsubsection.2.2.1.3}
+\contentsline {section}{\numberline {2.3}Congestion Game}{21}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Potential Game}{22}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Convergence Time Towards Nash Equilibrium}{23}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Singleton Congestion Game}{23}{subsection.2.3.3}
+\contentsline {subsubsection}{\numberline {2.3.3.1}Example: Server Matching}{24}{subsubsection.2.3.3.1}
+\contentsline {subsection}{\numberline {2.3.4}Variants of Congestion Game}{25}{subsection.2.3.4}
+\contentsline {section}{\numberline {2.4}Optimization}{26}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Decomposition Methods}{26}{subsection.2.4.1}
 \contentsline {chapter}{\numberline {3}Congestion Game in Spectrum Allocation}{29}{chapter.3}
 \contentsline {section}{\numberline {3.1}Introduction}{29}{section.3.1}
 \contentsline {section}{\numberline {3.2}System Model and Problem Statement}{31}{section.3.2}
@@ -54,43 +54,46 @@
 \contentsline {section}{\numberline {3.4}The Maximum Permitted Transmission Power}{40}{section.3.4}
 \contentsline {section}{\numberline {3.5}Channel Allocation with Fixed Transmission Power}{42}{section.3.5}
 \contentsline {subsection}{\numberline {3.5.1}Centralized optimization programming}{42}{subsection.3.5.1}
-\contentsline {subsection}{\numberline {3.5.2}Distributed White Space Channel Allocation (WitheCat): Algorithm and Protocol}{42}{subsection.3.5.2}
-\contentsline {subsection}{\numberline {3.5.3}Analysis in Game Theoretical Framework}{44}{subsection.3.5.3}
+\contentsline {subsection}{\numberline {3.5.2}Distributed White Space Channel Allocation (WitheCat): Algorithm and Protocol}{43}{subsection.3.5.2}
+\contentsline {subsection}{\numberline {3.5.3}Analysis in Game Theoretical Framework}{45}{subsection.3.5.3}
 \contentsline {section}{\numberline {3.6}Variable Transmission Power after Channel Allocation}{48}{section.3.6}
-\contentsline {section}{\numberline {3.7}Joint Channel and Power Allocation}{48}{section.3.7}
+\contentsline {section}{\numberline {3.7}Joint Channel and Power Allocation}{49}{section.3.7}
 \contentsline {subsection}{\numberline {3.7.1}Centralized Optimization}{49}{subsection.3.7.1}
-\contentsline {section}{\numberline {3.8}Performance Evaluation}{49}{section.3.8}
-\contentsline {subsection}{\numberline {3.8.1}Maximal Permitted Power Decision and the Distributed Channel Allocation Schemes}{51}{subsection.3.8.1}
-\contentsline {subsection}{\numberline {3.8.2}Performance of Joint Power and Channel Allocation}{56}{subsection.3.8.2}
-\contentsline {section}{\numberline {3.9}Conclusions}{57}{section.3.9}
-\contentsline {chapter}{\numberline {4}Congestion Game in Cluster Membership Assignment}{59}{chapter.4}
-\contentsline {section}{\numberline {4.1}Introduction}{59}{section.4.1}
-\contentsline {section}{\numberline {4.2}Related Work}{61}{section.4.2}
-\contentsline {section}{\numberline {4.3}System Model}{62}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Clustering}{63}{subsection.4.3.1}
-\contentsline {section}{\numberline {4.4}Distributed Coordination Framework: Clustering Algorithm}{63}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Phase I - Cluster Formation}{64}{subsection.4.4.1}
-\contentsline {subsubsection}{\numberline {4.4.1.1}Determining Cluster Heads and Form the Initial Clusters}{64}{subsubsection.4.4.1.1}
-\contentsline {subsubsection}{\numberline {4.4.1.2}Guarantee Availability of Common Control Channel}{67}{subsubsection.4.4.1.2}
-\contentsline {subsubsection}{\numberline {4.4.1.3}Cluster Size Control in Dense CRN}{67}{subsubsection.4.4.1.3}
-\contentsline {subsection}{\numberline {4.4.2}Phase II - Membership Clarification}{69}{subsection.4.4.2}
-\contentsline {subsubsection}{\numberline {4.4.2.1}Distributed Greedy Algorithm}{71}{subsubsection.4.4.2.1}
-\contentsline {subsubsection}{\numberline {4.4.2.2}Bridging ROSS-DGA with Congestion Game}{72}{subsubsection.4.4.2.2}
-\contentsline {subsubsection}{\numberline {4.4.2.3}Distributed Fast Algorithm (DFA)}{74}{subsubsection.4.4.2.3}
-\contentsline {section}{\numberline {4.5}Centralized Clustering Scheme}{76}{section.4.5}
-\contentsline {subsubsection}{\numberline {4.5.0.4}Complexity of Clustering Problem}{76}{subsubsection.4.5.0.4}
-\contentsline {subsection}{\numberline {4.5.1}Centralized Optimization}{78}{subsection.4.5.1}
-\contentsline {section}{\numberline {4.6}Performance Evaluation}{79}{section.4.6}
-\contentsline {subsection}{\numberline {4.6.1}Centralized Schemes vs. Decentralized Schemes}{81}{subsection.4.6.1}
-\contentsline {subsubsection}{\numberline {4.6.1.1}Number of Common Control Channels in Non-singleton Clusters}{81}{subsubsection.4.6.1.1}
-\contentsline {subsubsection}{\numberline {4.6.1.2}Survival Rate of Clusters with Increasing Primary Users}{82}{subsubsection.4.6.1.2}
-\contentsline {subsubsection}{\numberline {4.6.1.3}Cluster Size Control}{83}{subsubsection.4.6.1.3}
+\contentsline {section}{\numberline {3.8}Performance Evaluation}{50}{section.3.8}
+\contentsline {subsection}{\numberline {3.8.1}Maximal Permitted Power Decision and the Distributed Channel Allocation Schemes}{52}{subsection.3.8.1}
+\contentsline {subsection}{\numberline {3.8.2}Performance of Joint Power and Channel Allocation}{57}{subsection.3.8.2}
+\contentsline {section}{\numberline {3.9}Conclusions}{58}{section.3.9}
+\contentsline {chapter}{\numberline {4}Congestion Game in Robust Clustering of CRN}{61}{chapter.4}
+\contentsline {section}{\numberline {4.1}Introduction}{61}{section.4.1}
+\contentsline {section}{\numberline {4.2}Related Work}{63}{section.4.2}
+\contentsline {section}{\numberline {4.3}System Model}{64}{section.4.3}
+\contentsline {section}{\numberline {4.4}Robust Clustering Problem in CRN}{65}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Cluster in CRN}{65}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Robust Clustering Problem}{65}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}Complexity of the Robust Clustering Problem}{66}{subsection.4.4.3}
+\contentsline {section}{\numberline {4.5}Distributed Clustering Algorithm: ROSS}{68}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Phase I - Cluster Formation}{68}{subsection.4.5.1}
+\contentsline {subsubsection}{\numberline {4.5.1.1}Determining Cluster Heads and Form the Initial Clusters}{68}{subsubsection.4.5.1.1}
+\contentsline {subsubsection}{\numberline {4.5.1.2}Guarantee the Availability of Common Control Channel}{71}{subsubsection.4.5.1.2}
+\contentsline {subsubsection}{\numberline {4.5.1.3}Cluster Size Control in Dense CRN}{72}{subsubsection.4.5.1.3}
+\contentsline {subsection}{\numberline {4.5.2}Phase II - Membership Clarification}{74}{subsection.4.5.2}
+\contentsline {subsubsection}{\numberline {4.5.2.1}Distributed Greedy Algorithm (DGA)}{74}{subsubsection.4.5.2.1}
+\contentsline {subsubsection}{\numberline {4.5.2.2}Bridging ROSS-DGA with Congestion Game}{75}{subsubsection.4.5.2.2}
+\contentsline {subsubsection}{\numberline {4.5.2.3}Distributed Fast Algorithm (DFA)}{77}{subsubsection.4.5.2.3}
+\contentsline {subsection}{\numberline {4.5.3}Centralized Solution for Robust Clustering}{78}{subsection.4.5.3}
+\contentsline {subsection}{\numberline {4.5.4}Apply the Centralized and Comparison Distributed Schemes in the Example CRN}{80}{subsection.4.5.4}
+\contentsline {section}{\numberline {4.6}Performance Evaluation}{80}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}Centralized Schemes vs. Decentralized Schemes}{82}{subsection.4.6.1}
+\contentsline {subsubsection}{\numberline {4.6.1.1}Number of CCCs in Non-singleton Clusters}{82}{subsubsection.4.6.1.1}
+\contentsline {subsubsection}{\numberline {4.6.1.2}Cluster Size Control}{83}{subsubsection.4.6.1.2}
+\contentsline {subsubsection}{\numberline {4.6.1.3}Robustness of the clusters against newly added PUs}{84}{subsubsection.4.6.1.3}
 \contentsline {subsubsection}{\numberline {4.6.1.4}Control Signalling Overhead}{84}{subsubsection.4.6.1.4}
 \contentsline {subsection}{\numberline {4.6.2}Comparison between Distributed Schemes}{85}{subsection.4.6.2}
-\contentsline {subsubsection}{\numberline {4.6.2.1}Number of CCC per Non-singleton Clusters}{85}{subsubsection.4.6.2.1}
-\contentsline {subsubsection}{\numberline {4.6.2.2}Survival Rate of Clusters with Increasing Primary Users}{87}{subsubsection.4.6.2.2}
+\contentsline {subsubsection}{\numberline {4.6.2.1}Number of CCCs per Non-singleton Clusters}{86}{subsubsection.4.6.2.1}
+\contentsline {subsubsection}{\numberline {4.6.2.2}Robustness of the clusters against newly added PUs}{86}{subsubsection.4.6.2.2}
 \contentsline {subsubsection}{\numberline {4.6.2.3}Cluster Size Control}{88}{subsubsection.4.6.2.3}
-\contentsline {section}{\numberline {4.7}Conclusions}{89}{section.4.7}
+\contentsline {subsection}{\numberline {4.6.3}Insights from the Simulation}{90}{subsection.4.6.3}
+\contentsline {section}{\numberline {4.7}Conclusions}{91}{section.4.7}
 \contentsline {chapter}{\numberline {5}Decentralized Virtual Coordinate Assignment and Routing}{93}{chapter.5}
 \contentsline {section}{\numberline {5.1}Introduction}{93}{section.5.1}
 \contentsline {section}{\numberline {5.2}Related Work}{94}{section.5.2}

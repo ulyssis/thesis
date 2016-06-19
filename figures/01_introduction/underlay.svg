@@ -15,7 +15,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.3.1 r9886"
-   sodipodi:docname="underlay.svg">
+   sodipodi:docname="underlay.pdf">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -158,7 +158,7 @@
            x="293.44931"
            y="37.663952" /></flowRegion><flowPara
          id="flowPara4822-8"
-         style="font-size:16px">Cognitive radio users</flowPara></flowRoot>    <flowRoot
+         style="font-size:16px">Secondary user 1</flowPara></flowRoot>    <flowRoot
        xml:space="preserve"
        id="flowRoot4816-5"
        style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
@@ -343,5 +343,17 @@
        d="m 377.14285,96.647903 56.42858,35.714287"
        id="path3998"
        inkscape:connector-curvature="0" />
-  </g>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4816-9-5"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       transform="translate(194.58761,322.45772)"><flowRegion
+         id="flowRegion4818-1-4"><rect
+           id="rect4820-7-9"
+           width="280.31732"
+           height="115.66247"
+           x="293.44931"
+           y="37.663952" /></flowRegion><flowPara
+         id="flowPara4822-8-6"
+         style="font-size:16px">Secondary user 2</flowPara></flowRoot>  </g>
 </svg>

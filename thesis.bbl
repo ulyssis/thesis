@@ -1,5 +1,10 @@
 \begin{thebibliography}{100}
 
+\bibitem{googleDatabase}
+{Google spectrum database}.
+\newblock Visited Juni 2016.
+\newblock \url{https://www.google.com/get/spectrumdatabase/}.
+
 \bibitem{802.22}
 {IEEE} 802.22 wireless regional area networks.
 \newblock \url{http://www.ieee802.org/22/Technology/}.
@@ -155,13 +160,6 @@ In the matter of unlicensed operation in the {TV} broadcast bands: second
 \newblock In {\em In Proceedings of IEEE Sarnoff Symposium 2008\/} (April
   2008), pp.~1--5.
 
-\bibitem{BCJ10}
-{\sc Baccelli, E., Cordero, J.~A., and Jacquet, P.}
-\newblock Optimization of critical data synchronization via link overlay rng in
-  mobile ad hoc networks.
-\newblock In {\em In 7th IEEE International Conference Mobile Ad-hoc and Sensor
-  Systems (MASS)\/} (2010).
-
 \bibitem{Affinity_clustering_09icccn}
 {\sc Baddour, K., Ureten, O., and Willink, T.}
 \newblock Efficient clustering of cognitive radio networks using affinity
@@ -249,7 +247,7 @@ In the matter of unlicensed operation in the {TV} broadcast bands: second
 {\sc Chee, B. J.~S., and Franklin, Jr., C.}
 \newblock {\em Cloud Computing: Technologies and Strategies of the Ubiquitous
   Data Center}, 1st~ed.
-\newblock CRC Press, Inc., Boca Raton, FL, USA, 2010.
+\newblock CRC Press, Inc., 2010.
 
 \bibitem{contentiongame_07}
 {\sc Chen, L., Low, S., and Doyle, J.}
@@ -282,6 +280,12 @@ In the matter of unlicensed operation in the {TV} broadcast bands: second
 \newblock In {\em Proc. of 2012 IEEE 32nd International Conference on
   Distributed Computing Systems (ICDCS)\/} (June 2012), pp.~255--264.
 
+\bibitem{Chen04clusteringalgorithms}
+{\sc Chen, Y.~P., Liestman, A.~L., and Liu, J.}
+\newblock Clustering algorithms for ad hoc wireless networks.
+\newblock In {\em Ad Hoc and Sensor Networks. Nova Science Publishers\/}
+  (2004).
+
 \bibitem{search_geo_routing_chowdhury}
 {\sc Chowdhury, K., and Di~Felice, M.}
 \newblock {SEARCH:} a routing protocol for mobile cognitive radio ad-hoc
@@ -295,6 +299,11 @@ In the matter of unlicensed operation in the {TV} broadcast bands: second
 \newblock Tech. rep., February 2015.
 \newblock
   \url{http://www.cisco.com/c/en/us/solutions/collateral/service-provider/visual-networking-index-vni/white_paper_c11-520862.html}.
+
+\bibitem{unitDiskModel}
+{\sc Clark, B., Colbourn, C., and Johnson, D.}
+\newblock Unit disk graphs.
+\newblock {\em Annals of Discrete Mathematics 48}, C (1991), 165--177.
 
 \bibitem{tvws_vtc13}
 {\sc Di~Felice, M., Ghandhour, A., Artail, H., and Bononi, L.}
@@ -633,6 +642,12 @@ In the matter of unlicensed operation in the {TV} broadcast bands: second
   application to power control.
 \newblock In {\em Proc. of IEEE GLOBECOM 2001}.
 
+\bibitem{mansoor_15_cluster_robust}
+{\sc Mansoor, N., Islam, A., Zareei, M., Baharun, S., and Komaki, S.}
+\newblock Construction of a robust clustering algorithm for cognitive radio
+  ad-hoc network.
+\newblock In {\em Proc. of CROWNCOM 2015}.
+
 \bibitem{Mansoor2014}
 {\sc Mansoor, N., Muzahidul~Islam, A. K.~M., Zareei, M., Baharun, S.,
   Wakabayashi, T., and Komaki, S.}
@@ -653,6 +668,11 @@ In the matter of unlicensed operation in the {TV} broadcast bands: second
 \newblock {\em Games and Economic Behavior 13}, 1 (1996), 111 -- 124.
 \newblock
   \url{http://www.sciencedirect.com/science/article/B6WFW-45MH09M-2Y/2/ad6966b4c9b49d9450d3f995ef526373}.
+
+\bibitem{Mitola}
+{\sc Mitola, J., I., and Maguire, G.Q., J.}
+\newblock Cognitive radio: making software radios more personal.
+\newblock {\em Personal Communications, IEEE 6}, 4 (aug. 1999), 13 --18.
 
 \bibitem{2000mitola_cognitive_radio}
 {\sc Mitola, J.}
@@ -681,6 +701,11 @@ In the matter of unlicensed operation in the {TV} broadcast bands: second
 {\sc Murty, R., Chandra, R., Moscibroda, T., and Bahl, V.}
 \newblock Senseless: A database-driven white spaces network.
 \newblock In {\em Proc. of IEEE DySpan 2011\/} (May 2011).
+
+\bibitem{books_game_myerson}
+{\sc Myerson, R.~B.}
+\newblock {\em Game theory - Analysis of Conflict.}
+\newblock Harvard University Press, 1997.
 
 \bibitem{Neel06analysisand}
 {\sc Neel, J.~O.}
@@ -711,6 +736,17 @@ In the matter of unlicensed operation in the {TV} broadcast bands: second
 \newblock A game-theoretic approach for joint channel and power allocation in
   downlink of cellular cognitive radio networks.
 \newblock In {\em Proc. of IEEE PIMRC 2012\/} (Sept 2012), pp.~1198--1202.
+
+\bibitem{Efficient_broadcasting_gathering_adhoc}
+{\sc Onus, M., Richa, A., Kothapalli, K., and Scheideler, C.}
+\newblock Efficient broadcasting and gathering in wireless ad-hoc networks.
+\newblock In {\em Proc. of ISPAN 2005}.
+
+\bibitem{Ozger_cluster_crsn_13}
+{\sc Ozger, M., and Akan, O.~B.}
+\newblock Event-driven spectrum-aware clustering in cognitive radio sensor
+  networks.
+\newblock In {\em Proc. of IEEE INFOCOM 2013}.
 
 \bibitem{centralized_routing_07dyspan}
 {\sc Pal, R.}
@@ -762,6 +798,12 @@ In the matter of unlicensed operation in the {TV} broadcast bands: second
 \newblock In {\em Proc. of IFIP Annual Mediterranean Ad Hoc Networking Workshop
   2011\/} (2011).
 
+\bibitem{capacity_cluster_06}
+{\sc Perevalov, E., Blum, R.~S., and Safi, D.}
+\newblock Capacity of clustered ad hoc networks: how large is "large"?
+\newblock {\em IEEE Transactions on Communications 54}, 9 (Sept 2006),
+  1672--1681.
+
 \bibitem{tvwhite_lte2011}
 {\sc Rahman, M.~I., Behravan, A., Koorapaty, H., Sachs, J., and Balachandran,
   K.}
@@ -795,8 +837,8 @@ In the matter of unlicensed operation in the {TV} broadcast bands: second
 \bibitem{Sahai_FundamentalDesignTradeoffs2006}
 {\sc Sahai, A., Tandra, R., Mishra, S.~M., and Hoven, N.}
 \newblock Fundamental design tradeoffs in cognitive radio systems.
-\newblock In {\em Proc. of the First International Workshop on Technology and
-  Policy for Accessing Spectrum}, ACM TAPAS '06.
+\newblock In {\em Proc. of the 1st Intl. workshop on technology and policy for
+  accessing spectrum}, ACM TAPAS '06.
 
 \bibitem{spectrumDecision_2013mass}
 {\sc Saifan, R., Kamal, A., and Guan, Y.}
@@ -865,7 +907,7 @@ In the matter of unlicensed operation in the {TV} broadcast bands: second
 {\sc Sun, C., Zhang, W., and Letaief, K.~B.}
 \newblock Cluster-based cooperative spectrum sensing in cognitive radio
   systems.
-\newblock In {\em proc. of IEEE ICC\/} (2007), pp.~2511--2515.
+\newblock In {\em proc. of IEEE ICC\/} (2007).
 
 \bibitem{tachwali_opt_bandwidth_power_2013}
 {\sc Tachwali, Y., Lo, B., Akyildiz, I., and Agusti, R.}
@@ -910,7 +952,7 @@ In the matter of unlicensed operation in the {TV} broadcast bands: second
 \bibitem{Wang_gtc_crn_survey_2010}
 {\sc Wang, B., Wu, Y., and Liu, K.~R.}
 \newblock Game theory for cognitive radio networks: An overview.
-\newblock {\em Comput. Netw. 54}, 14 (Oct. 2010), 2537--2561.
+\newblock {\em Comput. Netw. 54}, 14 (Oct. 2010).
 
 \bibitem{Wellens200910}
 {\sc Wellens, M., Riihijärvi, J., and Mähönen, P.}
@@ -946,7 +988,7 @@ In the matter of unlicensed operation in the {TV} broadcast bands: second
 {\sc Wu, Q., Ding, G., Wang, J., Li, X., and Huang, Y.}
 \newblock Consensus-based decentralized clustering for cooperative spectrum
   sensing in cognitive radio networks.
-\newblock {\em Chinese Science Bulletin 57}, 28-29 (2012), 3677--3683.
+\newblock {\em Chinese Science Bulletin 57}, 28-29 (2012).
 
 \bibitem{wuinfocom09}
 {\sc Wu, Y., and Tsang, D.}
@@ -983,6 +1025,13 @@ In the matter of unlicensed operation in the {TV} broadcast bands: second
 \newblock {\em In Proc. of IEEE Communications Surveys Tutorials 11}, 1 (2009),
   116--130.
 
+\bibitem{sensing_survey_2009}
+{\sc Yucek, T., and Arslan, H.}
+\newblock A survey of spectrum sensing algorithms for cognitive radio
+  applications.
+\newblock {\em IEEE Communications Surveys Tutorials 11}, 1 (First 2009),
+  116--130.
+
 \bibitem{cacao_ca_2011}
 {\sc Yue, X., Wong, C.-F., and Chan, S.-H.}
 \newblock {CACAO}: Distributed client-assisted channel assignment optimization
@@ -1000,8 +1049,7 @@ In the matter of unlicensed operation in the {TV} broadcast bands: second
 {\sc Zhang, Y., Yu, G., Li, Q., Wang, H., Zhu, X., and Wang, B.}
 \newblock Channel-hopping-based communication rendezvous in cognitive radio
   networks.
-\newblock {\em IEEE/ACM Transactions on Networking 22}, 3 (June 2014),
-  889--902.
+\newblock {\em IEEE/ACM Transactions on Networking 22}, 3 (June 2014).
 
 \bibitem{Selforganization_CRN_13}
 {\sc Zhang, Z., Long, K., and Wang, J.}

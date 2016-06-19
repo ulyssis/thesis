@@ -1,0 +1,23 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{System Model and Problem Statement}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Problem Statement}{section.2}% 3
+\BOOKMARK [1][-]{section.3}{Problem Decomposition and Related Works}{}% 4
+\BOOKMARK [2][-]{subsection.3.1}{Problem Decomposition}{section.3}% 5
+\BOOKMARK [2][-]{subsection.3.2}{Resource Allocation in CRN}{section.3}% 6
+\BOOKMARK [2][-]{subsection.3.3}{Utilization of TV White Space}{section.3}% 7
+\BOOKMARK [1][-]{section.4}{The Maximum Permitted Transmission Power}{}% 8
+\BOOKMARK [1][-]{section.5}{Channel Allocation with Fixed Transmission Power}{}% 9
+\BOOKMARK [2][-]{subsection.5.1}{Centralized optimization programming}{section.5}% 10
+\BOOKMARK [2][-]{subsection.5.2}{Distributed White Space Channel Allocation \(WitheCat\): Algorithm and Protocol}{section.5}% 11
+\BOOKMARK [2][-]{subsection.5.3}{Analysis in Game Theoretical Framework}{section.5}% 12
+\BOOKMARK [1][-]{section.6}{Variable Transmission Power after Channel Allocation}{}% 13
+\BOOKMARK [1][-]{section.7}{Joint Channel and Power Allocation}{}% 14
+\BOOKMARK [2][-]{subsection.7.1}{Centralized Optimization}{section.7}% 15
+\BOOKMARK [1][-]{section.8}{Performance Evaluation}{}% 16
+\BOOKMARK [2][-]{subsection.8.1}{Maximal Permitted Power Decision and the Distributed Channel Allocation Schemes}{section.8}% 17
+\BOOKMARK [2][-]{subsection.8.2}{Performance of Joint Power and Channel Allocation}{section.8}% 18
+\BOOKMARK [1][-]{section.9}{Conclusions}{}% 19
+\BOOKMARK [1][-]{IEEEbiography.0}{Biographies}{}% 20
+\BOOKMARK [2][-]{IEEEbiography.1}{Di Li}{IEEEbiography.0}% 21
+\BOOKMARK [2][-]{IEEEbiography.2}{James Gross}{IEEEbiography.0}% 22
+\BOOKMARK [1][-]{section*.20}{References}{}% 23
