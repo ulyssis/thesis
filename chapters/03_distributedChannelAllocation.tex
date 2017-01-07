@@ -588,7 +588,7 @@ Thus, there is exists a interference margin created by using multiple channels, 
 %As discussed in~\ref{CA}, there is 
 First, we give the centralized solution to obtain the global optimum for this subproblem, then the decentralized scheme under the game theoretic framework is introduced.
 
-\subsection{Centralized optimization programming}
+\subsection{Centralized Optimization Programming}
 \label{03_centralized_ca}
 We formulate the channel allocation problem into a binary quadratic programming problem which can be solved in a centralized way.  
 Let $X_i = \{x_{i1}\cdots x_{ik}\cdots x_{i|\mathcal{C}|}\}$ denote the vector of channel usage, there is $|X_i| = |\mathcal{C}|$ and binary element $x_{ik}$ represent whether WBS $i$ occupies channel $k$.
@@ -888,7 +888,7 @@ The upper bound of total update steps is $2n^2$, thus averagely, the upper bound
 
 
 
-\section{Variable Transmission Power after Channel Allocation}
+\section{Variable Transmission Power After Channel Allocation}
 \label{powerAllocation}
 After deciding on the working channel, WBSs operate with the maximum permitted transmission power.
 As the utility defined in Formula~\ref{quasiSINR} is a division of linear function of transmission power and received interference, it is natural to assume that there could exist a vector of transmission power $\{p_1, p_2, \cdots, p_N\}$ where $p_i<P_{max}^c,\forall i\in \mathcal{N}$, and the performance doesn't diverge much from the already achieved performance.
