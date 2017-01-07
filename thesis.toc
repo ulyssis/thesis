@@ -10,11 +10,11 @@
 \contentsline {subsubsection}{\numberline {1.1.2.1}Spectrum Sharing between Primary and Secondary Users}{5}{subsubsection.1.1.2.1}
 \contentsline {subsubsection}{\numberline {1.1.2.2}Spectrum Sharing among the Secondary Users}{6}{subsubsection.1.1.2.2}
 \contentsline {section}{\numberline {1.2}Solutions in CRN and Game Theory}{7}{section.1.2}
-\contentsline {subsection}{\numberline {1.2.1}The solutions in CRN}{7}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.1}The Solutions in CRN}{7}{subsection.1.2.1}
 \contentsline {subsubsection}{\numberline {1.2.1.1}Centralized Scheme}{7}{subsubsection.1.2.1.1}
 \contentsline {subsubsection}{\numberline {1.2.1.2}Distributed Scheme}{8}{subsubsection.1.2.1.2}
-\contentsline {subsection}{\numberline {1.2.2}Game theory and Communication Systems}{8}{subsection.1.2.2}
-\contentsline {subsection}{\numberline {1.2.3}Game theory and CRN}{9}{subsection.1.2.3}
+\contentsline {subsection}{\numberline {1.2.2}Game Theory and Communication Systems}{8}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {1.2.3}Game Theory and CRN}{9}{subsection.1.2.3}
 \contentsline {subsubsection}{\numberline {1.2.3.1}Application of Game in CRN}{10}{subsubsection.1.2.3.1}
 \contentsline {section}{\numberline {1.3}Problem Statement and Research Scope}{11}{section.1.3}
 \contentsline {subsection}{\numberline {1.3.1}Research Questions}{11}{subsection.1.3.1}
@@ -25,7 +25,7 @@
 \contentsline {subsubsection}{\numberline {1.3.2.3}Problem 3: Light Weight Routing in CRN}{14}{subsubsection.1.3.2.3}
 \contentsline {section}{\numberline {1.4}Outline}{14}{section.1.4}
 \contentsline {chapter}{\numberline {2}Background}{15}{chapter.2}
-\contentsline {section}{\numberline {2.1}Cognitive radio networks}{15}{section.2.1}
+\contentsline {section}{\numberline {2.1}Cognitive Radio Networks}{15}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}Cognitive Radio Ad Hoc Network}{15}{subsection.2.1.1}
 \contentsline {subsection}{\numberline {2.1.2}Cognitive Radio Cellular Network}{16}{subsection.2.1.2}
 \contentsline {subsection}{\numberline {2.1.3}CRN Working in TV White Space}{16}{subsection.2.1.3}
@@ -53,10 +53,10 @@
 \contentsline {subsection}{\numberline {3.3.3}Utilization of TV White Space}{38}{subsection.3.3.3}
 \contentsline {section}{\numberline {3.4}The Maximum Permitted Transmission Power}{40}{section.3.4}
 \contentsline {section}{\numberline {3.5}Channel Allocation with Fixed Transmission Power}{42}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}Centralized optimization programming}{42}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.1}Centralized Optimization Programming}{42}{subsection.3.5.1}
 \contentsline {subsection}{\numberline {3.5.2}Distributed White Space Channel Allocation (WitheCat): Algorithm and Protocol}{43}{subsection.3.5.2}
 \contentsline {subsection}{\numberline {3.5.3}Analysis in Game Theoretical Framework}{45}{subsection.3.5.3}
-\contentsline {section}{\numberline {3.6}Variable Transmission Power after Channel Allocation}{48}{section.3.6}
+\contentsline {section}{\numberline {3.6}Variable Transmission Power After Channel Allocation}{48}{section.3.6}
 \contentsline {section}{\numberline {3.7}Joint Channel and Power Allocation}{49}{section.3.7}
 \contentsline {subsection}{\numberline {3.7.1}Centralized Optimization}{49}{subsection.3.7.1}
 \contentsline {section}{\numberline {3.8}Performance Evaluation}{50}{section.3.8}
@@ -88,7 +88,7 @@
 \contentsline {subsubsection}{\numberline {4.6.1.2}Cluster Size Control}{83}{subsubsection.4.6.1.2}
 \contentsline {subsubsection}{\numberline {4.6.1.3}Robustness of the clusters against newly added PUs}{84}{subsubsection.4.6.1.3}
 \contentsline {subsubsection}{\numberline {4.6.1.4}Control Signalling Overhead}{84}{subsubsection.4.6.1.4}
-\contentsline {subsection}{\numberline {4.6.2}Comparison between Distributed Schemes}{85}{subsection.4.6.2}
+\contentsline {subsection}{\numberline {4.6.2}Comparison Between Distributed Schemes}{85}{subsection.4.6.2}
 \contentsline {subsubsection}{\numberline {4.6.2.1}Number of CCCs per Non-singleton Clusters}{86}{subsubsection.4.6.2.1}
 \contentsline {subsubsection}{\numberline {4.6.2.2}Robustness of the clusters against newly added PUs}{86}{subsubsection.4.6.2.2}
 \contentsline {subsubsection}{\numberline {4.6.2.3}Cluster Size Control}{88}{subsubsection.4.6.2.3}
