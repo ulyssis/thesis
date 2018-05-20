@@ -486,7 +486,7 @@ To answer these questions, we turn to game theory, in particular, the recent pro
 \subsection{Research Questions}
 Based on the description of the challenges in cognitive radio networks, we formulate two research questions which will be answered in this thesis.
 
-Question 1 - When distributed algorithms are necessary due to the specific properties of a problem, how to guarantee the convergence and performance? How to design utility function to make use of the game model when designing the algorithm?
+Question 1 - Given a problem, when distributed algorithms are necessary because of the specific properties of that problem, how to guarantee the convergence and performance? In particular, how to design utility function to make use of the game model when designing the algorithm?
 
 Question 2 - What are the strengths and weaknesses of the distributed algorithm compared with other schemes, in particular, the centralized scheme?
 
@@ -499,19 +499,14 @@ Question 2 - What are the strengths and weaknesses of the distributed algorithm 
 
 
 \subsubsection{Contributions}
-In this thesis, we answer the aforementioned research questions by making the one to one contributions.
+In this thesis, we answer the aforementioned research questions as contributions.
 
-Contribution C1 - We apply congestion game in the new domains to solve the concrete problems in CRN, and design distributed schemes with which the secondary users comply with the behaviours of players of the congestion game.
-With the properties of congestion game, we investigate the concerns on convergence and overhead of the proposed distributed algorithms.
+Contribution C1 - We solve the problems in CRN by applying the congestion game in a pioneering manner, and design distributed schemes accordingly.
+Under the framework of the congestion game, we investigate the convergence property and overhead of the proposed distributed algorithms, and demonstrate how to refrain the overhead and fasten the convergence process.
 
-Contribution C2 - We compare the performance of the proposed scheme with other distributed schemes and centralized scheme.
+Contribution C2 - We conduct comprehensive comparison between the proposed scheme and the other distributed schemes and also centralized scheme with extensive performance evaluations, and point out the pros and cons of adopting distributed scheme to solve the problems in CRN. 
 
-
-
-%We briefly introduce the contribution of this dissertation by addressing the aforementioned questions.
-We demonstrate how to refrain the overhead and fasten the convergence process, especially, we utilize the available game models to design distributed algorithms which have the desired these properties.
 These contributions are illustrated in the process of solving three concrete technical problems.
-%We investigate the differences between decentralized and centralized schemes in terms of several criteria, \ie performance, overhead, computation time, etc..
 Figure~\ref{overview} illustrate the relation between contributions and the concrete technical problems to be addressed in this thesis.
 \begin{figure}[h!]
   \centering
@@ -532,8 +527,7 @@ Figure~\ref{overview} illustrate the relation between contributions and the conc
 %A light weight routing tailored for CRN is needed.
 %In the following sections, we will introduce the problems in Figure~\ref{problemLocation} in details.
 \subsection{Research Scope}
-This thesis doesn't target new properties of games, or new games, instead the available knowledge of games are utilized to solve the pressing challenges existing in cognitive radio networks.
-In particular, we bring the congestion game out of the routing problem~\cite{Ackermann06purenash, Papadimitriou:2001:AGI}, where the congestion game is proposed and analysed.
+This thesis doesn't target designing new games, instead, it exploits the known congestion games~\cite{Ackermann06purenash, Papadimitriou:2001:AGI} to solve the pressing challenges existing in cognitive radio networks.
 We apply congestion game to solve channel allocation and network structure formation problems by designing suitable utility functions for the network units.
 
 The concrete technical challenges addressed in this thesis are shown in Figure~\ref{problemLocation}, which reside in physical layer, media access layer (\gls{mac}) layer and network layer~\cite{osi}. 
@@ -547,9 +541,7 @@ These questions are individually orthogonal, but as pressing problems in each la
 \end{figure}
 
 \subsubsection{Problem 1: Utilization of TV White Spectrum}
-%\subsubsection{Utilize TV White Space}
 
- %Considering that secondary base stations are likely to be from different administrative domains, a distributed solution would be required. And that makes us turn to game theory and the separation of the problem into two different ones. 
 
 
 %As introduced in Section~\ref{ieee80222}, the TV white spectrum has appealing characteristics for secondary users, for instance, the TV spectrum spans wide frequency range, it is not used by TV services frequently and the spectrum availability lasts relatively longer.
