@@ -6,47 +6,47 @@ Wireless networks utilize radio waves instead of wires to carry information, whi
 After decades of fast growth, there have been many wireless standards designed for different purposes.
 For example, wireless personal-area network (\gls{wpan}) connects devices which locate within a short range of 10 meters.
 The WPAN specifications \ie Zigbee, Bluetooth are specified by IEEE 802.15 standards.
-Wireless local-area network (\gls{wlan}) enables mobile user to connect to to a local area network (LAN) through wireless connection within a range of one hundred meters, where the technologies are specified by the IEEE 802.11 group of standards.
+Wireless local-area network (\gls{wlan}) enables mobile user to connect to a local area network (LAN) through wireless connection within a range of one hundred meters, where the technologies are specified by the IEEE 802.11 group of standards.
 WiFi is a successful realization of WLAN technology, which is based on IEEE 802.11 standard.
 Wireless metropolitan-area network (\gls{wman}) provides connection with broadband speeds and larger coverage (from one hundred meters to several kilometres), where the technologies adopted are specified by IEEE 802.16.
-Third generation (\gls{3g}) mobile communication systems have seen widespread deployment around the globe, which provide people with higher data rates and better quality of service (\gls{QoS}) for different services.
+Third generation (\gls{3g}) mobile communication systems have seen widespread deployment around the globe, which provide people with higher data rates and better quality of service (\gls{QoS}).
 These technologies and standards, along with many others~\cite{Molisch:2011:WC:1984860}, fit different needs of various applications.
 
 
-Due to the propagation characteristics and regulations, the electromagnetic spectrum which spans from 8.3 kHz to 3000 GHz is suitable for commercial application.
+Due to the propagation characteristics and regulations, only the electromagnetic spectrum which spans from 8.3 kHz to 3000 GHz is suitable for commercial application.
 These spectrum is divided into bands (also referred as channels) and allocated to different networks and services.
-For example, WiFi and Bluetooth devices communicate in the 2.4 GHz radio frequency (\gls{rf}) industrial, scientific, and medical (\gls{ISM}).
+For example, WiFi and Bluetooth devices communicate in the 2.4 GHz radio frequency (\gls{rf}) which is also known as industrial, scientific, and medical radio band (\gls{ISM}).
 Wimax networks work from 2 GHz to 66 GHZ in the RF spectrum.
-%In the following, we introduce how is the spectrum accessed by different services.
 %
 As one kind of limited and precious resource, radio spectrum is strictly regulated by the national administration.
 The channels are assigned or leased by governments to different operators and entities.
-In most cases, the operators pay high price for the commercial usage of certain spectrum, and the usage is exclusive for them~\cite{Spectrum_Management07}.
+Usually the operators need to pay high price for the exclusive commercial usage of certain spectrum~\cite{Spectrum_Management07}.
 This spectrum management policy rules out the unlicensed users to use the spectrum, thus strictly protects the interest of the spectrum licensees.
-This spectrum access module is referred as \textit{exclusive use model}~\cite{zhao_survey_DSA_2007}, and is the mainstream of spectrum access worldwide, and many existing wireless applications work on the licensed spectrum.
+This spectrum access module is referred as \textit{exclusive use model}~\cite{zhao_survey_DSA_2007}.
+Many existing wireless applications work on the licensed spectrum.
 For instance, the second-generation (2G) wireless cellular network \gls{gsm} (global system for mobile communications) in Europe works with GSM-900 band (from 890 MHz to 960 MHz) and GSM-1800 (1710 MHz to 1880 MHz), and the third-generation (3G) wireless cellular network works from 1.8 GHz to 2.4 GHz~\cite{wireless_communicatioins2001}.
-The excludability of licensed spectrum can also be open to other user with conditions.
-The spectrum licences either sell and trade the licensed spectrum, or dynamically use the spectrum within a certain region according to different traffic patterns~\cite{dsa_traffic_2000}.
 
+
+Under certain conditions, the licensed spectrum which is granted to an operator or institute can also be accessed by other users.
+%The spectrum licences either sell or trade the licensed spectrum, or dynamically use the spectrum within a certain region according to different traffic patterns~\cite{dsa_traffic_2000}.
 Open spectrum access~\cite{osa_Noam_1995} is proposed in 1995 for full openness of entry, which allows access to spectrum through access fees which are determined by demand and supply.
 It is claimed that open spectrum access yields benefits, as for spectrum licensees, the fixed costs on securing the licensed spectrum can be converted into marginal costs, and for the market, the incentives for collusive pricing can be eliminated.
 But as the \textit{openness} here is fully controlled by the licensees, this spectrum usage is still exclusive .
 
-%
-In contrary to exclusive use model, certain spectrum are assigned for open sharing for peer users, the representative example is the unlicensed ISM radio band, which supports versatile wireless applications and a prosperous industry, \ie Wi-Fi.
-Many spectrum sharing strategies are proposed to cope with the technical challenges~\cite{Ko_DistributedCA}.
+In contrary to the exclusive use model, certain spectrum are assigned for open sharing for peer users, the representative example is the unlicensed ISM radio band, which supports versatile wireless applications and a prosperous industry, \ie Wi-Fi.
+%Many spectrum sharing strategies are proposed to cope with the technical challenges~\cite{Ko_DistributedCA}.
 
 %
 The proliferation of wireless network constantly arises urgent demand on bandwidth and throughput since the first generation of telecommunication in 1980s, which accordingly encourages the efficient use and reuse of the electromagnetic spectrum.
 The next generation of telecommunication technology \gls{5G}, which is reported to come true in 2020, requires a leap forward of spectrum efficiency~\cite{5G_2014}.
-The resorted applications under the label of 5G~\cite{5directions5G_2014}, \ie machine to machine communication, internet of things, etc, requires high speed and lower investment cost, but this is changeling as the achieved capacity approaches Shannon capacity, and most spectrum are licensed.
-Meanwhile, the actual spectrum usage measurement conducted by FCC tells that at many locations or time, the licensed spectrum is idle~\cite{FCC_spectrumEfficiency_2002}, and there exists a large number of spectrum bands which have considerable dormant time intervals ~\cite{Akyildiz06survey}.
+The resorted applications under the label of 5G~\cite{5directions5G_2014}, \ie machine to machine communication, internet of things, etc, requires high speed and lower investment cost, but this is changeling as the achieved capacity approaches Shannon capacity, and most of the spectrum which are suitable to be used are already licensed.
+Meanwhile, the actual spectrum usage measurement conducted by FCC indicates that at many locations, the licensed spectrum is idle for most of the time~\cite{FCC_spectrumEfficiency_2002}, and there exists a large number of spectrum bands which have considerable dormant time intervals ~\cite{Akyildiz06survey}.
 
 %
-To seek more opportunities from spectrum, it is natural to consider opening the licensed spectrum to unlicensed users to use, when the spectrum is not been used by licensed users, or the the licensed users' operation is not hampered.
+To seek more opportunities from spectrum, it is natural to consider opening the licensed spectrum to the unlicensed users when the spectrum is not used by the licensed users or the the licensed users' operation is not hampered.
 %\section{Hierarchical Spectrum Access}
 %\label{hierarchical}
-We adopt the terms proposed in~\cite{zhao_survey_DSA_2007}, and call this spectrum usage policy as \textit{hierarchical access model}, where licensed users are called primary users (\glspl{PU}), and unlicensed users are named as secondary users (\glspl{SU}).
+We adopt the terms proposed in~\cite{zhao_survey_DSA_2007} and call this spectrum usage policy as \textit{hierarchical access model}, where licensed users are called primary users (\glspl{PU}), and unlicensed users are named as secondary users (\glspl{SU}).
 Hierarchical access model gives a promising solution to the reclamation of new electromagnetic spectrum and the improvement of spectrum efficiency.
 
 
@@ -93,8 +93,7 @@ Hierarchical access model gives a promising solution to the reclamation of new e
 
 
 \section{Cognitive Radio Network}
-%\cite{spectrumSharingGames_interference_stackelberg_2009, spectrum_sharing_games_2010} spacial opportunistic allocation.
-
+%TODO: the part before 1.1.1 needs proofreading.
 A cognitive radio network is composed with secondary users and work with the hierarchical access model.
 Throughout this thesis, we use \textit{cognitive radio networks} to compound the networks composed with secondary users, 
 % which work in either spectrum underlay or spectrum overlay style.
@@ -129,11 +128,10 @@ If the CRN is depicted as a graph, and we emphasis on the network topology, then
 
 
 \subsection{Functionalities of Cognitive Radio}
-To adapt to the dynamic spectrum environment and make use of the available licensed spectrum, cognitive radio users %need to manage the available spectrum by conducting a series of functionalities sequentially, \ie detecting the available spectrum with spectrum sensing, selecting the proper spectrum for communication, communicate with other secondary users using certain spectrum band, and moving to another channel when the current working channel is not usable due to primary user's appearance.
-These functions are incorporated into so called cognitive cycle as described in~\cite{Akyildiz09}.
+To adapt to the dynamic spectrum environment and make use of the available licensed spectrum, cognitive radio users should carry out the following functionalities which are incorporated into a so called cognitive cycle as described in~\cite{Akyildiz09}.
 
 \subsubsection{Spectrum Sensing}
-To know which chunk of spectrum is available is the foundation of spectrum management.
+To know which portion of the licensed spectrum is available is fundamental.
 In underlay spectrum usage scenario, CR users get to know the available spectrum by means of spectrum sensing.
 In overlay spectrum usage scenario, secondary users can in principle access all the licensed spectrum.
 In this procedure, quality of the available channels is determined with several parameters, \ie bandwidth, operating frequency, path loss, wireless link errors, link layer delay, and the upper bound of interference on the primary user working on that channel, which decides the maximal permissible transmission power of secondary users.

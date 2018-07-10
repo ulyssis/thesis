@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.3)  2 APR 2018 11:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.3)  21 MAY 2018 01:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1741,12 +1741,6 @@ Overfull \hbox (1.41573pt too wide) detected at line 122
 
  (./chapters/01_introduction.tex
  1.
-
-Overfull \hbox (3.50795pt too wide) in paragraph at lines 16--30
-[]\T1/ptm/m/n/12 Due to the prop-a-ga-tion char-ac-ter-is-tics and reg-u-la-tio
-ns, the elec-tro-mag-netic spec-trum which
- []
-
 [1
 
 
@@ -1756,66 +1750,66 @@ ns, the elec-tro-mag-netic spec-trum which
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <17.28> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 95.
 
-Overfull \hbox (4.49173pt too wide) in paragraph at lines 110--110
+Overfull \hbox (4.49173pt too wide) in paragraph at lines 109--109
 \T1/ptm/m/n/12 ciently com-pu-ta-tion-ally in-tel-li-gent about ra-dio re-sourc
 es and re-lated computer-to-computer
  []
 
 [2]
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 131.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 130.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 135.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 134.
  [3] [4]
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 194.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 193.
 
  (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 194.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 193.
 
 [5]
-<./figures/01_introduction/underlay.pdf, id=644, 529.99599pt x 274.29202pt>
+<./figures/01_introduction/underlay.pdf, id=640, 529.99599pt x 274.29202pt>
 File: ./figures/01_introduction/underlay.pdf Graphic file (type pdf)
 
 <use ./figures/01_introduction/underlay.pdf>
 Package pdftex.def Info: ./figures/01_introduction/underlay.pdf used on input l
-ine 223.
+ine 222.
 (pdftex.def)             Requested size: 320.57364pt x 165.91579pt.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 224.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 223.
  [6 <./figures/01_introduction/underlay.pdf>] [7]
-Overfull \hbox (0.56776pt too wide) in paragraph at lines 338--344
+Overfull \hbox (0.56776pt too wide) in paragraph at lines 337--343
 \T1/ptm/m/n/12 no-regret learn-ing [[]70[], []78[]], re-in-force-ment learn-ing
  [[]83[]]. Op-er-at-ing with this method,
  []
 
 [8] [9]
-<./figures/01_introduction/game_distributedalgorithms.pdf, id=744, 434.6501pt x
+<./figures/01_introduction/game_distributedalgorithms.pdf, id=740, 434.6501pt x
  109.52838pt>
 File: ./figures/01_introduction/game_distributedalgorithms.pdf Graphic file (ty
 pe pdf)
  <use ./figures/01_introduction/game_distributedalgorithms.pdf>
 Package pdftex.def Info: ./figures/01_introduction/game_distributedalgorithms.p
-df used on input line 440.
+df used on input line 439.
 (pdftex.def)             Requested size: 427.43153pt x 107.71478pt.
 
 [10 <./figures/01_introduction/game_distributedalgorithms.pdf>] [11]
-<./figures/01_introduction/overview.pdf, id=774, 726.715pt x 224.84pt>
+<./figures/01_introduction/overview.pdf, id=770, 726.715pt x 224.84pt>
 File: ./figures/01_introduction/overview.pdf Graphic file (type pdf)
 
 <use ./figures/01_introduction/overview.pdf>
 Package pdftex.def Info: ./figures/01_introduction/overview.pdf used on input l
-ine 513.
+ine 512.
 (pdftex.def)             Requested size: 427.43153pt x 132.24619pt.
 
-<./figures/01_introduction/problemLocation.pdf, id=780, 581.98447pt x 200.12354
+<./figures/01_introduction/problemLocation.pdf, id=776, 581.98447pt x 200.12354
 pt>
 File: ./figures/01_introduction/problemLocation.pdf Graphic file (type pdf)
  <use ./figures/01_introduction/problemLocation.pdf>
 Package pdftex.def Info: ./figures/01_introduction/problemLocation.pdf used on 
-input line 538.
+input line 537.
 (pdftex.def)             Requested size: 427.43153pt x 146.9806pt.
 
 
@@ -1851,7 +1845,7 @@ tm/m/it/12 Ev-ery con-ges-tion game has at least one pure Nash equi-lib-rium. [
  []
 
 [22] [23]
-<./figures/02_background/server_sharing.pdf, id=973, 310.32814pt x 245.0342pt>
+<./figures/02_background/server_sharing.pdf, id=970, 310.32814pt x 245.0342pt>
 File: ./figures/02_background/server_sharing.pdf Graphic file (type pdf)
 
 <use ./figures/02_background/server_sharing.pdf>
@@ -1873,7 +1867,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 ]
-<./figures/03_distributedChannelAllocation/TWWS_availability_east.pdf, id=1052,
+<./figures/03_distributedChannelAllocation/TWWS_availability_east.pdf, id=1049,
  438.8897pt x 290.58563pt>
 File: ./figures/03_distributedChannelAllocation/TWWS_availability_east.pdf Grap
 hic file (type pdf)
@@ -1885,7 +1879,7 @@ ility_east.pdf used on input line 37.
 
 [30 <./figures/03_distributedChannelAllocation/TWWS_availability_east.pdf>]
 [31]
-<./figures/03_distributedChannelAllocation/systemmodel_working.pdf, id=1105, 46
+<./figures/03_distributedChannelAllocation/systemmodel_working.pdf, id=1102, 46
 3.06215pt x 354.85098pt>
 File: ./figures/03_distributedChannelAllocation/systemmodel_working.pdf Graphic
  file (type pdf)
@@ -1899,7 +1893,7 @@ working.pdf used on input line 117.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [32] [33 <./figures/03_distributedChannelAllocation/systemmodel_working.pdf>]
-<./figures/03_distributedChannelAllocation/quasiSINR2_2.pdf, id=1201, 138.5175p
+<./figures/03_distributedChannelAllocation/quasiSINR2_2.pdf, id=1198, 138.5175p
 t x 74.54153pt>
 File: ./figures/03_distributedChannelAllocation/quasiSINR2_2.pdf Graphic file (
 type pdf)
@@ -1920,7 +1914,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [35]
 [36] [37] [38] [39] [40]
-<./figures/03_distributedChannelAllocation/lpcvxcdf100runs.pdf, id=1396, 449.68
+<./figures/03_distributedChannelAllocation/lpcvxcdf100runs.pdf, id=1392, 449.68
 pt x 338.26375pt>
 File: ./figures/03_distributedChannelAllocation/lpcvxcdf100runs.pdf Graphic fil
 e (type pdf)
@@ -2061,7 +2055,7 @@ LaTeX Font Warning: Command \tiny invalid in math mode on input line 845.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [49]
-<./figures/03_distributedChannelAllocation/evaluation_content.pdf, id=1534, 613
+<./figures/03_distributedChannelAllocation/evaluation_content.pdf, id=1531, 613
 .29124pt x 148.555pt>
 File: ./figures/03_distributedChannelAllocation/evaluation_content.pdf Graphic 
 file (type pdf)
@@ -2075,7 +2069,7 @@ ontent.pdf used on input line 985.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-<./figures/03_distributedChannelAllocation/layout.pdf, id=1541, 643.40375pt x 6
+<./figures/03_distributedChannelAllocation/layout.pdf, id=1538, 643.40375pt x 6
 44.4075pt>
 File: ./figures/03_distributedChannelAllocation/layout.pdf Graphic file (type p
 df)
@@ -2093,7 +2087,7 @@ atic op-ti-miza-tion in-tro-duced in Sec-tion []3.5.1[].
 
 
 <./figures/03_distributedChannelAllocation/1mar2016/qusaiSINR_with_radius.pdf, 
-id=1581, 381.425pt x 310.15875pt>
+id=1578, 381.425pt x 310.15875pt>
 File: ./figures/03_distributedChannelAllocation/1mar2016/qusaiSINR_with_radius.
 pdf Graphic file (type pdf)
 
@@ -2104,7 +2098,7 @@ aiSINR_with_radius.pdf used on input line 1059.
 (pdftex.def)             Requested size: 185.93167pt x 151.18877pt.
 
 <./figures/03_distributedChannelAllocation/1mar2016/sinr_on_endusers_with_radiu
-s.pdf, id=1582, 384.43625pt x 320.19624pt>
+s.pdf, id=1579, 384.43625pt x 320.19624pt>
 File: ./figures/03_distributedChannelAllocation/1mar2016/sinr_on_endusers_with_
 radius.pdf Graphic file (type pdf)
 
@@ -2119,7 +2113,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [52]
 <./figures/03_distributedChannelAllocation/1mar2016/radius_6000_runtimes_50/tra
-nsPower.pdf, id=1600, 384.43625pt x 293.095pt>
+nsPower.pdf, id=1597, 384.43625pt x 293.095pt>
 File: ./figures/03_distributedChannelAllocation/1mar2016/radius_6000_runtimes_5
 0/transPower.pdf Graphic file (type pdf)
 
@@ -2134,7 +2128,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 <./figures/03_distributedChannelAllocation/1mar2016/radius_6000_runtimes_50/qus
-aiSINR.pdf, id=1601, 384.43625pt x 297.11pt>
+aiSINR.pdf, id=1598, 384.43625pt x 297.11pt>
 File: ./figures/03_distributedChannelAllocation/1mar2016/radius_6000_runtimes_5
 0/qusaiSINR.pdf Graphic file (type pdf)
 
@@ -2149,7 +2143,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 <./figures/03_distributedChannelAllocation/1mar2016/radius_6000_runtimes_50/600
-0_sinr.pdf, id=1603, 384.43625pt x 297.11pt>
+0_sinr.pdf, id=1600, 384.43625pt x 297.11pt>
 File: ./figures/03_distributedChannelAllocation/1mar2016/radius_6000_runtimes_5
 0/6000_sinr.pdf Graphic file (type pdf)
 
@@ -2164,7 +2158,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 <./figures/03_distributedChannelAllocation/1mar2016/radius_6000_runtimes_50/600
-0_sinr_cdf.pdf, id=1604, 384.43625pt x 319.1925pt>
+0_sinr_cdf.pdf, id=1601, 384.43625pt x 319.1925pt>
 File: ./figures/03_distributedChannelAllocation/1mar2016/radius_6000_runtimes_5
 0/6000_sinr_cdf.pdf Graphic file (type pdf)
 
@@ -2191,7 +2185,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 0/6000_sinr.pdf> <./figures/03_distributedChannelAllocation/1mar2016/radius_600
 0_runtimes_50/6000_sinr_cdf.pdf>]
 <./figures/03_distributedChannelAllocation/1mar2016/radius_6000_runtimes_50/con
-vergence.pdf, id=1671, 398.48875pt x 316.18124pt>
+vergence.pdf, id=1668, 398.48875pt x 316.18124pt>
 File: ./figures/03_distributedChannelAllocation/1mar2016/radius_6000_runtimes_5
 0/convergence.pdf Graphic file (type pdf)
 
@@ -2202,7 +2196,7 @@ ius_6000_runtimes_50/convergence.pdf used on input line 1209.
 (pdftex.def)             Requested size: 341.94652pt x 271.3268pt.
  [56 <./figures/03_distributedChannelAllocation/1mar2016/radius_6000_runtimes_5
 0/convergence.pdf>]
-<./figures/others/16.pdf, id=1695, 490.83376pt x 364.36125pt>
+<./figures/others/16.pdf, id=1692, 490.83376pt x 364.36125pt>
 File: ./figures/others/16.pdf Graphic file (type pdf)
 
 <use ./figures/others/16.pdf>
@@ -2212,7 +2206,7 @@ Package pdftex.def Info: ./figures/others/16.pdf used on input line 1271.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./figures/others/14.pdf, id=1698, 483.8075pt x 365.365pt>
+<./figures/others/14.pdf, id=1695, 483.8075pt x 365.365pt>
 File: ./figures/others/14.pdf Graphic file (type pdf)
 
 <use ./figures/others/14.pdf>
@@ -2222,7 +2216,7 @@ Package pdftex.def Info: ./figures/others/14.pdf used on input line 1290.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./figures/others/24.pdf, id=1699, 498.86375pt x 399.4925pt>
+<./figures/others/24.pdf, id=1696, 498.86375pt x 399.4925pt>
 File: ./figures/others/24.pdf Graphic file (type pdf)
 
 <use ./figures/others/24.pdf>
@@ -2256,7 +2250,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 427--428
  []
 
 
-<./figures/04_clutering/np_hard_proof_dummy.pdf, id=1847, 358.55832pt x 193.880
+<./figures/04_clutering/np_hard_proof_dummy.pdf, id=1844, 358.55832pt x 193.880
 58pt>
 File: ./figures/04_clutering/np_hard_proof_dummy.pdf Graphic file (type pdf)
  <use ./figures/04_clutering/np_hard_proof_dummy.pdf>
@@ -2264,7 +2258,7 @@ Package pdftex.def Info: ./figures/04_clutering/np_hard_proof_dummy.pdf used on
  input line 431.
 (pdftex.def)             Requested size: 102.58499pt x 55.46953pt.
  [67 <./figures/04_clutering/np_hard_proof_dummy.pdf>]
-<./figures/04_clutering/figure1.pdf, id=1864, 298.11375pt x 173.64874pt>
+<./figures/04_clutering/figure1.pdf, id=1861, 298.11375pt x 173.64874pt>
 File: ./figures/04_clutering/figure1.pdf Graphic file (type pdf)
 
 <use ./figures/04_clutering/figure1.pdf>
@@ -2284,7 +2278,7 @@ File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <12> not available
 (Font)              Font shape `T1/pcr/m/sl' tried instead on input line 572.
  [69 <./figures/04_clutering/figure1.pdf>] [70]
-<./figures/04_clutering/lemma1.pdf, id=1936, 563.8709pt x 112.73901pt>
+<./figures/04_clutering/lemma1.pdf, id=1933, 563.8709pt x 112.73901pt>
 File: ./figures/04_clutering/lemma1.pdf Graphic file (type pdf)
 
 <use ./figures/04_clutering/lemma1.pdf>
@@ -2292,7 +2286,7 @@ Package pdftex.def Info: ./figures/04_clutering/lemma1.pdf used on input line 6
 25.
 (pdftex.def)             Requested size: 256.46152pt x 51.27739pt.
  [71 <./figures/04_clutering/lemma1.pdf>]
-<./figures/04_clutering/clusters_denseNetwork_2.pdf, id=1964, 333.01915pt x 343
+<./figures/04_clutering/clusters_denseNetwork_2.pdf, id=1961, 333.01915pt x 343
 .84528pt>
 File: ./figures/04_clutering/clusters_denseNetwork_2.pdf Graphic file (type pdf
 )
@@ -2301,7 +2295,7 @@ Package pdftex.def Info: ./figures/04_clutering/clusters_denseNetwork_2.pdf use
 d on input line 725.
 (pdftex.def)             Requested size: 128.23076pt x 132.39919pt.
  [72]
-<./figures/04_clutering/number_clusters_upperBound.pdf, id=1993, 413.545pt x 31
+<./figures/04_clutering/number_clusters_upperBound.pdf, id=1990, 413.545pt x 31
 1.1625pt>
 File: ./figures/04_clutering/number_clusters_upperBound.pdf Graphic file (type 
 pdf)
@@ -2311,7 +2305,7 @@ used on input line 750.
 (pdftex.def)             Requested size: 299.20076pt x 225.1336pt.
  [73 <./figures/04_clutering/clusters_denseNetwork_2.pdf> <./figures/04_cluteri
 ng/number_clusters_upperBound.pdf>]
-<./figures/04_clutering/figure2.pdf, id=2009, 298.11375pt x 193.72375pt>
+<./figures/04_clutering/figure2.pdf, id=2005, 298.11375pt x 193.72375pt>
 File: ./figures/04_clutering/figure2.pdf Graphic file (type pdf)
 
 <use ./figures/04_clutering/figure2.pdf>
@@ -2319,7 +2313,7 @@ Package pdftex.def Info: ./figures/04_clutering/figure2.pdf used on input line
 781.
 (pdftex.def)             Requested size: 299.20076pt x 194.44156pt.
  [74 <./figures/04_clutering/figure2.pdf>] [75]
-<./figures/04_clutering/singletongame_png.png, id=2070, 399.894pt x 406.318pt>
+<./figures/04_clutering/singletongame_png.png, id=2067, 399.894pt x 406.318pt>
 File: ./figures/04_clutering/singletongame_png.png Graphic file (type png)
 
 <use ./figures/04_clutering/singletongame_png.png>
@@ -2327,7 +2321,7 @@ Package pdftex.def Info: ./figures/04_clutering/singletongame_png.png used on i
 nput line 904.
 (pdftex.def)             Requested size: 106.85788pt x 108.57274pt.
  [76 <./figures/04_clutering/singletongame_png.png>]
-<./figures/04_clutering/figure4AinC.pdf, id=2089, 177.66376pt x 109.40875pt>
+<./figures/04_clutering/figure4AinC.pdf, id=2086, 177.66376pt x 109.40875pt>
 File: ./figures/04_clutering/figure4AinC.pdf Graphic file (type pdf)
 
 <use ./figures/04_clutering/figure4AinC.pdf>
@@ -2335,7 +2329,7 @@ Package pdftex.def Info: ./figures/04_clutering/figure4AinC.pdf used on input l
 ine 1008.
 (pdftex.def)             Requested size: 185.93167pt x 114.50359pt.
 
-<./figures/04_clutering/figure4AinH.pdf, id=2090, 177.66376pt x 107.40125pt>
+<./figures/04_clutering/figure4AinH.pdf, id=2087, 177.66376pt x 107.40125pt>
 File: ./figures/04_clutering/figure4AinH.pdf Graphic file (type pdf)
 
 <use ./figures/04_clutering/figure4AinH.pdf>
@@ -2347,7 +2341,7 @@ ine 1013.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 Excluding 'comment' comment.
-<./figures/04_clutering/final_clustering_ross.pdf, id=2091, 284.06125pt x 181.6
+<./figures/04_clutering/final_clustering_ross.pdf, id=2088, 284.06125pt x 181.6
 7876pt>
 File: ./figures/04_clutering/final_clustering_ross.pdf Graphic file (type pdf)
  <use ./figures/04_clutering/final_clustering_ross.pdf>
@@ -2381,7 +2375,7 @@ t/12 ;$
  []
 
 
-<./figures/04_clutering/final_clustering_soc.pdf, id=2151, 284.06125pt x 171.64
+<./figures/04_clutering/final_clustering_soc.pdf, id=2148, 284.06125pt x 171.64
 125pt>
 File: ./figures/04_clutering/final_clustering_soc.pdf Graphic file (type pdf)
  <use ./figures/04_clutering/final_clustering_soc.pdf>
@@ -2389,7 +2383,7 @@ Package pdftex.def Info: ./figures/04_clutering/final_clustering_soc.pdf used o
 n input line 1155.
 (pdftex.def)             Requested size: 185.93167pt x 112.35118pt.
 
-<./figures/04_clutering/final_clustering_LP.pdf, id=2152, 283.0575pt x 169.6337
+<./figures/04_clutering/final_clustering_LP.pdf, id=2149, 283.0575pt x 169.6337
 4pt>
 File: ./figures/04_clutering/final_clustering_LP.pdf Graphic file (type pdf)
  <use ./figures/04_clutering/final_clustering_LP.pdf>
@@ -2399,9 +2393,10 @@ Package pdftex.def Info: ./figures/04_clutering/final_clustering_LP.pdf used on
  [80 <./figures/04_clutering/final_clustering_soc.pdf> <./figures/04_clutering/
 final_clustering_LP.pdf
 
-pdfTeX warning: pdflatex (file ./figures/04_clutering/final_clustering_LP.pdf):
- PDF inclusion: multiple pdfs with page group included in a single page
->] [81] <./figures/04_clutering/ccc_20.pdf, id=2189, 399.4925pt x 319.1925pt>
+pdfTeX warning: /usr/local/texlive/2017/bin/x86_64-darwin/pdflatex (file ./figu
+res/04_clutering/final_clustering_LP.pdf): PDF inclusion: multiple pdfs with pa
+ge group included in a single page
+>] [81] <./figures/04_clutering/ccc_20.pdf, id=2186, 399.4925pt x 319.1925pt>
 File: ./figures/04_clutering/ccc_20.pdf Graphic file (type pdf)
 
 <use ./figures/04_clutering/ccc_20.pdf>
@@ -2409,7 +2404,7 @@ Package pdftex.def Info: ./figures/04_clutering/ccc_20.pdf used on input line 1
 257.
 (pdftex.def)             Requested size: 299.20076pt x 239.07233pt.
 
-<./figures/04_clutering/cdf_clusterSize_20.pdf, id=2190, 400.49625pt x 311.1625
+<./figures/04_clutering/cdf_clusterSize_20.pdf, id=2187, 400.49625pt x 311.1625
 pt>
 File: ./figures/04_clutering/cdf_clusterSize_20.pdf Graphic file (type pdf)
  <use ./figures/04_clutering/cdf_clusterSize_20.pdf>
@@ -2417,7 +2412,7 @@ Package pdftex.def Info: ./figures/04_clutering/cdf_clusterSize_20.pdf used on
 input line 1263.
 (pdftex.def)             Requested size: 299.20076pt x 232.47394pt.
 
-<./figures/04_clutering/survival_rate_20.pdf, id=2191, 390.45876pt x 310.15875p
+<./figures/04_clutering/survival_rate_20.pdf, id=2188, 390.45876pt x 310.15875p
 t>
 File: ./figures/04_clutering/survival_rate_20.pdf Graphic file (type pdf)
  <use ./figures/04_clutering/survival_rate_20.pdf>
@@ -2426,7 +2421,7 @@ put line 1269.
 (pdftex.def)             Requested size: 299.20076pt x 237.67767pt.
  [82 <./figures/04_clutering/ccc_20.pdf>] [83 <./figures/04_clutering/cdf_clust
 erSize_20.pdf> <./figures/04_clutering/survival_rate_20.pdf>] [84]
-<./figures/04_clutering/percentage_overlapping_node.pdf, id=2240, 395.4775pt x 
+<./figures/04_clutering/percentage_overlapping_node.pdf, id=2237, 395.4775pt x 
 311.1625pt>
 File: ./figures/04_clutering/percentage_overlapping_node.pdf Graphic file (type
  pdf)
@@ -2449,7 +2444,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1439--1450
  []
 
 
-<./figures/04_clutering/number_controlMsg.pdf, id=2244, 403.5075pt x 307.1475pt
+<./figures/04_clutering/number_controlMsg.pdf, id=2241, 403.5075pt x 307.1475pt
 >
 File: ./figures/04_clutering/number_controlMsg.pdf Graphic file (type pdf)
  <use ./figures/04_clutering/number_controlMsg.pdf>
@@ -2457,7 +2452,7 @@ Package pdftex.def Info: ./figures/04_clutering/number_controlMsg.pdf used on i
 nput line 1458.
 (pdftex.def)             Requested size: 299.20076pt x 227.74957pt.
 
-<./figures/04_clutering/ccc_large_scale_color.pdf, id=2246, 449.68pt x 338.2637
+<./figures/04_clutering/ccc_large_scale_color.pdf, id=2243, 449.68pt x 338.2637
 5pt>
 File: ./figures/04_clutering/ccc_large_scale_color.pdf Graphic file (type pdf)
  <use ./figures/04_clutering/ccc_large_scale_color.pdf>
@@ -2466,7 +2461,7 @@ on input line 1497.
 (pdftex.def)             Requested size: 299.20076pt x 225.07675pt.
  [85 <./figures/04_clutering/percentage_overlapping_node.pdf>] [86 <./figures/0
 4_clutering/number_controlMsg.pdf>]
-<./figures/04_clutering/survival_rate_100_edge50.pdf, id=2279, 397.485pt x 311.
+<./figures/04_clutering/survival_rate_100_edge50.pdf, id=2276, 397.485pt x 311.
 1625pt>
 File: ./figures/04_clutering/survival_rate_100_edge50.pdf Graphic file (type pd
 f)
@@ -2475,7 +2470,7 @@ Package pdftex.def Info: ./figures/04_clutering/survival_rate_100_edge50.pdf us
 ed on input line 1543.
 (pdftex.def)             Requested size: 299.20076pt x 234.23068pt.
 
-<./figures/04_clutering/survival_rate_200_edge50.pdf, id=2280, 400.49625pt x 31
+<./figures/04_clutering/survival_rate_200_edge50.pdf, id=2277, 400.49625pt x 31
 0.15875pt>
 File: ./figures/04_clutering/survival_rate_200_edge50.pdf Graphic file (type pd
 f)
@@ -2484,7 +2479,7 @@ Package pdftex.def Info: ./figures/04_clutering/survival_rate_200_edge50.pdf us
 ed on input line 1550.
 (pdftex.def)             Requested size: 299.20076pt x 231.72401pt.
 
-<./figures/04_clutering/survival_rate_300_edge50.pdf, id=2281, 407.5225pt x 311
+<./figures/04_clutering/survival_rate_300_edge50.pdf, id=2278, 407.5225pt x 311
 .1625pt>
 File: ./figures/04_clutering/survival_rate_300_edge50.pdf Graphic file (type pd
 f)
@@ -2493,7 +2488,7 @@ Package pdftex.def Info: ./figures/04_clutering/survival_rate_300_edge50.pdf us
 ed on input line 1557.
 (pdftex.def)             Requested size: 299.20076pt x 228.46191pt.
 
-<./figures/04_clutering/cdf_clusterSize_100.pdf, id=2282, 397.485pt x 311.1625p
+<./figures/04_clutering/cdf_clusterSize_100.pdf, id=2279, 397.485pt x 311.1625p
 t>
 File: ./figures/04_clutering/cdf_clusterSize_100.pdf Graphic file (type pdf)
  <use ./figures/04_clutering/cdf_clusterSize_100.pdf>
@@ -2501,7 +2496,7 @@ Package pdftex.def Info: ./figures/04_clutering/cdf_clusterSize_100.pdf used on
  input line 1575.
 (pdftex.def)             Requested size: 299.20076pt x 234.23068pt.
 
-<./figures/04_clutering/cdf_clusterSize_200.pdf, id=2283, 397.485pt x 311.1625p
+<./figures/04_clutering/cdf_clusterSize_200.pdf, id=2280, 397.485pt x 311.1625p
 t>
 File: ./figures/04_clutering/cdf_clusterSize_200.pdf Graphic file (type pdf)
  <use ./figures/04_clutering/cdf_clusterSize_200.pdf>
@@ -2509,7 +2504,7 @@ Package pdftex.def Info: ./figures/04_clutering/cdf_clusterSize_200.pdf used on
  input line 1582.
 (pdftex.def)             Requested size: 299.20076pt x 234.23068pt.
 
-<./figures/04_clutering/cdf_clusterSize_300.pdf, id=2284, 396.48125pt x 311.162
+<./figures/04_clutering/cdf_clusterSize_300.pdf, id=2281, 396.48125pt x 311.162
 5pt>
 File: ./figures/04_clutering/cdf_clusterSize_300.pdf Graphic file (type pdf)
  <use ./figures/04_clutering/cdf_clusterSize_300.pdf>
@@ -2521,7 +2516,7 @@ Underfull \vbox (badness 1314) has occurred while \output is active []
 
  [87 <./figures/04_clutering/ccc_large_scale_color.pdf> <./figures/04_clutering
 /survival_rate_100_edge50.pdf>]
-<./figures/04_clutering/nClusters_largeNetwork.pdf, id=2307, 449.68pt x 338.263
+<./figures/04_clutering/nClusters_largeNetwork.pdf, id=2304, 449.68pt x 338.263
 75pt>
 File: ./figures/04_clutering/nClusters_largeNetwork.pdf Graphic file (type pdf)
 
@@ -2554,7 +2549,7 @@ t line 1659.
 ]
  5.
 [93] [94]
-<./figures/05_routing/sensing_period.pdf, id=2424, 156.85744pt x 32.5608pt>
+<./figures/05_routing/sensing_period.pdf, id=2421, 156.85744pt x 32.5608pt>
 File: ./figures/05_routing/sensing_period.pdf Graphic file (type pdf)
 
 <use ./figures/05_routing/sensing_period.pdf>
@@ -2562,7 +2557,7 @@ Package pdftex.def Info: ./figures/05_routing/sensing_period.pdf used on input
 line 133.
 (pdftex.def)             Requested size: 156.85704pt x 32.56071pt.
  [95]
-<./figures/05_routing/vc_intro.pdf, id=2444, 728.43854pt x 264.23973pt>
+<./figures/05_routing/vc_intro.pdf, id=2441, 728.43854pt x 264.23973pt>
 File: ./figures/05_routing/vc_intro.pdf Graphic file (type pdf)
 
 <use ./figures/05_routing/vc_intro.pdf>
@@ -2570,7 +2565,7 @@ Package pdftex.def Info: ./figures/05_routing/vc_intro.pdf used on input line 1
 70.
 (pdftex.def)             Requested size: 364.21837pt x 132.11954pt.
 
-<./figures/05_routing/CAVCap_idea_paper.pdf, id=2446, 352.11583pt x 251.49748pt
+<./figures/05_routing/CAVCap_idea_paper.pdf, id=2443, 352.11583pt x 251.49748pt
 >
 File: ./figures/05_routing/CAVCap_idea_paper.pdf Graphic file (type pdf)
  <use ./figures/05_routing/CAVCap_idea_paper.pdf>
@@ -2580,14 +2575,15 @@ ut line 190.
  [96 <./figures/05_routing/sensing_period.pdf>] [97 <./figures/05_routing/vc_in
 tro.pdf> <./figures/05_routing/CAVCap_idea_paper.pdf
 
-pdfTeX warning: pdflatex (file ./figures/05_routing/CAVCap_idea_paper.pdf): PDF
- inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: /usr/local/texlive/2017/bin/x86_64-darwin/pdflatex (file ./figu
+res/05_routing/CAVCap_idea_paper.pdf): PDF inclusion: multiple pdfs with page g
+roup included in a single page
 >]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [98] [99]
-<./figures/05_routing/gamma_lambda.pdf, id=2573, 391.4625pt x 316.18124pt>
+<./figures/05_routing/gamma_lambda.pdf, id=2570, 391.4625pt x 316.18124pt>
 File: ./figures/05_routing/gamma_lambda.pdf Graphic file (type pdf)
 
 <use ./figures/05_routing/gamma_lambda.pdf>
@@ -2601,7 +2597,7 @@ Overfull \hbox (9.39842pt too wide) in paragraph at lines 472--479
  []
 
 [102] [103]
-<./figures/05_routing/Reachability_DC_EWT.pdf, id=2631, 387.4475pt x 310.15875p
+<./figures/05_routing/Reachability_DC_EWT.pdf, id=2628, 387.4475pt x 310.15875p
 t>
 File: ./figures/05_routing/Reachability_DC_EWT.pdf Graphic file (type pdf)
  <use ./figures/05_routing/Reachability_DC_EWT.pdf>
@@ -2609,7 +2605,7 @@ Package pdftex.def Info: ./figures/05_routing/Reachability_DC_EWT.pdf used on i
 nput line 600.
 (pdftex.def)             Requested size: 299.20076pt x 239.51866pt.
  [104 <./figures/05_routing/Reachability_DC_EWT.pdf>]
-<./figures/05_routing/singleChannel_DC_caseStudy.pdf, id=2653, 298.11375pt x 28
+<./figures/05_routing/singleChannel_DC_caseStudy.pdf, id=2650, 298.11375pt x 28
 9.08pt>
 File: ./figures/05_routing/singleChannel_DC_caseStudy.pdf Graphic file (type pd
 f)
@@ -2618,7 +2614,7 @@ Package pdftex.def Info: ./figures/05_routing/singleChannel_DC_caseStudy.pdf us
 ed on input line 698.
 (pdftex.def)             Requested size: 194.48212pt x 188.58788pt.
 
-<./figures/05_routing/singleCh_average_pdr_3.pdf, id=2654, 391.4625pt x 314.173
+<./figures/05_routing/singleCh_average_pdr_3.pdf, id=2651, 391.4625pt x 314.173
 75pt>
 File: ./figures/05_routing/singleCh_average_pdr_3.pdf Graphic file (type pdf)
  <use ./figures/05_routing/singleCh_average_pdr_3.pdf>
@@ -2626,7 +2622,7 @@ Package pdftex.def Info: ./figures/05_routing/singleCh_average_pdr_3.pdf used o
 n input line 702.
 (pdftex.def)             Requested size: 194.48212pt x 156.08455pt.
 
-<./figures/05_routing/random_SU_PU.pdf, id=2657, 391.4625pt x 314.17375pt>
+<./figures/05_routing/random_SU_PU.pdf, id=2654, 391.4625pt x 314.17375pt>
 File: ./figures/05_routing/random_SU_PU.pdf Graphic file (type pdf)
 
 <use ./figures/05_routing/random_SU_PU.pdf>
@@ -2634,7 +2630,7 @@ Package pdftex.def Info: ./figures/05_routing/random_SU_PU.pdf used on input li
 ne 711.
 (pdftex.def)             Requested size: 194.48212pt x 156.08455pt.
 
-<./figures/05_routing/plot/delay_dc_c1.pdf, id=2658, 394.47375pt x 310.15875pt>
+<./figures/05_routing/plot/delay_dc_c1.pdf, id=2655, 394.47375pt x 310.15875pt>
 File: ./figures/05_routing/plot/delay_dc_c1.pdf Graphic file (type pdf)
 <use ./figures/05_routing/plot/delay_dc_c1.pdf>
 Package pdftex.def Info: ./figures/05_routing/plot/delay_dc_c1.pdf used on inpu
@@ -2646,7 +2642,7 @@ Underfull \vbox (badness 4913) has occurred while \output is active []
  [106 <./figures/05_routing/singleChannel_DC_caseStudy.pdf> <./figures/05_routi
 ng/singleCh_average_pdr_3.pdf> <./figures/05_routing/random_SU_PU.pdf> <./figur
 es/05_routing/plot/delay_dc_c1.pdf>]
-<./figures/05_routing/random_SU_PU_2channel.pdf, id=2701, 391.4625pt x 314.1737
+<./figures/05_routing/random_SU_PU_2channel.pdf, id=2698, 391.4625pt x 314.1737
 5pt>
 File: ./figures/05_routing/random_SU_PU_2channel.pdf Graphic file (type pdf)
  <use ./figures/05_routing/random_SU_PU_2channel.pdf>
@@ -2654,14 +2650,14 @@ Package pdftex.def Info: ./figures/05_routing/random_SU_PU_2channel.pdf used on
  input line 807.
 (pdftex.def)             Requested size: 194.48212pt x 156.08455pt.
 
-<./figures/05_routing/plot/delay_dc_c2.pdf, id=2702, 394.47375pt x 310.15875pt>
+<./figures/05_routing/plot/delay_dc_c2.pdf, id=2699, 394.47375pt x 310.15875pt>
 File: ./figures/05_routing/plot/delay_dc_c2.pdf Graphic file (type pdf)
 <use ./figures/05_routing/plot/delay_dc_c2.pdf>
 Package pdftex.def Info: ./figures/05_routing/plot/delay_dc_c2.pdf used on inpu
 t line 810.
 (pdftex.def)             Requested size: 194.48212pt x 152.91144pt.
 
-<./figures/05_routing/topo_single_blocking_time.pdf, id=2708, 297.01967pt x 287
+<./figures/05_routing/topo_single_blocking_time.pdf, id=2705, 297.01967pt x 287
 .95581pt>
 File: ./figures/05_routing/topo_single_blocking_time.pdf Graphic file (type pdf
 )
@@ -2671,7 +2667,7 @@ d on input line 868.
 (pdftex.def)             Requested size: 256.46152pt x 248.64774pt.
  [107 <./figures/05_routing/random_SU_PU_2channel.pdf> <./figures/05_routing/pl
 ot/delay_dc_c2.pdf>]
-<./figures/05_routing/ewt_pdr_3_ci.pdf, id=2728, 386.44376pt x 313.17pt>
+<./figures/05_routing/ewt_pdr_3_ci.pdf, id=2725, 386.44376pt x 313.17pt>
 File: ./figures/05_routing/ewt_pdr_3_ci.pdf Graphic file (type pdf)
 
 <use ./figures/05_routing/ewt_pdr_3_ci.pdf>
@@ -2679,7 +2675,7 @@ Package pdftex.def Info: ./figures/05_routing/ewt_pdr_3_ci.pdf used on input li
 ne 906.
 (pdftex.def)             Requested size: 196.62137pt x 159.34184pt.
 
-<./figures/05_routing/plot/delay_ewt_c1.pdf, id=2729, 394.47375pt x 313.17pt>
+<./figures/05_routing/plot/delay_ewt_c1.pdf, id=2726, 394.47375pt x 313.17pt>
 File: ./figures/05_routing/plot/delay_ewt_c1.pdf Graphic file (type pdf)
 
 <use ./figures/05_routing/plot/delay_ewt_c1.pdf>
@@ -2687,7 +2683,7 @@ Package pdftex.def Info: ./figures/05_routing/plot/delay_ewt_c1.pdf used on inp
 ut line 908.
 (pdftex.def)             Requested size: 196.62137pt x 156.09718pt.
  [108 <./figures/05_routing/topo_single_blocking_time.pdf>]
-<./figures/05_routing/multiCh_EWT_rate_3.pdf, id=2793, 386.44376pt x 313.17pt>
+<./figures/05_routing/multiCh_EWT_rate_3.pdf, id=2790, 386.44376pt x 313.17pt>
 File: ./figures/05_routing/multiCh_EWT_rate_3.pdf Graphic file (type pdf)
 
 <use ./figures/05_routing/multiCh_EWT_rate_3.pdf>
@@ -2695,7 +2691,7 @@ Package pdftex.def Info: ./figures/05_routing/multiCh_EWT_rate_3.pdf used on in
 put line 943.
 (pdftex.def)             Requested size: 196.62137pt x 159.34184pt.
 
-<./figures/05_routing/plot/delay_ewt_c2.pdf, id=2794, 394.47375pt x 313.17pt>
+<./figures/05_routing/plot/delay_ewt_c2.pdf, id=2791, 394.47375pt x 313.17pt>
 File: ./figures/05_routing/plot/delay_ewt_c2.pdf Graphic file (type pdf)
 
 <use ./figures/05_routing/plot/delay_ewt_c2.pdf>
@@ -2708,7 +2704,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [109 <./figures/05_routing/ewt_pdr_3_ci.pdf> <./figures/05_routing/plot/delay_
 ewt_c1.pdf> <./figures/05_routing/multiCh_EWT_rate_3.pdf> <./figures/05_routing
 /plot/delay_ewt_c2.pdf>]
-<./figures/05_routing/errorenousEsti_DC.pdf, id=2826, 392.46625pt x 308.15125pt
+<./figures/05_routing/errorenousEsti_DC.pdf, id=2823, 392.46625pt x 308.15125pt
 >
 File: ./figures/05_routing/errorenousEsti_DC.pdf Graphic file (type pdf)
  <use ./figures/05_routing/errorenousEsti_DC.pdf>
@@ -2730,7 +2726,7 @@ Overfull \hbox (23.6146pt too wide) in paragraph at lines 30--30
 -i-cal Frame-
  []
 
-<./figures/06_conclusion/futurework_1.png, id=2848, 845.1575pt x 343.2825pt>
+<./figures/06_conclusion/futurework_1.png, id=2845, 845.1575pt x 343.2825pt>
 File: ./figures/06_conclusion/futurework_1.png Graphic file (type png)
 
 <use ./figures/06_conclusion/futurework_1.png>
@@ -3305,7 +3301,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 373.
 Here is how much of TeX's memory you used:
  31271 strings out of 492995
  546018 string characters out of 6132704
- 722241 words of memory out of 5000000
+ 721240 words of memory out of 5000000
  33249 multiletter control sequences out of 15000+600000
  140557 words of font info for 145 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -3372,10 +3368,10 @@ helvetic/uhvr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/helveti
 c/uhvro8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmb8a.
 pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/
 local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (153 pages, 2191562 bytes).
+Output written on thesis.pdf (153 pages, 2191488 bytes).
 PDF statistics:
- 3492 PDF objects out of 3580 (max. 8388607)
- 3006 compressed objects within 31 object streams
+ 3490 PDF objects out of 3580 (max. 8388607)
+ 3004 compressed objects within 31 object streams
  768 named destinations out of 1000 (max. 500000)
  1066 words of extra memory for PDF output out of 10000 (max. 10000000)
 
