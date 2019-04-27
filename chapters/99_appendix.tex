@@ -89,10 +89,10 @@ We reformulate the objective problem \ref{QLP} which is a binary non-linear prog
 \label{QLP2_1}
 		\begin{aligned}
 %		\begin{split}
-		& \sum\limits^{n}_{i=1} \frac{\sum\limits_{j\in\mathcal{N}, j\neq i}P^TX_j(X_j^TX_i)h_{ji}z_{ji} + N_0}{P^TX_ih_iz_i}\\
-		& =\sum\limits^{n}_{i=1}( \frac{\sum\limits_{j\in\mathcal{N}, j\neq i}\sum\limits_k (P_{jk}\cdot x_{jk}\cdot x_{ik}\cdot x_{jk}\cdot h_{ji}\cdot z_{ji}) + \sum\limits_k N_0\cdot x_{i k}}{P^TX_ih_iz_i})\\
-		& =\sum\limits^{n}_{i=1}( \frac{\sum\limits_{j\in\mathcal{N}, j\neq i}\sum\limits_k (P_{jk}\cdot x_{jk}\cdot x_{ik}\cdot h_{ji}\cdot z_{ji})}{P^TX_ih_iz_i}  + \frac{\sum\limits_k N_0\cdot x_{ik}}{P^TX_ih_iz_i})\\
-		& =\sum\limits^{n}_{i=1}( \sum\limits_{j\in\mathcal{N}, j\neq i}\sum\limits_k \frac{(P_{jk}\cdot x_{jk}\cdot x_{ik}\cdot h_{ji}\cdot z_{ji})}{P^TX_ih_iz_i}  + \sum\limits_k\frac{N_0\cdot x_{ik}}{P^TX_ih_iz_i})
+		& \sum\limits^{n}_{i=1} \frac{\sum\limits_{j\in\mathcal{N}, j\neq i}\vec{P}^T_jX_j(X_j^TX_i)h_{ji}z_{ji} + N_0}{\vec{P}^T_iX_ih_iz_i}\\
+		& =\sum\limits^{n}_{i=1}( \frac{\sum\limits_{j\in\mathcal{N}, j\neq i}\sum\limits_k (P_{jk}\cdot x_{jk}\cdot x_{ik}\cdot x_{jk}\cdot h_{ji}\cdot z_{ji}) + \sum\limits_k N_0\cdot x_{i k}}{\vec{P}_i^TX_ih_iz_i})\\
+		& =\sum\limits^{n}_{i=1}( \frac{\sum\limits_{j\in\mathcal{N}, j\neq i}\sum\limits_k (P_{jk}\cdot x_{jk}\cdot x_{ik}\cdot h_{ji}\cdot z_{ji})}{\vec{P}^T_iX_ih_iz_i}  + \frac{\sum\limits_k N_0\cdot x_{ik}}{\vec{P}^T_iX_ih_iz_i})\\
+		& =\sum\limits^{n}_{i=1}( \sum\limits_{j\in\mathcal{N}, j\neq i}\sum\limits_k \frac{(P_{jk}\cdot x_{jk}\cdot x_{ik}\cdot h_{ji}\cdot z_{ji})}{\vec{P}^T_iX_ih_iz_i}  + \sum\limits_k\frac{N_0\cdot x_{ik}}{\vec{P}^T_iX_ih_iz_i})
 %		\end{split}
 		\end{aligned}
 	\end{equation}
@@ -101,9 +101,9 @@ If we assume WBS $i$ is working on channel $m$, then there is $x_{im}=1$, then t
 	\begin{equation}
 		\label{QLP2_22}
 				\begin{aligned}
-				 &\frac{P_{jk}\cdot x_{jk}\cdot x_{ik}\cdot h_{ji}\cdot z_{ji}}{P^TX_ih_iz_i}
+				 &\frac{P_{jk}\cdot x_{jk}\cdot x_{ik}\cdot h_{ji}\cdot z_{ji}}{\vec{P}^T_iX_ih_iz_i}
 				 &= \frac{P_{jk}\cdot x_{jk}\cdot x_{im}\cdot h_{ji}\cdot z_{ji}}{P_{im}\cdot x_{im} \cdot h_i\cdot z_i} \\
-				 &= \frac{P_{jk}\cdot x_{jk}\cdot h_{ji}\cdot z_{ji}}{P_{im}\cdot h_i\cdot z_i}
+				 &= \frac{P_{jk}\cdot x_{jk}\cdot x_{im}\cdot h_{ji}\cdot z_{ji}}{P_{im}\cdot h_i\cdot z_i}
 		 	\end{aligned}
 	\end{equation}
 %other wise, formula \ref{QLP2_22} equals to 0.
