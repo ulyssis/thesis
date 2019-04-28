@@ -13,12 +13,12 @@
 \contentsline {subsection}{\numberline {1.2.1}The Solutions in CRN}{7}{subsection.1.2.1}
 \contentsline {subsubsection}{\numberline {1.2.1.1}Centralized Scheme}{7}{subsubsection.1.2.1.1}
 \contentsline {subsubsection}{\numberline {1.2.1.2}Distributed Scheme}{8}{subsubsection.1.2.1.2}
-\contentsline {subsection}{\numberline {1.2.2}Game Theory and Communication Systems}{8}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {1.2.2}Game Theory and Communication Systems}{9}{subsection.1.2.2}
 \contentsline {subsection}{\numberline {1.2.3}Game Theory and CRN}{9}{subsection.1.2.3}
 \contentsline {subsubsection}{\numberline {1.2.3.1}Application of Game in CRN}{10}{subsubsection.1.2.3.1}
 \contentsline {section}{\numberline {1.3}Problem Statement and Research Scope}{11}{section.1.3}
 \contentsline {subsection}{\numberline {1.3.1}Research Questions}{11}{subsection.1.3.1}
-\contentsline {subsubsection}{\numberline {1.3.1.1}Contributions}{11}{subsubsection.1.3.1.1}
+\contentsline {subsubsection}{\numberline {1.3.1.1}Contributions}{12}{subsubsection.1.3.1.1}
 \contentsline {subsection}{\numberline {1.3.2}Research Scope}{12}{subsection.1.3.2}
 \contentsline {subsubsection}{\numberline {1.3.2.1}Problem 1: Utilization of TV White Spectrum}{12}{subsubsection.1.3.2.1}
 \contentsline {subsubsection}{\numberline {1.3.2.2}Problem 2: Robust Cluster Structure in Ad Hoc Cognitive Radio Network}{13}{subsubsection.1.3.2.2}
@@ -43,88 +43,89 @@
 \contentsline {subsection}{\numberline {2.3.4}Variants of Congestion Game}{25}{subsection.2.3.4}
 \contentsline {section}{\numberline {2.4}Optimization}{26}{section.2.4}
 \contentsline {subsection}{\numberline {2.4.1}Decomposition Methods}{26}{subsection.2.4.1}
-\contentsline {chapter}{\numberline {3}Congestion Game in Spectrum Allocation}{29}{chapter.3}
+\contentsline {chapter}{\numberline {3}Spectrum Allocation in TV White Space complying with ECC Rulings}{29}{chapter.3}
 \contentsline {section}{\numberline {3.1}Introduction}{29}{section.3.1}
 \contentsline {section}{\numberline {3.2}System Model and Problem Statement}{31}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Problem Statement}{33}{subsection.3.2.1}
-\contentsline {section}{\numberline {3.3}Problem Decomposition and Related Works}{36}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Problem Decomposition}{36}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Resource Allocation in CRN}{37}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}Utilization of TV White Space}{38}{subsection.3.3.3}
-\contentsline {section}{\numberline {3.4}The Maximum Permitted Transmission Power}{40}{section.3.4}
-\contentsline {section}{\numberline {3.5}Channel Allocation with Fixed Transmission Power}{42}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}Centralized Optimization Programming}{42}{subsection.3.5.1}
-\contentsline {subsection}{\numberline {3.5.2}Distributed White Space Channel Allocation (WitheCat): Algorithm and Protocol}{43}{subsection.3.5.2}
-\contentsline {subsection}{\numberline {3.5.3}Analysis in Game Theoretical Framework}{45}{subsection.3.5.3}
-\contentsline {section}{\numberline {3.6}Variable Transmission Power After Channel Allocation}{48}{section.3.6}
-\contentsline {section}{\numberline {3.7}Joint Channel and Power Allocation}{49}{section.3.7}
-\contentsline {subsection}{\numberline {3.7.1}Centralized Optimization}{49}{subsection.3.7.1}
-\contentsline {section}{\numberline {3.8}Performance Evaluation}{50}{section.3.8}
-\contentsline {subsection}{\numberline {3.8.1}Maximal Permitted Power Decision and the Distributed Channel Allocation Schemes}{52}{subsection.3.8.1}
-\contentsline {subsection}{\numberline {3.8.2}Performance of Joint Power and Channel Allocation}{57}{subsection.3.8.2}
-\contentsline {section}{\numberline {3.9}Conclusions}{58}{section.3.9}
-\contentsline {chapter}{\numberline {4}Congestion Game in Robust Clustering of CRN}{61}{chapter.4}
-\contentsline {section}{\numberline {4.1}Introduction}{61}{section.4.1}
-\contentsline {section}{\numberline {4.2}Related Work}{63}{section.4.2}
-\contentsline {section}{\numberline {4.3}System Model}{64}{section.4.3}
-\contentsline {section}{\numberline {4.4}Robust Clustering Problem in CRN}{65}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Cluster in CRN}{65}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Robust Clustering Problem}{65}{subsection.4.4.2}
-\contentsline {subsection}{\numberline {4.4.3}Complexity of the Robust Clustering Problem}{66}{subsection.4.4.3}
-\contentsline {section}{\numberline {4.5}Distributed Clustering Algorithm: ROSS}{68}{section.4.5}
-\contentsline {subsection}{\numberline {4.5.1}Phase I - Cluster Formation}{68}{subsection.4.5.1}
-\contentsline {subsubsection}{\numberline {4.5.1.1}Determining Cluster Heads and Form the Initial Clusters}{68}{subsubsection.4.5.1.1}
-\contentsline {subsubsection}{\numberline {4.5.1.2}Guarantee the Availability of Common Control Channel}{71}{subsubsection.4.5.1.2}
-\contentsline {subsubsection}{\numberline {4.5.1.3}Cluster Size Control in Dense CRN}{72}{subsubsection.4.5.1.3}
-\contentsline {subsection}{\numberline {4.5.2}Phase II - Membership Clarification}{74}{subsection.4.5.2}
-\contentsline {subsubsection}{\numberline {4.5.2.1}Distributed Greedy Algorithm (DGA)}{74}{subsubsection.4.5.2.1}
-\contentsline {subsubsection}{\numberline {4.5.2.2}Bridging ROSS-DGA with Congestion Game}{75}{subsubsection.4.5.2.2}
-\contentsline {subsubsection}{\numberline {4.5.2.3}Distributed Fast Algorithm (DFA)}{77}{subsubsection.4.5.2.3}
-\contentsline {subsection}{\numberline {4.5.3}Centralized Solution for Robust Clustering}{78}{subsection.4.5.3}
-\contentsline {subsection}{\numberline {4.5.4}Apply the Centralized and Comparison Distributed Schemes in the Example CRN}{80}{subsection.4.5.4}
-\contentsline {section}{\numberline {4.6}Performance Evaluation}{80}{section.4.6}
-\contentsline {subsection}{\numberline {4.6.1}Centralized Schemes vs. Decentralized Schemes}{82}{subsection.4.6.1}
-\contentsline {subsubsection}{\numberline {4.6.1.1}Number of CCCs in Non-singleton Clusters}{82}{subsubsection.4.6.1.1}
-\contentsline {subsubsection}{\numberline {4.6.1.2}Cluster Size Control}{83}{subsubsection.4.6.1.2}
-\contentsline {subsubsection}{\numberline {4.6.1.3}Robustness of the clusters against newly added PUs}{84}{subsubsection.4.6.1.3}
-\contentsline {subsubsection}{\numberline {4.6.1.4}Control Signalling Overhead}{84}{subsubsection.4.6.1.4}
-\contentsline {subsection}{\numberline {4.6.2}Comparison Between Distributed Schemes}{85}{subsection.4.6.2}
-\contentsline {subsubsection}{\numberline {4.6.2.1}Number of CCCs per Non-singleton Clusters}{86}{subsubsection.4.6.2.1}
-\contentsline {subsubsection}{\numberline {4.6.2.2}Robustness of the clusters against newly added PUs}{86}{subsubsection.4.6.2.2}
-\contentsline {subsubsection}{\numberline {4.6.2.3}Cluster Size Control}{88}{subsubsection.4.6.2.3}
-\contentsline {subsection}{\numberline {4.6.3}Insights from the Simulation}{90}{subsection.4.6.3}
-\contentsline {section}{\numberline {4.7}Conclusions}{91}{section.4.7}
-\contentsline {chapter}{\numberline {5}Decentralized Virtual Coordinate Assignment and Routing}{93}{chapter.5}
-\contentsline {section}{\numberline {5.1}Introduction}{93}{section.5.1}
-\contentsline {section}{\numberline {5.2}Related Work}{94}{section.5.2}
-\contentsline {section}{\numberline {5.3}System Model}{95}{section.5.3}
-\contentsline {section}{\numberline {5.4}Spectrum Aware Virtual Coordinates}{96}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}Assign Spectrum Aware Virtual Coordinate}{97}{subsection.5.4.1}
-\contentsline {subsection}{\numberline {5.4.2}Normalized Spectrum Availability on Secondary Users}{98}{subsection.5.4.2}
-\contentsline {subsubsection}{\numberline {5.4.2.1}Single Licensed Channel}{99}{subsubsection.5.4.2.1}
-\contentsline {subsubsection}{\numberline {5.4.2.2}Multiple Licensed Channels}{100}{subsubsection.5.4.2.2}
-\contentsline {subsection}{\numberline {5.4.3}Normalized Longest Blocking Time on Secondary Users}{101}{subsection.5.4.3}
-\contentsline {subsubsection}{\numberline {5.4.3.1}Single Licensed Channel}{101}{subsubsection.5.4.3.1}
-\contentsline {subsubsection}{\numberline {5.4.3.2}Multiple Licensed Channels}{102}{subsubsection.5.4.3.2}
-\contentsline {section}{\numberline {5.5}Geographic Routing and Opportunistic Spectrum Access}{102}{section.5.5}
-\contentsline {section}{\numberline {5.6}Performance Evaluation}{103}{section.5.6}
-\contentsline {subsection}{\numberline {5.6.1}Simulation Setup}{103}{subsection.5.6.1}
-\contentsline {subsubsection}{\numberline {5.6.1.1}Primary Users}{103}{subsubsection.5.6.1.1}
-\contentsline {subsubsection}{\numberline {5.6.1.2}Parameter Setting}{104}{subsubsection.5.6.1.2}
-\contentsline {subsection}{\numberline {5.6.2}Success Rate of Geographic Routing on Finding Path}{104}{subsection.5.6.2}
-\contentsline {subsection}{\numberline {5.6.3}Routing Performance}{105}{subsection.5.6.3}
-\contentsline {subsubsection}{\numberline {5.6.3.1}Duty Cycle Based Virtual Coordinate}{105}{subsubsection.5.6.3.1}
-\contentsline {subsubsection}{\numberline {5.6.3.2}Longest Blocking Time Based Virtual Coordinate}{107}{subsubsection.5.6.3.2}
-\contentsline {subsection}{\numberline {5.6.4}Sensitivity of SAViC to Estimation Errors}{110}{subsection.5.6.4}
-\contentsline {section}{\numberline {5.7}Conclusions}{110}{section.5.7}
-\contentsline {chapter}{\numberline {6}Conclusion and Future Work}{111}{chapter.6}
-\contentsline {section}{\numberline {6.1}Contribution}{111}{section.6.1}
-\contentsline {section}{\numberline {6.2}Future Work}{112}{section.6.2}
-\contentsline {chapter}{\numberline {7}Appendix}{115}{chapter.7}
-\contentsline {chapter}{ \numberline {A}Proof of Theorem \ref {noconvergence}}{117}{.1.A}
-\contentsline {chapter}{ \numberline {B}Deviation of Problem \ref {QLP}}{119}{.1.B}
+\contentsline {subsection}{\numberline {3.2.1}Problem Formulation}{33}{subsection.3.2.1}
+\contentsline {section}{\numberline {3.3}Related Works}{35}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Resource Allocation in CRN}{35}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Utilization of TV White Space}{36}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Related Works on Channel Allocation with Fixed Transmission Power Level}{37}{subsection.3.3.3}
+\contentsline {section}{\numberline {3.4}The Maximum Permitted Transmission Power}{37}{section.3.4}
+\contentsline {section}{\numberline {3.5}Channel Allocation with Single Channel}{40}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Centralized Optimization Programming}{40}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Distributed White Space Channel Allocation (WitheCat): Algorithm and Protocol}{41}{subsection.3.5.2}
+\contentsline {subsection}{\numberline {3.5.3}Analysis in Game Theoretical Framework}{42}{subsection.3.5.3}
+\contentsline {section}{\numberline {3.6}Channel Allocation with Multiple Channels}{46}{section.3.6}
+\contentsline {section}{\numberline {3.7}Performance Evaluation}{46}{section.3.7}
+\contentsline {subsection}{\numberline {3.7.1}The Choice of Radius of Auxiliary Circles, quasiSINR of WBS, and SINR on End Users}{47}{subsection.3.7.1}
+\contentsline {subsection}{\numberline {3.7.2}Performance of Channel Allocation Schemes Operating with Single Channel}{48}{subsection.3.7.2}
+\contentsline {subsubsection}{\numberline {3.7.2.1}Comparison of the Methods for Maximum Permitted Transmission Power}{49}{subsubsection.3.7.2.1}
+\contentsline {subsubsection}{\numberline {3.7.2.2}Convergence Speed}{50}{subsubsection.3.7.2.2}
+\contentsline {subsection}{\numberline {3.7.3}Performance of Channel Allocation Schemes Operating with Single Channel}{51}{subsection.3.7.3}
+\contentsline {section}{\numberline {3.8}Conclusions}{57}{section.3.8}
+\contentsline {chapter}{\numberline {4}Congestion Game in Robust Clustering of CRN}{59}{chapter.4}
+\contentsline {section}{\numberline {4.1}Introduction}{59}{section.4.1}
+\contentsline {section}{\numberline {4.2}Related Work}{61}{section.4.2}
+\contentsline {section}{\numberline {4.3}System Model}{62}{section.4.3}
+\contentsline {section}{\numberline {4.4}Robust Clustering Problem in CRN}{63}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Cluster in CRN}{63}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Robust Clustering Problem}{63}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}Complexity of the Robust Clustering Problem}{64}{subsection.4.4.3}
+\contentsline {section}{\numberline {4.5}Distributed Clustering Algorithm: ROSS}{66}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Phase I - Cluster Formation}{66}{subsection.4.5.1}
+\contentsline {subsubsection}{\numberline {4.5.1.1}Determining Cluster Heads and Form the Initial Clusters}{66}{subsubsection.4.5.1.1}
+\contentsline {subsubsection}{\numberline {4.5.1.2}Guarantee the Availability of Common Control Channel}{69}{subsubsection.4.5.1.2}
+\contentsline {subsubsection}{\numberline {4.5.1.3}Cluster Size Control in Dense CRN}{70}{subsubsection.4.5.1.3}
+\contentsline {subsection}{\numberline {4.5.2}Phase II - Membership Clarification}{72}{subsection.4.5.2}
+\contentsline {subsubsection}{\numberline {4.5.2.1}Distributed Greedy Algorithm (DGA)}{72}{subsubsection.4.5.2.1}
+\contentsline {subsubsection}{\numberline {4.5.2.2}Bridging ROSS-DGA with Congestion Game}{73}{subsubsection.4.5.2.2}
+\contentsline {subsubsection}{\numberline {4.5.2.3}Distributed Fast Algorithm (DFA)}{75}{subsubsection.4.5.2.3}
+\contentsline {subsection}{\numberline {4.5.3}Centralized Solution for Robust Clustering}{76}{subsection.4.5.3}
+\contentsline {subsection}{\numberline {4.5.4}Apply the Centralized and Comparison Distributed Schemes in the Example CRN}{78}{subsection.4.5.4}
+\contentsline {section}{\numberline {4.6}Performance Evaluation}{78}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}Centralized Schemes vs. Decentralized Schemes}{80}{subsection.4.6.1}
+\contentsline {subsubsection}{\numberline {4.6.1.1}Number of CCCs in Non-singleton Clusters}{80}{subsubsection.4.6.1.1}
+\contentsline {subsubsection}{\numberline {4.6.1.2}Cluster Size Control}{81}{subsubsection.4.6.1.2}
+\contentsline {subsubsection}{\numberline {4.6.1.3}Robustness of the clusters against newly added PUs}{82}{subsubsection.4.6.1.3}
+\contentsline {subsubsection}{\numberline {4.6.1.4}Control Signalling Overhead}{82}{subsubsection.4.6.1.4}
+\contentsline {subsection}{\numberline {4.6.2}Comparison Between Distributed Schemes}{83}{subsection.4.6.2}
+\contentsline {subsubsection}{\numberline {4.6.2.1}Number of CCCs per Non-singleton Clusters}{84}{subsubsection.4.6.2.1}
+\contentsline {subsubsection}{\numberline {4.6.2.2}Robustness of the clusters against newly added PUs}{84}{subsubsection.4.6.2.2}
+\contentsline {subsubsection}{\numberline {4.6.2.3}Cluster Size Control}{86}{subsubsection.4.6.2.3}
+\contentsline {subsection}{\numberline {4.6.3}Insights from the Simulation}{88}{subsection.4.6.3}
+\contentsline {section}{\numberline {4.7}Conclusions}{89}{section.4.7}
+\contentsline {chapter}{\numberline {5}Decentralized Virtual Coordinate Assignment and Routing}{91}{chapter.5}
+\contentsline {section}{\numberline {5.1}Introduction}{91}{section.5.1}
+\contentsline {section}{\numberline {5.2}Related Work}{92}{section.5.2}
+\contentsline {section}{\numberline {5.3}System Model}{93}{section.5.3}
+\contentsline {section}{\numberline {5.4}Spectrum Aware Virtual Coordinates}{94}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Assign Spectrum Aware Virtual Coordinate}{95}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}Normalized Spectrum Availability on Secondary Users}{96}{subsection.5.4.2}
+\contentsline {subsubsection}{\numberline {5.4.2.1}Single Licensed Channel}{97}{subsubsection.5.4.2.1}
+\contentsline {subsubsection}{\numberline {5.4.2.2}Multiple Licensed Channels}{98}{subsubsection.5.4.2.2}
+\contentsline {subsection}{\numberline {5.4.3}Normalized Longest Blocking Time on Secondary Users}{99}{subsection.5.4.3}
+\contentsline {subsubsection}{\numberline {5.4.3.1}Single Licensed Channel}{99}{subsubsection.5.4.3.1}
+\contentsline {subsubsection}{\numberline {5.4.3.2}Multiple Licensed Channels}{100}{subsubsection.5.4.3.2}
+\contentsline {section}{\numberline {5.5}Geographic Routing and Opportunistic Spectrum Access}{100}{section.5.5}
+\contentsline {section}{\numberline {5.6}Performance Evaluation}{101}{section.5.6}
+\contentsline {subsection}{\numberline {5.6.1}Simulation Setup}{101}{subsection.5.6.1}
+\contentsline {subsubsection}{\numberline {5.6.1.1}Primary Users}{101}{subsubsection.5.6.1.1}
+\contentsline {subsubsection}{\numberline {5.6.1.2}Parameter Setting}{102}{subsubsection.5.6.1.2}
+\contentsline {subsection}{\numberline {5.6.2}Success Rate of Geographic Routing on Finding Path}{102}{subsection.5.6.2}
+\contentsline {subsection}{\numberline {5.6.3}Routing Performance}{103}{subsection.5.6.3}
+\contentsline {subsubsection}{\numberline {5.6.3.1}Duty Cycle Based Virtual Coordinate}{103}{subsubsection.5.6.3.1}
+\contentsline {subsubsection}{\numberline {5.6.3.2}Longest Blocking Time Based Virtual Coordinate}{105}{subsubsection.5.6.3.2}
+\contentsline {subsection}{\numberline {5.6.4}Sensitivity of SAViC to Estimation Errors}{108}{subsection.5.6.4}
+\contentsline {section}{\numberline {5.7}Conclusions}{108}{section.5.7}
+\contentsline {chapter}{\numberline {6}Conclusion and Future Work}{109}{chapter.6}
+\contentsline {section}{\numberline {6.1}Contribution}{109}{section.6.1}
+\contentsline {section}{\numberline {6.2}Future Work}{110}{section.6.2}
+\contentsline {chapter}{\numberline {7}Appendix}{113}{chapter.7}
+\contentsline {chapter}{ \numberline {A}Proof of Theorem \ref {noconvergence}}{115}{.1.A}
+\contentsline {chapter}{ \numberline {B}Deviation of Problem \ref {QLP}}{117}{.1.B}
 \vspace *{\baselineskip }
-\contentsline {chapter}{Bibliography}{121}{section*.23}
-\contentsline {chapter}{List of Figures}{134}{section*.23}
-\contentsline {chapter}{List of Tables}{138}{section*.23}
-\contentsline {chapter}{Glossary}{140}{section*.23}
+\contentsline {chapter}{Bibliography}{119}{section*.14}
+\contentsline {chapter}{List of Figures}{133}{section*.14}
+\contentsline {chapter}{List of Tables}{137}{section*.14}
+\contentsline {chapter}{Glossary}{138}{section*.14}

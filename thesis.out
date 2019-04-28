@@ -26,66 +26,65 @@
 \BOOKMARK [2][-]{subsection.2.3.4}{2.3.4 Variants of Congestion Game}{section.2.3}% 26
 \BOOKMARK [1][-]{section.2.4}{2.4 Optimization}{chapter.2}% 27
 \BOOKMARK [2][-]{subsection.2.4.1}{2.4.1 Decomposition Methods}{section.2.4}% 28
-\BOOKMARK [0][]{chapter.3}{3 Congestion Game in Spectrum Allocation}{}% 29
+\BOOKMARK [0][]{chapter.3}{3 Spectrum Allocation in TV White Space complying with ECC Rulings}{}% 29
 \BOOKMARK [1][-]{section.3.1}{3.1 Introduction}{chapter.3}% 30
 \BOOKMARK [1][-]{section.3.2}{3.2 System Model and Problem Statement}{chapter.3}% 31
-\BOOKMARK [2][-]{subsection.3.2.1}{3.2.1 Problem Statement}{section.3.2}% 32
-\BOOKMARK [1][-]{section.3.3}{3.3 Problem Decomposition and Related Works}{chapter.3}% 33
-\BOOKMARK [2][-]{subsection.3.3.1}{3.3.1 Problem Decomposition}{section.3.3}% 34
-\BOOKMARK [2][-]{subsection.3.3.2}{3.3.2 Resource Allocation in CRN}{section.3.3}% 35
-\BOOKMARK [2][-]{subsection.3.3.3}{3.3.3 Utilization of TV White Space}{section.3.3}% 36
+\BOOKMARK [2][-]{subsection.3.2.1}{3.2.1 Problem Formulation}{section.3.2}% 32
+\BOOKMARK [1][-]{section.3.3}{3.3 Related Works}{chapter.3}% 33
+\BOOKMARK [2][-]{subsection.3.3.1}{3.3.1 Resource Allocation in CRN}{section.3.3}% 34
+\BOOKMARK [2][-]{subsection.3.3.2}{3.3.2 Utilization of TV White Space}{section.3.3}% 35
+\BOOKMARK [2][-]{subsection.3.3.3}{3.3.3 Related Works on Channel Allocation with Fixed Transmission Power Level}{section.3.3}% 36
 \BOOKMARK [1][-]{section.3.4}{3.4 The Maximum Permitted Transmission Power}{chapter.3}% 37
-\BOOKMARK [1][-]{section.3.5}{3.5 Channel Allocation with Fixed Transmission Power}{chapter.3}% 38
+\BOOKMARK [1][-]{section.3.5}{3.5 Channel Allocation with Single Channel}{chapter.3}% 38
 \BOOKMARK [2][-]{subsection.3.5.1}{3.5.1 Centralized Optimization Programming}{section.3.5}% 39
 \BOOKMARK [2][-]{subsection.3.5.2}{3.5.2 Distributed White Space Channel Allocation \(WitheCat\): Algorithm and Protocol}{section.3.5}% 40
 \BOOKMARK [2][-]{subsection.3.5.3}{3.5.3 Analysis in Game Theoretical Framework}{section.3.5}% 41
-\BOOKMARK [1][-]{section.3.6}{3.6 Variable Transmission Power After Channel Allocation}{chapter.3}% 42
-\BOOKMARK [1][-]{section.3.7}{3.7 Joint Channel and Power Allocation}{chapter.3}% 43
-\BOOKMARK [2][-]{subsection.3.7.1}{3.7.1 Centralized Optimization}{section.3.7}% 44
-\BOOKMARK [1][-]{section.3.8}{3.8 Performance Evaluation}{chapter.3}% 45
-\BOOKMARK [2][-]{subsection.3.8.1}{3.8.1 Maximal Permitted Power Decision and the Distributed Channel Allocation Schemes}{section.3.8}% 46
-\BOOKMARK [2][-]{subsection.3.8.2}{3.8.2 Performance of Joint Power and Channel Allocation}{section.3.8}% 47
-\BOOKMARK [1][-]{section.3.9}{3.9 Conclusions}{chapter.3}% 48
-\BOOKMARK [0][]{chapter.4}{4 Congestion Game in Robust Clustering of CRN}{}% 49
-\BOOKMARK [1][-]{section.4.1}{4.1 Introduction}{chapter.4}% 50
-\BOOKMARK [1][-]{section.4.2}{4.2 Related Work}{chapter.4}% 51
-\BOOKMARK [1][-]{section.4.3}{4.3 System Model}{chapter.4}% 52
-\BOOKMARK [1][-]{section.4.4}{4.4 Robust Clustering Problem in CRN}{chapter.4}% 53
-\BOOKMARK [2][-]{subsection.4.4.1}{4.4.1 Cluster in CRN}{section.4.4}% 54
-\BOOKMARK [2][-]{subsection.4.4.2}{4.4.2 Robust Clustering Problem}{section.4.4}% 55
-\BOOKMARK [2][-]{subsection.4.4.3}{4.4.3 Complexity of the Robust Clustering Problem}{section.4.4}% 56
-\BOOKMARK [1][-]{section.4.5}{4.5 Distributed Clustering Algorithm: ROSS}{chapter.4}% 57
-\BOOKMARK [2][-]{subsection.4.5.1}{4.5.1 Phase I - Cluster Formation}{section.4.5}% 58
-\BOOKMARK [2][-]{subsection.4.5.2}{4.5.2 Phase II - Membership Clarification}{section.4.5}% 59
-\BOOKMARK [2][-]{subsection.4.5.3}{4.5.3 Centralized Solution for Robust Clustering}{section.4.5}% 60
-\BOOKMARK [2][-]{subsection.4.5.4}{4.5.4 Apply the Centralized and Comparison Distributed Schemes in the Example CRN}{section.4.5}% 61
-\BOOKMARK [1][-]{section.4.6}{4.6 Performance Evaluation}{chapter.4}% 62
-\BOOKMARK [2][-]{subsection.4.6.1}{4.6.1 Centralized Schemes vs. Decentralized Schemes}{section.4.6}% 63
-\BOOKMARK [2][-]{subsection.4.6.2}{4.6.2 Comparison Between Distributed Schemes}{section.4.6}% 64
-\BOOKMARK [2][-]{subsection.4.6.3}{4.6.3 Insights from the Simulation}{section.4.6}% 65
-\BOOKMARK [1][-]{section.4.7}{4.7 Conclusions}{chapter.4}% 66
-\BOOKMARK [0][]{chapter.5}{5 Decentralized Virtual Coordinate Assignment and Routing}{}% 67
-\BOOKMARK [1][-]{section.5.1}{5.1 Introduction}{chapter.5}% 68
-\BOOKMARK [1][-]{section.5.2}{5.2 Related Work}{chapter.5}% 69
-\BOOKMARK [1][-]{section.5.3}{5.3 System Model}{chapter.5}% 70
-\BOOKMARK [1][-]{section.5.4}{5.4 Spectrum Aware Virtual Coordinates}{chapter.5}% 71
-\BOOKMARK [2][-]{subsection.5.4.1}{5.4.1 Assign Spectrum Aware Virtual Coordinate}{section.5.4}% 72
-\BOOKMARK [2][-]{subsection.5.4.2}{5.4.2 Normalized Spectrum Availability on Secondary Users}{section.5.4}% 73
-\BOOKMARK [2][-]{subsection.5.4.3}{5.4.3 Normalized Longest Blocking Time on Secondary Users}{section.5.4}% 74
-\BOOKMARK [1][-]{section.5.5}{5.5 Geographic Routing and Opportunistic Spectrum Access}{chapter.5}% 75
-\BOOKMARK [1][-]{section.5.6}{5.6 Performance Evaluation}{chapter.5}% 76
-\BOOKMARK [2][-]{subsection.5.6.1}{5.6.1 Simulation Setup}{section.5.6}% 77
-\BOOKMARK [2][-]{subsection.5.6.2}{5.6.2 Success Rate of Geographic Routing on Finding Path}{section.5.6}% 78
-\BOOKMARK [2][-]{subsection.5.6.3}{5.6.3 Routing Performance}{section.5.6}% 79
-\BOOKMARK [2][-]{subsection.5.6.4}{5.6.4 Sensitivity of SAViC to Estimation Errors}{section.5.6}% 80
-\BOOKMARK [1][-]{section.5.7}{5.7 Conclusions}{chapter.5}% 81
-\BOOKMARK [0][]{chapter.6}{6 Conclusion and Future Work}{}% 82
-\BOOKMARK [1][-]{section.6.1}{6.1 Contribution}{chapter.6}% 83
-\BOOKMARK [1][-]{section.6.2}{6.2 Future Work}{chapter.6}% 84
-\BOOKMARK [0][]{chapter.7}{7 Appendix}{}% 85
-\BOOKMARK [0][]{.1.A}{ A Proof of Theorem 3.5.1}{}% 86
-\BOOKMARK [0][]{.1.B}{ B Deviation of Problem 3.11}{}% 87
-\BOOKMARK [0][]{section*.23}{Bibliography}{}% 88
-\BOOKMARK [0][]{section*.23}{List of Figures}{}% 89
-\BOOKMARK [0][]{section*.23}{List of Tables}{}% 90
-\BOOKMARK [0][]{section*.23}{Glossary}{}% 91
+\BOOKMARK [1][-]{section.3.6}{3.6 Channel Allocation with Multiple Channels}{chapter.3}% 42
+\BOOKMARK [1][-]{section.3.7}{3.7 Performance Evaluation}{chapter.3}% 43
+\BOOKMARK [2][-]{subsection.3.7.1}{3.7.1 The Choice of Radius of Auxiliary Circles, quasiSINR of WBS, and SINR on End Users}{section.3.7}% 44
+\BOOKMARK [2][-]{subsection.3.7.2}{3.7.2 Performance of Channel Allocation Schemes Operating with Single Channel}{section.3.7}% 45
+\BOOKMARK [2][-]{subsection.3.7.3}{3.7.3 Performance of Channel Allocation Schemes Operating with Single Channel}{section.3.7}% 46
+\BOOKMARK [1][-]{section.3.8}{3.8 Conclusions}{chapter.3}% 47
+\BOOKMARK [0][]{chapter.4}{4 Congestion Game in Robust Clustering of CRN}{}% 48
+\BOOKMARK [1][-]{section.4.1}{4.1 Introduction}{chapter.4}% 49
+\BOOKMARK [1][-]{section.4.2}{4.2 Related Work}{chapter.4}% 50
+\BOOKMARK [1][-]{section.4.3}{4.3 System Model}{chapter.4}% 51
+\BOOKMARK [1][-]{section.4.4}{4.4 Robust Clustering Problem in CRN}{chapter.4}% 52
+\BOOKMARK [2][-]{subsection.4.4.1}{4.4.1 Cluster in CRN}{section.4.4}% 53
+\BOOKMARK [2][-]{subsection.4.4.2}{4.4.2 Robust Clustering Problem}{section.4.4}% 54
+\BOOKMARK [2][-]{subsection.4.4.3}{4.4.3 Complexity of the Robust Clustering Problem}{section.4.4}% 55
+\BOOKMARK [1][-]{section.4.5}{4.5 Distributed Clustering Algorithm: ROSS}{chapter.4}% 56
+\BOOKMARK [2][-]{subsection.4.5.1}{4.5.1 Phase I - Cluster Formation}{section.4.5}% 57
+\BOOKMARK [2][-]{subsection.4.5.2}{4.5.2 Phase II - Membership Clarification}{section.4.5}% 58
+\BOOKMARK [2][-]{subsection.4.5.3}{4.5.3 Centralized Solution for Robust Clustering}{section.4.5}% 59
+\BOOKMARK [2][-]{subsection.4.5.4}{4.5.4 Apply the Centralized and Comparison Distributed Schemes in the Example CRN}{section.4.5}% 60
+\BOOKMARK [1][-]{section.4.6}{4.6 Performance Evaluation}{chapter.4}% 61
+\BOOKMARK [2][-]{subsection.4.6.1}{4.6.1 Centralized Schemes vs. Decentralized Schemes}{section.4.6}% 62
+\BOOKMARK [2][-]{subsection.4.6.2}{4.6.2 Comparison Between Distributed Schemes}{section.4.6}% 63
+\BOOKMARK [2][-]{subsection.4.6.3}{4.6.3 Insights from the Simulation}{section.4.6}% 64
+\BOOKMARK [1][-]{section.4.7}{4.7 Conclusions}{chapter.4}% 65
+\BOOKMARK [0][]{chapter.5}{5 Decentralized Virtual Coordinate Assignment and Routing}{}% 66
+\BOOKMARK [1][-]{section.5.1}{5.1 Introduction}{chapter.5}% 67
+\BOOKMARK [1][-]{section.5.2}{5.2 Related Work}{chapter.5}% 68
+\BOOKMARK [1][-]{section.5.3}{5.3 System Model}{chapter.5}% 69
+\BOOKMARK [1][-]{section.5.4}{5.4 Spectrum Aware Virtual Coordinates}{chapter.5}% 70
+\BOOKMARK [2][-]{subsection.5.4.1}{5.4.1 Assign Spectrum Aware Virtual Coordinate}{section.5.4}% 71
+\BOOKMARK [2][-]{subsection.5.4.2}{5.4.2 Normalized Spectrum Availability on Secondary Users}{section.5.4}% 72
+\BOOKMARK [2][-]{subsection.5.4.3}{5.4.3 Normalized Longest Blocking Time on Secondary Users}{section.5.4}% 73
+\BOOKMARK [1][-]{section.5.5}{5.5 Geographic Routing and Opportunistic Spectrum Access}{chapter.5}% 74
+\BOOKMARK [1][-]{section.5.6}{5.6 Performance Evaluation}{chapter.5}% 75
+\BOOKMARK [2][-]{subsection.5.6.1}{5.6.1 Simulation Setup}{section.5.6}% 76
+\BOOKMARK [2][-]{subsection.5.6.2}{5.6.2 Success Rate of Geographic Routing on Finding Path}{section.5.6}% 77
+\BOOKMARK [2][-]{subsection.5.6.3}{5.6.3 Routing Performance}{section.5.6}% 78
+\BOOKMARK [2][-]{subsection.5.6.4}{5.6.4 Sensitivity of SAViC to Estimation Errors}{section.5.6}% 79
+\BOOKMARK [1][-]{section.5.7}{5.7 Conclusions}{chapter.5}% 80
+\BOOKMARK [0][]{chapter.6}{6 Conclusion and Future Work}{}% 81
+\BOOKMARK [1][-]{section.6.1}{6.1 Contribution}{chapter.6}% 82
+\BOOKMARK [1][-]{section.6.2}{6.2 Future Work}{chapter.6}% 83
+\BOOKMARK [0][]{chapter.7}{7 Appendix}{}% 84
+\BOOKMARK [0][]{.1.A}{ A Proof of Theorem 3.5.1}{}% 85
+\BOOKMARK [0][]{.1.B}{ B Deviation of Problem 3.7}{}% 86
+\BOOKMARK [0][]{section*.14}{Bibliography}{}% 87
+\BOOKMARK [0][]{section*.14}{List of Figures}{}% 88
+\BOOKMARK [0][]{section*.14}{List of Tables}{}% 89
+\BOOKMARK [0][]{section*.14}{Glossary}{}% 90

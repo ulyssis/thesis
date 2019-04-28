@@ -5,6 +5,13 @@
 \newblock Visited Juni 2016.
 \newblock \url{https://www.google.com/get/spectrumdatabase/}.
 
+\bibitem{GreedyAlo}
+{Greedy Algorithm implemented in MATLAB}, resource allocation techniques for
+  cellular networks in tv white space spectrum, f. hessar and s. roy, ieee
+  dyspan 2014.
+\newblock \url{https://github.com/ulyssis/channel-power-allocation-802.22}.
+\newblock Accessed: 2019-04-20.
+
 \bibitem{802.22}
 {IEEE} 802.22 wireless regional area networks.
 \newblock \url{http://www.ieee802.org/22/Technology/}.
@@ -78,6 +85,12 @@ In the matter of unlicensed operation in the {TV} broadcast bands: second
 \newblock {\em IEEE Transactions on Wireless Communications 8}, 3 (2009),
   1542--1552.
 
+\bibitem{Achtzehn12}
+{\sc {Achtzehn}, A., {Petrova}, M., and {Mähönen}, P.}
+\newblock On the performance of cellular network deployments in tv whitespaces.
+\newblock In {\em 2012 IEEE International Conference on Communications (ICC)\/}
+  (June 2012), pp.~1789--1794.
+
 \bibitem{Ackermann06purenash}
 {\sc Ackermann, H., Röglin, H., and Vöcking, B.}
 \newblock Pure {N}ash equilibria in player-specific and weighted congestion
@@ -125,8 +138,8 @@ In the matter of unlicensed operation in the {TV} broadcast bands: second
 {\sc Ali~Jorio, Sanaa El~Fkihi, B.~E., and Aboutajdine, D.}
 \newblock An energy-efficient clustering routing algorithm based on geographic
   position and residual energy for wireless sensor network.
-\newblock {\em Journal of Computer Networks and Communications 2015\/} (April
-  2015).
+\newblock {\em Journal of Computer Networks and Communications 2015\/} (04
+  '15).
 
 \bibitem{Alizai_11_probabilisticAddressing}
 {\sc Alizai, M., Vaegs, T., Landsiedel, O., G{\"o}tz, S., Link, J., and Wehrle,
@@ -166,6 +179,13 @@ In the matter of unlicensed operation in the {TV} broadcast bands: second
   propagation.
 \newblock In {\em Proc. of ICCCN 2009}.
 
+\bibitem{TWC14HeteroWS}
+{\sc {Bahrak}, B., and {Park}, J.~J.}
+\newblock Coexistence decision making for spectrum sharing among heterogeneous
+  wireless systems.
+\newblock {\em IEEE Transactions on Wireless Communications 13}, 3 (March
+  2014), 1298--1307.
+
 \bibitem{joint_power_channel_linkpair_08ICT}
 {\sc Bahramian, S., and Khalaj, B.}
 \newblock Joint dynamic frequency selection and power control for cognitive
@@ -178,6 +198,12 @@ In the matter of unlicensed operation in the {TV} broadcast bands: second
 \newblock Cognitive network access using fuzzy decision making.
 \newblock {\em IEEE Transactions on Wireless Communications 8}, 7 (July 2009),
   3523--3535.
+
+\bibitem{TMC14channelScharing}
+{\sc {Bansal}, T., {Li}, D., and {Sinha}, P.}
+\newblock Opportunistic channel sharingin cognitive radio networks.
+\newblock {\em IEEE Transactions on Mobile Computing 13}, 4 (April 2014),
+  852--865.
 
 \bibitem{Basagni99}
 {\sc Basagni, S.}
@@ -305,6 +331,13 @@ In the matter of unlicensed operation in the {TV} broadcast bands: second
 \newblock Unit disk graphs.
 \newblock {\em Annals of Discrete Mathematics 48}, C (1991), 165--177.
 
+\bibitem{Deshmukh2015}
+{\sc Deshmukh, M., Frederiksen, F.~B., and Prasad, R.}
+\newblock A closed form estimate of tvws capacity under the impact of an
+  aggregate interference.
+\newblock {\em Wireless Personal Communications 82}, 1 (May 2015), 551--568.
+\newblock \url{https://doi.org/10.1007/s11277-014-2240-y}.
+
 \bibitem{tvws_vtc13}
 {\sc Di~Felice, M., Ghandhour, A., Artail, H., and Bononi, L.}
 \newblock Integrating spectrum database and cooperative sensing for cognitive
@@ -317,6 +350,12 @@ In the matter of unlicensed operation in the {TV} broadcast bands: second
   networks.
 \newblock In {\em Proc. of IFIP Networking Conference, 2015\/} (May 2015),
   pp.~1--8.
+
+\bibitem{Elias17}
+{\sc {Elias}, J., {Martignon}, F., {Chen}, L., and {Krunz}, M.}
+\newblock Distributed spectrum management in tv white space networks.
+\newblock {\em IEEE Transactions on Vehicular Technology 66}, 5 (May 2017),
+  4161--4172.
 
 \bibitem{increaseTVWS12}
 {\sc Ellingsaeter, B., Bezabih, H., Noll, J., and Maseng, T.}
@@ -342,12 +381,6 @@ In the matter of unlicensed operation in the {TV} broadcast bands: second
 \newblock Database-assisted multi-{AP} network on {TV} white spaces:
   Architecture, spectrum allocation and ap discovery.
 \newblock In {\em Proc. of IEEE DySPAN 2011\/} (may 2011), pp.~265 --276.
-
-\bibitem{hybridPricing_tvspace_2014}
-{\sc Feng, X., Zhang, Q., and Zhang, J.}
-\newblock A hybrid pricing framework for tv white space database.
-\newblock {\em IEEE Transactions on Wireless Communications 13}, 5 (May 2014),
-  2626--2635.
 
 \bibitem{802.11af}
 {\sc Flores, A., Guerra, R., Knightly, E., Ecclesine, P., and Pandey, S.}
@@ -396,6 +429,18 @@ In the matter of unlicensed operation in the {TV} broadcast bands: second
 \newblock In {\em Proceedings of IEEE Military Communications Conference
   2006\/} (Oct 2006), pp.~1--7.
 
+\bibitem{gopalTCCN16}
+{\sc {Gopal}, S., {Kaul}, S.~K., and {Roy}, S.}
+\newblock Optimizing city-wide white-fi networks in tv white spaces.
+\newblock {\em IEEE Transactions on Cognitive Communications and Networking 4},
+  4 (Dec 2018), 749--763.
+
+\bibitem{Gopal18}
+{\sc {Gopal}, S., {Kaul}, S.~K., and {Roy}, S.}
+\newblock Optimizing city-wide white-fi networks in tv white spaces.
+\newblock {\em IEEE Transactions on Cognitive Communications and Networking 4},
+  4 (Dec 2018), 749--763.
+
 \bibitem{Gu_distributed_rendezvous_2014}
 {\sc Gu, Z., Hua, Q.-S., and Dai, W.}
 \newblock Fully distributed algorithms for blind rendezvous in cognitive radio
@@ -432,10 +477,18 @@ In the matter of unlicensed operation in the {TV} broadcast bands: second
 \newblock In {\em In Proceedings of 2012 IEEE Vehicular Technology Conference
   (VTC Fall)\/} (Sept 2012), pp.~1--5.
 
-\bibitem{hmam2010quadratic}
-{\sc Hmam, H.}
-\newblock Quadratic optimisation with one quadratic equality constraint.
-\newblock Tech. rep., DTIC Document, 2010.
+\bibitem{ReAlloTVWS14DySPAN}
+{\sc {Hessar}, F., and {Roy}, S.}
+\newblock Resource allocation techniques for cellular networks in tv white
+  space spectrum.
+\newblock In {\em 2014 IEEE International Symposium on Dynamic Spectrum Access
+  Networks (DYSPAN)\/} (April 2014), pp.~72--81.
+
+\bibitem{HessarTMC15}
+{\sc {Hessar}, F., and {Roy}, S.}
+\newblock Capacity considerations for secondary networks in tv white space.
+\newblock {\em IEEE Transactions on Mobile Computing 14}, 9 (Sep. 2015),
+  1780--1793.
 
 \bibitem{HoangPowerChannel2010}
 {\sc Hoang, A., Liang, Y., and Islam, M.}
@@ -669,17 +722,17 @@ In the matter of unlicensed operation in the {TV} broadcast bands: second
 \newblock
   \url{http://www.sciencedirect.com/science/article/B6WFW-45MH09M-2Y/2/ad6966b4c9b49d9450d3f995ef526373}.
 
-\bibitem{Mitola}
-{\sc Mitola, J., I., and Maguire, G.Q., J.}
-\newblock Cognitive radio: making software radios more personal.
-\newblock {\em Personal Communications, IEEE 6}, 4 (aug. 1999), 13 --18.
-
 \bibitem{2000mitola_cognitive_radio}
 {\sc Mitola, J.}
 \newblock {\em {Cognitive Radio --- An Integrated Agent Architecture for
   Software Defined Radio}}.
 \newblock {DTech} thesis, Royal Institute of Technology (KTH), Kista, Sweden,
   May.
+
+\bibitem{Mitola}
+{\sc Mitola, J., and Maguire, G.~Q.}
+\newblock Cognitive radio: making software radios more personal.
+\newblock {\em IEEE Personal Communications 6}, 4 (Aug 1999), 13--18.
 
 \bibitem{ProbabilityAndComputing}
 {\sc Mitzenmacher, M., and Upfal, E.}
@@ -701,11 +754,6 @@ In the matter of unlicensed operation in the {TV} broadcast bands: second
 {\sc Murty, R., Chandra, R., Moscibroda, T., and Bahl, V.}
 \newblock Senseless: A database-driven white spaces network.
 \newblock In {\em Proc. of IEEE DySpan 2011\/} (May 2011).
-
-\bibitem{books_game_myerson}
-{\sc Myerson, R.~B.}
-\newblock {\em Game theory - Analysis of Conflict.}
-\newblock Harvard University Press, 1997.
 
 \bibitem{Neel06analysisand}
 {\sc Neel, J.~O.}
@@ -789,14 +837,14 @@ In the matter of unlicensed operation in the {TV} broadcast bands: second
 \newblock A centralized inter-network resource sharing ({CIRS}) scheme in
   {IEEE} 802.22 cognitive networks.
 \newblock In {\em Proc. of 2011 The 10th IFIP Annual Mediterranean Ad Hoc
-  Networking Workshop (Med-Hoc-Net),\/} (June 2011), pp.~17--24.
+  Networking Workshop (Med-Hoc-Net),}, pp.~17--24.
 
 \bibitem{centralizedSharing80222}
 {\sc Passiatore, C., and Camarda, P.}
 \newblock A centralized inter-network resource sharing ({CIRS}) scheme in
   {IEEE} 802.22 cognitive networks.
 \newblock In {\em Proc. of IFIP Annual Mediterranean Ad Hoc Networking Workshop
-  2011\/} (2011).
+  2011}.
 
 \bibitem{capacity_cluster_06}
 {\sc Perevalov, E., Blum, R.~S., and Safi, D.}
@@ -822,6 +870,13 @@ In the matter of unlicensed operation in the {TV} broadcast bands: second
 \newblock {\em Wireless Communications: Principles and Practice}, 2nd~ed.
 \newblock Prentice Hall PTR, Upper Saddle River, NJ, USA, 2001.
 
+\bibitem{TWC17HeteroWS}
+{\sc {Raza}, M.~A., {Park}, S., and {Lee}, H.}
+\newblock Evolutionary channel sharing algorithm for heterogeneous unlicensed
+  networks.
+\newblock {\em IEEE Transactions on Wireless Communications 16}, 7 (July 2017),
+  4378--4389.
+
 \bibitem{Rosenthal}
 {\sc Rosenthal, R.}
 \newblock A class of games possessing pure-strategy {N}ash equilibria.
@@ -837,20 +892,12 @@ In the matter of unlicensed operation in the {TV} broadcast bands: second
 \bibitem{Sahai_FundamentalDesignTradeoffs2006}
 {\sc Sahai, A., Tandra, R., Mishra, S.~M., and Hoven, N.}
 \newblock Fundamental design tradeoffs in cognitive radio systems.
-\newblock In {\em Proc. of the 1st Intl. workshop on technology and policy for
-  accessing spectrum}, ACM TAPAS '06.
+\newblock In {\em Proc. of ACM TAPAS '06}.
 
 \bibitem{spectrumDecision_2013mass}
 {\sc Saifan, R., Kamal, A., and Guan, Y.}
 \newblock Spectrum decision for efficient routing in cognitive radio network.
 \newblock In {\em Proc. of IEEE MASS 2012}.
-
-\bibitem{Quadratic_min_one_equality}
-{\sc Salahi, M.}
-\newblock Convex optimization approach to a single quadratically constrained
-  quadratic minimization problem.
-\newblock {\em Central European Journal of Operations Research 18}, 2 (2010),
-  181--187.
 
 \bibitem{segment-crowncom08}
 {\sc Sampath, A., Yang, L., Cao, L., Zheng, H., and Zhao, B.~Y.}
@@ -883,12 +930,6 @@ In the matter of unlicensed operation in the {TV} broadcast bands: second
   cognitive radio sensor networks.
 \newblock {\em IEEE Transactions on Vehicular Technology PP}, 99 (2014), 1--1.
 
-\bibitem{power_control_utility_98}
-{\sc Shah, V., Mandayam, N., and Goodman, D.}
-\newblock Power control for wireless data based on utility and pricing.
-\newblock In {\em Proc. of IEEE PIMRC 1998\/} (Sep 1998), vol.~3,
-  pp.~1427--1432 vol.3.
-
 \bibitem{pa_crn_survey_2012}
 {\sc Sorooshyari, S., Tan, C.~W., and Chiang, M.}
 \newblock Power control for cognitive radio networks: Axioms, algorithms, and
@@ -907,7 +948,7 @@ In the matter of unlicensed operation in the {TV} broadcast bands: second
 {\sc Sun, C., Zhang, W., and Letaief, K.~B.}
 \newblock Cluster-based cooperative spectrum sensing in cognitive radio
   systems.
-\newblock In {\em proc. of IEEE ICC\/} (2007).
+\newblock In {\em proc. of IEEE ICC 2007}.
 
 \bibitem{tachwali_opt_bandwidth_power_2013}
 {\sc Tachwali, Y., Lo, B., Akyildiz, I., and Agusti, R.}
@@ -923,12 +964,6 @@ In the matter of unlicensed operation in the {TV} broadcast bands: second
 \newblock {\em Computer Networks 56}, 11 (2012), 2690 -- 2699.
 \newblock
   \url{http://www.sciencedirect.com/science/article/pii/S1389128612001521}.
-
-\bibitem{uplink_power_tvws13}
-{\sc Tao, X., Zhao, Z., and Zhang, H.}
-\newblock Location information based interference control for cognitive radio
-  network in {TV} white spaces.
-\newblock In {\em Proc. of IEEE WCNC 2013}, pp.~3614--3619.
 
 \bibitem{ca_crn_survey_2013}
 {\sc Tragos, E., Zeadally, S., Fragkiadakis, A., and Siris, V.}
@@ -952,7 +987,7 @@ In the matter of unlicensed operation in the {TV} broadcast bands: second
 \bibitem{Wang_gtc_crn_survey_2010}
 {\sc Wang, B., Wu, Y., and Liu, K.~R.}
 \newblock Game theory for cognitive radio networks: An overview.
-\newblock {\em Comput. Netw. 54}, 14 (Oct. 2010).
+\newblock {\em Comput. Netw. 54}, 14 (Oct. 2010), 2537--2561.
 
 \bibitem{Wellens200910}
 {\sc Wellens, M., Riihijärvi, J., and Mähönen, P.}
@@ -988,7 +1023,7 @@ In the matter of unlicensed operation in the {TV} broadcast bands: second
 {\sc Wu, Q., Ding, G., Wang, J., Li, X., and Huang, Y.}
 \newblock Consensus-based decentralized clustering for cooperative spectrum
   sensing in cognitive radio networks.
-\newblock {\em Chinese Science Bulletin 57}, 28-29 (2012).
+\newblock {\em Chinese Science Bulletin 57\/} (2012).
 
 \bibitem{wuinfocom09}
 {\sc Wu, Y., and Tsang, D.}
@@ -1003,12 +1038,12 @@ In the matter of unlicensed operation in the {TV} broadcast bands: second
 \newblock {\em IEEE Transactions on Vehicular Technology, 61}, 2 (Feb 2012),
   770--780.
 
-\bibitem{dsa_traffic_2000}
-{\sc Xu, L., T\"{o}njes, R., Paila, T., Hansmann, W., Frank, M., and Albrecht,
-  M.}
-\newblock {DRiVE}-ing to the internet: Dynamic radio for {IP} services in
-  vehicular environments.
-\newblock 281--289.
+\bibitem{yang2013WiFiWSTVCapacity}
+{\sc {Yang}, Y., {Shi}, L., and {Zander}, J.}
+\newblock On the capacity of wi-fi system in tv white space with aggregate
+  interference constraint.
+\newblock In {\em 8th International Conference on Cognitive Radio Oriented
+  Wireless Networks\/} (July 2013), pp.~123--128.
 
 \bibitem{SA_CA_TVWS_2012crowncom}
 {\sc Ye, B., Nekovee, M., Pervez, A., and Ghavami, M.}
@@ -1017,6 +1052,13 @@ In the matter of unlicensed operation in the {TV} broadcast bands: second
 \newblock In {\em Proc. of 2012 7th International ICST Conference on Cognitive
   Radio Oriented Wireless Networks and Communications\/} (June 2012),
   pp.~175--179.
+
+\bibitem{conflictGraphTWC2018}
+{\sc {Ying}, X., {Buddhikot}, M.~M., and {Roy}, S.}
+\newblock Sas-assisted coexistence-aware dynamic channel assignment in cbrs
+  band.
+\newblock {\em IEEE Transactions on Wireless Communications 17}, 9 (Sep. 2018),
+  6307--6320.
 
 \bibitem{crnsensing_09}
 {\sc Yucek, T., and Arslan, H.}
@@ -1039,17 +1081,12 @@ In the matter of unlicensed operation in the {TV} broadcast bands: second
 \newblock {\em IEEE Transactions on Parallel and Distributed Systems, 22}, 9
   (Sept 2011), 1433--1440.
 
-\bibitem{withinTVcoverage_PIMRC13}
-{\sc Zhang, L., Yuan, L., Feng, Z., and Feng, Z.}
-\newblock Mutual-interference-aware available spectrum resource distribution in
-  {TV} white space.
-\newblock In {\em Proc. of IEEE PIMRC 2013\/} (Sept 2013), pp.~2743--2747.
-
 \bibitem{channelHopping_Rendezvous_2014}
 {\sc Zhang, Y., Yu, G., Li, Q., Wang, H., Zhu, X., and Wang, B.}
 \newblock Channel-hopping-based communication rendezvous in cognitive radio
   networks.
-\newblock {\em IEEE/ACM Transactions on Networking 22}, 3 (June 2014).
+\newblock {\em IEEE/ACM Transactions on Networking 22}, 3 (June 2014),
+  889--902.
 
 \bibitem{Selforganization_CRN_13}
 {\sc Zhang, Z., Long, K., and Wang, J.}
@@ -1061,7 +1098,7 @@ In the matter of unlicensed operation in the {TV} broadcast bands: second
 {\sc Zhao, J., Zheng, H., and Yang, G.-H.}
 \newblock Spectrum sharing through distributed coordination in dynamic spectrum
   access networks.
-\newblock {\em Wireless Com. and Mobile Computing 7}, 9 (2007), 1061--1075.
+\newblock {\em Wireless Com. and Mobile Computing 7}, 9 (2007).
 
 \bibitem{zhao_survey_DSA_2007}
 {\sc Zhao, Q., and Sadler, B.}
